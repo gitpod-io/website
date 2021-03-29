@@ -12,21 +12,20 @@
     font-weight: 700;
   }
 
-  h1 {
+  h1,
+  .h1 {
     font-size: 4.8rem;
     line-height: 5.6rem;
   }
 
-  h2 {
+  h2,
+  .h2 {
     font-size: var(--h4);
     line-height: 4rem;
-
-    &.h3 {
-      @include h3;
-    }
   }
 
-  h3 {
+  h3,
+  .h3 {
     @include h3;
   }
 
@@ -43,7 +42,8 @@
   }
 
   // Spacing
-  * + h2 {
+  * + h2,
+  * + .h2 {
     margin-top: var(--medium);
   }
 
@@ -137,12 +137,17 @@
 
   th,
   td {
-    @apply py-5 px-10;
+    @apply py-3 px-6;
     @apply text-left;
+
+    // C++ docs table has empty cells for some reason
+    &:empty {
+      display: none;
+    }
   }
 
   td {
-    @apply py-6;
+    @apply py-4;
   }
 
   th {
