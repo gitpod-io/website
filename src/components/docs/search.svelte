@@ -63,7 +63,7 @@
       type="search"
       placeholder="Search"
       id={docSearchInputSelector}
-      class="block w-full pl-11 pr-3 py-2 border border-transparent rounded-3xl leading-5 bg-white text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900"
+      class="block w-full pl-11 pr-3 py-2 border border-transparent rounded-xl leading-5 bg-white text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900"
     />
   </div>
 </div>

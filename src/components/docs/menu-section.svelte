@@ -24,7 +24,7 @@
   .isActiveSection {
     @apply bg-white;
     @apply py-6;
-    border-radius: 1.6rem;
+    border-radius: 1rem;
     box-shadow: var(--shadow);
   }
 </style>

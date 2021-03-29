@@ -162,4 +162,8 @@
   tr + tr {
     @apply border-t border-solid border-gray-400;
   }
+
+  iframe {
+    width: 100%;
+  }
 }
