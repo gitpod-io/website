@@ -11,19 +11,19 @@
 
 <style>
   .menu-item {
-    padding: 0 var(--xx-small);
+    @apply px-6;
     font-size: var(--p-large);
   }
 
   .submenu {
-    @apply ml-6 mt-4;
+    @apply ml-4 mt-4;
     font-size: var(--p-medium);
     line-height: var(--x-small);
   }
 
   .isActiveSection {
     @apply bg-white;
-    @apply py-9;
+    @apply py-6;
     border-radius: 1.6rem;
     box-shadow: var(--shadow);
   }
