@@ -16,6 +16,7 @@
   }
 
   .submenu {
+    @apply ml-6 mt-4;
     font-size: var(--p-medium);
     line-height: var(--x-small);
   }
@@ -31,7 +32,7 @@
 <li class:isActiveSection class="menu-item">
   <MenuLink href={menuItem.path} class="text-h6">{menuItem.title}</MenuLink>
   {#if menuItem.subMenu && isActiveSection}
-    <ul class="ml-6 mt-4 submenu">
+    <ul class="submenu">
       {#each menuItem.subMenu as sub}
         <li>
           <MenuLink href={sub.path}>{sub.title}</MenuLink>
