@@ -42,12 +42,6 @@
   .white  {
     background-color: var(--white); 
   } 
-
-  // layout for the colors
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  grid-auto-rows: minmax(100px, auto);
-  gap: 1rem;
   li {
     display: flex;
     gap: 1rem;
@@ -62,7 +56,14 @@
       flex: 0 0 100px;
     }
   }
-
+}
+.patterns {
+  // layout for the colors
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 1rem;
+  white-space: nowrap;
 }
 
 </style>
@@ -72,7 +73,7 @@
       <h1>Pattern Library</h1>
     <section>
       <h2>Color Pallette</h2>
-      <ul class="colors"> 
+      <ul class="colors patterns"> 
         <li><div class="swatch brand-ripe"></div><p>brand-ripe</p></li> 
         <li><div class="swatch brand-almost-ripe"></div><p>brand-almost-ripe</p></li>
         <li><div class="swatch brand-light"></div><p>brand-light</p></li> 
@@ -111,8 +112,13 @@
     </section>
     <section>
       <h2>Buttons</h2>
+<<<<<<< Updated upstream
       <ul>
         <li><a href="/" class="btn">btn</a></li>
+=======
+      <ul class="patterns">
+        <li><a href="/" class="btn">class: btn</a></li>
+>>>>>>> Stashed changes
         <li><a href="/" class="btn-conversion">btn-conversion</a></li>
         <li><a href="/" class="btn-primary">btn-primary</a></li>
         <li><a href="/" class="btn-secondary">btn-secondary</a></li>

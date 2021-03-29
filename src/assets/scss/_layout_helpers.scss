@@ -1,0 +1,45 @@
+/* -------------------------------------- */
+/* --- Layout Helpers --- */
+/* -------------------------------------- */
+main {
+  max-width: 71.25rem;
+  margin: auto;
+  @media (max-width: 73rem) {
+    max-width: 98vw;
+  }
+}
+main > header:first-child,
+.header  {
+    text-align: center;
+    margin: 0 auto 5em;
+    max-width: 600px;
+}
+
+main > header, 
+main > section {
+  margin-bottom: 8rem;
+}
+
+
+.row {
+  width: 90%;
+  margin: 0 auto;
+  max-width: var(--row-max-width);
+
+  @media (max-width: 1032px) {
+    width: 94%;
+  }
+
+  @media (min-width: 1141px) {
+    width: 92%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 var(--micro);
+  }
+
+  @media (max-width: 375px) {
+    padding: var(--macro);
+  }
+}

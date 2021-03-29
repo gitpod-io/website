@@ -1,7 +1,7 @@
 .content-docs {
   @mixin h3 {
     font-size: var(--p-large);
-    line-height: 3.2rem;
+    line-height: 2rem;
   }
 
   // Typography
@@ -13,13 +13,13 @@
   }
 
   h1 {
-    font-size: 4.8rem;
-    line-height: 5.6rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 
   h2 {
     font-size: var(--h4);
-    line-height: 4rem;
+    line-height: 2.5rem;
 
     &.h3 {
       @include h3;
@@ -82,9 +82,9 @@
 
   // Code blocks
   code {
-    min-height: 3.2rem;
-    padding: 0 0.8rem;
-    border-radius: 1.2rem;
+    min-height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: 0.75rem;
     background: var(--brand-light);
 
     &:not([class]) {
@@ -95,7 +95,7 @@
     &[class*="language"] {
       overflow: auto;
       display: block;
-      padding: 2rem 2.4rem;
+      padding: 1.25rem 1.5rem;
       background: var(--sand-dark);
     }
 
@@ -109,9 +109,9 @@
   }
 
   blockquote {
-    margin: 3.2rem 0;
-    padding: 2.4rem;
-    border-radius: 1.2rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
     background: var(--brand-light);
 
     code {
@@ -123,7 +123,7 @@
     width: 100%;
     margin: var(--micro) 0;
     overflow: hidden;
-    border-radius: 1.6rem;
+    border-radius: 1rem;
     font-size: var(--p-small);
   }
 

@@ -112,11 +112,6 @@
 </script>
 
 <style type="scss">
-  header {
-    text-align: center;
-    margin: 0 auto 5em;
-    max-width: 600px;
-  }
   h2 {
     text-align: center;
   }
@@ -129,11 +124,11 @@
     Gitpod simplifies the onboarding process, makes coding accessible from any
     device, and provides a productive learning environment.
   </p>
-  <p><a href="" class="btn btn--brand">Choose an option</a><!-- where does this go? --></p>
+  <p><a href="TODO:" class="btn-conversion">Choose an option</a><!-- where does this go? --></p>
 </header>
 
 <section class="features">
-  <h2>For Schools, Universities, and Coding Bootcamps</h2>
+  <h2 class="h3">For Schools, Universities, and Coding Bootcamps</h2>
 
   {#each features as feature}
     <Feature {feature} />
