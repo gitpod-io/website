@@ -66,7 +66,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 5px;
+    height: 3px;
     margin-top: -0.6em;
     transform-origin: center left;
     animation: strikethrough 1s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1 forwards;
