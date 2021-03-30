@@ -1,4 +1,6 @@
 <script lang="ts">
+  import OpenGraph from "../components/open-graph.svelte";
+
   const investors = [
     {
       logo: "",
@@ -33,6 +35,13 @@
   ];
 </script>
 
+<OpenGraph
+  data={{
+    description: "On a mission to make developers' lives easier!",
+    title: "About Gitpod",
+    type: "website",
+  }}
+/>
 <h1>On a mission to make developers' lives easier!</h1>
 <p>
   We’re a fully distributed and engineering-led team of developer tool

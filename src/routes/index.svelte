@@ -7,8 +7,17 @@
   import SectionScreenshot from "../components/index/section-screenshot.svelte";
   import Testimonials from "../components/index/testimonials.svelte";
   import GetStarted from "../components/index/get-started/index.svelte";
+  import OpenGraph from "../components/open-graph.svelte";
 </script>
 
+<OpenGraph
+  data={{
+    description:
+      "Gitpod streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code.",
+    title: "Gitpod - Dev environments built for the cloud",
+    type: "website",
+  }}
+/>
 <Hero />
 <ChooseProject />
 <Features {features} />

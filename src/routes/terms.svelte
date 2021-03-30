@@ -1,3 +1,7 @@
+<script>
+  import OpenGraph from "../components/open-graph.svelte";
+</script>
+
 <style>
   /* TODO: Adjust to match the new branding. This is copied from the old website. */
   .model {
@@ -8,6 +12,13 @@
   }
 </style>
 
+<OpenGraph
+  data={{
+    description: "Gitpod's terms of service.",
+    title: "Terms",
+    type: "website",
+  }}
+/>
 <h1>Gitpod Terms of Service</h1>
 
 <p>

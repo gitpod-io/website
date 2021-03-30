@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { ContactCard } from "../types/contact-card.type";
   import Card from "../components/contact/card.svelte";
+  import OpenGraph from "../components/open-graph.svelte";
 
   const contactCards: ContactCard[] = [
     {
@@ -48,6 +49,13 @@
   };
 </script>
 
+<OpenGraph
+  data={{
+    description: "Reach out if you have any questions regarding Gitpod.",
+    title: "Contact us",
+    type: "website",
+  }}
+/>
 <h1>Contact us</h1>
 <p>Please reach out if you have any questions regarding Gitpod.</p>
 

@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+:root {
+  font-size: 16px;
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

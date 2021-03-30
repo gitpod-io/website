@@ -1,4 +1,5 @@
 <script lang="ts">
+  import OpenGraph from "../components/open-graph.svelte";
   import { jobs } from "../contents/careers";
 
   const values = [
@@ -33,6 +34,13 @@
   ];
 </script>
 
+<OpenGraph
+  data={{
+    description: "Come join our fast-growing, venture-backed team.",
+    title: "Careers at Gitpod",
+    type: "website",
+  }}
+/>
 <h1>Come join our fast-growing, venture-backed team.</h1>
 <p>Gitpod is built on a culture of trust and empathy.</p>
 

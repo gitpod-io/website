@@ -4,6 +4,7 @@
     EducationPricing,
   } from "../types/education.type";
   import Feature from "../components/education/feature.svelte";
+  import OpenGraph from "../components/open-graph.svelte";
 
   const features: EducationFeature[] = [
     {
@@ -122,14 +123,24 @@
   }
 </style>
 
-
+<OpenGraph
+  data={{
+    description:
+      "Gitpod simplifies the onboarding process, makes coding accessible from anywhere, and provides a productive learning environment.",
+    title: "Education",
+    type: "website",
+  }}
+/>
 <header>
   <h1 class="h3">Focus on teaching code, not tedious setups!</h1>
   <p>
     Gitpod simplifies the onboarding process, makes coding accessible from any
     device, and provides a productive learning environment.
   </p>
-  <p><a href="" class="btn btn--brand">Choose an option</a><!-- where does this go? --></p>
+  <p>
+    <a href="" class="btn btn--brand">Choose an option</a
+    ><!-- where does this go? -->
+  </p>
 </header>
 
 <section class="features">

@@ -2,6 +2,25 @@
 /* --- Layout Helpers --- */
 /* -------------------------------------- */
 
+main {
+  /* max-width: 71.25rem; */
+  margin: auto;
+  @media (max-width: 73rem) {
+    max-width: 98vw;
+  }
+}
+main > header:first-child,
+.header {
+  text-align: center;
+  margin: 0 auto 5em;
+  max-width: 600px;
+}
+
+main > header,
+main > section {
+  margin-bottom: 8rem;
+}
+
 .row {
   width: 90%;
   margin: 0 auto;

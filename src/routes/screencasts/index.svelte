@@ -1,4 +1,5 @@
 <script>
+  import OpenGraph from "../../components/open-graph.svelte";
   import Screencast from "../../components/screencasts/screencast.svelte";
   import screencasts from "../../contents/screencasts";
 </script>
@@ -17,6 +18,13 @@
   }
 </style>
 
+<OpenGraph
+  data={{
+    description: "Learn more about Gitpod with these short screencasts.",
+    title: "Screencasts",
+    type: "website",
+  }}
+/>
 <h1 class="h3">Get started with a screencast</h1>
 <section>
   {#each screencasts as screencast, index}

@@ -27,7 +27,8 @@ a {
   }
   &.btn-conversion {
     padding: 0.75em 2em;
-    font-size: var(--p-large);
+    font-size: var(--p-medium);
+    line-height: 1.25;
     background-color: var(--brand-almost-ripe);
   }
   &.btn-primary {

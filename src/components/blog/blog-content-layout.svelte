@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+  import OpenGraph from "../../components/open-graph.svelte";
+
   export let date;
   export let author;
   export let slug;
@@ -6,7 +8,7 @@
   export let title;
   export let image;
   export let teaserImage;
-  // export let excerpt;
+  export let excerpt;
   // export let slug;
 
   let dateDisplay = new Date(Date.parse(date)).toLocaleDateString(undefined, {
@@ -19,6 +21,15 @@
 <style lang="scss" global>
   @import "../../assets/blog";
 </style>
+
+<OpenGraph
+  data={{
+    description: excerpt,
+    title,
+    type: "article",
+    image: `images/blog/${slug}/${image}`,
+  }}
+/>
 
 <img
   src="/images/blog/{slug}/{teaserImage || image}"

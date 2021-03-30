@@ -1,3 +1,14 @@
+<script>
+  import OpenGraph from "../components/open-graph.svelte";
+</script>
+
+<OpenGraph
+  data={{
+    description: "Gitpod's imprint.",
+    title: "Imprint",
+    type: "website",
+  }}
+/>
 <h1>Imprint</h1>
 <p>
   Gitpod&nbsp;GmbH

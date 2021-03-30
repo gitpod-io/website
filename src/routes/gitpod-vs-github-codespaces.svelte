@@ -1,3 +1,15 @@
+<script>
+  import OpenGraph from "../components/open-graph.svelte";
+</script>
+
+<OpenGraph
+  data={{
+    description:
+      "Gitpod is the faster, more powerful, open-source platform that integrates with your individual stack.",
+    title: "Gitpod vs GitHub Codespaces",
+    type: "website",
+  }}
+/>
 <h1>Gitpod vs GitHub Codespaces</h1>
 <p>
   Gitpod is the faster, more powerful, open-source platform that integrates with

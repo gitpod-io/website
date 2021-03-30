@@ -1,3 +1,14 @@
+<script>
+  import OpenGraph from "../components/open-graph.svelte";
+</script>
+
+<OpenGraph
+  data={{
+    description: "Gitpod's privacy policy.",
+    title: "Privacy",
+    type: "website",
+  }}
+/>
 <h1>Privacy Policy</h1>
 
 <p>
