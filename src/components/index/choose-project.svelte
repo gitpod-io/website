@@ -1,7 +1,16 @@
 <script>
   import { onMount } from "svelte";
-
   import Section from "../section.svelte";
+
+  const addStrikethroughs = (targets) => {
+    let t = 0;
+    targets.map((target) => {
+      setTimeout(() => {
+        target.classList.add("strikethrough");
+      }, t);
+      t = t + 400;
+    });
+  };
 
   onMount(() => {
     let options = {
@@ -20,15 +29,13 @@
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const target = entry.target;
-          const strikethroughContainer = target.children[1];
 
-          setTimeout(() => {
-            strikethroughContainer.children[0].classList.add("strikethrough");
+          const desktopTargets = Array.from(target.children[1].children);
+          const mobileTargets = Array.from(target.children[2].children);
 
-            setTimeout(() => {
-              strikethroughContainer.children[1].classList.add("strikethrough");
-            }, 700);
-          }, 200);
+          addStrikethroughs(desktopTargets);
+          addStrikethroughs(mobileTargets);
+          observer.unobserve(target);
         }
       });
     }
@@ -37,20 +44,46 @@
 
 <style lang="scss">
   .row {
-    width: 95%;
+    width: 100%;
   }
 
-  h1 {
+  h2 {
     text-align: center;
+    max-width: 67.7rem;
+    margin: 0 auto;
 
     @media (max-width: 1140px) {
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 50rem;
     }
 
     @media (max-width: 850px) {
-      max-width: 500px;
       font-size: var(--h3);
+    }
+
+    @media (max-width: 682px) {
+      max-width: 23.75rem;
+    }
+
+    @media (max-width: 365px) {
+      font-size: 1.7rem;
+    }
+  }
+
+  del {
+    text-decoration: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  @media (min-width: 683px) {
+    .desktop {
+      display: initial;
+    }
+
+    .mobile {
+      display: none;
     }
   }
 
@@ -85,17 +118,23 @@
   }
 </style>
 
-<Section>
-  <div class="row">
-    <h2 class="h2" id="observer-target">
+<div class="row">
+  <Section>
+    <h2 class="h1" id="observer-target">
       Choose project,
       <br />
-      <span>
+      <del class="desktop">
         <span>check dependencies, checkout branch, view</span>
         <span>readme.txt, install tools, run build, run test,</span>
-      </span>
+      </del>
+      <del class="mobile">
+        <span>check dependencies,</span>
+        <span>checkout branch, view</span>
+        <span>readme.txt, install tools</span>
+        <span>run build, run test,</span>
+      </del>
       <br />
       start coding.
-    </h1>
-  </div>
-</Section>
+    </h2>
+  </Section>
+</div>
