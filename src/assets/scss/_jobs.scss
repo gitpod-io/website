@@ -1,5 +1,12 @@
 .modal .jobTitle {
-  margin: -1rem 0 2rem -1rem;
+  margin-top: -3.5rem;
+  margin-left: -3rem;
+}
+@media (max-width: 768px) {
+  .modal .jobTitle {
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+  }
 }
 .modal .jobTitle ~ ul {
   list-style: none;
@@ -19,6 +26,7 @@
   max-width: 46rem;
   columns: 2 20rem;
   padding-left: 1rem;
+  padding-right: 1rem;
   margin-top: 1rem;
   column-gap: 1.5rem;
 }
@@ -48,13 +56,16 @@
   text-align: left;
   color: var(--black);
   font-weight: bold;
+  font-size: 1.25rem;
 }
 .jobs button::after {
   content: "";
   float: right;
-  height: 0.75rem;
-  width: 0.75rem;
-  border: 3px solid;
-  transform: translatey(0.25rem) rotate(45deg);
-  border-color: currentColor currentColor transparent transparent;
+  border: 0;
+  background-size: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  transform: rotate(-90deg);
+  background-image: url("/arrow.svg");
+  flex-shrink: 0;
 }

@@ -5,26 +5,34 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 .modal .content {
   background-color: var(--off-white);
   border-radius: 1rem;
   width: 71rem;
-  max-height: 98vh;
+  max-height: 80vh;
   max-width: 98vw;
-  margin: 1vh auto;
-  padding: 3rem;
+  margin: 10vh auto;
+  padding: 7rem;
   overflow: scroll;
 }
 .content button:first-child {
   float: right;
-  height: 2rem;
-  width: 2rem;
+  height: 0.75rem;
+  width: 0.75rem;
   border-radius: 50%;
   text-align: center;
-  line-height: 2rem;
-  &:focus,
-  &:hover {
-    background-color: var(--divider);
+  line-height: 0.75rem;
+  margin-top: -3rem;
+  margin-right: -3rem;
+}
+@media (max-width: 768px) {
+  .modal .content {
+    padding: 2rem;
+  }
+  .content button:first-child {
+    margin-top: 0;
+    margin-right: 0;
   }
 }
