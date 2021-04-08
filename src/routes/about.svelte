@@ -50,6 +50,12 @@
   ];
 </script>
 
+<style>
+  .cardlike a {
+    padding: 1.5rem;
+  }
+</style>
+
 <OpenGraph
   data={{
     description: "On a mission to make developers' lives easier!",
@@ -237,9 +243,9 @@
         target="_blank"
       >
         <img
-          src="/images/about/TheRegister.png"
+          src="/images/about/TheRegister.svg"
           alt="The Register"
-          height=""
+          height="40"
           width=""
         />
       </a>
@@ -249,7 +255,7 @@
         href="https://www.infoq.com/articles/cloud-based-development/"
         target="_blank"
       >
-        <img src="/images/about/InfoQ.png" alt="Info Q" height="" width="" />
+        <img src="/images/about/InfoQ.svg" alt="Info Q" height="40" width="" />
       </a>
     </li>
     <li>
@@ -258,9 +264,9 @@
         target="_blank"
       >
         <img
-          src="/images/about/DevOpsDotCom.png"
+          src="/images/about/DevOpsDotCom.svg"
           alt="DevOps.com"
-          height=""
+          height="40"
           width=""
         />
       </a>
@@ -271,9 +277,9 @@
         target="_blank"
       >
         <img
-          src="/images/about/NewStake.png"
+          src="/images/about/TheNewStack.svg"
           alt="The New Stack"
-          height=""
+          height="40"
           width=""
         />
       </a>
