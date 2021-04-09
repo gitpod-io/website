@@ -5,7 +5,7 @@
 
 [[redirects]]
   from = "/changelog"
-  to = "/docs/changelog/"
+  to = "/docs/changelog"
   status = 301
 
 [[redirects]]
@@ -19,401 +19,406 @@
   status = 301
 
 [[redirects]]
+  from = "/docs/index.html"
+  to = "/docs"
+  status = 301
+
+[[redirects]]
   from = "/docs/45_Config_Go"
-  to = "/docs/checkout-location/"
+  to = "/docs/checkout-location"
   status = 301
 
 [[redirects]]
   from = "/privacy/terms.html"
-  to = "/terms/"
+  to = "/terms"
   status = 301
 
 [[redirects]]
   from = "/docs/20_Browser_Extension"
-  to = "/docs/browser-extension/"
+  to = "/docs/browser-extension"
   status = 301
 
 [[redirects]]
   from = "/docs/20_browser_extension"
-  to = "/docs/browser-extension/"
+  to = "/docs/browser-extension"
   status = 301
 
 [[redirects]]
   from = "/docs/45_Checkout_Location"
-  to = "/docs/checkout-location/"
+  to = "/docs/checkout-location"
   status = 301
 
 [[redirects]]
   from = "/docs/45_checkout_location"
-  to = "/docs/checkout-location/"
+  to = "/docs/checkout-location"
   status = 301
 
 [[redirects]]
   from = "/docs/59_code_review"
-  to = "/docs/code-review/"
+  to = "/docs/code-review"
   status = 301
 
 [[redirects]]
   from = "/docs/34_command_line_interface"
-  to = "/docs/command-line-interface/"
+  to = "/docs/command-line-interface"
   status = 301
 
  [[redirects]]
   from = "/docs/42_config_docker"
-  to = "/docs/config-docker/"
+  to = "/docs/config-docker"
   status = 301
 
 [[redirects]]
   from = "/docs/languages/pandas"
-  to = "/docs/languages/python/#pandas"
+  to = "/docs/languages/python#pandas"
   status = 301
 
 [[redirects]]
   from = "/docs/41_Config_Gitpod_File"
-  to = "/docs/config-gitpod-file/"
+  to = "/docs/config-gitpod-file"
   status = 301
 
 [[redirects]]
   from = "/docs/41_config_gitpod_file"
-  to = "/docs/config-gitpod-file/"
+  to = "/docs/config-gitpod-file"
   status = 301
 
 [[redirects]]
   from = "/docs/43_config_ports"
-  to = "/docs/config-ports/"
+  to = "/docs/config-ports"
   status = 301
 
 [[redirects]]
   from = "/docs/44_config_start_tasks"
-  to = "/docs/config-start-tasks/"
+  to = "/docs/config-start-tasks"
   status = 301
 
 [[redirects]]
   from = "/docs/40_Configuration"
-  to = "/docs/configuration/"
+  to = "/docs/configuration"
   status = 301
 
 [[redirects]]
   from = "/docs/40_configuration"
-  to = "/docs/configuration/"
+  to = "/docs/configuration"
   status = 301
 
  [[redirects]]
   from = "/docs/31_context_urls"
-  to = "/docs/context-urls/"
+  to = "/docs/context-urls"
   status = 301
 
  [[redirects]]
   from = "/docs/60_dashboard"
-  to = "/docs/dashboard/"
+  to = "/docs/dashboard"
   status = 301
 
 [[redirects]]
   from = "/docs/47_Environment_Variables"
-  to = "/docs/environment-variables/"
+  to = "/docs/environment-variables"
   status = 301
 
 [[redirects]]
   from = "/docs/47_environment_variables"
-  to = "/docs/environment-variables/"
+  to = "/docs/environment-variables"
   status = 301
 
 [[redirects]]
   from = "/docs/10_Getting_Started"
-  to = "/docs/getting-started/"
+  to = "/docs/getting-started"
   status = 301
 
 [[redirects]]
   from = "/docs/10_getting_started"
-  to = "/docs/getting-started/"
+  to = "/docs/getting-started"
   status = 301
 
 [[redirects]]
   from = "/docs/54_git"
-  to = "/docs/git/"
+  to = "/docs/git"
   status = 301
 
 [[redirects]]
   from = "/docs/go_in_gitpod"
-  to = "/docs/go-in-gitpod/"
+  to = "/docs/go-in-gitpod"
   status = 301
 
  [[redirects]]
   from = "/docs/50_ide"
-  to = "/docs/ide/"
+  to = "/docs/ide"
   status = 301
 
 [[redirects]]
   from = "/docs/java_in_gitpod"
-  to = "/docs/java-in-gitpod/"
+  to = "/docs/java-in-gitpod"
   status = 301
 
 [[redirects]]
   from = "/docs/julia_in_gitpod"
-  to = "/docs/julia-in-gitpod/"
+  to = "/docs/julia-in-gitpod"
   status = 301
 
 [[redirects]]
   from = "/docs/languages_and_frameworks"
-  to = "/docs/languages-and-frameworks/"
+  to = "/docs/languages-and-frameworks"
   status = 301
 
  [[redirects]]
   from = "/docs/32_Life_of_Workspace"
-  to = "/docs/life-of-workspace/"
+  to = "/docs/life-of-workspace"
   status = 301
 
  [[redirects]]
   from = "/docs/32_life_of_workspace"
-  to = "/docs/life-of-workspace/"
+  to = "/docs/life-of-workspace"
   status = 301
 
  [[redirects]]
   from = "/docs/46_prebuilds"
-  to = "/docs/prebuilds/"
+  to = "/docs/prebuilds"
   status = 301
 
 [[redirects]]
   from = "/docs/58_pull_requests"
-  to = "/docs/pull-requests/"
+  to = "/docs/pull-requests"
   status = 301
 
 [[redirects]]
   from = "/docs/58_Pull_Requests"
-  to = "/docs/pull-requests/"
+  to = "/docs/pull-requests"
   status = 301
 
 [[redirects]]
   from = "/docs/python_in_gitpod"
-  to = "/docs/python-in-gitpod/"
+  to = "/docs/python-in-gitpod"
   status = 301
 
 [[redirects]]
   from = "/docs/80_release_notes"
-  to = "/docs/release-notes/"
+  to = "/docs/release-notes"
   status = 301
 
 [[redirects]]
   from = "/docs/56_search"
-  to = "/docs/search/"
+  to = "/docs/search"
   status = 301
 
  [[redirects]]
   from = "/docs/33_Sharing_and_Collaboration"
-  to = "/docs/sharing-and-collaboration/"
+  to = "/docs/sharing-and-collaboration"
   status = 301
 
  [[redirects]]
   from = "/docs/33_sharing_and_collaboration"
-  to = "/docs/sharing-and-collaboration/"
+  to = "/docs/sharing-and-collaboration"
   status = 301
 
  [[redirects]]
   from = "/docs/70_subscription"
-  to = "/docs/subscription/"
+  to = "/docs/subscription"
   status = 301
 
 [[redirects]]
   from = "/docs/52_tips_and_tricks"
-  to = "/docs/tips-and-tricks/"
+  to = "/docs/tips-and-tricks"
   status = 301
 
 [[redirects]]
   from = "/docs/30_workspaces"
-  to = "/docs/workspaces/"
+  to = "/docs/workspaces"
   status = 301
 
  [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/36_database"
-  to = "/docs/self-hosted/0.3.0/install/database/"
+  to = "/docs/self-hosted/0.3.0/install/database"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/36_database"
-  to = "/docs/self-hosted/latest/install/database/"
+  to = "/docs/self-hosted/latest/install/database"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/35_docker_registry"
-  to = "/docs/self-hosted/0.3.0/install/docker-registry/"
+  to = "/docs/self-hosted/0.3.0/install/docker-registry"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/35_docker_registry"
-  to = "/docs/self-hosted/latest/install/docker-registry/"
+  to = "/docs/self-hosted/latest/install/docker-registry"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/90_helm_2x"
-  to = "/docs/self-hosted/0.3.0/install/helm-2x/"
+  to = "/docs/self-hosted/0.3.0/install/helm-2x"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/90_helm_2x"
-  to = "/docs/self-hosted/latest/install/helm-2x/"
+  to = "/docs/self-hosted/latest/install/helm-2x"
   status = 301
 
  [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/34_https_certs"
-  to = "/docs/self-hosted/0.3.0/install/https-certs/"
+  to = "/docs/self-hosted/0.3.0/install/https-certs"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/34_https_certs"
-  to = "/docs/self-hosted/latest/install/https-certs/"
+  to = "/docs/self-hosted/latest/install/https-certs"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/12_install_on_gcp_manual"
-  to = "/docs/self-hosted/0.3.0/install/install-on-gcp-manual/"
+  to = "/docs/self-hosted/0.3.0/install/install-on-gcp-manual"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/12_install_on_gcp_manual"
-  to = "/docs/self-hosted/latest/install/install-on-gcp-manual/"
+  to = "/docs/self-hosted/latest/install/install-on-gcp-manual"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/11_install_on_gcp_script"
-  to = "/docs/self-hosted/0.3.0/install/install-on-gcp-script/"
+  to = "/docs/self-hosted/0.3.0/install/install-on-gcp-script"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/11_install_on_gcp_script"
-  to = "/docs/self-hosted/latest/install/install-on-gcp-script/"
+  to = "/docs/self-hosted/latest/install/install-on-gcp-script"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/10_install_on_kubernetes"
-  to = "/docs/self-hosted/0.3.0/install/install-on-kubernetes/"
+  to = "/docs/self-hosted/0.3.0/install/install-on-kubernetes"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/10_install_on_kubernetes"
-  to = "/docs/self-hosted/latest/install/install-on-kubernetes/"
+  to = "/docs/self-hosted/latest/install/install-on-kubernetes"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/33_nodes"
-  to = "/docs/self-hosted/0.3.0/install/nodes/"
+  to = "/docs/self-hosted/0.3.0/install/nodes"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/33_nodes"
-  to = "/docs/self-hosted/latest/install/nodes/"
+  to = "/docs/self-hosted/latest/install/nodes"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/30_oauth"
-  to = "/docs/self-hosted/0.3.0/install/oauth/"
+  to = "/docs/self-hosted/0.3.0/install/oauth"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/30_oauth"
-  to = "/docs/self-hosted/latest/install/oauth/"
+  to = "/docs/self-hosted/latest/install/oauth"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/01_prepare_installation"
-  to = "/docs/self-hosted/0.3.0/install/prepare-installation/"
+  to = "/docs/self-hosted/0.3.0/install/prepare-installation"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/01_prepare_installation"
-  to = "/docs/self-hosted/latest/install/prepare-installation/"
+  to = "/docs/self-hosted/latest/install/prepare-installation"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/32_storage"
-  to = "/docs/self-hosted/0.3.0/install/storage/"
+  to = "/docs/self-hosted/0.3.0/install/storage"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/32_storage"
-  to = "/docs/self-hosted/latest/install/storage/"
+  to = "/docs/self-hosted/latest/install/storage"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/31_workspaces"
-  to = "/docs/self-hosted/0.3.0/install/workspaces/"
+  to = "/docs/self-hosted/0.3.0/install/workspaces"
   status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/31_workspaces"
-  to = "/docs/self-hosted/latest/install/workspaces/"
+  to = "/docs/self-hosted/latest/install/workspaces"
   status = 301
 
 [[redirects]]
   from = "/docs/bash-in-gitpod"
-  to = "/docs/languages/bash/"
+  to = "/docs/languages/bash"
   status = 301
 
 [[redirects]]
   from = "/docs/cpp-in-gitpod"
-  to = "/docs/languages/cpp/"
+  to = "/docs/languages/cpp"
   status = 301
 
 [[redirects]]
   from = "/docs/dotnet-in-gitpod"
-  to = "/docs/languages/dotnet/"
+  to = "/docs/languages/dotnet"
   status = 301
 
 [[redirects]]
   from = "/docs/go-in-gitpod"
-  to = "/docs/languages/go/"
+  to = "/docs/languages/go"
   status = 301
 
 [[redirects]]
   from = "/docs/html-in-gitpod"
-  to = "/docs/languages/html/"
+  to = "/docs/languages/html"
   status = 301
 
 [[redirects]]
   from = "/docs/java-in-gitpod"
-  to = "/docs/languages/java/"
+  to = "/docs/languages/java"
   status = 301
 
 [[redirects]]
   from = "/docs/julia-in-gitpod"
-  to = "/docs/languages/julia/"
+  to = "/docs/languages/julia"
   status = 301
 
 [[redirects]]
   from = "/docs/php-in-gitpod"
-  to = "/docs/languages/php/"
+  to = "/docs/languages/php"
   status = 301
 
 [[redirects]]
   from = "/docs/python-in-gitpod"
-  to = "/docs/languages/python/"
+  to = "/docs/languages/python"
   status = 301
 
 [[redirects]]
   from = "/docs/r-in-gitpod"
-  to = "/docs/languages/r/"
+  to = "/docs/languages/r"
   status = 301
 
 [[redirects]]
   from = "/docs/ruby-in-gitpod"
-  to = "/docs/languages/ruby/"
+  to = "/docs/languages/ruby"
   status = 301
 
 [[redirects]]
   from = "/docs/rust-in-gitpod"
-  to = "/docs/languages/rust/"
+  to = "/docs/languages/rust"
   status = 301
 
 [[redirects]]
   from = "/docs/vue-in-gitpod"
-  to = "/docs/languages/vue/"
+  to = "/docs/languages/vue"
   status = 301
 
 [[redirects]]
   from = "/blog/gitlab-integration/+"
-  to = "/blog/gitlab-integration/"
+  to = "/blog/gitlab-integration"
   status = 301
 
 [[redirects]]
   from = "/gitpod-vs-codespaces"
-  to = "/gitpod-vs-github-codespaces/"
+  to = "/gitpod-vs-github-codespaces"
   status = 301
