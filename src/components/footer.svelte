@@ -47,7 +47,9 @@
           >
         </li>
         <li>
-          <a href="https://community.gitpod.io" target="_blank">Community </a>
+          <a href="https://community.gitpod.io" target="_blank" rel="noopener"
+            >Community
+          </a>
         </li>
       </ul>
       <!-- <div style="flex: 0 0 100%">
