@@ -422,3 +422,8 @@
   from = "/gitpod-vs-codespaces"
   to = "/gitpod-vs-github-codespaces"
   status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/render"
+  status = 200

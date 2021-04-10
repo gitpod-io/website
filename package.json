@@ -23,6 +23,7 @@
     "build:svelte": "svelte-kit build",
     "build:functions": "netlify-lambda build src/functions",
     "deploy": "run-s clean build:functions build:css build:svelte",
+    "postdeploy": "rm -fr ./build/_redirects",
     "start": "svelte-kit start",
     "validate": "svelte-check"
   },
