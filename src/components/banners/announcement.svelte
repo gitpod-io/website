@@ -23,7 +23,7 @@
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-    >
+      ><title>Close</title>
       <path
         d="M3.00107 3L13 13M12.9989 3L3 13"
         stroke="#12100C"
