@@ -74,7 +74,12 @@
       </p>
       <div class="buttons-wrapper">
         {#each buttons as { href, icon, text }}
-          <a {href} target="_blank" class="btn-otherbrand text-medium">
+          <a
+            {href}
+            target="_blank"
+            rel="noopener"
+            class="btn-otherbrand text-medium"
+          >
             <img src={`/${icon}`} alt={text} width="24" height="24" />
             {text}
           </a>

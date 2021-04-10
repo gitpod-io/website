@@ -436,7 +436,8 @@
       <a
         href="https://cloud.google.com/sustainability"
         class="btn-green"
-        target="_blank">More on GCP carbon neutral</a
+        target="_blank"
+        rel="noopener">More on GCP carbon neutral</a
       >
     </p>
   </div>

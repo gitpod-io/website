@@ -43,7 +43,7 @@
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
             target="_blank"
-            rel="noopner">Report a bug</a
+            rel="noopener">Report a bug</a
           >
         </li>
         <li>

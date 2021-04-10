@@ -56,7 +56,7 @@
   }
 </style>
 
-<a {href} target="_blank" class="brand">
+<a {href} target="_blank" rel="noopener" class="brand">
   <img
     src={`/${logo}`}
     {alt}
