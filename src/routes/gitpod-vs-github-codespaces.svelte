@@ -144,7 +144,8 @@
 <div class="halfimages">
   <article class="card">
     <div>
-      <img src="/images/codespace/spaces-1.svg" alt="" role="presentation" />
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <img src="/images/codespace/spaces-1.svg" role="presentation" />
       <p class="card-image-legend">
         Compared start-up time until ready-to-code for<br /><a
           href="https://github.com/gitpod-io/vscode"
@@ -167,9 +168,9 @@
 
   <article class="card">
     <div>
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/codespace/spaces-2.svg"
-        alt=""
         role="presentation"
         width="550"
         height="414"
@@ -379,9 +380,9 @@
 <div class="halfimages">
   <article class="card">
     <div>
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/codespace/spaces-3.svg"
-        alt=""
         role="presentation"
         width="550"
       />

@@ -152,9 +152,9 @@
 <section class="cards double">
   <div class="card">
     <div class="h-72 pb-4">
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/features/features-3.svg"
-        alt=""
         role="presentation"
         height="223"
         width="382"
@@ -194,9 +194,9 @@
 
 <section class="cards triple">
   <div class="card">
+    <!-- svelte-ignore a11y-missing-attribute -->
     <img
       src="/images/features/features-5.svg"
-      alt=""
       role="presentation"
       height="90"
       width="185"
@@ -209,9 +209,9 @@
     <a href="/docs/vscode-extensions/">More about customization.</a>
   </div>
   <div class="card">
+    <!-- svelte-ignore a11y-missing-attribute -->
     <img
       src="/images/features/features-6.svg"
-      alt=""
       role="presentation"
       height="90"
       width="322"
@@ -224,9 +224,9 @@
     <a href="/docs/integrations/">More about integrations.</a>
   </div>
   <div class="card">
+    <!-- svelte-ignore a11y-missing-attribute -->
     <img
       src="/images/features/features-7.svg"
-      alt=""
       role="presentation"
       height="90"
       width="130"
@@ -246,9 +246,9 @@
     Install any VS Code extension with one click via the integrated
     vendor-neutral marketplace Open VSX.
   </p>
+  <!-- svelte-ignore a11y-missing-attribute -->
   <img
     src="/images/features/gitpod-extensions.jpg"
-    alt=""
     role="presentation"
     height="1110"
     width="748"

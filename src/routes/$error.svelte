@@ -12,7 +12,10 @@
 
 <div class="error-page row">
   <Section>
-    <img src="/images/illustration-large.jpg" alt="" />
+    <img
+      src="/images/illustration-large.jpg"
+      alt="The Gitpod cube set up as a remote workspace"
+    />
     <h1>{status}</h1>
     <p>Oh, no! Something went wrong on our side.</p>
 

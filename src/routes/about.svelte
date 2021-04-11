@@ -94,7 +94,7 @@
   <li>
     <img
       src="/images/about/team-2.jpg"
-      alt="TODO: who is this?"
+      alt="A female Gitpod team member"
       height="310"
       width="310"
     />
@@ -102,7 +102,7 @@
   <li>
     <img
       src="/images/about/team-3.jpg"
-      alt=""
+      alt="A laptop and office chair in a tent"
       height="310"
       width="310"
       role="presentation"
@@ -111,7 +111,7 @@
   <li>
     <img
       src="/images/about/about-6.png"
-      alt=""
+      alt="Gitpod team members on the beach"
       height="310"
       width="310"
       role="presentation"
@@ -120,7 +120,7 @@
   <li>
     <img
       src="/images/about/about-5.png"
-      alt="TODO: who is this?"
+      alt="4 kumquats on a table"
       height="310"
       width="310"
     />
