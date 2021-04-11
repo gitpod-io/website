@@ -32,7 +32,7 @@
         class="w-12 h-12 rounded-full"
       />
       <div class="ml-3">
-        <h3 class="mb-0 text-small">{name}</h3>
+        <p class="mb-0 font-semibold text-small leading-6">{name}</p>
         <p>{role} {@html org}</p>
       </div>
     </div>
