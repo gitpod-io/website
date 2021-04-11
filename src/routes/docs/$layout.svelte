@@ -1,6 +1,7 @@
 <script lang="ts">
   import Menu from "../../components/docs/menu.svelte";
   import MobileMenu from "../../components/docs/mobile-menu/index.svelte";
+  import OpenGraph from "../../components/open-graph.svelte";
   import Search from "../../components/docs/search.svelte";
   import "../../assets/docs.scss";
 
@@ -128,6 +129,14 @@
   }
 </style>
 
+<OpenGraph
+  data={{
+    description:
+      "Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.",
+    title: "Gitpod Documentation",
+    type: "website",
+  }}
+/>
 <div class="docs-layout row">
   <div class="menu">
     <Menu {MENU} />
