@@ -18,16 +18,10 @@
     }
 
     &__top {
-      display: flex;
       padding: var(--medium);
-      justify-content: space-between;
       align-items: center;
       width: 100%;
       outline: none;
-
-      &::-webkit-details-marker {
-        display: none;
-      }
 
       @media (max-width: 860px) {
         padding: var(--xx-small);
@@ -44,12 +38,9 @@
     }
 
     &__arrow {
-      flex: 0 0 1.5rem;
-      display: block;
       height: 1.5rem;
       width: 1.5rem;
       outline: none;
-      margin-left: var(--micro);
       transition: all 0.2s;
 
       @media (max-width: 768px) {
@@ -84,13 +75,21 @@
   details[open] .faq__arrow {
     transform: rotate(180deg);
   }
+
+  summary {
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
 </style>
 
 <details class="faq">
   <summary class="faq__top">
-    <h3 class="h4 faq__title">{title}</h3>
+    <h3 class="h4 faq__title inline">{title}</h3>
     <img
-      class="faq__arrow"
+      class="faq__arrow inline float-right"
       width="24"
       height="24"
       src="/arrow.svg"
