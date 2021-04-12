@@ -13,14 +13,6 @@
       border: 1px solid #fff;
     }
 
-    @media (max-width: 768px) {
-      padding: var(--xx-small);
-    }
-
-    @media (max-width: 375px) {
-      padding: var(--micro);
-    }
-
     &:not(:last-child) {
       margin-bottom: var(--xx-small);
     }
@@ -37,8 +29,13 @@
         display: none;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 860px) {
+        padding: var(--xx-small);
         align-items: flex-start;
+      }
+
+      @media (max-width: 375px) {
+        padding: var(--micro);
       }
     }
 
@@ -63,6 +60,16 @@
     &__text {
       margin: var(--medium);
       margin-top: -2.5rem;
+
+      @media (max-width: 860px) {
+        margin: var(--xx-small);
+        margin-top: -1rem;
+      }
+
+      @media (max-width: 375px) {
+        margin: var(--micro);
+        margin-top: -0.5rem;
+      }
     }
 
     & :global(a) {
