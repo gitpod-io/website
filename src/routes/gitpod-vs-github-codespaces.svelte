@@ -184,7 +184,7 @@
       </p>
     </div>
     <div>
-      <h2 class="max-w-30rem flex-grow">3x more power</h2>
+      <h2 class="max-w-30rem">3x more power</h2>
       <p class="text-large max-w-30rem">
         By leveraging cloud technologies like containers and Kubernetes, Gitpod
         achieves best-in-class resource-efficiency with scalable workspaces
