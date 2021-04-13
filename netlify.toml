@@ -9,6 +9,11 @@
   status = 301
 
 [[redirects]]
+  from = "/roadmap"
+  to = "https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203"
+  status = 301
+
+[[redirects]]
   from = "/gitpod-business.html"
   to = "/pricing"
   status = 301
