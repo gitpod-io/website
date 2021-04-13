@@ -34,7 +34,8 @@
     }
 
     &__title {
-      flex: 1;
+      display: inline-block;
+      width: 86%;
     }
 
     &__arrow {
