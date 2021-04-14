@@ -128,7 +128,7 @@ export const projects: Project[] = [
     logo: "svg/projects/go.svg",
     title: "Go",
     githubUrl: "https://github.com/prometheus/prometheus",
-    alt: "Go",
+    alt: "Go Language",
   },
   // {
   //   logo: "rust.png",
