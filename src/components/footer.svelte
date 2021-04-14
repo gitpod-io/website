@@ -20,7 +20,7 @@
 </script>
 
 <div class="footer__container">
-  <footer class="footer fine-print">
+  <footer class="footer">
     <div class="footer__entries">
       <ul>
         <li>Gitpod</li>
