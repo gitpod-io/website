@@ -1,5 +1,11 @@
 <script context="module">
   export const prerender = true;
+
+  export function load({ error, status }) {
+    return {
+      props: { error, status },
+    };
+  }
 </script>
 
 <script lang="ts">
