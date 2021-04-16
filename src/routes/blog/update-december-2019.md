@@ -68,7 +68,7 @@ Most importantly, **Unlimited users enjoy a 60min timeout with an additional 3 h
 
 Furthermore, with Unlimited you can **start up 16 workspaces in parallel**.
 
-Checkout the [pricing page](/pricing/) for an overview.
+Checkout the [pricing page](/pricing) for an overview.
 
 ## 🌓Light & Dark Theme
 

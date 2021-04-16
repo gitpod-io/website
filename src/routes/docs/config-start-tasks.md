@@ -56,7 +56,7 @@ Task properties will control when a command is executed. Check the table below f
 ### `init` command
 
 The `init` property can be used to specify shell commands that should only be executed after a workspace was freshly cloned and needs to be initialized somehow.
-Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not when you restart a workspace or start a [snapshot](/docs/sharing-and-collaboration/).
+Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not when you restart a workspace or start a [snapshot](/docs/sharing-and-collaboration).
 
 Here is an example for a node project that makes use of `init`:
 
@@ -81,7 +81,7 @@ tasks:
 
 ### `prebuild` command
 
-The optional `prebuild` command will be executed during [prebuilds](/docs/prebuilds/). It is meant to run additional
+The optional `prebuild` command will be executed during [prebuilds](/docs/prebuilds). It is meant to run additional
 long running processes that could be useful, e.g. running test suites.
 
 ### Configuring the Terminal

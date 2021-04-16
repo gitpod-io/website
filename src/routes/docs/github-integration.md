@@ -12,7 +12,7 @@ To start a workspace from a GitHub project, prefix the GitHub URL with `gitpod.i
 
 ## Enabling Prebuilds
 
-To enable [prebuilt workspaces](/docs/prebuilds/) for your GitHub project you need to install the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and configure it for the GitHub user or organization that the project belongs to. Install the app as described in the [prebuilds page](/docs/prebuilds/#on-github).
+To enable [prebuilt workspaces](/docs/prebuilds) for your GitHub project you need to install the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and configure it for the GitHub user or organization that the project belongs to. Install the app as described in the [prebuilds page](/docs/prebuilds/#on-github).
 
 ## OAuth Application
 

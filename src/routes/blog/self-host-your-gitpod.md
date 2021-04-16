@@ -47,7 +47,7 @@ Installing Gitpod Self-Hosted on your own infrastructure works much like any oth
 
 1. Clone the example configuration repo: `git clone https://github.com/gitpod-io/self-hosted`
 
-2. Adjust the configuration from the repository to your needs (with [ample documentation available](/docs/self-hosted/latest/self-hosted/) to guide you).
+2. Adjust the configuration from the repository to your needs (with [ample documentation available](/docs/self-hosted/latest/self-hosted) to guide you).
 
 3. Install using [helm](https://helm.sh/): `helm install ... gitpod`
 

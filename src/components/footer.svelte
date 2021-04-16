@@ -25,9 +25,9 @@
       <ul>
         <li>Gitpod</li>
         <li><a href="/">Home</a></li>
-        <li><a href="/features/">Features</a></li>
-        <li><a href="/pricing/">Pricing</a></li>
-        <li><a href="/self-hosted/">Self-Hosted</a></li>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/self-hosted">Self-Hosted</a></li>
         <li>
           <a href="/gitpod-vs-github-codespaces"
             >Gitpod vs GitHub <br />Codespaces
@@ -37,8 +37,8 @@
       <ul>
         <li>Developer</li>
         <li><a href="/#get-started">Getting started</a></li>
-        <li><a href="/screencasts/">Screencasts</a></li>
-        <li><a href="/docs/">Documentation</a></li>
+        <li><a href="/screencasts">Screencasts</a></li>
+        <li><a href="/docs">Documentation</a></li>
         <li>
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
@@ -57,20 +57,20 @@
       </div> -->
       <ul>
         <li>Company</li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="/about">About</a></li>
         <li>
-          <a href="/careers/">Careers<sup>*</sup></a>
+          <a href="/careers">Careers<sup>*</sup></a>
         </li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
       <ul>
         <li>Legal</li>
-        <li><a href="/imprint/">Imprint</a></li>
+        <li><a href="/imprint">Imprint</a></li>
         <li>
-          <a href="/terms/">Terms of Service</a>
+          <a href="/terms">Terms of Service</a>
         </li>
         <li>
-          <a href="/privacy/">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
         </li>
       </ul>
     </div>

@@ -31,7 +31,7 @@ The result is that Gitpod offers more powerful dev environments with a small eco
 
 <h2>Gitpod is Fast</h2>
 
-Gitpod is not only extremely fast because of the higher efficiency, but also because of what we call [prebuilds](https://www.gitpod.io/docs/prebuilds/). Let’s take a closer look.
+Gitpod is not only extremely fast because of the higher efficiency, but also because of what we call [prebuilds](https://www.gitpod.io/docs/prebuilds). Let’s take a closer look.
 
 The metric that matters here is the time it takes until a dev environment is **ready-to-code**. Ready-to-code means that developers can actually start writing code and don’t have to wait for builds, dependencies to download or code generators to run.
 
@@ -43,7 +43,7 @@ Instead Gitpod prebuilds dev environments when a new commit is pushed to the rem
 
 The advantages of having your dev environments prebuilt can not be overstated. For the [vscode repository](https://github.com/gitpod-io/vscode) we measured a 15x difference.
 
-We believe prebuilding dev environments the way Gitpod does it, is key towards [“dev environments as code”](https://www.gitpod.io/blog/dev-env-as-code/). Without prebuilds, developers have to manually maintain and reuse their dev environments, because of the manual labour put into them. Those stateful environments drift apart over time and teams are once again working in very different setups, wasting time and energy with the resulting problems and surprises. With Gitpod "it works (or doesn't work) on my machine is a thing of the past.
+We believe prebuilding dev environments the way Gitpod does it, is key towards [“dev environments as code”](https://www.gitpod.io/blog/dev-env-as-code). Without prebuilds, developers have to manually maintain and reuse their dev environments, because of the manual labour put into them. Those stateful environments drift apart over time and teams are once again working in very different setups, wasting time and energy with the resulting problems and surprises. With Gitpod "it works (or doesn't work) on my machine is a thing of the past.
 
 <h2>The Road Ahead</h2>
 

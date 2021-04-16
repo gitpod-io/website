@@ -66,7 +66,7 @@ To also serve users beyond just GitHub, we have been focussing on integrating Gi
 
 <h2>Closer to Home: Gitpod Self-Hosted</h2>
 
-Chances are that you host your Git repositories or other dev infrastructure in a private cloud, or on a local network where they can't be accessed from the outside. Thus, a hosted IDE service must be on the same private cloud or network. This is possible with [Gitpod Self-Hosted](/self-hosted/) which can be installed on Kubernetes and does not require a connection to the public internet.
+Chances are that you host your Git repositories or other dev infrastructure in a private cloud, or on a local network where they can't be accessed from the outside. Thus, a hosted IDE service must be on the same private cloud or network. This is possible with [Gitpod Self-Hosted](/self-hosted) which can be installed on Kubernetes and does not require a connection to the public internet.
 
 Today we are releasing a new version which brings Gitpod Self-Hosted on par with Gitpod.io. The new release includes better GitLab integration and a new admin UI. With Gitpod Self-Hosted you can now enjoy this liberating way of developing software with your own GitLab installation.
 

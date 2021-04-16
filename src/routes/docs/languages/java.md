@@ -137,7 +137,7 @@ Gitpod comes equipped with the following VS Code extensions:
 - [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
 - [Java Dependency Viewer](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency)
 
-You can [install additional extensions](/docs/vscode-extensions/) for your project if you want.
+You can [install additional extensions](/docs/vscode-extensions) for your project if you want.
 
 Most of the information you find in the [Java for VS Code](https://code.visualstudio.com/docs/languages/java) documentation applies to Gitpod as well.
 
@@ -178,7 +178,7 @@ You are now ready to push your code to GitHub.
 
 ### Enable prebuilds for a faster startup
 
-The first time you start a Vaadin application, it downloads both Maven and npm dependencies, which can take some time. You can speed up the GitPod startup by enabling [prebuild](https://www.gitpod.io/docs/prebuilds/) for the repository.
+The first time you start a Vaadin application, it downloads both Maven and npm dependencies, which can take some time. You can speed up the GitPod startup by enabling [prebuild](https://www.gitpod.io/docs/prebuilds) for the repository.
 
 Update your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) file with the following content:
 

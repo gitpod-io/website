@@ -39,7 +39,7 @@ A workspace comprises your whole development environment and gives you similar c
 
 <h3>🏗 Dev-environments-as-code</h3>
 
-Spinning up dev environments is easily repeatable and reproducible, because Gitpod applies lessons learned from infrastructure-as-code allowing you to **automate, version-control and share dev environments across your team**. We call this [dev-environments-as-code](https://www.gitpod.io/blog/dev-env-as-code/).
+Spinning up dev environments is easily repeatable and reproducible, because Gitpod applies lessons learned from infrastructure-as-code allowing you to **automate, version-control and share dev environments across your team**. We call this [dev-environments-as-code](https://www.gitpod.io/blog/dev-env-as-code).
 
 To reap the resulting automation benefits you provide a then versioned configuration file `.gitpod.yml` in the root of your git repository. The `.gitpod.yml` contains everything that describes your dev environment:
 
@@ -59,7 +59,7 @@ Then, when you do create a new workspace on a branch, or Pull/Merge Request, for
 
 Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebuilt-workspaces) your dev environment can turn fully ephemeral.
 
-More on [prebuilds](https://www.gitpod.io/docs/prebuilds/).
+More on [prebuilds](https://www.gitpod.io/docs/prebuilds).
 
 <h2>Next Steps</h2>
 

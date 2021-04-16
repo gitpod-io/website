@@ -55,7 +55,7 @@ Here are a few Rust example projects that are already automated with Gitpod:
 
 The most popular Rust VSCode extensions are already pre-installed in Gitpod. But here are a few "nice to have" extensions you may choose to install as well.
 
-In order to install one of these extensions for your repository, simply head to Gitpod's [Extensions panel](/docs/vscode-extensions/) (find it in the IDE's left vertical menu), then search for the desired extension by name, and install it for your project. This will add an entry to your [.gitpod.yml](/docs/config-gitpod-file/) file that ensures all future Gitpod workspaces for your repository will already have this extension pre-installed.
+In order to install one of these extensions for your repository, simply head to Gitpod's [Extensions panel](/docs/vscode-extensions) (find it in the IDE's left vertical menu), then search for the desired extension by name, and install it for your project. This will add an entry to your [.gitpod.yml](/docs/config-gitpod-file/) file that ensures all future Gitpod workspaces for your repository will already have this extension pre-installed.
 
 ### Rust Test Explorer
 
@@ -98,7 +98,7 @@ In this section we will show you how to configure your project for debugging in 
 
 First, before we get to that we need to get some prerequisites set-up.
 
-First we'll install the needed extension. If you haven't already, head over to Gitpod's [Extensions panel](/docs/vscode-extensions/) (left vertical menu in the IDE) and search for an extension called `Native Debug` by webfreak. When you see it, click to install it for your project.
+First we'll install the needed extension. If you haven't already, head over to Gitpod's [Extensions panel](/docs/vscode-extensions) (left vertical menu in the IDE) and search for an extension called `Native Debug` by webfreak. When you see it, click to install it for your project.
 
 The next prerequisite is a Docker configuration.
 

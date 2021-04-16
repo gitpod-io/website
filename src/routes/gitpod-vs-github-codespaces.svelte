@@ -177,7 +177,7 @@
       />
       <p class="card-image-legend">
         Compared resources for 100 active hours at $9/month. Last verified 25
-        Sep 2020.<br />Sources: <a href="/pricing/"><strong>Gitpod</strong></a>,
+        Sep 2020.<br />Sources: <a href="/pricing"><strong>Gitpod</strong></a>,
         <a
           href="https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces"
           ><strong>GitHub Codespaces</strong></a
@@ -362,7 +362,7 @@
   <small
     >Disclaimer: All information, prices, and data were last verified on Sept.
     25, 2020. To report any incorrect or outdated information, please <a
-      href="/contact/">contact us.</a
+      href="/contact">contact us.</a
     ></small
   >
 </p>

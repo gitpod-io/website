@@ -12,7 +12,7 @@ A Gitpod workspace can be created from any GitLab, GitHub, or Bitbucket project,
 In Gitpod workspaces usually have a very short life. Gitpod creates one when you need it and forgets about it when you are done.
 There is no reason to go back and do any maintenance. Because everything is driven by configuration, you can always create a fresh one when you need it.
 
-- [Context URLs](/docs/context-urls/)
-- [Life of a Workspace](/docs/life-of-workspace/)
-- [Shared Workspaces](/docs/sharing-and-collaboration/)
-- [Command Line Interface](/docs/command-line-interface/)
+- [Context URLs](/docs/context-urls)
+- [Life of a Workspace](/docs/life-of-workspace)
+- [Shared Workspaces](/docs/sharing-and-collaboration)
+- [Command Line Interface](/docs/command-line-interface)

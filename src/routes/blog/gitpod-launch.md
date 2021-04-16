@@ -29,7 +29,7 @@ You can try Gitpod right now. It's free for public repositories.
 
 Not all projects are equal. We maintain a [developer friendly docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) that includes all the commonly used tools and version managers. But you can point to your own docker image in a **.gitpod.yml** file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod/) for more details.
 
-With Gitpod, contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the **.gitpod.yml** is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code/).
+With Gitpod, contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the **.gitpod.yml** is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code).
 
 To optimize the experience, the **.gitpod.yml** accepts [further configuration](/docs/configuration/), where you can automatically start builds, watchers and dev servers in multiple terminals. You can configure how they appear in the IDE layout and hook up all your web ports and previews.
 
@@ -79,7 +79,7 @@ In addition to one of the best code editors, Gitpod environments provide full fe
 
 Gitpod comes with two major features supporting collaboration.
 
-- [Sharing running dev environments](/docs/sharing-and-collaboration/) with other users comes in handy if you want to look at code with a colleague to hunt down a bug together or do some pair programming. Collaborators will see the same code you see and even the terminals are synced and shared.
+- [Sharing running dev environments](/docs/sharing-and-collaboration) with other users comes in handy if you want to look at code with a colleague to hunt down a bug together or do some pair programming. Collaborators will see the same code you see and even the terminals are synced and shared.
 
 - [Snapshots](/blog/workspace-snapshots/) are useful in many ways. In a nutshell, they allow taking an immutable copy of your dev environment at any point in time. You can share the provided link wherever you want. Users opening such a snapshot link will get an exact clone of the environment including all state and even UI layout. This feature is great for sharing reproducibles in issues, but also good for blog posts or solutions on Stack Overflow.
 

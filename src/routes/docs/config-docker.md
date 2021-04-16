@@ -25,7 +25,7 @@ There are two ways to configure a custom Docker image in your `.gitpod.yml` file
     file: .gitpod.Dockerfile
   ```
 
-  Once committed and pushed, Gitpod will automatically build this Dockerfile when (or <a href="/docs/prebuilds/" target="_blank">before</a>) new workspaces are created.
+  Once committed and pushed, Gitpod will automatically build this Dockerfile when (or <a href="/docs/prebuilds" target="_blank">before</a>) new workspaces are created.
 
 ## Using a Dockerfile
 

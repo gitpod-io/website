@@ -31,7 +31,7 @@ You can switch between Python versions using `pyenv local <VERSION>`. For exampl
 
 ## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
 
-You can start building your project when, or even [before](https://www.gitpod.io/docs/prebuilds/) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
+You can start building your project when, or even [before](https://www.gitpod.io/docs/prebuilds) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
 
 ```yaml
 tasks:

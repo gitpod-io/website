@@ -67,6 +67,6 @@ In order to make live reload work we need to add a bit of configuration as speci
 
 Svelte for VS Code Provides syntax highlighting and rich intellisense for Svelte components in VS Code, utilising the [svelte language server](https://github.com/sveltejs/language-tools/tree/master/packages/language-server).
 
-To add this extension to your repository, simply head to Gitpod’s [Extensions panel](https://www.gitpod.io/docs/vscode-extensions/) (find it in the IDE’s left vertical menu), then search for the desired extension by name, and install it for your project. This will add an entry to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file that ensures all future Gitpod workspaces for your repository will already have this extension pre-installed.
+To add this extension to your repository, simply head to Gitpod’s [Extensions panel](https://www.gitpod.io/docs/vscode-extensions) (find it in the IDE’s left vertical menu), then search for the desired extension by name, and install it for your project. This will add an entry to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file that ensures all future Gitpod workspaces for your repository will already have this extension pre-installed.
 
 https://github.com/gitpod-io/sveltejs-template repo is a working example of the config described above <span aria-hidden="true">👆</span>.

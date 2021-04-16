@@ -12,6 +12,6 @@ To start a workspace from a Bitbucket project, prefix the Bitbucket URL with `gi
 
 ## Enabling Prebuilds
 
-To enable [prebuilt workspaces](/docs/prebuilds/) for your Bitbucket project you need to grant `install webhooks` in Gitpod's [Access Control](https://gitpod.io/access-control/) page. This allows Gitpod to install a webhook. The webhook creates a new prebuild for every push event.
+To enable [prebuilt workspaces](/docs/prebuilds) for your Bitbucket project you need to grant `install webhooks` in Gitpod's [Access Control](https://gitpod.io/access-control/) page. This allows Gitpod to install a webhook. The webhook creates a new prebuild for every push event.
 
 The webhook will be automatically installed when you trigger the first prebuild manually. For this, prefix your Bitbucket project URL with `gitpod.io/#prebuild/` as described in the [prebuilds page](/docs/prebuilds/#on-gitlab-and-bitbucket).

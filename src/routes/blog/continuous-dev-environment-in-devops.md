@@ -83,6 +83,6 @@ While [Gitpod](/) lets you have user-specific settings, we see an opportunity in
 
 I'm pretty sure, automated ready-to-code dev environments will become mainstream. The advantages and implications are just too good to be ignored. Everyone who has understood and experienced the benefits of a proper DevOps toolchain should understand how providing dev environments on-demand completes that experience. Ironing out that last area of non-reproducible and very annoying yak-shaving should be high on our todo list as it will improve developer productivity drastically.
 
-Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing/), through the Saas offering (Gitpod.io). [Gitpod Enterprise](/pricing/#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.
+Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing), through the Saas offering (Gitpod.io). [Gitpod Enterprise](/pricing/#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.
 
 [Comments?](https://dev.to/svenefftinge/continuous-dev-environments-the-next-step-in-devops-4ab7)

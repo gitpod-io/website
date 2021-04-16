@@ -121,7 +121,7 @@
         finish.
       </p>
       <p>
-        <a href="/docs/prebuilds/" class="btn-primary">More about Prebuilds</a>
+        <a href="/docs/prebuilds" class="btn-primary">More about Prebuilds</a>
       </p>
     </div>
     <div class="lg:w-1/2 w-full mb-16">
@@ -141,7 +141,7 @@
         end of all works-on-my-machine situations.
       </p>
       <p>
-        <a href="/blog/dev-env-as-code/" class="btn-secondary">
+        <a href="/blog/dev-env-as-code" class="btn-secondary">
           More about Dev-Environments-as-Code</a
         >
       </p>
@@ -167,7 +167,7 @@
       simply take Snapshot.
     </p>
 
-    <a href="/docs/sharing-and-collaboration/"> More about collaboration. </a>
+    <a href="/docs/sharing-and-collaboration"> More about collaboration. </a>
   </div>
   <div class="card">
     <div class="h-72 pb-6">
@@ -206,7 +206,7 @@
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
-    <a href="/docs/vscode-extensions/">More about customization.</a>
+    <a href="/docs/vscode-extensions">More about customization.</a>
   </div>
   <div class="card">
     <!-- svelte-ignore a11y-missing-attribute -->
@@ -221,7 +221,7 @@
       Start your workflow from the Git hosting platform of your choice and let
       Gitpod beam you in a ready-to-code dev environment.
     </p>
-    <a href="/docs/integrations/">More about integrations.</a>
+    <a href="/docs/integrations">More about integrations.</a>
   </div>
   <div class="card">
     <!-- svelte-ignore a11y-missing-attribute -->
