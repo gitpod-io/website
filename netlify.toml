@@ -4,6 +4,11 @@
   functions = "lambda"
 
 [[redirects]]
+  from = "/chat"
+  to = "https://discord.gg/ZZ8wxgHtc6"
+  status = 301
+  
+[[redirects]]
   from = "/changelog"
   to = "/docs/changelog"
   status = 301
