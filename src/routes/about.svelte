@@ -218,7 +218,7 @@
     >
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Development-Process-2b105f72847440ec8f4a1d87ac25801b"
+      href="https://www.notion.so/gitpod/Development-Process-080f1e439e0440f9b063a000ee213692"
       target="_blank"
       ><span class="icon">🔨</span> <span class="arrow">↗︎</span> How we develop</a
     >
