@@ -15,7 +15,7 @@ At the Gitpod Community day you'll learn about the north stars that are guiding 
 
 After the talks, the conference is largely unstructured as it is about spending time with each other. Sven, Christian and other members of Gitpod will be available all day to spend time with you.
 
-Last week we announced a [$13m funding round](/blog/next-chapter-for-gitpod) led by General Catalyst to accelerate our roadmap and continue to build out a fully distributed world-class team to define a new product category in modern software development and move software development to the cloud. [We are hiring](/www.gitpod.io/careers) ([internationally + remote](https://ghuntley.com/a-new-chapter)) and this the perfect opportunity to ask any questions you may have about life at Gitpod.
+Last week we announced a [$13m funding round](/blog/next-chapter-for-gitpod) led by General Catalyst to accelerate our roadmap and continue to build out a fully distributed world-class team to define a new product category in modern software development and move software development to the cloud. [We are hiring](/careers) ([internationally + remote](https://ghuntley.com/a-new-chapter)) and this the perfect opportunity to ask any questions you may have about life at Gitpod.
 
 The Gitpod [discord channel](/chat) is where the event will be taking place. Make sure you have your microphone + camera set up and ready as there will be many video breakout opportunities.
 
