@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Introduction to Gitpod
 
 [Gitpod](https://www.gitpod.io) is an open source platform for automated and **ready-to-code development environments** that blends into your existing workflow. It enables developers to describe their dev environment as code and **start instant and fresh development environments for each new task** directly from your browser.
@@ -57,7 +61,7 @@ Gitpod continuously builds _all_ your git branches like a CI server. Whenever yo
 
 Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time and your code will be already compiled.
 
-Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebuilt-workspaces) your dev environment can turn fully ephemeral.
+Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds#enable-prebuilt-workspaces) your dev environment can turn fully ephemeral.
 
 More on [prebuilds](https://www.gitpod.io/docs/prebuilds).
 

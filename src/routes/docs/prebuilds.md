@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: configuration
----
+
+## section: configuration
 
 # Prebuilds
 
@@ -69,9 +73,9 @@ There are three parts to configuring prebuilds:
 2. when a prebuild should be triggered, and
 3. how you will be notified by the Gitpod GitHub app (GitHub only)
 
-All three parts are configured in your repository's [`.gitpod.yml` file](/docs/config-gitpod-file/).
+All three parts are configured in your repository's [`.gitpod.yml` file](/docs/config-gitpod-file).
 
-What init tasks should be executed during the prebuild is configured using [start tasks](/docs/config-start-tasks/).
+What init tasks should be executed during the prebuild is configured using [start tasks](/docs/config-start-tasks).
 It is similar to non-prebuilt workspace starts, except that the `command` phase is not executed during the prebuild (because it can potentially run forever, e.g. if you start a server). There is also a `prebuild` phase that you can use to execute additional long-running tasks during prebuilds, e.g. unit tests.
 
 ## Configure the GitHub app

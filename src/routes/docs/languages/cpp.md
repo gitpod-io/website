@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: languages-and-frameworks
----
+
+## section: languages-and-frameworks
 
 # C++ in Gitpod
 

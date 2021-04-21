@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: subscriptions
----
+
+## section: subscriptions
 
 # Create a Team
 

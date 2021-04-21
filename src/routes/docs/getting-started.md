@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: getting-started
----
+
+## section: getting-started
 
 # Getting Started
 
@@ -39,7 +43,7 @@ GitLab comes with a native Gitpod which is enabled by default for GitLab.com. To
 
 ## Example Project
 
-Many example projects already have a working Gitpod configuration. We've listed a few of them in [Example Projects](/docs/examples/) so that you can inspect their configurations and try them out in Gitpod.
+Many example projects already have a working Gitpod configuration. We've listed a few of them in [Example Projects](/docs/examples) so that you can inspect their configurations and try them out in Gitpod.
 
 For instance, you could try opening [Vuepress](https://gitpod.io/#https://github.com/vuejs/vuepress) or a [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) example.
 

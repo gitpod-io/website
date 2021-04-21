@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: configuration
----
+
+## section: configuration
 
 # Docker Configuration
 
@@ -59,7 +63,7 @@ RUN sudo apt-get update \
 ENV ...
 ```
 
-See also [Gero's blog post](/blog/docker-in-gitpod/) running through an example.
+See also [Gero's blog post](/blog/docker-in-gitpod) running through an example.
 
 ## Trying out changes to your Dockerfile
 

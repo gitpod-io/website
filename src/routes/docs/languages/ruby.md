@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: languages-and-frameworks
----
+
+## section: languages-and-frameworks
 
 # Ruby in Gitpod
 
@@ -10,7 +14,7 @@ It's relatively easy to set up your Ruby project in Gitpod.
 
 As of this writing, Gitpod comes with Ruby 2.6.6 pre-installed.
 
-To use a different Ruby version (for example, 2.5.1) you can create a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) for your project, and then add something like the second paragraph to it:
+To use a different Ruby version (for example, 2.5.1) you can create a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) for your project, and then add something like the second paragraph to it:
 
 ```Dockerfile
 FROM gitpod/workspace-full
@@ -47,7 +51,7 @@ Here are a few useful extensions that you'll likely want to install in your Ruby
 
 With the Ruby test explorer, you can run unit tests from within the Gitpod UI.
 ![Ruby test explorer example](.../../../static/images/docs/ruby_test_ui.png)
-To add this extension to your repository, simply add these lines to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) configuration file:
+To add this extension to your repository, simply add these lines to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) configuration file:
 
 ```YAML
 vscode:

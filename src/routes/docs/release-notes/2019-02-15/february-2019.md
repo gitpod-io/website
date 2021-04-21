@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 # February Release 2019 🎉
 
 We are close to leaving the beta phase and with that are also approaching a more regular release schedule.
@@ -68,7 +72,7 @@ ports:
     onOpen: open-preview
 ```
 
-Check out [the docs](https://www.gitpod.io/docs/config-start-tasks/) to learn more about pre-configuring things in Gitpod.
+Check out [the docs](https://www.gitpod.io/docs/config-start-tasks) to learn more about pre-configuring things in Gitpod.
 
 ## YAML Support
 

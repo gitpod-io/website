@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: configuration
----
+
+## section: configuration
 
 # Configure Your Project
 
@@ -22,13 +26,13 @@ Gitpod configuration is versioned in the root of your git repository. Versioning
 
 The `.gitpod.yml` contains everything that describes your dev environment as code. Most importantly it contains a list of commands that should be executed when a dev environment is [prebuilt](/docs/prebuilds) and when it is started.
 
-You can find more information about [startup tasks here](/docs/config-start-tasks/).
+You can find more information about [startup tasks here](/docs/config-start-tasks).
 
 ### Step 2: Change Base Image
 
 The `.gitpod.yml` optionally references a Docker image or a Docker file, which is used as the container for your dev environment. This is where you install all the tools (such as runtimes, compilers, databases, etc.) that you need during development. The assistant can propose a couple of default Docker images which are based on the Dockerfiles maintained [here](https://github.com/gitpod-io/workspace-images). You can, of course, bring your own image.
 
-You can find more information about [Docker configuration here](/docs/config-docker/).
+You can find more information about [Docker configuration here](/docs/config-docker).
 
 ### Step 3: Update Readme
 

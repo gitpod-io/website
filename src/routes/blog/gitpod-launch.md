@@ -21,13 +21,13 @@ Here's how Gitpod works: You are on GitHub and want to start working on a projec
 
 ![Gitpod button added by Gitpod browser extension](../../../static/images/blog/gitpod-launch/browser-ext.png)
 
-Don’t see the button on GitHub yet? You need to [install a small browser extension](/docs/browser-extension/) to get it. Alternatively, you can just prefix any GitHub URL with “[gitpod.io/#](https://gitpod.io/#)”.
+Don’t see the button on GitHub yet? You need to [install a small browser extension](/docs/browser-extension) to get it. Alternatively, you can just prefix any GitHub URL with “[gitpod.io/#](https://gitpod.io/#)”.
 
 You can try Gitpod right now. It's free for public repositories.
 
 ## No Setup
 
-Not all projects are equal. We maintain a [developer friendly docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) that includes all the commonly used tools and version managers. But you can point to your own docker image in a **.gitpod.yml** file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod/) for more details.
+Not all projects are equal. We maintain a [developer friendly docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) that includes all the commonly used tools and version managers. But you can point to your own docker image in a **.gitpod.yml** file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod) for more details.
 
 With Gitpod, contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the **.gitpod.yml** is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code).
 

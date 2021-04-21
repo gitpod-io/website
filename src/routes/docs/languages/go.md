@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: languages-and-frameworks
----
+
+## section: languages-and-frameworks
 
 # Go in Gitpod
 
@@ -34,7 +38,7 @@ Here are a few Go example projects that are already automated with Gitpod:
 
 </div>
 
-To install Go Test Explorer for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/)
+To install Go Test Explorer for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file)
 
 ```YAML
 vscode:
@@ -42,7 +46,7 @@ vscode:
     - premparihar.gotestexplorer@0.1.10:jvUM8akrQ67vQxfjaxCgCg==
 ```
 
-### **[Start-up tasks](https://www.gitpod.io/docs/config-start-tasks/)**
+### **[Start-up tasks](https://www.gitpod.io/docs/config-start-tasks)**
 
 Here is how to have your dependencies automatically fetched before you open your Gitpod workspace!
 
@@ -51,7 +55,7 @@ tasks:
   - init: go get -v -t -d ./...
 ```
 
-A full example of a [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file might look like this
+A full example of a [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) file might look like this
 
 ```yaml
 image: gitpod/workspace-full
@@ -66,7 +70,7 @@ vscode:
 
 ### Using the `dep` dependency manager in Gitpod
 
-If your project uses the [`dep`](https://golang.github.io/dep/) dependency manager then you need to add a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) to your project. A basic example that extends the default workspace image might be something like:
+If your project uses the [`dep`](https://golang.github.io/dep/) dependency manager then you need to add a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) to your project. A basic example that extends the default workspace image might be something like:
 
 ```Dockerfile
 FROM gitpod/workspace-full

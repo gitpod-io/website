@@ -137,7 +137,7 @@ curl -XPOST [http://localhost:8000/people](http://localhost:8000/people) -H "Con
 
 ## Try it yourself
 
-You can either create a PR on[ gitpod-io/definitely-gp](https://github.com/gitpod-io/definitely-gp) — or dive right in and create the [.gitpod.yml in your repositories](/docs/config-gitpod-file/#checked-in-gitpod-config-file)! For details on how this works and what is possible please head over to [the docs](/docs/config-gitpod-file/).
+You can either create a PR on[ gitpod-io/definitely-gp](https://github.com/gitpod-io/definitely-gp) — or dive right in and create the [.gitpod.yml in your repositories](/docs/config-gitpod-file/#checked-in-gitpod-config-file)! For details on how this works and what is possible please head over to [the docs](/docs/config-gitpod-file).
 
 ¹ It is not required to inherit from that image at all. You can even start with a plain alpine or debian based image. I used it here for convenience.
 

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 # April 2019
 
 Today we are happy to announce that we are moving out of beta.

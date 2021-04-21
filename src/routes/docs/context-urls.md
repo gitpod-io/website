@@ -1,6 +1,10 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 ---
-section: workspaces
----
+
+## section: workspaces
 
 # Context URLs
 
@@ -97,5 +101,5 @@ gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/blob/master/src/main/jav
 
 ## See Also
 
-- [Passing environment variables via the context URL](/docs/environment-variables/#passing-in-environment-variables)
-- [Triggering a prebuild using a special context URL](/docs/prebuilds/#manual-execution-of-prebuild)
+- [Passing environment variables via the context URL](/docs/environment-variables#passing-in-environment-variables)
+- [Triggering a prebuild using a special context URL](/docs/prebuilds#manual-execution-of-prebuild)
