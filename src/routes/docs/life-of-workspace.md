@@ -1,5 +1,6 @@
 ---
 section: workspaces
+title: Life of a Workspace
 ---
 
 # Life of a Workspace

@@ -1,5 +1,6 @@
 ---
 section: integrations
+title: Integrations
 ---
 
 # Integrations

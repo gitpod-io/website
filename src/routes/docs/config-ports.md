@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Exposing Ports
 ---
 
 # Exposing Ports

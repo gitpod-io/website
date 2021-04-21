@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Editor Configuration
 ---
 
 # Editor Configuration

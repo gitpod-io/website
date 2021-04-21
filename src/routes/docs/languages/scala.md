@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Scala in Gitpod
 ---
 
 # Scala in Gitpod

@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Rust in Gitpod
 ---
 
 # Rust in Gitpod

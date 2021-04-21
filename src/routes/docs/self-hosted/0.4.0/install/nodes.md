@@ -1,5 +1,6 @@
 ---
 section: self-hosted/0.4.0/self-hosted
+title: Kubernetes Nodes
 ---
 
 # Kubernetes Nodes

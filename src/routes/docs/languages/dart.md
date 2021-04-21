@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Dart in Gitpod
 ---
 
 # Dart in Gitpod

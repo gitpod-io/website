@@ -1,5 +1,6 @@
 ---
 section: workspaces
+title: Workspaces
 ---
 
 # Workspaces

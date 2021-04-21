@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Configure Your Project
 ---
 
 # Configure Your Project

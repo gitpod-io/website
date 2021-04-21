@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: R in Gitpod
 ---
 
 # R in Gitpod

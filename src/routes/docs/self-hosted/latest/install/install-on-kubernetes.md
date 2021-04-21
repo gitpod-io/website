@@ -1,5 +1,6 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Install Gitpod Self-Hosted on Kubernetes
 ---
 
 # Install Gitpod Self-Hosted on Kubernetes

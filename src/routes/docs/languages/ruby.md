@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Ruby in Gitpod
 ---
 
 # Ruby in Gitpod

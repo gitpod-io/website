@@ -1,5 +1,6 @@
 ---
 section: workspaces
+title: Collaboration & Sharing of Workspaces
 ---
 
 # Collaboration & Sharing of Workspaces

@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Checkout and Workspace Location
 ---
 
 # Checkout and Workspace Location

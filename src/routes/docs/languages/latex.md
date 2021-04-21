@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: LaTeX in Gitpod
 ---
 
 # LaTeX in Gitpod

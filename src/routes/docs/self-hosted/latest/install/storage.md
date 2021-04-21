@@ -1,5 +1,6 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Workspace Storage
 ---
 
 # Workspace Storage

@@ -1,5 +1,6 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Getting started with Gitpod on GCP
 ---
 
 > Since the `0.6.0` release (December 2019) the installers are broken. We're working on bringing those back with one of the next releases.

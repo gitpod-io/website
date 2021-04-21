@@ -1,5 +1,6 @@
 ---
 section: self-hosted/0.3.0/self-hosted
+title: Manually Install Gitpod on Google Cloud Platform
 ---
 
 # Manually Install Gitpod on Google Cloud Platform

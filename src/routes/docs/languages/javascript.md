@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: JavaScript in Gitpod
 ---
 
 # JavaScript in Gitpod

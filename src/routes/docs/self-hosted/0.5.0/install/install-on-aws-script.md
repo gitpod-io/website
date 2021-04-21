@@ -1,5 +1,6 @@
 ---
 section: self-hosted/0.5.0/self-hosted
+title: Getting started with Gitpod on AWS
 ---
 
 # Getting started with Gitpod on AWS

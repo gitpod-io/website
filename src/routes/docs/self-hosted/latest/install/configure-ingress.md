@@ -1,5 +1,6 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Configure Ingress to your Gitpod installation
 ---
 
 # Configure Ingress to your Gitpod installation

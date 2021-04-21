@@ -1,5 +1,6 @@
 ---
 section: feature-preview
+title: Feature Preview
 ---
 
 # Feature Preview

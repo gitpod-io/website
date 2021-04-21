@@ -1,5 +1,6 @@
 ---
 section: subscriptions
+title: Subscriptions
 ---
 
 # Subscriptions

@@ -1,5 +1,6 @@
 ---
 section: subscriptions
+title: Create a Team
 ---
 
 # Create a Team

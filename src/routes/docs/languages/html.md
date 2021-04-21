@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: HTML & CSS in Gitpod
 ---
 
 # HTML & CSS in Gitpod

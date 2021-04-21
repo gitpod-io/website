@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: C++ in Gitpod
 ---
 
 # C++ in Gitpod

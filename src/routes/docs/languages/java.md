@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Java in Gitpod
 ---
 
 # Java in Gitpod

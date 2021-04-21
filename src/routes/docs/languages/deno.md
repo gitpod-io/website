@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Deno in Gitpod
 ---
 
 # Deno in Gitpod

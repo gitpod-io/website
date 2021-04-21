@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Go in Gitpod
 ---
 
 # Go in Gitpod

@@ -1,5 +1,6 @@
 ---
 section: integrations
+title: GitHub Integration
 ---
 
 # GitHub Integration

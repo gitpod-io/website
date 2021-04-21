@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: VS Code Extensions
 ---
 
 # VS Code Extensions

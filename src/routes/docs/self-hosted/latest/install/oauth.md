@@ -1,5 +1,6 @@
 ---
 section: self-hosted/latest/self-hosted
+title: How To integrate Gitpod with OAuth providers
 ---
 
 # How To integrate Gitpod with OAuth providers

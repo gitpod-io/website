@@ -1,5 +1,6 @@
 ---
 section: changelog
+title: Changelog
 ---
 
 # Changelog

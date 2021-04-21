@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Vue.js in Gitpod
 ---
 
 # Vue.js in Gitpod

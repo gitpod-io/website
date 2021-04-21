@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: .NET in Gitpod
 ---
 
 # .NET in Gitpod

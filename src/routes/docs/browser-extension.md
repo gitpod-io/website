@@ -1,5 +1,6 @@
 ---
 section: integrations
+title: Browser Extension
 ---
 
 # Browser Extension
