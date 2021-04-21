@@ -13,6 +13,7 @@
     "watch:css:styles": "postcss src/assets/styles.scss -o static/styles.css -w",
     "watch:dev": "svelte-kit dev",
     "clean": "run-p clean:*",
+    "clean:build": "rm -fr ./build",
     "clean:css": "rm -f static/global.css && rm -f static/styles.css",
     "clean:dev": "rm -fr ./.svelte",
     "dev": "npm run clean && run-p watch:*",
