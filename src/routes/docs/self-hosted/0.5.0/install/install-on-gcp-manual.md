@@ -1,10 +1,10 @@
+---
+section: self-hosted/0.5.0/self-hosted
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: self-hosted/0.5.0/self-hosted
 
 # Manually Install Gitpod on Google Cloud Platform
 

@@ -1,10 +1,10 @@
+---
+section: languages-and-frameworks
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: languages-and-frameworks
 
 # Dart in Gitpod
 

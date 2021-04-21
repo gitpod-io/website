@@ -1,10 +1,10 @@
+---
+section: workspaces
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: workspaces
 
 # Collaboration & Sharing of Workspaces
 

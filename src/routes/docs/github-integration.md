@@ -1,10 +1,10 @@
+---
+section: integrations
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: integrations
 
 # GitHub Integration
 

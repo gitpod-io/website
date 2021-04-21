@@ -1,10 +1,10 @@
+---
+section: getting-started
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: getting-started
 
 # Getting Started
 

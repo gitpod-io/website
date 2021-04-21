@@ -1,10 +1,10 @@
+---
+section: self-hosted/latest/self-hosted
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: self-hosted/latest/self-hosted
 
 > Since the `0.6.0` release (December 2019) the installers are broken. We're working on bringing those back with one of the next releases.
 

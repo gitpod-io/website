@@ -1,10 +1,10 @@
+---
+section: self-hosted/latest/self-hosted
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: self-hosted/latest/self-hosted
 
 # Docker Registry
 

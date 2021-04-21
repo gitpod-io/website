@@ -1,10 +1,10 @@
+---
+section: changelog
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: changelog
 
 # Changelog
 

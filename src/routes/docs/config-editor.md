@@ -1,10 +1,10 @@
+---
+section: configuration
+---
+
 <script context="module">
   export const prerender = true;
 </script>
-
----
-
-## section: configuration
 
 # Editor Configuration
 
