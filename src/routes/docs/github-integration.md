@@ -8,7 +8,7 @@ Gitpod comes with a [GitHub](https://github.com/) integration that allows you to
 
 ## Starting Workspaces
 
-To start a workspace from a GitHub project, prefix the GitHub URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started/).
+To start a workspace from a GitHub project, prefix the GitHub URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started).
 
 ## Enabling Prebuilds
 

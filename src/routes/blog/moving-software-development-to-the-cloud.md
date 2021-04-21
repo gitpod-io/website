@@ -55,4 +55,4 @@ Ephemeral dev environments are going to democratize software development. Allowi
 
 We will continue to focus on automating the provisioning of dev environments that blend in with your existing workflow, integrate into your existing infrastructure and run on any cloud or your own clusters. [We do all of this in the open](https://github.com/gitpod-io/gitpod) and invite everyone to join us in building an open platform for secure, collaborative and always-ready-to-code development environments for all developers.
 
-If you want to learn more you can start with our [Introduction to Gitpod](http://www.gitpod.io/docs/).
+If you want to learn more you can start with our [Introduction to Gitpod](http://www.gitpod.io/docs).

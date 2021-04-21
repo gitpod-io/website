@@ -6,7 +6,7 @@ section: getting-started
 
 [Gitpod](https://www.gitpod.io) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow.
 
-> For an overview of Gitpod you should first read [Introduction to Gitpod](/docs/).
+> For an overview of Gitpod you should first read [Introduction to Gitpod](/docs).
 
 You can start using Gitpod with one or more of the following ways:
 
@@ -23,19 +23,19 @@ You can quickly open a new workspace for your project using a context URL like r
 
 For example, try opening [https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic](https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic) or [https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2](https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2).
 
-[Learn more &rarr;](/docs/context-urls/)
+[Learn more &rarr;](/docs/context-urls)
 
 ## Browser Extension
 
 For convenience, we've made a browser extension that works with Google Chrome, Mozilla Firefox, and Safari. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily open a new workspace for any existing project.
 
-[Learn more &rarr;](/docs/browser-extension/)
+[Learn more &rarr;](/docs/browser-extension)
 
 ## GitLab Integration
 
 GitLab comes with a native Gitpod which is enabled by default for GitLab.com. To use the GitLab integration, you need to enable it from your [user preferences](https://gitlab.com/-/profile/preferences) at GitLab. Then you can choose to open a Gitpod workspace as an alternative to the GitLab Web IDE directly from GitLab for any existing project.
 
-[Learn more &rarr;](/docs/gitlab-integration/)
+[Learn more &rarr;](/docs/gitlab-integration)
 
 ## Example Project
 
@@ -59,4 +59,4 @@ See for yourself and try opening some of our favorite OSS projects out there:
 
 With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
 
-🛠 [Gitpodify your first project!](https://www.gitpod.io/docs/configuration/)
+🛠 [Gitpodify your first project!](https://www.gitpod.io/docs/configuration)

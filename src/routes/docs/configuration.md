@@ -38,7 +38,7 @@ In case you want to tell your team or community about the automated dev environm
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
 ```
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](/docs/configuration/)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](/docs/configuration)
 
 Alternatively you can use a button and put it into your documentation:
 
@@ -46,7 +46,7 @@ Alternatively you can use a button and put it into your documentation:
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
 ```
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](/docs/configuration/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](/docs/configuration)
 
 ### Step 4: Test Drive Setup
 

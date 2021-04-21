@@ -31,7 +31,7 @@ A workspace comprises your whole development environment and gives you similar c
 
 - Your source code
 - A shell with [root / sudo capabilities](https://www.gitpod.io/blog/root-docker-and-vscode/#root-access)
-- Your IDE of choice\* - currently this is [VS Code](https://www.gitpod.io/blog/root-docker-and-vscode/#vs-code) or [Theia](https://theia-ide.org/)
+- Your IDE of choice\* - currently this is [VS Code](https://www.gitpod.io/blog/root-docker-and-vscode/#vs-code) or [Theia](https://theia-ide.org)
 - Your personal IDE extensions, themes, editor prefs
 - Full [Docker support](https://www.gitpod.io/blog/root-docker-and-vscode/#docker)
 
@@ -47,9 +47,9 @@ To reap the resulting automation benefits you provide a then versioned configura
 - Commands executed before workspace startup (see [Prebuilds](#prebuilds)).
 - Commands executed on workspace startup.
 - Ports to expose on dev workspace startup.
-- and [more](https://www.gitpod.io/blog/gitpodify/).
+- and [more](https://www.gitpod.io/blog/gitpodify).
 
-Learn more about how to configure your repository [here](https://www.gitpod.io/docs/configuration/).
+Learn more about how to configure your repository [here](https://www.gitpod.io/docs/configuration).
 
 <h3 class="h4" id="#prebuilds">⚡️ Prebuilds</h3>
 
@@ -65,5 +65,5 @@ More on [prebuilds](https://www.gitpod.io/docs/prebuilds).
 
 With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
 
-- Read about [Getting started with Gitpod](/docs/getting-started/)
-- Get hands on experience by [gitpodifying your first project](https://www.gitpod.io/docs/configuration/) 🛠
+- Read about [Getting started with Gitpod](/docs/getting-started)
+- Get hands on experience by [gitpodifying your first project](https://www.gitpod.io/docs/configuration) 🛠

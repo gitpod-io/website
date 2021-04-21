@@ -28,7 +28,7 @@ Use "gp [command] --help" for more information about a command.
 
 ## Init
 
-Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration/) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
+Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
 
 ## Open
 

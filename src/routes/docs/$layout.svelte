@@ -15,7 +15,7 @@
   function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
     return {
       title,
-      path: "/docs/" + (path ? path + "/" : ""),
+      path: "/docs" + (path ? "/" + path : ""),
       subMenu,
     };
   }

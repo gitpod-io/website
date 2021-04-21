@@ -8,7 +8,7 @@ Gitpod comes with a [Bitbucket](https://bitbucket.org/) integration that allows 
 
 ## Starting Workspaces
 
-To start a workspace from a Bitbucket project, prefix the Bitbucket URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started/).
+To start a workspace from a Bitbucket project, prefix the Bitbucket URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started).
 
 ## Enabling Prebuilds
 
