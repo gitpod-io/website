@@ -9,6 +9,10 @@ title: Gitpod — Online IDE For GitHub
 url: https://medium.com/gitpod/gitpod-gitpod-online-ide-for-github-6296b907a886
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 After over one year of intensive work, we are proud to announce the public Beta of Gitpod.
 
 Gitpod is an online IDE which can be launched from any GitHub page. Simply **prefix any GitHub-URL with “*https://gitpod.io/#*”** or use our [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) that adds a button to GitHub pages.
@@ -45,7 +49,7 @@ Gitpod is built on Kubernetes and you can use any Docker image for your developm
 
 Gitpod provides your collaborators a **single-click-to-contribute** **experience**.
 
-More information on how to configure Gitpod can be found [here](https://www.gitpod.io/docs/configuration/).
+More information on how to configure Gitpod can be found [here](https://www.gitpod.io/docs/configuration).
 
 ## **Fire and Forget**
 

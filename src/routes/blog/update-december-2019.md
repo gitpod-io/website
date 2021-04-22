@@ -9,8 +9,12 @@ teaserImage: winter.jpeg
 title: Christmas Release 🎄
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Ho ho ho! Christmas came early!
-We’ve just released a bunch of exciting new features and I'm not talking about [Gitpod Enterprise](/enterprise/) which was announced last week or the [GitLab support](/blog/gitlab-support/) we've shipped the week before.
+We’ve just released a bunch of exciting new features and I'm not talking about Gitpod Enterprise which was announced last week or the [GitLab support](/blog/gitlab-support) we've shipped the week before.
 
 - <span aria-hidden="true">🔓</span>[Try with Your Private Repositories For Free](#private-project-trial)
 - <span aria-hidden="true">🛠</span>[Get Your Projects Setup with an Assistant](#setup-assistant)
@@ -23,7 +27,7 @@ We’ve just released a bunch of exciting new features and I'm not talking about
 
 Users can now try Gitpod on their private GitHub and GitLab projects for one month for free without providing payment information or automatic subscription start afterward.
 
-To get started, simply prefix your private repository’s GitHub or GitLab URL with **gitpod.io/#** and go through the OAuth flow. To fully get the hang of Gitpod, you need to configure your project accordingly. You can either [schedule a call](https://calendly.com/gitpod/onboarding) with an engineer, study the [documentation](/docs/configuration/), or use the new and shiny setup assistant.
+To get started, simply prefix your private repository’s GitHub or GitLab URL with **gitpod.io/#** and go through the OAuth flow. To fully get the hang of Gitpod, you need to configure your project accordingly. You can either [schedule a call](https://calendly.com/gitpod/onboarding) with an engineer, study the [documentation](/docs/configuration), or use the new and shiny setup assistant.
 
 ## 🛠 Setup Assistant
 

@@ -8,6 +8,10 @@ subtitle: Your devops toolchain is finally complete!
 title: GitLab Support for Gitpod is Here 🎉
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 We are happy to announce that you can finally enjoy Gitpod's frictionless ready-to-code dev environments on GitLab as well.
 
 ![gitpod loves gitlab](../../../static/images/blog/gitlab-support/teaser-gitlab-gitpod.jpg)
@@ -52,7 +56,7 @@ To get the most out of Gitpod, you need to tell it how a perfect dev environment
 
 Furthermore you can specify which tasks should run after a fresh checkout. Usually this includes build steps, downloading dependencies and running some unit tests. Read below's section on prebuilds, to make Gitpod automatically run these steps as a CI pipeline whenever someone pushes changes to your project.
 
-There is much more you can do to make sure every team member gets a ready-to-code dev environment when they need one. Please refer to the [docs](/docs/configuration/) for details.
+There is much more you can do to make sure every team member gets a ready-to-code dev environment when they need one. Please refer to the [docs](/docs/configuration) for details.
 
 ## Prebuilds
 

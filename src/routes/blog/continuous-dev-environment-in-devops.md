@@ -9,6 +9,10 @@ teaserImage: devops.jpg
 title: Continuous Dev Environments
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 [DevOps](https://en.wikipedia.org/wiki/DevOps) has been all the rage for the last couple of years. Today, something like GitHub / GitLab with Continuous Integration seems to be the absolute minimum for a decent development toolchain. Such tools allow faster feedback cycles, better reproducibility, and generally more productivity.
 
 > However, in one crucial aspect most of us are still wasting many hours every day.
@@ -43,7 +47,7 @@ It's almost 2020 and we understand that automating complex systems through code 
 
 ## Prebuilt Dev Environments - No More Waiting for Builds!
 
-Initial setups are annoying, but the real time sink is [waiting for builds](/blog/prebuilds/). Compilers, generators, downloading dependencies, and running tests all need to be executed before you can use your dev environment.
+Initial setups are annoying, but the real time sink is [waiting for builds](/blog/prebuilds). Compilers, generators, downloading dependencies, and running tests all need to be executed before you can use your dev environment.
 
 Just like CI tools that build your project after you have submitted a change, a continuous dev environment service builds your project **before** you need it. That way you can start on a clean state immediately.
 

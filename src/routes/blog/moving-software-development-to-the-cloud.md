@@ -9,9 +9,13 @@ teaserImage: teaser.jpg
 title: Moving software development to the cloud ☁️
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 As [described earlier this year](/blog/github-codespaces), Microsoft's investment into GitHub Codespaces is helping to move more into the mainstream what Gitpod has been pioneering on during the past years. This week is GitHub Universe which is why we thought it's time to share some additional context and information around the rapidly spreading idea of automated, cloud-based dev environments within the developer community. Furthermore we'd like to congratulate GitHub for joining us in moving software development to the cloud 🙌
 
-Since [we've started building Gitpod in July-2017](/blog/gitpod-online-ide/), we firmly believe that fully-automated development environments will be the standard for professional developers in 5-10 years. With a big player like Microsoft entering the market this whole space will gain additional velocity 🚀
+Since [we've started building Gitpod in July-2017](/blog/gitpod-online-ide), we firmly believe that fully-automated development environments will be the standard for professional developers in 5-10 years. With a big player like Microsoft entering the market this whole space will gain additional velocity 🚀
 
 We certainly welcome the additional push Codespaces will bring, but it is important to communicate how [Gitpod compares to Codespaces](/gitpod-vs-github-codespaces).
 

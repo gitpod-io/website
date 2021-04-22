@@ -9,6 +9,10 @@ title: Build a Webhook for Google Assistant Action
 url: https://blog.anudeepreddy.ml/build-a-webhook-for-google-assistant/
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 This post is all about how to build your webhook for your Google Assistant action and host it temporarily on Gitpod and test your code.
 
 ## Prerequisites

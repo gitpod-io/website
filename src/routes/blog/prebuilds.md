@@ -9,6 +9,10 @@ title: Waiting for code to build is like watching paint dry
 url: https://medium.com/@csweichel/a1c6b25fd601
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
 
 A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much _direct use_ scenarios; you set up a dev-environment using code which you as a developer use straight away.

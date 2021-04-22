@@ -9,6 +9,10 @@ teaserImage: teaser-brew.png
 title: Gitpod ❤️ Homebrew
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Are you tired of **apt-get**? Can't use **sudo** right now? …
 
 ## You can now '**brew install anything**' in Gitpod! 🎉

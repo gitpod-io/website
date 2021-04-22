@@ -9,6 +9,10 @@ teaserImage: teaser.jpg
 title: Next Chapter for Gitpod
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 <style>
   .redirector {
     margin-top: var(--xx-small);

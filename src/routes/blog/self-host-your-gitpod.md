@@ -9,6 +9,10 @@ teaserImage: globe.png
 title: Self-Host Your Gitpod
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Eighteen months ago we launched the public beta of Gitpod.
 That date marked the beginning of an amazing journey with plenty of feedback, fixes and improvements.
 It is exciting to see how far we have come and where that simple idea of instant, ready-to-code workspaces has taken us.

@@ -8,6 +8,10 @@ subtitle: Launch Gitpod workspace from GitLab
 title: Native GitLab Integration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 At Gitpod we want to make developers’ lives easier. Starting automated dev environments for your daily coding tasks is already very easy: Just prefix your repository URL with `gitpod.io/#` and you are ready to go. To make this even better, you can install a browser extension which adds a convenient button to any GitLab, GitHub, or Bitbucket repository that lets you launch a Gitpod workspace with one click.
 
 Recently we asked ourselves how we could streamline the integration with your daily routine even more. Today, we are super excited to share that we’ve partnered with GitLab and built a [native Gitpod integration in GitLab’s UI](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/37985).

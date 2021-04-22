@@ -9,6 +9,10 @@ teaserImage: cloud-download.png
 title: Gitpod Self-Hosted 0.4.0
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 We are excited to announce the new release of Gitpod Self-Hosted in version 0.4.0. Gitpod Self-Hosted allows everyone to set-up and run a service with the same features as gitpod.io in your cloud or corporate network.
 
 <h2>How Does it Work?</h2>

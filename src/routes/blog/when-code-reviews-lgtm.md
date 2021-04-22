@@ -10,6 +10,10 @@ title: When code reviews LGTM
 url: https://hackernoon.com/when-code-reviews-lgtm-say-goodbye-to-shallow-reviews-a4e01b84ddef
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Learn how to streamline your code review experience.
 
 Code reviews are one of the best things you can do to keep your codebase clean. They improve code quality, reduce code ownership and let you learn a lot from your teammates.

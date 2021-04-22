@@ -9,11 +9,15 @@ teaserImage: teaser.jpg
 title: Search & Install Extensions in Your Gitpod Workspace
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Until now, you installed VS Code extensions in Gitpod by drag-and-dropping `.vsix` files into your workspace. Today, we're excited to introduce a new, simpler way to install extensions: Just search the new open-source, vendor-neutral marketplace [Open VSX](https://open-vsx.org) directly from your workspace, and install extensions in one click.
 
 ## Open VSX Adoption
 
-Since [we've announced](/blog/open-vsx/) the Open VSX marketplace a few weeks ago, adoption has been extremely quick.
+Since [we've announced](/blog/open-vsx) the Open VSX marketplace a few weeks ago, adoption has been extremely quick.
 
 To seed the registry, we've initially added the most popular open-source extensions ourselves, so that early adopters could immediately find important extensions. We could double down on adding more extensions this way, but it doesn’t seem to be necessary, because today, there are already more than 200 developers publishing their own extensions to Open VSX. 🎉
 

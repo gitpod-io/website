@@ -20,7 +20,7 @@ On GitHub pull requests this is communicated through a status check.
 
 As a result, Gitpod is now the first IDE that builds your project, before you open it.
 
-Read more about this exciting feature in [the docs](https://www.gitpod.io/docs/prebuilds) and in [Chris' blog post](https://www.gitpod.io/blog/prebuilds/).
+Read more about this exciting feature in [the docs](https://www.gitpod.io/docs/prebuilds) and in [Chris' blog post](https://www.gitpod.io/blog/prebuilds).
 
 ## Better `localhost` Handling
 

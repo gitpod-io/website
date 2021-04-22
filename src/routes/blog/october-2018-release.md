@@ -9,6 +9,10 @@ title: Gitpod — October 2018 Release
 url: https://medium.com/gitpod/gitpod-october-2018-release-672c91294b40
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 It has been a month already since we went public with Gitpod.io. We want to take a moment and send out a big thank you for all the great feedback and kind words! <span aria-hidden="true">❤️</span>
 
 We are working to incorporate all your feedback continuously, adding new features, fixing bugs and improving the overall usability and performance.
