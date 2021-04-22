@@ -68,7 +68,7 @@
       M("LaTeX", "languages/latex"),
       M("R", "languages/r"),
       M("Kotlin", "languages/kotlin"),
-      M("Pandas", "languages/python/#pandas"),
+      M("Pandas", "languages/python#pandas"),
       M("Deno", "languages/deno"),
     ]),
     // M("Feature Preview", "feature-preview"),
