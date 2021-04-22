@@ -6,7 +6,7 @@
   import topicsState from "../states/topics-state";
   import subMenuState from "../states/sub-menu-state";
 
-  export let currentSection;
+  export let currentSection: any = {};
 </script>
 
 <style lang="scss">
