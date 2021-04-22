@@ -11,7 +11,20 @@ export const getSession: import("@sveltejs/kit").GetSession = async () => {
   );
   posts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
+  const changelogEntries = await Promise.all(
+    Object.entries(import.meta.glob("/src/contents/changelog/*.md")).map(
+      async ([, mod]) => {
+        const { default: content, metadata } = await mod();
+        return {
+          ...metadata,
+          content: content.render().html,
+        };
+      }
+    )
+  );
+
   return {
+    changelogEntries,
     posts,
   };
 };
