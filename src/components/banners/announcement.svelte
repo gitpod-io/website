@@ -7,13 +7,13 @@
    * For simplicity, the announcement `storageKey` is the date the announcement
    * was made, in the `yyyy-mm-dd` format.
    */
-  const announcementDate = "2021-04-08";
+  const announcementDate = "2021-04-21";
 </script>
 
 <Banner storageKey="announcement-{announcementDate}" let:closeBanner>
   <p class="relative flex-1 text-center">
-    🎁 Gitpod March 2021 Release + $13M Funding Round | <a
-      href="/blog/next-chapter-for-gitpod">Explore</a
+    📣 DevX Conf - Bring back joy and speed to our workflows. | <a
+      href="https://devxconf.org/">Explore</a
     >
   </p>
   <button on:click={closeBanner} class="absolute right-0 px-4 py-1 md:px-6"
