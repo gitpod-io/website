@@ -37,7 +37,7 @@
 </div>
 
 {#each changelogEntries as entry}
-  <div class="flex">
+  <div class="flex border-b-2 border-gray-300">
     <div class="w-4/12">
       <h2>
         {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
@@ -50,5 +50,6 @@
     <div class="w-8/12 content-docs">
       {@html entry.content}
     </div>
+    <hr />
   </div>
 {/each}
