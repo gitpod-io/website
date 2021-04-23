@@ -29,8 +29,7 @@
     "validate": "svelte-check"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.4.2",
-    "turndown": "^7.0.0"
+    "@sendgrid/mail": "^7.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
