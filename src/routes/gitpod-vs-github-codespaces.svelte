@@ -144,7 +144,8 @@
 <div class="halfimages">
   <article class="card">
     <div>
-      <img src="/images/codespace/spaces-1.svg" alt="" role="presentation" />
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <img src="/images/codespace/spaces-1.svg" role="presentation" />
       <p class="card-image-legend">
         Compared start-up time until ready-to-code for<br /><a
           href="https://github.com/gitpod-io/vscode"
@@ -167,16 +168,16 @@
 
   <article class="card">
     <div>
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/codespace/spaces-2.svg"
-        alt=""
         role="presentation"
         width="550"
         height="414"
       />
       <p class="card-image-legend">
         Compared resources for 100 active hours at $9/month. Last verified 25
-        Sep 2020.<br />Sources: <a href="/pricing/"><strong>Gitpod</strong></a>,
+        Sep 2020.<br />Sources: <a href="/pricing"><strong>Gitpod</strong></a>,
         <a
           href="https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces"
           ><strong>GitHub Codespaces</strong></a
@@ -361,7 +362,7 @@
   <small
     >Disclaimer: All information, prices, and data were last verified on Sept.
     25, 2020. To report any incorrect or outdated information, please <a
-      href="/contact/">contact us.</a
+      href="/contact">contact us.</a
     ></small
   >
 </p>
@@ -379,9 +380,9 @@
 <div class="halfimages">
   <article class="card">
     <div>
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/codespace/spaces-3.svg"
-        alt=""
         role="presentation"
         width="550"
       />

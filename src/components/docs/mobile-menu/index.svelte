@@ -16,7 +16,7 @@
             ? $docsCurrentSectionStore.replace(/\d\.\d\.\d/, "latest")
             : $docsCurrentSectionStore
         ) >= 0
-      : /\/docs\/$/.test(path)
+      : /\/docs$/.test(path)
   );
 </script>
 

@@ -198,13 +198,8 @@
   {#each features as feature}
     <div class="card">
       <div>
-        <img
-          src={feature.icon}
-          alt=""
-          role="presentation"
-          height="100"
-          width="100"
-        />
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <img src={feature.icon} role="presentation" height="100" width="100" />
         <h2>{feature.title}</h2>
         <p>{feature.description}</p>
       </div>

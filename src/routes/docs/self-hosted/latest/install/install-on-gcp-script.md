@@ -1,6 +1,11 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Getting started with Gitpod on GCP
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 > Since the `0.6.0` release (December 2019) the installers are broken. We're working on bringing those back with one of the next releases.
 
@@ -42,8 +47,8 @@ Once the installation process is complete, the script will print the URL at whic
 
 Once finished, the installer will print the URL at which your Gitpod installation can be found. There you need to connect Gitpod to at least one Git provider:
 
-- [Configure an OAuth application for GitLab](/docs/gitlab-integration/#oauth-application)
-- [Configure an OAuth application for GitHub](/docs/github-integration/#oauth-application)
+- [Configure an OAuth application for GitLab](/docs/gitlab-integration#oauth-application)
+- [Configure an OAuth application for GitHub](/docs/github-integration#oauth-application)
 
 ## 4. Configure the Browser extension
 
@@ -56,7 +61,6 @@ Examples:
 
 # Going further
 
-- Using a [custom domain](./domain/)
-- Configuring a [custom Docker registry](./docker-registry/)
-- Configuring a [storage backend](./storage/)
-- Configuring [workspace sizes](./workspaces/)
+- Configuring a [custom Docker registry](./docker-registry)
+- Configuring a [storage backend](./storage)
+- Configuring [workspace sizes](./workspaces)

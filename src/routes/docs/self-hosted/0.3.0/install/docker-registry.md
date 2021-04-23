@@ -1,11 +1,16 @@
 ---
 section: self-hosted/0.3.0/self-hosted
+title: Docker Registry
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Docker Registry
 
 Gitpod uses a Docker registry to push the workspace images it builds.
-This helm chart can either deploy its own registry (default but requires [HTTPS certs](./https-certs/)) or use an existing one.
+This helm chart can either deploy its own registry (default but requires [HTTPS certs](./https-certs)) or use an existing one.
 To connect to an existing Docker registry, do the following steps:
 
 ```

@@ -1,6 +1,11 @@
 ---
 section: subscriptions
+title: Professional Open Source
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Professional Open Source
 

@@ -1,6 +1,11 @@
 ---
 section: self-hosted/0.3.0/self-hosted
+title: Prerequisites
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Prerequisites
 
@@ -55,7 +60,7 @@ Gitpod requires [wildcard certificates](https://en.wikipedia.org/wiki/Wildcard_c
 There is a [plethora of tutorials](https://www.google.com/search?q=letsencrypt+wildcard) how to [generate wildcard certificates](https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7) using Let's Encrypt.
 Things get considerably easier when your domain is registered with a service for which a [Certbot DNS plugin exists](https://certbot.eff.org/docs/using.html#dns-plugins).
 
-See [here](./https-certs/) for more details on how the certificates are used during installation.
+See [here](./https-certs) for more details on how the certificates are used during installation.
 
 ## MySQL Database (Optional)
 

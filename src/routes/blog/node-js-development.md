@@ -8,6 +8,10 @@ title: Sustainable Node.js development with only a browser
 url: https://medium.com/gitpod/sustainable-node-js-development-with-only-a-browser-4887bc6e737b
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Nowadays, there are many collaborative platforms for showcasing JS code snippets and frameworks. Most of them run in your browser, some even manage to magically run Node.js applications in the cloud. They abstract away many possibilities in order to focus on prototyping and learning.
 
 This simplification (or even magic) eventually turns out to be a hard wall. Once we leave the prototype stage, we need to be able to control and freely combine different versions of frontend and Node.js frameworks, connect to the database that best fits our use case, use different JS flavors and deployment services.
@@ -138,7 +142,7 @@ And change the Dockerfile to use Node.js 10.x as the base image:
 
 To try it our we need to push the config back to GitHub and open a new workspace. Let’s do this through a pull request, so we learn about the GitHub integration on the way.
 
-_Here is [another snapshot link](https://gitpod.io/#snapshot/ea0d6704-a513-4c94-b8e7-fe72c3d8e5fb) to try our configuration without opening a pull request. You can learn more about workspace configuration [here](https://www.gitpod.io/docs/configuration/)._
+_Here is [another snapshot link](https://gitpod.io/#snapshot/ea0d6704-a513-4c94-b8e7-fe72c3d8e5fb) to try our configuration without opening a pull request. You can learn more about workspace configuration [here](https://www.gitpod.io/docs/configuration)._
 
 ## Working with Pull Requests
 

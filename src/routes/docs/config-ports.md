@@ -1,6 +1,11 @@
 ---
 section: configuration
+title: Exposing Ports
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Exposing Ports
 

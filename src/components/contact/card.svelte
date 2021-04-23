@@ -11,12 +11,11 @@
 </style>
 
 <div class="card text-center shadow-xl">
-  <!-- TOOD: Display the image -->
+  <!-- svelte-ignore a11y-missing-attribute -->
   <img
     src="/images/contact/{contactCard.image}"
     height={contactCard.imgHeight}
     width={contactCard.imgWidth}
-    alt=""
     role="presentation"
   />
   <h3>{contactCard.title}</h3>

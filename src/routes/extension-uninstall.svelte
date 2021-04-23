@@ -98,7 +98,8 @@
 
 <header>
   {#if extensionUrl}
-    <a href={extensionUrl} target="_blank">Reinstall Extension</a>
+    <a href={extensionUrl} rel="noopener" target="_blank">Reinstall Extension</a
+    >
   {/if}
   <h1>How Can We Improve?</h1>
 </header>

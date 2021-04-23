@@ -1,6 +1,11 @@
 ---
 section: configuration
+title: Checkout and Workspace Location
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Checkout and Workspace Location
 

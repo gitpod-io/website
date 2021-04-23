@@ -53,7 +53,7 @@ export const otherPlans = [
       "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <srong>requirements.</srong>",
     ],
     btnText: "Apply now",
-    btnHref: "/contact/",
+    btnHref: "/contact",
   },
   {
     title: "Self Hosted",
@@ -62,7 +62,7 @@ export const otherPlans = [
       "Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong> and <strong>K3s</strong>.",
     ],
     btnText: "Enquire now",
-    btnHref: "/contact/",
+    btnHref: "/contact",
   },
   {
     title: "Student",
@@ -73,6 +73,6 @@ export const otherPlans = [
       "Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.",
     ],
     btnText: "Get verified",
-    btnHref: "/contact/",
+    btnHref: "/contact",
   },
 ];

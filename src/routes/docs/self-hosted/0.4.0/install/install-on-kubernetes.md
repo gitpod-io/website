@@ -1,13 +1,18 @@
 ---
 section: self-hosted/0.4.0/self-hosted
+title: Install Gitpod Self-Hosted on Kubernetes
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Install Gitpod Self-Hosted on Kubernetes
 
 This section describes how to install Gitpod on a vanilla Kubernetes cluster.
 Gitpod also provides more optimized installations offering better performance for particular cloud providers:
 
-- _Google Cloud Platform_: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](./install-on-gcp-script/) or [manually step-by-step](./install-on-gcp-manual/).
+- _Google Cloud Platform_: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](./install-on-gcp-script) or [manually step-by-step](./install-on-gcp-manual).
 
 ## Prerequisites
 
@@ -15,7 +20,7 @@ Gitpod also provides more optimized installations offering better performance fo
 - [Domain](./domain)
 - [HTTPS Certificates](./https-certs): Optional, if you use an external docker registry.
 - `kubectl` with access to that cluster.
-- `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](./helm-2x/).
+- `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](./helm-2x).
 - Optional: A MySQL Database
 - Optional: A Docker Registry
 - Optional: Buckets Storage, e.g. Minio
@@ -36,7 +41,7 @@ For the rest of this guide we will assume that you are located in the root of a 
 
 ### Domain name and IP address
 
-Gitpod requires [domain names](./domain/) which resolve to the IP of your Kubernetes cluster.
+Gitpod requires [domain names](./domain) which resolve to the IP of your Kubernetes cluster.
 Set your domain in the `values.yaml` under `gitpod.hostname`.
 
 By default Gitpod deploys a [`LoadBalancer` service](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) as means of ingress.
@@ -48,23 +53,23 @@ Once you know your IP address, configure your three domain names to resolve to t
 
 Gitpod delegates authentication to a configurable OAuth provider.
 
-Follow [the steps](./oauth/) to set up GitHub or GitLab as OAuth provider.
+Follow [the steps](./oauth) to set up GitHub or GitLab as OAuth provider.
 
 ### HTTPS certificates or external Docker registry
 
 Gitpod builds docker images on demand and runs them in Kubernetes pods as workspaces.
 Since Kubernetes by default only pulls images from secure Docker registries,
-you will either need to have [HTTPS certificates](./https-certs/) configured if you want to use the internal docker registry,
-or use an [external docker registry](./docker-registry/).
+you will either need to have [HTTPS certificates](./https-certs) configured if you want to use the internal docker registry,
+or use an [external docker registry](./docker-registry).
 
 ## Recommended Configuration
 
 To get Gitpod running quickly, you may skip this chapter.
 For production scenarios, however, we highly recomend this configuration.
 
-- [**Docker Registry**](./docker-registry/): Use your own Docker registry instead of the built-in one.
-- [**HTTPS certificates**](./https-certs/): Configure HTTPS certificates for secure access to Gitpod.
-- [**Database**](./database/): Use your own MySQL database instead of the built-in one.
+- [**Docker Registry**](./docker-registry): Use your own Docker registry instead of the built-in one.
+- [**HTTPS certificates**](./https-certs): Configure HTTPS certificates for secure access to Gitpod.
+- [**Database**](./database): Use your own MySQL database instead of the built-in one.
 
 ## Installation
 
@@ -79,6 +84,6 @@ Launch a workpace. Launching the first workspace can take significantly longer (
 
 ## Customization
 
-- [**Storage**](./storage/): Configure where Gitpod stores stopped workspaces.
-- [**Kubernetes Nodes**](./nodes/): Configure file system layout and the workspace's node associativity.
-- [**Workspaces**](./workspaces/): Configure workspace sizing.
+- [**Storage**](./storage): Configure where Gitpod stores stopped workspaces.
+- [**Kubernetes Nodes**](./nodes): Configure file system layout and the workspace's node associativity.
+- [**Workspaces**](./workspaces): Configure workspace sizing.

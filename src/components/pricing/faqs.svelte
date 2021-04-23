@@ -27,7 +27,7 @@
       month. If you need more hours or would like to unlock more features, you
       can upgrade your subscription at any time. If you’re a professional
       open-source developer and need more hours, you can apply to our free <a
-        href="/docs/professional-open-source/">Professional Open Source plan</a
+        href="/docs/professional-open-source">Professional Open Source plan</a
       >.
     </p>
   </Faq>
@@ -37,7 +37,7 @@
     <p>
       Yes, qualified educational institutions may receive a special discount.
       Please
-      <a href="/contact/">Contact us</a>. If you are a student, you may use the
+      <a href="/contact">Contact us</a>. If you are a student, you may use the
       Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
 
       {isEurope() ? "€35" : "$39"}). See
@@ -65,7 +65,7 @@
     <p>
       In case you need more information on how to setup a team subscription,
       visit{" "}
-      <a href="/docs/teams/">gitpod.io/docs/teams.</a>
+      <a href="/docs/teams">gitpod.io/docs/teams.</a>
     </p>
   </Faq>
   <Faq title="Can I change my subscription at any time?">
@@ -90,7 +90,7 @@
   </Faq>
   <Faq title="Still have more questions?">
     <p>
-      We are happy to answer them, please <a href="/contact/">Get in Touch</a>.
+      We are happy to answer them, please <a href="/contact">Get in Touch</a>.
     </p>
   </Faq>
 </Section>

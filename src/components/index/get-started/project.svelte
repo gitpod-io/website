@@ -36,13 +36,6 @@
       }
     }
 
-    h5 {
-      color: var(--dark-grey);
-      font-size: var(--h6);
-      line-height: 120%;
-      transition: all 0.2s;
-    }
-
     &:not(:last-child) {
       margin-bottom: 0.75rem;
     }
@@ -54,10 +47,6 @@
       .project__logo {
         filter: grayscale(0) opacity(1);
         -webkit-filter: grayscale(0) opacity(1);
-      }
-
-      h5 {
-        color: var(--black);
       }
 
       .btn-tertiary {
@@ -78,10 +67,18 @@
   }
 </style>
 
-<a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">
+<a
+  href={`https://gitpod.io#${githubUrl}`}
+  target="_blank"
+  class="project group"
+>
   <div class="project__left">
     <img src={`/${logo}`} {alt} class="project__logo" width="27" height="27" />
-    <h5>{title}</h5>
+    <p
+      class="leading-5 text-h6 text-gray-800 font-semibold transition duration-200 group-focus:text-black group-hover:text-black"
+    >
+      {title}
+    </p>
   </div>
   <span class="btn-tertiary">Launch workspace</span>
 </a>

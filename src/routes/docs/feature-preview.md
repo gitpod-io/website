@@ -1,6 +1,11 @@
 ---
 section: feature-preview
+title: Feature Preview
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Feature Preview
 

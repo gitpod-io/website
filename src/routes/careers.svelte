@@ -65,9 +65,9 @@
   </p>
 </header>
 
+<!-- svelte-ignore a11y-missing-attribute -->
 <img
   src="/images/illustration-zoom.jpg"
-  alt=""
   role="presentation"
   width="1136"
   height="631"

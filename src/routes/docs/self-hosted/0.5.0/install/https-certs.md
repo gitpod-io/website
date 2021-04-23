@@ -1,6 +1,11 @@
 ---
 section: self-hosted/0.5.0/self-hosted
+title: HTTPS certificates
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # HTTPS certificates
 

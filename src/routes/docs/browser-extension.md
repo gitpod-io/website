@@ -1,6 +1,11 @@
 ---
 section: integrations
+title: Browser Extension
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Browser Extension
 

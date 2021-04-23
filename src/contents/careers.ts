@@ -425,4 +425,53 @@ export const careers: Career[] = [
     rendered: false,
     date: "2021-01-26T14:00:00.000Z",
   },
+  {
+    title: "Working Student / Intern - Finance",
+    intro: `You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week? You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week?`,
+    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously. 
+        We are a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.`,
+    lists: [
+      {
+        title: "",
+        items: [
+          "⚙️ Application Process. simply send your CV to career@gitpod.io and let's get in touch!",
+        ],
+      },
+      {
+        title: "",
+        items: ["🗓️  Starting date: asap"],
+      },
+      {
+        title: "",
+        items: [""],
+      },
+      {
+        title: "As part of the team you will ...",
+        items: [
+          "Co-own strategic initiatives. Our flat hierarchy gives you the opportunity to create real value and to realise a steep learning by delegating responsibility to you and holding you accountable for deliverables. ",
+          "Learn about the financial side of a SaaS business. The adoption of SaaS will continue to grow rapidly rendering an in-depth understanding of this business model's financial workings all the more relevant. You'll learn the ins and outs of our specific business but also the operational implications of SaaS more broadly.",
+          "Contribute to our reporting. Reporting to management and investors represents a core responsibility of our team. You will participate in our continuous efforts to uphold reporting accuracy and advance our standards.",
+          "Improve daily Gitpod operations. Become part of our team's aspiration to be an internal service provider everyone loves and apply your theoretical knowledge of finance, controlling and accounting. Add automation layers to increase operational and financial efficiency where you see leverage.",
+          "Report directly to the Head of Finance & Ops. We'll make sure you'll get an appropriate learning experience by reporting directly to Gitpod's Head of Finance & Ops.",
+        ],
+      },
+      {
+        title: "You will be a great fit if...",
+        items: [
+          "You love numbers. From day one on, you'll compile and analyse large amounts of data and should hence be well versed in algebraic mathematics and feel comfortable around obtaining, validating and processing data - whether in statistical modelling software or spreadsheets.",
+          "You have strong written and verbal communication skills. You'll have the opportunity to present your work (analyses / models / processes) to members of the leadership team and  should hence be comfortable switching back and forth between English and German. We're building Gitpod on Notion where you'll document and showcase your achievements.",
+          "You thrive on working independently and exhibit attention for detail. You'll be encouraged to prioritise your work and to follow the 'Managers of one' principle in our quest to achieving company objectives. Additionally, you'll maintain and rigorously ensure accuracy when dealing with numbers to ensure confidence in the work created.",
+          "You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate.",
+          "Curious about automating processes. A common byproduct of our analysis work is identifying potential areas for automation - whether in expense recognition, payment processing or another area. You don't need to be an automation wizard but should be excited about leveraging software / tools to achieve higher degrees of automation.",
+        ],
+      },
+      {
+        title: "We're about balance",
+        items: perks.map((perk) => perk.title),
+      },
+    ],
+    textAfterTheLists: "",
+    rendered: false,
+    date: "2021-04-21T14:00:00.000Z",
+  },
 ];

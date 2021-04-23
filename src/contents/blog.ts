@@ -126,4 +126,14 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  ghuntley: {
+    name: "Geoffrey Huntley",
+    socialProfiles: {
+      github: "ghuntley",
+      twitter: "geoffreyhuntley",
+      linkedin: "geoffreyhuntley",
+    },
+    description:
+      "After many previous adventures involving cycling through many countries on a unicycle Geoff now lives a minimalist lifestyle in a van that is slowly working its' way around Australia. On an average day™ at Gitpod you'll find him shipping features along side the engineering team, crafting code examples and authoring documentation.",
+  },
 };

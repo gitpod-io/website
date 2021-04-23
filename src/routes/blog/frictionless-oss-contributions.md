@@ -8,6 +8,10 @@ subtitle: Frictionless Open Source Contributions For Everyone
 title: Announcing contribute.dev — Open Source in One Click
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 To celebrate Open Source and Hacktoberfest, we're stoked <span aria-hidden="true">🧙✨🥰</span> to announce <a href="https://contribute.dev" target="blank">contribute.dev</a>, a list of welcoming open-source projects featuring ready-to-code Gitpod setups.
 
 ![contribute.dev projects list](https://user-images.githubusercontent.com/46004116/66307071-d695ac00-e91c-11e9-9eb1-8aa97bb6ca67.png)

@@ -1,6 +1,11 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Docker Registry
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Docker Registry
 
@@ -13,7 +18,7 @@ By default Gitpod ships with a built-in Docker registry. If you operate your own
   The docker registry requires a Kubernetes PersistentVolume. This registry is not recommended to be used for production.
 - Own docker registry: Gitpod can connect to your own docker registry. Compared to its built-in counterpart this enables performance gains and access to otherwise private images.
 
-This helm chart can either deploy its own registry (default but requires [HTTPS certs](./configures-ingress/)) or use an existing one.
+This helm chart can either deploy its own registry (default but requires [HTTPS certs](./configure-ingress)) or use an existing one.
 
 ## Configuration
 

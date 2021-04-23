@@ -8,6 +8,10 @@ excerpt: A walkthrough to create a fully working Nuxt.js web application with on
 slug: developing-nuxtjs-in-browser
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 A walkthrough to create a fully working Nuxt.js web application with only a browser, using Gitpod.io the online IDE for GitHub.
 
 Version 2.0 of [Nuxt.js has just been released](https://medium.com/@nuxt_js/nuxt-js-2-0-webpack-4-esm-modules-create-nuxt-app-and-more-6936ce80d94c). It comes with a convenient scaffolding tool that let’s you get started in no time. In the following I will explain the steps necessary to create, run and **develop a Nuxt.js application with only a browser using Gitpod.io**.

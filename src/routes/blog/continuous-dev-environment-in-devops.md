@@ -9,6 +9,10 @@ teaserImage: devops.jpg
 title: Continuous Dev Environments
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 [DevOps](https://en.wikipedia.org/wiki/DevOps) has been all the rage for the last couple of years. Today, something like GitHub / GitLab with Continuous Integration seems to be the absolute minimum for a decent development toolchain. Such tools allow faster feedback cycles, better reproducibility, and generally more productivity.
 
 > However, in one crucial aspect most of us are still wasting many hours every day.
@@ -43,7 +47,7 @@ It's almost 2020 and we understand that automating complex systems through code 
 
 ## Prebuilt Dev Environments - No More Waiting for Builds!
 
-Initial setups are annoying, but the real time sink is [waiting for builds](/blog/prebuilds/). Compilers, generators, downloading dependencies, and running tests all need to be executed before you can use your dev environment.
+Initial setups are annoying, but the real time sink is [waiting for builds](/blog/prebuilds). Compilers, generators, downloading dependencies, and running tests all need to be executed before you can use your dev environment.
 
 Just like CI tools that build your project after you have submitted a change, a continuous dev environment service builds your project **before** you need it. That way you can start on a clean state immediately.
 
@@ -83,6 +87,6 @@ While [Gitpod](/) lets you have user-specific settings, we see an opportunity in
 
 I'm pretty sure, automated ready-to-code dev environments will become mainstream. The advantages and implications are just too good to be ignored. Everyone who has understood and experienced the benefits of a proper DevOps toolchain should understand how providing dev environments on-demand completes that experience. Ironing out that last area of non-reproducible and very annoying yak-shaving should be high on our todo list as it will improve developer productivity drastically.
 
-Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing/), through the Saas offering (Gitpod.io). [Gitpod Enterprise](/pricing/#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.
+Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing), through the Saas offering (www.gitpod.io). [Gitpod Enterprise](/pricing#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.
 
 [Comments?](https://dev.to/svenefftinge/continuous-dev-environments-the-next-step-in-devops-4ab7)
