@@ -37,7 +37,7 @@
 </div>
 
 {#each changelogEntries as entry}
-  <div class="flex border-b-2 border-gray-300">
+  <div class="flex pb-xx-large border-b-2 border-gray-300">
     <div class="w-4/12">
       <h2>
         {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
