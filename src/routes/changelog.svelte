@@ -23,8 +23,8 @@
 
 <div class="flex">
   <div class="w-4/12" />
-  <header class="w-8/12">
-    <h1>Changelog</h1>
+  <header class="w-8/12 mb-xx-large">
+    <h1 class="mt-xx-large mb-x-small">Changelog</h1>
     <p>Gitpod product improvements and updates</p>
     <p>
       <a
