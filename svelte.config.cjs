@@ -32,11 +32,6 @@ module.exports = {
     router: true,
     ssr: true,
     target: "#svelte",
-    vite: () => ({
-      ssr: {
-        noExternal: Object.keys(pkg.dependencies || {}),
-      },
-    }),
   },
 
   // options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
