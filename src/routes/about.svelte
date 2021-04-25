@@ -71,7 +71,6 @@
   data={{
     description: "On a mission to make developers' lives easier!",
     title: "About Gitpod",
-    type: "website",
   }}
 />
 <header class="tight">

@@ -10,7 +10,6 @@
   data={{
     description: "Gitpod's privacy policy.",
     title: "Privacy",
-    type: "website",
   }}
 />
 <article class="text-blob">

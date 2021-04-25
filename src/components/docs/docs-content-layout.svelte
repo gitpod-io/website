@@ -17,7 +17,6 @@
     description:
       "Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.",
     title: title ? title : "Gitpod Documentation",
-    type: "website",
   }}
 />
 <div class="content-docs">

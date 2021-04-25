@@ -36,7 +36,6 @@
       description:
         "Visit the Gitpod blog to learn about releases, tutorials, news and more.",
       title: "Blog",
-      type: "website",
     }}
   />
   <section>

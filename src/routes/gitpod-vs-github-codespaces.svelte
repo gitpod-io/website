@@ -130,7 +130,6 @@
     description:
       "Gitpod is the faster, more powerful, open-source platform that integrates with your individual stack.",
     title: "Gitpod vs GitHub Codespaces",
-    type: "website",
   }}
 />
 <header>

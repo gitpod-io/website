@@ -16,7 +16,6 @@
   data={{
     description: "Learn more about Gitpod with these short screencasts.",
     title: "Screencasts",
-    type: "website",
   }}
 />
 

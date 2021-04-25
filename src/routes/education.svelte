@@ -128,7 +128,6 @@
     description:
       "Gitpod simplifies the onboarding process, makes coding accessible from anywhere, and provides a productive learning environment.",
     title: "Education",
-    type: "website",
   }}
 />
 <header>

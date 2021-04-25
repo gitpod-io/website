@@ -13,7 +13,6 @@
   data={{
     description: "Self-Host Gitpod on Your Own Infrastructure.",
     title: "Self-Hosted",
-    type: "website",
   }}
 />
 <PlansAndPricing />

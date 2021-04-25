@@ -128,7 +128,6 @@
   data={{
     description: "Reach out if you have any questions regarding Gitpod.",
     title: "Contact us",
-    type: "website",
   }}
 />
 <header class="tight">

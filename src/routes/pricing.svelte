@@ -16,7 +16,6 @@
     description:
       "Gitpod is free for Open Source, and offers productive features for you, your team and your business at reasonable prices.",
     title: "Pricing",
-    type: "website",
   }}
 />
 <PlansAndPricing />

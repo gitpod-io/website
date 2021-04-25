@@ -105,7 +105,6 @@
     description:
       "Learn about Gitpod's collaboration tools, workspace snapshots, supported programming languages, and much more.",
     title: "Features",
-    type: "website",
   }}
 />
 

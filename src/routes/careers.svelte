@@ -54,7 +54,6 @@
   data={{
     description: "Come join our fast-growing, venture-backed team.",
     title: "Careers at Gitpod",
-    type: "website",
   }}
 />
 <header class="tight">
