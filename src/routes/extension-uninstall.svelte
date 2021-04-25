@@ -36,7 +36,7 @@
     },
     otherFeedback: {
       el: null,
-      valid: false,
+      valid: true,
       value: "",
     },
   };
@@ -158,8 +158,9 @@
             bind:this={formData.otherFeedback.el}
             on:change={() => {
               formData.otherFeedback.valid =
-                formData.otherFeedback.value &&
-                formData.otherFeedback.el.validity.valid;
+                formData.otherFeedback.value === ""
+                  ? true
+                  : formData.otherFeedback.el.validity.valid;
             }}
           />
         </li>
