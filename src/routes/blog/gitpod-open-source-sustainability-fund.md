@@ -63,7 +63,7 @@ Over the coming months, Gitpod will share our experiences with funding open-sour
 
 #### Democratize contributions
 
-We recognise that money <a href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source/">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with tandardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
+We recognise that money <a href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with tandardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
 
 ## It's time to start giving back
 
