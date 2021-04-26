@@ -19,7 +19,7 @@
   ];
 </script>
 
-<div class="footer__container">
+<div class="footer__container mb-8">
   <footer class="footer">
     <div class="footer__entries">
       <ul>
