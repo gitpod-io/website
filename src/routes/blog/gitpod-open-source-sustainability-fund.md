@@ -1,11 +1,11 @@
 ---
 author: ghuntley
-date: Saturday, 24 Apr 2021 11:00:00 UTC
+date: Monday, 26 Apr 2021 11:00:00 UTC
 excerpt: The truth is free software isn't free. Hours have rates. Rates require payment. What if the high achievers that our digital society is built upon were empowered to become independent artists?
-image: OSS_fund_header.jpg
+image: teaser.jpg
 slug: gitpod-open-source-sustainability-fund
 subtitle:
-teaserImage: OSS_fund_header.jpg
+teaserImage: teaser.jpg
 title: Gitpod Open-Source Sustainability Fund
 ---
 
@@ -37,7 +37,7 @@ The word volunteer, by definition, means those who have the ability and time to 
 
 Paying for resources that are being consumed broadens the list of people who can do open-source. Additionally, money enables open-source maintainers to buy services and outsource the activities that do not bring them bring joy.
 
-![Open-source supply chain decision tree](../../../static/images/blog/gitpod-open-source-sustainability-fund/OSS_fund_header.jpg)
+![Money enables diversity](../../../static/images/blog/gitpod-open-source-sustainability-fund/teaser.jpg)
 
 At Gitpod, we firmly believe that working for an open-source project should be a legitimate alternative to a career working for a for-profit corporation. Additionally, we'd like everyone to be able to maintain open-source projects, not just people with the right financial background or youth that enables the ability to volunteer.
 
@@ -47,11 +47,11 @@ Today we are announcing four things:
 
 #### Open Source Sustainability Fund
 
-Gitpod has created an open-source sustainability fund and allocated an _initial_ amount of USD 30,000 has been allocated towards securing our open-source supply chain by paying open-source maintainers.
+Gitpod has created an open-source sustainability fund and allocated an _initial_ amount of USD 30,000 towards securing our open-source supply chain by paying open-source maintainers.
 
 #### $1 for each new community member
 
-For every registration to our newly created <a href="https://www.gitpod.io/chat">discord channel</a> we’ll donate an additional $1 to open-source projects we depend upon.
+For every registration to our newly created <a href="https://www.gitpod.io/chat">discord channel</a> during the next month we’ll donate an additional $1 to open-source projects we depend upon.
 
 #### DevX Conf
 
@@ -63,7 +63,7 @@ Over the coming months, Gitpod will share our experiences with funding open-sour
 
 #### Democratize contributions
 
-We recognise that money <a href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source/">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with a standardized development environments. People from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
+We recognise that money <a href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source/">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with tandardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
 
 ## It's time to start giving back
 
