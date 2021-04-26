@@ -85,6 +85,8 @@ Go sign up to <a href="https://github.com/sponsors">GitHub Sponsors</a> or <a hr
 
 Nadia Eghbal, in 2016 with the support of the Ford Foundation, authored an <a href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">extensive report</a> into the unseen labour behind our digital infrastructure. She recently published the successor of the report: <a href="https://www.amazon.com.au/Working-Public-Making-Maintenance-Software/dp/0578675862">Working in Public: The Making and Maintenance of Open Source Software</a>. If you haven't read her work before, then start there.
 
+![Credit: XCKD](../../../static/images/blog/gitpod-open-source-sustainability-fund/xkcd.png)
+
 Eghbal, in her work outlines, digital infrastructure should be treated as a necessary public good. Free public source code makes it exponentially cheaper and easier for companies to build software and makes technology more accessible across the globe. However, there is a common misconception that the labour for open source projects is well-funded. In reality, it is largely created and maintained by volunteers who do it to build their reputations, out of a sense of obligation or simply as a labour of love.
 
 The thing about open-source software that's too often forgotten, it's AS-IS, no exceptions. There is absolutely no SLA. That detail is right there in the license!
