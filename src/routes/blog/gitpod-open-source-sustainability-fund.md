@@ -43,7 +43,7 @@ At Gitpod, we firmly believe that working for an open-source project should be a
 
 ## Actions speak louder than words
 
-Today we are announcing four things:
+Today we are announcing five things:
 
 #### Open Source Sustainability Fund
 
@@ -55,7 +55,7 @@ For every registration to our newly created <a href="https://www.gitpod.io/chat"
 
 #### DevX Conf
 
-The upcoming (<a href="https://www.devxconf.org/">28th of April from 5pm CEST</a>) non-profit conference on developer experience - DevX Conf will donate all surplus and USD 500 for each Gold Sponsor to open-source projects. Additionally attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
+The upcoming (<a href="https://devxconf.org/">28th of April from 5pm CEST</a>) non-profit conference on developer experience - DevX Conf will donate all surplus and USD 500 for each Gold Sponsor to open-source projects. Additionally attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
 
 #### Build in the open
 
@@ -63,7 +63,7 @@ Over the coming months, Gitpod will share our experiences with funding open-sour
 
 #### Democratize contributions
 
-We recognise that money <a href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source/">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with standardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
+We recognise that money <a href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with standardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
 
 ## It's time to start giving back
 
@@ -84,6 +84,8 @@ Go sign up to <a href="https://github.com/sponsors">GitHub Sponsors</a> or <a hr
 ## Think ahead, secure your supply chain.
 
 Nadia Eghbal, in 2016 with the support of the Ford Foundation, authored an <a href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">extensive report</a> into the unseen labour behind our digital infrastructure. She recently published the successor of the report: <a href="https://www.amazon.com.au/Working-Public-Making-Maintenance-Software/dp/0578675862">Working in Public: The Making and Maintenance of Open Source Software</a>. If you haven't read her work before, then start there.
+
+![Credit: XCKD](../../../static/images/blog/gitpod-open-source-sustainability-fund/xkcd.png)
 
 Eghbal, in her work outlines, digital infrastructure should be treated as a necessary public good. Free public source code makes it exponentially cheaper and easier for companies to build software and makes technology more accessible across the globe. However, there is a common misconception that the labour for open source projects is well-funded. In reality, it is largely created and maintained by volunteers who do it to build their reputations, out of a sense of obligation or simply as a labour of love.
 
@@ -121,14 +123,14 @@ Do you have more ideas on how funding can foster a diverse community? → Please
 
 ## See you at DevX Conference
 
-That's it for now. I hope you'll join us for non-profit <a href="https://www.devxconf.org">DevX Conf</a>, a two-day virtual conference focusing on developer experience. Attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
+That's it for now. I hope you'll join us for non-profit <a href="https://devxconf.org">DevX Conf</a>, a two-day virtual conference focusing on developer experience. Attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
 
 <ol>
     <li>
       <span>📆   </span>From 5PM CEST on April 28-29.
     </li>
     <li>
-      <span>📍  </span> <a href="https://www.devxconf.org">devxconf.org</a>.
+      <span>📍  </span> <a href="https://devxconf.org">devxconf.org</a>.
     </li>
     <li>
       <span>🎫 </span> It's free & non-profit.
