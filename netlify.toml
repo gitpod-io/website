@@ -4,6 +4,10 @@
   functions = "lambda"
 
 [[redirects]]
+  from = "/security"
+  to = "/.well-known/security.txt"
+
+[[redirects]]
   from = "/chat"
   to = "https://discord.gg/ZZ8wxgHtc6"
   status = 301
