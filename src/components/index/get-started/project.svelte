@@ -10,7 +10,7 @@
     justify-content: space-between;
     padding: 0.75rem 0.75rem 0.75rem var(--micro);
     background: var(--off-white);
-    border-radius: 1.25rem;
+    border-radius: 0.75rem;
     transition: all 0.2s;
 
     @media (max-width: 454px) {
