@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: space-between;
     background: var(--off-white);
-    padding: var(--x-small) var(--medium) var(--medium);
+    padding: var(--x-small) 0 var(--medium);
     border-radius: 1rem;
     box-shadow: var(--shadow);
     text-align: center;
@@ -28,13 +28,24 @@
     width: 295px;
 
     @media (max-width: 1140px) {
-      padding: var(--x-small) var(--large) var(--medium);
+      padding: var(--x-small) 0 var(--medium);
     }
 
     .h1 {
       margin-bottom: 0.25rem;
       font-weight: bold;
       color: var(--black);
+    }
+
+    &__duration,
+    &__list {
+      padding-left: var(--medium);
+      padding-right: var(--medium);
+
+      @media (max-width: 1140px) {
+        padding-left: var(--large);
+        padding-right: var(--large);
+      }
     }
 
     &__duration {
