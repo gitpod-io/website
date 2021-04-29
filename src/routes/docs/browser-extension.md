@@ -19,7 +19,7 @@ prefixing for you. Nothing more.
 We provide the extension for
 
 - [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
-- [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/).
+- [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/)
 
 ## Use with Gitpod Self-Hosted
 
