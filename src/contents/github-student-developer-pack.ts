@@ -21,7 +21,7 @@ export const pricingPlans: Pricing[] = [
       "Limited to 6 months",
     ],
     btnText: "Claim Offer",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans/",
   },
   {
     title: "Student Unlimited",
