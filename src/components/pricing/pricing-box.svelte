@@ -37,6 +37,12 @@
       color: var(--black);
     }
 
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     &__duration,
     &__list {
       padding-left: var(--medium);
@@ -86,12 +92,19 @@
   .btn-cta {
     align-self: center;
   }
+
+  :global(.crossed-out) {
+    text-decoration: line-through;
+    color: var(--light-grey);
+    font-size: var(--h4);
+    margin-right: var(--macro);
+  }
 </style>
 
 <div class={`box ${spiced ? "spiced" : ""}`}>
   <div>
     <h2 class="h4">{title}</h2>
-    <div class="h1">{price}</div>
+    <div class="h1 price">{@html price}</div>
     <div class="box__duration">
       {#if duration}
         {duration}

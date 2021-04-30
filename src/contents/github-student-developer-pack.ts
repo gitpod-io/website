@@ -11,7 +11,9 @@ export const pricingPlans: Pricing[] = [
   },
   {
     title: "Student",
-    price: "Free",
+    price: `<span class="crossed-out">${
+      isEurope() ? "€8" : "$9"
+    }</span> Free</>`,
     duration: "Per User/Month",
     features: [
       "100 hours/month",
@@ -22,10 +24,13 @@ export const pricingPlans: Pricing[] = [
     ],
     btnText: "Claim Offer",
     btnHref: "https://gitpod.io/plans/",
+    spiced: true,
   },
   {
     title: "Student Unlimited",
-    price: isEurope() ? "€8" : "$9",
+    price: `<span class="crossed-out">${isEurope() ? "€35" : "$39"}</span> ${
+      isEurope() ? "€8" : "$9"
+    }`,
     duration: "Per User/Month",
     features: [
       "All in personal plus",
@@ -35,6 +40,5 @@ export const pricingPlans: Pricing[] = [
     ],
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/plans/",
-    spiced: true,
   },
 ];
