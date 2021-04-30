@@ -202,6 +202,21 @@ export const testimonials: Testimonial[] = [
     tweetId: "1311560585717460992",
   },
   {
+    name: "Julius Volz",
+    avatar: "julius-volz.jpg",
+    org: `<a href="https://twitter.com/PrometheusIO" rel="noopener" target="_blank">
+        @PrometheusIO
+      </a>`,
+    role: "Co Founder",
+    text: `
+      <p>
+        Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR code, by just prepending "<a href="https://gitpod.io" target="_blank">gitpod.io#</a>" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!
+      </p>
+      `,
+    twitterHandle: "juliusvolz",
+    tweetId: "1298972181708275717",
+  },
+  {
     name: "David Ressler",
     avatar: "david-ressler.jpg",
     org: `
