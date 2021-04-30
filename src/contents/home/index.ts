@@ -229,6 +229,31 @@ export const testimonials: Testimonial[] = [
     tweetId: "1191710936605831169",
   },
   {
+    name: "Bartłomiej Płotka",
+    avatar: "bwplotka.jpg",
+    org: `
+      <a href="https://twitter.com/RedHat" rel="noopener" target="_blank">
+        @RedHat
+      </a>
+    `,
+    role: "Principal Software Engineer",
+    text: `
+        <div>
+          <p>
+            This
+            <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
+              @gitpod
+            </a>
+            thing is magic! Pretty cool, without any extra configuration. Good work!
+          </p>
+
+          <p><a href="https://gitpod.io/#https://github.com/thanos-io/thanos" rel="noopener" target="_blank">https://gitpod.io/#https://github.com/thanos-io/thanos</a></p>
+        </div>
+      `,
+    twitterHandle: "bwplotka",
+    tweetId: "1387735880853606402",
+  },
+  {
     name: "Mrugesh Mohapatra",
     avatar: "mrugesh-mohapatra.jpg",
     org: `
