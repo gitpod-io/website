@@ -21,7 +21,7 @@ export const pricingPlans: Pricing[] = [
       "Limited to 6 months",
     ],
     btnText: "Claim Offer",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans/",
   },
   {
     title: "Student Unlimited",
@@ -34,7 +34,7 @@ export const pricingPlans: Pricing[] = [
       "1h Timeout",
     ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans/",
     spiced: true,
   },
 ];
