@@ -34,7 +34,7 @@ export const pricingPlans: Pricing[] = [
       "1h Timeout",
     ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans/",
     spiced: true,
   },
 ];
