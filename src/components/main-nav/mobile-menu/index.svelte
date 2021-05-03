@@ -13,7 +13,7 @@
   <div class="items h">
     {#each navItems as { href, label }}
       <NavItem {href} on:click={() => ($menuState = !$menuState)}
-        >{label}</NavItem
+        >{@html label}</NavItem
       >
     {/each}
     <LoginButton />
