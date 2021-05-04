@@ -95,6 +95,10 @@
     align-self: center;
   }
 
+  .learn-more {
+    @apply underline;
+  }
+
   :global(.crossed-out) {
     text-decoration: line-through;
   }
@@ -127,7 +131,7 @@
     {/if}
     {#if learnMoreHref}
       <div class="h-full flex flex-col justify-center items-center">
-        <a href={learnMoreHref} class="underline">Learn More</a>
+        <a href={learnMoreHref} class="learn-more">Learn More</a>
       </div>
     {/if}
   </div>
