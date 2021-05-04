@@ -1,5 +1,6 @@
 <script>
   import Section from "../section.svelte";
+  export let text;
 </script>
 
 <style>
@@ -12,7 +13,6 @@
 
 <Section>
   <h2>
-    Stop wasting time with tedious setups, learn amazing programming skills
-    instead!
+    {text}
   </h2>
 </Section>

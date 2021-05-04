@@ -1,9 +1,10 @@
 <script>
-  import Header from "../components/github-student-developer-pack/header.svelte";
+  import Header from "../components/github-page/header.svelte";
   import OpenGraph from "../components/open-graph.svelte";
-  import PricingOffers from "../components/github-student-developer-pack/pricing-offers.svelte";
+  import PricingOffers from "../components/github-page/pricing-offers.svelte";
   import Explore from "../components/explore.svelte";
-  import Headline from "../components/github-student-developer-pack/headline.svelte";
+  import Headline from "../components/github-page/headline.svelte";
+  import { ghStudentPricingPlans as pricingPlans } from "../contents/github-page";
 </script>
 
 <style>
@@ -17,7 +18,23 @@
   }}
 />
 
-<Header />
-<PricingOffers />
-<Headline />
+<Header
+  title="GitHub Student Developer Pack"
+  description="Make Your Life Easier with Gitpod. With Gitpod you have no more tedious setups, you save hours of compiling code, and you can start coding from any device, immediately."
+/>
+<PricingOffers
+  title="GitHub Student Offer"
+  description="<p>
+    With the <a
+    href='https://education.github.com/pack/?utm_source=github+gitpod'
+    target='_blank'>GitHub Student Developer Pack</a
+  >, you get the same features as with our usual plans but at a much better
+  price. We’re happy to be able to empower student developers participating
+  in it.
+  </p>"
+  {pricingPlans}
+/>
+<Headline
+  text="Stop wasting time with tedious setups, learn amazing programming skills instead!"
+/>
 <Explore />

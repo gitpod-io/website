@@ -10,6 +10,8 @@
     btnHref,
     btnText,
     spiced,
+    learnMoreHref,
+    footnote,
   } = pricing;
 </script>
 
@@ -95,6 +97,10 @@
 
   :global(.crossed-out) {
     text-decoration: line-through;
+  }
+
+  :global(.price-small),
+  :global(.crossed-out) {
     color: var(--light-grey);
     font-size: var(--h4);
     margin-right: var(--macro);
@@ -112,11 +118,23 @@
         <span>&nbsp;</span>
       {/if}
     </div>
-    <ul class="box__list">
-      {#each features as feature}
-        <li class="box__list-item">{feature}</li>
-      {/each}
-    </ul>
+    {#if features}
+      <ul class="box__list">
+        {#each features as feature}
+          <li class="box__list-item">{feature}</li>
+        {/each}
+      </ul>
+    {/if}
+    {#if learnMoreHref}
+      <div class="h-full flex flex-col justify-center items-center">
+        <a href={learnMoreHref} class="underline">Learn More</a>
+      </div>
+    {/if}
   </div>
-  <a href={btnHref} class="btn-cta">{btnText}</a>
+  {#if btnHref && btnText}
+    <a href={btnHref} class="btn-cta">{btnText}</a>
+  {/if}
+  {#if footnote}
+    <div class="footnote">{footnote}</div>
+  {/if}
 </div>

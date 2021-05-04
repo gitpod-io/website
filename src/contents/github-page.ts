@@ -1,7 +1,7 @@
-import { isEurope } from "../utils/helper";
 import type { Pricing } from "../types/pricing.type";
+import { isEurope } from "../utils/helper";
 
-export const pricingPlans: Pricing[] = [
+export const ghStudentPricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
@@ -40,5 +40,40 @@ export const pricingPlans: Pricing[] = [
     ],
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/plans/",
+  },
+];
+
+export const ghTeacherPricingPlans: Pricing[] = [
+  {
+    title: "Open Source",
+    price: "Free",
+    features: ["50 hours/month", "Public Repos", "Private repos 30d trial"],
+    btnText: "Try Now",
+    btnHref: "/#get-started",
+  },
+  {
+    title: "Teacher",
+    price: `<span class="crossed-out">${
+      isEurope() ? "€8" : "$9"
+    }</span> Free</>`,
+    duration: "100 hours/Month",
+    features: [
+      "100 hours/month",
+      "Private & Public Repos",
+      "4 Parallel Workspaces",
+      "30min Timeout",
+      "Limited to 6 months",
+    ],
+    btnText: "Claim Offer",
+    btnHref: "https://gitpod.io/plans/",
+    spiced: true,
+  },
+  {
+    title: "Gitpod Education",
+    price: `<span class="price-small">From</span> ${
+      isEurope() ? "€0.75" : "$0.9"
+    }`,
+    learnMoreHref: "/education",
+    footnote: "Only available for educational institutions",
   },
 ];
