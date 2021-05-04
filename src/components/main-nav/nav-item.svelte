@@ -23,7 +23,7 @@
   }
 
   :global(a) :global(sup) {
-    color: var(--brand-ripe);
+    @apply text-orange-800;
   }
 </style>
 
