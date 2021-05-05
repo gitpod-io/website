@@ -1,18 +1,10 @@
-<script>
+<script lang="ts">
   import Section from "../section.svelte";
-  export let text;
+  export let text: string;
 </script>
 
-<style>
-  h2 {
-    text-align: center;
-    max-width: 1000px;
-    margin: auto;
-  }
-</style>
-
 <Section>
-  <h2>
+  <h2 class="text-center m-auto max-w-5xl">
     {text}
   </h2>
 </Section>

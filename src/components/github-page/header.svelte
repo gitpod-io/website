@@ -1,12 +1,17 @@
 <script lang="ts">
   export let title: string;
-  export let description: string;
 </script>
+
+<style>
+  header p :global(a) {
+    @apply underline;
+  }
+</style>
 
 <header>
   <h1>{title}</h1>
   <p>
-    {@html description}
+    <slot name="description" />
   </p>
   <a
     target="_blank"

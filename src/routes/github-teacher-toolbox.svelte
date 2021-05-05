@@ -18,10 +18,15 @@
   }}
 />
 
-<Header
-  title="GitHub Teacher Toolbox"
-  description="Let’s Focus on Teaching Code, not Tedious Setups! With Gitpod you can create coding exams and exercises easily, help out your students via live tutoring, and benefit from a simple onboarding with any device <a href='/education'>Learn more</a>."
-/>
+<Header title="GitHub Teacher Toolbox">
+  <svelte:fragment slot="description">
+    Let’s Focus on Teaching Code, not Tedious Setups! With Gitpod you can create
+    coding exams and exercises easily, help out your students via live tutoring,
+    and benefit from a simple onboarding with any device <a href="/education"
+      >Learn more</a
+    >.
+  </svelte:fragment>
+</Header>
 <PricingOffers title="GitHub Teacher Offer" {pricingPlans}>
   <svelte:fragment slot="description">
     <p class="mb-4">
