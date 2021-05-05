@@ -13,7 +13,7 @@
 </style>
 
 <div class="text-center">
-  <div class="top max-w-3xl mt-0 mx-auto mb-small">
+  <div class="top max-w-3xl mx-auto mb-small">
     <h2>{title}</h2>
     <div><slot name="description" /></div>
   </div>
