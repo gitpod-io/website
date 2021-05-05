@@ -1,9 +1,9 @@
 <script lang="ts">
   import PricingBoxes from "../pricing/pricing-boxes.svelte";
+  import type { Pricing } from "../../types/pricing.type";
 
-  export let title;
-  export let description;
-  export let pricingPlans;
+  export let title: string;
+  export let pricingPlans: Pricing[];
 </script>
 
 <style lang="scss">
@@ -16,17 +16,15 @@
     margin: 0 auto var(--small);
   }
 
-  a {
-    text-decoration: underline;
+  .header :global(a) {
+    @apply underline;
   }
 </style>
 
-<div class="section">
+<div class="section text-center">
   <div class="header">
     <h2>{title}</h2>
-    <div>
-      {@html description}
-    </div>
+    <div><slot name="description" /></div>
   </div>
 
   <PricingBoxes {pricingPlans} />

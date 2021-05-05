@@ -53,9 +53,7 @@ export const ghTeacherPricingPlans: Pricing[] = [
   },
   {
     title: "Teacher",
-    price: `<span class="crossed-out">${
-      isEurope() ? "€8" : "$9"
-    }</span> Free</>`,
+    price: `<span class="crossed-out">${isEurope() ? "€8" : "$9"}</span> Free`,
     duration: "100 hours/Month",
     features: [
       "100 hours/month",

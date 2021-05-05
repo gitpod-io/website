@@ -39,12 +39,6 @@
       color: var(--black);
     }
 
-    .price {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     &__duration,
     &__list {
       padding-left: var(--medium);
@@ -114,7 +108,7 @@
 <div class={`box ${spiced ? "spiced" : ""}`}>
   <div class="min-h-full flex flex-col">
     <h2 class="h4">{title}</h2>
-    <div class="h1 price">{@html price}</div>
+    <div class="h1 flex items-center justify-center">{@html price}</div>
     <div class="box__duration">
       {#if duration}
         {duration}
@@ -139,6 +133,6 @@
     <a href={btnHref} class="btn-cta">{btnText}</a>
   {/if}
   {#if footnote}
-    <div class="footnote">{footnote}</div>
+    <div class="text-small">{footnote}</div>
   {/if}
 </div>

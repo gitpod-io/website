@@ -22,12 +22,21 @@
   title="GitHub Teacher Toolbox"
   description="Let’s Focus on Teaching Code, not Tedious Setups! With Gitpod you can create coding exams and exercises easily, help out your students via live tutoring, and benefit from a simple onboarding with any device <a href='/education'>Learn more</a>."
 />
-<PricingOffers
-  title="GitHub Teacher Offer"
-  description="<p class='mb-4'>With the <a href='https://education.github.com/toolbox/?utm_source=github+gitpod' target='_blank'>GitHub Teacher Toolbox</a>, you get the same free plan as your students with the <a href='https://education.github.com/pack/?utm_source=github+gitpod' target='blank'>GitHub Student Developer Pack</a>.</p>
-  <p>We’re happy to support educators teaching frictionless coding.</p>"
-  {pricingPlans}
-/>
+<PricingOffers title="GitHub Teacher Offer" {pricingPlans}>
+  <svelte:fragment slot="description">
+    <p class="mb-4">
+      With the <a
+        href="https://education.github.com/toolbox/?utm_source=github+gitpod"
+        target="_blank">GitHub Teacher Toolbox</a
+      >, you get the same free plan as your students with the
+      <a
+        href="https://education.github.com/pack/?utm_source=github+gitpod"
+        target="blank">GitHub Student Developer Pack</a
+      >.
+    </p>
+    <p>We’re happy to support educators teaching frictionless coding.</p>
+  </svelte:fragment>
+</PricingOffers>
 <Headline
   text=" Stop wasting time with tedious setups, teach amazing programming skills instead!"
 />
