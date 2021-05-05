@@ -112,7 +112,7 @@
 </style>
 
 <div class={`box ${spiced ? "spiced" : ""}`}>
-  <div>
+  <div class="min-h-full flex flex-col">
     <h2 class="h4">{title}</h2>
     <div class="h1 price">{@html price}</div>
     <div class="box__duration">
@@ -130,7 +130,7 @@
       </ul>
     {/if}
     {#if learnMoreHref}
-      <div class="h-full flex flex-col justify-center items-center">
+      <div class="flex flex-1 justify-center items-center">
         <a href={learnMoreHref} class="learn-more">Learn More</a>
       </div>
     {/if}
