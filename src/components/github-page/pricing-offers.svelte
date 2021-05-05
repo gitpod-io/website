@@ -7,22 +7,13 @@
 </script>
 
 <style lang="scss">
-  .section {
-    text-align: center;
-  }
-
-  .header {
-    max-width: 780px;
-    margin: 0 auto var(--small);
-  }
-
   .header :global(a) {
     @apply underline;
   }
 </style>
 
-<div class="section text-center">
-  <div class="header">
+<div class="text-center">
+  <div class="header max-w-3xl mx-auto mb-small">
     <h2>{title}</h2>
     <div><slot name="description" /></div>
   </div>

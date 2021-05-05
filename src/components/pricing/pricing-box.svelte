@@ -133,6 +133,6 @@
     <a href={btnHref} class="btn-cta">{btnText}</a>
   {/if}
   {#if footnote}
-    <div class="text-small">{footnote}</div>
+    <div class="text-p-xsmall px-small text-gray-700">{footnote}</div>
   {/if}
 </div>

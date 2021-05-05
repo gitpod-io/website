@@ -8,7 +8,11 @@
   <p>
     {@html description}
   </p>
-  <a target="_blank" href="https://gitpod.io/plans" class="btn-conversion mt-4">
+  <a
+    target="_blank"
+    href="https://gitpod.io/plans"
+    class="btn-conversion mt-small"
+  >
     Claim Offer
   </a>
 </header>
