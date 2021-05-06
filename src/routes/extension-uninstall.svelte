@@ -36,7 +36,7 @@
     },
     otherFeedback: {
       el: null,
-      valid: false,
+      valid: true,
       value: "",
     },
   };
@@ -98,7 +98,8 @@
 
 <header>
   {#if extensionUrl}
-    <a href={extensionUrl} target="_blank">Reinstall Extension</a>
+    <a href={extensionUrl} rel="noopener" target="_blank">Reinstall Extension</a
+    >
   {/if}
   <h1>How Can We Improve?</h1>
 </header>
@@ -157,8 +158,9 @@
             bind:this={formData.otherFeedback.el}
             on:change={() => {
               formData.otherFeedback.valid =
-                formData.otherFeedback.value &&
-                formData.otherFeedback.el.validity.valid;
+                formData.otherFeedback.value === ""
+                  ? true
+                  : formData.otherFeedback.el.validity.valid;
             }}
           />
         </li>

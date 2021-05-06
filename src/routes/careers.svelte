@@ -54,7 +54,6 @@
   data={{
     description: "Come join our fast-growing, venture-backed team.",
     title: "Careers at Gitpod",
-    type: "website",
   }}
 />
 <header class="tight">
@@ -65,9 +64,9 @@
   </p>
 </header>
 
+<!-- svelte-ignore a11y-missing-attribute -->
 <img
   src="/images/illustration-zoom.jpg"
-  alt=""
   role="presentation"
   width="1136"
   height="631"

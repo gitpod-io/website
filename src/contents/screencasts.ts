@@ -11,9 +11,9 @@ const screencasts: Screencast[] = [
     tile: "screencast-1.jpg",
     youtubeId: "ZZ0_TQ6UApY",
     relatedDocs: [
-      { path: "/", title: "Introduction to Gitpod" },
-      { path: "/getting-started/", title: "Getting Started" },
-      { path: "/context-urls/", title: "Context URLs" },
+      { path: "", title: "Introduction to Gitpod" },
+      { path: "/getting-started", title: "Getting Started" },
+      { path: "/context-urls", title: "Context URLs" },
     ],
   },
   {
@@ -25,9 +25,9 @@ const screencasts: Screencast[] = [
     tile: "screencast-2.jpg",
     youtubeId: "AmApse344bw",
     relatedDocs: [
-      { path: "/vscode-extensions/", title: "VS Code Extensions" },
-      { path: "/environment-variables/", title: "Environment Variables" },
-      { path: "/feature-preview/", title: "Feature Preview" },
+      { path: "/vscode-extensions", title: "VS Code Extensions" },
+      { path: "/environment-variables", title: "Environment Variables" },
+      { path: "/feature-preview", title: "Feature Preview" },
     ],
   },
   {
@@ -39,10 +39,10 @@ const screencasts: Screencast[] = [
     tile: "screencast-3.jpg",
     youtubeId: "ZgY6a78mAnQ",
     relatedDocs: [
-      { path: "/configuration/", title: "Configure Your Project" },
-      { path: "/config-gitpod-file/", title: ".gitpod.yml" },
-      { path: "/config-docker/", title: "Docker Configuration" },
-      { path: "/config-start-tasks/", title: "Start Tasks" },
+      { path: "/configuration", title: "Configure Your Project" },
+      { path: "/config-gitpod-file", title: ".gitpod.yml" },
+      { path: "/config-docker", title: "Docker Configuration" },
+      { path: "/config-start-tasks", title: "Start Tasks" },
     ],
   },
   {
@@ -53,7 +53,7 @@ const screencasts: Screencast[] = [
     duration: 126,
     tile: "screencast-4.jpg",
     youtubeId: "KR8ESjGYsXI",
-    relatedDocs: [{ path: "/prebuilds/", title: "Prebuilt Workspaces" }],
+    relatedDocs: [{ path: "/prebuilds", title: "Prebuilt Workspaces" }],
   },
   {
     nextScreencast: id++,
@@ -64,8 +64,8 @@ const screencasts: Screencast[] = [
     tile: "screencast-5.jpg",
     youtubeId: "gsMux9DEU4I",
     relatedDocs: [
-      { path: "/", title: "Introduction to Gitpod" },
-      { path: "/life-of-workspace/", title: "Life of a Workspace" },
+      { path: "", title: "Introduction to Gitpod" },
+      { path: "/life-of-workspace", title: "Life of a Workspace" },
     ],
   },
   {
@@ -76,8 +76,8 @@ const screencasts: Screencast[] = [
     tile: "screencast-6.jpg",
     youtubeId: "9RftoWFzJ2s",
     relatedDocs: [
-      { path: "/sharing-and-collaboration/", title: "Collaboration & Sharing" },
-      { path: "/code-reviews/", title: "Code Reviews" },
+      { path: "/sharing-and-collaboration", title: "Collaboration & Sharing" },
+      { path: "/code-reviews", title: "Code Reviews" },
     ],
   },
 ];

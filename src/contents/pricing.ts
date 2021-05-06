@@ -5,7 +5,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["50 hours/month", "Public Repos", "Private repos 30d trial"],
+    features: ["50 hours/month", "Public Repos", "Private Repos 30d Trial"],
     btnText: "Try Now",
     btnHref: "/#get-started",
   },
@@ -20,28 +20,34 @@ export const pricingPlans: Pricing[] = [
       "30min Timeout",
     ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans",
   },
   {
     title: "Professional",
-    price: isEurope() ? "€24" : "$29",
+    price: isEurope() ? "€23" : "$25",
     duration: "Per User/Month",
-    features: ["All in personal plus", "Unlimited hours", "Teams"],
+    features: [
+      "All in Personal",
+      "8 Parallel Workspaces",
+      "Unlimited Hours",
+      "Teams",
+    ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans",
     spiced: true,
   },
   {
     title: "Unleashed",
-    price: isEurope() ? "€36" : "$42",
+    price: isEurope() ? "€35" : "$39",
     duration: "Per User/Month",
     features: [
-      "All in Professional plus",
+      "All in Professional",
       "16 Parallel Workspaces",
+      "1hr Timeout",
       "3hr Timeout boost",
     ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans",
   },
 ];
 
@@ -53,7 +59,7 @@ export const otherPlans = [
       "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <srong>requirements.</srong>",
     ],
     btnText: "Apply now",
-    btnHref: "/contact/",
+    btnHref: "/contact",
   },
   {
     title: "Self Hosted",
@@ -62,7 +68,7 @@ export const otherPlans = [
       "Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong> and <strong>K3s</strong>.",
     ],
     btnText: "Enquire now",
-    btnHref: "/contact/",
+    btnHref: "/contact",
   },
   {
     title: "Student",
@@ -73,6 +79,6 @@ export const otherPlans = [
       "Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.",
     ],
     btnText: "Get verified",
-    btnHref: "/contact/",
+    btnHref: "/contact",
   },
 ];

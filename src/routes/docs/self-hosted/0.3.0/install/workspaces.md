@@ -1,6 +1,11 @@
 ---
 section: self-hosted/0.3.0/self-hosted
+title: Workspaces
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Workspaces
 

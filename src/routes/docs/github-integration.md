@@ -1,6 +1,11 @@
 ---
 section: integrations
+title: GitHub Integration
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # GitHub Integration
 
@@ -8,11 +13,11 @@ Gitpod comes with a [GitHub](https://github.com/) integration that allows you to
 
 ## Starting Workspaces
 
-To start a workspace from a GitHub project, prefix the GitHub URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started/).
+To start a workspace from a GitHub project, prefix the GitHub URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started).
 
 ## Enabling Prebuilds
 
-To enable [prebuilt workspaces](/docs/prebuilds/) for your GitHub project you need to install the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and configure it for the GitHub user or organization that the project belongs to. Install the app as described in the [prebuilds page](/docs/prebuilds/#on-github).
+To enable [prebuilt workspaces](/docs/prebuilds) for your GitHub project you need to install the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and configure it for the GitHub user or organization that the project belongs to. Install the app as described in the [prebuilds page](/docs/prebuilds#on-github).
 
 ## OAuth Application
 
@@ -48,4 +53,4 @@ Here's how to do that:
 
 Congrats you have setup the GitHub OAuth applicaton. 🎉
 
-Next up you should install the browser extension and [configure it with your Gitpod installation URL](/docs/browser-extension/#use-with-gitpod-self-hosted).
+Next up you should install the browser extension and [configure it with your Gitpod installation URL](/docs/browser-extension#use-with-gitpod-self-hosted).

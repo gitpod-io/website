@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: Python in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Python in Gitpod
 
@@ -29,9 +34,9 @@ The easiest way to install a new Python version is to use `pyenv install <VERSIO
 
 You can switch between Python versions using `pyenv local <VERSION>`. For example, if you wanted to switch to Python version `2.7.17` you would run `pyenv local 2.7.17`. This will create a `.python-version` file that controls which Python version is the default in your project. (Note: When running it in a Dockerfile, replace `local` with `global` to change the system default.)
 
-## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
+## [Start tasks](https://www.gitpod.io/docs/config-start-tasks)
 
-You can start building your project when, or even [before](https://www.gitpod.io/docs/prebuilds/) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
+You can start building your project when, or even [before](https://www.gitpod.io/docs/prebuilds) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) to automatically pre-install all dependencies when starting a workspace:
 
 ```yaml
 tasks:
@@ -60,7 +65,7 @@ While the most popular Python VSCode extensions are built into Gitpod, here are 
 
 ![ARepl extension example](.../../../static/images/docs/AReplExample.gif)
 ARepl for Python is helpful for constantly checking your code and debugging.
-To install this extension for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To install this extension for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file):
 
 ```yaml
 vscode:
@@ -72,7 +77,7 @@ vscode:
 
 ![Python test explorer example](.../../../static/images/docs/python_Test_In_Gitpod.png)
 Easily test your python extensions with the Python Test Explorer.
-To add this to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/)
+To add this to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file)
 
 ```yaml
 vscode:
@@ -82,7 +87,7 @@ vscode:
 
 ## GUI Applications with wxPython
 
-To install wxPython to your repository please add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/). If you don't have one, simply run [`gp init`](https://www.gitpod.io/docs/command-line-interface/) and commit the two generated files.
+To install wxPython to your repository please add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker). If you don't have one, simply run [`gp init`](https://www.gitpod.io/docs/command-line-interface/) and commit the two generated files.
 
 ```dockerfile
 # This will pull the official Gitpod `vnc` image
@@ -100,7 +105,7 @@ RUN sudo apt-get -q update && \
 RUN pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04/ wxPython
 ```
 
-Here is a corresponding [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) example:
+Here is a corresponding [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) example:
 
 ```yaml
 image:

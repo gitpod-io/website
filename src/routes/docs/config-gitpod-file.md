@@ -1,6 +1,11 @@
 ---
 section: configuration
+title: .gitpod.yml
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # .gitpod.yml
 

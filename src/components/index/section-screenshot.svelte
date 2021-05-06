@@ -17,10 +17,6 @@
 </script>
 
 <style lang="scss">
-  h1 {
-    text-align: center;
-  }
-
   .screenshot {
     display: block;
     margin: 0 auto;
@@ -31,6 +27,7 @@
 
     @media (max-width: 768px) {
       margin-bottom: -20px;
+      border-radius: 0.25rem;
     }
   }
 
@@ -57,7 +54,9 @@
 
 <Section>
   <div class="row">
-    <h1>Remote-first. Secure by design.</h1>
+    <h2 class="mb-small text-center text-h2">
+      Remote-first. Secure by design.
+    </h2>
     <img
       class="screenshot"
       src="/images/gitpod-editor.jpg"

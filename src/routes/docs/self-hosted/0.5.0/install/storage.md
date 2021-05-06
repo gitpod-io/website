@@ -1,6 +1,11 @@
 ---
 section: self-hosted/0.5.0/self-hosted
+title: Workspace Storage
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Workspace Storage
 

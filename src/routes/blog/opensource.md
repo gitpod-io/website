@@ -9,6 +9,10 @@ teaserImage: teaser.jpg
 title: Gitpod is now Open Source 🎉
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 As of today Gitpod is open source under the AGPL license at [github.com/gitpod-io/gitpod](https://github.com/gitpod-io/gitpod). This allows the community to participate in the development of Gitpod, provides more transparency and makes it even easier for developers to use and integrate Gitpod in their workflows.
 
 For those of you who know us, this probably does not come as a big surprise. Working in open source is in our DNA and everything we’ve created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open VSX](https://github.com/eclipse/openvsx) and many other projects have been open source. In fact, Gitpod was our only closed-source project and it is a relief to change that going forward.
@@ -61,7 +65,7 @@ Sven will run a webinar next week on Thursday, where we will showcase how we use
 
 <h2 class="h1">Gitpod Self-Hosted is Now Free</h2>
 
-The [SaaS offering of gitpod.io](https://www.gitpod.io/pricing/#) remains the easiest way to streamline your development workflows with continuously prebuilt dev environments.
+The [SaaS offering of gitpod.io](https://www.gitpod.io/pricing) remains the easiest way to streamline your development workflows with continuously prebuilt dev environments.
 
 In case you want to host Gitpod on your own infrastructure or private cloud, starting today, Gitpod Self-Hosted is free for unlimited users. Organizations using Gitpod Self-Hosted can purchase an enterprise license in order to get additional features like:
 
@@ -73,7 +77,7 @@ In case you want to host Gitpod on your own infrastructure or private cloud, sta
 Offering a paid plan for enterprises makes it possible for us to keep working towards building a new category in developer tooling, which completes modern DevOps pipelines. In the future we will add additional functionality to both the open source code as well our paid offering.
 
 <div class="wrapper">
-    <a href= "https://www.gitpod.io/self-hosted/" target="_blank">
+    <a href= "https://www.gitpod.io/self-hosted" target="_blank">
         <button class="button">Start for free</button>
     </a>
 </div>

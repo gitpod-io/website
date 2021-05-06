@@ -9,6 +9,10 @@ title: Dev environments as code
 url: dev-env-gilbert.gif
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 ![Source: http://dilbert.com/strip/2017-01-02](../../../static/images/blog/dev-env-as-code/dev-env-gilbert.gif)
 
 Imagine that only a decade ago system administrators deployed, configured, and maintained software systems manually. Doing so burned an endless amount of their precious lifetimes and energy.
@@ -74,7 +78,7 @@ Docker files are a pretty neat way to describe a development environment. Imagin
 
 Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their development environment. We need to get to coding with a single click.
 
-![Laptop with code on the screen](../../../static/images/blog/dev-env-as-code/clément-h.jpeg)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
+![Laptop with code on the screen](../../../static/images/blog/dev-env-as-code/clement-h.jpeg)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
 ### **Automated IDE Setup**
 

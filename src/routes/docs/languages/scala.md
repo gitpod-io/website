@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: Scala in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Scala in Gitpod
 
@@ -8,7 +13,7 @@ Welcome, Scala programmer. Today we will show you how to configure Gitpod for yo
 
 ## Installing Scala
 
-First, you'll probably want to install Scala. To do this, add a new file to your repository called [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/), and add the following content to it:
+First, you'll probably want to install Scala. To do this, add a new file to your repository called [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker), and add the following content to it:
 
 ```Dockerfile
 FROM gitpod/workspace-full
@@ -16,7 +21,7 @@ FROM gitpod/workspace-full
 RUN brew install scala
 ```
 
-Additionally create a file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) and add the following:
+Additionally create a file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) and add the following:
 
 ```YAML
 image:
@@ -39,7 +44,7 @@ Finally, please note that these changes will only take effect in new workspaces.
 
 ![The Ammonite REPL in action](.../../../static/images/docs/AmmoniteRepl.png)
 
-To install the [Ammonite REPL](https://ammonite.io/) in Gitpod, you must add the following to our previously-created [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/):
+To install the [Ammonite REPL](https://ammonite.io/) in Gitpod, you must add the following to our previously-created [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker):
 
 ```Dockerfile
 RUN sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.0.4/2.13-2.0.4) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm'
@@ -49,7 +54,7 @@ Then commit the changes and push to your repository. Finally, when you open a ne
 
 ## Building projects with sbt
 
-To use [sbt](https://www.scala-sbt.org/) (simple build tool) in Gitpod, you can add the following to that [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) we created:
+To use [sbt](https://www.scala-sbt.org/) (simple build tool) in Gitpod, you can add the following to that [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) we created:
 
 ```Dockerfile
 RUN brew install sbt
@@ -59,7 +64,7 @@ As usual, commit and push the changes, and `sbt` will be installed in all future
 
 ## Managing Scala versions with scalaenv
 
-Say your project needs a specific Scala version. You can use [scalaenv](https://github.com/scalaenv/scalaenv), a version manager for Scala, to switch between different Scala versions. But first, we must install `scalaenv`. As usual, we need to change our [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/), by adding this to it:
+Say your project needs a specific Scala version. You can use [scalaenv](https://github.com/scalaenv/scalaenv), a version manager for Scala, to switch between different Scala versions. But first, we must install `scalaenv`. As usual, we need to change our [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker), by adding this to it:
 
 ```Dockerfile
 RUN brew install scalaenv
@@ -83,7 +88,7 @@ RUN brew install coursier/formulas/coursier
 
 ## Formatting Scala code with scalafmt
 
-To install [scalafmt](https://scalameta.org/scalafmt/) for your repository, add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/):
+To install [scalafmt](https://scalameta.org/scalafmt/) for your repository, add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker):
 
 ```Dockerfile
 RUN sudo env "PATH=$PATH" coursier bootstrap org.scalameta:scalafmt-cli_2.12:2.4.2 \
@@ -95,7 +100,7 @@ Then to format your code simply run `scalafmt`!
 
 ## Putting it all together
 
-A full example of a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) configured for Scala could look something like:
+A full example of a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) configured for Scala could look something like:
 
 ```Dockerfile
 FROM gitpod/workspace-full
@@ -113,7 +118,7 @@ RUN scalaenv install scala-2.12.11 && scalaenv global scala-2.12.11
 
 You will notice that all the `brew install` commands are on the same line. We recommend grouping similar commands together to minimize the number of [Docker layers](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#minimize-the-number-of-layers).
 
-Additionally, your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file should still look like this:
+Additionally, your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) file should still look like this:
 
 ```YAML
 image:

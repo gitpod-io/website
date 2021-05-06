@@ -128,7 +128,7 @@ export const projects: Project[] = [
     logo: "svg/projects/go.svg",
     title: "Go",
     githubUrl: "https://github.com/prometheus/prometheus",
-    alt: "Go",
+    alt: "Go Language",
   },
   // {
   //   logo: "rust.png",
@@ -156,11 +156,11 @@ export const testimonials: Testimonial[] = [
   {
     name: "Ben Halpern",
     avatar: "ben-halpern.jpg",
-    org: `<a href="https://twitter.com/forem" target="_blank">
+    org: `<a href="https://twitter.com/forem" rel="noopener" target="_blank">
           @forem
         </a>
         and
-        <a href="https://twitter.com/ThePracticalDev" target="_blank">
+        <a href="https://twitter.com/ThePracticalDev" rel="noopener" target="_blank">
           @ThePracticalDev
         </a>`,
     role: "Creator and Co-founder",
@@ -174,25 +174,25 @@ export const testimonials: Testimonial[] = [
   {
     name: "Michael Friedrich",
     avatar: "michael-friedrich.jpg",
-    org: `<a href="https://twitter.com/gitlab" target="_blank">
+    org: `<a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
         @GitLab
       </a>`,
     role: "Developer Evangelist",
     text: `
         <p>
           Let's say we were overwhelmed how smooth
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           workspaces creation & own Docker image for workspaces worked.
         </p>
         <p>
           Plus, installing
-          <a href="https://twitter.com/code" target="_blank">
+          <a href="https://twitter.com/code" rel="noopener" target="_blank">
             @code
           </a>
           extensions from the store and integrating
-          <a href="https://twitter.com/gitlab" target="_blank">
+          <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
             @gitlab
           </a>
           CI. That blew my mind entirely, and that is hard ;)
@@ -202,10 +202,25 @@ export const testimonials: Testimonial[] = [
     tweetId: "1311560585717460992",
   },
   {
+    name: "Julius Volz",
+    avatar: "julius-volz.jpg",
+    org: `<a href="https://twitter.com/PrometheusIO" rel="noopener" target="_blank">
+        @PrometheusIO
+      </a>`,
+    role: "Creator",
+    text: `
+      <p>
+        Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR code, by just prepending "<a href="https://gitpod.io" target="_blank">gitpod.io#</a>" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!
+      </p>
+      `,
+    twitterHandle: "juliusvolz",
+    tweetId: "1298972181708275717",
+  },
+  {
     name: "David Ressler",
     avatar: "david-ressler.jpg",
     org: `
-      <a href="https://twitter.com/instagram" target="_blank">
+      <a href="https://twitter.com/instagram" rel="noopener" target="_blank">
         @instagram
       </a>
     `,
@@ -213,13 +228,13 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           I think I’m in love with
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           . It’s such a powerful tool. I’ve learned so much in the past week
           just from stumbling across Github repos that interest me and appending
           “
-          <a href="http://gitpod.io/#" target="_blank">
+          <a href="http://gitpod.io/#" rel="noopener" target="_blank">
             http://gitpod.io/#
           </a>
           ” to the URL. A+ tool all around.
@@ -229,10 +244,35 @@ export const testimonials: Testimonial[] = [
     tweetId: "1191710936605831169",
   },
   {
+    name: "Bartłomiej Płotka",
+    avatar: "bwplotka.jpg",
+    org: `
+      <a href="https://twitter.com/RedHat" rel="noopener" target="_blank">
+        @RedHat
+      </a>
+    `,
+    role: "Principal Software Engineer",
+    text: `
+        <div>
+          <p>
+            This
+            <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
+              @gitpod
+            </a>
+            thing is magic! Pretty cool, without any extra configuration. Good work!
+          </p>
+
+          <p><a href="https://gitpod.io/#https://github.com/thanos-io/thanos" rel="noopener" target="_blank">https://gitpod.io/#https://github.com/thanos-io/thanos</a></p>
+        </div>
+      `,
+    twitterHandle: "bwplotka",
+    tweetId: "1387735880853606402",
+  },
+  {
     name: "Mrugesh Mohapatra",
     avatar: "mrugesh-mohapatra.jpg",
     org: `
-      <a href="https://twitter.com/freeCodeCamp" target="_blank">
+      <a href="https://twitter.com/freeCodeCamp" rel="noopener" target="_blank">
         @freeCodeCamp
       </a>
     `,
@@ -240,11 +280,11 @@ export const testimonials: Testimonial[] = [
     text: `
       <p>
           Ya'all
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           is freaking amazing! We integrated it into our workflow for working on
-          <a href="https://twitter.com/freeCodeCamp" target="_blank">
+          <a href="https://twitter.com/freeCodeCamp" rel="noopener" target="_blank">
             @freeCodeCamp
           </a>
           's codebase and I am honestly loving it. 🔥🔥!
@@ -259,7 +299,7 @@ export const testimonials: Testimonial[] = [
     name: "Sven Peters",
     avatar: "sven-peters.jpg",
     org: `
-      <a href="https://twitter.com/MongoDB" target="_blank">
+      <a href="https://twitter.com/MongoDB" rel="noopener" target="_blank">
         @MongoDB
       </a>
     `,
@@ -277,7 +317,7 @@ export const testimonials: Testimonial[] = [
     name: "Jonathan Lister Parsons",
     avatar: "jonathan-lister-parsons.jpg",
     org: `
-      <a href="https://twitter.com/pensionbee" target="_blank">
+      <a href="https://twitter.com/pensionbee" rel="noopener" target="_blank">
         @PensionBee
       </a>
     `,
@@ -285,7 +325,7 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           I'm really enjoying
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           - for me, it's made full-stack development in the browser (yes,
@@ -299,7 +339,7 @@ export const testimonials: Testimonial[] = [
     name: "Alejandro",
     avatar: "alejandro-sanchez.jpeg",
     org: `
-      <a href="https://twitter.com/4GeeksAcademy" target="_blank">
+      <a href="https://twitter.com/4GeeksAcademy" rel="noopener" target="_blank">
         @4GeeksAcademy
       </a>
     `,
@@ -307,7 +347,7 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           My setup is on
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           , just like Christopher McCandless, where I go my code goes with me,
@@ -321,7 +361,7 @@ export const testimonials: Testimonial[] = [
     name: "ROKU",
     avatar: "roman-kuba.jpg",
     org: `
-      <a href="https://twitter.com/gitlab" target="_blank">
+      <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
         @GitLab
       </a>
     `,
@@ -329,7 +369,7 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           Have to say that
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           is just super nice to use. Very impressed by the performance!
@@ -342,7 +382,7 @@ export const testimonials: Testimonial[] = [
     name: "Hugh Durkin",
     avatar: "hugh-durkin.jpg",
     org: `
-      <a href="https://twitter.com/HubSpot" target="_blank">
+      <a href="https://twitter.com/HubSpot" rel="noopener" target="_blank">
         @HubSpot
       </a>
     `,
@@ -351,13 +391,13 @@ export const testimonials: Testimonial[] = [
         <p>
           I've been playing around with the "next generation" of Cloud IDEs
           lately, and
-          <a href="https://twitter.com/gitpodio" target="_blank">
+          <a href="https://twitter.com/gitpodio" rel="noopener" target="_blank">
             @gitpodio
           </a>
           is quickly emerging as one of the best 👨‍💻
           <br />
           Awesome
-          <a href="https://twitter.com/github" target="_blank">
+          <a href="https://twitter.com/github" rel="noopener" target="_blank">
             @github
           </a>
           integration, slick Chrome extension, and super fast 🚀
@@ -371,7 +411,7 @@ export const testimonials: Testimonial[] = [
     name: "Marcel van Remmerden",
     avatar: "marcel-van-remmerden.jpg",
     org: `
-      <a href="https://twitter.com/GitLab" target="_blank">
+      <a href="https://twitter.com/GitLab" rel="noopener" target="_blank">
         @GitLab
       </a>
     `,
@@ -379,7 +419,7 @@ export const testimonials: Testimonial[] = [
     text: `<p>
           Can only agree, opening a GitLab repository in gitpod is a magical
           experience, thanks for the integration
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           !
@@ -391,7 +431,7 @@ export const testimonials: Testimonial[] = [
     name: "Brendan O’Leary",
     avatar: "brendan-o-leary.jpg",
     org: `
-      <a href="https://twitter.com/GitLab" target="_blank">
+      <a href="https://twitter.com/GitLab" rel="noopener" target="_blank">
         @GitLab
       </a>
     `,
@@ -399,20 +439,20 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           I just discovered the
-          <a href="https://twitter.com/gitlab" target="_blank">
+          <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
             @gitlab
           </a>
           and
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           integration is alive on
-          <a href="http://GitLab.com" target="_blank">
+          <a href="http://GitLab.com" rel="noopener" target="_blank">
             http://GitLab.com
           </a>
           (released in 13.4 behind a feature flag). And it's AMAZING
           <a
-            href="https://docs.gitlab.com/ee/integration/gitpod.html"
+            href="https://docs.gitlab.com/ee/integration/gitpod.html" rel="noopener"
             target="_blank"
           >
             https://docs.gitlab.com/ee/integration....
@@ -428,7 +468,7 @@ export const testimonials: Testimonial[] = [
     name: "Joonas Lehtinen",
     avatar: "joonas-lehtinen.png",
     org: `
-      <a href="https://twitter.com/vaadin" target="_blank">
+      <a href="https://twitter.com/vaadin" rel="noopener" target="_blank">
         @vaadin
       </a>
     `,
@@ -436,7 +476,7 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           Wow -
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           is a brilliant way of evaluating a framework without installing
@@ -444,11 +484,11 @@ export const testimonials: Testimonial[] = [
         </p>
         <p>
           Launch gitpod for
-          <a href="https://twitter.com/vaadin" target="_blank">
+          <a href="https://twitter.com/vaadin" rel="noopener" target="_blank">
             @vaadin
           </a>
           at
-          <a href="https://vaadin.com/start/v14" target="_blank">
+          <a href="https://vaadin.com/start/v14" rel="noopener" target="_blank">
             https://vaadin.com/start/v14
           </a>
           ("Online workspace" tab). You'll have app running and will be editing
@@ -462,7 +502,7 @@ export const testimonials: Testimonial[] = [
     name: "Yo",
     avatar: "yogi.jpg",
     org: `
-      <a href="https://twitter.com/Taskord" target="_blank">
+      <a href="https://twitter.com/Taskord" rel="noopener" target="_blank">
         @Taskord
       </a>
     `,
@@ -470,11 +510,11 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           Now contributing to
-          <a href="https://twitter.com/gitlab" target="_blank">
+          <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
             @gitlab
           </a>
           is a cakewalk with
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           🎉!
@@ -488,7 +528,7 @@ export const testimonials: Testimonial[] = [
     name: "Senior Enterprise Geek",
     avatar: "k33g.jpg",
     org: `
-      <a href="https://twitter.com/gitlab" target="_blank">
+      <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
         @GitLab
       </a>
     `,
@@ -496,22 +536,22 @@ export const testimonials: Testimonial[] = [
     text: `
         <p>
           Today is a great day, we added the
-          <a href="https://twitter.com/gitpod" target="_blank">
+          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
             @gitpod
           </a>
           support to the
-          <a href="https://twitter.com/golo_lang" target="_blank">
+          <a href="https://twitter.com/golo_lang" rel="noopener" target="_blank">
             @golo_lang
           </a>
           repository. So now you can start hacking
-          <a href="https://twitter.com/golo_lang" target="_blank">
+          <a href="https://twitter.com/golo_lang" rel="noopener" target="_blank">
             @golo_lang
           </a>
           in almost only one click. Enjoy 🎉
         </p>
         <p>
           <a
-            href="https://gitpod.io/#https://github.com/eclipse/golo-lang"
+            href="https://gitpod.io/#https://github.com/eclipse/golo-lang" rel="noopener"
             target="_blank"
           >
             gitpod.io/#https://githu...

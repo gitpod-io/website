@@ -9,6 +9,10 @@ teaserImage: teaser-launch-min.jpg
 title: Introducing Gitpod — Frictionless Coding on GitHub
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Every day developers waste millions of hours switching contexts between projects and branches, setting up development environments, or simply waiting for builds to complete.
 
 This friction is not only time consuming but is a serious barrier for contributors. Reading through a long list of setup instructions and messing up your own laptop is just too much effort.
@@ -21,17 +25,17 @@ Here's how Gitpod works: You are on GitHub and want to start working on a projec
 
 ![Gitpod button added by Gitpod browser extension](../../../static/images/blog/gitpod-launch/browser-ext.png)
 
-Don’t see the button on GitHub yet? You need to [install a small browser extension](/docs/browser-extension/) to get it. Alternatively, you can just prefix any GitHub URL with “[gitpod.io/#](https://gitpod.io/#)”.
+Don’t see the button on GitHub yet? You need to [install a small browser extension](/docs/browser-extension) to get it. Alternatively, you can just prefix any GitHub URL with “[gitpod.io/#](https://gitpod.io/#)”.
 
 You can try Gitpod right now. It's free for public repositories.
 
 ## No Setup
 
-Not all projects are equal. We maintain a [developer friendly docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) that includes all the commonly used tools and version managers. But you can point to your own docker image in a **.gitpod.yml** file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod/) for more details.
+Not all projects are equal. We maintain a [developer friendly docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) that includes all the commonly used tools and version managers. But you can point to your own docker image in a **.gitpod.yml** file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod) for more details.
 
-With Gitpod, contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the **.gitpod.yml** is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code/).
+With Gitpod, contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the **.gitpod.yml** is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code).
 
-To optimize the experience, the **.gitpod.yml** accepts [further configuration](/docs/configuration/), where you can automatically start builds, watchers and dev servers in multiple terminals. You can configure how they appear in the IDE layout and hook up all your web ports and previews.
+To optimize the experience, the **.gitpod.yml** accepts [further configuration](/docs/configuration), where you can automatically start builds, watchers and dev servers in multiple terminals. You can configure how they appear in the IDE layout and hook up all your web ports and previews.
 
 As a project owner you should do everything you can to streamline the experience for contributors, so everybody including yourself can focus on being creative and writing code. Gitpod lets you automate the setup and make sure developers can access a dev environment that really is ready to code.
 
@@ -49,7 +53,7 @@ Starting today, [the new Gitpod app is available on the GitHub marketplace](http
 
 Once you've installed the app for your GitHub repository, it will pre-build dev environments on every commit. So when anybody opens a Gitpod environment on your project, the dev environment is opened as described above. But now also the build ran through and all dependencies are already there.
 
-We call this feature prebuilt workspaces and you can read more about it in [Chris' post](/blog/prebuilds/).
+We call this feature prebuilt workspaces and you can read more about it in [Chris' post](/blog/prebuilds).
 
 ![Prebuilt Workspaces](../../../static/images/blog/gitpod-launch/prebuilt-workspaces.png)
 
@@ -61,7 +65,7 @@ When coming from an issue, Gitpod understands you want to fix it, so you’ll ge
 
 Starting a workspace from a pull request will open in code-review mode. The list of changes is opened on the left so you can easily go through them and view the details in diff editors on the right. Of course, you can comment within the IDE and even submit your code review.
 
-Even if you prefer your local machine for development, being able to do [deep code reviews](/blog/when-code-reviews-lgtm/) in a browser is a great way to improve your workflow.
+Even if you prefer your local machine for development, being able to do [deep code reviews](/blog/when-code-reviews-lgtm) in a browser is a great way to improve your workflow.
 
 ![Inlined Code Review](../../../static/images/blog/gitpod-launch/inline-comments.png)
 
@@ -79,9 +83,9 @@ In addition to one of the best code editors, Gitpod environments provide full fe
 
 Gitpod comes with two major features supporting collaboration.
 
-- [Sharing running dev environments](/docs/sharing-and-collaboration/) with other users comes in handy if you want to look at code with a colleague to hunt down a bug together or do some pair programming. Collaborators will see the same code you see and even the terminals are synced and shared.
+- [Sharing running dev environments](/docs/sharing-and-collaboration) with other users comes in handy if you want to look at code with a colleague to hunt down a bug together or do some pair programming. Collaborators will see the same code you see and even the terminals are synced and shared.
 
-- [Snapshots](/blog/workspace-snapshots/) are useful in many ways. In a nutshell, they allow taking an immutable copy of your dev environment at any point in time. You can share the provided link wherever you want. Users opening such a snapshot link will get an exact clone of the environment including all state and even UI layout. This feature is great for sharing reproducibles in issues, but also good for blog posts or solutions on Stack Overflow.
+- [Snapshots](/blog/workspace-snapshots) are useful in many ways. In a nutshell, they allow taking an immutable copy of your dev environment at any point in time. You can share the provided link wherever you want. Users opening such a snapshot link will get an exact clone of the environment including all state and even UI layout. This feature is great for sharing reproducibles in issues, but also good for blog posts or solutions on Stack Overflow.
 
 ![Collaboration: Share Running Workspace or Snapshot](../../../static/images/blog/gitpod-launch/collaboration.png)
 

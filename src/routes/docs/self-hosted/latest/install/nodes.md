@@ -1,6 +1,11 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Kubernetes Nodes
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Kubernetes Nodes
 

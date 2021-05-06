@@ -9,6 +9,10 @@ title: Creating reproducibles for any programming language
 url: https://medium.com/gitpod/code-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Whenever you want to share a reproducible example on StackOverflow or an issue report, providing real code that can be quickly tried, executed and explored is the best you can do. Online code playgrounds, such as CodePen or JSFiddle, are an excellent way to do that, as they are very accessible for both the creator and the readers. Unfortunately, they are not available for every programming platform, language and often don’t work for larger projects or examples.
 
 In this post I’d like to introduce you to a new feature in [Gitpod](https://gitpod.io), that lets you create reproducible examples for any programming environment and any size of project.
@@ -54,8 +58,7 @@ tasks:
 ```
 
 > Btw. to figure out how to start that damn thing using Maven, I had to ask the community on StackOverflow. Of course, by providing a Gitpod Snapshot :-)
-> [**Run main from test scope in Maven: "The parameters 'mainClass' for goal…**
-> *Thanks for contributing an answer to Stack Overflow! Some of your past answers have not been well-received, and you're…*stackoverflow.com](https://stackoverflow.com/questions/53536751/run-main-from-test-scope-in-maven-the-parameters-mainclass-for-goal-org-code)
+> [**Run main from test scope in Maven: "The parameters 'mainClass' for goal…** > *Thanks for contributing an answer to Stack Overflow! Some of your past answers have not been well-received, and you're…*stackoverflow.com](https://stackoverflow.com/questions/53536751/run-main-from-test-scope-in-maven-the-parameters-mainclass-for-goal-org-code)
 
 With the **.gitpod.yml **configured and the editors and views laid out as needed, we are ready to take a snapshot. Simply click on the avatar on the top right:
 

@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: Dart in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Dart in Gitpod
 

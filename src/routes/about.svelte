@@ -71,7 +71,6 @@
   data={{
     description: "On a mission to make developers' lives easier!",
     title: "About Gitpod",
-    type: "website",
   }}
 />
 <header class="tight">
@@ -94,7 +93,7 @@
   <li>
     <img
       src="/images/about/team-2.jpg"
-      alt="TODO: who is this?"
+      alt="A female Gitpod team member"
       height="310"
       width="310"
     />
@@ -102,7 +101,7 @@
   <li>
     <img
       src="/images/about/team-3.jpg"
-      alt=""
+      alt="A laptop and office chair in a tent"
       height="310"
       width="310"
       role="presentation"
@@ -111,7 +110,7 @@
   <li>
     <img
       src="/images/about/about-6.png"
-      alt=""
+      alt="Gitpod team members on the beach"
       height="310"
       width="310"
       role="presentation"
@@ -120,7 +119,7 @@
   <li>
     <img
       src="/images/about/about-5.png"
-      alt="TODO: who is this?"
+      alt="4 kumquats on a table"
       height="310"
       width="310"
     />
@@ -218,7 +217,7 @@
     >
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Development-Process-2b105f72847440ec8f4a1d87ac25801b"
+      href="https://www.notion.so/gitpod/Development-Process-080f1e439e0440f9b063a000ee213692"
       target="_blank"
       ><span class="icon">🔨</span> <span class="arrow">↗︎</span> How we develop</a
     >

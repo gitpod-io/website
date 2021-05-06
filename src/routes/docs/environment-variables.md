@@ -1,6 +1,11 @@
 ---
 section: configuration
+title: Environment Variables
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Environment Variables
 

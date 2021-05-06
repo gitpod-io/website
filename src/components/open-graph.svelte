@@ -8,7 +8,7 @@
     description,
     image = "images/media-image.jpg",
     title,
-    type,
+    type = "website",
     imageTwitter = "images/media-image-twitter.jpg",
   } = data || {};
 

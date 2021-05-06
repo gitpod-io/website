@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: .NET in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # .NET in Gitpod
 
@@ -18,7 +23,7 @@ section: languages-and-frameworks
 
 ## Installing the .NET Tools
 
-To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file):
 
 ```YAML
 image: gitpod/workspace-dotnet
@@ -52,7 +57,7 @@ The official C# extension from Microsoft [is proprietary](https://aka.ms/VSCode-
 
 ![C# Extension Demo](.../../../static/images/docs/CSharpDemo.png)
 
-To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file):
 
 ```yaml
 vscode:
@@ -74,7 +79,7 @@ The [Ionide-fsharp](https://ionide.io/) extensin gives F# developers the followi
 
 ![Ionide fsharp Example](.../../../static/images/docs/Iondine_Example.png)
 
-To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file):
 
 ```yaml
 vscode:

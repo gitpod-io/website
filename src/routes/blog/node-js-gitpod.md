@@ -8,6 +8,10 @@ title: Debugging Node.js applications in Theia
 url: https://medium.com/gitpod/debugging-node-js-applications-in-theia-76c94c76f0a1
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Gitpod is based on the open-source Theia IDE Framework, which is highly inspired by VS Code, reuses its major components like the Monaco editor and intelligent-language support and is designed to run as a web application.
 
 At TypeFox, we use Gitpod to develop Theia and all its satellite projects, like Theia extensions and language servers. We’ve discovered that for most use cases we don’t need to go to local development anymore. Development, testing, and the review processes are streamlined, leading from source code to a proper development environment accessible from a browser with a single click.
@@ -22,7 +26,7 @@ Start a new workspace for the example GitHub repository: [https://gitpod.io/#htt
 
 ![Start a new Gitpod workspace for the shopping cart example via prefixing the URL with gitpod.io#](https://cdn-images-1.medium.com/max/2992/0*WySkgfqLHyOkQq_c)
 
-A new Gitpod workspace will be opened. Required dependencies are installed automatically since the repository is configured with [a .gitpod.yml file](https://www.gitpod.io/docs/configuration/). You can see it in the terminal, opened in the bottom area.
+A new Gitpod workspace will be opened. Required dependencies are installed automatically since the repository is configured with [a .gitpod.yml file](https://www.gitpod.io/docs/configuration). You can see it in the terminal, opened in the bottom area.
 
 ## Step 1: Start debugging
 

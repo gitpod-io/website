@@ -8,6 +8,10 @@ subtitle: A Milestone for Automated Development Environments
 title: GitHub Codespaces, Welcome to the Party!
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Today, GitHub announced the private beta of [GitHub Codespaces](https://github.com/features/codespaces), which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code.
 
 This is great news, because it really helps to explain why this is going to change professional software development entirely.
@@ -40,7 +44,7 @@ For the past year the whole team has developed Gitpod in Gitpod. Everyone in the
 
 When reviewing a PR or starting work on that new cool feature, no developer wants to accidentally work with an old state. Imagine wasting hours hunting a bug that’s already fixed on master. Fresh working copies—and ideally dev environments—for each task would be great.
 
-Once dev environments have become code you can pre-build those dev environments ahead of time. **Think CI for your development setup**: on each change in the repository, Gitpod prepares a new dev environment for that change. Rather than having to manually adjust the tool versions, wait for all dependencies to download and for the code to compile, things are ready when you are. We call this [continuous dev environments](/blog/continuous-dev-environment-in-devops/).
+Once dev environments have become code you can pre-build those dev environments ahead of time. **Think CI for your development setup**: on each change in the repository, Gitpod prepares a new dev environment for that change. Rather than having to manually adjust the tool versions, wait for all dependencies to download and for the code to compile, things are ready when you are. We call this [continuous dev environments](/blog/continuous-dev-environment-in-devops).
 
 <h2>At Last a Good Browser IDE</h2>
 
@@ -66,7 +70,7 @@ To also serve users beyond just GitHub, we have been focussing on integrating Gi
 
 <h2>Closer to Home: Gitpod Self-Hosted</h2>
 
-Chances are that you host your Git repositories or other dev infrastructure in a private cloud, or on a local network where they can't be accessed from the outside. Thus, a hosted IDE service must be on the same private cloud or network. This is possible with [Gitpod Self-Hosted](/self-hosted/) which can be installed on Kubernetes and does not require a connection to the public internet.
+Chances are that you host your Git repositories or other dev infrastructure in a private cloud, or on a local network where they can't be accessed from the outside. Thus, a hosted IDE service must be on the same private cloud or network. This is possible with [Gitpod Self-Hosted](/self-hosted) which can be installed on Kubernetes and does not require a connection to the public internet.
 
 Today we are releasing a new version which brings Gitpod Self-Hosted on par with Gitpod.io. The new release includes better GitLab integration and a new admin UI. With Gitpod Self-Hosted you can now enjoy this liberating way of developing software with your own GitLab installation.
 

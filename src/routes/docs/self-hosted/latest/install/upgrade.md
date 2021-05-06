@@ -1,6 +1,11 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Gitpod Self-Hosted Upgrade Notes
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Gitpod Self-Hosted Upgrade Notes
 
@@ -24,4 +29,4 @@ If you don't do this, `helm` will fail with the following message:
 
 ### Remote storage config has been moved to a new component
 
-If you have a custom remote storage config (e.g. you use your own MinIO instance or the Google Cloud Storage), you need to move the config from the component `wsDaemon` to the new component `contentService`. See the [Storage Guide](./storage/) for an example.
+If you have a custom remote storage config (e.g. you use your own MinIO instance or the Google Cloud Storage), you need to move the config from the component `wsDaemon` to the new component `contentService`. See the [Storage Guide](./storage) for an example.

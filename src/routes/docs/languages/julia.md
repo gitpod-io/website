@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: Julia in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Julia in Gitpod
 

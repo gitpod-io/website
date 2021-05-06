@@ -8,6 +8,10 @@ teaserImage: local-services.jpg
 title: Using local services in Gitpod
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Some things just aren't exposed to the internet. Either because we do not want them out in the open, think some on-prem database, or because they cannot easily be made available like the Docker daemon on your laptop.
 With your Gitpod workspace running in the cloud it does not have access to local services, which could render Gitpod unsuitable in those cases.
 
