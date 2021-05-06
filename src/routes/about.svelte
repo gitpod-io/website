@@ -146,7 +146,7 @@
     >
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203"
+      href="https://www.gitpod.io/roadmap"
       target="_blank"
       ><span class="icon">🛣</span> <span class="arrow">↗︎</span> Gitpod's Roadmap</a
     >

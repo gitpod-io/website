@@ -58,7 +58,7 @@ We believe there are standards to be set when it comes to establishing brands in
 Product is at the core of everything we do. We believe that by 2023 ephemeral cloud-based development environments will be as common as CI/CD is today. With our new product updates we take a big step towards realizing that vision. Starting today we willl switch to VS Code as the default editing experience in Gitpod. We are also announcing general availability of sudo privileges and Docker support allowing developers to build Docker images and run containers within their Gitpod workspace. This is based on advanced [namespace layering technology](https://www.youtube.com/watch?v=iYLCHQgj0fE) and a great collaborative effort with our friends from Kinvolk. Lastly, we completely rebuilt the dashboard frontend to speed-up developers’ workflows and bring our UX and UI to 2021 ✨
 
 <div class="redirector">
-  <a class="btn-otherbrand" href="https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203" target="_blank"><span class="icon">🛣</span> <span class="arrow">↗︎</span> Product Roadmap</a>
+  <a class="btn-otherbrand" href="https://www.gitpod.io/roadmap" target="_blank"><span class="icon">🛣</span> <span class="arrow">↗︎</span> Product Roadmap</a>
 </div>
 
 ![The DevX Conf logo](../../../static/images/blog/next-chapter-for-gitpod/devxconf.jpg)
