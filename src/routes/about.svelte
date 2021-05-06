@@ -139,7 +139,7 @@
   <p>
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6"
+      href="https://www.gitpod.io/direction"
       target="_blank"
       ><span class="icon">🗺️</span> <span class="arrow">↗︎</span>Gitpod's
       Direction</a
