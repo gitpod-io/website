@@ -26,6 +26,30 @@ export const perks = [
 
 export const careers: Career[] = [
   {
+    title: "Principal Technical Writer (Long-term contract)",
+    intro: `Gitpod has just kicked off a project relating to our product documentation and is looking for external help with bringing our documentation to industry standards of self-serve, developer-led companies. (ie. netlify/vercel)`,
+    paragraphs: `
+    
+    We are interested in hearing from freelancers or anyone who can come in and do what is needed as the project lead. You would be supported by a direct team of three in developer relations and, by extension, our product/development team.
+  `,
+    lists: [
+      {
+        title: "Suggested Scope",
+        items: [
+          "Navigation and documentation re-structure",
+          "Content templates, patterns and documentation structure",
+          "Deleting content that makes no sense by asking if $statement or $practice is valid now",
+          "Creation of reference-style documentation",
+          "Content style guide so that words mirror what's used in the product",
+          "Infrastructure (search, community participation/edit in Github, documentation feedback widgets)",
+        ],
+      },
+    ],
+    textAfterTheLists: "",
+    rendered: false,
+    date: "2021-05-05T14:00:00.000Z",
+  },
+  {
     title: "Senior Developer Success Engineer",
     intro: `You are a "jack of all trades, master of some" software engineer, a marketer and a public speaker or accomplished technical writer. We are in the early stages of hiring the team so there's loads of room for you to add your own unique twist, find your passion, help define and execute Gitpod's growth strategies.`,
     paragraphs: `
