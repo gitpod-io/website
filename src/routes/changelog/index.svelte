@@ -24,7 +24,7 @@
 <div class="flex">
   <div class="w-4/12" />
   <header class="w-8/12 mb-xx-large">
-    <h1 class="mt-xx-large mb-x-small">Changelog</h1>
+    <h1 class="mt-xx-large mb-macro">Changelog</h1>
     <p>Gitpod product improvements and updates</p>
     <p>
       <a
@@ -53,3 +53,13 @@
     <hr />
   </div>
 {/each}
+<div class="flex pb-xx-large">
+  <div class="w-4/12" />
+  <div class="w-8/12">
+    <p>
+      For older updates, please visit <a href="/docs/changelog"
+        >the previous changelog.</a
+      >
+    </p>
+  </div>
+</div>

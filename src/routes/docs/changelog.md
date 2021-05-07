@@ -7,9 +7,9 @@ title: Changelog
   export const prerender = true;
 </script>
 
-# Changelog
+# Changelog - Archived
 
-A curated, chronologically ordered list of notable changes in [gitpod.io](https://www.gitpod.io/).
+Please refer to [/changelog](/changelog) for the most up-to-date changelog. Below is an archive of previous releases up to June 2020.
 
 ## 2020-06-03
 
