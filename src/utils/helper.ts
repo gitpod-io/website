@@ -3,5 +3,5 @@ export const isEurope = () => {
   return offset <= 0 && offset >= -180;
 };
 
-export const hypehnate = (str: string) =>
+export const hyphenate = (str: string = "") =>
   str.toLocaleLowerCase().replace(/\s/g, "-");
