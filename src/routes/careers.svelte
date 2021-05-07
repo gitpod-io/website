@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-  import { hypehnate } from "../utils/helper";
+  import { hyphenate } from "../utils/helper";
 
   import CareerModal from "../components/careers/modal.svelte";
   import OpenGraph from "../components/open-graph.svelte";
@@ -12,9 +12,13 @@
 
   let selectedCareer;
 
+  $: if (selectedCareer) {
+    window.location.hash = `#${hyphenate(selectedCareer.title)}`;
+  }
+
   onMount(() => {
     const hash = window.location.hash.substring(1);
-    const career = careers.find((career) => hypehnate(career.title) === hash);
+    const career = careers.find((career) => hyphenate(career.title) === hash);
     selectedCareer = career;
   });
 </script>
@@ -164,11 +168,10 @@
   <div class="mb-10rem">
     <ul class="jobs">
       {#each careers as career}
-        <li id={hypehnate(career.title)}>
+        <li id={hyphenate(career.title)}>
           <button
             on:click={() => {
               selectedCareer = career;
-              window.location.hash = `#${hypehnate(career.title)}`;
             }}
           >
             <div class="group flex justify-center items-center text-gray-900">

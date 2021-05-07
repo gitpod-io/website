@@ -3,7 +3,7 @@
 
   export const load = async function ({ page }) {
     const { title } = page.params;
-    const screencast = screencasts.find((s) => hypehnate(s.title) === title);
+    const screencast = screencasts.find((s) => hyphenate(s.title) === title);
     return { props: { screencast } };
   };
 </script>
@@ -12,7 +12,7 @@
   import type { Screencast as ScreencastType } from "../../types/screencasts.type";
   import ScreencastPreview from "../../components/screencasts/preview.svelte";
   import YouTubeEmbed from "../../components/youtube-embed.svelte";
-  import { hypehnate } from "../../utils/helper";
+  import { hyphenate } from "../../utils/helper";
 
   export let screencast: ScreencastType;
 </script>
