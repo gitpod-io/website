@@ -8,8 +8,15 @@
   import CareerModal from "../components/careers/modal.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers, perks } from "../contents/careers";
+  import { onMount } from "svelte";
 
   let selectedCareer;
+
+  onMount(() => {
+    const hash = window.location.hash.substring(1);
+    const career = careers.find((career) => hypehnate(career.title) === hash);
+    selectedCareer = career;
+  });
 </script>
 
 <style>
