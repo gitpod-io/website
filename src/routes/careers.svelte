@@ -3,6 +3,8 @@
 </script>
 
 <script lang="ts">
+  import { hypehnate } from "../utils/helper";
+
   import CareerModal from "../components/careers/modal.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers, perks } from "../contents/careers";
@@ -155,12 +157,33 @@
   <div class="mb-10rem">
     <ul class="jobs">
       {#each careers as career}
-        <li id={career.title.toLowerCase().replace(/\s/g, "-")}>
+        <li id={hypehnate(career.title)}>
           <button
             on:click={() => {
               selectedCareer = career;
-            }}>{career.title}</button
+            }}
           >
+            <a
+              href={`#${hypehnate(career.title)}`}
+              class="flex justify-center items-center text-gray-900"
+            >
+              {career.title}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="permalink-icon ml-micro"
+                viewBox="0 0 512 512"
+                height="22"
+                ><path
+                  d="M208 352h-64a96 96 0 010-192h64m96 0h64a96 96 0 010 192h-64m-140.71-96h187.42"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="36"
+                /></svg
+              >
+            </a>
+          </button>
         </li>
       {/each}
     </ul>
