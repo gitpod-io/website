@@ -161,12 +161,10 @@
           <button
             on:click={() => {
               selectedCareer = career;
+              window.location.hash = `#${hypehnate(career.title)}`;
             }}
           >
-            <a
-              href={`#${hypehnate(career.title)}`}
-              class="flex justify-center items-center text-gray-900"
-            >
+            <div class="flex justify-center items-center text-gray-900">
               {career.title}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +180,7 @@
                   stroke-width="36"
                 /></svg
               >
-            </a>
+            </div>
           </button>
         </li>
       {/each}
