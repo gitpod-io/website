@@ -164,11 +164,11 @@
               window.location.hash = `#${hypehnate(career.title)}`;
             }}
           >
-            <div class="flex justify-center items-center text-gray-900">
+            <div class="group flex justify-center items-center text-gray-900">
               {career.title}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="permalink-icon ml-micro"
+                class="permalink-icon ml-micro text-white group-hover:text-gray-900 transition-all duration-100"
                 viewBox="0 0 512 512"
                 height="22"
                 ><path
