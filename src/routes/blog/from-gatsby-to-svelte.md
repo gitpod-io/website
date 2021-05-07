@@ -1,12 +1,12 @@
 ---
 author: mikenikles
-date: Thu, 21 Apr 2021 18:00:00 UTC
-excerpt: A very tight deadline, a small team and a complete redesign - we dropped Gatsby in favor of SvelteKit.
+date: Fri, 07 May 2021 18:00:00 UTC
+excerpt: A very tight deadline, a small team and a complete redesign - insights into why we use Svelte.
 image: teaser.png
-slug: from-gatsby-to-sveltekit-because-devx-matters
+slug: from-gatsby-to-svelte
 subtitle:
 teaserImage: teaser.png
-title: From Gatsby to SvelteKit because DevX matters
+title: From Gatsby to Svelte in 3 weeks
 ---
 
 **tl;dr:**
@@ -17,7 +17,7 @@ title: From Gatsby to SvelteKit because DevX matters
 
 ## What we had previously...
 
-Prior to April 8, 2021 the Gitpod website was built with React & Gatsby and the source code is [available on GitHub](https://github.com/gitpod-io/retired-gatsby-website). A static site was deployed to Netlify and a Netlify function took care of processing HTML form submissions and sending emails to the Gitpod team (e.g. contact us, enterprise license requests, etc.)
+Prior to April 8, 2021 the Gitpod website was built with React & Gatsby and the source code is [available on GitHub](https://github.com/gitpod-io/retired-gatsby-website). A static site was deployed to Netlify and a Netlify function took care of processing HTML form submissions by sending the form content via email to the Gitpod team (e.g. contact us, enterprise license requests, etc.)
 We leveraged the Gatsby ecosystem by adding plugins to the [`gatsby-config.js`](https://github.com/gitpod-io/retired-gatsby-website/blob/master/gatsby-config.js) file which took care of things like Markdown parsing and embedding Youtube videos, among other things.
 
 ### ... and why we started from scratch
@@ -25,13 +25,13 @@ We leveraged the Gatsby ecosystem by adding plugins to the [`gatsby-config.js`](
 What was wrong with the previous stack? Why did we decide to rewrite the website with different technologies?
 Overall, Gatsby & React is a great choice and gets the job done just fine. Many people are already familiar with React and are ready to contribute with minimal effort.
 
-**However**, at Gitpod we care deeply about developer experience & productivity - this is what our product is all about afterall. This is where [Svelte](https://svelte.dev) and [SvelteKit](https://kit.svelte.dev) lead the pack in today’s web application development. By leveraging [Vite](https://vitejs.dev), developing a SvelteKit web app is as instant as it gets, it even persists local state when hot reloading the web application!
+**However**, at Gitpod we care deeply about developer experience & productivity - this is what our product is all about afterall. This is where we believe [Svelte](https://svelte.dev) and [SvelteKit](https://kit.svelte.dev) lead the pack in today’s web application development. By leveraging [Vite](https://vitejs.dev), developing a SvelteKit web app is as instant as it gets, it even persists local state when hot reloading the web application!
 
-In addition, we had an extremely tight timeframe from the start of the project to the [announcement of our funding and the new brand](https://www.gitpod.io/blog/next-chapter-for-gitpod). While I have had two years of experience with Svelte & Sapper, the other three developers had not worked together previously and were not familiar with Svelte. Nevertheless, was confident the rest of the team would pick up Svelte and be productive right away. To learn Svelte, all you really need is carefully work your way through the [tutorial](https://svelte.dev/tutorial).
+In addition, we had an extremely tight timeframe from the start of the project to the [announcement of our funding and the new brand](https://www.gitpod.io/blog/next-chapter-for-gitpod). While I have had two years of experience with Svelte & Sapper, the other three developers had not worked together previously and were not familiar with Svelte. Nevertheless, I was confident the rest of the team would pick up Svelte and be productive right away. To learn Svelte, all you really need is work your way through the [tutorial](https://svelte.dev/tutorial).
 
-**As unbelievable as this may sound, building a SvelteKit app from scratch felt less risky than modifying an existing Gatsby codebase!**
+**To me, building a SvelteKit app from scratch felt less risky than modifying an existing Gatsby codebase!**
 
-This is especially true in our case where we had to apply a completely new brand across all pages.
+This is especially true in our case where we had to apply a completely new brand across all pages and would have had to learn Gatsby too.
 
 ## The implementation
 
@@ -39,7 +39,7 @@ SvelteKit’s public beta [was announced](https://svelte.dev/blog/sveltekit-beta
 
 With one week to go, we migrated from Sapper to SvelteKit ([pull request](https://github.com/gitpod-io/website/pull/120)). The team’s feedback was clear:
 
-![Vote on the SvelteKit developer experience](../../../static/images/blog/from-gatsby-to-sveltekit-because-devx-matters/sveltekit-devx-vote.png)
+![Vote on the SvelteKit developer experience](../../../static/images/blog/from-gatsby-to-svelte/sveltekit-devx-vote.png)
 
 Remember that frictionless migration we were promised? It was indeed smooth as butter! At this point, a huge thank you to the Svelte maintainers & contributors for their incredible work ❤️ !
 
@@ -48,6 +48,8 @@ We also configured [Tailwind CSS](https://tailwindcss.com), [mdsvex](https://mds
 ### Gatsby plugins
 
 The Svelte ecosystem is not (yet) as established as the Gatsby ecosystem. However, thanks to the flexibility of mdsvex, we were able to use some Markdown related [remark](https://github.com/remarkjs/remark) plugins. For some use cases, we wrote [our own plugins](https://github.com/gitpod-io/website/tree/main/src/utils) to cover specific needs.
+
+Dana Woodman recently shared an interesting [thought on the Svelte ecosystem](https://twitter.com/DanaWoodman/status/1390030682789859329) that is worth paraphrasing: Many existing, vanilla JS libraries work effortlessly with Svelte which opens up an even wider ecosystem than what you get with React.
 
 ## Lessons learned
 
