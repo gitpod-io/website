@@ -1,5 +1,17 @@
-<script>
+<script lang="ts">
   import Section from "./section.svelte";
+  import type { ExploreSection } from "../types/explore-section.type";
+
+  export let contents: ExploreSection;
+
+  const {
+    title = "Explore Gitpod",
+    description = "Automated and ephemeral dev environments in the cloud.",
+    link = {
+      text: "See Features",
+      href: "/features",
+    },
+  } = contents || {};
 </script>
 
 <style lang="scss">
@@ -8,11 +20,11 @@
 <Section>
   <div class="explore">
     <div class="explore__text">
-      <h1>Explore Gitpod</h1>
+      <h2 class="h1">{title}</h2>
       <p class="explore__paragraph h4">
-        Automated and ephemeral dev environments in the cloud.
+        {description}
       </p>
-      <a href="/features" class="btn-conversion">See Features</a>
+      <a href={link.href} class="btn-conversion">{link.text}</a>
     </div>
     <div class="explore__illustration">
       <img src="/images/illustration-grid.jpg" alt="Gitpod in a Nutshell" />

@@ -4,6 +4,7 @@
 
   export let screencast: Screencast;
   export let screencastNumber: number;
+  export let headlineOrder: "h3";
 
   $: screencastNumberPadded = `${screencastNumber}`.padStart(3, "0");
 </script>
@@ -17,7 +18,11 @@
 >
   <div>
     <data>Screencast {screencastNumberPadded}</data>
-    <h2>{screencast.title}</h2>
+    {#if headlineOrder === "h3"}
+      <h3>{screencast.title}</h3>
+    {:else}
+      <h2>{screencast.title}</h2>
+    {/if}
     <Logo />
   </div>
 </a>

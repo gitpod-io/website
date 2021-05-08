@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import Explore from "../components/explore.svelte";
   import LogoAnimated from "../components/logo-animated.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers } from "../contents/careers";
@@ -224,27 +225,18 @@
   </p>
 </div>
 
-<div class="row">
-  <section>
-    <div class="explore">
-      <div class="explore__text">
-        <h1>
-          We have {careers.length} open position{careers.length == 1 ? "" : "s"}
-        </h1>
-        <p class="h4">Come join us.</p>
-        <p><a href="/careers" class="btn-conversion">See openings</a></p>
-      </div>
-      <div class="explore__illustration">
-        <img src="/images/illustration-grid.jpg" alt="Gitpod in a Nutshell" />
-        <img
-          src="/images/illustration-small.jpg"
-          class="small"
-          alt="Gitpod in a Nutshell"
-        />
-      </div>
-    </div>
-  </section>
-</div>
+<Explore
+  contents={{
+    title: `We have ${careers.length} open position${
+      careers.length == 1 ? "" : "s"
+    }`,
+    description: "Come join us.",
+    link: {
+      text: "See openings",
+      href: "/careers",
+    },
+  }}
+/>
 
 <div class="redirector header">
   <h2>Gitpod in the news</h2>

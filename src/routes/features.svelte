@@ -202,7 +202,7 @@
       height="90"
       width="185"
     />
-    <h3 class="h5">Customize your workspace</h3>
+    <h2 class="h5">Customize your workspace</h2>
     <p>
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
@@ -217,7 +217,7 @@
       height="90"
       width="322"
     />
-    <h3 class="h5">GitLab, GitHub, and Bitbucket integration</h3>
+    <h2 class="h5">GitLab, GitHub, and Bitbucket integration</h2>
     <p>
       Start your workflow from the Git hosting platform of your choice and let
       Gitpod beam you in a ready-to-code dev environment.
@@ -232,7 +232,7 @@
       height="90"
       width="130"
     />
-    <h3 class="h5">Code reviews within the IDE</h3>
+    <h2 class="h5">Code reviews within the IDE</h2>
     <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
       to comments and publish code reviews right within Gitpod.

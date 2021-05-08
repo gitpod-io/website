@@ -156,11 +156,13 @@
     <ul class="jobs">
       {#each careers as career}
         <li id={career.title.toLowerCase().replace(/\s/g, "-")}>
-          <button
-            on:click={() => {
-              selectedCareer = career;
-            }}>{career.title}</button
-          >
+          <h3>
+            <button
+              on:click={() => {
+                selectedCareer = career;
+              }}>{career.title}</button
+            >
+          </h3>
         </li>
       {/each}
     </ul>

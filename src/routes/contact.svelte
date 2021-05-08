@@ -143,7 +143,7 @@
 
 <section class="card shadow-xl mb-32 mx-8">
   {#if isEmailSent}
-    <h3 class="text-center mb-8">Thank you for your message</h3>
+    <h2 class="h3 text-center mb-8">Thank you for your message</h2>
     <p class="text-center">
       We received your message. Our team will take a look and get back to you as
       soon as possible.
@@ -154,7 +154,7 @@
     />
   {:else}
     <form on:submit|preventDefault={handleSubmit} novalidate>
-      <h3 class="text-center mb-8">Send us a message</h3>
+      <h2 class="h3 text-center mb-8">Send us a message</h2>
       <ul>
         <li class:error={isFormDirty && !formData.name.valid}>
           <label for="name">Name*</label>

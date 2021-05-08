@@ -239,9 +239,9 @@
     </ul>
   </section>
   <section class="card alive text-center">
-    <h3 class="card-heading">
+    <h2 class="card-heading">
       <img alt="Gitpod" src="/images/gitpod-logo.svg" width="40" height="36" />
-    </h3>
+    </h2>
     <dl id="gitpodPricing" class="tableColumn">
       <dt>Pricing (Hosted)</dt>
       <dd>Free for Open-Source</dd>
@@ -298,7 +298,7 @@
     </dl>
   </section>
   <section class="card text-center">
-    <h4 class="text-xl card-heading">GitHub<br />Codespaces</h4>
+    <h2 class="text-xl card-heading h4">GitHub<br />Codespaces</h2>
     <dl>
       <dt>Pricing (Hosted)</dt>
       <dd>
@@ -414,7 +414,7 @@
 
 <div class="cards double mt-1rem mb-7rem">
   <div class="card p-4rem">
-    <h3>Automation-first</h3>
+    <h2 class="h3">Automation-first</h2>
     <p class="flex-grow">
       Simply add your build command into a .gitpod.yml file and let Gitpod do
       the heavy-lifting. Once you’ve experienced the freedom of ephemeral
@@ -426,7 +426,7 @@
     </p>
   </div>
   <div class="card p-4rem">
-    <h3>Code in a carbon-neutral workspace</h3>
+    <h2 class="h3">Code in a carbon-neutral workspace</h2>
     <p class="flex-grow">
       Not only is Gitpod more resource-efficient but it also runs on 100%
       carbon-neutral cloud servers (GCP). All the power, with a lower cost to

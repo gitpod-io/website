@@ -18,7 +18,7 @@
     width={contactCard.imgWidth}
     role="presentation"
   />
-  <h3>{contactCard.title}</h3>
+  <h2 class="h3">{contactCard.title}</h2>
   <p>{contactCard.description}</p>
   <a href={contactCard.btnHref} class="btn btn-conversion m-8"
     >{contactCard.btnText}</a
