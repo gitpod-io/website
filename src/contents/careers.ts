@@ -29,7 +29,7 @@ export const careers: Career[] = [
     title: "Principal Technical Writer (Long-term contract)",
     intro: `Gitpod has just kicked off a project relating to our product documentation and is looking for external help with bringing our documentation to industry standards of self-serve, developer-led companies. (ie. netlify/vercel)`,
     paragraphs: `
-    
+
     We are interested in hearing from freelancers or anyone who can come in and do what is needed as the project lead. You would be supported by a direct team of three in developer relations and, by extension, our product/development team.
   `,
     lists: [
@@ -53,10 +53,10 @@ export const careers: Career[] = [
     title: "Senior Developer Success Engineer",
     intro: `You are a "jack of all trades, master of some" software engineer, a marketer and a public speaker or accomplished technical writer. We are in the early stages of hiring the team so there's loads of room for you to add your own unique twist, find your passion, help define and execute Gitpod's growth strategies.`,
     paragraphs: `
-  
+
   As a small team, we favour cross-discipline generalists and lean towards people with polyglot technical backgrounds as the role involves working in many different technology ecosystems and demonstrating how to make that technology work on Gitpod. Outstanding communication skills are much more important than polyglot knowledge, however. We have found that some knowledge of bash scripting and how to build a Docker container based on instructions in a projects CONTRIBUTING.md is the happy path that will enable learning new ecosystems on the job.
   We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others.
-  
+
   We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.
   `,
     lists: [
@@ -452,7 +452,7 @@ export const careers: Career[] = [
   {
     title: "Working Student / Intern - Finance",
     intro: `You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week? You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week?`,
-    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously. 
+    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously.
         We are a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.`,
     lists: [
       {
