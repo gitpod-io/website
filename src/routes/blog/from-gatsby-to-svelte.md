@@ -1,6 +1,6 @@
 ---
 author: mikenikles
-date: Fri, 07 May 2021 18:00:00 UTC
+date: Sat, 08 May 2021 18:00:00 UTC
 excerpt: A very tight deadline, a small team and a complete redesign - insights into why we use Svelte.
 image: teaser.png
 slug: from-gatsby-to-svelte
@@ -14,6 +14,7 @@ title: From Gatsby to Svelte in 3 weeks
 - [Gitpod](https://www.gitpod.io) recently announced new funding and a completely new brand ([read more](https://www.gitpod.io/blog/next-chapter-for-gitpod)) 🍊.
 - As part of that, we rebuilt the website from scratch, replacing React & Gatsby with [Svelte](https://svelte.dev) & [SvelteKit](https://kit.svelte.dev).
 - Look at the [source code on GitHub](https://github.com/gitpod-io/website) or start the website in a Gitpod development environment by visiting https://gitpod.io#https://github.com/gitpod-io/website.
+- Listen to the Svelte Radio episode "[Migrating from Sapper to SvelteKit](https://share.transistor.fm/s/507ad528)" where I shared more details.
 
 ## What we had previously...
 
