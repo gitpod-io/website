@@ -40,10 +40,10 @@ You can find more information about [Docker configuration here](/docs/config-doc
 In case you want to tell your team or community about the automated dev environments you can add a badge to your README.md.
 
 ```
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
 ```
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](/docs/configuration)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-908a85?logo=gitpod)](/docs/configuration)
 
 Alternatively you can use a button and put it into your documentation:
 
