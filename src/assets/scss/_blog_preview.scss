@@ -46,10 +46,11 @@
 }
 .blogPreview h2 a,
 .blogPreview h3 a {
+  text-decoration: none;
   color: var(--black);
 }
 .blogPreview h2 a:focus,
-.blogPreview h3 a:focus,
+.blogPreview h3 a:hover,
 .blogPreview h2 a:hover,
 .blogPreview h3 a:focus {
   text-decoration: underline solid;
