@@ -11,12 +11,13 @@
 </script>
 
 <Banner storageKey="announcement-{announcementDate}" let:closeBanner>
-  <p class="relative flex-1 text-center">
-    📣 DevX Conf - Bring back joy and speed to our workflows. | <a
+  <span class="pr-4 md:pr-6 flex-1 text-lg text-right">📣</span>
+  <p class="relative flex-2">
+    DevX Conf - Bring back joy and speed to our workflows. | <a
       href="https://devxconf.org/">Explore</a
     >
   </p>
-  <button on:click={closeBanner} class="absolute right-0 px-4 py-1 md:px-6"
+  <button on:click={closeBanner} class="pl-4 md:pl-6 flex-1"
     ><svg
       width="16"
       height="16"
