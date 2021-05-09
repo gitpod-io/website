@@ -4,6 +4,7 @@
 
   export let post: BlogPost;
   export let isMostRecent: boolean = false;
+  export let headlineOrder: "h3";
 </script>
 
 <div class:previous={!isMostRecent} class="blogPreview">
@@ -18,11 +19,19 @@
     </a>
   {/if}
   <div class="blurb">
-    <h2>
-      <a href="/blog/{post.slug}" sveltekit:prefetch>
-        {post.title}
-      </a>
-    </h2>
+    {#if headlineOrder === "h3"}
+      <h3 class="h2">
+        <a href="/blog/{post.slug}" sveltekit:prefetch>
+          {post.title}
+        </a>
+      </h3>
+    {:else}
+      <h2>
+        <a href="/blog/{post.slug}" sveltekit:prefetch>
+          {post.title}
+        </a>
+      </h2>
+    {/if}
     <p class="excerpt">{post.excerpt}</p>
     <p>
       <span>

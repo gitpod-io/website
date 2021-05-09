@@ -40,15 +40,18 @@
   height: 248px;
   overflow: hidden;
 }
-.blogPreview h2 {
+.blogPreview h2,
+.blogPreview h3 {
   font-size: var(--h4);
 }
-.blogPreview h2 a {
-  text-decoration: none;
+.blogPreview h2 a,
+.blogPreview h3 a {
   color: var(--black);
 }
 .blogPreview h2 a:focus,
-.blogPreview h2 a:hover {
+.blogPreview h3 a:focus,
+.blogPreview h2 a:hover,
+.blogPreview h3 a:focus {
   text-decoration: underline solid;
 }
 .blogPreview p {
