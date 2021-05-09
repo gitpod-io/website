@@ -12,7 +12,7 @@
 
 <Banner storageKey="announcement-{announcementDate}" let:closeBanner>
   <span class="pr-4 md:pr-6 flex-1 text-lg text-right">📣</span>
-  <p class="relative flex-2">
+  <p class="flex-2">
     DevX Conf - Bring back joy and speed to our workflows. | <a
       href="https://devxconf.org/">Explore</a
     >
