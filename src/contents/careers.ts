@@ -38,7 +38,7 @@ export const careers: Career[] = [
         items: [
           "Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks with a lot of freedom. As a member of the team you're encouraged to advocate for or implement the changes you know that need to be done to resolve customer pain-points.",
           "Work with the entire team and our community.  You will constantly listen to the input of users and team members to identify the most important product changes at any given time.",
-          "Evaluate and document the requirements for new product features. You are responsible for analyzing, documenting and articulating the requirements for new product features, answer questions and make scope trade off decisions as needed",
+          "Evaluate and document the requirements for new product features. You are responsible for analyzing, documenting and articulating the requirements for new product features, answer questions and make scope trade off decisions as needed.",
           "Author technical design docs and PoCs. Discovering potential product features means investing into prototypes mostly in using sketches and docs but sometimes small technical spikes are needed as well.",
           "You care about growth. You understand our product-led go to market notion, track down and find solutions for problems in our self-serve funnel that can change the trajectory of the business.",
           "You ensure we do the right thing. Constantly evaluate if our solutions solve the customer problem & delivered on the business opportunity through quantitative and qualitative measures, with customer testing, betas & A/B experimentation.",
