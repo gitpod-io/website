@@ -48,7 +48,7 @@ export const careers: Career[] = [
       {
         title: "What we need",
         items: [
-          "You are a fantastic product manager. We are looking for someone who has experience in product development and is knowledgeable about the techniques this role requires.",
+          "You are a fantastic product manager. We are looking for someone who has experience in product development through the complete product discovery to delivery life cycle and is knowledgeable about the techniques this role requires.",
           "You are a good engineer. We are building a product for professional software engineers. While empathy is important, having experience in how software engineers work is very valuable.",
           "You are a startup person. You have worked in an entrepreneurial environment and helped scale teams",
           "You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate.",
