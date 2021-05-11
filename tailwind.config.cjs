@@ -78,7 +78,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      dropShadow: ["hover", "focus"],
+    },
   },
   plugins: [],
 };

@@ -7,6 +7,7 @@
 
 <script lang="ts">
   import type { Changelog } from "../../types/changelog.type";
+  import Avatars from "../../components/avatars.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
   import "../../assets/docs.scss";
 
@@ -49,6 +50,13 @@
     </div>
     <div class="w-8/12 content-docs">
       {@html entry.content}
+      <p>
+        <strong>Contributors:</strong>
+        <Avatars
+          usernames={entry.contributors}
+          socialMediaLinkClasses="filter hover:drop-shadow"
+        />
+      </p>
     </div>
     <hr />
   </div>

@@ -6,27 +6,8 @@
   margin: 1.875rem 0 1.5rem;
   color: var(--light-grey);
 }
-.post .author a {
-  display: inline-flex;
-  padding: 0 0.5rem;
-  background-color: var(--white);
-  border-radius: 0.75em;
-  text-decoration: none;
-  font-size: 1rem;
-  color: var(--light-grey);
-  margin-right: 1em;
-  &:hover,
-  &:focus {
-    background-color: var(--off-white);
-    color: var(--dark-grey);
-  }
-}
 .post h1 {
   margin-bottom: var(--x-small);
-}
-.post .author img {
-  margin: 0 0.5em 0 0;
-  place-self: center;
 }
 .post .share {
   border-top: 1px solid var(--divider);

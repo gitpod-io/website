@@ -76,21 +76,3 @@
 .blogPreview .excerpt {
   flex-grow: 1;
 }
-.author img {
-  display: inline;
-  height: 24px;
-  width: 24px;
-  border-radius: 9999px;
-  border: 1px solid var(--off-white);
-}
-.blogPreview .author a {
-  text-decoration: none;
-}
-.blogPreview .author a:focus,
-.blogPreview .author a:hover {
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
-  transition-duration: 0;
-}
-.blogPreview .author a:not(:first-of-type) {
-  margin-left: -0.5rem;
-}
