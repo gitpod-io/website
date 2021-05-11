@@ -35,7 +35,7 @@
     <Avatars {usernames} socialMediaLinkClasses="filter hover:drop-shadow" />
   </span>
   <span class="ml-2">
-    <span class="mr-1">Thanks </span><Avatars
+    <span>Thanks </span><Avatars
       {usernames}
       {displayNames}
       showAvatar={false}
