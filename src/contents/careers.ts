@@ -26,6 +26,53 @@ export const perks = [
 
 export const careers: Career[] = [
   {
+    title: "Product Manager",
+    intro: `You are a creative, empathic and visionary product person who loves Gitpod’s direction and wants to be part of the journey. We are looking for someone experienced with product discovery who is a developer at heart.`,
+    paragraphs: `
+    
+    As a product manager at Gitpod you will work on product discovery and product design (not visually) making sure we are always focussed on the most important features at a time. You will be describing new features in design docs which are based on input from users and team members as well as data and “good taste”™. You’ll be supporting the engineering team in understanding the purpose and answering unanswered questions of new product features. You will be always on the lookout for new possibilities and sweet spots that will make our beloved product more useful for our target audience. You are conscious about the limited engineering time and therefore know what to do and what not to do. You are a nice person who wants to work with an open and collaborative remote team of highly motivated engineers.
+  `,
+    lists: [
+      {
+        title: "As part of the team you will ...",
+        items: [
+          "Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks with a lot of freedom. As a member of the team you're encouraged to advocate for or implement the changes you know that need to be done to resolve customer pain-points.",
+          "Work with the entire team and our community.  You will constantly listen to the input of users and team members to identify the most important product changes at any given time.",
+          "Evaluate and document the requirements for new product features. You are responsible for analyzing, documenting and articulating the requirements for new product features, answer questions and make scope trade off decisions as needed",
+          "Author technical design docs and PoCs. Discovering potential product features means investing into prototypes mostly in using sketches and docs but sometimes small technical spikes are needed as well.",
+          "You care about growth. You understand our product-led go to market notion, track down and find solutions for problems in our self-serve funnel that can change the trajectory of the business",
+          "You ensure we do the right thing. Constantly evaluate if our solutions solve the customer problem & delivered on the business opportunity through quantitative and qualitative measures, with customer testing, betas & A/B experimentation.",
+          "Help building out our product department in close collaboration with the CEO",
+        ],
+      },
+      {
+        title: "What we need",
+        items: [
+          "You are a fantastic product manager. We are looking for someone who has experience in product development and is knowledgeable about the techniques this role requires.",
+          "You are a good engineer. We are building a product for professional software engineers. While empathy is important, having experience in how software engineers work is very valuable.",
+          "You are a startup person. You have worked in an entrepreneurial environment and helped scale teams",
+          "You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate.",
+          "You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers. Ready-to-code, cloud-based development environments streamline how software is written today.",
+          "You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.",
+        ],
+      },
+      {
+        title: "Our stack:",
+        items: [
+          "Gitpod is a distributed application running on Kubernetes. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.",
+          "Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.",
+        ],
+      },
+      {
+        title: "We're about balance",
+        items: perks.map((perk) => perk.title),
+      },
+    ],
+    textAfterTheLists: "",
+    rendered: false,
+    date: "2021-05-11T14:00:00.000Z",
+  },
+  {
     title: "Principal Technical Writer (Long-term contract)",
     intro: `Gitpod has just kicked off a project relating to our product documentation and is looking for external help with bringing our documentation to industry standards of self-serve, developer-led companies. (ie. netlify/vercel)`,
     paragraphs: `
