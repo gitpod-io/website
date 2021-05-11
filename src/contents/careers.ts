@@ -41,7 +41,7 @@ export const careers: Career[] = [
           "Evaluate and document the requirements for new product features. You are responsible for analyzing, documenting and articulating the requirements for new product features, answer questions and make scope trade off decisions as needed.",
           "Author technical design docs and PoCs. Discovering potential product features means investing into prototypes mostly in using sketches and docs but sometimes small technical spikes are needed as well.",
           "You care about growth. You understand our product-led go to market notion, track down and find solutions for problems in our self-serve funnel that can change the trajectory of the business.",
-          "You ensure we do the right thing. Constantly evaluate if our solutions solve the customer problem & delivered on the business opportunity through quantitative and qualitative measures, with customer testing, betas & A/B experimentation.",
+          "Ensure we do the right thing. Constantly evaluate if our solutions solve the customer problem & delivered on the business opportunity through quantitative and qualitative measures, with customer testing, betas & A/B experimentation.",
           "Help building out our product department in close collaboration with the CEO",
         ],
       },
