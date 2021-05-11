@@ -1,0 +1,15 @@
+.avatars a.showAvatar:not(:first-of-type) {
+  margin-left: -0.5rem;
+}
+
+/* We need .content-docs due to specificity.
+   This is to overwrite default values to match the design specs.
+ */
+.content-docs .avatars a {
+  color: var(--light-grey);
+  font-weight: 400;
+}
+
+.content-docs .avatars a:hover {
+  color: var(--dark-grey);
+}

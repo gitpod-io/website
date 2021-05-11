@@ -7,7 +7,6 @@
 
 <script lang="ts">
   import type { Changelog } from "../../types/changelog.type";
-  import Avatars from "../../components/avatars.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
   import "../../assets/docs.scss";
 
@@ -37,30 +36,25 @@
   </header>
 </div>
 
-{#each changelogEntries as entry}
-  <div class="flex pb-xx-large border-b-2 border-gray-300">
-    <div class="w-4/12">
-      <h2>
-        {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        })}
-      </h2>
+<div class="flex flex-col space-y-xx-large border-b-2 border-gray-300">
+  {#each changelogEntries as entry}
+    <div class="flex">
+      <div class="w-4/12">
+        <h2 class="text-h4">
+          {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })}
+        </h2>
+      </div>
+      <div class="w-8/12 content-docs">
+        {@html entry.content}
+      </div>
+      <hr />
     </div>
-    <div class="w-8/12 content-docs">
-      {@html entry.content}
-      <p>
-        <strong>Contributors:</strong>
-        <Avatars
-          usernames={entry.contributors}
-          socialMediaLinkClasses="filter hover:drop-shadow"
-        />
-      </p>
-    </div>
-    <hr />
-  </div>
-{/each}
+  {/each}
+</div>
 <div class="flex pb-xx-large">
   <div class="w-4/12" />
   <div class="w-8/12">

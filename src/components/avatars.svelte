@@ -44,7 +44,14 @@
    */
   export let socialMediaImgClasses = "";
 
-  $: trimmedUsernames = usernames.split(",").map((username) => username.trim());
+  /**
+   * Set this to `false` to hide the avatar and instead show the display name only.
+   */
+  export let showAvatar = true;
+
+  const trimmedUsernames = usernames
+    .split(",")
+    .map((username) => username.trim());
 
   const getSocialMediaLink = (username: string) =>
     socialMediaLinks
@@ -52,26 +59,23 @@
       : `https://github.com/${username}`;
 </script>
 
-<style>
-  a:not(:first-of-type) {
-    margin-left: -0.5rem;
-  }
-</style>
-
-<span>
+<span class="avatars">
   {#each trimmedUsernames as username}
     <a
       href={getSocialMediaLink(username)}
+      class:showAvatar
       class="no-underline transition-none {socialMediaLinkClasses}"
     >
-      <!-- We use the GitHub profile image because the Twitter profile image needs an authenticated API call -->
-      <img
-        src="https://github.com/{username}.png"
-        alt="Avatar of {username}"
-        height="24"
-        width="24"
-        class="inline rounded-full border border-solid border-off-white {socialMediaImgClasses}"
-      />
+      {#if showAvatar}
+        <!-- We use the GitHub profile image because the Twitter profile image needs an authenticated API call -->
+        <img
+          src="https://github.com/{username}.png"
+          alt="Avatar of {username}"
+          height="24"
+          width="24"
+          class="inline rounded-full border border-solid border-off-white {socialMediaImgClasses}"
+        />
+      {/if}
       {#if displayNames}
         {displayNames[username]}
       {/if}
