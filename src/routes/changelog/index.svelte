@@ -43,7 +43,7 @@
         <h2 class="text-h4">
           {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
             year: "numeric",
-            month: "short",
+            month: "long",
             day: "numeric",
           })}
         </h2>
