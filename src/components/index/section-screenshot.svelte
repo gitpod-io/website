@@ -22,7 +22,6 @@
     margin: 0 auto;
     margin-bottom: -48px;
     margin: 2rem auto;
-    box-shadow: var(--shadow-brand);
     border-radius: 0.875rem;
 
     @media (max-width: 768px) {
@@ -58,7 +57,7 @@
       Remote-first. Secure by design.
     </h2>
     <img
-      class="screenshot"
+      class="screenshot shadow-brand"
       src="/images/gitpod-editor.jpg"
       alt="Gitpod"
       height="819"

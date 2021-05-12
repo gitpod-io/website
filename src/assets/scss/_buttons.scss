@@ -96,7 +96,8 @@ a {
 }
 
 .btn-otherbrand {
-  display: flex;
+  display: inline flex;
+  min-width: 5rem;
   align-items: center;
   padding: var(--macro) 0.75rem;
   justify-content: center;
