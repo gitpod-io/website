@@ -15,7 +15,11 @@
 
 <style>
   .content-docs :global(img) {
-    @apply rounded-2xl;
+    @apply rounded-3xl;
+  }
+
+  .content-docs :global(li) {
+    @apply mb-6;
   }
 </style>
 
@@ -28,9 +32,9 @@
 />
 
 <div class="flex">
-  <div class="w-4/12" />
-  <header class="w-8/12 mb-xx-large">
-    <h1 class="mt-xx-large mb-macro">Changelog</h1>
+  <div class="hidden w-4/12 md:block" />
+  <header class="w-full mb-x-large md:w-8/12 md:mb-xx-large">
+    <h1 class="mt-x-large mb-macro md:mt-xx-large">Changelog</h1>
     <p>Gitpod product improvements and updates</p>
     <p>
       <a
@@ -42,11 +46,13 @@
   </header>
 </div>
 
-<div class="flex flex-col space-y-xx-large border-b-2 border-gray-300">
+<div
+  class="flex flex-col space-y-x-large border-b-2 border-gray-300 md:space-y-xx-large"
+>
   {#each changelogEntries as entry}
-    <div class="flex">
-      <div class="w-4/12">
-        <h2 class="text-h4">
+    <div class="flex flex-col md:flex-row">
+      <div class="w-full md:w-4/12">
+        <h2 class="mb-xx-small text-h4">
           {new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
             year: "numeric",
             month: "long",
@@ -54,16 +60,16 @@
           })}
         </h2>
       </div>
-      <div class="w-8/12 content-docs">
+      <div class="w-full md:w-8/12 content-docs">
         {@html entry.content}
       </div>
       <hr />
     </div>
   {/each}
 </div>
-<div class="flex pb-xx-large">
-  <div class="w-4/12" />
-  <div class="w-8/12">
+<div class="flex py-large md:py-x-large">
+  <div class="hidden w-4/12 md:block" />
+  <div class="w-full md:w-8/12">
     <p>
       For older updates, please visit <a href="/docs/changelog"
         >the previous changelog.</a
