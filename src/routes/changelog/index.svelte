@@ -13,6 +13,12 @@
   export let changelogEntries: Changelog[];
 </script>
 
+<style>
+  .content-docs :global(img) {
+    @apply rounded-2xl;
+  }
+</style>
+
 <OpenGraph
   data={{
     description: "New features and improvements to Gitpod.",
