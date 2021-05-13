@@ -18,6 +18,10 @@
     @apply rounded-3xl;
   }
 
+  .content-docs :global(h2, h3) {
+    @apply mt-12 !important;
+  }
+
   .content-docs :global(li) {
     @apply mb-6;
   }
