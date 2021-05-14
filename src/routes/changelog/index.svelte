@@ -22,12 +22,16 @@
     @apply rounded-3xl;
   }
 
-  .content-docs :global(h2, h3) {
-    @apply mt-12 !important;
+  .content-docs :global(h2) {
+    @apply mt-12 mb-4 md:mt-16 !important;
+  }
+
+  .content-docs :global(h3) {
+    @apply mt-12 mb-6 md:mt-16 md:mb-8 !important;
   }
 
   .content-docs :global(li) {
-    @apply mb-6;
+    @apply mt-0 mb-6 md:mb-4;
   }
 </style>
 
@@ -54,9 +58,7 @@
   </header>
 </div>
 
-<div
-  class="flex flex-col space-y-x-large border-b-2 border-gray-300 md:space-y-xx-large"
->
+<div class="flex flex-col space-y-x-large md:space-y-xx-large">
   {#each changelogEntries as entry}
     <div class="flex flex-col md:flex-row">
       <div class="w-full md:w-4/12">
@@ -71,8 +73,8 @@
       <div class="w-full md:w-8/12 content-docs">
         {@html entry.content}
       </div>
-      <hr />
     </div>
+    <div class="border-b border-gray-300" />
   {/each}
 </div>
 <div class="flex py-large md:py-x-large">
