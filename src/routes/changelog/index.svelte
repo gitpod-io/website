@@ -14,6 +14,10 @@
 </script>
 
 <style>
+  .content-docs :global(a) {
+    @apply font-normal;
+  }
+
   .content-docs :global(img) {
     @apply rounded-3xl;
   }
