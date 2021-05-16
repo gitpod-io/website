@@ -34,6 +34,7 @@ module.exports = {
         "sand-light": "var(--sand-light)",
         "off-white": "var(--off-white)",
         white: "var(--white)",
+        "brand-hover": "var(--brand-hover)",
 
         gray: {
           900: "var(--black)",

@@ -14,17 +14,24 @@
       width: 100%;
     }
   }
+
+  .svg-button {
+    @apply bg-orange-900;
+  }
+
+  .svg-button:hover,
+  .svg-button:focus {
+    background: var(--brand-hover);
+  }
 </style>
 
 <div
-  class="logo-box py-large px-huge rounded-4xl bg-white shadow-normal mx-micro mb-small"
+  class="logo-box p-large rounded-4xl bg-white shadow-normal mx-micro mb-small"
   class:bg-gray-900={isDark}
   class:text-white={isDark}
 >
   <img src={svgSrc} {alt} class="mx-auto" />
   <p class="mt-medium mb-micro">Download {text}</p>
-  <a href={svgSrc} download class="btn-primary w-20">SVG</a>
-  <a href={`/images/media-kit/${srcPNG}`} download class="btn-otherbrand w-20"
-    >PNG</a
-  >
+  <a href={svgSrc} download class="btn-cta mr-xx-small svg-button">SVG</a>
+  <a href={`/images/media-kit/${srcPNG}`} download class="btn-cta">PNG</a>
 </div>
