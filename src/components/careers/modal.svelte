@@ -14,17 +14,20 @@
 
 <Modal isOpen={!!career} on:close>
   <h2 class="jobTitle">{career.title}</h2>
-  <p>{career.intro}</p>
-  <p>{career.paragraphs}</p>
+  <p>{@html career.intro}</p>
+  <p>{@html career.paragraphs}</p>
 
   {#each career.lists as list}
-    <h3>{list.title}</h3>
+    <h3>{@html list.title}</h3>
     <ul>
       {#each list.items as item}
         <li>
           <p>
-            <strong>{item.split(". ")[0]}</strong><br />
-            {item.split(". ").slice(1, item.split(". ").length).join(". ")}
+            <strong>{@html item.split(". ")[0]}</strong><br />
+            {@html item
+              .split(". ")
+              .slice(1, item.split(". ").length)
+              .join(". ")}
           </p>
         </li>
       {/each}

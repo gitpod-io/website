@@ -136,4 +136,14 @@ export const authors: { [idx: string]: Author } = {
     description:
       "After many previous adventures involving cycling through many countries on a unicycle Geoff now lives a minimalist lifestyle in a van that is slowly working its' way around Australia. On an average day™ at Gitpod you'll find him shipping features along side the engineering team, crafting code examples and authoring documentation.",
   },
+  mikenikles: {
+    name: "Mike Nikles",
+    socialProfiles: {
+      github: "mikenikles",
+      twitter: "mikenikles",
+      linkedin: "mikenikles",
+    },
+    description:
+      "Mike is a software architect who values developer experience, productivity and team morale. He is on a journey to help developers let go of their local development environments and embrace automated, ephemeral development environments.",
+  },
 };

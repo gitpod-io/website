@@ -6,7 +6,7 @@
   onMount(() => {
     const path = window.location.pathname;
     const file = path.endsWith("/") ? path.substring(0, path.length - 1) : path;
-    editUrl = `https://gitpod.io/#https://github.com/gitpod-io/website-kumquat/blob/main/src/routes${file}.md`;
+    editUrl = `https://gitpod.io/#https://github.com/gitpod-io/website/blob/main/src/routes${file}.md`;
   });
 </script>
 

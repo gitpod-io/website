@@ -8,6 +8,12 @@
   import CookieConsent from "../components/banners/cookie-consent.svelte";
 </script>
 
+<style>
+  :global(#svelte-announcer) {
+    @apply sr-only;
+  }
+</style>
+
 <!-- <AnnouncementBanner /> -->
 <LayoutRoot>
   <Nav />

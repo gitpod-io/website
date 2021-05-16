@@ -3,11 +3,24 @@
 </script>
 
 <script lang="ts">
+  import { hyphenate } from "../utils/helper";
+
   import CareerModal from "../components/careers/modal.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers, perks } from "../contents/careers";
+  import { onMount } from "svelte";
 
   let selectedCareer;
+
+  $: if (selectedCareer) {
+    window.location.hash = `#${hyphenate(selectedCareer.title)}`;
+  }
+
+  onMount(() => {
+    const hash = window.location.hash.substring(1);
+    const career = careers.find((career) => hyphenate(career.title) === hash);
+    selectedCareer = career;
+  });
 </script>
 
 <style>
@@ -155,14 +168,30 @@
   <div class="mb-10rem">
     <ul class="jobs">
       {#each careers as career}
-        <li id={career.title.toLowerCase().replace(/\s/g, "-")}>
-          <h3>
-            <button
-              on:click={() => {
-                selectedCareer = career;
-              }}>{career.title}</button
-            >
-          </h3>
+        <li id={hyphenate(career.title)}>
+          <button
+            on:click={() => {
+              selectedCareer = career;
+            }}
+          >
+            <div class="group flex justify-center items-center text-gray-900">
+              {career.title}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="permalink-icon ml-micro text-white group-hover:text-gray-900 transition-all duration-100"
+                viewBox="0 0 512 512"
+                height="22"
+                ><path
+                  d="M208 352h-64a96 96 0 010-192h64m96 0h64a96 96 0 010 192h-64m-140.71-96h187.42"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="36"
+                /></svg
+              >
+            </div>
+          </button>
         </li>
       {/each}
     </ul>
