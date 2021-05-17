@@ -56,7 +56,7 @@ export const otherPlans = [
     title: "Pro Open Source",
     paragraphs: [
       "If you're a professional open-source developer and need more hours, you can apply to our free Professional Open Source plan.",
-      "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <srong>requirements.</srong>",
+      "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <a href='/docs/professional-open-source#who-is-eligible'>requirements.</a>",
     ],
     btnText: "Apply now",
     btnHref: "/contact",
