@@ -26,12 +26,14 @@
 </style>
 
 <div
-  class="logo-box p-large rounded-4xl bg-white shadow-normal mx-micro mb-small"
+  class="logo-box px-small py-medium sm:p-large rounded-4xl bg-white shadow-normal mx-micro mb-small"
   class:bg-gray-900={isDark}
   class:text-white={isDark}
 >
   <img src={svgSrc} {alt} class="mx-auto" />
   <p class="mt-medium mb-micro">Download {text}</p>
-  <a href={svgSrc} download class="btn-cta mr-xx-small svg-button">SVG</a>
-  <a href={`/images/media-kit/${srcPNG}`} download class="btn-cta">PNG</a>
+  <div class="buttons-wrapper">
+    <a href={svgSrc} download class="btn-cta svg-button">SVG</a>
+    <a href={`/images/media-kit/${srcPNG}`} download class="btn-cta">PNG</a>
+  </div>
 </div>

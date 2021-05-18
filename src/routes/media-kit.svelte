@@ -6,8 +6,13 @@
 </script>
 
 <header>
-  <h1>Press kit</h1>
+  <h1>Media kit</h1>
   <p>We’ve put together some assets to help you using our brand.</p>
+  <img
+    src="/images/media-kit/media-kit.png"
+    alt="Gitpod Illustration"
+    class="mt-x-large rounded-4xl w-full"
+  />
 </header>
 
 <LogoSection />

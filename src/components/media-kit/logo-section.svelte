@@ -30,7 +30,8 @@
     <p>
       Please don’t modify the logos or use them in any altered way.
       <br />
-      For more details <a href="/assets/style-guide.pdf">see style guide</a>.
+      For more details
+      <a href="/assets/style-guide.pdf" target="_blank">see style guide</a>.
     </p>
   </div>
   <div class="flex justify-around flex-wrap max-w-container-normal m-auto">
