@@ -3,7 +3,15 @@
   import AdditionalImages from "../components/media-kit/additional-images.svelte";
   import ColorsSection from "../components/media-kit/colors-section.svelte";
   import LogoSection from "../components/media-kit/logo-section.svelte";
+  import OpenGraph from "../components/open-graph.svelte";
 </script>
+
+<OpenGraph
+  data={{
+    description: "We’ve put together some assets to help you using our brand.",
+    title: "Media kit",
+  }}
+/>
 
 <header>
   <h1>Media kit</h1>
