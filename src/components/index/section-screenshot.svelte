@@ -40,10 +40,6 @@
     }
   }
 
-  .buttons-wrapper {
-    justify-content: center;
-  }
-
   .btn-otherbrand {
     @media (max-width: 429px) {
       width: 12rem;
