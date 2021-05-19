@@ -26,9 +26,8 @@
     margin-top: var(--medium);
   }
 
-  .half {
-    flex: 0 0 42%;
-    min-width: 280px;
+  .half > * {
+    @apply mt-macro;
   }
 </style>
 
@@ -78,7 +77,7 @@
 
     <h2 class="h4 title">Customer Information</h2>
 
-    <div class="flex flex-wrap justify-between">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-small">
       <label class="half">
         First Name
         <input name="firstName" type="text" />
@@ -114,7 +113,7 @@
       <p>
         Add personal message <span>(optional)</span>
       </p>
-      <textarea name="message" />
+      <textarea cols="30" rows="8" name="message" />
     </label>
 
     <button class="btn-conversion title">Request Now</button>
