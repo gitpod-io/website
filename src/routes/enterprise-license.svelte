@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { countryList } from "../contents/license-key";
   import { isEurope } from "../utils/helper";
 
   let orderTotal = 0;
@@ -26,7 +27,7 @@
     margin-top: var(--medium);
   }
 
-  .half > * {
+  .half :last-child {
     @apply mt-macro;
   }
 </style>
@@ -61,7 +62,7 @@
         </div>
       </div>
       <div>
-        Order Total: {orderTotal}
+        Order Total: <strong>{orderTotal}</strong>
         {isEurope() ? "€" : "$"}
       </div>
     </div>
@@ -105,6 +106,28 @@
       <label class="half">
         City
         <input name="city" type="text" />
+      </label>
+      <label>
+        Country
+        <select name="country">
+          <option>Select</option>
+          {#each countryList as c}
+            <option value={c}>
+              {c}
+            </option>
+          {/each}
+        </select>
+      </label>
+      <label>
+        Total Number of Employees <span>(optional)</span>
+        <select name="noOfEmployees">
+          <option>Select</option>
+          {#each ["2-5", "6-20", "21-50", "51-250", "+250"] as n, i}
+            <option value={n}>
+              {n}
+            </option>
+          {/each}
+        </select>
       </label>
     </div>
 
