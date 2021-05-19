@@ -17,7 +17,7 @@ Deeply devoted to the open-source community, we are happy to provide the profess
 
 No more hour restrictions, you'll be able to use Gitpod for any number of hours, on any public GitHub or GitLab repository.
 
-## Who is eligible?
+<h2 id="who-is-eligible">Who is eligible?</h2>
 
 You should meet **at least one** of the following requirements:
 

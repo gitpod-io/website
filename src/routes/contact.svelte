@@ -21,7 +21,7 @@
       imgWidth: "147",
     },
     {
-      btnHref: "/docs",
+      btnHref: "/docs/professional-open-source#who-is-eligible",
       btnText: "Open documentation",
       description:
         "If you want to find out if you are elegible for our professional open source programm you can check out our docs.",

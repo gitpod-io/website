@@ -34,6 +34,7 @@ module.exports = {
         "sand-light": "var(--sand-light)",
         "off-white": "var(--off-white)",
         white: "var(--white)",
+        "brand-hover": "var(--brand-hover)",
 
         gray: {
           900: "var(--black)",
@@ -69,8 +70,10 @@ module.exports = {
       },
       maxWidth: {
         row: "var(--row-max-width)",
+        "container-normal": "var(--container-normal)",
       },
       spacing: {
+        huge: "var(--huge)",
         "xx-large": "var(--xx-large)",
         "x-large": "var(--x-large)",
         large: "var(--large)",
@@ -80,6 +83,10 @@ module.exports = {
         "xx-small": "var(--xx-small)",
         micro: "var(--micro)",
         macro: "var(--macro)",
+      },
+      boxShadow: {
+        normal: "var(--shadow)",
+        brand: "var(--shadow-brand)",
       },
     },
   },

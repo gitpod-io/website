@@ -11,10 +11,19 @@
   from = "/chat"
   to = "https://discord.gg/ZZ8wxgHtc6"
   status = 301
-  
+
+[[redirects]]
+  from = "/code-of-conduct"
+  to = "https://github.com/gitpod-io/gitpod/blob/main/CODE_OF_CONDUCT.md"
+
 [[redirects]]
   from = "/changelog"
   to = "/docs/changelog"
+  status = 301
+
+[[redirects]]
+  from = "/direction"
+  to = "https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6"
   status = 301
 
 [[redirects]]

@@ -140,14 +140,14 @@
   <p>
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6"
+      href="https://www.gitpod.io/direction"
       target="_blank"
       ><span class="icon">🗺️</span> <span class="arrow">↗︎</span>Gitpod's
       Direction</a
     >
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203"
+      href="https://www.gitpod.io/roadmap"
       target="_blank"
       ><span class="icon">🛣</span> <span class="arrow">↗︎</span> Gitpod's Roadmap</a
     >
