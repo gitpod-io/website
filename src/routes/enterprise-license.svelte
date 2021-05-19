@@ -1,9 +1,34 @@
-<script>
+<script lang="ts">
+  import { isEurope } from "../utils/helper";
+
+  let orderTotal = 0;
+
+  const yearlyPricesPerSeat = {
+    eur: 216,
+    usd: 240,
+  };
+
+  const handleSeatsInput = (e) => {
+    const input = e.target.value;
+    if (input == "") {
+      orderTotal = 0;
+    } else {
+      const number = parseInt(input);
+      orderTotal = isEurope()
+        ? yearlyPricesPerSeat.eur * number
+        : yearlyPricesPerSeat.usd * number;
+    }
+  };
 </script>
 
-<style>
+<style lang="scss">
   .title:not(:first-child) {
     margin-top: var(--medium);
+  }
+
+  .half {
+    flex: 0 0 42%;
+    min-width: 280px;
   }
 </style>
 
@@ -20,11 +45,27 @@
       <h2 class="h4">How many seats would you like to purchase?</h2>
     </label>
 
-    <div>
-      <input id="seats" type="number" placeholder="Seats" name="seats" />
-      Order Total: 0
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <input
+          id="seats"
+          type="number"
+          placeholder="Seats"
+          name="seats"
+          on:input={handleSeatsInput}
+          min="0"
+        />
+        <div class="ml-xx-small">
+          x {isEurope()
+            ? `${yearlyPricesPerSeat.eur}€`
+            : `${yearlyPricesPerSeat.usd}$`} per user yearly
+        </div>
+      </div>
+      <div>
+        Order Total: {orderTotal}
+        {isEurope() ? "€" : "$"}
+      </div>
     </div>
-    <!-- <div>x {isEurope ? `${yearlyPricesPerSeat.eur}€` : `${yearlyPricesPerSeat.usd}`} per user yearly</div> -->
 
     <label class="title" for="domain">
       <h2 class="h4">
@@ -37,37 +78,39 @@
 
     <h2 class="h4 title">Customer Information</h2>
 
-    <label>
-      First Name
-      <input name="firstName" type="text" />
-    </label>
-    <label>
-      Last Name
-      <input name="lastName" type="text" />
-    </label>
-    <label>
-      Work Email
-      <input type="email" name="email" />
-    </label>
-    <label>
-      Company
-      <input name="company" type="text" />
-    </label>
-    <label>
-      Street Address
-      <input name="address" type="text" />
-    </label>
-    <label>
-      Postal Code
-      <input name="postalCode" type="text" />
-    </label>
-    <label>
-      City
-      <input name="city" type="text" />
-    </label>
+    <div class="flex flex-wrap justify-between">
+      <label class="half">
+        First Name
+        <input name="firstName" type="text" />
+      </label>
+      <label class="half">
+        Last Name
+        <input name="lastName" type="text" />
+      </label>
+      <label class="half">
+        Work Email
+        <input type="email" name="email" />
+      </label>
+      <label class="half">
+        Company
+        <input name="company" type="text" />
+      </label>
+      <label class="half">
+        Street Address
+        <input name="address" type="text" />
+      </label>
+      <label class="half">
+        Postal Code
+        <input name="postalCode" type="text" />
+      </label>
+      <label class="half">
+        City
+        <input name="city" type="text" />
+      </label>
+    </div>
 
     <h2 class="h4 title">Other</h2>
-    <label>
+    <label class="half">
       <p>
         Add personal message <span>(optional)</span>
       </p>

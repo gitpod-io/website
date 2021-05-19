@@ -3,6 +3,7 @@ textarea {
   all: unset;
   font: inherit;
   color: var(--dark-grey);
+  box-sizing: border-box;
 }
 [type="radio"],
 [type="checkbox"] {
@@ -40,6 +41,7 @@ legend {
 }
 [type="email"],
 [type="text"],
+[type="number"],
 [type="radio"] + label,
 textarea {
   border: 1px solid var(--divider);
