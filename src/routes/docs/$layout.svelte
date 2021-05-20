@@ -100,6 +100,7 @@
       M("Create a Team", "teams"),
     ]),
     M("Changelog", "changelog"),
+    M("🚧 Beta Docs", "beta"),
   ];
 </script>
 
