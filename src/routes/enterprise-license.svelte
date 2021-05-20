@@ -1,6 +1,10 @@
 <script lang="ts">
+  import type { Form } from "../types/form.type";
+
+  import SubmissionSuccess from "../components/submission-success.svelte";
   import { countryList } from "../contents/license-key";
   import { isEurope } from "../utils/helper";
+  import type { Email } from "../functions/submit-form";
 
   let orderTotal = 0;
 
@@ -8,6 +12,79 @@
     eur: 216,
     usd: 240,
   };
+
+  const formData: Form = {
+    seats: {
+      el: null,
+      valid: false,
+      value: "0",
+    },
+    domain: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    firstName: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    lastName: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    email: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    company: {
+      el: null,
+      valid: true,
+      value: "",
+    },
+    address: {
+      el: null,
+      valid: true,
+      value: "",
+    },
+    postalCode: {
+      el: null,
+      valid: true,
+      value: "",
+    },
+    city: {
+      el: null,
+      valid: true,
+      value: "",
+    },
+    country: {
+      el: null,
+      valid: true,
+      value: "",
+    },
+    noOfEmployees: {
+      el: null,
+      valid: true,
+      value: "",
+    },
+    message: {
+      el: null,
+      valid: true,
+      value: "",
+    },
+  };
+
+  let isRequested: boolean = false;
+  let isFormDirty: boolean = false;
+
+  $: isFormValid = Object.values(formData).every((field) => field.valid);
+
+  $: {
+    console.log(formData);
+    console.log(isFormValid);
+  }
 
   const handleSeatsInput = (e) => {
     const input = e.target.value;
@@ -20,9 +97,62 @@
         : yearlyPricesPerSeat.usd * number;
     }
   };
+
+  const handleSubmit = async () => {
+    isFormDirty = true;
+    if (!isFormValid) {
+      return;
+    }
+
+    const email: Email = {
+      from: {
+        email: formData.email.value,
+        name: `${formData.firstName.value} ${formData.lastName.value}`,
+      },
+      subject:
+        "Requesting a professional self-hosted license" +
+        "  (from " +
+        formData.email.value +
+        ")",
+      message: `
+        ${formData.company.value}
+        ${formData.firstName.value} ${formData.lastName.value}
+        ${formData.address.value}
+        ${formData.postalCode.value} ${formData.city.value}
+        ${formData.country.value}
+
+        domain: ${formData.domain.value}
+        seats: ${formData.seats.value}
+        employees: ${formData.noOfEmployees.value}
+
+        Message:
+        ${formData.message.value}
+      `,
+    };
+
+    console.log(email);
+
+    // try {
+    //   const response = await fetch("/.netlify/functions/submit-form", {
+    //     method: "POST",
+    //     body: JSON.stringify(email),
+    //   });
+    //   if (response.ok) {
+    //     isRequested = true;
+    //   } else {
+    //     console.error(response.statusText);
+    //   }
+    // } catch (error) {
+    //   console.error(error);
+    // }
+  };
 </script>
 
 <style lang="scss">
+  header {
+    @apply mb-small;
+  }
+
   .title:not(:first-child) {
     margin-top: var(--medium);
   }
@@ -40,105 +170,199 @@
 </header>
 
 <section class="card shadow-xl mb-32 mx-8">
-  <form>
-    <label class="title" for="seats">
-      <h2 class="h4">How many seats would you like to purchase?</h2>
-    </label>
+  {#if isRequested}
+    <SubmissionSuccess title="Thanks" text="We'll get back to you soon." />
+  {:else}
+    <form on:submit|preventDefault={handleSubmit} novalidate>
+      <label
+        class="title"
+        for="seats"
+        class:error={isFormDirty && !formData.seats.valid}
+      >
+        <h2 class="h4">How many seats would you like to purchase?*</h2>
+      </label>
 
-    <div class="flex items-center justify-between">
-      <div class="flex items-center">
-        <input
-          id="seats"
-          type="number"
-          placeholder="Seats"
-          name="seats"
-          on:input={handleSeatsInput}
-          min="0"
-        />
-        <div class="ml-xx-small">
-          x {isEurope()
-            ? `${yearlyPricesPerSeat.eur}€`
-            : `${yearlyPricesPerSeat.usd}$`} per user yearly
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input
+            id="seats"
+            type="number"
+            placeholder="Seats"
+            name="seats"
+            bind:value={formData.seats.value}
+            bind:this={formData.seats.el}
+            on:input={(e) => {
+              handleSeatsInput(e);
+              formData.seats.valid =
+                formData.seats.value && formData.seats.el.checkValidity();
+            }}
+            min="0"
+            class:error={isFormDirty && !formData.seats.valid}
+          />
+          <div class="ml-xx-small">
+            x {isEurope()
+              ? `${yearlyPricesPerSeat.eur}€`
+              : `${yearlyPricesPerSeat.usd}$`} per user yearly
+          </div>
+        </div>
+        <div>
+          Order Total: <strong>{orderTotal}</strong>
+          {isEurope() ? "€" : "$"}
         </div>
       </div>
-      <div>
-        Order Total: <strong>{orderTotal}</strong>
-        {isEurope() ? "€" : "$"}
+
+      <label class="title" for="domain">
+        <h2 class="h4">
+          What is the domain name of your Gitpod Self-Hosted installation?*
+        </h2>
+      </label>
+      <input
+        type="text"
+        id="domain"
+        placeholder="e.g. gitpod.mycompany.com"
+        bind:value={formData.domain.value}
+        bind:this={formData.domain.el}
+        on:change={() => {
+          formData.domain.valid =
+            formData.domain.value && formData.domain.el.checkValidity();
+        }}
+      />
+
+      <p>The license key will be bound to this domain.</p>
+
+      <h2 class="h4 title">Customer Information</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-small">
+        <label class="half">
+          First Name*
+          <input
+            name="firstName"
+            type="text"
+            bind:value={formData.firstName.value}
+            bind:this={formData.firstName.el}
+            on:change={() => {
+              formData.firstName.valid =
+                formData.firstName.value &&
+                formData.firstName.el.checkValidity();
+            }}
+            autocomplete="name"
+          />
+        </label>
+        <label class="half">
+          Last Name*
+          <input
+            name="lastName"
+            type="text"
+            bind:value={formData.lastName.value}
+            bind:this={formData.lastName.el}
+            on:change={() => {
+              formData.lastName.valid =
+                formData.lastName.value && formData.lastName.el.checkValidity();
+            }}
+            autocomplete="name"
+          />
+        </label>
+        <label class="half">
+          Work Email*
+          <input
+            type="email"
+            name="email"
+            bind:value={formData.email.value}
+            bind:this={formData.email.el}
+            on:change={() => {
+              formData.email.valid =
+                formData.email.value && formData.email.el.checkValidity();
+            }}
+            autocomplete="email"
+          />
+        </label>
+        <label class="half">
+          Company
+          <input
+            name="company"
+            bind:value={formData.company.value}
+            bind:this={formData.company.el}
+            type="text"
+          />
+        </label>
+        <label class="half">
+          Street Address
+          <input
+            name="address"
+            bind:value={formData.address.value}
+            bind:this={formData.address.el}
+            type="text"
+          />
+        </label>
+        <label class="half">
+          Postal Code
+          <input
+            name="postalCode"
+            bind:value={formData.postalCode.value}
+            bind:this={formData.postalCode.el}
+            type="text"
+          />
+        </label>
+        <label class="half">
+          City
+          <input
+            name="city"
+            bind:value={formData.city.value}
+            bind:this={formData.city.el}
+            type="text"
+          />
+        </label>
+        <label>
+          Country
+          <select
+            name="country"
+            bind:value={formData.country.value}
+            bind:this={formData.country.el}
+          >
+            <option>Select</option>
+            {#each countryList as c}
+              <option value={c}>
+                {c}
+              </option>
+            {/each}
+          </select>
+        </label>
+        <label>
+          Total Number of Employees <span>(optional)</span>
+          <select
+            name="noOfEmployees"
+            bind:value={formData.noOfEmployees.value}
+            bind:this={formData.noOfEmployees.el}
+          >
+            <option>Select</option>
+            {#each ["2-5", "6-20", "21-50", "51-250", "+250"] as n, i}
+              <option value={n}>
+                {n}
+              </option>
+            {/each}
+          </select>
+        </label>
       </div>
-    </div>
 
-    <label class="title" for="domain">
-      <h2 class="h4">
-        What is the domain name of your Gitpod Self-Hosted installation?
-      </h2>
-    </label>
-    <input type="text" id="domain" placeholder="e.g. gitpod.mycompany.com" />
+      <h2 class="h4 title">Other</h2>
+      <label class="half">
+        <p>
+          Add personal message <span>(optional)</span>
+        </p>
+        <textarea
+          cols="30"
+          rows="8"
+          bind:value={formData.message.value}
+          bind:this={formData.message.el}
+          name="message"
+        />
+      </label>
 
-    <p>The license key will be bound to this domain.</p>
-
-    <h2 class="h4 title">Customer Information</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-small">
-      <label class="half">
-        First Name
-        <input name="firstName" type="text" />
-      </label>
-      <label class="half">
-        Last Name
-        <input name="lastName" type="text" />
-      </label>
-      <label class="half">
-        Work Email
-        <input type="email" name="email" />
-      </label>
-      <label class="half">
-        Company
-        <input name="company" type="text" />
-      </label>
-      <label class="half">
-        Street Address
-        <input name="address" type="text" />
-      </label>
-      <label class="half">
-        Postal Code
-        <input name="postalCode" type="text" />
-      </label>
-      <label class="half">
-        City
-        <input name="city" type="text" />
-      </label>
-      <label>
-        Country
-        <select name="country">
-          <option>Select</option>
-          {#each countryList as c}
-            <option value={c}>
-              {c}
-            </option>
-          {/each}
-        </select>
-      </label>
-      <label>
-        Total Number of Employees <span>(optional)</span>
-        <select name="noOfEmployees">
-          <option>Select</option>
-          {#each ["2-5", "6-20", "21-50", "51-250", "+250"] as n, i}
-            <option value={n}>
-              {n}
-            </option>
-          {/each}
-        </select>
-      </label>
-    </div>
-
-    <h2 class="h4 title">Other</h2>
-    <label class="half">
-      <p>
-        Add personal message <span>(optional)</span>
-      </p>
-      <textarea cols="30" rows="8" name="message" />
-    </label>
-
-    <button class="btn-conversion title">Request Now</button>
-  </form>
+      <button
+        type="submit"
+        class="btn-conversion title"
+        disabled={isFormDirty && !isFormValid}>Request Now</button
+      >
+    </form>
+  {/if}
 </section>
