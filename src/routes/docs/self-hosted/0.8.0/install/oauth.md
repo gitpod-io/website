@@ -1,11 +1,6 @@
 ---
-section: self-hosted/latest/self-hosted
-title: How To integrate Gitpod with OAuth providers
+url: /docs/self-hosted/latest/install/oauth/
 ---
-
-<script context="module">
-  export const prerender = true;
-</script>
 
 # How To integrate Gitpod with OAuth providers
 
@@ -55,7 +50,7 @@ Alternatively, you can configure it per Helm values file:
 
     Replace `CLIENT_ID` and `SECRET` with their respective values.
 
-3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes.
+3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.8.0` to apply the changes.
 
 ## GitHub
 
@@ -75,7 +70,8 @@ Follow the guide linked above and:
 
 - Set "Authentication callback URL" to:
 
-  https://<your-domain.com>/auth/<gitlab.com-OR-your-gitlab.com>/callback
+
+    https://<your-domain.com>/auth/<gitlab.com-OR-your-gitlab.com>/callback
 
 - Set "Scopes" to `api`, `read_user` and `read_repository`.
 - Copy the following values:

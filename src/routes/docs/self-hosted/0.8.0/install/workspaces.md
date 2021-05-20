@@ -1,11 +1,6 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Workspaces
+url: /docs/self-hosted/latest/install/workspaces/
 ---
-
-<script context="module">
-  export const prerender = true;
-</script>
 
 # Workspaces
 
@@ -53,4 +48,4 @@ If you want to change the default sizing (~ 8GiB per workspace) you should
           controlPeriod: "15m"
     ```
 
-2.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes.
+2.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.8.0` to apply the changes.

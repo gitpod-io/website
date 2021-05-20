@@ -1,13 +1,8 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Getting started with Gitpod on AWS
+url: /docs/self-hosted/latest/install/install-on-aws-script/
 ---
 
-<script context="module">
-  export const prerender = true;
-</script>
-
-> Since the `0.6.0` release (December 2019) the installers are broken. We're working on bringing those back with one of the next releases.
+> Since the `0.6.0` release (December 2019) the installers are deprecated. They are no longer working to their full extend and will be removed in a future release.
 
 # Getting started with Gitpod on AWS
 
@@ -34,7 +29,7 @@ docker run --rm -it \
     -e AWS_ACCESS_KEY_ID \
     -e AWS_SECRET_ACCESS_KEY \
     -v "$PWD/awsinstall":"/workspace" \
-    gcr.io/gitpod-io/self-hosted/installer:0.7.0 aws
+    gcr.io/gitpod-io/self-hosted/installer:0.8.0 aws
 ```
 
 This will kickstart the installation process, authenticate with AWS and automatically set up your Gitpod deployment using Docker and Terraform.
@@ -49,8 +44,8 @@ This will kickstart the installation process, authenticate with AWS and automati
 
 Once finished, the installer will print the URL at which your Gitpod installation can be found. There you need to connect Gitpod to at least one Git provider:
 
-- [Configure an OAuth application for GitLab](/docs/gitlab-integration#oauth-application)
-- [Configure an OAuth application for GitHub](/docs/github-integration#oauth-application)
+- [Configure an OAuth application for GitLab](/docs/gitlab-integration/#oauth-application)
+- [Configure an OAuth application for GitHub](/docs/github-integration/#oauth-application)
 
 ## 4. Configure the Browser extension
 
@@ -81,6 +76,6 @@ A: Switch to another [AWS region](https://docs.aws.amazon.com/AmazonRDS/latest/U
 
 A: This is a kubernetes issue on AWS. Please wait for 2-5 minutes and retry (cmp. Kubernetes issues [32987](https://github.com/kubernetes/kubernetes/issues/32987) and [73140](https://github.com/kubernetes/kubernetes/issues/73140)).
 
-### Q: One of my pods throws errors reading "networkPlugin cni failed to set up pod "`< name >`" network: add cmd: failed to assign an IP address to container"
+### Q: One of my pods throws errors reading "networkPlugin cni failed to set up pod "< name >" network: add cmd: failed to assign an IP address to container"
 
 A: Seems like the pod-per-node limit is reached: https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt . Please report this as this as a bug [here](https://github.com/gitpod-io/gitpod/issues).

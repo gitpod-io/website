@@ -1,11 +1,6 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Docker Registry
+url: /docs/self-hosted/latest/install/docker-registry/
 ---
-
-<script context="module">
-  export const prerender = true;
-</script>
 
 # Docker Registry
 
@@ -18,7 +13,7 @@ By default Gitpod ships with a built-in Docker registry. If you operate your own
   The docker registry requires a Kubernetes PersistentVolume. This registry is not recommended to be used for production.
 - Own docker registry: Gitpod can connect to your own docker registry. Compared to its built-in counterpart this enables performance gains and access to otherwise private images.
 
-This helm chart can either deploy its own registry (default but requires [HTTPS certs](./configure-ingress)) or use an existing one.
+This helm chart can either deploy its own registry (default but requires [HTTPS certs](../configures-ingress/)) or use an existing one.
 
 ## Configuration
 
@@ -57,7 +52,7 @@ To connect to an existing Docker registry, perform the following steps:
 
     > This does not work for Google Cloud Registries because their login tokens are short-lived. See the [example](#example-google-cloud-registry-credentials) below on how to configure it.
 
-3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes.
+3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.8.0` to apply the changes.
 
 Make sure the resulting JSON file contains the credentials (there should be an `auths` section containing them as base64 encoded string).
 
