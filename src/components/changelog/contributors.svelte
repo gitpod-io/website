@@ -31,14 +31,14 @@
 <span
   class="inline-flex flex-wrap mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-dark-grey hover:bg-off-white md:flex-row"
 >
-  <span class="flex-shrink-0 mr-2">
+  <span class="flex-shrink-0">
     <Avatars {usernames} socialMediaLinkClasses="filter hover:drop-shadow" />
   </span>
-  <span>
+  <!-- <span class="hidden md:inline">
     <span>Thanks </span><Avatars
       {usernames}
       {displayNames}
       showAvatar={false}
     />
-  </span>
+  </span> -->
 </span>
