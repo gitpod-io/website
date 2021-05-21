@@ -10,7 +10,6 @@
   data={{
     description: "Gitpod's terms of service.",
     title: "Terms",
-    type: "website",
   }}
 />
 <article class="text-blob">

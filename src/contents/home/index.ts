@@ -202,6 +202,21 @@ export const testimonials: Testimonial[] = [
     tweetId: "1311560585717460992",
   },
   {
+    name: "Julius Volz",
+    avatar: "julius-volz.jpg",
+    org: `<a href="https://twitter.com/PrometheusIO" rel="noopener" target="_blank">
+        @PrometheusIO
+      </a>`,
+    role: "Creator",
+    text: `
+      <p>
+        Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR code, by just prepending "<a href="https://gitpod.io" target="_blank">gitpod.io#</a>" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!
+      </p>
+      `,
+    twitterHandle: "juliusvolz",
+    tweetId: "1298972181708275717",
+  },
+  {
     name: "David Ressler",
     avatar: "david-ressler.jpg",
     org: `
@@ -227,6 +242,31 @@ export const testimonials: Testimonial[] = [
       `,
     twitterHandle: "DavidRessler",
     tweetId: "1191710936605831169",
+  },
+  {
+    name: "Bartłomiej Płotka",
+    avatar: "bwplotka.jpg",
+    org: `
+      <a href="https://twitter.com/RedHat" rel="noopener" target="_blank">
+        @RedHat
+      </a>
+    `,
+    role: "Principal Software Engineer",
+    text: `
+        <div>
+          <p>
+            This
+            <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
+              @gitpod
+            </a>
+            thing is magic! Pretty cool, without any extra configuration. Good work!
+          </p>
+
+          <p><a href="https://gitpod.io/#https://github.com/thanos-io/thanos" rel="noopener" target="_blank">https://gitpod.io/#https://github.com/thanos-io/thanos</a></p>
+        </div>
+      `,
+    twitterHandle: "bwplotka",
+    tweetId: "1387735880853606402",
   },
   {
     name: "Mrugesh Mohapatra",

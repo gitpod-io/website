@@ -61,7 +61,7 @@
     padding: 0 var(--micro);
     margin-top: var(--macro);
     background: var(--brand-light);
-    border-radius: 1.2rem;
+    border-radius: 0.75rem;
   }
 </style>
 

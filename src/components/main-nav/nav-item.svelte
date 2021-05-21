@@ -21,6 +21,10 @@
   .active {
     color: var(--black);
   }
+
+  :global(a) :global(sup) {
+    @apply text-orange-800;
+  }
 </style>
 
 <a class:active={isActivePage} {href} on:click sveltekit:prefetch><slot /></a>

@@ -32,7 +32,7 @@ For example, try opening [https://gitpod.io/#https://gitlab.com/gitpod/spring-pe
 
 ## Browser Extension
 
-For convenience, we've made a browser extension that works with Google Chrome, Mozilla Firefox, and Safari. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily open a new workspace for any existing project.
+For convenience, we've made a browser extension that works with Google Chrome and Mozilla Firefox. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily open a new workspace for any existing project.
 
 [Learn more &rarr;](/docs/browser-extension)
 

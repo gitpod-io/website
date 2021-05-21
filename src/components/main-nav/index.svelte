@@ -29,7 +29,7 @@
     },
     {
       href: "/careers",
-      label: "We're hiring",
+      label: "We're hiring <sup>*</sup>",
     },
   ];
 </script>
@@ -44,7 +44,7 @@
     </a>
     <div class="items w">
       {#each navItems as { href, label }}
-        <NavItem {href}>{label}</NavItem>
+        <NavItem {href}>{@html label}</NavItem>
       {/each}
     </div>
     <div class="login">

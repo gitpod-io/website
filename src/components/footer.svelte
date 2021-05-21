@@ -19,7 +19,7 @@
   ];
 </script>
 
-<div class="footer__container">
+<div class="footer__container pb-8">
   <footer class="footer">
     <div class="footer__entries">
       <ul>
@@ -62,6 +62,7 @@
           <a href="/careers">Careers<sup>*</sup></a>
         </li>
         <li><a href="/contact">Contact</a></li>
+        <li><a href="/media-kit">Media Kit</a></li>
       </ul>
       <ul>
         <li>Legal</li>

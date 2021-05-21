@@ -5,7 +5,7 @@
 </script>
 
 <style lang="scss">
-  h1 {
+  h2 {
     text-align: center;
     text-transform: capitalize;
   }
@@ -42,7 +42,7 @@
 </style>
 
 <Section>
-  <h1>Open source, self hosting, and students</h1>
+  <h2 class="h1">Open source, self hosting, and students</h2>
   <div class="plans">
     {#each otherPlans as p}
       <div class="plan divider">

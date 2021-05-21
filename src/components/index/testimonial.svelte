@@ -14,9 +14,14 @@
       width: 320px;
     }
   }
+
   .testimonial :global(a) {
     color: var(--blue);
     font-weight: 600;
+  }
+
+  .testimonial :global(p) + :global(p) {
+    margin-top: var(--macro);
   }
 </style>
 
