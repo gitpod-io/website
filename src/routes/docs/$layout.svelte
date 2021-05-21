@@ -94,7 +94,6 @@
             "Configure Ingress",
             "self-hosted/latest/install/configure-ingress"
           ),
-          M("Configure OAuth", "self-hosted/latest/install/oauth"),
           M("Configure a Database", "self-hosted/latest/install/database"),
           M(
             "Configure a Docker Registry",

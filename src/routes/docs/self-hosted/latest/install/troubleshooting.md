@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/troubleshooting/
+section: self-hosted/latest/self-hosted
+title: Troubleshooting
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Troubleshooting
 

@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/self-hosted/
+section: self-hosted/latest/self-hosted
+title: Gitpod Self-Hosted
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Gitpod Self-Hosted
 

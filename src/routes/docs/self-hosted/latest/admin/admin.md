@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/admin/admin/
+section: self-hosted/latest/self-hosted
+title: Administrate Gitpod Self-Hosted
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Administrate Gitpod Self-Hosted
 

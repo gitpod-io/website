@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/storage/
+section: self-hosted/latest/self-hosted
+title: Workspace Storage
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Workspace Storage
 
