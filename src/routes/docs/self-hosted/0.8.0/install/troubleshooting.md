@@ -42,7 +42,7 @@ Since `0.7.0` minio requires custom credentials to be configured.
 
 ### Solution
 
-1.  Follow the [Upgrade Guide](../upgrade/).
+1.  Follow the [Upgrade Guide](./upgrade).
 
 ## 3. After upgrade, the `minio` Pod is stuck in `ContainerCreating`
 
