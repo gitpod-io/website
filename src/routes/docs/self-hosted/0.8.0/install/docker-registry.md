@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/docker-registry/
+section: self-hosted/0.8.0/self-hosted
+title: Docker Registry
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Docker Registry
 

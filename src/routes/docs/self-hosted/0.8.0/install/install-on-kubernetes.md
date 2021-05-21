@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/install-on-kubernetes/
+section: self-hosted/0.8.0/self-hosted
+title: Install Gitpod Self-Hosted on Kubernetes
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Install Gitpod Self-Hosted on Kubernetes
 

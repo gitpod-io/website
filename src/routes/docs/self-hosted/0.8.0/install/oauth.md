@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/oauth/
+section: self-hosted/0.8.0/self-hosted
+title: How To integrate Gitpod with OAuth providers
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # How To integrate Gitpod with OAuth providers
 
@@ -70,8 +75,7 @@ Follow the guide linked above and:
 
 - Set "Authentication callback URL" to:
 
-
-    https://<your-domain.com>/auth/<gitlab.com-OR-your-gitlab.com>/callback
+  https://<your-domain.com>/auth/<gitlab.com-OR-your-gitlab.com>/callback
 
 - Set "Scopes" to `api`, `read_user` and `read_repository`.
 - Copy the following values:

@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/database/
+section: self-hosted/0.8.0/self-hosted
+title: Database
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Database
 

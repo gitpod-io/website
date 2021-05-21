@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/nodes/
+section: self-hosted/0.8.0/self-hosted
+title: Kubernetes Nodes
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Kubernetes Nodes
 

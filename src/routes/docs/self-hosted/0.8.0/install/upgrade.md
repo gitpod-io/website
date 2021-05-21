@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/upgrade/
+section: self-hosted/0.8.0/self-hosted
+title: Gitpod Self-Hosted Upgrade Notes
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Gitpod Self-Hosted Upgrade Notes
 

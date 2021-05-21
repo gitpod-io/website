@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/install-on-gcp-script/
+section: self-hosted/0.8.0/self-hosted
+title: Getting started with Gitpod on GCP
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 > Since the `0.6.0` release (December 2019) the installers are deprecated. They are no longer working to their full extend and will be removed in a future release.
 

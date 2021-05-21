@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/configure-ingress/
+section: self-hosted/0.8.0/self-hosted
+title: Configure Ingress to your Gitpod installation
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Configure Ingress to your Gitpod installation
 
