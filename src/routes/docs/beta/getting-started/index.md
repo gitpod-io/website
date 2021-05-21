@@ -23,13 +23,13 @@ Learn how to start using Gitpod on an example project or an example open source 
 - Use a [Prefixed URL](#prefixed-url)
 - Install [Browser Extension](#browser-extension)
 
-## Example Project
+### Example Project
 
 The projects listed in the [example projects](/docs/examples) already have a working Gitpod configuration, you can inspect the configurations and try them out in Gitpod.
 
 In the following example, you can open the [Vuepress](https://gitpod.io/#https://github.com/vuejs/vuepress) application project, customize the [workspace](/docs/workspaces), and create a pull request.
 
-### Open the Application
+#### Open the Application
 
 1. Open the example Vuepress project in a browser using the following URL: `https://gitpod.io/#https://github.com/vuejs/vuepress`
 
@@ -47,9 +47,11 @@ In the following example, you can open the [Vuepress](https://gitpod.io/#https:/
 
 [Screenshot goes here]
 
-### Customize the Workspace
+#### Customize the Workspace
 
 You can also customize the workspace with tools and languages, settings and keybindings, and color theme.
+
+![Welcome pane of the workspace](../../../../static/images/docs/beta/getting-started/welcome.png)
 
 - To install additional tools to support various programming lanugugaes click **Tools and languages** in the **Customize** section of the **Welcome** pane.
 
