@@ -24,7 +24,11 @@
 
   let MENU: MenuEntry[];
   $: MENU = isBetaPage
-    ? [M("Getting Started", "beta"), M("🔙 Go back to stable docs", "")]
+    ? [
+        M("Overview", "beta"),
+        M(" Getting Started", "beta/getting-started"),
+        M("🔙 Go back to stable docs", ""),
+      ]
     : [
         M("Introduction", ""),
         M("Getting Started", "getting-started", [
