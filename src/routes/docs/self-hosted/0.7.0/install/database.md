@@ -1,5 +1,5 @@
 ---
-section: self-hosted/latest/self-hosted
+section: self-hosted/0.7.0/self-hosted
 title: Database
 ---
 
