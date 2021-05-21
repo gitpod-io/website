@@ -9,13 +9,17 @@ teaserImage: teaser-brew.png
 title: Gitpod ❤️ Homebrew
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Are you tired of **apt-get**? Can't use **sudo** right now? …
 
 ## You can now '**brew install anything**' in Gitpod! 🎉
 
 - ✓ Easily install any Linux tool or package with one command
 - ✓ Doesn't require `sudo` permission
-- ✓ Works in your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) or directly in Gitpod's Terminal
+- ✓ Works in your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) or directly in Gitpod's Terminal
 
 If you use a Mac, or have friends who use a Mac, you've probably heard of the trusty [brew](https://brew.sh/) command which allows you to install pretty much any software, from `git` to `clang` to `htop`.
 
@@ -32,8 +36,8 @@ We've pre-installed `brew` for all Gitpod workspaces (using [workspace-full](htt
 
 Here are a couple details to be aware of:
 
-- Packages installed with `brew` have a low priority in the `$PATH`. This means that if you `brew install` a package that already exists in Gitpod, you'll just continue using the old package. If you don't like that, simply `apt-get remove` the old package in your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/).
+- Packages installed with `brew` have a low priority in the `$PATH`. This means that if you `brew install` a package that already exists in Gitpod, you'll just continue using the old package. If you don't like that, simply `apt-get remove` the old package in your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker).
 
-- `brew` installs everything under `/home/linuxbrew/`, but Gitpod only backs up your Docker image plus everything inside `/workspace/`. This means that if you `brew install fzf` in a Gitpod terminal, and then your workspace stops running, when you restart it later the package `fzf` will be gone. If that's a problem, simply move the `brew install fzf` command into your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) to make it permanent.
+- `brew` installs everything under `/home/linuxbrew/`, but Gitpod only backs up your Docker image plus everything inside `/workspace/`. This means that if you `brew install fzf` in a Gitpod terminal, and then your workspace stops running, when you restart it later the package `fzf` will be gone. If that's a problem, simply move the `brew install fzf` command into your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) to make it permanent.
 
 We hope this feature makes you as happy as it made us! Please share any [feedback, thoughts](https://community.gitpod.io/) or [bugs](https://github.com/gitpod-io/gitpod/issues/new/choose) you found.

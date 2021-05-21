@@ -17,10 +17,10 @@ export const getSession: import("@sveltejs/kit").GetSession = async () => {
 };
 
 /** @type {import('@sveltejs/kit').Handle} */
-export const handle: import("@sveltejs/kit").Handle = async (
+export const handle: import("@sveltejs/kit").Handle = async ({
   request,
-  render
-) => {
+  render,
+}) => {
   const response = await render(request);
 
   return {

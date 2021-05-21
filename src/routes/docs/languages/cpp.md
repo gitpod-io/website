@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: C++ in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # C++ in Gitpod
 

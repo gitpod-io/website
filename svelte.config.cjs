@@ -25,7 +25,7 @@ module.exports = {
     hydrate: true,
     prerender: {
       crawl: true,
-      enabled: false,
+      enabled: true,
       force: false,
       pages: ["*"],
     },

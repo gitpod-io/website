@@ -9,11 +9,15 @@ teaserImage: cloud-download.png
 title: Gitpod Self-Hosted 0.4.0
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 We are excited to announce the new release of Gitpod Self-Hosted in version 0.4.0. Gitpod Self-Hosted allows everyone to set-up and run a service with the same features as gitpod.io in your cloud or corporate network.
 
 <h2>How Does it Work?</h2>
 
-Gitpod Self-Hosted runs on Kubernetes and is easily installed via "helm install". On gitpod.io you can find detailed documentation and some automation to install Gitpod on [vanilla Kubernetes](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-kubernetes/) or [on Google Cloud Platform](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-gcp-script/). For the next release, we plan to add support for AWS, Azure, and OpenShift.
+Gitpod Self-Hosted runs on Kubernetes and is easily installed via "helm install". On gitpod.io you can find detailed documentation and some automation to install Gitpod on [vanilla Kubernetes](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-kubernetes) or [on Google Cloud Platform](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-gcp-script). For the next release, we plan to add support for AWS, Azure, and OpenShift.
 
 Users log into Gitpod via OAuth from your self managed Gitlab or GitHub enterprise. This ensures that all access privileges from your Git hosting solution are taken into account and that there is no additional administrative effort for managing user accounts.
 
@@ -36,7 +40,7 @@ To try the new admin interface in Gitpod Self-Hosted, you'll need to assign the 
 
 <h2>Getting Started</h2>
 
-The fastest way to get started is by installing Gitpod Self-Hosted [on Google Cloud Platform](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-gcp-script/). There is also more in-depth documentation available on how to install Gitpod on [vanilla Kubernetes](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-kubernetes/).
+The fastest way to get started is by installing Gitpod Self-Hosted [on Google Cloud Platform](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-gcp-script). There is also more in-depth documentation available on how to install Gitpod on [vanilla Kubernetes](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-kubernetes).
 
 Gitpod Self-Hosted is free for up to five users. For more users, you can obtain a [free one month trial](https://gitpod.io/selfhosted-trial/) or see our [pricing page](https://www.gitpod.io/pricing/#self-hosted).
 

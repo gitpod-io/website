@@ -23,7 +23,7 @@
   }
 
   .bottom {
-    @apply bottom-0 fixed;
+    @apply bottom-0 fixed z-10;
   }
 </style>
 

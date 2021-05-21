@@ -9,6 +9,10 @@ title: Gitpod ❤️ Statusfy
 url: https://medium.com/gitpod/status-update-gitpod-%EF%B8%8F-statusfy-ed8266d63a20
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 A core value at Gitpod is transparency: a lot of what we do is out in the open, because we believe that that’s the best way to earn the trust of our users. Until recently there was one point where we had some catching up to do in that regard: having a status page.
 
 We had three main requirements for our status page:

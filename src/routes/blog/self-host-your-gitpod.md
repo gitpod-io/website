@@ -9,6 +9,10 @@ teaserImage: globe.png
 title: Self-Host Your Gitpod
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Eighteen months ago we launched the public beta of Gitpod.
 That date marked the beginning of an amazing journey with plenty of feedback, fixes and improvements.
 It is exciting to see how far we have come and where that simple idea of instant, ready-to-code workspaces has taken us.
@@ -47,12 +51,12 @@ Installing Gitpod Self-Hosted on your own infrastructure works much like any oth
 
 1. Clone the example configuration repo: `git clone https://github.com/gitpod-io/self-hosted`
 
-2. Adjust the configuration from the repository to your needs (with [ample documentation available](/docs/self-hosted/latest/self-hosted/) to guide you).
+2. Adjust the configuration from the repository to your needs (with [ample documentation available](/docs/self-hosted/latest/self-hosted) to guide you).
 
 3. Install using [helm](https://helm.sh/): `helm install ... gitpod`
 
-The [vanilla Kubernetes setup](/docs/self-hosted/latest/install/install-on-kubernetes/) will work most Kubernetes clusters.
-For Google Cloud Platform we provide an [automated installation script](/docs/self-hosted/latest/install/install-on-gcp-script/).
+The [vanilla Kubernetes setup](/docs/self-hosted/latest/install/install-on-kubernetes) will work most Kubernetes clusters.
+For Google Cloud Platform we provide an [automated installation script](/docs/self-hosted/latest/install/install-on-gcp-script).
 
 ## Pricing
 

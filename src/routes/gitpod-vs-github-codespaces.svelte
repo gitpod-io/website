@@ -130,7 +130,6 @@
     description:
       "Gitpod is the faster, more powerful, open-source platform that integrates with your individual stack.",
     title: "Gitpod vs GitHub Codespaces",
-    type: "website",
   }}
 />
 <header>
@@ -144,7 +143,8 @@
 <div class="halfimages">
   <article class="card">
     <div>
-      <img src="/images/codespace/spaces-1.svg" alt="" role="presentation" />
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <img src="/images/codespace/spaces-1.svg" role="presentation" />
       <p class="card-image-legend">
         Compared start-up time until ready-to-code for<br /><a
           href="https://github.com/gitpod-io/vscode"
@@ -167,16 +167,16 @@
 
   <article class="card">
     <div>
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/codespace/spaces-2.svg"
-        alt=""
         role="presentation"
         width="550"
         height="414"
       />
       <p class="card-image-legend">
         Compared resources for 100 active hours at $9/month. Last verified 25
-        Sep 2020.<br />Sources: <a href="/pricing/"><strong>Gitpod</strong></a>,
+        Sep 2020.<br />Sources: <a href="/pricing"><strong>Gitpod</strong></a>,
         <a
           href="https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces"
           ><strong>GitHub Codespaces</strong></a
@@ -184,7 +184,7 @@
       </p>
     </div>
     <div>
-      <h2 class="max-w-30rem flex-grow">3x more power</h2>
+      <h2 class="max-w-30rem">3x more power</h2>
       <p class="text-large max-w-30rem">
         By leveraging cloud technologies like containers and Kubernetes, Gitpod
         achieves best-in-class resource-efficiency with scalable workspaces
@@ -239,9 +239,9 @@
     </ul>
   </section>
   <section class="card alive text-center">
-    <h3 class="card-heading">
+    <h2 class="card-heading">
       <img alt="Gitpod" src="/images/gitpod-logo.svg" width="40" height="36" />
-    </h3>
+    </h2>
     <dl id="gitpodPricing" class="tableColumn">
       <dt>Pricing (Hosted)</dt>
       <dd>Free for Open-Source</dd>
@@ -298,7 +298,7 @@
     </dl>
   </section>
   <section class="card text-center">
-    <h4 class="text-xl card-heading">GitHub<br />Codespaces</h4>
+    <h2 class="text-xl card-heading h4">GitHub<br />Codespaces</h2>
     <dl>
       <dt>Pricing (Hosted)</dt>
       <dd>
@@ -361,7 +361,7 @@
   <small
     >Disclaimer: All information, prices, and data were last verified on Sept.
     25, 2020. To report any incorrect or outdated information, please <a
-      href="/contact/">contact us.</a
+      href="/contact">contact us.</a
     ></small
   >
 </p>
@@ -379,9 +379,9 @@
 <div class="halfimages">
   <article class="card">
     <div>
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/codespace/spaces-3.svg"
-        alt=""
         role="presentation"
         width="550"
       />
@@ -414,7 +414,7 @@
 
 <div class="cards double mt-1rem mb-7rem">
   <div class="card p-4rem">
-    <h3>Automation-first</h3>
+    <h2 class="h3">Automation-first</h2>
     <p class="flex-grow">
       Simply add your build command into a .gitpod.yml file and let Gitpod do
       the heavy-lifting. Once you’ve experienced the freedom of ephemeral
@@ -426,7 +426,7 @@
     </p>
   </div>
   <div class="card p-4rem">
-    <h3>Code in a carbon-neutral workspace</h3>
+    <h2 class="h3">Code in a carbon-neutral workspace</h2>
     <p class="flex-grow">
       Not only is Gitpod more resource-efficient but it also runs on 100%
       carbon-neutral cloud servers (GCP). All the power, with a lower cost to

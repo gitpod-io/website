@@ -1,4 +1,6 @@
 <script lang="ts" context="module">
+  export const prerender = true;
+
   export async function load({ session }) {
     const posts = session.posts;
     return { props: { posts } };
@@ -34,7 +36,6 @@
       description:
         "Visit the Gitpod blog to learn about releases, tutorials, news and more.",
       title: "Blog",
-      type: "website",
     }}
   />
   <section>

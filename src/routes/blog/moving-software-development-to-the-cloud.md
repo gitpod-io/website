@@ -9,9 +9,13 @@ teaserImage: teaser.jpg
 title: Moving software development to the cloud ☁️
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 As [described earlier this year](/blog/github-codespaces), Microsoft's investment into GitHub Codespaces is helping to move more into the mainstream what Gitpod has been pioneering on during the past years. This week is GitHub Universe which is why we thought it's time to share some additional context and information around the rapidly spreading idea of automated, cloud-based dev environments within the developer community. Furthermore we'd like to congratulate GitHub for joining us in moving software development to the cloud 🙌
 
-Since [we've started building Gitpod in July-2017](/blog/gitpod-online-ide/), we firmly believe that fully-automated development environments will be the standard for professional developers in 5-10 years. With a big player like Microsoft entering the market this whole space will gain additional velocity 🚀
+Since [we've started building Gitpod in July-2017](/blog/gitpod-online-ide), we firmly believe that fully-automated development environments will be the standard for professional developers in 5-10 years. With a big player like Microsoft entering the market this whole space will gain additional velocity 🚀
 
 We certainly welcome the additional push Codespaces will bring, but it is important to communicate how [Gitpod compares to Codespaces](/gitpod-vs-github-codespaces).
 
@@ -31,7 +35,7 @@ The result is that Gitpod offers more powerful dev environments with a small eco
 
 <h2>Gitpod is Fast</h2>
 
-Gitpod is not only extremely fast because of the higher efficiency, but also because of what we call [prebuilds](https://www.gitpod.io/docs/prebuilds/). Let’s take a closer look.
+Gitpod is not only extremely fast because of the higher efficiency, but also because of what we call [prebuilds](https://www.gitpod.io/docs/prebuilds). Let’s take a closer look.
 
 The metric that matters here is the time it takes until a dev environment is **ready-to-code**. Ready-to-code means that developers can actually start writing code and don’t have to wait for builds, dependencies to download or code generators to run.
 
@@ -43,7 +47,7 @@ Instead Gitpod prebuilds dev environments when a new commit is pushed to the rem
 
 The advantages of having your dev environments prebuilt can not be overstated. For the [vscode repository](https://github.com/gitpod-io/vscode) we measured a 15x difference.
 
-We believe prebuilding dev environments the way Gitpod does it, is key towards [“dev environments as code”](https://www.gitpod.io/blog/dev-env-as-code/). Without prebuilds, developers have to manually maintain and reuse their dev environments, because of the manual labour put into them. Those stateful environments drift apart over time and teams are once again working in very different setups, wasting time and energy with the resulting problems and surprises. With Gitpod "it works (or doesn't work) on my machine is a thing of the past.
+We believe prebuilding dev environments the way Gitpod does it, is key towards [“dev environments as code”](https://www.gitpod.io/blog/dev-env-as-code). Without prebuilds, developers have to manually maintain and reuse their dev environments, because of the manual labour put into them. Those stateful environments drift apart over time and teams are once again working in very different setups, wasting time and energy with the resulting problems and surprises. With Gitpod "it works (or doesn't work) on my machine is a thing of the past.
 
 <h2>The Road Ahead</h2>
 
@@ -55,4 +59,4 @@ Ephemeral dev environments are going to democratize software development. Allowi
 
 We will continue to focus on automating the provisioning of dev environments that blend in with your existing workflow, integrate into your existing infrastructure and run on any cloud or your own clusters. [We do all of this in the open](https://github.com/gitpod-io/gitpod) and invite everyone to join us in building an open platform for secure, collaborative and always-ready-to-code development environments for all developers.
 
-If you want to learn more you can start with our [Introduction to Gitpod](http://www.gitpod.io/docs/).
+If you want to learn more you can start with our [Introduction to Gitpod](http://www.gitpod.io/docs).

@@ -17,20 +17,16 @@
 </script>
 
 <style lang="scss">
-  h1 {
-    text-align: center;
-  }
-
   .screenshot {
     display: block;
     margin: 0 auto;
     margin-bottom: -48px;
     margin: 2rem auto;
-    box-shadow: var(--shadow-brand);
     border-radius: 0.875rem;
 
     @media (max-width: 768px) {
       margin-bottom: -20px;
+      border-radius: 0.25rem;
     }
   }
 
@@ -44,10 +40,6 @@
     }
   }
 
-  .buttons-wrapper {
-    justify-content: center;
-  }
-
   .btn-otherbrand {
     @media (max-width: 429px) {
       width: 12rem;
@@ -57,9 +49,11 @@
 
 <Section>
   <div class="row">
-    <h1>Remote-first. Secure by design.</h1>
+    <h2 class="mb-small text-center text-h2">
+      Remote-first. Secure by design.
+    </h2>
     <img
-      class="screenshot"
+      class="screenshot shadow-brand"
       src="/images/gitpod-editor.jpg"
       alt="Gitpod"
       height="819"

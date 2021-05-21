@@ -10,7 +10,6 @@
   data={{
     description: "Gitpod's privacy policy.",
     title: "Privacy",
-    type: "website",
   }}
 />
 <article class="text-blob">
@@ -34,7 +33,7 @@
     <strong>"User/you/your"</strong>) on our website
     <a href="/">https://gitpod.io</a>
     (<strong>"Website"</strong>) as well as related services including the use
-    of our service according to our <a href="/terms/">terms of service</a>
+    of our service according to our <a href="/terms">terms of service</a>
     (jointly the <strong>"Service"</strong>).
   </p>
   <p>
@@ -569,7 +568,7 @@
       <p>
         For the further use of the Gitpod Service on the Website you submit more
         data depending on the way of use of our services according to our <a
-          href="/terms/">terms of service</a
+          href="/terms">terms of service</a
         >
       </p>
 
@@ -577,7 +576,7 @@
         We use the information and data collected in the Service, including your
         personal data, in order to fulfill our contractual obligations for
         you/our customers based on the legal basis of Art. 6 (1) b. GDPR or TMG
-        and as further set forth in this privacy policy or our <a href="/terms/"
+        and as further set forth in this privacy policy or our <a href="/terms"
           >terms of service</a
         >This also includes sending you emails and notifications necessary for
         the Service.
@@ -934,7 +933,7 @@
       <h3>Access and Changes to this Privacy Policy</h3>
       <p>
         This privacy policy is accessible via our Website under <a
-          href="/privacy/">https://gitpod.io/privacy/</a
+          href="/privacy">https://gitpod.io/privacy</a
         >
         and may be downloaded and printed anytime.
       </p>
@@ -950,7 +949,7 @@
         For any inquiries and additional questions about processing personal
         data please contact <a href="mailto:data@gitpod.io">data@gitpod.io</a
         >Further details may be found here:
-        <a href="/imprint/">https://gitpod.io/imprint/</a>.
+        <a href="/imprint">https://gitpod.io/imprint</a>.
       </p>
     </li>
   </ol>

@@ -1,6 +1,11 @@
 ---
 section: configuration
+title: Editor Configuration
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Editor Configuration
 

@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import Explore from "../components/explore.svelte";
   import LogoAnimated from "../components/logo-animated.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers } from "../contents/careers";
@@ -71,7 +72,6 @@
   data={{
     description: "On a mission to make developers' lives easier!",
     title: "About Gitpod",
-    type: "website",
   }}
 />
 <header class="tight">
@@ -94,7 +94,7 @@
   <li>
     <img
       src="/images/about/team-2.jpg"
-      alt="TODO: who is this?"
+      alt="A female Gitpod team member"
       height="310"
       width="310"
     />
@@ -102,7 +102,7 @@
   <li>
     <img
       src="/images/about/team-3.jpg"
-      alt=""
+      alt="A laptop and office chair in a tent"
       height="310"
       width="310"
       role="presentation"
@@ -111,7 +111,7 @@
   <li>
     <img
       src="/images/about/about-6.png"
-      alt=""
+      alt="Gitpod team members on the beach"
       height="310"
       width="310"
       role="presentation"
@@ -120,7 +120,7 @@
   <li>
     <img
       src="/images/about/about-5.png"
-      alt="TODO: who is this?"
+      alt="4 kumquats on a table"
       height="310"
       width="310"
     />
@@ -140,14 +140,14 @@
   <p>
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6"
+      href="https://www.gitpod.io/direction"
       target="_blank"
       ><span class="icon">🗺️</span> <span class="arrow">↗︎</span>Gitpod's
       Direction</a
     >
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203"
+      href="https://www.gitpod.io/roadmap"
       target="_blank"
       ><span class="icon">🛣</span> <span class="arrow">↗︎</span> Gitpod's Roadmap</a
     >
@@ -218,34 +218,25 @@
     >
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Development-Process-2b105f72847440ec8f4a1d87ac25801b"
+      href="https://www.notion.so/gitpod/Development-Process-080f1e439e0440f9b063a000ee213692"
       target="_blank"
       ><span class="icon">🔨</span> <span class="arrow">↗︎</span> How we develop</a
     >
   </p>
 </div>
 
-<div class="row">
-  <section>
-    <div class="explore">
-      <div class="explore__text">
-        <h1>
-          We have {careers.length} open position{careers.length == 1 ? "" : "s"}
-        </h1>
-        <p class="h4">Come join us.</p>
-        <p><a href="/careers" class="btn-conversion">See openings</a></p>
-      </div>
-      <div class="explore__illustration">
-        <img src="/images/illustration-grid.jpg" alt="Gitpod in a Nutshell" />
-        <img
-          src="/images/illustration-small.jpg"
-          class="small"
-          alt="Gitpod in a Nutshell"
-        />
-      </div>
-    </div>
-  </section>
-</div>
+<Explore
+  contents={{
+    title: `We have ${careers.length} open position${
+      careers.length == 1 ? "" : "s"
+    }`,
+    description: "Come join us.",
+    link: {
+      text: "See openings",
+      href: "/careers",
+    },
+  }}
+/>
 
 <div class="redirector header">
   <h2>Gitpod in the news</h2>

@@ -105,7 +105,6 @@
     description:
       "Learn about Gitpod's collaboration tools, workspace snapshots, supported programming languages, and much more.",
     title: "Features",
-    type: "website",
   }}
 />
 
@@ -121,7 +120,7 @@
         finish.
       </p>
       <p>
-        <a href="/docs/prebuilds/" class="btn-primary">More about Prebuilds</a>
+        <a href="/docs/prebuilds" class="btn-primary">More about Prebuilds</a>
       </p>
     </div>
     <div class="lg:w-1/2 w-full mb-16">
@@ -141,7 +140,7 @@
         end of all works-on-my-machine situations.
       </p>
       <p>
-        <a href="/blog/dev-env-as-code/" class="btn-secondary">
+        <a href="/blog/dev-env-as-code" class="btn-secondary">
           More about Dev-Environments-as-Code</a
         >
       </p>
@@ -152,9 +151,9 @@
 <section class="cards double">
   <div class="card">
     <div class="h-72 pb-4">
+      <!-- svelte-ignore a11y-missing-attribute -->
       <img
         src="/images/features/features-3.svg"
-        alt=""
         role="presentation"
         height="223"
         width="382"
@@ -167,7 +166,7 @@
       simply take Snapshot.
     </p>
 
-    <a href="/docs/sharing-and-collaboration/"> More about collaboration. </a>
+    <a href="/docs/sharing-and-collaboration"> More about collaboration. </a>
   </div>
   <div class="card">
     <div class="h-72 pb-6">
@@ -186,52 +185,54 @@
       local silicon.
     </p>
 
-    <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank"
-      >Learn more about sudo/Docker in Gitpod.</a
+    <a
+      href="https://www.youtube.com/watch?v=iYLCHQgj0fE"
+      rel="noopener"
+      target="_blank">Learn more about sudo/Docker in Gitpod.</a
     >
   </div>
 </section>
 
 <section class="cards triple">
   <div class="card">
+    <!-- svelte-ignore a11y-missing-attribute -->
     <img
       src="/images/features/features-5.svg"
-      alt=""
       role="presentation"
       height="90"
       width="185"
     />
-    <h3 class="h5">Customize your workspace</h3>
+    <h2 class="h5">Customize your workspace</h2>
     <p>
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
-    <a href="/docs/vscode-extensions/">More about customization.</a>
+    <a href="/docs/vscode-extensions">More about customization.</a>
   </div>
   <div class="card">
+    <!-- svelte-ignore a11y-missing-attribute -->
     <img
       src="/images/features/features-6.svg"
-      alt=""
       role="presentation"
       height="90"
       width="322"
     />
-    <h3 class="h5">GitLab, GitHub, and Bitbucket integration</h3>
+    <h2 class="h5">GitLab, GitHub, and Bitbucket integration</h2>
     <p>
       Start your workflow from the Git hosting platform of your choice and let
       Gitpod beam you in a ready-to-code dev environment.
     </p>
-    <a href="/docs/integrations/">More about integrations.</a>
+    <a href="/docs/integrations">More about integrations.</a>
   </div>
   <div class="card">
+    <!-- svelte-ignore a11y-missing-attribute -->
     <img
       src="/images/features/features-7.svg"
-      alt=""
       role="presentation"
       height="90"
       width="130"
     />
-    <h3 class="h5">Code reviews within the IDE</h3>
+    <h2 class="h5">Code reviews within the IDE</h2>
     <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
       to comments and publish code reviews right within Gitpod.
@@ -246,9 +247,9 @@
     Install any VS Code extension with one click via the integrated
     vendor-neutral marketplace Open VSX.
   </p>
+  <!-- svelte-ignore a11y-missing-attribute -->
   <img
     src="/images/features/gitpod-extensions.jpg"
-    alt=""
     role="presentation"
     height="1110"
     width="748"

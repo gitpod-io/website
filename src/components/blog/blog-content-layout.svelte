@@ -67,7 +67,7 @@
     <slot />
   </div>
   <section class="share">
-    <h4>Share this post:</h4>
+    <h2 class="h4">Share this post:</h2>
     <ul>
       {#each socialLinks as link}
         <li>

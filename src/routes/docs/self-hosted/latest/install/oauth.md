@@ -1,6 +1,11 @@
 ---
 section: self-hosted/latest/self-hosted
+title: How To integrate Gitpod with OAuth providers
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # How To integrate Gitpod with OAuth providers
 

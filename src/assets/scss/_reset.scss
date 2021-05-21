@@ -68,6 +68,10 @@ img:not([alt]) {
   filter: blur(10px);
   outline: 10px solid;
 }
+img[role="presentation"] {
+  filter: none;
+  outline: none;
+}
 
 /* margin bottom on everything  */
 main > * {

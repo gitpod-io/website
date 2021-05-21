@@ -4,11 +4,18 @@
 
 .footer {
   padding: var(--large) var(--xx-small);
+  font-size: var(--p-xsmall);
+  sup {
+    font-size: inherit;
+  }
 
   @media (min-width: 769px) {
     max-width: 760px;
     margin: auto;
     padding: var(--small) var(--xx-small);
+  }
+  @media (min-width: 56.25rem) {
+    max-width: 56.25rem;
   }
 }
 

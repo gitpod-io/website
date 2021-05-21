@@ -11,15 +11,14 @@
 </style>
 
 <div class="card text-center shadow-xl">
-  <!-- TOOD: Display the image -->
+  <!-- svelte-ignore a11y-missing-attribute -->
   <img
     src="/images/contact/{contactCard.image}"
     height={contactCard.imgHeight}
     width={contactCard.imgWidth}
-    alt=""
     role="presentation"
   />
-  <h3>{contactCard.title}</h3>
+  <h2 class="h3">{contactCard.title}</h2>
   <p>{contactCard.description}</p>
   <a href={contactCard.btnHref} class="btn btn-conversion m-8"
     >{contactCard.btnText}</a

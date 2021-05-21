@@ -10,7 +10,6 @@
   data={{
     description: "Gitpod's imprint.",
     title: "Imprint",
-    type: "website",
   }}
 />
 <article class="text-blob">

@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: HTML & CSS in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # HTML & CSS in Gitpod
 

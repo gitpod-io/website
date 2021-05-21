@@ -35,6 +35,10 @@
       }
     }
 
+    .buttons-wrapper {
+      @apply justify-start;
+    }
+
     &__preview {
       flex: 0 0 45%;
 

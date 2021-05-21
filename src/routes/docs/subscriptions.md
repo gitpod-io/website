@@ -1,6 +1,11 @@
 ---
 section: subscriptions
+title: Subscriptions
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Subscriptions
 

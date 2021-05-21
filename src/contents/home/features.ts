@@ -8,9 +8,9 @@ export const features: Feature[] = [
       "We invented prebuilds so application code, configuration and infrastructure can all be stored as machine-executable code in your git repositories and applied to dev environments automatically and continuously.",
     moreButton: {
       text: "More on prebuilds",
-      href: "/docs/prebuilds/",
+      href: "/docs/prebuilds",
     },
-    documentationLink: "/docs/",
+    documentationLink: "/docs",
     terminalSource: terminalSource,
   },
 ];

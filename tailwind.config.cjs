@@ -34,6 +34,7 @@ module.exports = {
         "sand-light": "var(--sand-light)",
         "off-white": "var(--off-white)",
         white: "var(--white)",
+        "brand-hover": "var(--brand-hover)",
 
         gray: {
           900: "var(--black)",
@@ -60,11 +61,19 @@ module.exports = {
         h4: "var(--h4)",
         h5: "var(--h5)",
         h6: "var(--h6)",
+        "p-large": "var(--p-large)",
+        "p-medium": "var(--p-medium)",
+        "p-small": "var(--p-small)",
+        "p-xsmall": "var(--p-xsmall)",
+        "btn-small": "var(--btn-small)",
+        "fine-print": "var(--fine-print)",
       },
       maxWidth: {
         row: "var(--row-max-width)",
+        "container-normal": "var(--container-normal)",
       },
       spacing: {
+        huge: "var(--huge)",
         "xx-large": "var(--xx-large)",
         "x-large": "var(--x-large)",
         large: "var(--large)",
@@ -74,6 +83,10 @@ module.exports = {
         "xx-small": "var(--xx-small)",
         micro: "var(--micro)",
         macro: "var(--macro)",
+      },
+      boxShadow: {
+        normal: "var(--shadow)",
+        brand: "var(--shadow-brand)",
       },
     },
   },

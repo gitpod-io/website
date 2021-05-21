@@ -9,6 +9,10 @@ title: A Better GitHub Flow
 url: https://medium.com/gitpod/github-flows-better-with-gitpod-e455d17990f9
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 As software developers, we already spend a lot of our time in browsers. Be it for searching Google/StackOverflow, checking our latest Continuous Integration builds on Jenkins resp. Travis, or doing code reviews on GitHub, Bitbucket, or Gerrit. Also, communication with the team happens in web applications, such as Gmail, Google Hangout or Slack. The convenience of web applications and OAuth-based authentication allows us to use any computer to do most of our work immediately.
 
 However, when it comes to the actual coding and debugging, we have to prepare our local development environments manually. We do this based on often outdated, incomplete or just plain wrong documentation. The transition from an online repository to the actual coding is a barrier that hinders thousands of possible contributions every day. Coding needs to get more accessible.

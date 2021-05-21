@@ -1,6 +1,11 @@
 ---
 section: configuration
+title: VS Code Extensions
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # VS Code Extensions
 

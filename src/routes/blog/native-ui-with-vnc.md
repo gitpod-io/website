@@ -9,6 +9,10 @@ title: Developing native UI applications in Gitpod
 url: https://medium.com/gitpod/developing-native-ui-applications-in-gitpod-15af2967c24e
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Gitpod is a web-based IDE. As such one would think it only works for web-based projects or anything else that does not require a native UI. However, there’s still a plethora of native UI applications around and many of them are here to stay. In this article we’ll go through how to use Gitpod for developing native desktop UI applications.
 
 ![VSCode in Gitpod](../../../static/images/blog/native-ui-with-vnc/virtual-x-sever-running-on-a-remote-desktop-client.png)

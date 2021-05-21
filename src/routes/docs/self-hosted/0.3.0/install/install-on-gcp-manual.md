@@ -1,6 +1,11 @@
 ---
 section: self-hosted/0.3.0/self-hosted
+title: Manually Install Gitpod on Google Cloud Platform
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Manually Install Gitpod on Google Cloud Platform
 

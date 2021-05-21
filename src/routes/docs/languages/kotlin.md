@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: Kotlin in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Kotlin in Gitpod
 
@@ -8,7 +13,7 @@ To work with Kotlin in Gitpod, you will need to properly configure your reposito
 
 ## Installing Kotlin
 
-To install Kotlin in Gitpod add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/):
+To install Kotlin in Gitpod add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker):
 
 ```Dockerfile
 RUN brew install kotlin
@@ -33,7 +38,7 @@ This extension provides Kotlin language support for Gitpod and other IDEs, with:
 - Code snippets
 - Region code folding
 
-To get it, open Gitpod's **Extensions** panel (left vertical menu), then search for "Kotlin" and install the extension by Mathias Fröhlich for your project. Next, commit the [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file that was automatically created (or updated) by Gitpod.
+To get it, open Gitpod's **Extensions** panel (left vertical menu), then search for "Kotlin" and install the extension by Mathias Fröhlich for your project. Next, commit the [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) file that was automatically created (or updated) by Gitpod.
 
 ### Code Runner
 
