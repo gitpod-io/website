@@ -18,7 +18,7 @@
       We are writing new docs at
       <a href="/docs/beta">/docs/beta</a> 🎉. If you have any feedback, we'd
       love to hear about it in
-      <a href="https://github.com/gitpod-io/website/issues/461"
+      <a href="https://github.com/gitpod-io/website/issues/461" target="__self"
         >this GitHub issue</a
       > 🙏.
     {/if}
