@@ -37,11 +37,11 @@ In the following example, you can open the [Java with Spring Boot](https://gitpo
 
 2. After the project starts, a _BUILD SUCCESS_ message appears in the **Terminal** tab at the bottom of the screen.
 
-[Screenshot goes here]
+![Buils Success message in the terminal](../../../../static/images/docs/beta/getting-started/terminal-message.png)
 
 3. To view the application running in a new browser click **Open in browser** icon that appears in the **Simple Browser** pane of the Gitpod development environment.
 
-[Screenshot goes here]
+![Preview of the application in simple browser](../../../../static/images/docs/beta/getting-started/simple-browser.png)
 
 #### Personalize the Workspace Theme
 
@@ -51,11 +51,13 @@ You can access the Visual Studio Code in your workspace. In the following exampl
 2. In the search bar, type _Quiet Light Theme_ and click the **Manage** icon.
 
    A pop-up menu appears
-   [Screenshot]
+   ![Quite light theme menu](../../../../static/images/docs/beta/getting-started/quite-light-theme.png)
 
 3. Select the **Set Color Theme** option.
 
    A **Select Color Theme** search bar that lists **Quite Light** appears in the workspace.
+
+   ![Select Color Theme](../../../../static/images/docs/beta/getting-started/select-color-theme.png)
 
 4. Select the **Quite Light** option.
 
