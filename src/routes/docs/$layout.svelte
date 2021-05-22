@@ -26,7 +26,17 @@
   $: MENU = isBetaPage
     ? [
         M("Overview", "beta"),
-        M(" Getting Started", "beta/getting-started"),
+        M("Getting Started", "beta/getting-started", [
+          M(
+            "Quick Start Environment",
+            "beta/getting-started/#quick-start-environment"
+          ),
+          M("Using Prefixed URL", "beta/getting-started/#prefixed-url"),
+          M(
+            "Installing Browser Extension",
+            "beta/getting-started/#browser-extension"
+          ),
+        ]),
         M("🔙 Go back to stable docs", ""),
       ]
     : [

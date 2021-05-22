@@ -15,12 +15,13 @@ title: Getting Started
 
 `youtube: ZZ0_TQ6UApY`
 
-### Quick Start Environment
+## Quick Start Environment
 
 Learn how to start using Gitpod on an example project or an example open source project using one of the following methods:
 
-- Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
-- Install [Browser Extension](#browser-extension)
+- Opening an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
+- Using a [Prefixed URL](#prefixed-url)
+- Installing a [Browser Extension](#browser-extension)
 
 ### Example Project
 
@@ -28,7 +29,7 @@ The projects listed in the [example projects](/docs/examples) already have a wor
 
 In the following example, you can open the [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) application project, customize the [workspace](/docs/workspaces), and create a pull request.
 
-#### Open the Application
+### Open the Application
 
 1. To open the example Java with Spring Boot project in a browser, click the [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) project link.
 
@@ -44,7 +45,7 @@ In the following example, you can open the [Java with Spring Boot](https://gitpo
 
 [Screenshot goes here]
 
-#### Customize the Workspace
+### Customize the Workspace
 
 You can also customize the workspace with tools and languages, settings and keybindings, and color theme.
 
@@ -62,6 +63,18 @@ You can also customize the workspace with tools and languages, settings and keyb
 
   A popup menu appears with all the available themes.
 
+### Open Source Projects
+
+Setting up a local dev environment to contribute to your favourite OSS project can be daunting. Luckily, already numerous projects have gitpodified their repositories to enable everyone to contribute with a single click. You can find the list of all Open Source Projects that are integrated with Gitpod on [contribute.dev](https://contribute.dev/).
+
+Here's a list of some of the popular OSS projects. Just click the links to contribute using Gitpod:
+
+- [freeCodeCamp](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp)
+- [Prometheus](https://gitpod.io/#https://github.com/prometheus/prometheus)
+- [GitLab](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
+- [Forem](https://gitpod.io/#https://github.com/forem/forem) powering [dev.to](https://dev.to/)
+- [Nushell](https://gitpod.io/#https://github.com/nushell/nushell)
+
 ## Prefixed URL
 
 You can quickly open a new workspace for any GitLab, GitHub, or Bitbucket project, by just prefixing **gitpod.io/#** to the URL of the project in the address bar of the browser.
@@ -75,7 +88,12 @@ For example:
   The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic`
 
 - To open a specific merge request in the Java with Spring Boot project prefix **gitpod.io/#** to the URL of the merge request *https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2*.
+
   The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2`
+
+- To open a specific issue in the Java with Spring Boot project prefix **gitpod.io/#** to the URL of the merge request *https://gitlab.com/gitpod/spring-petclinic/-/issues/1*.
+
+  The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/issues/1`
 
 [Learn more &rarr;](/docs/context-urls)
 
@@ -84,18 +102,6 @@ For example:
 For convenience, we've made a browser extension that works with Google Chrome and Mozilla Firefox. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily open a new workspace for any existing project.
 
 [Learn more &rarr;](/docs/browser-extension)
-
-## Gitpodified Open Source Projects
-
-Setting up a local dev environment for a contribution to your favourite OSS project can be daunting. Luckily there are already numerous projects out there that gitpodified their repositories allowing everyone to contribute with a single click. With [contribute.dev](https://contribute.dev/) we even made a website to list them.
-
-See for yourself and try opening some of our favorite OSS projects out there:
-
-- [freeCodeCamp](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp)
-- [Prometheus](https://gitpod.io/#https://github.com/prometheus/prometheus)
-- [GitLab](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
-- [Forem](https://gitpod.io/#https://github.com/forem/forem) powering [dev.to](https://dev.to/)
-- [Nushell](https://gitpod.io/#https://github.com/nushell/nushell)
 
 ## Next Steps
 
