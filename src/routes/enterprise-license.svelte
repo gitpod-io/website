@@ -41,27 +41,27 @@
     },
     company: {
       el: null,
-      valid: true,
+      valid: false,
       value: "",
     },
     address: {
       el: null,
-      valid: true,
+      valid: false,
       value: "",
     },
     postalCode: {
       el: null,
-      valid: true,
+      valid: false,
       value: "",
     },
     city: {
       el: null,
-      valid: true,
+      valid: false,
       value: "",
     },
     country: {
       el: null,
-      valid: true,
+      valid: false,
       value: "",
     },
     noOfEmployees: {
@@ -80,11 +80,6 @@
   let isFormDirty: boolean = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
-
-  $: {
-    console.log(formData);
-    console.log(isFormValid);
-  }
 
   const handleSeatsInput = (e) => {
     const input = e.target.value;
@@ -130,21 +125,19 @@
       `,
     };
 
-    console.log(email);
-
-    // try {
-    //   const response = await fetch("/.netlify/functions/submit-form", {
-    //     method: "POST",
-    //     body: JSON.stringify(email),
-    //   });
-    //   if (response.ok) {
-    //     isRequested = true;
-    //   } else {
-    //     console.error(response.statusText);
-    //   }
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    try {
+      const response = await fetch("/.netlify/functions/submit-form", {
+        method: "POST",
+        body: JSON.stringify(email),
+      });
+      if (response.ok) {
+        isRequested = true;
+      } else {
+        console.error(response.statusText);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 </script>
 
@@ -160,6 +153,10 @@
   .half :last-child {
     @apply mt-macro;
   }
+
+  .option {
+    @apply text-gray-800;
+  }
 </style>
 
 <header>
@@ -174,11 +171,7 @@
     <SubmissionSuccess title="Thanks" text="We'll get back to you soon." />
   {:else}
     <form on:submit|preventDefault={handleSubmit} novalidate>
-      <label
-        class="title"
-        for="seats"
-        class:error={isFormDirty && !formData.seats.valid}
-      >
+      <label class="title" for="seats">
         <h2 class="h4">How many seats would you like to purchase?*</h2>
       </label>
 
@@ -226,6 +219,7 @@
           formData.domain.valid =
             formData.domain.value && formData.domain.el.checkValidity();
         }}
+        class:error={isFormDirty && !formData.domain.valid}
       />
 
       <p>The license key will be bound to this domain.</p>
@@ -233,7 +227,10 @@
       <h2 class="h4 title">Customer Information</h2>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-small">
-        <label class="half">
+        <label
+          class="half"
+          class:error={isFormDirty && !formData.firstName.valid}
+        >
           First Name*
           <input
             name="firstName"
@@ -248,7 +245,10 @@
             autocomplete="name"
           />
         </label>
-        <label class="half">
+        <label
+          class="half"
+          class:error={isFormDirty && !formData.lastName.valid}
+        >
           Last Name*
           <input
             name="lastName"
@@ -262,7 +262,7 @@
             autocomplete="name"
           />
         </label>
-        <label class="half">
+        <label class="half" class:error={isFormDirty && !formData.email.valid}>
           Work Email*
           <input
             type="email"
@@ -276,67 +276,104 @@
             autocomplete="email"
           />
         </label>
-        <label class="half">
-          Company
+        <label
+          class="half"
+          class:error={isFormDirty && !formData.company.valid}
+        >
+          Company*
           <input
             name="company"
             bind:value={formData.company.value}
             bind:this={formData.company.el}
+            on:change={() => {
+              formData.company.valid =
+                formData.company.value && formData.company.el.checkValidity();
+            }}
             type="text"
           />
         </label>
-        <label class="half">
-          Street Address
+        <label
+          class="half"
+          class:error={isFormDirty && !formData.address.valid}
+        >
+          Street Address*
           <input
             name="address"
             bind:value={formData.address.value}
             bind:this={formData.address.el}
+            on:change={() => {
+              formData.address.valid =
+                formData.address.value && formData.address.el.checkValidity();
+            }}
             type="text"
           />
         </label>
-        <label class="half">
-          Postal Code
+        <label
+          class="half"
+          class:error={isFormDirty && !formData.postalCode.valid}
+        >
+          Postal Code*
           <input
             name="postalCode"
             bind:value={formData.postalCode.value}
             bind:this={formData.postalCode.el}
+            on:change={() => {
+              formData.postalCode.valid =
+                formData.postalCode.value &&
+                formData.postalCode.el.checkValidity();
+            }}
             type="text"
           />
         </label>
-        <label class="half">
-          City
+        <label class="half" class:error={isFormDirty && !formData.city.valid}>
+          City*
           <input
             name="city"
             bind:value={formData.city.value}
             bind:this={formData.city.el}
+            on:change={() => {
+              formData.city.valid =
+                formData.city.value && formData.city.el.checkValidity();
+            }}
             type="text"
           />
         </label>
-        <label>
-          Country
+        <label
+          class="half"
+          class:error={isFormDirty && !formData.country.valid}
+        >
+          Country*
           <select
             name="country"
             bind:value={formData.country.value}
             bind:this={formData.country.el}
+            on:blur={() => {
+              formData.country.valid =
+                formData.country.value && formData.country.el.checkValidity();
+            }}
+            class="option"
           >
-            <option>Select</option>
+            <option class="option">Select</option>
             {#each countryList as c}
-              <option value={c}>
+              <option class="option" value={c}>
                 {c}
               </option>
             {/each}
           </select>
         </label>
-        <label>
+        <label
+          class="half"
+          class:error={isFormDirty && !formData.noOfEmployees.valid}
+        >
           Total Number of Employees <span>(optional)</span>
           <select
             name="noOfEmployees"
             bind:value={formData.noOfEmployees.value}
             bind:this={formData.noOfEmployees.el}
           >
-            <option>Select</option>
+            <option class="option">Select</option>
             {#each ["2-5", "6-20", "21-50", "51-250", "+250"] as n, i}
-              <option value={n}>
+              <option class="option" value={n}>
                 {n}
               </option>
             {/each}
