@@ -118,9 +118,13 @@ For example:
 
 ## Installing a Browser Extension
 
-For convenience, we've made a browser extension that works with Google Chrome and Mozilla Firefox. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily open a new workspace for any existing project.
+For convenience, there is Gitpod browser extension that works with Chromium-based browsers and Firefox. That includes Microsoft Edge, Brave, Chrome and possibly others. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so that you can easily open a new workspace for any existing project.
+![Browser Extension](../../../static/images/docs/browser-extension-lense.png)
 
-[Learn more &rarr;](/docs/browser-extension)
+Gitpod provides the extensions for the following browsers:
+
+- [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
+- [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/)
 
 ## Next Steps
 
