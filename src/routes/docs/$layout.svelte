@@ -28,8 +28,12 @@
         M("Overview", "beta"),
         M("Getting Started", "beta/getting-started", [
           M(
-            "Quick Start Environment",
-            "beta/getting-started/#quick-start-environment"
+            "Working on an Example Project",
+            "beta/getting-started/#working-on-an-example-project"
+          ),
+          M(
+            "Working on Open Source Projects",
+            "beta/getting-started/#working-on-open-source-projects"
           ),
           M("Using Prefixed URL", "beta/getting-started/#prefixed-url"),
           M(
