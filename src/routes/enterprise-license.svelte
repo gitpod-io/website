@@ -166,7 +166,7 @@
   </p>
 </header>
 
-<section class="card shadow-xl mb-32 mx-8">
+<section class="card shadow-xl mb-32 sm:mx-8">
   {#if isRequested}
     <SubmissionSuccess title="Thanks" text="We'll get back to you soon." />
   {:else}
@@ -175,8 +175,8 @@
         <h2 class="h4">How many seats would you like to purchase?*</h2>
       </label>
 
-      <div class="flex items-center justify-between">
-        <div class="flex items-center">
+      <div class="flex flex-wrap items-center justify-between">
+        <div class="flex flex-wrap items-center">
           <input
             id="seats"
             type="number"
@@ -191,14 +191,15 @@
             }}
             min="0"
             class:error={isFormDirty && !formData.seats.valid}
+            class="mb-micro"
           />
-          <div class="ml-xx-small">
-            x {isEurope()
+          <div class="sm:ml-xx-small mb-micro">
+            &nbsp;x {isEurope()
               ? `${yearlyPricesPerSeat.eur}€`
-              : `${yearlyPricesPerSeat.usd}$`} per user yearly
+              : `${yearlyPricesPerSeat.usd}$`} per user yearly &nbsp;
           </div>
         </div>
-        <div>
+        <div class="mb-micro">
           Order Total: <strong>{orderTotal}</strong>
           {isEurope() ? "€" : "$"}
         </div>
