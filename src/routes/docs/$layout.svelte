@@ -35,10 +35,10 @@
             "Working on Open Source Projects",
             "beta/getting-started/#working-on-open-source-projects"
           ),
-          M("Using Prefixed URL", "beta/getting-started/#prefixed-url"),
+          M("Using Prefixed URL", "beta/getting-started/#using-a-prefixed-url"),
           M(
             "Installing Browser Extension",
-            "beta/getting-started/#browser-extension"
+            "beta/getting-started/#installing-browser-extension"
           ),
         ]),
         M("🔙 Go back to stable docs", ""),

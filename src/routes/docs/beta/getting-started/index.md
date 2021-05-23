@@ -50,7 +50,7 @@ You can access the Visual Studio Code in your workspace. In the following exampl
 1. In the left sidebarn of Visual Studio Code, click the Extensions icon.
 2. In the search bar, type _Quiet Light Theme_ and click the **Manage** icon.
 
-   A pop-up menu appears
+   A pop-up menu appears:
    ![Quite light theme menu](../../../../static/images/docs/beta/getting-started/quite-light-theme.png)
 
 3. Select the **Set Color Theme** option.
@@ -62,27 +62,6 @@ You can access the Visual Studio Code in your workspace. In the following exampl
 4. Select the **Quite Light** option.
 
 **Note:** _Quite Light Theme_ is a built-in theme and by default it is enabled globally across all your workspaces. If you would like to have this theme for your current workspace only then, clear the selection of **Sync This Extension** option in the pop-up menu that appears when you click the **Manage** icon.
-
-#### Creating a Pull Request
-
-In the following steps you can submit a pull request for an [issue](https://gitlab.com/gitlab-org/gitlab/-/issues/13861) in the example Java with Spring Boot project hosted on GitLab
-
-**Before you Begin**
-
-- Login to GitLab and [Enable Gitpod in your user settings](https://docs.gitlab.com/ee/integration/gitpod.html#enable-gitpod-in-your-user-settings).
-
-  **Note:** You need to enable Gitpod on GitLab only the first time you use Gitpod on a project hosted in GitLab.
-
-- Ensure that you have access to submit a pull request to the project.
-
-1. Open an issue in the project for which you want to submit a pull request by using the following URL in the browser:
-   `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/issues/1`
-
-   Gitpod opens a workspace with a new branch for the related issue in Visual Studio Code. You can find the details of the branch at the bottom of the workspace.
-
-2. Update the changes that you want to make in the files of the project repository.
-
-3. Commit the changes and [create a pull request](https://code.visualstudio.com/docs/editor/github#_creating-pull-requests).
 
 ### Working on Open Source Projects
 
@@ -96,37 +75,64 @@ Here's a list of some of the popular OSS projects. Just click the links and cont
 - [Forem](https://gitpod.io/#https://github.com/forem/forem) powering [dev.to](https://dev.to/)
 - [Nushell](https://gitpod.io/#https://github.com/nushell/nushell)
 
+#### Creating a Pull Request
+
+The following steps are specific for GitLab open source project. However, the steps outlined are applicable to all projects hosted on various Git providers.
+
+**Before you Begin**
+
+- Login to GitLab and [Enable Gitpod in your user settings](https://docs.gitlab.com/ee/integration/gitpod.html#enable-gitpod-in-your-user-settings).
+
+  **Note:** You need to enable Gitpod on GitLab only the first time you use Gitpod on any project hosted in GitLab.
+
+To submit a pull request for any [issue](https://gitlab.com/gitlab-org/gitlab/-/issues/) listed in the GitLab open source project.
+
+1. Open an issue in the project for which you want to submit a pull request by using the following URL format in the browser:
+   `https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab/-/issues/<issue-number>`
+
+   _Where_: `<issue-number>` is the number assigned to the issue in the GitLab project.
+
+   Gitpod opens a workspace with a new branch for the related issue in Visual Studio Code. You can find the details of the branch at the bottom of the workspace.
+
+2. Update the changes that you want to make in the files of the project repository.
+
+3. Commit the changes that you made by adding a commit message and click the _Commit_ icon in Visual Studio Code.
+
+4. Create a pull request by clicking the _Create Pull Request_ icon in Visual Studio Code.
+
+   For detailed instructions about creating a pull request in Visual Studio Code, see [create a pull request](https://code.visualstudio.com/docs/editor/github#_creating-pull-requests).
+
 ## Using a Prefixed URL
 
 You can quickly open a new workspace for any GitLab, GitHub, or Bitbucket project, by just prefixing **gitpod.io/#** to the URL of the project in the address bar of the browser.
 
 Gitpod presents you with useful productivity boosts not just when you prefix **gitpod.io/#** to the main URL of the repository, but also for issues, or pull requests.
 
-For example:
+For example, to open the repository, pull request, or an issue in the Java with Spring Boot project:
 
-- To open the Java with Spring Boot project repository prefix **gitpod.io/#** to the URL of the repository *https://gitlab.com/gitpod/spring-petclinic*.
+- **Repository:** prefix **gitpod.io/#** to the URL of the repository *https://gitlab.com/gitpod/spring-petclinic*.
 
   The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic`
 
-- To open a specific merge request in the Java with Spring Boot project prefix **gitpod.io/#** to the URL of the merge request *https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2*.
+- **Pull Request:** prefix **gitpod.io/#** to the URL of the merge request *https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2*.
 
   The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2`
 
-- To open a specific issue in the Java with Spring Boot project prefix **gitpod.io/#** to the URL of the merge request *https://gitlab.com/gitpod/spring-petclinic/-/issues/1*.
+- **Issue:** prefix **gitpod.io/#** to the URL of the issue *https://gitlab.com/gitpod/spring-petclinic/-/issues/1*.
 
   The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/issues/1`
 
 [Learn more &rarr;](/docs/context-urls)
 
-## Installing a Browser Extension
+## Installing Browser Extension
 
-For convenience, there is Gitpod browser extension that works with Chromium-based browsers such as Microsoft Edge, Brave, Chrome, and others, and Firefox browser. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so that you can easily open a new workspace for any existing project.
+Gitpod browser extension works with Chromium-based browsers such as Microsoft Edge, Brave, Chrome, and others, and Firefox browser. The Gitpod extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so that you can easily open a new workspace for any existing project.
 ![Browser Extension](../../../static/images/docs/browser-extension-lense.png)
 
-Gitpod provides the extensions for the following browsers:
+Install the Gitpod browser extension that are available here:
 
-- [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
-- [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/)
+- [Chrome Gitpod extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
+- [Firefox Gitpod extension](https://addons.mozilla.org/firefox/addon/gitpod/)
 
 ## Next Steps
 
