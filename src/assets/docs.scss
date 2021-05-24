@@ -32,13 +32,13 @@
   a[href*="https://"]:not([href*="www.gitpod.io"])
   {
     position: relative;
-    padding-left: 1.25rem;
+    padding-right: 2rem;
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       top: 50%;
-      transform: translate(-1.438rem, -50%);
+      transform: translate(0.25rem, -50%);
       height: 1.25rem;
       width: 1.25rem;
       background: url("/svg/external.svg");
@@ -48,7 +48,7 @@
       transition: all 0.2s 50ms;
     }
 
-    &:hover::before {
+    &:hover::after {
       opacity: 1;
     }
   }
