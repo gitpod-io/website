@@ -32,13 +32,23 @@
     },
   ];
 
+  const studentUnlimited = "Student Unlimited: Get Verified as a Student";
+
   const subjects = [
     "Question about Gitpod Self-Hosted",
     "Question about Gitpod's Paid Plans",
     "Applying for Professional Open Source",
     "Applying for the Custom IDE Beta",
-    "Student Unlimited: Get Verified as a Student",
+    studentUnlimited,
   ];
+
+  let isStudentEmailNoteShown: boolean = false;
+
+  $: if (formData.selectedSubject.value === studentUnlimited) {
+    isStudentEmailNoteShown = true;
+  } else {
+    isStudentEmailNoteShown = false;
+  }
 
   const formData: Form = {
     consent: {
@@ -171,7 +181,12 @@
           />
         </li>
         <li class:error={isFormDirty && !formData.email.valid}>
-          <label for="email">E-Mail*</label>
+          <label for="email"
+            >E-Mail*
+            {#if isStudentEmailNoteShown}
+              (Please use your student email)
+            {/if}
+          </label>
           <input
             id="email"
             bind:value={formData.email.value}
