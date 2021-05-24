@@ -32,19 +32,20 @@
     },
   ];
 
-  const studentUnlimited = "Student Unlimited: Get Verified as a Student";
+  const studentUnlimitedSubject =
+    "Student Unlimited: Get Verified as a Student";
 
   const subjects = [
     "Question about Gitpod Self-Hosted",
     "Question about Gitpod's Paid Plans",
     "Applying for Professional Open Source",
     "Applying for the Custom IDE Beta",
-    studentUnlimited,
+    studentUnlimitedSubject,
   ];
 
   let isStudentEmailNoteShown: boolean = false;
 
-  $: if (formData.selectedSubject.value === studentUnlimited) {
+  $: if (formData.selectedSubject.value === studentUnlimitedSubject) {
     isStudentEmailNoteShown = true;
   } else {
     isStudentEmailNoteShown = false;
