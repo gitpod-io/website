@@ -204,3 +204,28 @@
     }
   }
 }
+
+a[href*="http://"]:not([href*="www.gitpod.io"]),
+a[href*="https://"]:not([href*="www.gitpod.io"])
+{
+  position: relative;
+  padding-left: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-25px, -50%);
+    height: 20px;
+    width: 20px;
+    background: url("/svg/external.svg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    transition: all 0.2s 50ms;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
