@@ -38,13 +38,13 @@
       content: "";
       position: absolute;
       top: 50%;
-      transform: translate(0.25rem, -50%);
-      height: 1.25rem;
-      width: 1.25rem;
+      transform: translate(0.25rem, -50%) rotate(-135deg);
+      height: 1rem;
+      width: 1rem;
       background: url("/svg/external.svg");
       background-size: cover;
       background-position: center;
-      opacity: 0.5;
+      opacity: 0.6;
       transition: all 0.2s 50ms;
     }
 
