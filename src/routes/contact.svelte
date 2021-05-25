@@ -41,6 +41,7 @@
     "Applying for Professional Open Source",
     "Applying for the Custom IDE Beta",
     studentUnlimitedSubject,
+    "Other",
   ];
 
   let isStudentEmailNoteShown: boolean = false;
