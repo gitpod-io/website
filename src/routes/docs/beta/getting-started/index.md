@@ -9,27 +9,35 @@ title: Getting Started
 
 # Getting Started
 
-[Gitpod](https://www.gitpod.io) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow.
+Learn how to start using Gitpod on an example project that is hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment.
 
-[Gitpod](https://www.gitpod.io) offers an automated, ephemeral cloud-powered development environment that enables you to experiment with complex software development stacks using a web browser without the need to install software or configure anything on your local environment. You also don't have to upgrade the hardware of the developer environment to increase the productivity.
+## Quick Start on an Example Project
 
-`youtube: ZZ0_TQ6UApY`
+In this task you learn how to create an issue, configure the project with a prebuild events, create a pull request, open the pull request in Gitpod, and see the prebuild events. The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application.
 
-Learn how to start using Gitpod on an example project or an open source project using one of the following methods:
+### Before you Begin
 
-- Working an [Example Project](#working-on-an-example-project) or [OSS Projects](#working-on-open-source-projects)
-- Using a [Prefixed URL](#prefixed-url)
-- Installing a [Browser Extension](#browser-extension)
+- Install Gitpod browser extension.
 
-### Working on an Example Project
+  You can install Gitpod browser extension on any [Chromium-based](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) browsers such as Microsoft Edge, Brave, Chrome, and others, or on a [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/) browser.
 
-The projects listed in the [example projects](/docs/examples) already have a working Gitpod configuration, you can inspect the configurations and try them out in Gitpod.
+  **Note:** If you do not want to install the browser extension prefix `gitpod.io/#` to the URL of the repositories in the following steps `https://github.com/gitpod-io/spring-petclinic`.
 
-In the following example, you can open the [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) application project, personalize the [workspace](/docs/workspaces) theme, and create a pull request.
+- Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
+- Fork the [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) repository in GitHub.
 
-#### Open the Application
+- Delete the `gitpod.yml` file in your personal repository `https://github.com/<github_username>/spring-petclinic`
 
-1. To open the example Java with Spring Boot project in a browser, click the [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) project link.
+1. Open a Gitpod workspace for the project on your persoanl repository by clicking the **Gitpod** button.
+   **Note:**
+   When Gitpod opens the workspace it displays the status checking, preparing, creating, and starting status in the browser.
+2. Clone the repository.
+3. Click the _Github_ icon on the VisualStudio Code sidebar and click _Create an Issue_.
+   Gitpod opens _NewIssue.md_ file in the editor.
+4. Type the title of the issue as _Configure Gitpod_, set the assign the issue to yourself by typing your github user name in the **Assignee** field. Add the description of the issue as _Format the Readme.md file_
+5. Click the **Create Issue** icon.
+
+6. To open the example Java with Spring Boot project in a browser, click the [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) project link.
 
    Gitpod opens an automated, and fully configured development environment of the example Java with Spring Boot project in a workspace:
 
