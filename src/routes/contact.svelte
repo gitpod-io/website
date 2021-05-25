@@ -38,6 +38,7 @@
     "Applying for Professional Open Source",
     "Applying for the Custom IDE Beta",
     "Student Unlimited: Get Verified as a Student",
+    "Other",
   ];
 
   const formData: Form = {
