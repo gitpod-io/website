@@ -26,36 +26,26 @@
   $: MENU = isBetaPage
     ? [
         M("Overview", "beta"),
-        M("Getting Started", "beta/getting-started", [
+        M("Quickstart", "beta/quickstart", [
           M(
-            "Quickstart with example projects",
-            "beta/getting-started/#quickstart-with-example-projects",
-            [
-              M(
-                "Java example project",
-                "beta/getting-started/#java-example-project"
-              ),
-              M(
-                "Python example project",
-                "beta/getting-started/#python-example-project"
-              ),
-              M(
-                "Go example project",
-                "beta/getting-started/#go-example-project"
-              ),
-              M(
-                "Rust example project",
-                "beta/getting-started/#rust-example-project"
-              ),
-            ]
+            "Svelte example project",
+            "beta/quickstart/#svelte-example-project"
           ),
           M(
+            "Node or Typescript example project",
+            "beta/quickstart/#node-or-typescript-example-project"
+          ),
+          M("Go example project", "beta/quickstart/#go-example-project"),
+          M("Rust example project", "beta/quickstart/#rust-example-project"),
+          M("Java example project", "beta/quickstart/#java-example-project"),
+          M("Ruby example project", "beta/quickstart/#ruby-example-project"),
+          M(
             "Creating a pull request in an Open Source project",
-            "beta/getting-started/#creating-a-pull-request-in-an-open-source-project"
+            "beta/quickstart/#creating-a-pull-request-in-an-open-source-project"
           ),
           M(
             "Installing a browser extension",
-            "beta/getting-started/#installing-a-browser-extension"
+            "beta/quickstart/#installing-a-browser-extension"
           ),
         ]),
         M("🔙 Go back to stable docs", ""),

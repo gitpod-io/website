@@ -1,29 +1,96 @@
 ---
-section: getting-started
-title: Getting Started
+section: quickstart
+title: Quickstart
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Getting Started
-
-Get familar with Gitpod, understand the features and advantages of Gitpod in a learning environment or on the projects that you work on:
-
-Quickstart with an example project
-Getting started with your project
-
-## Quickstart with example projects
+# Quickstart
 
 Learn how to start using Gitpod on an example project that is hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment based on the [Gitpod example](/docs/examples) projects. Some of the example projects in this section are based on:
 
-- [Java](/#java-example-project)
-- Python
-- Go
-- Rust
+- Svelte example
+- Node.js/Typescript example
+- Go example
+- Rust example
+- Java example
+- Ruby example
 
-### Java example project
+## Svelte example project
+
+The example project that is used in the following section is a [SvelteJS template](https://github.com/gitpod-io/sveltejs-template) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
+
+1. Create a project by clicking the [Java template](https://github.com/gitpod-io/sveltejs-template/generate).
+
+2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
+
+   Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
+
+3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
+
+   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/sveltejs-template/`
+
+   Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
+
+4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
+
+## TypeScript example project
+
+The example project that is used in the following section is a [TypeScript](https://github.com/eclipse-theia/theia) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
+
+1. Create a project by clicking the [TypeScript template](https://github.com/eclipse-theia/theia/generate).
+
+2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
+
+   Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
+
+3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
+
+   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/theia`
+
+   Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
+
+4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
+
+## Go example project
+
+The example project that is used in the following section is a [Go](https://github.com/prometheus/prometheus) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
+
+1. Create a project by clicking the [Go template](https://github.com/prometheus/prometheus/generate).
+
+2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
+
+   Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
+
+3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
+
+   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/prometheus/`
+
+   Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
+
+4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
+
+## Rust example project
+
+The example project that is used in the following section is a [Rust](https://github.com/nushell/nushell) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
+
+1. Create a project by clicking the [Rust template](https://github.com/nushell/nushell/generate).
+
+2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
+
+   Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
+
+3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
+
+   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/nushell/`
+
+   Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
+
+4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
+
+## Java example project
 
 The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
 
@@ -41,15 +108,11 @@ The example project that is used in the following section is a [Java with Boot S
 
 4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
 
-![Workspace of Java with Spring Boot Project](../../../../static/images/docs/beta/getting-started/java-with-spring-boot-workspace.png)
+## Ruby example project
 
-At any given time you can open three workspaces simultaneous across projects, repositories, pull requests, and issues with Gitpod. For more information, see [workspaces](/docs/workspaces).
+The example project that is used in the following section is a [Ruby](https://github.com/gitpod-io/ruby-on-rails) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
 
-### Python example project
-
-The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
-
-1. Create a project by clicking the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
+1. Create a project by clicking the [Ruby template](https://github.com/gitpod-io/ruby-on-rails/generate).
 
 2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
 
@@ -57,57 +120,13 @@ The example project that is used in the following section is a [Java with Boot S
 
 3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/spring-petclinic/`
+   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/ruby-on-rails`
 
    Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
 
 4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
 
-![Workspace of Java with Spring Boot Project](../../../../static/images/docs/beta/getting-started/java-with-spring-boot-workspace.png)
-
-At any given time you can open three workspaces simultaneous across projects, repositories, pull requests, and issues with Gitpod. For more information, see [workspaces](/docs/workspaces).
-
-### Go example project
-
-The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
-
-1. Create a project by clicking the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
-
-2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
-
-   Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
-
-3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
-
-   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/spring-petclinic/`
-
-   Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
-
-4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
-
-![Workspace of Java with Spring Boot Project](../../../../static/images/docs/beta/getting-started/java-with-spring-boot-workspace.png)
-
-At any given time you can open three workspaces simultaneous across projects, repositories, pull requests, and issues with Gitpod. For more information, see [workspaces](/docs/workspaces).
-
-### Rust example project
-
-The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
-
-1. Create a project by clicking the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
-
-2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
-
-   Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
-
-3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
-
-   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/spring-petclinic/`
-
-   Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
-
-4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
-
-![Workspace of Java with Spring Boot Project](../../../../static/images/docs/beta/getting-started/java-with-spring-boot-workspace.png)
+## Workspaces on Gitpod
 
 At any given time you can open three workspaces simultaneous across projects, repositories, pull requests, and issues with Gitpod. For more information, see [workspaces](/docs/workspaces).
 
