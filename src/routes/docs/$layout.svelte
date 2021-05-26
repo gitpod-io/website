@@ -28,14 +28,23 @@
         M("Overview", "beta"),
         M("Getting Started", "beta/getting-started", [
           M(
-            "Working on an Example Project",
-            "beta/getting-started/#working-on-an-example-project"
+            "Quickstart with example projects",
+            "beta/getting-started/#quickstart-with-example-projects",
+            [
+              M(
+                "Vue Example Project 2",
+                "beta/getting-started/#working-on-open-source-projects"
+              ),
+              M(
+                "Rust Example Project",
+                "beta/getting-started/#using-a-prefixed-url"
+              ),
+            ]
           ),
           M(
-            "Working on Open Source Projects",
-            "beta/getting-started/#working-on-open-source-projects"
+            "Creating a Pull Request in an Open Source Project",
+            "beta/getting-started/#creating-a-pull"
           ),
-          M("Using Prefixed URL", "beta/getting-started/#using-a-prefixed-url"),
           M(
             "Installing Browser Extension",
             "beta/getting-started/#installing-browser-extension"

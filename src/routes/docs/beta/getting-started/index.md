@@ -7,41 +7,40 @@ title: Getting Started
   export const prerender = true;
 </script>
 
-# Quickstart with example projects
+# Getting Started
 
-Learn how to start using Gitpod on an example project that is hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment.
+Get familar with Gitpod, understand the features and advantages of Gitpod in a learning environment or on the projects that you work on:
 
-## Java Example Project
+- [Quickstart with example projects](beta/getting-started/#quickstart-with-example-projects)
+- [Getting started with your projects](beta/getting-started/#gettingf-started-with-your-projects)
 
-The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application. In this task you learn how to configure the project with a prebuild events and see the prebuild events.
+## Quickstart with example projects
+
+Learn how to start using Gitpod on an example projects that are hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment.
+
+### Java example project
+
+The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
 
 1. Create a project by clicking the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
 
-2. Update the _readme.md_ to display the steps documented in this section.
+2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
 
-3. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
+   Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
 
-Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
+3. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-4. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository *https://github.com/<github_username>/spring-petclinic/*.
+   The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/spring-petclinic/`
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/spring-petclinic/`
+   Gitpod displays the prebuild progress status with by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information, see [prebuilds](/docs/prebuilds).
 
-Gitpod display the prebuild progress status with by running the init commands in the `.gitpod.yml` before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencie are already downloaded ahead of time, and the code is already compiled.
-
-5.  Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
+4. Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
 
 ![Workspace of Java with Spring Boot Project](../../../../static/images/docs/beta/getting-started/java-with-spring-boot-workspace.png)
 
-#### Creating a Pull Request
+At any given time you can open three workspaces simultaneous across projects, repositories, pull requests, and issues with Gitpod. For more information, see [workspaces](/docs/workspaces).
 
-The following steps are specific for GitLab open source project. However, the steps outlined are applicable to all projects hosted on various Git providers.
-
-**Before you Begin**
-
-- Login to GitLab and [Enable Gitpod in your user settings](https://docs.gitlab.com/ee/integration/gitpod.html#enable-gitpod-in-your-user-settings).
-
-  **Note:** You need to enable Gitpod on GitLab only the first time you use Gitpod on any project hosted in GitLab.
+## Creating a pull request in an open source project
 
 To submit a pull request for any [issue](https://gitlab.com/gitlab-org/gitlab/-/issues/) listed in the GitLab open source project.
 
@@ -60,7 +59,7 @@ To submit a pull request for any [issue](https://gitlab.com/gitlab-org/gitlab/-/
 
    For detailed instructions about creating a pull request in Visual Studio Code, see [create a pull request](https://code.visualstudio.com/docs/editor/github#_creating-pull-requests).
 
-## Install a Browser Extension
+## Installing a browser extension
 
 You can install Gitpod browser extension on any [Chromium-based](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) browsers such as Microsoft Edge, Brave, Chrome, and others, or on a [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/) browser.
 
