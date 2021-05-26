@@ -7,81 +7,31 @@ title: Getting Started
   export const prerender = true;
 </script>
 
-# Getting Started
+# Quickstart with example projects
 
 Learn how to start using Gitpod on an example project that is hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment.
 
-## Quick Start on an Example Project
+## Java Example Project
 
-In this task you learn how to create an issue, configure the project with a prebuild events, create a pull request, open the pull request in Gitpod, and see the prebuild events. The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application.
+The example project that is used in the following section is a [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) application. In this task you learn how to configure the project with a prebuild events and see the prebuild events.
 
-### Before you Begin
+1. Create a project by clicking the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
 
-- Install Gitpod browser extension.
+2. Update the _readme.md_ to display the steps documented in this section.
 
-  You can install Gitpod browser extension on any [Chromium-based](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) browsers such as Microsoft Edge, Brave, Chrome, and others, or on a [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/) browser.
+3. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
 
-  **Note:** If you do not want to install the browser extension prefix `gitpod.io/#` to the URL of the repositories in the following steps `https://github.com/gitpod-io/spring-petclinic`.
+Gitpod GitHub app generates Gitpod links for pull requests and adds them to the description, it also prebuilds workspaces for branches and pull requests.
 
-- Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
-- Fork the [Java with Boot Spring](https://github.com/gitpod-io/spring-petclinic) repository in GitHub.
+4. Start your work space with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository *https://github.com/<github_username>/spring-petclinic/*.
 
-- Delete the `gitpod.yml` file in your personal repository `https://github.com/<github_username>/spring-petclinic`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/spring-petclinic/`
 
-1. Open a Gitpod workspace for the project on your persoanl repository by clicking the **Gitpod** button.
-   **Note:**
-   When Gitpod opens the workspace it displays the status checking, preparing, creating, and starting status in the browser.
-2. Clone the repository.
-3. Click the _Github_ icon on the VisualStudio Code sidebar and click _Create an Issue_.
-   Gitpod opens _NewIssue.md_ file in the editor.
-4. Type the title of the issue as _Configure Gitpod_, set the assign the issue to yourself by typing your github user name in the **Assignee** field. Add the description of the issue as _Format the Readme.md file_
-5. Click the **Create Issue** icon.
+Gitpod display the prebuild progress status with by running the init commands in the `.gitpod.yml` before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request, for which a prebuild exists, the workspace loads much faster, because all dependencie are already downloaded ahead of time, and the code is already compiled.
 
-6. To open the example Java with Spring Boot project in a browser, click the [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) project link.
-
-   Gitpod opens an automated, and fully configured development environment of the example Java with Spring Boot project in a workspace:
+5.  Gitpod starts an automated, and fully configured development environment for the project in a workspace that is now ready for you to code.
 
 ![Workspace of Java with Spring Boot Project](../../../../static/images/docs/beta/getting-started/java-with-spring-boot-workspace.png)
-
-2. After the project starts, a _BUILD SUCCESS_ message appears in the **Terminal** tab at the bottom of the screen.
-
-![Buils Success message in the terminal](../../../../static/images/docs/beta/getting-started/terminal-message.png)
-
-3. To view the application running in a new browser click **Open in browser** icon that appears in the **Simple Browser** pane of the Gitpod development environment.
-
-![Preview of the application in simple browser](../../../../static/images/docs/beta/getting-started/simple-browser.png)
-
-#### Personalize the Workspace Theme
-
-You can access the Visual Studio Code in your workspace. In the following example, you install an extension that sets the theme of your workspace
-
-1. In the left sidebarn of Visual Studio Code, click the Extensions icon.
-2. In the search bar, type _Quiet Light Theme_ and click the **Manage** icon.
-
-   A pop-up menu appears:
-   ![Quite light theme menu](../../../../static/images/docs/beta/getting-started/quite-light-theme.png)
-
-3. Select the **Set Color Theme** option.
-
-   A **Select Color Theme** search bar that lists **Quite Light** appears in the workspace.
-
-   ![Select Color Theme](../../../../static/images/docs/beta/getting-started/select-color-theme.png)
-
-4. Select the **Quite Light** option.
-
-**Note:** _Quite Light Theme_ is a built-in theme and by default it is enabled globally across all your workspaces. If you would like to have this theme for your current workspace only then, clear the selection of **Sync This Extension** option in the pop-up menu that appears when you click the **Manage** icon.
-
-### Working on Open Source Projects
-
-Setting up a local dev environment to contribute to your favourite OSS project can be daunting. Luckily, already numerous projects have gitpodified their repositories to enable everyone to contribute with a single click. You can find the list of all Open Source Projects that are integrated with Gitpod on [contribute.dev](https://contribute.dev/).
-
-Here's a list of some of the popular OSS projects. Just click the links and contribute to the projects using Gitpod:
-
-- [freeCodeCamp](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp)
-- [Prometheus](https://gitpod.io/#https://github.com/prometheus/prometheus)
-- [GitLab](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
-- [Forem](https://gitpod.io/#https://github.com/forem/forem) powering [dev.to](https://dev.to/)
-- [Nushell](https://gitpod.io/#https://github.com/nushell/nushell)
 
 #### Creating a Pull Request
 
@@ -110,37 +60,13 @@ To submit a pull request for any [issue](https://gitlab.com/gitlab-org/gitlab/-/
 
    For detailed instructions about creating a pull request in Visual Studio Code, see [create a pull request](https://code.visualstudio.com/docs/editor/github#_creating-pull-requests).
 
-## Using a Prefixed URL
+## Install a Browser Extension
 
-You can quickly open a new workspace for any GitLab, GitHub, or Bitbucket project, by just prefixing **gitpod.io/#** to the URL of the project in the address bar of the browser.
+You can install Gitpod browser extension on any [Chromium-based](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) browsers such as Microsoft Edge, Brave, Chrome, and others, or on a [Firefox](https://addons.mozilla.org/firefox/addon/gitpod/) browser.
 
-Gitpod presents you with useful productivity boosts not just when you prefix **gitpod.io/#** to the main URL of the repository, but also for issues, or pull requests.
+The Gitpod extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so that you can easily open a new workspace for any existing project.
 
-For example, to open the repository, pull request, or an issue in the Java with Spring Boot project:
-
-- **Repository:** prefix **gitpod.io/#** to the URL of the repository *https://gitlab.com/gitpod/spring-petclinic*.
-
-  The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic`
-
-- **Pull Request:** prefix **gitpod.io/#** to the URL of the merge request *https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2*.
-
-  The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2`
-
-- **Issue:** prefix **gitpod.io/#** to the URL of the issue *https://gitlab.com/gitpod/spring-petclinic/-/issues/1*.
-
-  The revised URL is: `https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/issues/1`
-
-[Learn more &rarr;](/docs/context-urls)
-
-## Installing Browser Extension
-
-Gitpod browser extension works with Chromium-based browsers such as Microsoft Edge, Brave, Chrome, and others, and Firefox browser. The Gitpod extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so that you can easily open a new workspace for any existing project.
 ![Browser Extension](../../../static/images/docs/browser-extension-lense.png)
-
-Install the Gitpod browser extension that are available here:
-
-- [Chrome Gitpod extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
-- [Firefox Gitpod extension](https://addons.mozilla.org/firefox/addon/gitpod/)
 
 ## Next Steps
 
