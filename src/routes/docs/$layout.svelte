@@ -50,12 +50,12 @@
             ]
           ),
           M(
-            "Creating a Pull Request in an Open Source Project",
-            "beta/getting-started/#creating-a-pull"
+            "Creating a pull request in an Open Source project",
+            "beta/getting-started/#creating-a-pull-request-in-an-open-source-project"
           ),
           M(
-            "Installing Browser Extension",
-            "beta/getting-started/#installing-browser-extension"
+            "Installing a browser extension",
+            "beta/getting-started/#installing-a-browser-extension"
           ),
         ]),
         M("🔙 Go back to stable docs", ""),

@@ -7,7 +7,14 @@ title: Getting Started
   export const prerender = true;
 </script>
 
-## Quickstart with an example projects
+# Getting Started
+
+Get familar with Gitpod, understand the features and advantages of Gitpod in a learning environment or on the projects that you work on:
+
+Quickstart with an example project
+Getting started with your project
+
+## Quickstart with example projects
 
 Learn how to start using Gitpod on an example project that is hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment based on the [Gitpod example](/docs/examples) projects. Some of the example projects in this section are based on:
 
