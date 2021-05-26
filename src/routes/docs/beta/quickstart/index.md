@@ -20,9 +20,9 @@ Learn how to start using Gitpod on an example project that is hosted on Github. 
 
 ## Svelte example project
 
-The example project that is used in the following section is a [SvelteJS template](https://github.com/gitpod-io/sveltejs-template) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
+The example project that is used in the following section is a [SvelteJS](https://github.com/gitpod-io/sveltejs-template) application. In this task you learn how the Gitpod GitHub App prebuilds a workspace and you can view the prebuild events.
 
-1. Create a project by clicking the [Java template](https://github.com/gitpod-io/sveltejs-template/generate).
+1. Create a project by clicking the [SvelteJS template](https://github.com/gitpod-io/sveltejs-template/generate).
 
 2. Install [Gitpod GitHub App](https://github.com/marketplace/gitpod-io). For instructions to install, see [GitHub documentation](https://docs.github.com/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace/installing-an-app-in-your-organization#installing-a-github-app-in-your-organization).
 
