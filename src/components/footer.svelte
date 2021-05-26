@@ -38,6 +38,7 @@
         <li>Developer</li>
         <li><a href="/#get-started">Getting started</a></li>
         <li><a href="/screencasts">Screencasts</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li>
           <a
