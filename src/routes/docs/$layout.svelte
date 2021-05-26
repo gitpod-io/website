@@ -32,12 +32,20 @@
             "beta/getting-started/#quickstart-with-example-projects",
             [
               M(
-                "Vue Example Project 2",
-                "beta/getting-started/#working-on-open-source-projects"
+                "Java example project",
+                "beta/getting-started/#java-example-project"
               ),
               M(
-                "Rust Example Project",
-                "beta/getting-started/#using-a-prefixed-url"
+                "Python example project",
+                "beta/getting-started/#python-example-project"
+              ),
+              M(
+                "Go example project",
+                "beta/getting-started/#go-example-project"
+              ),
+              M(
+                "Rust example project",
+                "beta/getting-started/#rust-example-project"
               ),
             ]
           ),
