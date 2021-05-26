@@ -33,7 +33,7 @@
           ),
           M(
             "Node or Typescript example project",
-            "beta/quickstart/#node-or-typescript-example-project"
+            "beta/quickstart/#typescript-example-project"
           ),
           M("Go example project", "beta/quickstart/#go-example-project"),
           M("Rust example project", "beta/quickstart/#rust-example-project"),
