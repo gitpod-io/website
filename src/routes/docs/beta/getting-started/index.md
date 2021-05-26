@@ -16,7 +16,12 @@ Get familar with Gitpod, understand the features and advantages of Gitpod in a l
 
 ## Quickstart with an example project
 
-Learn how to start using Gitpod on an example project that is hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment based on the [Gitpod example](/docs/examples) projects.
+Learn how to start using Gitpod on an example project that is hosted on Github. However, the steps outlined works for a project hosted on any Git provider. This section helps you understand the features and advantages of Gitpod in a learning environment based on the [Gitpod example](/docs/examples) projects. Some of the example projects in this section are based on:
+
+- [Java](beta/getting-started/#java-example-project)
+- Python
+- Go
+- Rust
 
 ### Java example project
 
