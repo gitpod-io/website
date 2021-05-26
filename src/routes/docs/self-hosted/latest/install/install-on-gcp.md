@@ -9,4 +9,5 @@ This guide explains how to install an instance of Gitpod with the following step
 
 # Terraform script coming soon
 
+We are working on improving this and making it production ready. Work in progress scripts can be found at this url
 [code](https://github.com/gitpod-io/gitpod/tree/main/install/gcp-terraform)
