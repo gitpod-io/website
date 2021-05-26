@@ -8,6 +8,11 @@
 
   let orderTotal = 0;
 
+  $: orderTotalToDisplay =
+    orderTotal >= 1000
+      ? `${orderTotal.toString()[0]},${orderTotal.toString().substring(1)}`
+      : orderTotal;
+
   const yearlyPricesPerSeat = {
     eur: 216,
     usd: 240,
@@ -200,7 +205,7 @@
           </div>
         </div>
         <div class="mb-micro">
-          Order Total: <strong>{orderTotal}</strong>
+          Order Total: <strong>{orderTotalToDisplay}</strong>
           {isEurope() ? "€" : "$"}
         </div>
       </div>
