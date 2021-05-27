@@ -56,7 +56,8 @@
 .cast > div > * {
   flex: 0 0 auto;
 }
-.cast h2 {
+.cast h2,
+.cast .h2 {
   flex: 1;
   margin: 0;
   font-size: var(--xx-small);

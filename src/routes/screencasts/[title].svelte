@@ -21,9 +21,13 @@
   .related {
     margin: 2rem auto;
   }
+
+  .header {
+    @apply mb-small;
+  }
 </style>
 
-<header>
+<header class="header">
   <h1>{screencast.title}</h1>
   <p>{screencast.description}</p>
 </header>
@@ -44,8 +48,8 @@
 </p>
 
 {#if screencast.nextScreencast}
-  <div class="screencasts">
-    <h2>Next up...</h2>
+  <div class="max-w-sm my-medium mx-auto">
+    <h2 class="text-center mb-small">Next up...</h2>
     <ScreencastPreview
       screencast={screencasts[screencast.nextScreencast]}
       screencastNumber={screencast.nextScreencast}
