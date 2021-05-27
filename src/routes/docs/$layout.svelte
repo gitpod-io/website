@@ -6,6 +6,10 @@
   import "../../assets/docs.scss";
 
   $: isBetaPage = $page.path.startsWith("/docs/beta");
+  const BASE_PATH =
+    "https://gitpod.io#https://github.com/gitpod-io/website/tree/main/src/routes";
+  $: currentPage = $page.path === "/docs" ? `${$page.path}/index` : $page.path;
+  $: srcPath = `${BASE_PATH}${currentPage}.md`;
 
   // This file is used to define entries in the side menu
   interface MenuEntry {
@@ -147,6 +151,11 @@
   <div class="doc-contents">
     <Search />
     <MobileMenu {MENU} />
+    <div class="flex justify-end mb-xz-small">
+      <a href={srcPath} target="_blank">
+        <img src="/svg/edit-in-gitpod.svg" alt="" />
+      </a>
+    </div>
     <slot />
   </div>
 </div>
