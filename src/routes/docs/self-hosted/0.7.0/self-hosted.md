@@ -1,5 +1,5 @@
 ---
-section: self-hosted/latest/self-hosted
+section: self-hosted/0.7.0/self-hosted
 title: Gitpod Self-Hosted
 ---
 
@@ -23,9 +23,15 @@ The easiest way to install Gitpod Self-Hosted is currently on Google Cloud Platf
 
 - [Install Gitpod on Google Cloud Platform](/docs/self-hosted/latest/install/install-on-gcp-script)
 
+### Install on AWS
+
+Alternatively, Gitpod comes with a setup for AWS that integrates with some AWS resource, like Load Balancers or S3 for storing workspace data:
+
+- [Install Gitpod on AWS](/docs/self-hosted/latest/install/install-on-aws-script)
+
 ### Install on any Kubernetes cluster
 
-If you already have a Kubernetes cluster, or don't want/cannot use GCP, please follow the generic guide:
+If you already have a Kubernetes cluster, or don't want/cannot use AWS or GCP, please follow the generic guide:
 
 - [Install Gitpod on Kubernetes](/docs/self-hosted/latest/install/install-on-kubernetes)
 

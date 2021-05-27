@@ -25,6 +25,7 @@
   let MENU: MenuEntry[];
   $: MENU = isBetaPage
     ? [
+        M("Introduction", "beta/introduction"),
         M("Getting Started", "beta"),
         M("Concepts", "beta/concepts", [
           M("Contexts", "beta/concepts/contexts"),
@@ -100,7 +101,6 @@
             "Configure Ingress",
             "self-hosted/latest/install/configure-ingress"
           ),
-          M("Configure OAuth", "self-hosted/latest/install/oauth"),
           M("Configure a Database", "self-hosted/latest/install/database"),
           M(
             "Configure a Docker Registry",

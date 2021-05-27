@@ -1,5 +1,5 @@
 ---
-section: self-hosted/latest/self-hosted
+section: self-hosted/0.7.0/self-hosted
 title: Workspace Storage
 ---
 
@@ -40,7 +40,7 @@ For more complex use case we recommend configuring more permanent means of persi
       enabled: false
     ```
 
-2.  Redeploy Gitpod using `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes
+2.  Redeploy Gitpod using `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes
 
     > Note that Helm does _not_ merge hierarchies in a single file. Please make sure there is only ever _one_ `components` hierarchy or the last one overwrites all previous values.
 
@@ -54,4 +54,4 @@ For more complex use case we recommend configuring more permanent means of persi
       secretKey: add-a-radom-secret-key-here
       # insert custom config here
     ```
-3.  Redeploy Gitpod using `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes
+3.  Redeploy Gitpod using `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes

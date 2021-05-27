@@ -1,5 +1,5 @@
 ---
-section: self-hosted/latest/self-hosted
+section: self-hosted/0.7.0/self-hosted
 title: Configure Ingress to your Gitpod installation
 ---
 
@@ -36,14 +36,10 @@ Installing Gitpod on a subdomain works as well. For example:
     kubectl describe svc proxy | grep -i ingress
     ```
 
-1.  Merge the following into your `values.custom.yaml` file:
+2.  Create a file `values.custom.yaml` with the following content:
     ```yaml
     hostname: your-domain.com
-    components:
-      proxy:
-        loadBalancerIP: <your-IP>
     ```
-    Specifying the `loadBalancerIP` make sure it stays the same across all redeploys.
 
 ## 2. HTTPS
 
@@ -69,7 +65,7 @@ To configure the HTTPS certificates for your domain
     ```bash
     kubectl create secret generic https-certificates --from-file=secrets/https-certificates
     ```
-4.  Afterwards, do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes.
+4.  Afterwards, do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes.
 
 ### Using Let's Encrypt to generate HTTPS certificates
 

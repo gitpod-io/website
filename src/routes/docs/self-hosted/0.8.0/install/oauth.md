@@ -1,5 +1,5 @@
 ---
-section: self-hosted/latest/self-hosted
+section: self-hosted/0.8.0/self-hosted
 title: How To integrate Gitpod with OAuth providers
 ---
 
@@ -55,7 +55,7 @@ Alternatively, you can configure it per Helm values file:
 
     Replace `CLIENT_ID` and `SECRET` with their respective values.
 
-3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes.
+3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.8.0` to apply the changes.
 
 ## GitHub
 

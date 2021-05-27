@@ -1,5 +1,5 @@
 ---
-section: self-hosted/latest/self-hosted
+section: self-hosted/0.7.0/self-hosted
 title: Workspaces
 ---
 
@@ -53,4 +53,4 @@ If you want to change the default sizing (~ 8GiB per workspace) you should
           controlPeriod: "15m"
     ```
 
-2.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes.
+2.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes.
