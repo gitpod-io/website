@@ -25,8 +25,8 @@
   let MENU: MenuEntry[];
   $: MENU = isBetaPage
     ? [
-        M("Introduction", "beta/introduction"),
-        M("Getting Started", "beta"),
+        M("Introduction", "beta"),
+        // M("Getting Started", "beta"), // TODO: Merge #467
         M("Concepts", "beta/concepts", [
           M("Contexts", "beta/concepts/contexts"),
         ]),
