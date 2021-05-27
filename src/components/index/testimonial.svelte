@@ -23,6 +23,10 @@
   .testimonial :global(p) + :global(p) {
     margin-top: var(--macro);
   }
+
+  .role :global(span) {
+    font-weight: bold;
+  }
 </style>
 
 <a
