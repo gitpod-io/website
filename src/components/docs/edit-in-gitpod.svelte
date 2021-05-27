@@ -19,7 +19,7 @@
   }
 </style>
 
-<div class="flex justify-end mb-x-small">
+<div class="flex justify-end mb-micro">
   <a {href} class="btn-otherbrand" target="_blank">
     <span class="logo">
       <LogoTextless />
