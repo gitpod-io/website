@@ -26,6 +26,7 @@
   $: MENU = isBetaPage
     ? [
         M("Introduction", "beta"),
+        M("Quickstart", "beta/quickstart"),
         // M("Getting Started", "beta"), // TODO: Merge #467
         M("Concepts", "beta/concepts", [
           M("Contexts", "beta/concepts/contexts"),
