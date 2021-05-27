@@ -28,8 +28,52 @@
         M("Introduction", "beta"),
         M("Quickstart", "beta/quickstart"),
         // M("Getting Started", "beta"), // TODO: Merge #467
-        M("Concepts", "beta/concepts", [
-          M("Contexts", "beta/concepts/contexts"),
+        M("Configure", "beta/configure", [
+          M("Your project", "beta/configure/project"),
+          M("Your workspace", "beta/configure/workspace"),
+          M("Prebuilds", "beta/configure/prebuilds"),
+        ]),
+        M("Develop", "beta/develop", [
+          M("One workspace per task", "beta/develop/ephemeral"),
+          M("Life of a workspace", "beta/develop/life-of-a-workspace"),
+          M("Contexts", "beta/develop/contexts"),
+          M("Environment variables", "beta/develop/environment-variables"),
+          M("Collaboration with others", "beta/develop/collaboration"),
+        ]),
+        // TODO: Insert "Integrations" chapter by merging #495
+        M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
+          M(
+            "Install on Google Cloud Platform",
+            "self-hosted/latest/install/install-on-gcp-script"
+          ),
+          M(
+            "Install on Amazon Web Services",
+            "self-hosted/latest/install/install-on-aws-script"
+          ),
+          M(
+            "Install on self-managed Kubernetes",
+            "self-hosted/latest/install/install-on-kubernetes"
+          ),
+          M(
+            "Configure Ingress",
+            "self-hosted/latest/install/configure-ingress"
+          ),
+          M("Configure a Database", "self-hosted/latest/install/database"),
+          M(
+            "Configure a Docker Registry",
+            "self-hosted/latest/install/docker-registry"
+          ),
+          M("Configure Storage", "self-hosted/latest/install/storage"),
+          M("Configure Nodes", "self-hosted/latest/install/nodes"),
+          M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
+        ]),
+        M("References", "beta/references", [
+          M(".gitpod.yml", "beta/references/gitpod-yml"),
+          M("Custom Docker image", "beta/references/gitpod-dockerfile"),
+          M("Architecture", "beta/references/architecture"),
+          M("Troubleshooting", "beta/references/troubleshooting"),
+          M("Roadmap", "beta/references/roadmap"),
+          M("Changelog", "beta/references/changelog"),
         ]),
         M("🔙 Go back to stable docs", ""),
       ]
