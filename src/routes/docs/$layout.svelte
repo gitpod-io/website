@@ -153,7 +153,7 @@
     <MobileMenu {MENU} />
     <div class="flex justify-end mb-xz-small">
       <a href={srcPath} target="_blank">
-        <img src="/svg/edit-in-gitpod.svg" alt="" />
+        <img src="/svg/edit-in-gitpod.svg" alt="Edit in Gitpod" />
       </a>
     </div>
     <slot />
