@@ -156,13 +156,13 @@ export const testimonials: Testimonial[] = [
   {
     name: "Ben Halpern",
     avatar: "ben-halpern.jpg",
-    org: `<a href="https://twitter.com/forem" rel="noopener" target="_blank">
+    org: `<span>
           @forem
-        </a>
+        </span>
         and
-        <a href="https://twitter.com/ThePracticalDev" rel="noopener" target="_blank">
+        <span>
           @ThePracticalDev
-        </a>`,
+        </span>`,
     role: "Creator and Co-founder",
     text: `
       <p>GitPod is incredibly cool.</p>
@@ -174,9 +174,9 @@ export const testimonials: Testimonial[] = [
   {
     name: "Michael Friedrich",
     avatar: "michael-friedrich.jpg",
-    org: `<a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
+    org: `<span>
         @GitLab
-      </a>`,
+      </span>`,
     role: "Developer Evangelist",
     text: `
         <p>
@@ -204,9 +204,9 @@ export const testimonials: Testimonial[] = [
   {
     name: "Julius Volz",
     avatar: "julius-volz.jpg",
-    org: `<a href="https://twitter.com/PrometheusIO" rel="noopener" target="_blank">
+    org: `<span>
         @PrometheusIO
-      </a>`,
+      </span>`,
     role: "Creator",
     text: `
       <p>
