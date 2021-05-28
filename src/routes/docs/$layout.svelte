@@ -39,6 +39,7 @@
           M("Custom Docker Image", "beta/configure/docker-image"),
           M("Start Tasks", "beta/configure/start-tasks"),
           M("VS Code Extensions", "beta/configure/vscode-extensions"),
+          M("Exposing Ports", "beta/configure/ports"),
           M("Prebuilds", "beta/configure/prebuilds"),
         ]),
         M("Develop", "beta/develop", [
