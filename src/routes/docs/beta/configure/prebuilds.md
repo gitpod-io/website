@@ -103,8 +103,6 @@ github:
     addComment: true
     # add a "Review in Gitpod" button to the pull request's description (defaults to false)
     addBadge: false
-    # add a label once the prebuild is ready to pull requests (defaults to false)
-    addLabel: false
 ```
 
 ### When a prebuild is run
@@ -128,24 +126,13 @@ github:
     addCheck: false
 ```
 
-#### Comment (TODO this no longer seems to happen)
+#### Comment
 
-Gitpod can add a comment with a "Review in Gitpod" button to your pull requests. The color of the button
-shows the state of the prebuild:
-
-<div class="table-container">
-
-| <div style="width:140px">Button color</div>                                               | Prebuild state                                                                                                                                            |
-| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Review in Gitpod (prebuild building)](../../../static/images/docs/prebuild-ongoing.svg) | the prebuild is currently running. Opening a workspace now will show the log output of the prebuild. Once the prebuild is done, your workspace will open. |
-| ![Review in Gitpod (prebuild done)](../../../static/images/docs/prebuild-done.svg)        | the prebuild is done. A new workspace on this branch/PR will make use of this prebuild.                                                                   |
-| ![Review in Gitpos (prebuild failed)](../../../static/images/docs/prebuild-failed.svg)    | the prebuild failed or timed out. A new workspace on this branch/PR will open the prebuild and show you the log output.                                   |
-
-</div>
+Gitpod can add a comment with an "Open in Gitpod" button to your pull requests.
 
 You can enable this behaviour in the `.gitpod.yml` file in your default branch:
 
-```YAML
+```yaml
 github:
   prebuilds:
     addComment: true
@@ -166,19 +153,3 @@ github:
 
 The `addComment` and `addBadge` behaviours are not mutually exclusive (i.e. enabling one does not disable the other).
 If you don't want the comments to be added, disable them using `addComment: false`.
-
-#### Label (TODO verify this works)
-
-Gitpod can also add a label to your pull requests once the prebuild is done. If someone pushes to the source branch of the PR, Gitpod will remove the label until the new prebuild is ready.
-This is handy if you only want to review PRs for which a prebuild exists, saving you the time waiting for stuff to build.
-
-You can enable this behaviour in the `.gitpod.yml` file in your default branch:
-
-```yaml
-github:
-  prebuilds:
-    addLabel: prebuilt-in-gitpod-or-any-other-label
-```
-
-**Note**: This is very much a beta-feature and not necessarily reliable. If a label has been added to a PR, a prebuild exists.
-But sometimes a label may not be added even though the workspace was prebuilt.
