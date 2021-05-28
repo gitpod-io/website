@@ -156,13 +156,13 @@ export const testimonials: Testimonial[] = [
   {
     name: "Ben Halpern",
     avatar: "ben-halpern.jpg",
-    org: `<a href="https://twitter.com/forem" rel="noopener" target="_blank">
+    org: `<span>
           @forem
-        </a>
+        </span>
         and
-        <a href="https://twitter.com/ThePracticalDev" rel="noopener" target="_blank">
+        <span>
           @ThePracticalDev
-        </a>`,
+        </span>`,
     role: "Creator and Co-founder",
     text: `
       <p>GitPod is incredibly cool.</p>
@@ -174,28 +174,16 @@ export const testimonials: Testimonial[] = [
   {
     name: "Michael Friedrich",
     avatar: "michael-friedrich.jpg",
-    org: `<a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
+    org: `<span>
         @GitLab
-      </a>`,
+      </span>`,
     role: "Developer Evangelist",
     text: `
         <p>
-          Let's say we were overwhelmed how smooth
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          workspaces creation & own Docker image for workspaces worked.
+          Let's say we were overwhelmed how smooth @gitpod workspaces creation & own Docker image for workspaces worked.
         </p>
         <p>
-          Plus, installing
-          <a href="https://twitter.com/code" rel="noopener" target="_blank">
-            @code
-          </a>
-          extensions from the store and integrating
-          <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
-            @gitlab
-          </a>
-          CI. That blew my mind entirely, and that is hard ;)
+          Plus, installing @code extensions from the store and integrating @gitlab CI. That blew my mind entirely, and that is hard ;)
         </p>
       `,
     twitterHandle: "dnsmichi",
@@ -204,13 +192,13 @@ export const testimonials: Testimonial[] = [
   {
     name: "Julius Volz",
     avatar: "julius-volz.jpg",
-    org: `<a href="https://twitter.com/PrometheusIO" rel="noopener" target="_blank">
+    org: `<span>
         @PrometheusIO
-      </a>`,
+      </span>`,
     role: "Creator",
     text: `
       <p>
-        Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR code, by just prepending "<a href="https://gitpod.io" target="_blank">gitpod.io#</a>" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!
+        Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR code, by just prepending "gitpod.io#" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!
       </p>
       `,
     twitterHandle: "juliusvolz",
@@ -220,24 +208,16 @@ export const testimonials: Testimonial[] = [
     name: "David Ressler",
     avatar: "david-ressler.jpg",
     org: `
-      <a href="https://twitter.com/instagram" rel="noopener" target="_blank">
+      <span>
         @instagram
-      </a>
+      </span>
     `,
     role: "Engineering Manager",
     text: `
         <p>
-          I think I’m in love with
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          . It’s such a powerful tool. I’ve learned so much in the past week
+          I think I’m in love with @gitpod. It’s such a powerful tool. I’ve learned so much in the past week
           just from stumbling across Github repos that interest me and appending
-          “
-          <a href="http://gitpod.io/#" rel="noopener" target="_blank">
-            http://gitpod.io/#
-          </a>
-          ” to the URL. A+ tool all around.
+          “http://gitpod.io/#” to the URL. A+ tool all around.
         </p>
       `,
     twitterHandle: "DavidRessler",
@@ -247,22 +227,18 @@ export const testimonials: Testimonial[] = [
     name: "Bartłomiej Płotka",
     avatar: "bwplotka.jpg",
     org: `
-      <a href="https://twitter.com/RedHat" rel="noopener" target="_blank">
+      <span>
         @RedHat
-      </a>
+      </span>
     `,
     role: "Principal Software Engineer",
     text: `
         <div>
           <p>
-            This
-            <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-              @gitpod
-            </a>
-            thing is magic! Pretty cool, without any extra configuration. Good work!
+            This @gitpod thing is magic! Pretty cool, without any extra configuration. Good work!
           </p>
 
-          <p><a href="https://gitpod.io/#https://github.com/thanos-io/thanos" rel="noopener" target="_blank">https://gitpod.io/#https://github.com/thanos-io/thanos</a></p>
+          <p>https://gitpod.io/#https://github.com/thanos-io/thanos</p>
         </div>
       `,
     twitterHandle: "bwplotka",
@@ -272,22 +248,14 @@ export const testimonials: Testimonial[] = [
     name: "Mrugesh Mohapatra",
     avatar: "mrugesh-mohapatra.jpg",
     org: `
-      <a href="https://twitter.com/freeCodeCamp" rel="noopener" target="_blank">
+      <span>
         @freeCodeCamp
-      </a>
+      </span>
     `,
     role: "Technology & Community",
     text: `
       <p>
-          Ya'all
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          is freaking amazing! We integrated it into our workflow for working on
-          <a href="https://twitter.com/freeCodeCamp" rel="noopener" target="_blank">
-            @freeCodeCamp
-          </a>
-          's codebase and I am honestly loving it. 🔥🔥!
+          Ya'all @gitpod is freaking amazing! We integrated it into our workflow for working on @freeCodeCamp's codebase and I am honestly loving it. 🔥🔥!
           <br />
           Go check it out on our repo https://github.com/freeCodeCamp/f... now!
         </p>
@@ -299,9 +267,9 @@ export const testimonials: Testimonial[] = [
     name: "Sven Peters",
     avatar: "sven-peters.jpg",
     org: `
-      <a href="https://twitter.com/MongoDB" rel="noopener" target="_blank">
+      <span>
         @MongoDB
-      </a>
+      </span>
     `,
     role: "Dev Advocate",
     text: `
@@ -317,19 +285,14 @@ export const testimonials: Testimonial[] = [
     name: "Jonathan Lister Parsons",
     avatar: "jonathan-lister-parsons.jpg",
     org: `
-      <a href="https://twitter.com/pensionbee" rel="noopener" target="_blank">
+      <span>
         @PensionBee
-      </a>
+      </span>
     `,
     role: "CTO",
     text: `
         <p>
-          I'm really enjoying
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          - for me, it's made full-stack development in the browser (yes,
-          including mobile) a reality
+          I'm really enjoying @gitpod - for me, it's made full-stack development in the browser (yes,including mobile) a reality
         </p>
       `,
     twitterHandle: "jayfresh",
@@ -339,18 +302,14 @@ export const testimonials: Testimonial[] = [
     name: "Alejandro",
     avatar: "alejandro-sanchez.jpeg",
     org: `
-      <a href="https://twitter.com/4GeeksAcademy" rel="noopener" target="_blank">
+      <span>
         @4GeeksAcademy
-      </a>
+      </span>
     `,
     role: "Co-Founder",
     text: `
         <p>
-          My setup is on
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          , just like Christopher McCandless, where I go my code goes with me,
+          My setup is on @gitpod, just like Christopher McCandless, where I go my code goes with me,
           no setup whatsoever Smiling face with sunglasses 😎 #IntoTheWild
         </p>
       `,
@@ -361,18 +320,14 @@ export const testimonials: Testimonial[] = [
     name: "ROKU",
     avatar: "roman-kuba.jpg",
     org: `
-      <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
+      <span>
         @GitLab
-      </a>
+      </span>
     `,
     role: "Engineering Manager",
     text: `
         <p>
-          Have to say that
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          is just super nice to use. Very impressed by the performance!
+          Have to say that @gitpod is just super nice to use. Very impressed by the performance!
         </p>
     `,
     twitterHandle: "Codebryo",
@@ -382,25 +337,15 @@ export const testimonials: Testimonial[] = [
     name: "Hugh Durkin",
     avatar: "hugh-durkin.jpg",
     org: `
-      <a href="https://twitter.com/HubSpot" rel="noopener" target="_blank">
+      <span>
         @HubSpot
-      </a>
+      </span>
     `,
     role: "Platform Ecosystem",
     text: `
         <p>
           I've been playing around with the "next generation" of Cloud IDEs
-          lately, and
-          <a href="https://twitter.com/gitpodio" rel="noopener" target="_blank">
-            @gitpodio
-          </a>
-          is quickly emerging as one of the best 👨‍💻
-          <br />
-          Awesome
-          <a href="https://twitter.com/github" rel="noopener" target="_blank">
-            @github
-          </a>
-          integration, slick Chrome extension, and super fast 🚀
+          lately, and @gitpodio is quickly emerging as one of the best 👨‍💻 <br /> Awesome @github integration, slick Chrome extension, and super fast 🚀
           https://gitpod.io/index.html
         </p>
       `,
@@ -411,18 +356,14 @@ export const testimonials: Testimonial[] = [
     name: "Marcel van Remmerden",
     avatar: "marcel-van-remmerden.jpg",
     org: `
-      <a href="https://twitter.com/GitLab" rel="noopener" target="_blank">
+      <span>
         @GitLab
-      </a>
+      </span>
     `,
     role: "Product Design Manager",
     text: `<p>
           Can only agree, opening a GitLab repository in gitpod is a magical
-          experience, thanks for the integration
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          !
+          experience, thanks for the integration @gitpod!
         </p>`,
     twitterHandle: "MvRemmerden",
     tweetId: "1215707492740739072",
@@ -431,32 +372,14 @@ export const testimonials: Testimonial[] = [
     name: "Brendan O’Leary",
     avatar: "brendan-o-leary.jpg",
     org: `
-      <a href="https://twitter.com/GitLab" rel="noopener" target="_blank">
+      <span>
         @GitLab
-      </a>
+      </span>
     `,
     role: "Dev. Evangelist",
     text: `
         <p>
-          I just discovered the
-          <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
-            @gitlab
-          </a>
-          and
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          integration is alive on
-          <a href="http://GitLab.com" rel="noopener" target="_blank">
-            http://GitLab.com
-          </a>
-          (released in 13.4 behind a feature flag). And it's AMAZING
-          <a
-            href="https://docs.gitlab.com/ee/integration/gitpod.html" rel="noopener"
-            target="_blank"
-          >
-            https://docs.gitlab.com/ee/integration....
-          </a>
+          I just discovered the @gitlab @gitpod integration is alive on http://GitLab.com (released in 13.4 behind a feature flag). And it's AMAZING https://docs.gitlab.com/ee/integration....
           .
         </p>
         <p>Now I can code from *anywhere*</p>
@@ -468,31 +391,17 @@ export const testimonials: Testimonial[] = [
     name: "Joonas Lehtinen",
     avatar: "joonas-lehtinen.png",
     org: `
-      <a href="https://twitter.com/vaadin" rel="noopener" target="_blank">
+      <span>
         @vaadin
-      </a>
+      </span>
     `,
     role: "Co-founder",
     text: `
         <p>
-          Wow -
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          is a brilliant way of evaluating a framework without installing
-          anything.
+          Wow - @gitpod is a brilliant way of evaluating a framework without installing anything.
         </p>
         <p>
-          Launch gitpod for
-          <a href="https://twitter.com/vaadin" rel="noopener" target="_blank">
-            @vaadin
-          </a>
-          at
-          <a href="https://vaadin.com/start/v14" rel="noopener" target="_blank">
-            https://vaadin.com/start/v14
-          </a>
-          ("Online workspace" tab). You'll have app running and will be editing
-          code in 3min from clicking "Launch" button.
+          Launch gitpod for @vaadin at https://vaadin.com/start/v14 ("Online workspace" tab). You'll have app running and will be editing code in 3min from clicking "Launch" button.
         </p>
     `,
     twitterHandle: "joonaslehtinen",
@@ -502,22 +411,14 @@ export const testimonials: Testimonial[] = [
     name: "Yo",
     avatar: "yogi.jpg",
     org: `
-      <a href="https://twitter.com/Taskord" rel="noopener" target="_blank">
+      <span>
         @Taskord
-      </a>
+      </span>
     `,
     role: "Creator",
     text: `
         <p>
-          Now contributing to
-          <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
-            @gitlab
-          </a>
-          is a cakewalk with
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          🎉!
+          Now contributing to @gitlab is a cakewalk with @gitpod 🎉!
         </p>
         <p>Already started my game! #100DaysOfCode</p>
       `,
@@ -528,35 +429,16 @@ export const testimonials: Testimonial[] = [
     name: "Senior Enterprise Geek",
     avatar: "k33g.jpg",
     org: `
-      <a href="https://twitter.com/gitlab" rel="noopener" target="_blank">
+      <span>
         @GitLab
-      </a>
+      </span>
     `,
     role: "Senior Technical Account Manager",
     text: `
         <p>
-          Today is a great day, we added the
-          <a href="https://twitter.com/gitpod" rel="noopener" target="_blank">
-            @gitpod
-          </a>
-          support to the
-          <a href="https://twitter.com/golo_lang" rel="noopener" target="_blank">
-            @golo_lang
-          </a>
-          repository. So now you can start hacking
-          <a href="https://twitter.com/golo_lang" rel="noopener" target="_blank">
-            @golo_lang
-          </a>
-          in almost only one click. Enjoy 🎉
+          Today is a great day, we added the @gitpod support to the @golo_lang repository. So now you can start hacking @golo_lang in almost only one click. Enjoy 🎉
         </p>
-        <p>
-          <a
-            href="https://gitpod.io/#https://github.com/eclipse/golo-lang" rel="noopener"
-            target="_blank"
-          >
-            gitpod.io/#https://githu...
-          </a>
-        </p>
+        <p>gitpod.io/#https://githu...</p>
       `,
     twitterHandle: "k33g_org",
     tweetId: "1329461150422065152",
