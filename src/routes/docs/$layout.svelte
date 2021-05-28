@@ -36,6 +36,7 @@
         // M("Getting Started", "beta"), // TODO: Merge #467
         M("Configure", "beta/configure", [
           M(".gitpod.yml", "beta/configure/gitpod-yml-file"),
+          M("Custom Docker Image", "beta/configure/docker-image"),
           M("Prebuilds", "beta/configure/prebuilds"),
         ]),
         M("Develop", "beta/develop", [
