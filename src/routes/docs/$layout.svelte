@@ -41,6 +41,7 @@
           M("VS Code Extensions", "beta/configure/vscode-extensions"),
           M("Exposing Ports", "beta/configure/ports"),
           M("Prebuilds", "beta/configure/prebuilds"),
+          M("Environment Variables", "beta/configure/environment-variables"),
         ]),
         M("Develop", "beta/develop", [
           M("One workspace per task", "beta/develop/ephemeral"),
