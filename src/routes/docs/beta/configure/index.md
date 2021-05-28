@@ -9,6 +9,8 @@ title: Configure Gitpod
 
 # Configure Gitpod
 
-Welcome 👋! You arrived here a bit early as we are currently (May 2021) in the process of rewriting the Gitpod documentation.
+With Gitpod, you can open any repository by prefixing its URL with `gitpod.io/#` - no configuration necessary. This is great to review code or quickly browse an open source project in a familiar environment where your favourite keyboard shortcuts are available.
 
-Please head over to https://github.com/gitpod-io/website/issues/461 if you'd like to provide any feedback - we'd love to hear from you 🙏.
+To get the most out of Gitpod though, you can create a `.gitpod.yml` configuration file at the root of your project to provide Gitpod with instructions on how to build and prepare the development environment specifically for a project.
+
+The chapters in this section provide details on what you can configure.
