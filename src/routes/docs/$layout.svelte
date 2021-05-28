@@ -27,26 +27,11 @@
     ? [
         M("Overview", "beta"),
         M("Quickstart", "beta/quickstart", [
-          M(
-            "Svelte example project",
-            "beta/quickstart/#svelte-example-project"
-          ),
-          M(
-            "Node or Typescript example project",
-            "beta/quickstart/#typescript-example-project"
-          ),
-          M("Go example project", "beta/quickstart/#go-example-project"),
-          M("Rust example project", "beta/quickstart/#rust-example-project"),
-          M("Java example project", "beta/quickstart/#java-example-project"),
-          M("Ruby example project", "beta/quickstart/#ruby-example-project"),
-          M(
-            "Creating a pull request in an Open Source project",
-            "beta/quickstart/#creating-a-pull-request-in-an-open-source-project"
-          ),
-          M(
-            "Installing a browser extension",
-            "beta/quickstart/#installing-a-browser-extension"
-          ),
+          M("Go example", "beta/quickstart/quickstart-go"),
+          M("Node/TypeScript example", "beta/quickstart/quickstart-typescript"),
+          M("Rust example", "beta/quickstart/quickstart-rust"),
+          M("Svelte example", "beta/quickstart/quickstart-svelte"),
+          M("Java example", "beta/quickstart/quickstart-java"),
         ]),
         M("🔙 Go back to stable docs", ""),
       ]
