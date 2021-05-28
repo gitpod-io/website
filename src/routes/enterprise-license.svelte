@@ -8,11 +8,6 @@
 
   let orderTotal = 0;
 
-  $: orderTotalToDisplay =
-    orderTotal >= 1000
-      ? `${orderTotal.toString()[0]},${orderTotal.toString().substring(1)}`
-      : orderTotal;
-
   const yearlyPricesPerSeat = {
     eur: 216,
     usd: 240,
@@ -205,7 +200,9 @@
           </div>
         </div>
         <div class="mb-micro">
-          Order Total: <strong>{orderTotalToDisplay}</strong>
+          Order Total: <strong
+            >{new Intl.NumberFormat().format(orderTotal)}</strong
+          >
           {isEurope() ? "€" : "$"}
         </div>
       </div>
@@ -226,6 +223,7 @@
             formData.domain.value && formData.domain.el.checkValidity();
         }}
         class:error={isFormDirty && !formData.domain.valid}
+        autocomplete="url"
       />
 
       <p>The license key will be bound to this domain.</p>
@@ -248,7 +246,7 @@
                 formData.firstName.value &&
                 formData.firstName.el.checkValidity();
             }}
-            autocomplete="name"
+            autocomplete="given-name"
           />
         </label>
         <label
@@ -265,7 +263,7 @@
               formData.lastName.valid =
                 formData.lastName.value && formData.lastName.el.checkValidity();
             }}
-            autocomplete="name"
+            autocomplete="family-name"
           />
         </label>
         <label class="half" class:error={isFormDirty && !formData.email.valid}>
@@ -296,6 +294,7 @@
                 formData.company.value && formData.company.el.checkValidity();
             }}
             type="text"
+            autocomplete="organization"
           />
         </label>
         <label
@@ -312,6 +311,7 @@
                 formData.address.value && formData.address.el.checkValidity();
             }}
             type="text"
+            autocomplete="street-address"
           />
         </label>
         <label
@@ -329,6 +329,7 @@
                 formData.postalCode.el.checkValidity();
             }}
             type="text"
+            autocomplete="postal-code"
           />
         </label>
         <label class="half" class:error={isFormDirty && !formData.city.valid}>
@@ -342,6 +343,7 @@
                 formData.city.value && formData.city.el.checkValidity();
             }}
             type="text"
+            autocomplete="address-level2"
           />
         </label>
         <label
@@ -358,6 +360,7 @@
                 formData.country.value && formData.country.el.checkValidity();
             }}
             class="option"
+            autocomplete="country"
           >
             <option class="option">Select</option>
             {#each countryList as c}
