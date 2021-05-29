@@ -43,7 +43,7 @@
           M("One workspace per task", "beta/develop/ephemeral"),
           M("Life of a workspace", "beta/develop/life-of-a-workspace"),
           M("Contexts", "beta/develop/contexts"),
-          M("Collaboration with others", "beta/develop/collaboration"),
+          M("Collaboration & Sharing", "beta/develop/collaboration"),
         ]),
         // TODO: Insert "Integrations" chapter by merging #495
         M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
