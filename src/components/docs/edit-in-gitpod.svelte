@@ -10,8 +10,7 @@
 
 <style>
   .btn-otherbrand {
-    padding: 0.75rem;
-    @apply rounded-2xl text-p-medium px-micro;
+    @apply rounded-2xl text-btn-small px-micro;
   }
 
   .logo {
