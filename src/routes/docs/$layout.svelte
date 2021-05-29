@@ -43,7 +43,6 @@
           M("One workspace per task", "beta/develop/ephemeral"),
           M("Life of a workspace", "beta/develop/life-of-a-workspace"),
           M("Contexts", "beta/develop/contexts"),
-          M("Environment variables", "beta/develop/environment-variables"),
           M("Collaboration with others", "beta/develop/collaboration"),
         ]),
         // TODO: Insert "Integrations" chapter by merging #495
