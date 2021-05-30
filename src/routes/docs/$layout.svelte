@@ -4,7 +4,6 @@
   import MobileMenu from "../../components/docs/mobile-menu/index.svelte";
   import Search from "../../components/docs/search.svelte";
   import "../../assets/docs.scss";
-  import EditInGitpod from "../../components/docs/edit-in-gitpod.svelte";
 
   $: isBetaPage = $page.path.startsWith("/docs/beta");
 
@@ -202,7 +201,6 @@
   <div class="doc-contents">
     <Search />
     <MobileMenu {MENU} />
-    <EditInGitpod pagePath={$page.path} />
     <slot />
   </div>
 </div>
