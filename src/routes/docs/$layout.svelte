@@ -44,6 +44,7 @@
           M("Life of a workspace", "beta/develop/life-of-a-workspace"),
           M("Contexts", "beta/develop/contexts"),
           M("Collaboration & Sharing", "beta/develop/collaboration"),
+          M("Command Line Interface", "beta/develop/command-line-interface"),
         ]),
         // TODO: Insert "Integrations" chapter by merging #495
         M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
