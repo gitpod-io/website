@@ -53,5 +53,5 @@ We are living in a remote world, where copies of your source code stored locally
 
 <h2>Next Steps</h2>
 
-- [Quickstart with example project](/docs/getting-started) - understand the benefits in a learning environment
-- [Getting started with your project](https://www.gitpod.io/docs/configuration) - configure one of your own existing projects
+- [Quickstart with example project](/docs/beta/quickstart) - understand the benefits in a learning environment
+- [Getting started with your project](/docs/beta/configure) - configure one of your own existing projects

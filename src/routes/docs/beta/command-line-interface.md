@@ -37,7 +37,7 @@ Use "gp [command] --help" for more information about a command.
 
 ## Init
 
-Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration) for more details. `gp init` generates a default `.gitpod.yml` file. You can customize it to match your requirements.
+Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/beta/configure) for more details. `gp init` generates a default `.gitpod.yml` file. You can customize it to match your requirements.
 
 Alternatively, `gp init -i` is an interactive guide which helps create the `.gitpod.yml` configuration file based on a few questions you answer.
 
@@ -64,7 +64,7 @@ For instance:
 gp preview $(gp url 3000)/my/path/index.html
 ```
 
-If you put this into the `.gitpod.yml` to open the a certain page on startup, make sure you [ignore the default action](/docs/config-ports) when the port opens.
+If you put this into the `.gitpod.yml` to open the a certain page on startup, make sure you [ignore the default action](/docs/beta/config-ports) when the port opens.
 
 ## Env
 

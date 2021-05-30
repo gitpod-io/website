@@ -64,7 +64,7 @@ RUN sudo apt-get update \
 ENV ...
 ```
 
-Once committed and pushed, Gitpod will automatically build this Dockerfile when (or [before](/docs/beta/configure/prebuilds)) new workspaces are created.
+Once committed and pushed, Gitpod will automatically build this Dockerfile when (or [before](/docs/beta/prebuilds)) new workspaces are created.
 
 See also [Gero's blog post](/blog/docker-in-gitpod) running through an example.
 

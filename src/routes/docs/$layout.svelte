@@ -35,20 +35,20 @@
         ]),
         // M("Getting Started", "beta"), // TODO: Merge #467
         M("Configure", "beta/configure", [
-          M(".gitpod.yml", "beta/configure/gitpod-yml-file"),
-          M("Custom Docker Image", "beta/configure/docker-image"),
-          M("Start Tasks", "beta/configure/start-tasks"),
-          M("VS Code Extensions", "beta/configure/vscode-extensions"),
-          M("Exposing Ports", "beta/configure/ports"),
-          M("Prebuilds", "beta/configure/prebuilds"),
-          M("Environment Variables", "beta/configure/environment-variables"),
+          M(".gitpod.yml", "beta/config-gitpod-file"),
+          M("Custom Docker Image", "beta/config-docker"),
+          M("Start Tasks", "beta/config-start-tasks"),
+          M("VS Code Extensions", "beta/vscode-extensions"),
+          M("Exposing Ports", "beta/config-ports"),
+          M("Prebuilds", "beta/prebuilds"),
+          M("Environment Variables", "beta/environment-variables"),
         ]),
         M("Develop", "beta/develop", [
-          M("One workspace per task", "beta/develop/ephemeral"),
-          M("Life of a workspace", "beta/develop/life-of-a-workspace"),
-          M("Contexts", "beta/develop/contexts"),
-          M("Collaboration & Sharing", "beta/develop/collaboration"),
-          M("Command Line Interface", "beta/develop/command-line-interface"),
+          M("One workspace per task", "beta/workspaces"),
+          M("Life of a workspace", "beta/life-of-a-workspace"),
+          M("Contexts", "beta/context-urls"),
+          M("Collaboration & Sharing", "beta/sharing-and-collaboration"),
+          M("Command Line Interface", "beta/command-line-interface"),
         ]),
         // TODO: Insert "Integrations" chapter by merging #495
         M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
