@@ -1,4 +1,5 @@
 import type { APIGatewayEvent, Context } from "aws-lambda";
+import * as client from "@sendgrid/mail";
 import * as GoogleSpreadsheet from "google-spreadsheet";
 
 interface Feedback {
@@ -7,9 +8,7 @@ interface Feedback {
   url: string;
 }
 
-async function submitFeedback(
-  feedback: Feedback
-): Promise<{ statusCode: number; errorMessage?: string }> {
+async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
   try {
     const doc = new GoogleSpreadsheet(process.env.DOCS_FEEDBACK_SHEET_ID);
     await doc.useServiceAccountAuth({
@@ -22,15 +21,57 @@ async function submitFeedback(
       { insert: true }
     );
     // TODO: Submit feedback to Sheet
-    return {
-      statusCode: 201,
-    };
-  } catch (e) {
-    return {
-      statusCode: 500,
-      errorMessage: `Error : ${JSON.stringify(e)}`,
-    };
+    return true;
+  } catch (error) {
+    console.error(error);
+    return false;
   }
+}
+
+async function sendFeedbackViaEmail(feedback: Feedback): Promise<boolean> {
+  client.setApiKey(process.env.SENDGRID_API_KEY);
+  const data: client.MailDataRequired = {
+    from: "Docs Feedback Widget",
+    subject: `Docs Feedback - ${feedback.url}`,
+    to: [process.env.DOCS_FEEDBACK_EMAIL_TO],
+    content: [
+      {
+        type: "text/plain",
+        value: `Feedback received
+        URL: ${feedback.url}
+        Emotion: ${feedback.emotion}
+        Note: ${feedback.note || "N/A"}`,
+      },
+    ],
+    trackingSettings: {
+      clickTracking: {
+        enable: false,
+        enableText: false,
+      },
+      openTracking: {
+        enable: false,
+      },
+    },
+  };
+
+  try {
+    await client.send(data);
+    return true;
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+}
+
+async function submitFeedback(
+  feedback: Feedback
+): Promise<{ statusCode: number }> {
+  const isSavedInSheet = await saveFeedbackInSheet(feedback);
+  const isSentViaEmail = await sendFeedbackViaEmail(feedback);
+
+  return {
+    statusCode: isSavedInSheet && isSentViaEmail ? 201 : 500,
+  };
 }
 
 exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
@@ -41,7 +82,10 @@ exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
     .then((response) =>
       callback(null, {
         statusCode: response.statusCode,
-        body: "Feedback added",
+        body:
+          response.statusCode === 201
+            ? "Feedback added"
+            : "Oh no, something failed.",
       })
     )
     .catch((err) => {
