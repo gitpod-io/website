@@ -40,9 +40,10 @@ Unfortunately, today we can't have clear insights if our changes have a direct i
 ![Too many nodes to keep an eye on](../../../static/images/blog/journey-to-site-reliability-engineering-at-gitpod/too-many-nodes.png)
 
 We want to change this mindset completely! Compute resource metrics may be good for debugging degraded performance during incidents, but shouldn't be the way we look for degraded user experience. We should be gathering metrics that measure exactly the symptoms that our users complain about during incidents:
-Example of a user telling us a symptom while we only see the possible causes As previously said, Workspaces are the core of Gitpod. We should be measuring metrics that tell us how our users are interacting with them:
 
 ![Incident reporting](../../../static/images/blog/journey-to-site-reliability-engineering-at-gitpod/incident-report.png)
+
+As previously said, Workspaces are the core of Gitpod. We should be measuring metrics that tell us how our users are interacting with them:
 
 - How many workspaces are being created and how many fail during this process?
 - How many of those Workspaces start in an acceptable time frame?
