@@ -14,12 +14,12 @@
 
 <a
   href="/screencasts/{screencast.title.toLowerCase().replace(/\s/g, '-')}"
-  class="cast"
+  class="cast min-w-full"
 >
   <div>
     <data>Screencast {screencastNumberPadded}</data>
     {#if headlineOrder === "h3"}
-      <h3>{screencast.title}</h3>
+      <h3 class="h2">{screencast.title}</h3>
     {:else}
       <h2>{screencast.title}</h2>
     {/if}

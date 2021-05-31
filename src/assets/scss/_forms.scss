@@ -1,8 +1,10 @@
 input,
-textarea {
+textarea,
+select {
   all: unset;
   font: inherit;
   color: var(--dark-grey);
+  box-sizing: border-box;
 }
 [type="radio"],
 [type="checkbox"] {
@@ -10,6 +12,17 @@ textarea {
 }
 [type] + label {
   cursor: pointer;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("/arrow-grey.svg"),
+    linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 1em top 50%, 0 0;
+  background-size: 1.25em auto, 100%;
+  width: 100%;
 }
 label,
 legend,
@@ -40,8 +53,10 @@ legend {
 }
 [type="email"],
 [type="text"],
+[type="number"],
 [type="radio"] + label,
-textarea {
+textarea,
+select {
   border: 1px solid var(--divider);
   padding: 0.5rem 1rem;
   border-radius: 0.5em;

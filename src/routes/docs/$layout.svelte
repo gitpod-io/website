@@ -24,7 +24,69 @@
 
   let MENU: MenuEntry[];
   $: MENU = isBetaPage
-    ? [M("Getting Started", "beta"), M("🔙 Go back to stable docs", "")]
+    ? [
+        M("Introduction", "beta"),
+        M("Quickstart", "beta/quickstart", [
+          M("Go example", "beta/quickstart/go"),
+          M("Node/TypeScript example", "beta/quickstart/typescript"),
+          M("Rust example", "beta/quickstart/rust"),
+          M("Svelte example", "beta/quickstart/svelte"),
+          M("Java example", "beta/quickstart/java"),
+        ]),
+        // M("Getting Started", "beta"), // TODO: Merge #467
+        M("Configure", "beta/configure", [
+          M(".gitpod.yml", "beta/config-gitpod-file"),
+          M("Custom Docker Image", "beta/config-docker"),
+          M("Start Tasks", "beta/config-start-tasks"),
+          M("VS Code Extensions", "beta/vscode-extensions"),
+          M("Exposing Ports", "beta/config-ports"),
+          M("Prebuilds", "beta/prebuilds"),
+          M("Environment Variables", "beta/environment-variables"),
+        ]),
+        M("Develop", "beta/develop", [
+          M("One workspace per task", "beta/workspaces"),
+          M("Life of a workspace", "beta/life-of-a-workspace"),
+          M("Contexts", "beta/context-urls"),
+          M("Collaboration & Sharing", "beta/sharing-and-collaboration"),
+          M("Command Line Interface", "beta/command-line-interface"),
+        ]),
+        // TODO: Insert "Integrations" chapter by merging #495
+        M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
+          M(
+            "Install on Google Cloud Platform",
+            "self-hosted/latest/install/install-on-gcp-script"
+          ),
+          M(
+            "Install on Amazon Web Services",
+            "self-hosted/latest/install/install-on-aws-script"
+          ),
+          M(
+            "Install on self-managed Kubernetes",
+            "self-hosted/latest/install/install-on-kubernetes"
+          ),
+          M(
+            "Configure Ingress",
+            "self-hosted/latest/install/configure-ingress"
+          ),
+          M("Configure a Database", "self-hosted/latest/install/database"),
+          M(
+            "Configure a Docker Registry",
+            "self-hosted/latest/install/docker-registry"
+          ),
+          M("Configure Storage", "self-hosted/latest/install/storage"),
+          M("Configure Nodes", "self-hosted/latest/install/nodes"),
+          M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
+        ]),
+        M("References", "beta/references", [
+          M(".gitpod.yml", "beta/references/gitpod-yml"),
+          M("Custom Docker image", "beta/references/gitpod-dockerfile"),
+          M("Architecture", "beta/references/architecture"),
+          M("Troubleshooting", "beta/references/troubleshooting"),
+          M("Roadmap", "beta/references/roadmap"),
+          M("Changelog", "beta/references/changelog"),
+        ]),
+        M("🔙 Go back to stable docs", ""),
+      ]
     : [
         M("Introduction", ""),
         M("Getting Started", "getting-started", [
@@ -94,7 +156,6 @@
             "Configure Ingress",
             "self-hosted/latest/install/configure-ingress"
           ),
-          M("Configure OAuth", "self-hosted/latest/install/oauth"),
           M("Configure a Database", "self-hosted/latest/install/database"),
           M(
             "Configure a Docker Registry",

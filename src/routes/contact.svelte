@@ -8,6 +8,7 @@
   import type { Email } from "../functions/submit-form";
   import Card from "../components/contact/card.svelte";
   import OpenGraph from "../components/open-graph.svelte";
+  import SubmissionSuccess from "../components/submission-success.svelte";
 
   const contactCards: ContactCard[] = [
     {
@@ -155,14 +156,10 @@
 
 <section class="card shadow-xl mb-32 mx-8">
   {#if isEmailSent}
-    <h2 class="h3 text-center mb-8">Thank you for your message</h2>
-    <p class="text-center">
-      We received your message. Our team will take a look and get back to you as
-      soon as possible.
-    </p>
-    <div
-      style="height: 45rem; background-image: url(/images/illustration-crop.jpg);"
-      class="hidden bg-right-top md:block"
+    <SubmissionSuccess
+      title="Thank you for your message"
+      text="We received your message. Our team will take a look and get back to you as
+      soon as possible."
     />
   {:else}
     <form on:submit|preventDefault={handleSubmit} novalidate>

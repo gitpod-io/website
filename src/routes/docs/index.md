@@ -34,10 +34,10 @@ Server-side Gitpod is a Kubernetes application that understands the context from
 A workspace comprises your whole development environment and gives you similar capabilities to a Linux machine. Compared to the latter it is however **pre-configured and optimized for your individual development workflow**. Each workspace includes:
 
 - Your source code
-- A shell with [root / sudo capabilities](https://www.gitpod.io/blog/root-docker-and-vscode/#root-access)
-- Your IDE of choice\* - currently this is [VS Code](https://www.gitpod.io/blog/root-docker-and-vscode/#vs-code) or [Theia](https://theia-ide.org)
+- A shell with [root / sudo capabilities](https://www.gitpod.io/blog/root-docker-and-vscode/#root-access-)
+- Your IDE of choice\* - currently this is [VS Code](https://www.gitpod.io/blog/root-docker-and-vscode/#vs-code-and-other-ides-🥂) or [Theia](https://theia-ide.org)
 - Your personal IDE extensions, themes, editor prefs
-- Full [Docker support](https://www.gitpod.io/blog/root-docker-and-vscode/#docker)
+- Full [Docker support](https://www.gitpod.io/blog/root-docker-and-vscode/#docker-)
 
 \*_Jetbrain's IDEs, Jupyter Notebook, Jupyter Labs are already available in [private beta](https://www.gitpod.io/contact)._
 
