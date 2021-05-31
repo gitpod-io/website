@@ -91,5 +91,8 @@
   },
   "lint-staged": {
     "*.{cjs,js,ts,css,scss,md,svelte}": "prettier --write"
+  },
+  "engines": {
+    "npm": ">=6.0.0 <7"
   }
 }
