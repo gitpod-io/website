@@ -25,12 +25,12 @@ async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
         "\n"
       ),
     });
+    await doc.loadInfo();
     const sheet = doc.sheetsByTitle["Raw Feedback"];
     await sheet.addRow(
-      [Date.now(), feedback.emotion, feedback.note, feedback.url],
+      [new Date(), feedback.emotion, feedback.url, feedback.note],
       { insert: true }
     );
-    // TODO: Submit feedback to Sheet
     return true;
   } catch (error) {
     console.error(error);
@@ -59,7 +59,7 @@ async function submitFeedback(
   feedback: Feedback
 ): Promise<{ statusCode: number }> {
   const isSavedInSheet = await saveFeedbackInSheet(feedback);
-  const isSentToSlack = await sendFeedbackToSlack(feedback);
+  const isSentToSlack = true; // TODO: REMOVE = await sendFeedbackToSlack(feedback);
 
   return {
     statusCode: isSavedInSheet && isSentToSlack ? 201 : 500,
