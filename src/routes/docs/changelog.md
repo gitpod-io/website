@@ -44,7 +44,7 @@ A curated, chronologically ordered list of notable changes in [gitpod.io](https:
 - [workspaces-list] UX: Only show search/filter when relevant, make GC message dismissable, start workspaces in a new tab
 - [backend] Monitor Go service metrics with a new dashboard
 - [backend] Optimize Gitpod database with multiple indexes
-- [backend] Increase maximum allowed workspace startup time from 30min → 60 min (for big projects), fixes [community/cannot-open-a-new-workspace-for-libreoffice](https://community.gitpod.io/t/cannot-open-a-new-workspace-for-libreoffice/1237)
+- [backend] Increase maximum allowed workspace startup time from 30min → 60 min (for big projects), fixes <a class="no-nowrap" href="https://community.gitpod.io/t/cannot-open-a-new-workspace-for-libreoffice/1237">community/cannot-open-a-new-workspace-for-libreoffice</a>
 
 ## 2020-05-12
 
@@ -101,7 +101,7 @@ A curated, chronologically ordered list of notable changes in [gitpod.io](https:
 - [backend] Make multiple services more resilient in case of degraded network conditions
 - [backend] Improve workspace start-up time monitoring
 - [theia] Fix 'Open Workspaces' and 'Open Access Control' avatar menu links getting blocked as pop-ups
-- Fix extended & boostable timeouts for Student Unlimited plans, fixes [community/boosting-timeouts-in-gitpod](https://community.gitpod.io/t/boosting-timeouts-in-gitpod/1114)
+- Fix extended & boostable timeouts for Student Unlimited plans, fixes <a class="no-nowrap" href="https://community.gitpod.io/t/boosting-timeouts-in-gitpod/1114">community/boosting-timeouts-in-gitpod</a>
 
 ## 2020-04-06
 

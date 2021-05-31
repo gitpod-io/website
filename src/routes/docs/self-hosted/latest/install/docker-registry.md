@@ -71,7 +71,7 @@ Prerequisites:
 
 How to use Google Cloud Registry as Docker registry for Gitpod:
 
-1.  Go to [https://console.cloud.google.com/gcr/images/\<your-project-id\>?project=\<your-project-id\>](https://console.cloud.google.com/gcr/images/<your-project-id>?project=<your-project-id>) and hit "Enable Registry API" (if not already enabled).
+1.  Go to <a class="no-nowrap" href="https://console.cloud.google.com/gcr/images/%3Cyour-project-id%3E?project=%3Cyour-project-id%3E">https://console.cloud.google.com/gcr/images/\<your-project-id>?project=\<your-project-id></your-project-id></your-project-id></a> and hit "Enable Registry API" (if not already enabled).
 
 1.  Execute the following commands:
 
