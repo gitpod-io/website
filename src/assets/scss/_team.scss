@@ -11,13 +11,14 @@
   font-size: var(--p-large);
 }
 .redirector .btn-otherbrand {
-  display: inline-block;
+  display: inline-flex;
   margin-right: 1rem;
 }
 .btn-otherbrand .arrow {
   display: inline-block;
-  transform: scale(1.2);
   margin: 0 0.5rem;
+  height: 12px;
+  width: 12px;
 }
 .hilited.redirector {
   margin-top: 3rem;
