@@ -42,8 +42,8 @@ async function sendFeedbackToSlack(feedback: Feedback): Promise<boolean> {
   try {
     await webhook.send({
       text: `${emotionSlackEmojiMap[feedback.emotion]}
-      url: ${feedback.url}
-      note: ${feedback.note ? feedback.note : "N/A"}`,
+Link: ${feedback.url}
+Note: ${feedback.note ? feedback.note : "N/A"}`,
     });
     return true;
   } catch (error) {

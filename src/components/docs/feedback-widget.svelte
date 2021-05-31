@@ -12,7 +12,7 @@
       body: JSON.stringify({
         emotion: selectedEmotion,
         note,
-        url: $page.path,
+        url: `https://${$page.host + $page.path}`,
       }),
     });
 
