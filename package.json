@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
+    "@slack/webhook": "^6.0.0",
     "google-spreadsheet": "^3.1.15"
   },
   "devDependencies": {

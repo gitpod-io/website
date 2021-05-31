@@ -1,5 +1,5 @@
 import type { APIGatewayEvent, Context } from "aws-lambda";
-import * as client from "@sendgrid/mail";
+import { IncomingWebhook } from "@slack/webhook";
 import * as GoogleSpreadsheet from "google-spreadsheet";
 
 interface Feedback {
@@ -7,6 +7,13 @@ interface Feedback {
   note?: string;
   url: string;
 }
+
+const emotionSlackEmojiMap = {
+  1: ":sob:",
+  2: ":confused:",
+  3: ":grinning:",
+  4: ":star-struck:",
+};
 
 async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
   try {
@@ -28,34 +35,16 @@ async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
   }
 }
 
-async function sendFeedbackViaEmail(feedback: Feedback): Promise<boolean> {
-  client.setApiKey(process.env.SENDGRID_API_KEY);
-  const data: client.MailDataRequired = {
-    from: "Docs Feedback Widget",
-    subject: `Docs Feedback - ${feedback.url}`,
-    to: [process.env.DOCS_FEEDBACK_EMAIL_TO],
-    content: [
-      {
-        type: "text/plain",
-        value: `Feedback received
-        URL: ${feedback.url}
-        Emotion: ${feedback.emotion}
-        Note: ${feedback.note || "N/A"}`,
-      },
-    ],
-    trackingSettings: {
-      clickTracking: {
-        enable: false,
-        enableText: false,
-      },
-      openTracking: {
-        enable: false,
-      },
-    },
-  };
-
+async function sendFeedbackToSlack(feedback: Feedback): Promise<boolean> {
+  const webhook = new IncomingWebhook(
+    process.env.DOCS_FEEDBACK_SLACK_WEBHOOK_URL
+  );
   try {
-    await client.send(data);
+    await webhook.send({
+      text: `${emotionSlackEmojiMap[feedback.emotion]}
+      url: ${feedback.url}
+      note: ${feedback.note ? feedback.note : "N/A"}`,
+    });
     return true;
   } catch (error) {
     console.error(error);
@@ -67,10 +56,10 @@ async function submitFeedback(
   feedback: Feedback
 ): Promise<{ statusCode: number }> {
   const isSavedInSheet = await saveFeedbackInSheet(feedback);
-  const isSentViaEmail = await sendFeedbackViaEmail(feedback);
+  const isSentToSlack = await sendFeedbackToSlack(feedback);
 
   return {
-    statusCode: isSavedInSheet && isSentViaEmail ? 201 : 500,
+    statusCode: isSavedInSheet && isSentToSlack ? 201 : 500,
   };
 }
 
