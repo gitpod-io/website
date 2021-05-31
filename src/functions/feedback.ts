@@ -20,7 +20,10 @@ async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
     const doc = new GoogleSpreadsheet(process.env.DOCS_FEEDBACK_SHEET_ID);
     await doc.useServiceAccountAuth({
       client_email: process.env.DOCS_FEEDBACK_GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      private_key: process.env.DOCS_FEEDBACK_GOOGLE_PRIVATE_KEY,
+      private_key: process.env.DOCS_FEEDBACK_GOOGLE_PRIVATE_KEY.replace(
+        /\\n/gm,
+        "\n"
+      ),
     });
     const sheet = doc.sheetsByTitle["Raw Feedback"];
     await sheet.addRow(
