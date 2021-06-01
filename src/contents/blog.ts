@@ -146,4 +146,14 @@ export const authors: { [idx: string]: Author } = {
     description:
       "Mike is a software architect who values developer experience, productivity and team morale. He is on a journey to help developers let go of their local development environments and embrace automated, ephemeral development environments.",
   },
+  arthursens: {
+    name: "Arthur Sens",
+    socialProfiles: {
+      github: "arthursens",
+      twitter: "ArthurSilvaSens",
+      linkedin: "arthursilvasens",
+    },
+    description:
+      "A big open-source fan, Arthur is a SRE focused on cloud-native observability. When not training backflips and gymnastics, you can find him chit-chatting at CNCF's slack channels.",
+  },
 };

@@ -31,6 +31,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
     "@slack/webhook": "^6.0.0",
+    "autoprefixer": "^10.2.5",
     "google-spreadsheet": "^3.1.15"
   },
   "devDependencies": {
@@ -93,5 +94,8 @@
   },
   "lint-staged": {
     "*.{cjs,js,ts,css,scss,md,svelte}": "prettier --write"
+  },
+  "engines": {
+    "npm": ">=6.0.0 <7"
   }
 }
