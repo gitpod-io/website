@@ -1,5 +1,5 @@
 type Field = {
-  el: HTMLInputElement | HTMLTextAreaElement;
+  el: HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
   valid: boolean;
   value?: string;
   checked?: boolean;

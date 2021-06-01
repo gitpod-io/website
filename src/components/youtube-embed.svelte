@@ -8,8 +8,8 @@
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    max-height: 315px;
-    width: 560px;
+    max-height: 500px;
+    width: 880px;
     margin: auto;
   }
 
@@ -25,6 +25,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    max-width: 100%;
   }
 </style>
 

@@ -1,6 +1,7 @@
 <script>
   import BetaBanner from "./beta-banner.svelte";
   import OpenGraph from "../open-graph.svelte";
+  import EditInGitpod from "../../components/docs/edit-in-gitpod.svelte";
   import docsCurrentSectionStore from "../../stores/docs-current-section";
 
   export let section;
@@ -18,5 +19,6 @@
 />
 <div class="content-docs">
   <BetaBanner />
+  <EditInGitpod />
   <slot />
 </div>

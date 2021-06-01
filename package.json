@@ -29,7 +29,8 @@
     "validate": "svelte-check"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.4.2"
+    "@sendgrid/mail": "^7.4.2",
+    "autoprefixer": "^10.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -90,5 +91,8 @@
   },
   "lint-staged": {
     "*.{cjs,js,ts,css,scss,md,svelte}": "prettier --write"
+  },
+  "engines": {
+    "npm": ">=6.0.0 <7"
   }
 }
