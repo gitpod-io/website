@@ -9,4 +9,4 @@ title: Integrations
 
 # Integrations
 
-Gitpod comes with integrations for [GitLab](./integrations/gitlab), [GitHub](./integrations/github), and [Bitbucket](./integrations/bitbucket-integration) projects. It also provides a [browser extension](./integrations/browser-extension) for Chromium-based browsers (Chrome, Edge, Brave, ...) and Firefox.
+Gitpod comes with integrations for [GitLab](./integrations/gitlab), [GitHub](./integrations/github), and [Bitbucket](./integrations/bitbucket) projects. It also provides a [browser extension](./integrations/browser-extension) for Chromium-based browsers (Chrome, Edge, Brave, ...) and Firefox.

@@ -11,11 +11,11 @@ title: GitHub Integration
 
 Gitpod works with any public or private repository on [GitHub](https://github.com/).
 
-To start a workspace from a GitHub project, prefix the GitHub project URL with `gitpod.io/#` as described in [Getting Started](/docs/beta/getting-started).
+To start a workspace from a GitHub project, prefix the GitHub project URL with `gitpod.io/#` as described in [Getting Started](/docs/getting-started).
 
 ## Enable Prebuilds
 
-To enable [prebuilt workspaces](/docs/prebuilds) for your GitHub project, you need to install the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and configure it for the GitHub user or organization that the project belongs to. Install the app as described in the [prebuilds page](/docs/beta/concepts/prebuilds#on-github).
+To enable [prebuilt workspaces](/docs/prebuilds) for your GitHub project, you need to install the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and configure it for the GitHub user or organization that the project belongs to. Install the app as described in the [prebuilt page]TODO (Link).
 
 ## GitHub Enterprise Server
 
