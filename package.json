@@ -11,7 +11,7 @@
     "watch:css": "run-p watch:css:*",
     "watch:css:global": "postcss src/assets/global.scss -o static/global.css -w",
     "watch:css:styles": "postcss src/assets/styles.scss -o static/styles.css -w",
-    "watch:dev": "svelte-kit dev",
+    "watch:dev": "svelte-kit dev --host 0.0.0.0",
     "clean": "run-p clean:*",
     "clean:build": "rm -fr ./build",
     "clean:css": "rm -f static/global.css && rm -f static/styles.css",
