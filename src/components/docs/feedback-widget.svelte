@@ -60,27 +60,25 @@
         {/each}
       </div>
       {#if selectedEmotion}
-        <div class="">
-          <div class="">
-            <label class="">Feedback</label>
-            <div class="">
-              <textarea
-                bind:value={note}
-                width="100%"
-                placeholder="Your feedback..."
-                aria-label="Feedback input"
-                autocapitalize="off"
-                autocomplete="off"
-                autocorrect="off"
-                type="text"
-                class=""
-              />
-            </div>
+        <div>
+          <label for="note">Feedback</label>
+          <div>
+            <textarea
+              bind:value={note}
+              id="note"
+              width="100%"
+              placeholder="Your feedback..."
+              aria-label="Feedback input"
+              autocapitalize="off"
+              autocomplete="off"
+              autocorrect="off"
+              type="text"
+            />
           </div>
-          <div class="">
-            <span class=""
-              ><button role="button" type="submit" class=""
-                ><span class="">Send</span></button
+          <div>
+            <span
+              ><button role="button" type="submit" class="btn-primary"
+                ><span>Send</span></button
               ></span
             >
           </div>
