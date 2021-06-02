@@ -142,14 +142,16 @@
       class="btn-otherbrand"
       href="https://www.gitpod.io/direction"
       target="_blank"
-      ><span class="icon">🗺️</span> <span class="arrow">↗︎</span>Gitpod's
+      ><span class="icon">🗺️</span>
+      <img class="arrow" src="/svg/external.svg" alt="External" />Gitpod's
       Direction</a
     >
     <a
       class="btn-otherbrand"
       href="https://www.gitpod.io/roadmap"
       target="_blank"
-      ><span class="icon">🛣</span> <span class="arrow">↗︎</span> Gitpod's Roadmap</a
+      ><span class="icon">🛣</span>
+      <img class="arrow" src="/svg/external.svg" alt="External" /> Gitpod's Roadmap</a
     >
   </p>
 </div>
@@ -169,7 +171,8 @@
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e"
       target="_blank"
-      ><span class="icon">✨</span> <span class="arrow">↗︎</span> Brand &amp; Values</a
+      ><span class="icon">✨</span>
+      <img class="arrow" src="/svg/external.svg" alt="External" /> Brand &amp; Values</a
     >
   </p>
 </div>
@@ -214,13 +217,15 @@
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/How-we-work-0f9159f282d24f9d9776372e0c7dbab4"
       target="_blank"
-      ><span class="icon">💻</span> <span class="arrow">↗︎</span>How we work</a
+      ><span class="icon">💻</span>
+      <img class="arrow" src="/svg/external.svg" alt="External" />How we work</a
     >
     <a
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Development-Process-080f1e439e0440f9b063a000ee213692"
       target="_blank"
-      ><span class="icon">🔨</span> <span class="arrow">↗︎</span> How we develop</a
+      ><span class="icon">🔨</span>
+      <img class="arrow" src="/svg/external.svg" alt="External" /> How we develop</a
     >
   </p>
 </div>
