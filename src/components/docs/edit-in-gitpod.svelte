@@ -15,6 +15,7 @@
   }
 
   .btn-otherbrand {
+    display: inline-flex !important;
     @apply rounded-2xl text-btn-small px-micro;
   }
 
