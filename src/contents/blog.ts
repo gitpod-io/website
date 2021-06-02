@@ -17,7 +17,7 @@ export const authors: { [idx: string]: Author } = {
       linkedin: "efftinge",
     },
     description:
-      "Sven loves finding sweet spots in product development. Always keeping an eye on pragmatism and the real benefit for the end user, he has proven to be a creative source for many sucessful technologies. He is a co-founder of TypeFox, co-lead of Eclipse Theia and product manager of Gitpod.",
+      "Sven loves finding sweet spots in product development. Always keeping an eye on pragmatism and the real benefit for the end user, he has proven to be a creative source for many successful technologies. He is a co-founder of TypeFox, co-lead of Eclipse Theia and product manager of Gitpod.",
   },
   meysholdt: {
     name: "Moritz Eysholdt",
@@ -165,5 +165,15 @@ export const authors: { [idx: string]: Author } = {
     },
     description:
       "Christin is our Marketing Manager at Gitpod. She is eager to create a great brand experience and favors going the unconventional way. In her free time, she loves to be out in the nature, climbing rocks and practising yoga.",
+  },
+  "rl-gitpod": {
+    name: "Robert Leftwich",
+    socialProfiles: {
+      github: "rl-gitpod",
+      twitter: "",
+      linkedin: "robert-leftwich",
+    },
+    description:
+      "Robert loves to code and lives off-grid... although the other way around is probably more accurate. Engineering systems of all shapes and sizes with many different teams highlighted the need for Gitpod's blazingly fast, ephemeral and secure development environments time and time again - he is helping make that happen.",
   },
 };
