@@ -119,7 +119,7 @@ export const projects: Project[] = [
   {
     logo: "svg/projects/dotnet-core.svg",
     title: ".NET Core",
-    githubUrl: "https://github.com/gitpod-io/dotnetcore",
+    githubUrl: "https://github.com/gitpod-io/example-dotnet-core",
     gitlabUrl: "https://gitlab.com/gitpod/dotnetcore",
     bitbucketUrl: "https://bitbucket.org/gitpod/dotnetcore",
     alt: "C#",

@@ -15,8 +15,6 @@ title: Root, Docker and VS Code
 
 The team has been focussing on shipping some major new features, which mark important milestones on our goal to **eliminate all friction around maintaining dev environments**.
 
-> We are rolling out new features in [preview mode](/docs/feature-preview) first. So make sure to switch **Feature Preview** on in [your settings](https://gitpod.io/settings/) if you want to try them out.
-
 - [Root Access](#root-access)
 - [Docker Support](#docker)
 - [VS Code and other IDEs](#vs-code-and-other-ides)

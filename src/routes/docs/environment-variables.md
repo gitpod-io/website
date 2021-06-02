@@ -1,5 +1,5 @@
 ---
-section: configuration
+section: configure
 title: Environment Variables
 ---
 
@@ -29,7 +29,7 @@ They are stored as part of your user settings and can be used to set access toke
 
 ### Using the command line: `gp env`
 
-The `gp` CLI print and modify the persistent environment variables associated with your user for the current repository.
+The `gp` CLI prints and modifies the persistent environment variables associated with your user for the current repository.
 
 To set the persistent environment variable `foo` to the value `bar` use:
 
@@ -72,25 +72,23 @@ Flags:
 
 ### Using the account settings
 
-You can also configure and view the persistent environment variables in [your account settings](https://gitpod.io/environment-variables/).
+You can also configure and view the persistent environment variables in [your account settings](https://gitpod.io/variables).
 
-![Environment Variables in Account Settings](../../../static/images/docs/env-var-dashboard.png)
+![Environment Variables in Account Settings](../../../static/images/docs/beta/configure/environment-variables/environment-variables-account-settings.png)
 
 You can add as many environment variables as you wish.
 
 The repository pattern of each variable determines in what workspace it will be available.
 Repository patterns follow the `repo/owner` pattern. You can use a wildcard on either of the two, e.g. `gitpod-io/*` would make that variable available in all repositories owned by `gitpod-io`.
-Conversely `*/vscode` would make that variable available on all repositories called `vscode`; especially useful for forks.
-Subsequently `*/*` makes that variable available everywhere.
+Conversely `*/vscode` would make that variable available on all repositories called `vscode`; this is especially useful for forks.
+Subsequently `*/*` makes that variable available in every workspace.
 
 > **Beware:** while the variable values are stored encrypted, they are available as plain text inside a workspace. Be careful when sharing your live workspace or when using `*/*` as repository pattern.
-
-<br><br>
 
 <h2 class="h1">Passing In Environment Variables</h2>
 
 In addition to user-specific env variables, Gitpod also allows passing in variables through the `gitpod.io/#` URL.
-The syntax for that is
+The syntax for that is:
 
 ```
 https://gitpod.io/#var=value,var2=value2/https://github.com/my-org/repo-to-work-on

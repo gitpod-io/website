@@ -76,9 +76,16 @@ export const otherPlans = [
       `For those still learning the ropes, you can get our student plan for <strong>${
         isEurope() ? "€8" : "$9"
       } per month.</strong>`,
-      "Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.",
+      `
+      To get it, just follow these steps:
+      <ul class="list-disc list-inside">
+      <li>Log-in with a free Gitpod account.</li>
+      <li>Make sure that the primary email address of the GitHub/GitLab/Bitbucket account you use in Gitpod is from a domain of your educational institution.</li>
+      <li>Go to the <a href="https://gitpod.io/plans">Plans</a> page and select the <em>Student Unlimited Plan</em>.</li>
+      <li>If it doesn't appear, please <a href="/contact">contact us</a> to register your educational email domain.</li>
+      </ul>`,
     ],
-    btnText: "Get verified",
-    btnHref: "/contact",
+    btnText: "Check now",
+    btnHref: "https://gitpod.io/plans",
   },
 ];

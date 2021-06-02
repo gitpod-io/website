@@ -1,6 +1,6 @@
 ---
-section: workspaces
-title: Collaboration & Sharing of Workspaces
+section: develop
+title: Collaboration & Sharing
 ---
 
 <script context="module">
@@ -9,7 +9,31 @@ title: Collaboration & Sharing of Workspaces
 
 # Collaboration & Sharing of Workspaces
 
-There are two different ways to share your workspaces:
+To share your workspace, navigate to the workspaces page at https://gitpod.io/workspaces. From there:
+
+1. Move your mouse over the workspace you want to share (change the filter to All if you don't see your workspace).
+1. Click the three dots menu to the right of the highlighted workspace.
+1. Click **Share**
+
+This marks your workspace as shared. When you open it, you can copy & share its URL.
+
+> **Security note:**
+>
+> Beware, anybody with this URL and a Gitpod account will be able to access the workspace as long as
+> it is shared and running.
+>
+> Every action involving git in a shared workspace happens on behalf of the workspace owner's account without further authorization.
+> It is highly recommended to give workspace URLs only to trusted users and unshare workspaces as soon as sharing them is no longer necessary.
+>
+> **A running Gitpod workspace really is your personal machine.**
+
+<h2 class="h1">Theia editor (legacy)</h2>
+
+If you use Theia as your editor (you can check [your default IDE preferences](https://gitpod.io/preferences)), please refer to the following instructions.
+
+Note: VS Code has been the default editor since early April. If you started to use Gitpod after that and have not changed the default editor, please refer to the content at the top of this page.
+
+There are two ways to share your workspaces:
 
 - [Sharing Running Workspaces](#sharing-running-workspaces)
 - [Sharing Snapshots](#sharing-snapshots)

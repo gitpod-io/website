@@ -1,5 +1,5 @@
 ---
-section: configuration
+section: configure
 title: Exposing Ports
 ---
 
@@ -43,8 +43,6 @@ When a newly started service gets detected, you usually get a notification telli
 If it is not yet exposed, because it is not listed in the `.gitpod.yml`, the notification will allow you to expose the port.
 If it is already exposed, either through the `.gitpod.yml` or by manually exposing it, the notification asks
 whether and how to open it.
-
-![Ports Notification](../../../static/images/docs/ports-notification.png)
 
 To change this behavior you can provide the property `onOpen`.
 It has four possible values:

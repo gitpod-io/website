@@ -1,23 +1,37 @@
 ---
-section: workspaces
-title: Workspaces
+section: develop
+title: One workspace per task
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Workspaces
+# One workspace per task
 
-A workspace is what you code in. It consists of the files, configuration and the underlying docker file.
-Workspaces are created on the fly, driven by convention and configuration.
+On any given day, you may be involved in tasks such as the following:
 
-A Gitpod workspace can be created from any GitLab, GitHub, or Bitbucket project, branch, issue, or pull request.
+- Implement a new feature
+- Fix a bug
+- Review a pull/merge request
+- Pair-program with a team member
+- Browse an open source project's source code
 
-In Gitpod workspaces usually have a very short life. Gitpod creates one when you need it and forgets about it when you are done.
-There is no reason to go back and do any maintenance. Because everything is driven by configuration, you can always create a fresh one when you need it.
+For each of these tasks, you start a clean, ephemeral Gitpod workspace. You can even start **multiple workspaces in parallel**. For example, while you're working on a feature, you can start a second workspace to review a production hotfix. When the review is complete, you close the browser tab of that workspace and continue to work on your feature. This works for any GitLab, GitHub or Bitbucket project.
 
-- [Context URLs](/docs/context-urls)
-- [Life of a Workspace](/docs/life-of-workspace)
-- [Shared Workspaces](/docs/sharing-and-collaboration)
-- [Command Line Interface](/docs/command-line-interface)
+You can learn more about the [Life of a workspace](/docs/life-of-a-workspace).
+
+## Gitpod vs. local development
+
+A Gitpod workspace is similar to your local development environment, except for two key differentiators:
+
+1. It is configured as code
+1. It is ephemeral and only lives for as long as you work on a task
+
+### Configuration vs. manual setup
+
+Your project's `.gitpod.yml` and optional `.gitpod.Dockerfile` files control what tools will be available in your Gitpod workspace. Both files are version-controlled and let you monitor changes to the development environment over time. There is no longer a need to `@channel` in your team's communication software to tell everyone to upgrade their version of Node.js, only to find out that some people were on vacation and didn't see the message.
+
+### Ephemeral vs. long-lived
+
+Thanks to the fact that Gitpod workspaces are configured as code, you can start and stop them as frequently as you want. You know that each workspace has the tools it needs and even more importantly, has the latest code from your default branch checked out! You no longer have to pull the latest default branch a few times per day because each time you start a new workspace, it has the latest code already available.

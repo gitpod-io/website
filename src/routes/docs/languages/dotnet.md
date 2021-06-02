@@ -13,11 +13,11 @@ title: .NET in Gitpod
 
 <div class="table-container">
 
-| Repository                                                      | Description                                                                   | Try it                                                                                                                             |
-| --------------------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| [dotnetcore](https://github.com/gitpod-io/dotnetcore)           | C# .NET Core template                                                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/dotnetcore)       |
-| [uno](https://github.com/unoplatform/uno)                       | Build Mobile, Desktop and WebAssembly apps with C# and XAML                   | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)            |
-| [uno.quickstart](https://github.com/unoplatform/uno.quickstart) | An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart) |
+| Repository                                                      | Description                                                                   | Try it                                                                                                                                |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [dotnetcore](https://github.com/gitpod-io/example-dotnet-core)  | C# .NET Core template                                                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/example-dotnet-core) |
+| [uno](https://github.com/unoplatform/uno)                       | Build Mobile, Desktop and WebAssembly apps with C# and XAML                   | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)               |
+| [uno.quickstart](https://github.com/unoplatform/uno.quickstart) | An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart)    |
 
 </div>
 
