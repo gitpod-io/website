@@ -51,10 +51,10 @@
           M("Command Line Interface", "beta/command-line-interface"),
         ]),
         M("Integrations", "beta/integrations", [
-          M("GitLab", "beta/integrations/gitlab"),
-          M("GitHub", "beta/integrations/github"),
-          M("Bitbucket", "beta/integrations/bitbucket"),
-          M("Browser Extension", "beta/integrations/browser-extension"),
+          M("GitLab", "beta/gitlab-integration"),
+          M("GitHub", "beta/github-integration"),
+          M("Bitbucket", "beta/bitbucket-integration"),
+          M("Browser Extension", "beta/browser-extension"),
         ]),
         M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
           M(
