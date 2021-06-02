@@ -13,7 +13,7 @@ title: Life of a workspace
 - [Garbage Collection](#garbage-collection)
 - [Changes Are Saved](#changes-are-saved)
 
-Gitpod makes creating fresh workspaces as easy as [clicking a button on a repository page] (TODO LINK to page).
+Gitpod makes creating fresh workspaces as easy as [clicking a button on a repository page](/docs/beta/browser-extension).
 Gitpod's continuous dev environments encourages you to create fresh workspaces rather than restarting older ones.
 This ensures that you are starting from a clean slate with proper configuration.
 
@@ -26,13 +26,13 @@ The timeout will always be reset to the full 30 minutes (or other applicable tim
 If the editor is still open but the corresponding workspace has stopped, a dialog will pop up that lets you start the workspace
 again. Alternatively, you can just reload the browser or go to your [workspaces](https://gitpod.io/workspaces) and restart the workspace.
 
-For convenience, closing the browser window/tab containing the workspace reduces the timeout to 3 minutes. (TODO)
+For convenience, closing the browser window/tab containing the workspace reduces the timeout to 3 minutes.
 
 ## Garbage Collection
 
-Old, unused workspaces are automatically deleted. To prevent a workspace from being deleted, you can pin it in your [list of workspaces](https://gitpod.io/workspaces/). Pinned workspaces are kept forever. A message at the top of the workspaces list indicates after how many days unused and unpinned workspaces will get collected (the exact number of days may change in the future). Restarting a workspace resets the day counter for this particular workspace. Workspaces that are about to be deleted are shown with a corresponding status message in the workspaces list (TODO).
+Old, unused workspaces are automatically deleted. To prevent a workspace from being deleted, you can pin it in your [list of workspaces](https://gitpod.io/workspaces/). Pinned workspaces are kept forever. A message at the top of the workspaces list indicates after how many days unused and unpinned workspaces will get collected (the exact number of days may change in the future). Restarting a workspace resets the day counter for this particular workspace.
 
-## Changes are Saved (TODO)
+## Changes are Saved
 
 Gitpod backs up the state of the `/workspace/` folder between workspace starts, so that
 you can revisit them later. _Attention: Files in other locations will not be saved!_

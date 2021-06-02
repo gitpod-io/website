@@ -38,25 +38,34 @@ vscode:
 
 You can share the installed extensions with your team by committing the `.gitpod.yml` change and pushing it to your Git repository.
 
-## User Extensions (TODO wait for https://github.com/gitpod-io/gitpod/issues/4339)
+## User Extensions
 
-You can also install extensions at the user level. This can be useful for extensions that you want to have in all your projects (for example a custom theme), and this doesn't require changing every project's `.gitpod.yml` configuration.
+You have two options to install extensions for yourself only:
 
-To do this, simply select `Install for (user)` when prompted by the IDE while installing an extension:
+1. For the current workspace only
+1. For all your workspaces
 
-![Install for (user) prompt in VS Code](../../../static/images/docs/install-extension-for-user.png)
+The second use case can be useful for extensions that you want to have in all your projects (for example a custom theme), and this doesn't require changing every project's `.gitpod.yml` configuration.
 
-## Built-in Extensions (TODO)
+To do this, open the Extensions view, search for the extension you want to install and click **Install**.
+
+## Built-in Extensions
 
 Gitpod already comes with a number of commonly used VS Code extensions pre-installed by default.
 
-You can view all pre-installed extensions by expanding the "Built-in" section at the bottom of the IDE's Extensions view.
+You can view all pre-installed extensions by navigating to VS Code's Extensions section on the left-hand side. In the "Search Extensions in Marketplace" input field, type `@builtin` to see the built-in extensions.
 
-## Where do I find extensions? (TODO)
+## Where do I find extensions?
 
 If you cannot find an extension by searching in Gitpod, it probably means that the extension hasn't been added to the [Open VSX](https://open-vsx.org/) registry yet.
 
-In that case, you can also install it by drag-and-dropping a `*.vsix` file into the IDE's Extensions view. Gitpod will automatically install and activate the new extension, and add an entry to your `.gitpod.yml` file.
+In that case, you can also install it by installing a `*.vsix` file. To do that:
+
+1. Drag a `.vsix` file into your editor's Explorer view where you see your project's files (you can delete that file after you installed the extension).
+1. Open the VS Code Extensions view on the left-side of the editor.
+1. Click the "..." menu at the top right of the view
+1. Select **Install from VSIX...**
+1. Enter the path to the `.vsix` file you uploaded in step 1 above and press Enter.
 
 - `.vsix` extension files can be found in the [Open VSX](https://open-vsx.org/) registry and [on GitHub](https://github.com/prettier/prettier-vscode/releases) as well.
 
