@@ -33,7 +33,7 @@
           M("Svelte example", "beta/quickstart/svelte"),
           M("Java example", "beta/quickstart/java"),
         ]),
-        // M("Getting Started", "beta"), // TODO: Merge #467
+        M("Getting Started", "beta/getting-started"),
         M("Configure", "beta/configure", [
           M(".gitpod.yml", "beta/config-gitpod-file"),
           M("Custom Docker Image", "beta/config-docker"),
