@@ -13,7 +13,7 @@ title: Getting Started
 
 > Please read the [Introduction to Gitpod](/docs/beta) for more details and high-level Gitpod features.
 
-This page helps you get started with _your project_. If you want to experience Gitpod with one of the example repositories, the [Quickstart](/docs/beta/quickstart) is a great place for that. When you're ready to configure your project, the following chapters help you with that.
+This page helps you get started with _your project_. If you want to experience Gitpod with one of the example repositories, the [Quickstart](/docs/quickstart) is a great place for that. When you're ready to configure your project, the following chapters help you with that.
 
 ## Start your first workspace
 
@@ -22,7 +22,7 @@ The best way to configure Gitpod is by using Gitpod - you could perform the foll
 1. In a browser, navigate to your project's GitHub, GitLab or Bitbucket page.
 1. In the browser's address bar, prefix the entire URL with `gitpod.io/#` and press Enter.
    - For example, `gitpod.io/#https://github.com/gitpod-io/website`
-   - We recommend you [install the Gitpod browser extension](/docs/beta/browser-extension) to make this a one-click operation.
+   - We recommend you [install the Gitpod browser extension](/docs/browser-extension) to make this a one-click operation.
 1. Sign in with one of the listed providers and let the workspace start up.
 
 **Congratulations**, you have started your first of many ephemeral development environments 🎉!
@@ -35,7 +35,7 @@ When you started your first workspace above, Gitpod didn't do much. In fact, all
 To develop, you still would have to install dependencies, run build scripts and start the development server every time you start a workspace... We can do better, so let's automate that!
 
 1. In the workspace terminal, make sure you are in your project's root directory (`pwd` should be `/workspace/<repo>`).
-1. Run `gp init` to generate a scaffold `.gitpod.yml` configuration file (see the [.gitpod.yml reference](/docs/beta/references/gitpod-yml) for all configuration options).
+1. Run `gp init` to generate a scaffold `.gitpod.yml` configuration file (see the [.gitpod.yml reference](/docs/references/gitpod-yml) for all configuration options).
 1. Open the newly created `.gitpod.yml` file.
 
 ### Init script
@@ -48,7 +48,7 @@ tasks:
     command: echo 'start script'
 ```
 
-Excellent! To learn more about the difference between `init` and `command`, please have a look at [Start Tasks](/docs/beta/config-start-tasks).
+Excellent! To learn more about the difference between `init` and `command`, please have a look at [Start Tasks](/docs/config-start-tasks).
 
 ### Command script
 
@@ -114,7 +114,7 @@ Imagine this common workflow where Nina and Paul work on the same project:
 1. Nina opens a pull request where she developed a feature that requires a new dependency.
 1. _Gitpod notices the new code and kicks off a prebuild by cloning the source code and executing the `init` task. The result is saved as a prebuilt workspace._
 1. Some time later, Paul opens the pull request to start his code review.
-1. He opens a Gitpod workspace for that given pull request (learn more about [contexts](/docs/beta/context-urls)).
+1. He opens a Gitpod workspace for that given pull request (learn more about [contexts](/docs/context-urls)).
 1. _Gitpod recognizes it already ran the `init` task and loads the prebuilt workspace_
 1. By the time the workspace starts, Paul sees the developemnt server starting up and the application's preview is ready for review.
 
@@ -122,7 +122,7 @@ For each new commit to your project, Gitpod continuously creates prebuilt worksp
 
 ### Configure prebuilds for your projects
 
-Depending on your git provider, the steps to configure prebuilds vary slightly. Please refer to the dedicated [Prebuilds](/docs/beta/prebuilds) page for detaile instructions on how to configure prebuilds for your project.
+Depending on your git provider, the steps to configure prebuilds vary slightly. Please refer to the dedicated [Prebuilds](/docs/prebuilds) page for detaile instructions on how to configure prebuilds for your project.
 
 ## Next steps
 
@@ -130,5 +130,5 @@ At this point, you have a `.gitpod.yml` configuration file to automate repetitiv
 
 To explore more of what Gitpod has to offer, we recommend the following next topics:
 
-- [Configure](/docs/beta/configure) to learn more about start tasks, environment variables and how to provide your own custom Docker image as the foundation for workspaces.
-- [Develop](/docs/beta/develop) to learn more about the productivity gains you get with ephemeral workspaces, how contexts assist you and how to collaborate with team members.
+- [Configure](/docs/configure) to learn more about start tasks, environment variables and how to provide your own custom Docker image as the foundation for workspaces.
+- [Develop](/docs/develop) to learn more about the productivity gains you get with ephemeral workspaces, how contexts assist you and how to collaborate with team members.

@@ -13,7 +13,7 @@ title: Life of a workspace
 - [Garbage Collection](#garbage-collection)
 - [Changes Are Saved](#changes-are-saved)
 
-Gitpod makes creating fresh workspaces as easy as [clicking a button on a repository page](/docs/beta/browser-extension).
+Gitpod makes creating fresh workspaces as easy as [clicking a button on a repository page](/docs/browser-extension).
 Gitpod's continuous dev environments encourages you to create fresh workspaces rather than restarting older ones.
 This ensures that you are starting from a clean slate with proper configuration.
 

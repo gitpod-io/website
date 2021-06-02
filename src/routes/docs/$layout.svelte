@@ -1,11 +1,8 @@
 <script lang="ts">
-  import { page } from "$app/stores";
   import Menu from "../../components/docs/menu.svelte";
   import MobileMenu from "../../components/docs/mobile-menu/index.svelte";
   import Search from "../../components/docs/search.svelte";
   import "../../assets/docs.scss";
-
-  $: isBetaPage = $page.path.startsWith("/docs/beta");
 
   // This file is used to define entries in the side menu
   interface MenuEntry {
@@ -22,160 +19,152 @@
     };
   }
 
-  let MENU: MenuEntry[];
-  $: MENU = isBetaPage
-    ? [
-        M("Introduction", "beta"),
-        M("Quickstart", "beta/quickstart", [
-          M("Go example", "beta/quickstart/go"),
-          M("Node/TypeScript example", "beta/quickstart/typescript"),
-          M("Rust example", "beta/quickstart/rust"),
-          M("Svelte example", "beta/quickstart/svelte"),
-          M("Java example", "beta/quickstart/java"),
-        ]),
-        M("Getting Started", "beta/getting-started"),
-        M("Configure", "beta/configure", [
-          M(".gitpod.yml", "beta/config-gitpod-file"),
-          M("Custom Docker Image", "beta/config-docker"),
-          M("Start Tasks", "beta/config-start-tasks"),
-          M("VS Code Extensions", "beta/vscode-extensions"),
-          M("Exposing Ports", "beta/config-ports"),
-          M("Prebuilds", "beta/prebuilds"),
-          M("Environment Variables", "beta/environment-variables"),
-        ]),
-        M("Develop", "beta/develop", [
-          M("One workspace per task", "beta/workspaces"),
-          M("Life of a workspace", "beta/life-of-a-workspace"),
-          M("Contexts", "beta/context-urls"),
-          M("Collaboration & Sharing", "beta/sharing-and-collaboration"),
-          M("Command Line Interface", "beta/command-line-interface"),
-        ]),
-        M("Integrations", "beta/integrations", [
-          M("GitLab", "beta/gitlab-integration"),
-          M("GitHub", "beta/github-integration"),
-          M("Bitbucket", "beta/bitbucket-integration"),
-          M("Browser Extension", "beta/browser-extension"),
-        ]),
-        M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
-          M(
-            "Install on Google Cloud Platform",
-            "self-hosted/latest/install/install-on-gcp-script"
-          ),
-          M(
-            "Install on Amazon Web Services",
-            "self-hosted/latest/install/install-on-aws-script"
-          ),
-          M(
-            "Install on self-managed Kubernetes",
-            "self-hosted/latest/install/install-on-kubernetes"
-          ),
-          M(
-            "Configure Ingress",
-            "self-hosted/latest/install/configure-ingress"
-          ),
-          M("Configure a Database", "self-hosted/latest/install/database"),
-          M(
-            "Configure a Docker Registry",
-            "self-hosted/latest/install/docker-registry"
-          ),
-          M("Configure Storage", "self-hosted/latest/install/storage"),
-          M("Configure Nodes", "self-hosted/latest/install/nodes"),
-          M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
-        ]),
-        M("References", "beta/references", [
-          // M(".gitpod.yml", "beta/references/gitpod-yml"),
-          // M("Custom Docker image", "beta/references/gitpod-dockerfile"),
-          // M("Architecture", "beta/references/architecture"),
-          // M("Troubleshooting", "beta/references/troubleshooting"),
-          M("Roadmap", "beta/references/roadmap"),
-          // M("Changelog", "beta/references/changelog"),
-        ]),
-        M("🔙 Go back to stable docs", ""),
-      ]
-    : [
-        M("Introduction", ""),
-        M("Getting Started", "getting-started", [
-          M("Example Projects", "examples"),
-        ]),
-        M("Workspaces", "workspaces", [
-          M("Context URLs", "context-urls"),
-          M("Life of a Workspace", "life-of-workspace"),
-          M("Collaboration & Sharing", "sharing-and-collaboration"),
-          M("Command Line Interface", "command-line-interface"),
-        ]),
-        M("Configure Your Project", "configuration", [
-          M(".gitpod.yml", "config-gitpod-file"),
-          M("Docker Configuration", "config-docker"),
-          M("Start Tasks", "config-start-tasks"),
-          M("VS Code Extensions", "vscode-extensions"),
-          M("Exposing Ports", "config-ports"),
-          M("Prebuilt Workspaces", "prebuilds"),
-          M("Environment Variables", "environment-variables"),
-          M("Workspace Location", "checkout-location"),
-          M("Editor Configuration", "config-editor"),
-        ]),
-        M("Integrations", "integrations", [
-          M("GitLab Integration", "gitlab-integration"),
-          M("GitHub Integration", "github-integration"),
-          M("Bitbucket Integration", "bitbucket-integration"),
-          M("Browser Extension", "browser-extension"),
-        ]),
-        M("Languages & Frameworks", "languages-and-frameworks", [
-          M("JavaScript", "languages/javascript"),
-          M("Python", "languages/python"),
-          M("HTML/CSS", "languages/html"),
-          M("Java", "languages/java"),
-          M("C++", "languages/cpp"),
-          M("Go", "languages/go"),
-          M("Bash", "languages/bash"),
-          M("Ruby", "languages/ruby"),
-          M("PHP", "languages/php"),
-          M("Vue", "languages/vue"),
-          M("Svelte", "languages/svelte"),
-          M("Scala", "languages/scala"),
-          M("Rust", "languages/rust"),
-          M(".NET", "languages/dotnet"),
-          M("Dart", "languages/dart"),
-          M("Julia", "languages/julia"),
-          M("LaTeX", "languages/latex"),
-          M("R", "languages/r"),
-          M("Kotlin", "languages/kotlin"),
-          M("Pandas", "languages/python#pandas"),
-          M("Deno", "languages/deno"),
-        ]),
-        // M("Feature Preview", "feature-preview"),
-        M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
-          M(
-            "Install on Google Cloud Platform",
-            "self-hosted/latest/install/install-on-gcp-script"
-          ),
-          M(
-            "Install on Amazon Web Services",
-            "self-hosted/latest/install/install-on-aws-script"
-          ),
-          M(
-            "Install on self-managed Kubernetes",
-            "self-hosted/latest/install/install-on-kubernetes"
-          ),
-          M(
-            "Configure Ingress",
-            "self-hosted/latest/install/configure-ingress"
-          ),
-          M("Configure a Database", "self-hosted/latest/install/database"),
-          M(
-            "Configure a Docker Registry",
-            "self-hosted/latest/install/docker-registry"
-          ),
-          M("Configure Storage", "self-hosted/latest/install/storage"),
-          M("Configure Nodes", "self-hosted/latest/install/nodes"),
-          M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
-        ]),
-        M("Subscriptions", "subscriptions", [
-          M("Professional Open Source", "professional-open-source"),
-          M("Create a Team", "teams"),
-        ]),
-        M("Changelog", "changelog"),
-      ];
+  const MENU: MenuEntry[] = [
+    M("Introduction", ""),
+    M("Quickstart", "quickstart", [
+      M("Go example", "quickstart/go"),
+      M("Node/TypeScript example", "quickstart/typescript"),
+      M("Rust example", "quickstart/rust"),
+      M("Svelte example", "quickstart/svelte"),
+      M("Java example", "quickstart/java"),
+    ]),
+    M("Getting Started", "getting-started"),
+    M("Configure", "configure", [
+      M(".gitpod.yml", "config-gitpod-file"),
+      M("Custom Docker Image", "config-docker"),
+      M("Start Tasks", "config-start-tasks"),
+      M("VS Code Extensions", "vscode-extensions"),
+      M("Exposing Ports", "config-ports"),
+      M("Prebuilds", "prebuilds"),
+      M("Environment Variables", "environment-variables"),
+    ]),
+    M("Develop", "develop", [
+      M("One workspace per task", "workspaces"),
+      M("Life of a workspace", "life-of-a-workspace"),
+      M("Contexts", "context-urls"),
+      M("Collaboration & Sharing", "sharing-and-collaboration"),
+      M("Command Line Interface", "command-line-interface"),
+    ]),
+    M("Integrations", "integrations", [
+      M("GitLab", "gitlab-integration"),
+      M("GitHub", "github-integration"),
+      M("Bitbucket", "bitbucket-integration"),
+      M("Browser Extension", "browser-extension"),
+    ]),
+    M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
+      M(
+        "Install on Google Cloud Platform",
+        "self-hosted/latest/install/install-on-gcp-script"
+      ),
+      M(
+        "Install on Amazon Web Services",
+        "self-hosted/latest/install/install-on-aws-script"
+      ),
+      M(
+        "Install on self-managed Kubernetes",
+        "self-hosted/latest/install/install-on-kubernetes"
+      ),
+      M("Configure Ingress", "self-hosted/latest/install/configure-ingress"),
+      M("Configure a Database", "self-hosted/latest/install/database"),
+      M(
+        "Configure a Docker Registry",
+        "self-hosted/latest/install/docker-registry"
+      ),
+      M("Configure Storage", "self-hosted/latest/install/storage"),
+      M("Configure Nodes", "self-hosted/latest/install/nodes"),
+      M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
+    ]),
+    M("References", "beta/references", [
+      // M(".gitpod.yml", "beta/references/gitpod-yml"),
+      // M("Custom Docker image", "beta/references/gitpod-dockerfile"),
+      // M("Architecture", "beta/references/architecture"),
+      // M("Troubleshooting", "beta/references/troubleshooting"),
+      M("Roadmap", "beta/references/roadmap"),
+      // M("Changelog", "beta/references/changelog"),
+    ]),
+    M("🔙 Go back to stable docs", ""),
+  ];
+  const MENU_v1 = [
+    M("Introduction", ""),
+    M("Getting Started", "getting-started", [
+      M("Example Projects", "examples"),
+    ]),
+    M("Workspaces", "workspaces", [
+      M("Context URLs", "context-urls"),
+      M("Life of a Workspace", "life-of-workspace"),
+      M("Collaboration & Sharing", "sharing-and-collaboration"),
+      M("Command Line Interface", "command-line-interface"),
+    ]),
+    M("Configure Your Project", "configuration", [
+      M(".gitpod.yml", "config-gitpod-file"),
+      M("Docker Configuration", "config-docker"),
+      M("Start Tasks", "config-start-tasks"),
+      M("VS Code Extensions", "vscode-extensions"),
+      M("Exposing Ports", "config-ports"),
+      M("Prebuilt Workspaces", "prebuilds"),
+      M("Environment Variables", "environment-variables"),
+      M("Workspace Location", "checkout-location"),
+      M("Editor Configuration", "config-editor"),
+    ]),
+    M("Integrations", "integrations", [
+      M("GitLab Integration", "gitlab-integration"),
+      M("GitHub Integration", "github-integration"),
+      M("Bitbucket Integration", "bitbucket-integration"),
+      M("Browser Extension", "browser-extension"),
+    ]),
+    M("Languages & Frameworks", "languages-and-frameworks", [
+      M("JavaScript", "languages/javascript"),
+      M("Python", "languages/python"),
+      M("HTML/CSS", "languages/html"),
+      M("Java", "languages/java"),
+      M("C++", "languages/cpp"),
+      M("Go", "languages/go"),
+      M("Bash", "languages/bash"),
+      M("Ruby", "languages/ruby"),
+      M("PHP", "languages/php"),
+      M("Vue", "languages/vue"),
+      M("Svelte", "languages/svelte"),
+      M("Scala", "languages/scala"),
+      M("Rust", "languages/rust"),
+      M(".NET", "languages/dotnet"),
+      M("Dart", "languages/dart"),
+      M("Julia", "languages/julia"),
+      M("LaTeX", "languages/latex"),
+      M("R", "languages/r"),
+      M("Kotlin", "languages/kotlin"),
+      M("Pandas", "languages/python#pandas"),
+      M("Deno", "languages/deno"),
+    ]),
+    // M("Feature Preview", "feature-preview"),
+    M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
+      M(
+        "Install on Google Cloud Platform",
+        "self-hosted/latest/install/install-on-gcp-script"
+      ),
+      M(
+        "Install on Amazon Web Services",
+        "self-hosted/latest/install/install-on-aws-script"
+      ),
+      M(
+        "Install on self-managed Kubernetes",
+        "self-hosted/latest/install/install-on-kubernetes"
+      ),
+      M("Configure Ingress", "self-hosted/latest/install/configure-ingress"),
+      M("Configure a Database", "self-hosted/latest/install/database"),
+      M(
+        "Configure a Docker Registry",
+        "self-hosted/latest/install/docker-registry"
+      ),
+      M("Configure Storage", "self-hosted/latest/install/storage"),
+      M("Configure Nodes", "self-hosted/latest/install/nodes"),
+      M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
+    ]),
+    M("Subscriptions", "subscriptions", [
+      M("Professional Open Source", "professional-open-source"),
+      M("Create a Team", "teams"),
+    ]),
+    M("Changelog", "changelog"),
+  ];
 </script>
 
 <style>

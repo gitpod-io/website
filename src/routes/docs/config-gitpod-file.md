@@ -22,7 +22,7 @@ ports:
     onOpen: open-preview
 ```
 
-Please refer to the [`.gitpod.yml` refernce](/docs/beta/references/gitpod-yml) for a list of all available configuration options and their meaning.
+Please refer to the [`.gitpod.yml` refernce](/docs/references/gitpod-yml) for a list of all available configuration options and their meaning.
 
 ## How to provide the .gitpod.yml config file
 
