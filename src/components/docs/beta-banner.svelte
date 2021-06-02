@@ -16,15 +16,6 @@
           href="https://github.com/gitpod-io/website/issues/461"
           target="__self">provide feedback on GitHub</a
         > 🙏.
-      {:else}
-        <p><strong>Heads up!</strong></p>
-        We are writing new docs at
-        <a href="/docs/beta">/docs/beta</a> 🎉. If you have any feedback, we'd
-        love to hear about it in
-        <a
-          href="https://github.com/gitpod-io/website/issues/461"
-          target="__self">this GitHub issue</a
-        > 🙏.
       {/if}
     </blockquote>
   </div>

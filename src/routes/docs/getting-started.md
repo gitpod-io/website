@@ -11,7 +11,7 @@ title: Getting Started
 
 [Gitpod](https://www.gitpod.io) does to your development environment what Docker does to production servers - turning it from long-lived & carefully maintained to short-lived & ephemeral. If you've heard of the pets vs cattle analogy, that fits very well here.
 
-> Please read the [Introduction to Gitpod](/docs/beta) for more details and high-level Gitpod features.
+> Please read the [Introduction to Gitpod](/docs) for more details and high-level Gitpod features.
 
 This page helps you get started with _your project_. If you want to experience Gitpod with one of the example repositories, the [Quickstart](/docs/quickstart) is a great place for that. When you're ready to configure your project, the following chapters help you with that.
 

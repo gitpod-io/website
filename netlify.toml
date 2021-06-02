@@ -118,12 +118,12 @@
 
 [[redirects]]
   from = "/docs/40_Configuration"
-  to = "/docs/configuration"
+  to = "/docs/configure"
   status = 301
 
 [[redirects]]
   from = "/docs/40_configuration"
-  to = "/docs/configuration"
+  to = "/docs/configure"
   status = 301
 
  [[redirects]]
