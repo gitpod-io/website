@@ -31,8 +31,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
     "@slack/webhook": "^6.0.0",
-    "autoprefixer": "^10.2.5",
-    "google-spreadsheet": "^3.1.15"
+    "autoprefixer": "^10.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
