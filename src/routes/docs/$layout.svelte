@@ -82,7 +82,6 @@
       M("Roadmap", "references/roadmap"),
       // M("Changelog", "references/changelog"),
     ]),
-    M("🔙 Go back to stable docs", ""),
   ];
   const MENU_v1 = [
     M("Introduction", ""),
