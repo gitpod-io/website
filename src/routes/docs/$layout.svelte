@@ -74,13 +74,13 @@
       M("Configure Nodes", "self-hosted/latest/install/nodes"),
       M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
     ]),
-    M("References", "beta/references", [
-      // M(".gitpod.yml", "beta/references/gitpod-yml"),
-      // M("Custom Docker image", "beta/references/gitpod-dockerfile"),
-      // M("Architecture", "beta/references/architecture"),
-      // M("Troubleshooting", "beta/references/troubleshooting"),
-      M("Roadmap", "beta/references/roadmap"),
-      // M("Changelog", "beta/references/changelog"),
+    M("References", "references", [
+      // M(".gitpod.yml", "references/gitpod-yml"),
+      // M("Custom Docker image", "references/gitpod-dockerfile"),
+      // M("Architecture", "references/architecture"),
+      // M("Troubleshooting", "references/troubleshooting"),
+      M("Roadmap", "references/roadmap"),
+      // M("Changelog", "references/changelog"),
     ]),
     M("🔙 Go back to stable docs", ""),
   ];
