@@ -21,7 +21,7 @@ With Gitpod this stops. Instead you treat dev environments as automated resource
 
 You even start switching between workspaces - one for your feature, one for reviewing a PR/MR, one for a bug, one for another MR/PR.
 
-Only then you are **always ready-to-code** - immediately creative, immediately productive with the click of a button and without any friction. allowing yourself and your team to build applications quicker and more collaboratively.
+Only then you are **always ready-to-code** - immediately creative, immediately productive with the click of a button and without any friction. Allowing yourself and your team to build applications quicker and more collaboratively.
 
 <h2>Your computer in the cloud</h2>
 
@@ -54,4 +54,4 @@ We are living in a remote world, where copies of your source code stored locally
 <h2>Next Steps</h2>
 
 - [Quickstart with example project](/docs/quickstart) - understand the benefits in a learning environment
-- [Getting started with your project](/docs/configure) - configure one of your own existing projects
+- [Getting started with your project](/docs/getting-started) - configure one of your own existing projects
