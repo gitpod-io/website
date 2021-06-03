@@ -57,7 +57,7 @@ To connect to an existing Docker registry, perform the following steps:
 
     > This does not work for Google Cloud Registries because their login tokens are short-lived. See the [example](#example-google-cloud-registry-credentials) below on how to configure it.
 
-3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0` to apply the changes.
+3.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes.
 
 Make sure the resulting JSON file contains the credentials (there should be an `auths` section containing them as base64 encoded string).
 
@@ -71,7 +71,7 @@ Prerequisites:
 
 How to use Google Cloud Registry as Docker registry for Gitpod:
 
-1.  Go to [https://console.cloud.google.com/gcr/images/\<your-project-id\>?project=\<your-project-id\>](https://console.cloud.google.com/gcr/images/<your-project-id>?project=<your-project-id>) and hit "Enable Registry API" (if not already enabled).
+1.  Go to <a class="no-nowrap" href="https://console.cloud.google.com/gcr/images/%3Cyour-project-id%3E?project=%3Cyour-project-id%3E">https://console.cloud.google.com/gcr/images/\<your-project-id>?project=\<your-project-id></your-project-id></your-project-id></a> and hit "Enable Registry API" (if not already enabled).
 
 1.  Execute the following commands:
 

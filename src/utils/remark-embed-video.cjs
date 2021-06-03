@@ -4,7 +4,7 @@ const youtubeEmbedRegex = new RegExp(`\(youtube\):\(\.\*\)`, "i");
 
 const embedVideoHtml = (videoId, options) => `
 <span class="video-container"><iframe
-  title=""
+  title="${options.title ? options.title : "Youtube Video"}"
   width="${options.width}"
   height="${options.height}"
   src="https://www.youtube.com/embed/${videoId}?rel=0"

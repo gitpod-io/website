@@ -1,5 +1,5 @@
 ---
-section: configuration
+section: configure
 title: Start Tasks
 ---
 
@@ -10,20 +10,19 @@ title: Start Tasks
 # Start Tasks
 
 When starting or restarting a workspace you typically want to run certain tasks.
-Most probably that includes the build and maybe also running tests and automatically start the application in
-e.g. a dev server.
+That likely includes the application build and maybe also running tests and automatically start a development server.
 
-Gitpod allows you to configure start tasks in the `.gitpod.yml` file.
+To achieve that, Gitpod allows you to configure start tasks in the `.gitpod.yml` file.
 
-For instance, the start script for the Gitpod documentation repository is defined as:
+For instance, the start script for the Gitpod website repository (https://github.com/gitpod-io/website) is defined as:
 
 ```yaml
 tasks:
-  - init: yarn && yarn build
-    command: yarn dev --host 0.0.0.0
+  - init: npm install
+    command: npm run dev
 ```
 
-You can have multiple tasks, which are opened on separated terminals.
+You can have multiple tasks, which are opened in separated terminals.
 
 ```yaml
 tasks:
@@ -31,21 +30,21 @@ tasks:
   - command: echo Terminal2
 ```
 
-They are started in parallel. See [below options](#openin) on configuring where and how the terminals are placed in the workbench.
+The terminals and hence the tasks are started in parallel. See the [options below](#openin) on how to configure where the terminals are placed in the workbench.
 
 ## Defining Commands
 
 The `command` property is used to specify the command that shall be run on every start of a workspace.
 It is a bash command and doesn't need to terminate. For instance, you could start a web server or a database.
 
-The script below will start a development-time web server in many npm projects:
+The script below will start a development web server in many npm projects:
 
 ```yaml
 tasks:
   - command: npm run dev
 ```
 
-Task properties will control when a command is executed. Check the table below for an overview of the different starting scenarios.
+Task properties will control when a command is executed. The table below provides an overview of the different starting scenarios.
 
 <div class="table-container">
 
@@ -86,12 +85,12 @@ tasks:
 
 ### `prebuild` command
 
-The optional `prebuild` command will be executed during [prebuilds](/docs/prebuilds). It is meant to run additional
-long running processes that could be useful, e.g. running test suites.
+The `prebuild` command will be executed during [prebuilds](/docs/prebuilds). It is meant to run additional
+long-running processes that could be useful, e.g. running test suites. Make sure this command terminates as otherwise the prebuild will eventually time out.
 
-### Configuring the Terminal
+### Configure the terminal
 
-A task allows to configure where and how the terminal should open using the properties below.
+You can configure where terminals open using the `openIn` and `openMode` properties below.
 Please note that this information is used if no previous terminals in the layout exist.
 Snapshots will first try to reuse existing terminals in the layout, before opening new ones.
 

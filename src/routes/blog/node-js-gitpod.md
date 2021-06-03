@@ -26,7 +26,7 @@ Start a new workspace for the example GitHub repository: [https://gitpod.io/#htt
 
 ![Start a new Gitpod workspace for the shopping cart example via prefixing the URL with gitpod.io#](https://cdn-images-1.medium.com/max/2992/0*WySkgfqLHyOkQq_c)
 
-A new Gitpod workspace will be opened. Required dependencies are installed automatically since the repository is configured with [a .gitpod.yml file](https://www.gitpod.io/docs/configuration). You can see it in the terminal, opened in the bottom area.
+A new Gitpod workspace will be opened. Required dependencies are installed automatically since the repository is configured with [a .gitpod.yml file](https://www.gitpod.io/docs/configure). You can see it in the terminal, opened in the bottom area.
 
 ## Step 1: Start debugging
 

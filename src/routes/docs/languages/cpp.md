@@ -99,4 +99,4 @@ If that doesn't work, please feel free to ask for help in [community.gitpod.io](
 
 ## Further Reading
 
-- [How to enable the `clang-tidy` linter in Gitpod](https://community.gitpod.io/t/gitpod-and-c/622)
+- <a class="no-nowrap" href="https://community.gitpod.io/t/gitpod-and-c/622">How to enable the `clang-tidy` linter in Gitpod</a>

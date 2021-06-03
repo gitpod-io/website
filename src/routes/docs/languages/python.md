@@ -46,7 +46,7 @@ tasks:
 
 ## Linting
 
-You can [create a `setup.cfg` or a `pycodestyle.cfg` in the project root](https://github.com/palantir/python-language-server#configuration) and [adjust pycodestyle](http://pycodestyle.pycqa.org/en/latest/intro.html#configuration) rules there like this:
+You can <a class="no-nowrap" href="https://github.com/palantir/python-language-server#configuration">create a `setup.cfg` or a `pycodestyle.cfg` in the project root</a> and [adjust pycodestyle](http://pycodestyle.pycqa.org/en/latest/intro.html#configuration) rules there like this:
 
 ```toml
 [pycodestyle]
