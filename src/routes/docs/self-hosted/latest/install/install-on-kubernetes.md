@@ -17,7 +17,7 @@ For some platforms we offer [Terraform](https://www.terraform.io/) scripts that 
 
 ## Prerequisites
 
-As we at Gitpod follow a ["Saas First" strategy](https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6#57d3e4659c50449280411ac1f7dd1906) we have a [very limited set of platforms that we support](https://www.notion.so/gitpod/1b9eac5cb33d42e391f86a87f0e37836?v=4f2ec7c943514ee19203b9d4fe096094).
+As we at Gitpod follow a ["Saas First" strategy](https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6#57d3e4659c50449280411ac1f7dd1906) we have a <a class="no-nowrap" href="https://www.notion.so/gitpod/1b9eac5cb33d42e391f86a87f0e37836?v=4f2ec7c943514ee19203b9d4fe096094">very limited set of platforms that we support</a>.
 
 You still might get Gitpod to run on other platforms (especially with the help of our [awesome community](https://community.gitpod.io/)) but there will be no support from Gitpod for those efforts.
 

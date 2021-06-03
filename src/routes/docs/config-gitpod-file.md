@@ -22,25 +22,14 @@ ports:
     onOpen: open-preview
 ```
 
-Please refer to the [`.gitpod.yml` refernce](/docs/references/gitpod-yml) for a list of all available configuration options and their meaning.
+Please refer to the [`.gitpod.yml` reference](/docs/references/gitpod-yml) for a list of all available configuration options and their meaning.
 
 ## How to provide the .gitpod.yml config file
 
-There are two ways to provide the `.gitpod.yml` configuration file:
-
-### 1. Checked-in Gitpod Config File
-
-The simplest and recommended option is to check in a `.gitpod.yml` file into the root of your repository. This way you can
+In order to tell Gitpod how to prepare a dev environment for your project, you check in a `.gitpod.yml` file into the root of your repository. This way you can
 version your workspace configuration together with your code. If, for example, you need to go back to
 an old branch that required a different configuration, Gitpod will start with the correct configuration, since that
 bit of configuration is part of your codebase.
-
-### 2. [definitely-gp](https://github.com/gitpod-io/definitely-gp) Repository
-
-Sometimes you can't check in a `.gitpod.yml` file, for instance because you do not have sufficient
-access rights. However, you can still provide a `.gitpod.yml` file through the central <a href="https://github.com/gitpod-io/definitely-gp" target="_blank">definitely-gp</a> repository. Note that it contains
-`.gitpod.yml` files for public GitHub repositories only. To add your `.gitpod.yml` file to `definitely-gp`,
-simply raise a PR.
 
 ## Generate Your Gitpod Config File
 
