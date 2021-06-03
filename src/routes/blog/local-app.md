@@ -1,30 +1,30 @@
 ---
 author: akosyakov, csweichel, rl-gitpod
 date: Mon, 31 May 2021 18:00:00 UTC
-excerpt: Accessing Gitpod workspaces locally
+excerpt: While Gitpod can seamlessly integrate into your workflow in the vast majority of cases, there are times where you may want to access a workspace from localhost
 image: local-services.jpg
 slug: local-app
 subtitle:
 teaserImage: local-services.jpg
-title: Accessing Gitpod workspaces locally
+title: Gitpod Local Companion - localhost is going remote
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-### Connecting to your workspaces
+### Connecting to your workspaces as localhost
 
-While Gitpod can seamlessly integrate into your workflow in the vast majority of cases, there are times where you may want to access a workspace from outside its confines. While this has been possible using the existing VS Code port forwarding feature, it only worked for an HTPP-based protocol.
+While Gitpod can seamlessly integrate into your workflow in the vast majority of cases, there are times where you may want to access a workspace from localhost and were required to workaround some limitations, particularly with respect to [framework](lhttps://www.gitpod.io/docs/languages/svelte/) features such as [live reload](https://github.com/gitpod-io/gitpod/issues/3282).
 
 Gitpod is pleased to announce a preview release of the _Gitpod Local Companion_ app that is designed to allow localhost access to any TCP port in a remote workspace regardless of protocol.
 
-The app is intended to run locally and enables automatically tunneled connections to your workspace, either privately or, if required, publicly (on your laptops IP for example).
+The app runs locally and enables automatically tunneled connections to your workspace, either privately or, if required, publicly (on your laptops IP for example).
 
-This opens up any environment or framework that assumes localhost access. Also linking to http://localhost:5000 in your projects README.md will now _just work_ for anyone clicking on the _Gitpod_ button on your project.
+In particular, this opens up any environment or framework that assumes localhost access i.e. web frameworks such as Svelte and enables bundlers such as Parcel or Webpack hot reloading without requiring any changes. It also enables the use of non-HTTP protocols, most notably MQTT based brokers or the AMQP based services.
 
 As a preview release, not all of the features are implemented, most notably the tunneling is 1-way only: local -> workspace.
-Of course, we have big plans! Future features may include:
+Of course, we have big plans! Future features **may** include:
 
 - Listing what workspaces are running
 - Listing what ports are currently tunneled and in which direction (workspace to/from local)
@@ -32,11 +32,31 @@ Of course, we have big plans! Future features may include:
 - Connecting a local VS Code instance to a workspace
 - SSH into a workspace from the command line in a simple, straight forward way
 
+#### See it in action
+
+As a simple example, with the _Gitpod Local Companion_ app installed and running, open the standard Svelte template in Gitpod, using this [link](https://gitpod.io/#https://github.com/sveltejs/template) or the Gitpod button [directly](https://github.com/sveltejs/template). This will create an ephemeral environment for you without requiring any local setup or installation. As per the template instructions, run the following:
+
+```
+# npm install && npm run dev
+
+
+```
+
+VS Code will detect the service on port 5000 and offer 3 options. Click on the 'Open Browser' or navigate to directly to [localhost](http://localhost:5000/) to see 'Hello world!'. Edit app.svelte and the page will live reload with your changes!
+
 We love feedback here at Gitpod so please give it a try and let us know what you think!
+
+<div style="position: relative; padding-bottom: 61.53846153846154%; height: 0;"><iframe src="https://www.loom.com/embed/72fccf99cf384e6aaca5ca2f65f40c47" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 #### Installation
 
-To get started, download the preview release of the _Gitpod Local Companion_ app for your platform:
+To get started, download the preview release of the _Gitpod Local Companion_ app for your platform (right click, 'Save (Link) As')
+
+- [Mac](https://gitpod.io/static/bin/gitpod-local-companion-darwin)<small>- you will need to grant permission as it is not yet notarised. See ["open an app that hasn’t been notarised or is from an unidentified developer"](https://support.apple.com/en-au/HT202491) or click on the app in Finder while holding the Control key down and select 'Open' from the menu and then 'Open' in the prompt.</small>
+- [Linux](https://gitpod.io/static/bin/gitpod-local-companion-linux)
+- [Windows](https://gitpod.io/static/bin/gitpod-local-companion-windows)
+
+Alternatively, in a terminal run the following:
 
 ```
   # mac
@@ -54,7 +74,7 @@ To get started, download the preview release of the _Gitpod Local Companion_ app
 To run it using your local keyring for long term storage of the access token:
 
 ```
-  GITPOD_HOST=https://gitpod.io ./gitpod-local-companion-[darwin|linux|windows]
+  ./gitpod-local-companion-[darwin|linux|windows]
 
 
 ```
@@ -62,7 +82,7 @@ To run it using your local keyring for long term storage of the access token:
 To run it without storing the access token (it will generate a new token every time);
 
 ```
-  GITPOD_HOST=https://gitpod.io ./gitpod-local-companion-[darwin|linux|windows] --mock-keyring
+  ./gitpod-local-companion-[darwin|linux|windows] --mock-keyring
 
 
 ```
