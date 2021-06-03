@@ -3,7 +3,6 @@
   import RecentArticlesPreview from "./recent-articles-preview.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
   import { authors } from "../../contents/blog";
-  import "../../assets/markdown-commons.scss";
 
   export let date;
   export let author;
@@ -53,7 +52,7 @@
     imageTwitter: `images/blog/${slug}/${image}`,
   }}
 />
-<div class="post text-blob content-blog">
+<div class="post text-blob">
   <img
     src="/images/blog/{slug}/{teaserImage || image}"
     alt={`${title}`}
