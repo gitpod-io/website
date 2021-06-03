@@ -33,7 +33,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/sveltejs-template/`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/sveltejs-template`
 
 Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
