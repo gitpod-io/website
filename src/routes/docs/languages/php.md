@@ -105,4 +105,4 @@ where `<EXTENSION>` is the PHP extension you want to install, e.g. `xdebug`.
 
 ## Further Reading
 
-- [Gitpodifying a new Laravel Application](https://notes.etin.space/posts/gitpodifying-a-new-laravel-application) by Etin Obaseki
+- <a class="no-nowrap" href="https://notes.etin.space/posts/gitpodifying-a-new-laravel-application">Gitpodifying a new Laravel Application</a> by Etin Obaseki

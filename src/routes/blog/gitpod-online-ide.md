@@ -49,7 +49,7 @@ Gitpod is built on Kubernetes and you can use any Docker image for your developm
 
 Gitpod provides your collaborators a **single-click-to-contribute** **experience**.
 
-More information on how to configure Gitpod can be found [here](https://www.gitpod.io/docs/configuration).
+More information on how to configure Gitpod can be found [here](https://www.gitpod.io/docs/configure).
 
 ## **Fire and Forget**
 

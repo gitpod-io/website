@@ -15,7 +15,11 @@ Gitpod, just as you know it from [gitpod.io](https://gitpod.io), can be deployed
 
 You can find all configuration templates and installation scripts in the Gitpod repository:
 
-> https://github.com/gitpod-io/gitpod
+<blockquote>
+  <p>
+    <a class="no-nowrap" href="https://github.com/gitpod-io/gitpod">https://github.com/gitpod-io/gitpod</a>
+  </p>
+</blockquote>
 
 ### Install on Google Cloud Platform
 

@@ -1,5 +1,5 @@
 ---
-section: getting-started
+section:
 title: Example Projects
 ---
 
