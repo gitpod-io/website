@@ -7,6 +7,7 @@
   import type { Email } from "../functions/submit-form";
 
   let orderTotal = 0;
+  let sectionStart;
 
   const yearlyPricesPerSeat = {
     eur: 216,
@@ -132,6 +133,9 @@
       });
       if (response.ok) {
         isRequested = true;
+        setTimeout(() => {
+          sectionStart.scrollIntoView();
+        });
       } else {
         console.error(response.statusText);
       }
@@ -166,7 +170,7 @@
   </p>
 </header>
 
-<section class="card shadow-xl mb-32 sm:mx-8">
+<section class="card shadow-xl mb-32 sm:mx-8" bind:this={sectionStart}>
   {#if isRequested}
     <SubmissionSuccess title="Thanks" text="We'll get back to you soon." />
   {:else}
