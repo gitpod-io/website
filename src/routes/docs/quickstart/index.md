@@ -29,4 +29,4 @@ The Gitpod extension adds a Gitpod button on every project and branch across Git
 
 With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
 
-🛠 [Getting started with Gitpod](/docs/configure)
+- [Getting started with your own project](/docs/getting-started)

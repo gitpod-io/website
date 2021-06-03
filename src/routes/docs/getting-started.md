@@ -9,11 +9,7 @@ title: Getting Started
 
 # Getting Started
 
-[Gitpod](https://www.gitpod.io) does to your development environment what Docker does to production servers - turning it from long-lived & carefully maintained to short-lived & ephemeral. If you've heard of the pets vs cattle analogy, that fits very well here.
-
-> Please read the [Introduction to Gitpod](/docs) for more details and high-level Gitpod features.
-
-This page helps you get started with _your project_. If you want to experience Gitpod with one of the example repositories, the [Quickstart](/docs/quickstart) is a great place for that. When you're ready to configure your project, the following chapters help you with that.
+Gitpod can provide fully initialized, perfectly set-up development environmments for any kind of software project. This page helps you understand how to provide such a configuration for _your project_.
 
 ## Start your first workspace
 
@@ -116,13 +112,13 @@ Imagine this common workflow where Nina and Paul work on the same project:
 1. Some time later, Paul opens the pull request to start his code review.
 1. He opens a Gitpod workspace for that given pull request (learn more about [contexts](/docs/context-urls)).
 1. _Gitpod recognizes it already ran the `init` task and loads the prebuilt workspace_
-1. By the time the workspace starts, Paul sees the developemnt server starting up and the application's preview is ready for review.
+1. By the time the workspace starts, Paul sees the development server starting up and the application's preview is ready for review.
 
-For each new commit to your project, Gitpod continuously creates prebuilt workspaces so that the project is alwasy ready-to-code. If your project is open source, anyone gets to enjoy the efficiency of prebuilds regardless of whether they are part of your team or not.
+For each new commit to your project, Gitpod continuously creates prebuilt workspaces so that the project is always ready-to-code. If your project is open source, anyone gets to enjoy the efficiency of prebuilds regardless of whether they are part of your team or not.
 
 ### Configure prebuilds for your projects
 
-Depending on your git provider, the steps to configure prebuilds vary slightly. Please refer to the dedicated [Prebuilds](/docs/prebuilds) page for detaile instructions on how to configure prebuilds for your project.
+Depending on your git provider, the steps to configure prebuilds vary slightly. Please refer to the dedicated [Prebuilds](/docs/prebuilds) page for detailed instructions on how to configure prebuilds for your project.
 
 ## Next steps
 

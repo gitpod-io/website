@@ -45,7 +45,7 @@ Here are a few Deno example projects that are already automated with Gitpod:
 
 </div>
 
-[Edit this page](https://github.com/gitpod-io/website/edit/master/src/docs/languages/deno.md) to add another examples.
+[Edit this page](https://gitpod.io/#https://github.com/gitpod-io/website/blob/main/src/routes/docs/languages/deno.md) to add another examples.
 
 ## VSCode Extensions
 

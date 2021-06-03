@@ -9,7 +9,7 @@
     image = "images/media-image.jpg",
     title,
     type = "website",
-    imageTwitter = "images/media-image-twitter.jpg",
+    imageTwitter = "images/twitter-preview.jpg",
   } = data || {};
 
   const url = `https://${$page.host}${$page.path}`;

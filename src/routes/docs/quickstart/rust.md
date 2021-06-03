@@ -9,7 +9,7 @@ title: Rust example
 
 # Rust Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Rust](https://github.com/gitpod-io/rust-cli-starter) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Rust](https://github.com/gitpod-io/example-rust-cli) example.
 
 The following guide will:
 
@@ -21,7 +21,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [Rust template](https://github.com/gitpod-io/rust-cli-starter/generate).
+- Create a new repository based on the [Rust template](https://github.com/gitpod-io/example-rust-cli/generate).
 
 ### Step 2: Install Gitpod app
 
@@ -33,7 +33,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<typescript-node-starter>/`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/example-rust-cli`
 
 Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
@@ -72,4 +72,4 @@ Try it out and open 3 workspaces on the same context (e.g. on main or on an issu
 You've successfully ran your first workspace and experienced first hand what we mean with ephemeral dev environments. This is just the first step on your journey towards being always ready to code. Helpful resources from here are:
 
 - [Getting started with your own project](https://www.gitpod.io/docs/configure)
-- Configure your project
+- [Git Integrations](/docs/integrations)
