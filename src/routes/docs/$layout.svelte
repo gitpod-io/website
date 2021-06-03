@@ -40,7 +40,7 @@
     ]),
     M("Develop", "develop", [
       M("One workspace per task", "workspaces"),
-      M("Life of a workspace", "life-of-a-workspace"),
+      M("Life of a workspace", "life-of-workspace"),
       M("Contexts", "context-urls"),
       M("Collaboration & Sharing", "sharing-and-collaboration"),
       M("Command Line Interface", "command-line-interface"),
