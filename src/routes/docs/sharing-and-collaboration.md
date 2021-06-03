@@ -22,11 +22,11 @@ You can take snapshot URLs of your workspaces at any time and share them with ot
 - the VS Code layout
 
 Workspaces created from snapshots are treated as restarts, so you can configure them to launch differently than if you had created a fresh workspace from git. Also, this is useful if you want to create
-easy-to-consume reproducible workspace states, for issues, stackoverflow answers, trainings, etc.
+easy-to-consume reproducible workspace states, for issues, stackoverflow answers, trainings, presentations, etc.
 
 Unlike sharing running workspaces, snapshotted workspaces are full copies. This means developers can do whatever they like with the content. And of course, no access to any of your credentials is shared.
 
-Read more about this feature [here](/blog/workspace-snapshots).
+Read more about this feature [in this blog post](/blog/workspace-snapshots).
 
 ### How To Take a Snapshot URL
 
