@@ -1,7 +1,7 @@
 ---
 author: christinfrohne, ghuntley
 date: Thursday, 3 Jun 2021 11:00:00 UTC
-excerpt: As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where $10,000 USD of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and a retrospective of Gitpod running our first ever conference.
+excerpt: As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where $10,000 USD of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and our retrospective on running our first-ever conference.
 image: teaser.png
 slug: devxconf-wrap
 subtitle:
@@ -57,9 +57,9 @@ _Credit: [Sajjad Ahmadi](https://unsplash.com/photos/96m9K49qaPw)_
 As part of Gitpod's [Open-Source Sustainability Fund initiative](/blog/gitpod-open-source-sustainability-fund/) attendees of the DevX Conf [were able to decide where $10,000 USD of funds](https://devxconf.org/opensource) (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. We thought long and hard about _what_ projects to include in the competition and pondered about:
 
 - **what exactly is digital infrastructure?**
-- **what tools are relied upon by developers everyday that are built and maintained almost exclusively by unpaid volunteers?**.
+- **what tools are relied upon by developers every day that are built and maintained almost exclusively by unpaid volunteers?**.
 
-After some dialectical thinking the answer became clear: projects built by unpaid voltuneers in the category of [linters](<https://en.wikipedia.org/wiki/Lint_(software)>) and [language server protocol](https://langserver.org/) implementations.
+After some dialectical thinking, the answer became clear: projects built by unpaid volunteers in the category of [linters](<https://en.wikipedia.org/wiki/Lint_(software)>) and [language server protocol](https://langserver.org/) implementations.
 
 Over the last month Gitpod has been emailing maintainers and distributing the funds.
 
@@ -67,7 +67,7 @@ Over the last month Gitpod has been emailing maintainers and distributing the fu
 
 [![🤯👏](../../../static/images/blog/devxconf-wrap/shellcheck-sponsorship.png)](https://github.com/koalaman/shellcheck)
 
-Attendees of the DevX Conference were able to vote once for each of the projects and then distribution of funds was calculated using Quadratic Funding ([Paper](https://arxiv.org/pdf/1809.06421.pdf)). See [wtfisqf.com](https://wtfisqf.com/?grant=4&grant=4&grant=3&grant=4&grant=11&grant=7&grant=5&grant=4&grant=9&grant=12&grant=6&grant=24&grant=3&grant=7&grant=17&grant=7&grant=15&match=10000) for a breakdown how the fund was split. Each vote was considered as a share (or $1 matched) and then a total amount was set to $10,000.
+Attendees of the DevX Conference were able to vote once for each of the projects, and the distribution of funds was calculated using Quadratic Funding ([Paper](https://arxiv.org/pdf/1809.06421.pdf)). See [wtfisqf.com](https://wtfisqf.com/?grant=4&grant=4&grant=3&grant=4&grant=11&grant=7&grant=5&grant=4&grant=9&grant=12&grant=6&grant=24&grant=3&grant=7&grant=17&grant=7&grant=15&match=10000) for a breakdown of how the fund was split. Each vote was considered a share (or $1 matched), and then a total amount was set to $10,000.
 
 [![🤯 Woah Gitpod just donated ✨$212✨ to patch-package! They're democratically dividing $10k between a small set of OSS dev tools https://devxconf.org/opensource – what a lovely idea, I'm so honored to be included Smiling face I'll keep $5 for a beer and forward the rest to worthy causes. ](../../../static/images/blog/devxconf-wrap/tweet-djsheldrick.png)](https://twitter.com/djsheldrick/status/1392419294852550656)
 
@@ -95,15 +95,15 @@ In total there were 17 projects that were available for voting:
 
 <br/>
 
-Only a fraction of funds have been distributed at this stage because as a industry we haven't documented and established clear ways where companies are able give open-source projects money.
+Only a fraction of funds has been distributed at this stage because, as an industry, we haven't documented and established straightforward ways where companies can give open-source projects money.
 
 [![🤯👏](../../../static/images/blog/devxconf-wrap/pre-commit-sponsorship.png)](https://github.com/pre-commit/pre-commit)
 
-Sending hand crafted emails (assuming an email address is publically available 😢) asking projects these questions isn't scalable and most companies would not do this manual grunt work. 😉
+Sending hand crafted emails (assuming an email address is publically available 😢) asking projects these questions isn't scalable, and most companies would not do this manual grunt work. 😉
 
 <!-- [![Thanks Gitpod for helping make development of @pre_commit (and open source) more sustainable!](../../../static/images/blog/devxconf-wrap/tweet-codewithanthony.png)](https://twitter.com/codewithanthony/status/1391524021984915456) -->
 
-If you are the stweard of one of the above open-source projects, then there's one simple, easy step you can do to enable Gitpod and other companies to provide financial support...
+If you are the steward of one of the above, open-source projects, then there's one simple, easy step you can do to enable Gitpod and other companies to provide financial support...
 
 - 1. Go sign up to [GitHub Sponsors](https://github.com/sponsors) or [Open Collective](https://www.opencollective.com)
 - 2. Publically document the process of how companies can support your project.
