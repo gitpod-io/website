@@ -3,6 +3,7 @@
   import MobileMenu from "../../components/docs/mobile-menu/index.svelte";
   import Search from "../../components/docs/search.svelte";
   import "../../assets/docs.scss";
+  import "../../assets/markdown-commons.scss";
 
   // This file is used to define entries in the side menu
   interface MenuEntry {
@@ -40,7 +41,7 @@
     ]),
     M("Develop", "develop", [
       M("One workspace per task", "workspaces"),
-      M("Life of a workspace", "life-of-a-workspace"),
+      M("Life of a workspace", "life-of-workspace"),
       M("Contexts", "context-urls"),
       M("Collaboration & Sharing", "sharing-and-collaboration"),
       M("Command Line Interface", "command-line-interface"),

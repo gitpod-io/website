@@ -156,4 +156,14 @@ export const authors: { [idx: string]: Author } = {
     description:
       "A big open-source fan, Arthur is a SRE focused on cloud-native observability. When not training backflips and gymnastics, you can find him chit-chatting at CNCF's slack channels.",
   },
+  christinfrohne: {
+    name: "Christin Frohne",
+    socialProfiles: {
+      github: "ChristinFrohne",
+      twitter: "christinfrohne",
+      linkedin: "christin-frohne-91a4b0173",
+    },
+    description:
+      "Christin is our Marketing Manager at Gitpod. She is eager to create a great brand experience and favors going the unconventional way. In her free time, she loves to be out in the nature, climbing rocks and practising yoga.",
+  },
 };

@@ -1,0 +1,63 @@
+.content-docs,
+.content-blog {
+  blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background: var(--brand-light);
+
+    code {
+      background: var(--brand-almost-ripe);
+    }
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 31.25rem;
+    margin: var(--micro) 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    font-size: var(--p-small);
+  }
+
+  thead {
+    background: var(--sand-dark);
+  }
+
+  tbody {
+    background: var(--off-white);
+  }
+
+  th,
+  td {
+    @apply py-3 px-6;
+    @apply text-left;
+  }
+
+  td {
+    @apply py-4;
+    line-height: 150%;
+  }
+
+  th {
+    @apply font-normal;
+  }
+
+  td:first-child {
+    @apply font-bold;
+    @apply align-top;
+  }
+
+  th + th,
+  td + td {
+    @apply border-l border-solid border-gray-400;
+  }
+
+  tr + tr {
+    @apply border-t border-solid border-gray-400;
+  }
+}
