@@ -31,7 +31,7 @@ All talks are now available for watching via this [playlist on YouTube](https://
 
 ## Funding open source
 
-[![🤯 Woah Gitpod just donated 212 to patch-package. The're democratically dividing $10k between a small set of OSS dev tools.](../../../static/images/blog/devxconf-wrap/tweet-yonchovski.png)](https://twitter.com/yonchovski/status/1390659877740158976)
+[![🤯 Woah Gitpod just donated 212 to patch-package. The are democratically dividing $10k between a small set of OSS dev tools.](../../../static/images/blog/devxconf-wrap/tweet-yonchovski.png)](https://twitter.com/yonchovski/status/1390659877740158976)
 
 The truth is free software isn't free. How much is a task going to cost in person hours? Hours have rates. Rates require payment. Yet, an entire community of developers provide their services outside of their day job to produce tools consumed by businesses.
 
@@ -108,7 +108,7 @@ If you are the steward of one of the above, open-source projects, then there's o
 - 1. Go sign up to [GitHub Sponsors](https://github.com/sponsors) or [Open Collective](https://www.opencollective.com)
 - 2. Publically document the process of how companies can support your project.
 - 3. Send an email to <a href="mailto:contact@gitpod.io?subject=Distribution of DevX Open-source Funding">contact@gitpod.io</a>.
-- 4. Nominate where funding should be directed (if you wish to divert the funds to a cause that helps improve diviserty in open-source such as [Outreachy](https://www.outreachy.org/) thats possible!)
+- 4. Nominate where funding should be directed (if you wish to divert the funds to a cause that helps improve diversity in open-source such as [Outreachy](https://www.outreachy.org/) thats possible!)
 
 ## Thanks
 
