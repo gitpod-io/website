@@ -13,8 +13,6 @@ title: Gitpod Local Companion - localhost is going remote
   export const prerender = true;
 </script>
 
-### Connecting to your workspaces as localhost
-
 While Gitpod can seamlessly integrate into your workflow in the vast majority of cases, there are times where you may want to access a workspace from localhost and were required to workaround some limitations, particularly with respect to [framework](lhttps://www.gitpod.io/docs/languages/svelte/) features such as [live reload](https://github.com/gitpod-io/gitpod/issues/3282).
 
 Gitpod is pleased to announce a preview release of the _Gitpod Local Companion_ app that is designed to allow localhost access to any TCP port in a remote workspace regardless of protocol.
@@ -32,14 +30,12 @@ Of course, we have big plans! Future features **may** include:
 - Connecting a local VS Code instance to a workspace
 - SSH into a workspace from the command line in a simple, straight forward way
 
-#### See it in action
+## See it in action
 
 As a simple example, with the _Gitpod Local Companion_ app installed and running, open the standard Svelte template in Gitpod, using this [link](https://gitpod.io/#https://github.com/sveltejs/template) or the Gitpod button [directly](https://github.com/sveltejs/template). This will create an ephemeral environment for you without requiring any local setup or installation. As per the template instructions, run the following:
 
-```
+```yaml
 # npm install && npm run dev
-
-
 ```
 
 VS Code will detect the service on port 5000 and offer 3 options. Click on the 'Open Browser' or navigate to directly to [localhost](http://localhost:5000/) to see 'Hello world!'. Edit app.svelte and the page will live reload with your changes!
@@ -48,7 +44,7 @@ We love feedback here at Gitpod so please give it a try and let us know what you
 
 <div style="position: relative; padding-bottom: 61.53846153846154%; height: 0;"><iframe src="https://www.loom.com/embed/72fccf99cf384e6aaca5ca2f65f40c47" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-#### Installation
+## Installation
 
 To get started, download the preview release of the _Gitpod Local Companion_ app for your platform (right click, 'Save (Link) As')
 
@@ -58,7 +54,7 @@ To get started, download the preview release of the _Gitpod Local Companion_ app
 
 Alternatively, in a terminal run the following:
 
-```
+```shell
   # mac
   curl -OL https://gitpod.io/static/bin/gitpod-local-companion-darwin
   # linux
@@ -69,11 +65,11 @@ Alternatively, in a terminal run the following:
   chmod +x ./gitpod-local-companion-*
 ```
 
-#### Running
+## Running
 
 To run it using your local keyring for long term storage of the access token:
 
-```
+```shell
   ./gitpod-local-companion-[darwin|linux|windows]
 
 
@@ -81,7 +77,7 @@ To run it using your local keyring for long term storage of the access token:
 
 To run it without storing the access token (it will generate a new token every time);
 
-```
+```shell
   ./gitpod-local-companion-[darwin|linux|windows] --mock-keyring
 
 
@@ -91,7 +87,7 @@ If you are not logged in to Gitpod, it will take you through that flow. If you h
 
 Once approval has been granted it will connect to your currently active workspaces and allow VSCode to control the tunnelling between the remote workspace and your local environment using the standard VSCode Ports View.
 
-#### Extended VSCode Ports View
+## Extended VSCode Ports View
 
 Gitpod has extended the existing VSCode Ports view to allow additional control of how the ports are exposed. As shown below there is an additional toggle on each port to switch between _Tunnel on localhost_ exposure i.e. nothing outside of your laptop
 
@@ -101,7 +97,7 @@ and _Tunnel on all interfaces_ to make that port available on 0.0.0.0. and, depe
 
 ![tunnel on all](../../../static/images/blog/local-app/tunnel-on-all.png)
 
-#### SSH Access
+## SSH Access
 
 Additionally, the _Gitpod Local Companion_ preview release also has basic support for SSH access into your workspace. It currently requires that you have a default SSH key setup in the ~/.ssh directory i.e. id_rsa.pub & id_rsa. The public key will be copied to the workspace to permit access.
 
@@ -109,7 +105,7 @@ This opens up all the usual SSH-based features, such as secure copying, tunnelin
 
 Once you have installed the _Gitpod Local Companion_ app and connected it to your workspaces, it dynamically creates entries for each workspace in the /tmp/gitpod_ssh_config file. You can use this to SSH into your workspace as follows:
 
-```
+```shell
 ssh -F /tmp/gitpod_ssh_config <your-workspace-id e.g.apricot-harrier-####>
 
 
