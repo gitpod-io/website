@@ -47,6 +47,11 @@
     }
   }
 
+  // Hide the external link icon for certain scenarios
+  .avatars a::after {
+    display: none !important;
+  }
+
   a[href*="https://gitpod.io/#"]
   {
     &::after {
