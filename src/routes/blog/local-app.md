@@ -22,20 +22,15 @@ The app runs locally and enables automatically tunneled connections to your work
 In particular, this opens up any environment or framework that assumes localhost access i.e. web frameworks such as Svelte and enables bundlers such as Parcel or Webpack hot reloading without requiring any changes. It also enables the use of non-HTTP protocols, most notably MQTT based brokers or the AMQP based services.
 
 As a preview release, not all of the features are implemented, most notably the tunneling is 1-way only: local -> workspace.
-Of course, we have big plans! Future features **may** include:
-
-- Listing what workspaces are running
-- Listing what ports are currently tunneled and in which direction (workspace to/from local)
-- Starting/stopping port forwarding from the command line
-- Connecting a local VS Code instance to a workspace
-- SSH into a workspace from the command line in a simple, straight forward way
 
 ## See it in action
 
 As a simple example, with the _Gitpod Local Companion_ app installed and running, open the standard Svelte template in Gitpod, using this [link](https://gitpod.io/#https://github.com/sveltejs/template) or the Gitpod button [directly](https://github.com/sveltejs/template). This will create an ephemeral environment for you without requiring any local setup or installation. As per the template instructions, run the following:
 
-```yaml
-# npm install && npm run dev
+```shell
+npm install && npm run dev
+
+
 ```
 
 VS Code will detect the service on port 5000 and offer 3 options. Click on the 'Open Browser' or navigate to directly to [localhost](http://localhost:5000/) to see 'Hello world!'. Edit app.svelte and the page will live reload with your changes!
@@ -48,7 +43,7 @@ We love feedback here at Gitpod so please give it a try and let us know what you
 
 To get started, download the preview release of the _Gitpod Local Companion_ app for your platform (right click, 'Save (Link) As')
 
-- [Mac](https://gitpod.io/static/bin/gitpod-local-companion-darwin)<small>- you will need to grant permission as it is not yet notarised. See ["open an app that hasn’t been notarised or is from an unidentified developer"](https://support.apple.com/en-au/HT202491) or click on the app in Finder while holding the Control key down and select 'Open' from the menu and then 'Open' in the prompt.</small>
+- [Mac](https://gitpod.io/static/bin/gitpod-local-companion-darwin) - you will need to grant permission as it is not yet notarised. See ["open an app that hasn’t been notarised or is from an unidentified developer"](https://support.apple.com/en-au/HT202491) or click on the app in Finder while holding the Control key down and select 'Open' from the menu and then 'Open' in the prompt.
 - [Linux](https://gitpod.io/static/bin/gitpod-local-companion-linux)
 - [Windows](https://gitpod.io/static/bin/gitpod-local-companion-windows)
 
@@ -112,3 +107,14 @@ ssh -F /tmp/gitpod_ssh_config <your-workspace-id e.g.apricot-harrier-####>
 ```
 
 You will be prompted to add the address to your known hosts file and you will be connected to your workspace!
+
+## What is next?
+
+We have big plans for the _Gitpod Local Companion_ App! Future features **may** include:
+
+- 2-way tunnelling
+- Listing what workspaces are running
+- Listing what ports are currently tunneled and in which direction (workspace to/from local)
+- Starting/stopping port forwarding from the command line
+- Connecting a local VS Code instance to a workspace
+- SSH into a workspace from the command line in a simple, straight forward way
