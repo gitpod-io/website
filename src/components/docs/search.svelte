@@ -1,12 +1,11 @@
-<script>
-  import { onMount } from "svelte";
+<script lang="ts">
   import topicsState from "./states/topics-state";
 
   const docSearchJSVersion = "2.6.3";
   const docSearchInputSelector = "search-doc-input";
 
-  let docSearchInput;
-  let docSearchScript;
+  let docSearchInput: HTMLInputElement;
+  let docSearchScript: HTMLScriptElement;
   let docSearchScriptLoaded = false;
 
   $: if (docSearchInput && (docSearchScript || docSearchScriptLoaded)) {
@@ -22,6 +21,12 @@
 
   const processDocSearchScriptLoadEvent = () => {
     docSearchScriptLoaded = true;
+  };
+
+  const handleBodyKeyDown = (event: KeyboardEvent) => {
+    if ((event.ctrlKey || event.metaKey) && event.key === "k") {
+      docSearchInput.focus();
+    }
   };
 </script>
 
@@ -79,6 +84,8 @@
     bind:this={docSearchScript}
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
+
+<svelte:body on:keydown={handleBodyKeyDown} />
 
 <div
   class={`input-container relative bg-white rounded-xl w-full mb-12 ${
