@@ -117,6 +117,11 @@
   status = 301
 
 [[redirects]]
+  from = "/docs/configuration"
+  to = "/docs/configure"
+  status = 301
+
+[[redirects]]
   from = "/docs/40_Configuration"
   to = "/docs/configure"
   status = 301
