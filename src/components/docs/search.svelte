@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import topicsState from "./states/topics-state";
 
   const docSearchJSVersion = "2.6.3";
@@ -7,6 +8,7 @@
   let docSearchInput: HTMLInputElement;
   let docSearchScript: HTMLScriptElement;
   let docSearchScriptLoaded = false;
+  let placeholder = "Quick search";
 
   $: if (docSearchInput && (docSearchScript || docSearchScriptLoaded)) {
     window.docsearch &&
@@ -28,6 +30,15 @@
       docSearchInput.focus();
     }
   };
+
+  onMount(() => {
+    if (!navigator.userAgent.toLowerCase().match(/mobile/i)) {
+      const platformKey = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)
+        ? "⌘"
+        : "Ctrl";
+      placeholder += ` ${platformKey}+K`;
+    }
+  });
 </script>
 
 <style lang="scss">
@@ -102,7 +113,7 @@
   <input
     bind:this={docSearchInput}
     type="search"
-    placeholder="Search"
+    {placeholder}
     id={docSearchInputSelector}
     class="box-border block w-full pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900"
   />
