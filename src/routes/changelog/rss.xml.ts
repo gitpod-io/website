@@ -24,7 +24,10 @@ export const get: import("@sveltejs/kit").RequestHandler = ({ context }) => {
       })}</title>
       <link>https://www.gitpod.io/changelog</link>
       <pubDate>${new Date(Date.parse(entry.date)).toUTCString()}</pubDate>
-      <description><![CDATA['${entry.content}']]></description>
+      <description><![CDATA['${entry.content.replace(
+        /src="\//g,
+        'src="https://www.gitpod.io/'
+      )}']]></description>
     </item>`
    )}
   </channel>
