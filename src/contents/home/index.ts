@@ -97,6 +97,12 @@ export const projects: Project[] = [
     alt: "Node or TypeScript",
   },
   {
+    logo: "svg/projects/python.svg",
+    title: "Python",
+    githubUrl: "https://github.com/gitpod-io/example-python-django",
+    alt: "Python",
+  },
+  {
     logo: "svg/projects/go.svg",
     title: "Go",
     githubUrl: "https://github.com/gitpod-io/example-golang-cli",
