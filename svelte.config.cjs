@@ -49,6 +49,7 @@ module.exports = {
           headings,
           {
             behavior: "append",
+            linkProperties: {},
           },
         ],
         remarkSetImagePath,
