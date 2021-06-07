@@ -9,6 +9,6 @@ title: Changelog
 
 # Changelog
 
-Welcome 👋! You arrived here a bit early as we are currently (May 2021) in the process of rewriting the Gitpod documentation.
+The most up-to-date Gitpod changelog can be found at www.gitpod.io/changelog.
 
-Please head over to https://github.com/gitpod-io/website/issues/461 if you'd like to provide any feedback - we'd love to hear from you 🙏.
+To provide feedback or ask for feature requests, please [open an issue](https://github.com/gitpod-io/gitpod/issues/new/choose) in the Gitpod repository.
