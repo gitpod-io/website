@@ -1,11 +1,11 @@
 ---
 author: akosyakov, csweichel, rl-gitpod
-date: Mon, 31 May 2021 18:00:00 UTC
+date: Wed, 9 Jun 2021 18:00:00 UTC
 excerpt: While Gitpod can seamlessly integrate into your workflow in the vast majority of cases, there are times where you may want to access a workspace from localhost
-image: local-services.jpg
+image: header-desktop.png
 slug: local-app
 subtitle:
-teaserImage: local-services.jpg
+teaserImage: header-desktop.png
 title: Gitpod Local Companion - localhost is going remote
 ---
 
@@ -82,15 +82,19 @@ If you are not logged in to Gitpod, it will take you through that flow. If you h
 
 Once approval has been granted it will connect to your currently active workspaces and allow VSCode to control the tunnelling between the remote workspace and your local environment using the standard VSCode Ports View.
 
-## Extended VSCode Ports View
+Note that it currently requires a reload of the workspace VS Code page if the companion app is started after the workspace is open to synchronize the ports view - this is temporary.
 
-Gitpod has extended the existing VSCode Ports view to allow additional control of how the ports are exposed. As shown below there is an additional toggle on each port to switch between _Tunnel on localhost_ exposure i.e. nothing outside of your laptop
+## Extended Ports View
+
+Gitpod has extended the existing VSCode Ports view to allow more control of how ports are exposed. As shown below there is an additional toggle on each port to switch between _Tunnel on localhost_ exposure i.e. nothing outside of your laptop
 
 ![tunnel on localhost](../../../static/images/blog/local-app/tunnel-on-all.png)
 
 and _Tunnel on all interfaces_ to make that port available on 0.0.0.0. and, depending on your firewall settings, to anyone that can access your laptop externally.
 
 ![tunnel on all](../../../static/images/blog/local-app/tunnel-on-all.png)
+
+By default it will attempt to tunnel on the same port, but it will pick a random port if it cannot. This is shown in the ports view.
 
 ## SSH Access
 
