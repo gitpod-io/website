@@ -31,7 +31,7 @@ When you started your first workspace above, Gitpod didn't do much. In fact, all
 To develop, you still would have to install dependencies, run build scripts and start the development server every time you start a workspace... We can do better, so let's automate that!
 
 1. In the workspace terminal, make sure you are in your project's root directory (`pwd` should be `/workspace/<repo>`).
-1. Run `gp init` to generate a scaffold `.gitpod.yml` configuration file (see the [.gitpod.yml reference](/docs/references/gitpod-yml) for all configuration options).
+1. Run `gp init` to generate a scaffold `.gitpod.yml` configuration file (see the [.gitpod.yml reference](/docs/config-gitpod-file) for all configuration options).
 1. Open the newly created `.gitpod.yml` file.
 
 ### Init script

@@ -11,7 +11,7 @@ title: Prebuilds
 
 Download & install dependencies, run build scripts, you name it - tasks Gitpod takes care of **before** you start a new development environment so you don't have to wait for any of that.
 
-With prebuilds enabled for your project, Gitpod runs the `before`, `init` and `prebuild` commands in your [`.gitpod.yml`](/docs/references/gitpod-yml) file every time code is pushed to your repository. The resulting snapshot of the development environment is called a prebuilt workspace.
+With prebuilds enabled for your project, Gitpod runs the `before`, `init` and `prebuild` commands in your [`.gitpod.yml`](/docs/config-gitpod-file) file every time code is pushed to your repository. The resulting snapshot of the development environment is called a prebuilt workspace.
 
 When anyone starts a new workspace, all Gitpod needs to do is load the prebuilt workspace. Since the heavy-lifting happened during the prebuild phase, the workspace starts up quickly, allowing you to start your work right away.
 
@@ -70,7 +70,7 @@ By default, Gitpod prepares prebuilt workspaces for all changes on the default b
 > **Note**: Prebuilds are executed as the user who enabled them. This means that if you want to use
 > prebuilds on a private repository, you must give Gitpod access to private repositories.
 
-Prebuilds are configured in your repository's [`.gitpod.yml`](/docs/references/gitpod-yml) file with the following start tasks:
+Prebuilds are configured in your repository's [`.gitpod.yml`](/docs/config-gitpod-file) file with the following start tasks:
 
 - `before`
 - `init`
@@ -80,7 +80,7 @@ Note the absence of the `command` task. Since this task may potentially run inde
 
 ## Configure the GitHub app
 
-Once you have installed the [Gitpod GitHub app](https://github.com/apps/gitpod-io), you can configure its behavior in the `github` section of your repository's [`.gitpod.yml`](/docs/references/gitpod-yml).
+Once you have installed the [Gitpod GitHub app](https://github.com/apps/gitpod-io), you can configure its behavior in the `github` section of your repository's [`.gitpod.yml`](/docs/config-gitpod-file).
 
 > **Note:** The Gitpod GitHub app has no equivalent for GitLab or Bitbucket yet, so this entire section is GitHub-specific for now.
 
