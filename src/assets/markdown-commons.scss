@@ -80,6 +80,7 @@
       }
     }
 
+    &:focus,
     &:hover {
       .icon-link::after {
         opacity: 1;
