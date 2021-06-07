@@ -24,29 +24,6 @@
     font-size: var(--p-large);
   }
 
-  h2,
-  h3 {
-    .icon-link {
-      margin-left: 0.5rem;
-      &::after {
-        content: "";
-        display: inline-block;
-        height: 1.4rem;
-        width: 1.4rem;
-        background-image: url("/svg/headling-link.svg");
-        background-size: cover;
-        opacity: 0;
-        transition: all 0.2s 50ms;
-      }
-    }
-
-    &:hover {
-      .icon-link::after {
-        opacity: 1;
-      }
-    }
-  }
-
   a {
     font-weight: 700;
   }
