@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Svelte example
+title: Svelte template
 ---
 
 <script context="module">
@@ -22,6 +22,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 ### Step 1: Clone Git repository
 
 - Create a new repository based on the [SvelteJS template](https://github.com/gitpod-io/sveltejs-template/generate).
+- Name it e.g. `my-svelte-template`.
 
 ### Step 2: Install Gitpod app
 

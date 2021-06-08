@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Go example
+title: Go template
 ---
 
 <script context="module">
@@ -9,7 +9,7 @@ title: Go example
 
 # Go Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go](https://github.com/gitpod-io/example-golang-cli) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go](https://github.com/gitpod-io/example-golang-cli) template.
 
 The following guide will:
 
@@ -22,6 +22,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 ### Step 1: Clone Git repository
 
 - Create a new repository based on the [Go template](https://github.com/gitpod-io/example-golang-cli/generate).
+- Name it e.g. `my-go-example`.
 
 ### Step 2: Install Gitpod app
 

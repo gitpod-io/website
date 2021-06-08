@@ -23,11 +23,12 @@
   const MENU: MenuEntry[] = [
     M("Introduction", ""),
     M("Quickstart", "quickstart", [
-      M("Node or TypeScript example", "quickstart/typescript"),
-      M("Go example", "quickstart/go"),
-      M("Rust example", "quickstart/rust"),
-      M("Java example", "quickstart/java"),
-      M("Svelte example", "quickstart/svelte"),
+      M("Node/TypeScript", "quickstart/typescript"),
+      M("Python Django", "quickstart/python"),
+      M("Go", "quickstart/go"),
+      M("Rust", "quickstart/rust"),
+      M("Java Spring", "quickstart/java"),
+      M("Svelte", "quickstart/svelte"),
     ]),
     M("Getting Started", "getting-started"),
     M("Configure", "configure", [

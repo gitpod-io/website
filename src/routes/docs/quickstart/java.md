@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Java example
+title: Java template
 ---
 
 <script context="module">
@@ -9,7 +9,7 @@ title: Java example
 
 # Java Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Java](https://github.com/gitpod-io/spring-petclinic) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Java Spring](https://github.com/gitpod-io/spring-petclinic) template.
 
 The following guide will:
 
@@ -22,6 +22,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 ### Step 1: Clone Git repository
 
 - Create a new repository based on the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
+- Name it e.g. `my-java-template`.
 
 ### Step 2: Install Gitpod app
 

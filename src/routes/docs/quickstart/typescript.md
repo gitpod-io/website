@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Node/TypeScript example
+title: Node/TypeScript template
 ---
 
 <script context="module">
@@ -22,6 +22,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 ### Step 1: Clone Git repository
 
 - Create a new repository based on the [Node/TypeScript template](https://github.com/gitpod-io/example-typescript-node/generate).
+- Name it e.g. `my-typescript-template`.
 
 ### Step 2: Install Gitpod app
 

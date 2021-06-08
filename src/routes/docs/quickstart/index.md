@@ -9,14 +9,14 @@ title: Quickstart
 
 # Quickstart
 
-Learn how to start using Gitpod on an example project that is hosted on GitHub in less than 5 minutes. For simplicity we use GitHub as the git hoster but the steps outlined work equally well for GitLab and Bitbucket. This section helps you understand the features and advantages of Gitpod in a learning environment based on the [Gitpod example](/docs/examples) projects. The example projects are pre-configured to use Gitpod:
+Learn how to start using Gitpod on an example project that is hosted on GitHub in less than 5 minutes. For simplicity we use GitHub as the git hoster but the steps outlined work equally well for GitLab and Bitbucket. This section helps you understand the features and advantages of Gitpod in a learning environment. All templates are pre-configured to use Gitpod and ready-to-code:
 
-- [Node or TypeScript example](/docs/quickstart/typescript)
-- [Python example](/docs/quickstart/python)
-- [Go example](/docs/quickstart/go)
-- [Rust example](/docs/quickstart/rust)
-- [Java example](/docs/quickstart/java)
-- [Svelte example](/docs/quickstart/svelte)
+- [Node/TypeScript template](/docs/quickstart/typescript)
+- [Python Django template](/docs/quickstart/python)
+- [Go template](/docs/quickstart/go)
+- [Rust template](/docs/quickstart/rust)
+- [Java Spring template](/docs/quickstart/java)
+- [Svelte template](/docs/quickstart/svelte)
 
 ## Installing the Gitpod browser extension
 

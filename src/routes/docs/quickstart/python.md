@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Python example
+title: Python template
 ---
 
 <script context="module">
@@ -9,7 +9,7 @@ title: Python example
 
 # Python Django Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go](https://github.com/gitpod-io/example-python-django) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Python](https://github.com/gitpod-io/example-python-django) template.
 
 The following guide will:
 
@@ -22,7 +22,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 ### Step 1: Clone Git repository
 
 - Create a new repository based on the [Python template](https://github.com/gitpod-io/example-python-django/generate).
-- Name it e.g. `my-python-example`.
+- Name it e.g. `my-python-template`.
 
 ### Step 2: Install the Gitpod app
 
