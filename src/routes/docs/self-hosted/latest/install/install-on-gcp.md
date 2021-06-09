@@ -1,6 +1,11 @@
 ---
-url: /docs/self-hosted/latest/install/install-on-gcp/
+section: self-hosted/latest/self-hosted
+title: Getting started with Gitpod on GCP
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Getting started with Gitpod on GCP
 

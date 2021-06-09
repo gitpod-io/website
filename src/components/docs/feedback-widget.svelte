@@ -39,7 +39,7 @@
   <div
     class="bg-white shadow-normal rounded-2xl max-w-md py-small px-xx-small m-auto"
   >
-    <h5 class="mb-6 text-center">Was this helpful?</h5>
+    <h5 class="mb-6 text-center w-full">Was this helpful?</h5>
     {#if resultMessage}
       <p class="text-center">{resultMessage}</p>
     {:else}

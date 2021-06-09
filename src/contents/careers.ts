@@ -335,7 +335,7 @@ export const careers: Career[] = [
     rendered: false,
     date: "2021-01-26T14:00:00.000Z",
   },
-  {
+  /*{
     title: "Working Student / Intern - Finance",
     intro: `You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week? You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week?`,
     paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously. 
@@ -383,5 +383,5 @@ export const careers: Career[] = [
     textAfterTheLists: "",
     rendered: false,
     date: "2021-04-21T14:00:00.000Z",
-  },
+  }, */
 ];
