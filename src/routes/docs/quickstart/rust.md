@@ -9,7 +9,7 @@ title: Rust template
 
 # Rust Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Rust](https://github.com/gitpod-io/example-rust-cli) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Rust](https://github.com/gitpod-io/template-rust-cli) template.
 
 The following guide will:
 
@@ -21,7 +21,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [Rust template](https://github.com/gitpod-io/example-rust-cli/generate).
+- Create a new repository based on the [Rust template](https://github.com/gitpod-io/template-rust-cli/generate).
 - Name it e.g. `my-rust-template`.
 
 ### Step 2: Install Gitpod app
@@ -34,7 +34,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/example-rust-cli`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/my-rust-template`
 
 Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 

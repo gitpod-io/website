@@ -9,7 +9,7 @@ title: Svelte template
 
 # Svelte Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [SvelteJS](https://github.com/gitpod-io/sveltejs-template) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [SvelteJS](https://github.com/gitpod-io/template-sveltejs) template.
 
 The following guide will:
 
@@ -21,7 +21,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [SvelteJS template](https://github.com/gitpod-io/sveltejs-template/generate).
+- Create a new repository based on the [SvelteJS template](https://github.com/gitpod-io/template-sveltejs/generate).
 - Name it e.g. `my-svelte-template`.
 
 ### Step 2: Install Gitpod app
@@ -34,7 +34,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/sveltejs-template`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/my-svelte-template`
 
 Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 

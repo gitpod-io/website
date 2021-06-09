@@ -9,7 +9,7 @@ title: Flask template
 
 # Flask Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Flask](https://github.com/gitpod-io/example-python-flask) template.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Flask](https://github.com/gitpod-io/template-python-flask) template.
 
 The following guide will:
 
@@ -21,7 +21,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [Flask template](https://github.com/gitpod-io/example-python-flask/generate).
+- Create a new repository based on the [Flask template](https://github.com/gitpod-io/template-python-flask/generate).
 - Name it e.g. `my-flask-template`.
 
 ### Step 2: Install the Gitpod app
@@ -34,7 +34,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<my-flask-example>`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<my-flask-template>`
 
 Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
