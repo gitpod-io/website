@@ -1,15 +1,15 @@
 ---
 section: quickstart
-title: Node/TypeScript template
+title: Node/TypeScript/Express template
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Node/TypeScript Quickstart
+# Node/TypeScript/Express Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Node/TypeScript](https://github.com/gitpod-io/template-typescript-node) template.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Node/TypeScript/Express](https://github.com/gitpod-io/template-typescript-node) template.
 
 The following guide will:
 

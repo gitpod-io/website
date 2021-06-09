@@ -23,7 +23,7 @@
   const MENU: MenuEntry[] = [
     M("Introduction", ""),
     M("Quickstart", "quickstart", [
-      M("Node/TypeScript", "quickstart/typescript"),
+      M("Node/TypeScript/Express", "quickstart/typescript"),
       M("Python Django", "quickstart/python"),
       M("Python Flask", "quickstart/flask"),
       M("Go", "quickstart/go"),
