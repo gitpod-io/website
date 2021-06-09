@@ -25,6 +25,7 @@
     M("Quickstart", "quickstart", [
       M("Node/TypeScript", "quickstart/typescript"),
       M("Python Django", "quickstart/python"),
+      M("Python Flask", "quickstart/flask"),
       M("Go", "quickstart/go"),
       M("Rust", "quickstart/rust"),
       M("Java Spring", "quickstart/java"),

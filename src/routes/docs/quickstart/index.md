@@ -13,6 +13,7 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 
 - [Node/TypeScript template](/docs/quickstart/typescript)
 - [Python Django template](/docs/quickstart/python)
+- [Python Flask template](/docs/quickstart/flask)
 - [Go template](/docs/quickstart/go)
 - [Rust template](/docs/quickstart/rust)
 - [Java Spring template](/docs/quickstart/java)
