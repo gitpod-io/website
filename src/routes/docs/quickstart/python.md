@@ -9,7 +9,7 @@ title: Python example
 
 # Python Django Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go](https://github.com/gitpod-io/example-python-django) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Python](https://github.com/gitpod-io/example-python-django) example.
 
 The following guide will:
 
