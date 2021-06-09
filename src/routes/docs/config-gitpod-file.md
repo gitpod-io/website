@@ -22,8 +22,6 @@ ports:
     onOpen: open-preview
 ```
 
-Please refer to the [`.gitpod.yml` reference](/docs/config-gitpod-file) for a list of all available configuration options and their meaning.
-
 ## How to provide the .gitpod.yml config file
 
 In order to tell Gitpod how to prepare a dev environment for your project, you check in a `.gitpod.yml` file into the root of your repository. This way you can
