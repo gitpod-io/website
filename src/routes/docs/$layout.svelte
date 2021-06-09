@@ -29,6 +29,7 @@
       M("Go", "quickstart/go"),
       M("Rust", "quickstart/rust"),
       M("Java Spring", "quickstart/java"),
+      M("React", "quickstart/react"),
       M("Svelte", "quickstart/svelte"),
     ]),
     M("Getting Started", "getting-started"),

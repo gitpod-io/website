@@ -17,6 +17,7 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 - [Go template](/docs/quickstart/go)
 - [Rust template](/docs/quickstart/rust)
 - [Java Spring template](/docs/quickstart/java)
+- [React template](/docs/quickstart/react)
 - [Svelte template](/docs/quickstart/svelte)
 
 ## Installing the Gitpod browser extension
