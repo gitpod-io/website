@@ -80,13 +80,13 @@ To run it without storing the access token (it will generate a new token every t
 
 If you are not logged in to Gitpod, it will take you through that flow. If you haven't run the local app previously it will also ask you to approve access to the control data of all your workspaces, returning a token that grants the access. This token will be stored in your local keyring for future use (unless you specify otherwise).
 
-Once approval has been granted it will connect to your currently active workspaces and allow VSCode to control the tunnelling between the remote workspace and your local environment using the standard VSCode Ports View.
+Once approval has been granted it will connect to your currently active workspaces and allow VSCode to control the tunnelling between the remote workspace and your local environment using the _Remote Explorer Ports View_.
 
 Note that it currently requires a reload of the workspace VS Code page if the companion app is started after the workspace is open to synchronize the ports view - this is temporary.
 
-## Extended Ports View
+## Remote Explorer Ports View
 
-Gitpod has extended the existing VSCode Ports view to allow more control of how ports are exposed. As shown below there is an additional toggle on each port to switch between _Tunnel on localhost_ exposure i.e. nothing outside of your laptop
+Gitpod has extended the Remote Explorer Ports view to allow more control of how ports are exposed. As shown below there is an additional toggle on each port to switch between _Tunnel on localhost_ exposure i.e. nothing outside of your laptop
 
 ![tunnel on localhost](../../../static/images/blog/local-app/tunnel-on-all.png)
 
@@ -94,7 +94,9 @@ and _Tunnel on all interfaces_ to make that port available on 0.0.0.0. and, depe
 
 ![tunnel on all](../../../static/images/blog/local-app/tunnel-on-all.png)
 
-By default it will attempt to tunnel on the same port, but it will pick a random port if it cannot. This is shown in the ports view.
+By default it will attempt to tunnel on the same port, but it will pick a random port if it cannot. This is reflected in the Remote Explorer Ports view below where local port 3000 is tunneled via port 49605:
+
+![tunnel on random](../../../static/images/blog/local-app/tunnel-on-random.png)
 
 ## SSH Access
 
