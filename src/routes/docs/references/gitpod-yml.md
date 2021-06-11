@@ -297,7 +297,9 @@ Configure the VS Code editor.
 
 ### `vscode.extensions`
 
-Define a list of extensions which should be installed for users of this workspace. The identifier of an extension is always `${publisher}.${name}`. For example: 'vscode.csharp'.
+Define a list of extensions which should be installed for users of this workspace. The identifier of an extension is always `${publisher}.${name}`. For example: 'vscode.vim'.
+
+Please note, Gitpod uses the [Open VSX registry](https://open-vsx.org/) to find extensions. If you cannot find an extension you know exists in your local VS Code, please get in touch with us or open a new PR in the [open-vsx/publish-extensions](https://github.com/open-vsx/publish-extensions) repository to add the extension to Open VSX 🙏.
 
 | Type     | Default   |
 | -------- | --------- |
