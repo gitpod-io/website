@@ -148,6 +148,8 @@ Define a custom Docker image to be used for workspaces. To learn more, please re
 
 Public images are hosted on [Docker Hub](https://hub.docker.com/u/gitpod/) and can be referenced by their name, e.g. `ubuntu:latest`.
 
+To see a list of Gitpod-provided images, please see [gitpod-io/workspace-images](https://github.com/gitpod-io/workspace-images).
+
 | Type                 | Default                 |
 | -------------------- | ----------------------- |
 | `object` or `string` | `gitpod/workspace-full` |
