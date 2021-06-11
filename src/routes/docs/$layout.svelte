@@ -41,6 +41,7 @@
       M("Exposing Ports", "config-ports"),
       M("Prebuilds", "prebuilds"),
       M("Environment Variables", "environment-variables"),
+      M("Checkout and Workspace Location", "checkout-location"),
     ]),
     M("Develop", "develop", [
       M("One workspace per task", "workspaces"),
@@ -79,7 +80,7 @@
       M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
     ]),
     M("References", "references", [
-      // M(".gitpod.yml", "references/gitpod-yml"),
+      M(".gitpod.yml", "references/gitpod-yml"),
       // M("Custom Docker image", "references/gitpod-dockerfile"),
       // M("Architecture", "references/architecture"),
       // M("Troubleshooting", "references/troubleshooting"),
