@@ -134,7 +134,7 @@ Gitpod can add a comment with an “Open in Gitpod” button to your pull reques
 
 ## `image`
 
-Define a custom Docker image to be used for workspaces. To learn more, please review [Custom Docker Image](docs/config-docker).
+Define a custom Docker image to be used for workspaces. To learn more, please review [Custom Docker Image](/docs/config-docker).
 
 Public images are hosted on [Docker Hub](https://hub.docker.com/u/gitpod/) and can be referenced by their name, e.g. `ubuntu:latest`.
 
