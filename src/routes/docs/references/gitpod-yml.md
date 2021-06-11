@@ -11,7 +11,7 @@ title: .gitpod.yml Reference
 
 The `.gitpod.yml` file at the root of your project is where you tell Gitpod how to prepare & build your project, start development servers and configure continuous [prebuilds](/docs/prebuilds) for GitHub.
 
-Below is a full reference of all available properties. To see the underlying schema, please refer to [`components/gitpod-protocol/data/gitpod-schema.json`](https://github.com/gitpod-io/gitpod/blob/main/components/gitpod-protocol/data/gitpod-schema.json) in the [gitpod-io/gitpod](https://github.com/gitpod-io/gitpod) repository.
+Below is a full reference of all available properties. To see the underlying schema, please refer to [`gitpod-io/gitpod`](https://github.com/gitpod-io/gitpod/blob/main/components/gitpod-protocol/data/gitpod-schema.json) in the [gitpod-io/gitpod](https://github.com/gitpod-io/gitpod) repository.
 
 - [`checkoutLocation`](#checkoutlocation)
 - [`gitConfig`](#gitconfig)
@@ -189,9 +189,9 @@ Configure how Gitpod treats various ports your application may listen on. You ca
 
 Define what to do when Gitpod detects a given port is being listened on.
 
-| Type     | Default   | Values                                             |
-| -------- | --------- | -------------------------------------------------- |
-| `string` | `<empty>` | `open-browser`, `open-preview`, `notify`, `ignore` |
+| Type     | Default   | Values                                                                  |
+| -------- | --------- | ----------------------------------------------------------------------- |
+| `string` | `<empty>` | `open-browser`,<br><br>`open-preview`,<br><br>`notify`,<br><br>`ignore` |
 
 ### `ports[n].port`
 
@@ -207,9 +207,9 @@ Define whether to expose the port publicly or keep it private.
 
 A public port allows you to share a URL for a given port with team members, for example if you want to get their feedback on a new feature you develop.
 
-| Type     | Default  | Values             |
-| -------- | -------- | ------------------ |
-| `string` | `public` | `private`,`public` |
+| Type     | Default  | Values                     |
+| -------- | -------- | -------------------------- |
+| `string` | `public` | `private`,<br><br>`public` |
 
 ## `tasks`
 
@@ -275,9 +275,9 @@ Deprecated. This does not have an impact in VS Code.
 
 Configure how the terminal should be opened relative to the previous task.
 
-| Type     | Default   | Values                                              |
-| -------- | --------- | --------------------------------------------------- |
-| `string` | `<empty>` | `tab-after`,`tab-before`,`split-right`,`split-left` |
+| Type     | Default   | Values                                                                      |
+| -------- | --------- | --------------------------------------------------------------------------- |
+| `string` | `<empty>` | `tab-after`,<br><br>`tab-before`,<br><br>`split-right`,<br><br>`split-left` |
 
 Note: `split-top` and `split-bottom` are deprecated values.
 
