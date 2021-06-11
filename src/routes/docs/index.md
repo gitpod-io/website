@@ -15,7 +15,7 @@ Gitpod enables development teams to describe their dev environment as code and *
 
 ## Always ready-to-code
 
-Too much time is lost to a poor development experience. Setting up local dev environments that are brittle. Waiting for compilation. Downloading dependancies. Massaging them over time to make sure they work with all projects. "Works on my machine" situations, configuration drift and broken tool chains are slowing down professional software teams.
+Too much time is lost to a poor development experience. Setting up local dev environments that are brittle. Waiting for compilation. Downloading dependencies. Massaging them over time to make sure they work with all projects. "Works on my machine" situations, configuration drift and broken tool chains are slowing down professional software teams.
 
 With Gitpod this stops. Instead you treat dev environments as automated resources you spin up when you need them and close down (and forget about) when you are done with your task. Dev environments become fully ephemeral.
 
