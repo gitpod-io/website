@@ -82,6 +82,8 @@ Configure the [GitHub Gitpod](https://github.com/apps/gitpod-io) app. At this ti
 
 Gitpod can modify the description of a pull request to add an “Open in Gitpod” button. This approach produces fewer GitHub notifications than [adding a comment](#prebuildsaddcomment), but can also create a concurrent editing conflict when the bot and a user try to edit the description of a pull request at the same time.
 
+![An Open in Gitpod badge in a PR description](../../../images/docs/beta/references/gitpod-yml/references-gitpod-yml-github-badge.png)
+
 | Type      | Default |
 | --------- | ------- |
 | `boolean` | `false` |
