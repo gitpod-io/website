@@ -100,6 +100,8 @@ Configure whether Gitpod registers itself as a status check to pull requests - m
 
 Gitpod can add a comment with an “Open in Gitpod” button to your pull requests. Alternatively, you could [add a badge](#prebuildsaddbadge) to the pull request's description.
 
+![An Open in Gitpod badge in a PR description](../../../images/docs/beta/references/gitpod-yml/references-gitpod-yml-github-comment.png)
+
 | Type      | Default |
 | --------- | ------- |
 | `boolean` | `false` |
