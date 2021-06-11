@@ -181,21 +181,29 @@ Configure how Gitpod treats various ports your application may listen on. You ca
 
 ### `ports[n].onOpen`
 
+Define what to do when Gitpod detects a given port is being listened on.
+
 | Type     | Default   | Values                                             |
 | -------- | --------- | -------------------------------------------------- |
 | `string` | `<empty>` | `open-browser`, `open-preview`, `notify`, `ignore` |
 
 ### `ports[n].port`
 
-| Type     | Default   |
-| -------- | --------- |
-| `number` | `<empty>` |
+Define a single port or a range of ports, e.g. `3000-3100`.
+
+| Type                 | Default   |
+| -------------------- | --------- |
+| `number` or `string` | `<empty>` |
 
 ### `ports[n].visibility`
 
-| Type     | Default   | Values             |
-| -------- | --------- | ------------------ |
-| `string` | `<empty>` | `private`,`public` |
+Define whether to expose the port publicly or keep it private.
+
+A public port allows you to share a URL for a given port with team members, for example if you want to get their feedback on a new feature you develop.
+
+| Type     | Default  | Values             |
+| -------- | -------- | ------------------ |
+| `string` | `public` | `private`,`public` |
 
 ## `tasks`
 
