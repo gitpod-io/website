@@ -90,7 +90,7 @@ Gitpod can modify the description of a pull request to add an â€œOpen in Gitpodâ
 
 ### `prebuilds.addCheck`
 
-Configure whether Gitpod registers itself as a check to pull requests - much like a continuous integration system would do.
+Configure whether Gitpod registers itself as a status check to pull requests - much like a continuous integration system would do. To learn more about status checks, please see the GitHub documentation [about status checks](https://docs.github.com/en/github/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks).
 
 | Type      | Default |
 | --------- | ------- |
