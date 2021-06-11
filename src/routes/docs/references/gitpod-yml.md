@@ -54,21 +54,29 @@ In most cases, this is not needed. If you work on an older Go project, please se
 | -------- | ------------ |
 | `string` | `/workspace` |
 
-## `gitConfig`
-
-Define a workspace's git configuration as key-value pairs, such as:
+**Example**
 
 ```yaml
-gitConfig:
-  alias.st: status
-  core.autocrlf: input
+checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
 ```
+
+## `gitConfig`
+
+Define a workspace's git configuration as key-value pairs.
 
 Please refer to https://git-scm.com/docs/git-config#_values for a list of accepted values.
 
 | Type     | Default   |
 | -------- | --------- |
 | `object` | `<empty>` |
+
+**Example**
+
+```yaml
+gitConfig:
+  alias.st: status
+  core.autocrlf: input
+```
 
 ## `github`
 
@@ -77,6 +85,20 @@ Configure the [GitHub Gitpod](https://github.com/apps/gitpod-io) app. At this ti
 | Type     | Default   |
 | -------- | --------- |
 | `object` | `<empty>` |
+
+**Example**
+
+```yaml
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: false
+    addComment: false
+    addBadge: true
+```
 
 ### `prebuilds.addBadge`
 
@@ -154,16 +176,34 @@ To see a list of Gitpod-provided images, please see [gitpod-io/workspace-images]
 | -------------------- | ----------------------- |
 | `object` or `string` | `gitpod/workspace-full` |
 
-### `image.file`
+**Examples**
 
-To define a custom Docker image, you can use the following configuration:
+_With a public image_
+
+```yaml
+image: ubuntu:latest
+```
+
+_With a custom image_
 
 ```yaml
 image:
   file: .gitpod.Dockerfile
 ```
 
-For a list of example, please see https://github.com/gitpod-io/workspace-images.
+_With an optional context_
+
+```yaml
+image:
+  file: .gitpod.Dockerfile
+  context: ./docker-content
+```
+
+### `image.file`
+
+To define a custom Docker image, you can use the following configuration:
+
+For a list of examples, please see https://github.com/gitpod-io/workspace-images.
 
 | Type     | Default   |
 | -------- | --------- |
@@ -184,6 +224,16 @@ Configure how Gitpod treats various ports your application may listen on. You ca
 | Type    | Default   |
 | ------- | --------- |
 | `array` | `<empty>` |
+
+**Example**
+
+```yaml
+ports:
+  - port: 3000
+    onOpen: open-preview
+  - port: 10000
+    onOpen: ignore
+```
 
 ### `ports[n].onOpen`
 
@@ -218,6 +268,21 @@ Define how Gitpod prepares & builds your project and how it can start the projec
 | Type    | Default   |
 | ------- | --------- |
 | `array` | `<empty>` |
+
+**Example**
+
+```yaml
+tasks:
+  - before: sh ./scripts/setup.sh
+    init: npm install
+    command: npm run dev
+  - name: Database
+    init: sh ./scripts/seed-database.sh
+    command: npm start-db
+    env:
+      DB_HOST: localhost:3306
+      DB_USER: readOnlyUser
+```
 
 ### `tasks[n].before`
 
@@ -309,6 +374,15 @@ Please note, Gitpod uses the [Open VSX registry](https://open-vsx.org/) to find 
 | -------- | --------- |
 | `object` | `<empty>` |
 
+**Example**
+
+```yaml
+vscode:
+  extensions:
+    - svelte.svelte-vscode
+    - bradlc.vscode-tailwindcss
+```
+
 ## `workspaceLocation`
 
 Define which path Gitpod considers the project's workspace directory, relative to `/workspace`.
@@ -318,3 +392,9 @@ In most cases, this is not needed. If you work on an older Go project, please se
 | Type     | Default      |
 | -------- | ------------ |
 | `string` | `/workspace` |
+
+**Example**
+
+```yaml
+workspaceLocation: "."
+```
