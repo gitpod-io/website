@@ -104,26 +104,9 @@ tasks:
     command: echo LeftPanelTerminal
 ```
 
-## openIn
-
-You can configure where in the IDE the terminal should be opened:
-
-<div class="table-container">
-
-| openIn           | Where                      |
-| ---------------- | -------------------------- |
-| `openIn: bottom` | the bottom panel (default) |
-| `openIn: left`   | the left panel             |
-| `openIn: right`  | the right panel            |
-| `openIn: main`   | the main editor area       |
-
-</div>
-
 ## openMode
 
 You can configure how the terminal should be opened relative to the previous task.
-
-<div class="table-container">
 
 | openMode                 | Description                                              |
 | ------------------------ | -------------------------------------------------------- |
@@ -131,7 +114,5 @@ You can configure how the terminal should be opened relative to the previous tas
 | `openMode: tab-before`   | Opens in the same tab group left before the previous tab |
 | `openMode: split-right`  | Splits and adds the terminal to the right                |
 | `openMode: split-left`   | Splits and adds the terminal to the left                 |
-| `openMode: split-top`    | Splits and adds the terminal to the top                  |
-| `openMode: split-bottom` | Splits and adds the terminal to the bottom               |
-
-</div>
+| `openMode: split-top`    | [Deprecated] Splits and adds the terminal to the top     |
+| `openMode: split-bottom` | [Deprecated] Splits and adds the terminal to the bottom  |

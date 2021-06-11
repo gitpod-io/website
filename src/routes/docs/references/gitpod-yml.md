@@ -28,18 +28,18 @@ Below is a full reference of all available properties. To see the underlying sch
   - [`image.file`](#imagefile)
   - [`image.context`](#imagecontext)
 - [`ports`](#ports)
-  - [`ports[n].onOpen`](#portsn-onopen-)
-  - [`ports[n].port`](#portsn-port-)
-  - [`ports[n].visibility`](#portsn-visibility-)
+  - [`ports[n].onOpen`](#portsnonopen)
+  - [`ports[n].port`](#portsnport)
+  - [`ports[n].visibility`](#portsnvisibility)
 - [`tasks`](#tasks)
-  - [`tasks[n].before`](#tasksn-before-)
-  - [`tasks[n].command`](#tasksn-command-)
-  - [`tasks[n].env`](#tasksn-env-)
-  - [`tasks[n].init`](#tasksn-init-)
-  - [`tasks[n].name`](#tasksn-name-)
-  - [`tasks[n].openIn`](#tasksn-openin-)
-  - [`tasks[n].openMode`](#tasksn-openmode-)
-  - [`tasks[n].prebuild`](#tasksn-prebuild-)
+  - [`tasks[n].before`](#tasksnbefore)
+  - [`tasks[n].command`](#tasksncommand)
+  - [`tasks[n].env`](#tasksnenv)
+  - [`tasks[n].init`](#tasksninit)
+  - [`tasks[n].name`](#tasksnname)
+  - [`tasks[n].openIn`](#tasksnopenin)
+  - [`tasks[n].openMode`](#tasksnopenmode)
+  - [`tasks[n].prebuild`](#tasksnprebuild)
 - [`vscode`](#vscode)
   - [`vscode.extensions`](#vscodeextensions)
 - [`workspaceLocation`](#workspacelocation)
@@ -82,55 +82,61 @@ Configure the [GitHub Gitpod](https://github.com/apps/gitpod-io) app. At this ti
 
 Gitpod can modify the description of a pull request to add an “Open in Gitpod” button. This approach produces fewer GitHub notifications than [adding a comment](#prebuildsaddcomment), but can also create a concurrent editing conflict when the bot and a user try to edit the description of a pull request at the same time.
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `false` |
+| Type      | Default |
+| --------- | ------- |
+| `boolean` | `false` |
 
 ### `prebuilds.addCheck`
 
 Configure whether Gitpod registers itself as a check to pull requests - much like a continuous integration system would do.
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `true`  |
+| Type      | Default |
+| --------- | ------- |
+| `boolean` | `true`  |
 
 ### `prebuilds.addComment`
 
 Gitpod can add a comment with an “Open in Gitpod” button to your pull requests. Alternatively, you could [add a badge](#prebuildsaddbadge) to the pull request's description.
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `false` |
+| Type      | Default |
+| --------- | ------- |
+| `boolean` | `false` |
 
 ### `prebuilds.addLabel`
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `false` |
+Deprecated.
 
 ### `prebuilds.branches`
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `false` |
+Define whether Gitpod creates prebuilds for all branches.
+
+| Type      | Default |
+| --------- | ------- |
+| `boolean` | `false` |
 
 ### `prebuilds.master`
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `true`  |
+Define whether Gitpod creates prebuilds for the default branch.
+
+| Type      | Default |
+| --------- | ------- |
+| `boolean` | `true`  |
 
 ### `prebuilds.pullRequests`
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `true`  |
+Define whether Gitpod creates prebuilds for pull requests from the original repository.
+
+| Type      | Default |
+| --------- | ------- |
+| `boolean` | `true`  |
 
 ### `prebuilds.pullRequestsFromForks`
 
-| Type     | Default |
-| -------- | ------- |
-| `string` | `false` |
+Define whether Gitpod creates prebuilds for pull requests from forks.
+
+| Type      | Default |
+| --------- | ------- |
+| `boolean` | `false` |
 
 ## `image`
 
@@ -175,9 +181,9 @@ Configure how Gitpod treats various ports your application may listen on. You ca
 
 ### `ports[n].onOpen`
 
-| Type   | Default   | Values                                             |
-| ------ | --------- | -------------------------------------------------- |
-| `enum` | `<empty>` | `open-browser`, `open-preview`, `notify`, `ignore` |
+| Type     | Default   | Values                                             |
+| -------- | --------- | -------------------------------------------------- |
+| `string` | `<empty>` | `open-browser`, `open-preview`, `notify`, `ignore` |
 
 ### `ports[n].port`
 
@@ -187,9 +193,9 @@ Configure how Gitpod treats various ports your application may listen on. You ca
 
 ### `ports[n].visibility`
 
-| Type   | Default   | Values             |
-| ------ | --------- | ------------------ |
-| `enum` | `<empty>` | `private`,`public` |
+| Type     | Default   | Values             |
+| -------- | --------- | ------------------ |
+| `string` | `<empty>` | `private`,`public` |
 
 ## `tasks`
 
@@ -253,7 +259,13 @@ Deprecated. This does not have an impact in VS Code.
 
 ### `tasks[n].openMode`
 
-TODO
+Configure how the terminal should be opened relative to the previous task.
+
+| Type     | Default   | Values                                              |
+| -------- | --------- | --------------------------------------------------- |
+| `string` | `<empty>` | `tab-after`,`tab-before`,`split-right`,`split-left` |
+
+Note: `split-top` and `split-bottom` are deprecated values.
 
 ### `tasks[n].prebuild`
 
