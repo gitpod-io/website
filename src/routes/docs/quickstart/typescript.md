@@ -17,7 +17,7 @@ The following guide will:
 - Introduce you to prebuilds
 - Demonstrate the benefits of ephemeral development environments
 
-For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab and Bitbucket.
+For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
 
 ### Step 1: Clone Git repository
 
