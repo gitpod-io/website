@@ -9,6 +9,12 @@ title: Start Tasks
 
 # Start Tasks
 
+<!--
+  Source for diagrams: https://excalidraw.com/#json=5027233924120576,Q1wmKmnsM3h5PaJfaTlvag
+
+  ! If you update the diagrams, make sure you replace the above, immutable URL !
+-->
+
 To get the most out of ephemeral development environments, it is important to let Gitpod know how to build your project. We can achieve this by defining `tasks` in the [`.gitpod.yml`](/docs/references/gitpod-yml) configuration file.
 
 > **Note**: In your local development environment, you likely set up your project only once. If you work in a team, you probably have written instructions on how to get started. With Gitpod, you automate these manual steps so that a new environment can be set up repeatedly by Gitpod.
@@ -38,7 +44,7 @@ The `init` task is where you want to do the heavy lifting, things like:
 - Run your test suite
 - Any other long-running, terminating processes necessary to prepare your project
 
-As displayed in the diagram above, we highly recommend you enable Prebuilds for your project. In that case, Gitpod automatically executes the `before` and most importantly, `init` tasks automatically for each new commit to your project.
+As displayed in the diagram above, we highly recommend you enable Prebuilds for your project. In that case, Gitpod executes the `before` and most importantly, `init` tasks automatically for each new commit to your project.
 
 By the time you start a new workspace, all that's left to do is execute the `begin` (optional) and `command` tasks. The latter most often starts a database and/or development server.
 
