@@ -36,7 +36,7 @@ For simplicity we use a GitHub template, but Gitpod works similarly with GitLab 
 
 The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/template-golang-cli`
 
-Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
+Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
 ### Step 4: Enjoy being ready-to-code 🤙
 
