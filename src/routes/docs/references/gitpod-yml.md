@@ -316,7 +316,11 @@ Learn more about [Environment Variables](/docs/environment-variables) in the doc
 
 ### `tasks[n].init`
 
-A shell command to run between `before` and the main `command`. This command is executed only on after initializing a workspace with a fresh clone, but not on restarts and snapshots. This command is expected to terminate. If it fails, the `command` property will not be executed.
+A shell command to run between `before` and the main `command`.
+
+This task is executed only once. When you start a workspace that does not have a [prebuild](/docs/prebuilds), `init` is executed at workspace start. When you start a workspace that has a prebuild, `init` executes as part of the prebuild, but does NOT execute again at workspace start.
+
+This task is expected to terminate. If it fails, the `command` property will not be executed.
 
 Learn more about [Start Tasks](/docs/config-start-tasks) in the docs.
 
@@ -348,13 +352,7 @@ Note: `split-top` and `split-bottom` are deprecated values.
 
 ### `tasks[n].prebuild`
 
-A shell command to run after `before`. This command is executed only on during workspace prebuilds. This command is expected to terminate. If it fails, the workspace build fails.
-
-Learn more about [Start Tasks](/docs/config-start-tasks) in the docs.
-
-| Type     | Default   |
-| -------- | --------- |
-| `string` | `<empty>` |
+Deprecated. Please use the [`init`](#tasksninit) task instead.
 
 ## `vscode`
 

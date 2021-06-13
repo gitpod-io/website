@@ -48,12 +48,12 @@ Task properties will control when a command is executed. The table below provide
 
 <div class="table-container">
 
-| Start Mode        | Execution                    |
-| ----------------- | ---------------------------- |
-| Fresh Workspace   | `before && init && command`  |
-| Restart Workspace | `before && command`          |
-| Snapshot          | `before && command`          |
-| Prebuild          | `before && init && prebuild` |
+| Start Mode        | Execution                   |
+| ----------------- | --------------------------- |
+| Fresh Workspace   | `before && init && command` |
+| Restart Workspace | `before && command`         |
+| Snapshot          | `before && command`         |
+| Prebuild          | `before && init`            |
 
 </div>
 
@@ -82,11 +82,6 @@ tasks:
     init: npm install
     command: npm run dev
 ```
-
-### `prebuild` command
-
-The `prebuild` command will be executed during [prebuilds](/docs/prebuilds). It is meant to run additional
-long-running processes that could be useful, e.g. running test suites. Make sure this command terminates as otherwise the prebuild will eventually time out.
 
 ### Configure the terminal
 
