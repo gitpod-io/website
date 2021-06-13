@@ -11,6 +11,7 @@ title: Quickstart
 
 Learn how to start using Gitpod on an example project that is hosted on GitHub in less than 5 minutes. For simplicity we use GitHub as the git hoster but the steps outlined work equally well for GitLab and Bitbucket. This section helps you understand the features and advantages of Gitpod in a learning environment. All templates are pre-configured to use Gitpod and ready-to-code:
 
+- [Deno](/docs/quickstart/deno)
 - [Go](/docs/quickstart/go)
 - [Java Spring](/docs/quickstart/java)
 - [Node/TypeScript/Express](/docs/quickstart/typescript)
