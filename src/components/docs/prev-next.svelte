@@ -6,7 +6,7 @@
 
 <style lang="scss">
   a {
-    @apply font-normal;
+    @apply font-thin;
   }
 </style>
 
@@ -14,7 +14,9 @@
   class="flex justify-between pt-xx-small border-t border-solid border-gray-400"
 >
   {#if menuCtx.prev}
-    <a href={menuCtx.prev.path} title={`Prev: ${menuCtx.prev.title}`}> Prev </a>
+    <a href={menuCtx.prev.path} title={`Previous: ${menuCtx.prev.title}`}>
+      Previous
+    </a>
   {:else}
     <div />
   {/if}
