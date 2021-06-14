@@ -1,15 +1,15 @@
 ---
 section: quickstart
-title: Rust template
+title: Drupal template
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Rust Quickstart
+# Drupal Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Rust](https://github.com/gitpod-io/template-rust-cli) template.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Drupal](https://github.com/gitpod-io/template-php-drupal-ddev) template.
 
 The following guide will:
 
@@ -21,10 +21,10 @@ For simplicity we use a GitHub template, but Gitpod works similarly with GitLab 
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [Rust template](https://github.com/gitpod-io/template-rust-cli/generate).
-- Name it e.g. `my-rust-template`.
+- Create a new repository based on the [Drupal template](https://github.com/gitpod-io/template-php-drupal-ddev/generate).
+- Name it e.g. `my-drupal-template`.
 
-### Step 2: Install Gitpod app
+### Step 2: Install the Gitpod app
 
 - Install the [Gitpod App](https://github.com/apps/gitpod-io/installations/new).
 
@@ -34,7 +34,7 @@ For simplicity we use a GitHub template, but Gitpod works similarly with GitLab 
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/my-rust-template`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<my-drupal-template>`
 
 Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 

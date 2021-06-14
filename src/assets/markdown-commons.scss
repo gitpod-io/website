@@ -47,9 +47,12 @@
     @apply font-normal;
   }
 
-  td:first-child {
-    @apply font-bold;
+  td {
     @apply align-top;
+  }
+
+  td:first-child {
+    @apply font-bold text-gray-900;
   }
 
   th + th,

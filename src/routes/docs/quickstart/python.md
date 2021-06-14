@@ -17,7 +17,7 @@ The following guide will:
 - Introduce you to prebuilds
 - Demonstrate the benefits of ephemeral development environments
 
-For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab and Bitbucket.
+For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
 
 ### Step 1: Clone Git repository
 
@@ -36,7 +36,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<my-python-template>`
 
-Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
+Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
 ### Step 4: Enjoy being ready-to-code 🤙
 

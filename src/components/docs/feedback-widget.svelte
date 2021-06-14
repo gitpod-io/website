@@ -43,10 +43,7 @@
     {#if resultMessage}
       <p class="text-center">{resultMessage}</p>
     {:else}
-      <form
-        on:submit|preventDefault={submitFeedback}
-        title="Share your feedback about our docs"
-      >
+      <form on:submit|preventDefault={submitFeedback}>
         <div class="flex justify-center space-x-6">
           {#each new Array(4) as _, index}
             <button
@@ -57,6 +54,7 @@
               <img
                 src="/images/docs/feedback-widget/{index + 1}.svg"
                 alt="Feedback {index + 1} of 4"
+                title="Feedback {index + 1} of 4"
                 class="h-6 w-6"
               />
             </button>
