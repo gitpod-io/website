@@ -13,7 +13,7 @@ On April 28- 29 we hosted the [DevX Conference](http://www.devxconf.org), a spac
 
 Speakers included [Jason Warner](https://twitter.com/jasoncwarner) (CTO Github), [Beyang Liu](https://twitter.com/beyang) (CTO Sourcegraph), [Josh Long](https://twitter.com/starbuxman) (Spring), [Shanea Leven](https://www.linkedin.com/in/shaneak/) (Founder Codesee), [Ellen Chisa](https://twitter.com/ellenchisa) (Founder Darklang), [Henry Zhu](https://twitter.com/left_pad) (Steward of BabelJS), [Maël Nison](https://twitter.com/arcanis) (Creator Yarn), [Nader Dabit](https://twitter.com/dabit3) (GraphQL & Serverless), [Anurag Goel](https://www.linkedin.com/in/anuragoel/) (Founder Render), [Yihong Cheng](https://github.com/xcv58) (Github1s), [Tuomas Artman](https://twitter.com/artman) (Founder Linear) and many more.
 
-# Event retrospective
+## Event retrospective
 
 First of all, we were amazed by the attention that was drawn by this topic. It was the first conference ever organized by this team and it was being driven by a Gitpod, a company that's still on the starting line of its potential. More than 1.5k curious minds signed up for the event and more than 40% of them attended the live conference. There, 28 great speakers shared their expertise and unique knowledge with us. In case you missed a talk or would like to see them again, all recordings are now available on YouTube. To provide a space for attendees and speakers to interact live during the talks, we created a discord server. In total 550+ users signed up to join the live discussions. If you haven't joined the channel yet and would like to stay connected with the community, [you can still join](https://www.gitpod.io/chat).
 

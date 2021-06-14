@@ -30,8 +30,16 @@
 .text-blob ::marker {
   color: var(--brand-ripe);
 }
-.text-blob ul {
-  list-style: "- " outside;
+.text-blob ul li {
+  position: relative;
+  margin-bottom: 0;
+
+  &::before {
+    content: "—";
+    position: absolute;
+    left: calc(var(--x-small) * -1);
+    color: var(--brand-ripe);
+  }
 }
 .text-blob h2,
 .text-blob h3,

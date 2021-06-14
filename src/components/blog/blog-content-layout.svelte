@@ -71,7 +71,7 @@
     imageTwitter: `images/blog/${slug}/${image}`,
   }}
 />
-<div class="post text-blob content-blog">
+<div class="post content-blog">
   <img
     src="/images/blog/{slug}/{teaserImage || image}"
     alt={`${title}`}

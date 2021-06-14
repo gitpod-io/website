@@ -20,7 +20,6 @@ in the `$GOPATH`. Using the `.gitpod.yml` file, you can bring about such a works
 how we do that for the example <a href="https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml" target="_blank">go-gin-app</a> repository:
 
 ```yaml
-
 ---
 checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
 workspaceLocation: "."

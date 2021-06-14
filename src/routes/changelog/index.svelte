@@ -8,7 +8,7 @@
 <script lang="ts">
   import type { Changelog } from "../../types/changelog.type";
   import OpenGraph from "../../components/open-graph.svelte";
-  import "../../assets/docs.scss";
+  import "../../assets/markdown-commons.scss";
 
   export let changelogEntries: Changelog[];
 </script>
