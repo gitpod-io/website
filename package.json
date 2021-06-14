@@ -22,8 +22,7 @@
     "build:css:global": "NODE_ENV=production postcss src/assets/global.scss -o static/global.css",
     "build:css:styles": "NODE_ENV=production postcss src/assets/styles.scss -o static/styles.css",
     "build:svelte": "svelte-kit build",
-    "build:functions": "mkdir lambda && cp src/functions/*.ts lambda",
-    "deploy": "run-s clean build:functions build:css build:svelte",
+    "deploy": "run-s clean build:css build:svelte",
     "postdeploy": "rm -fr ./build/_redirects",
     "start": "svelte-kit start",
     "validate": "svelte-check"
