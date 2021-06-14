@@ -35,7 +35,7 @@ The order in which these tasks execute depends on whether you have [Prebuilds](/
 
 In this startup scenario, you can see how Prebuilds impact the execution order of tasks:
 
-![Start tasks for Prebuilds & New Workspace](../../images/docs/beta/configure/start-tasks/prebuilds-new-workspace.png)
+![Start tasks for Prebuilds & New Workspace](../../../static/images/docs/beta/configure/start-tasks/prebuilds-new-workspace.png)
 
 The `init` task is where you want to do the heavy lifting, things like:
 
@@ -56,7 +56,7 @@ When you restart a workspace, Gitpod already executed the `init` task ([see abov
 
 As part of a workspace restart, Gitpod executes the `before` and `command` tasks:
 
-![Restart a workspace](../../images/docs/beta/configure/start-tasks/restart-workspace.png)
+![Restart a workspace](../../../static/images/docs/beta/configure/start-tasks/restart-workspace.png)
 
 ### Start a Snapshot
 
@@ -64,7 +64,7 @@ When you start a snapshot, Gitpod already executed the `init` task ([see above](
 
 As part of starting a snapshot, Gitpod executes the `before` and `command` tasks:
 
-![Start a snapshot](../../images/docs/beta/configure/start-tasks/start-snapshot.png)
+![Start a snapshot](../../../static/images/docs/beta/configure/start-tasks/start-snapshot.png)
 
 ## Configure the terminal
 
