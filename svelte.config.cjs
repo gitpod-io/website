@@ -6,6 +6,7 @@ const sveltePreprocess = require("svelte-preprocess");
 const pkg = require("./package.json");
 const remarkSetImagePath = require("./src/utils/remark-set-image-path.cjs");
 const remarkEmbedVideo = require("./src/utils/remark-embed-video.cjs");
+const remarkLinkWithImageAsOnlyChild = require("./src/utils/remark-link-with-image-as-only-child.cjs");
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -53,6 +54,7 @@ module.exports = {
           },
         ],
         remarkSetImagePath,
+        remarkLinkWithImageAsOnlyChild,
         [
           remarkEmbedVideo,
           {

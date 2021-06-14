@@ -259,8 +259,11 @@
   }
 
   // Hide the external link icon for certain scenarios
-  .avatars a::after {
-    display: none !important;
+  .avatars a,
+  .link-with-image-as-only-child {
+    &::after {
+      display: none !important;
+    }
   }
 
   a[href*="https://gitpod.io/#"]
