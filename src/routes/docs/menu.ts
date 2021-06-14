@@ -13,7 +13,7 @@ function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
   };
 }
 
-const MENU: MenuEntry[] = [
+export const MENU: MenuEntry[] = [
   M("Introduction", ""),
   M("Quickstart", "quickstart", [
     M("Deno", "quickstart/deno"),
