@@ -6,41 +6,20 @@
 
 <style lang="scss">
   a {
-    @apply inline-flex border-b border-solid border-current transition duration-200;
-
-    &:hover,
-    &:focus {
-      img {
-        @apply opacity-100;
-      }
-    }
-  }
-
-  img {
-    @apply opacity-60 transition duration-200;
+    @apply font-normal;
   }
 </style>
 
-<div class="flex justify-between">
+<div
+  class="flex justify-between pt-xx-small border-t border-solid border-gray-400"
+>
   {#if menuCtx.prev}
-    <a href={menuCtx.prev.path} title={`Prev: ${menuCtx.prev.title}`}>
-      <img
-        src="/arrow-long.svg"
-        alt="Arrow pointing backwards"
-        class="transform rotate-180 mr-macro"
-      /> Prev
-    </a>
+    <a href={menuCtx.prev.path} title={`Prev: ${menuCtx.prev.title}`}> Prev </a>
   {:else}
     <div />
   {/if}
   {#if menuCtx.next}
-    <a href={menuCtx.next.path} title={`Next: ${menuCtx.next.title}`}>
-      Next <img
-        src="/arrow-long.svg"
-        alt="Arrow pointing forwards"
-        class="ml-macro"
-      />
-    </a>
+    <a href={menuCtx.next.path} title={`Next: ${menuCtx.next.title}`}> Next </a>
   {:else}
     <div />
   {/if}
