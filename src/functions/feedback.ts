@@ -1,6 +1,6 @@
 import type { Handler } from "@netlify/functions";
 import { IncomingWebhook } from "@slack/webhook";
-import GoogleSpreadsheet from "google-spreadsheet";
+import gs from "google-spreadsheet";
 
 interface Feedback {
   emotion: number;
@@ -17,7 +17,7 @@ const emotionSlackEmojiMap = {
 
 async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
   try {
-    const doc = new GoogleSpreadsheet(process.env.DOCS_FEEDBACK_SHEET_ID);
+    const doc = new gs.GoogleSpreadsheet(process.env.DOCS_FEEDBACK_SHEET_ID);
     await doc.useServiceAccountAuth({
       client_email: process.env.DOCS_FEEDBACK_GOOGLE_SERVICE_ACCOUNT_EMAIL,
       private_key: Buffer.from(
