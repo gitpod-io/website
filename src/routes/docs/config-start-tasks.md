@@ -120,6 +120,8 @@ In this example, Gitpod opens two terminals (as noted by the two `-`):
 1. In the first terminal, the `init` task installs dependencies and configures a database. Then, the `command` task starts the database.
 1. The second terminal only has a `command` task which starts the dev server. The application code connects to the database that is started in the first terminal (e.g. via localhost:3306).
 
+> **Note**: In case of multiple terminals, there is no guarantee on the order in which tasks execute. The only guarantee you have is that `before`, `init` and `command` execute in that sequence **per terminal**.
+
 ```
 tasks:
   - name: Dependencies & Database
