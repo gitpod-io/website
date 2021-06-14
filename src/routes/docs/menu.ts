@@ -13,16 +13,20 @@ function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
   };
 }
 
-export const MENU: MenuEntry[] = [
+const MENU: MenuEntry[] = [
   M("Introduction", ""),
   M("Quickstart", "quickstart", [
+    M("Deno", "quickstart/deno"),
+    M("Go", "quickstart/go"),
+    M("Java Spring", "quickstart/java"),
     M("Node/TypeScript/Express", "quickstart/typescript"),
+    M("PHP Drupal", "quickstart/drupal"),
+    M("PHP Laravel", "quickstart/laravel"),
     M("Python Django", "quickstart/python"),
     M("Python Flask", "quickstart/flask"),
-    M("Go", "quickstart/go"),
-    M("Rust", "quickstart/rust"),
-    M("Java Spring", "quickstart/java"),
     M("React", "quickstart/react"),
+    M("Ruby on Rails", "quickstart/ruby-on-rails"),
+    M("Rust", "quickstart/rust"),
     M("Svelte", "quickstart/svelte"),
   ]),
   M("Getting Started", "getting-started"),
@@ -34,6 +38,7 @@ export const MENU: MenuEntry[] = [
     M("Exposing Ports", "config-ports"),
     M("Prebuilds", "prebuilds"),
     M("Environment Variables", "environment-variables"),
+    M("Checkout and Workspace Location", "checkout-location"),
   ]),
   M("Develop", "develop", [
     M("One workspace per task", "workspaces"),
@@ -72,7 +77,7 @@ export const MENU: MenuEntry[] = [
     M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
   ]),
   M("References", "references", [
-    // M(".gitpod.yml", "references/gitpod-yml"),
+    M(".gitpod.yml", "references/gitpod-yml"),
     // M("Custom Docker image", "references/gitpod-dockerfile"),
     // M("Architecture", "references/architecture"),
     // M("Troubleshooting", "references/troubleshooting"),
