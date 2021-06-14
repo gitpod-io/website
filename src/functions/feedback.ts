@@ -1,6 +1,6 @@
 import type { Handler } from "@netlify/functions";
 import { IncomingWebhook } from "@slack/webhook";
-import * as GoogleSpreadsheet from "google-spreadsheet";
+import GoogleSpreadsheet from "google-spreadsheet";
 
 interface Feedback {
   emotion: number;
