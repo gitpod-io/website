@@ -74,11 +74,11 @@ Snapshots will first try to reuse existing terminals in the layout, before openi
 
 ```yaml
 tasks:
-  - command: python3 -m http.server 8080
-    name: Static Server
-  - openMode: split-right
+  - name: Static Server
+    command: python3 -m http.server 8080
+  - name: DB Server
     command: sh ./scripts/start-db.sh
-    name: DB Server
+    openMode: split-right
 ```
 
 ### openMode
@@ -106,7 +106,8 @@ Each task contains a single `npm` command. The `init` task terminates once the d
 
 ```
 tasks:
-  - init: npm install
+  - name: Dev Server
+    init: npm install
     command: npm run dev
 ```
 
@@ -121,11 +122,13 @@ In this example, Gitpod opens two terminals (as noted by the two `-`):
 
 ```
 tasks:
-  - init: |
+  - name: Dependencies & Database
+    init: |
       npm install
       npm run configure-database
     command: npm run start-database
-  - command: npm run dev
+  - name: Dev Server
+    command: npm run dev
 ```
 
 ### Missing examples?
