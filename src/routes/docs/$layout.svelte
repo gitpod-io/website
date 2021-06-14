@@ -22,11 +22,18 @@
   const MENU: MenuEntry[] = [
     M("Introduction", ""),
     M("Quickstart", "quickstart", [
-      M("Node or TypeScript example", "quickstart/typescript"),
-      M("Go example", "quickstart/go"),
-      M("Rust example", "quickstart/rust"),
-      M("Java example", "quickstart/java"),
-      M("Svelte example", "quickstart/svelte"),
+      M("Deno", "quickstart/deno"),
+      M("Go", "quickstart/go"),
+      M("Java Spring", "quickstart/java"),
+      M("Node/TypeScript/Express", "quickstart/typescript"),
+      M("PHP Drupal", "quickstart/drupal"),
+      M("PHP Laravel", "quickstart/laravel"),
+      M("Python Django", "quickstart/python"),
+      M("Python Flask", "quickstart/flask"),
+      M("React", "quickstart/react"),
+      M("Ruby on Rails", "quickstart/ruby-on-rails"),
+      M("Rust", "quickstart/rust"),
+      M("Svelte", "quickstart/svelte"),
     ]),
     M("Getting Started", "getting-started"),
     M("Configure", "configure", [
@@ -37,6 +44,7 @@
       M("Exposing Ports", "config-ports"),
       M("Prebuilds", "prebuilds"),
       M("Environment Variables", "environment-variables"),
+      M("Checkout and Workspace Location", "checkout-location"),
     ]),
     M("Develop", "develop", [
       M("One workspace per task", "workspaces"),
@@ -75,7 +83,7 @@
       M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
     ]),
     M("References", "references", [
-      // M(".gitpod.yml", "references/gitpod-yml"),
+      M(".gitpod.yml", "references/gitpod-yml"),
       // M("Custom Docker image", "references/gitpod-dockerfile"),
       // M("Architecture", "references/architecture"),
       // M("Troubleshooting", "references/troubleshooting"),

@@ -85,4 +85,8 @@
   top: 1rem;
   bottom: 1rem;
   pointer-events: none;
+
+  @media (max-width: 505px) {
+    width: 115px;
+  }
 }

@@ -31,7 +31,7 @@ All talks are now available for watching via this [playlist on YouTube](https://
 
 ## Funding open source
 
-[![🤯 Woah Gitpod just donated 212 to patch-package. The are democratically dividing $10k between a small set of OSS dev tools.](../../../static/images/blog/devxconf-wrap/tweet-yonchovski.png)](https://twitter.com/yonchovski/status/1390659877740158976)
+[![🤯 @gitpod is starting an Open-Source Sustainability Fund to help FOSS maintainers. What is more amazing that based on voting, Emacs's lsp-mode received almost 3% of the initial pool from @devxconf! Check https://gitpod.io/blog/gitpod-open-source-sustainability-fund/ for more.](../../../static/images/blog/devxconf-wrap/tweet-yonchovski.png)](https://twitter.com/yonchovski/status/1390659877740158976)
 
 The truth is free software isn't free. How much is a task going to cost in person hours? Hours have rates. Rates require payment. Yet, an entire community of developers provide their services outside of their day job to produce tools consumed by businesses.
 
@@ -44,8 +44,6 @@ Did you know there are less than 2100 people in the inner GitHub open-source mai
 The word volunteer, by definition, means those who have the ability and time to give freely.
 
 Paying for resources that are being consumed broadens the list of people who can do open-source. Additionally, money enables open-source maintainers to buy services and outsource the activities that do not bring them joy.
-
-![Money enables diversity](../../../static/images/blog/gitpod-open-source-sustainability-fund/teaser.jpg)
 
 At Gitpod, we firmly believe that working for an open-source project should be a legitimate alternative to a career working for a for-profit corporation. Additionally, we'd like everyone to be able to maintain open-source projects, not just people with the right financial background or youth that enables the ability to volunteer.
 

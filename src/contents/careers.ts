@@ -29,7 +29,7 @@ export const careers: Career[] = [
     title: "Product Manager",
     intro: `You are a creative, empathic and visionary product person who loves Gitpod’s direction and wants to be part of the journey. We are looking for someone experienced with product discovery who is a developer at heart.`,
     paragraphs: `
-    
+
     As a product manager at Gitpod you will work on product discovery and product design (not visually) making sure we are always focussed on the most important features at a time. You will be describing new features in design docs which are based on input from users and team members as well as data and “good taste”™. You’ll be supporting the engineering team in understanding the purpose and answering unanswered questions of new product features. You will be always on the lookout for new possibilities and sweet spots that will make our beloved product more useful for our target audience. You are conscious about the limited engineering time and therefore know what to do and what not to do. You are a nice person who wants to work with an open and collaborative remote team of highly motivated engineers.
   `,
     lists: [
@@ -335,10 +335,10 @@ export const careers: Career[] = [
     rendered: false,
     date: "2021-01-26T14:00:00.000Z",
   },
-  {
+  /*{
     title: "Working Student / Intern - Finance",
     intro: `You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week? You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week?`,
-    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously. 
+    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously.
         We are a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.`,
     lists: [
       {
@@ -383,5 +383,5 @@ export const careers: Career[] = [
     textAfterTheLists: "",
     rendered: false,
     date: "2021-04-21T14:00:00.000Z",
-  },
+  }, */
 ];

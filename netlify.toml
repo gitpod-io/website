@@ -1,7 +1,7 @@
 [build]
   command = "npm run deploy"
   publish = "build/"
-  functions = "lambda"
+  functions = "src/functions"
 
 [[redirects]]
   from = "/security"

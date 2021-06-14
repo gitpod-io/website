@@ -27,7 +27,6 @@ const screencasts: Screencast[] = [
     relatedDocs: [
       { path: "/vscode-extensions", title: "VS Code Extensions" },
       { path: "/environment-variables", title: "Environment Variables" },
-      { path: "/feature-preview", title: "Feature Preview" },
     ],
   },
   {
@@ -77,7 +76,6 @@ const screencasts: Screencast[] = [
     youtubeId: "9RftoWFzJ2s",
     relatedDocs: [
       { path: "/sharing-and-collaboration", title: "Collaboration & Sharing" },
-      { path: "/code-reviews", title: "Code Reviews" },
     ],
   },
 ];

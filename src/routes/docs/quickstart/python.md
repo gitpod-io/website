@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Python example
+title: Python template
 ---
 
 <script context="module">
@@ -9,7 +9,7 @@ title: Python example
 
 # Python Django Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Go](https://github.com/gitpod-io/example-python-django) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Python](https://github.com/gitpod-io/template-python-django) template.
 
 The following guide will:
 
@@ -17,12 +17,12 @@ The following guide will:
 - Introduce you to prebuilds
 - Demonstrate the benefits of ephemeral development environments
 
-For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab and Bitbucket.
+For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [Python template](https://github.com/gitpod-io/example-python-django/generate).
-- Name it e.g. `my-python-example`.
+- Create a new repository based on the [Python template](https://github.com/gitpod-io/template-python-django/generate).
+- Name it e.g. `my-python-template`.
 
 ### Step 2: Install the Gitpod app
 
@@ -34,9 +34,9 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<my-python-example>`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<my-python-template>`
 
-Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
+Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
 ### Step 4: Enjoy being ready-to-code 🤙
 

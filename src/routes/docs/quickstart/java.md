@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Java example
+title: Java template
 ---
 
 <script context="module">
@@ -9,7 +9,7 @@ title: Java example
 
 # Java Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Java](https://github.com/gitpod-io/spring-petclinic) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Java Spring](https://github.com/gitpod-io/spring-petclinic) template.
 
 The following guide will:
 
@@ -17,11 +17,12 @@ The following guide will:
 - Introduce you to prebuilds
 - Demonstrate the benefits of ephemeral development environments
 
-For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab and Bitbucket.
+For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
 
 ### Step 1: Clone Git repository
 
 - Create a new repository based on the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
+- Name it e.g. `my-java-template`.
 
 ### Step 2: Install Gitpod app
 
@@ -35,7 +36,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/spring-petclinic`
 
-Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
+Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
 ### Step 4: Enjoy being ready-to-code 🤙
 

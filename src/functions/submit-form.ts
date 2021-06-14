@@ -1,4 +1,4 @@
-import type { APIGatewayEvent, Context } from "aws-lambda";
+import type { Handler } from "@netlify/functions";
 import * as client from "@sendgrid/mail";
 
 export interface Email {
@@ -57,7 +57,7 @@ async function sendEmail(
   }
 }
 
-exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
+const handler: Handler = function (event, _, callback) {
   console.log(JSON.stringify(event.body));
   const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY || "no-key";
   const SENDGRID_TO_EMAIL =
@@ -83,3 +83,5 @@ exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
       callback(err, null);
     });
 };
+
+export { handler };

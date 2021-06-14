@@ -1,6 +1,6 @@
-import type { APIGatewayEvent, Context } from "aws-lambda";
+import type { Handler } from "@netlify/functions";
 import { IncomingWebhook } from "@slack/webhook";
-// import * as GoogleSpreadsheet from "google-spreadsheet";
+import gs from "google-spreadsheet";
 
 interface Feedback {
   emotion: number;
@@ -15,28 +15,28 @@ const emotionSlackEmojiMap = {
   4: ":star-struck:",
 };
 
-// async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
-//   try {
-//     const doc = new GoogleSpreadsheet(process.env.DOCS_FEEDBACK_SHEET_ID);
-//     await doc.useServiceAccountAuth({
-//       client_email: process.env.DOCS_FEEDBACK_GOOGLE_SERVICE_ACCOUNT_EMAIL,
-//       private_key: Buffer.from(
-//         process.env.DOCS_FEEDBACK_GOOGLE_PRIVATE_KEY_BASE64,
-//         "base64"
-//       ).toString("utf8"),
-//     });
-//     await doc.loadInfo();
-//     const sheet = doc.sheetsByTitle["Raw Feedback"];
-//     await sheet.addRow(
-//       [new Date(), feedback.emotion, feedback.url, feedback.note],
-//       { insert: true }
-//     );
-//     return true;
-//   } catch (error) {
-//     console.error(error);
-//     return false;
-//   }
-// }
+async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
+  try {
+    const doc = new gs.GoogleSpreadsheet(process.env.DOCS_FEEDBACK_SHEET_ID);
+    await doc.useServiceAccountAuth({
+      client_email: process.env.DOCS_FEEDBACK_GOOGLE_SERVICE_ACCOUNT_EMAIL,
+      private_key: Buffer.from(
+        process.env.DOCS_FEEDBACK_GOOGLE_PRIVATE_KEY_BASE64,
+        "base64"
+      ).toString("utf8"),
+    });
+    await doc.loadInfo();
+    const sheet = doc.sheetsByTitle["Raw Feedback"];
+    await sheet.addRow(
+      [new Date(), feedback.emotion, feedback.url, feedback.note],
+      { insert: true }
+    );
+    return true;
+  } catch (error) {
+    console.error(error);
+    return false;
+  }
+}
 
 async function sendFeedbackToSlack(feedback: Feedback): Promise<boolean> {
   const webhook = new IncomingWebhook(
@@ -58,8 +58,7 @@ Note: ${feedback.note ? feedback.note : "N/A"}`,
 async function submitFeedback(
   feedback: Feedback
 ): Promise<{ statusCode: number }> {
-  // TODO: Blocked by https://answers.netlify.com/t/error-typeerror-n-is-not-a-constructor-with-google-spreadsheet-in-a-function/38685
-  const isSavedInSheet = true; // await saveFeedbackInSheet(feedback);
+  const isSavedInSheet = await saveFeedbackInSheet(feedback);
   const isSentToSlack = await sendFeedbackToSlack(feedback);
 
   return {
@@ -67,7 +66,7 @@ async function submitFeedback(
   };
 }
 
-exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
+const handler: Handler = function (event, _, callback) {
   console.log(JSON.stringify(event.body));
   const feedback: Feedback = JSON.parse(event.body!) as Feedback;
 
@@ -86,3 +85,5 @@ exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
       callback(err, null);
     });
 };
+
+export { handler };

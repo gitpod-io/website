@@ -48,12 +48,12 @@ Task properties will control when a command is executed. The table below provide
 
 <div class="table-container">
 
-| Start Mode        | Execution                    |
-| ----------------- | ---------------------------- |
-| Fresh Workspace   | `before && init && command`  |
-| Restart Workspace | `before && command`          |
-| Snapshot          | `before && command`          |
-| Prebuild          | `before && init && prebuild` |
+| Start Mode        | Execution                   |
+| ----------------- | --------------------------- |
+| Fresh Workspace   | `before && init && command` |
+| Restart Workspace | `before && command`         |
+| Snapshot          | `before && command`         |
+| Prebuild          | `before && init`            |
 
 </div>
 
@@ -83,11 +83,6 @@ tasks:
     command: npm run dev
 ```
 
-### `prebuild` command
-
-The `prebuild` command will be executed during [prebuilds](/docs/prebuilds). It is meant to run additional
-long-running processes that could be useful, e.g. running test suites. Make sure this command terminates as otherwise the prebuild will eventually time out.
-
 ### Configure the terminal
 
 You can configure where terminals open using the `openIn` and `openMode` properties below.
@@ -104,26 +99,9 @@ tasks:
     command: echo LeftPanelTerminal
 ```
 
-## openIn
-
-You can configure where in the IDE the terminal should be opened:
-
-<div class="table-container">
-
-| openIn           | Where                      |
-| ---------------- | -------------------------- |
-| `openIn: bottom` | the bottom panel (default) |
-| `openIn: left`   | the left panel             |
-| `openIn: right`  | the right panel            |
-| `openIn: main`   | the main editor area       |
-
-</div>
-
 ## openMode
 
 You can configure how the terminal should be opened relative to the previous task.
-
-<div class="table-container">
 
 | openMode                 | Description                                              |
 | ------------------------ | -------------------------------------------------------- |
@@ -131,7 +109,5 @@ You can configure how the terminal should be opened relative to the previous tas
 | `openMode: tab-before`   | Opens in the same tab group left before the previous tab |
 | `openMode: split-right`  | Splits and adds the terminal to the right                |
 | `openMode: split-left`   | Splits and adds the terminal to the left                 |
-| `openMode: split-top`    | Splits and adds the terminal to the top                  |
-| `openMode: split-bottom` | Splits and adds the terminal to the bottom               |
-
-</div>
+| `openMode: split-top`    | [Deprecated] Splits and adds the terminal to the top     |
+| `openMode: split-bottom` | [Deprecated] Splits and adds the terminal to the bottom  |
