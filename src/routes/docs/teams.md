@@ -1,5 +1,5 @@
 ---
-section: subscriptions
+section: develop
 title: Create a Team
 ---
 
@@ -9,7 +9,7 @@ title: Create a Team
 
 # Create a Team
 
-From [gitpod.io/teams/](https://gitpod.io/teams/), you can create a team and manage subscriptions for your team with one centralized billing.
+From [gitpod.io/teams/](https://gitpod.io/teams/), you can create a team and manage subscriptions for your team members with centralized billing.
 
 ![Teams List](../../../static/images/docs/teams-list.jpg)
 
@@ -17,13 +17,13 @@ If you don’t have a Gitpod account yet, you’ll be asked to create one first.
 
 ![New Team](../../../static/images/docs/teams-new.jpg)
 
-Once the payment process is complete you can add manage team members, add more team seats, and also invite team members using a unique public URL.
+Once the payment process is complete, you can manage team members, add more team seats, and also invite team members using a unique public URL.
 
 | Payment in Progress                                        | Team Entry                                               |
 | ---------------------------------------------------------- | -------------------------------------------------------- |
 | ![New Team](../../../static/images/docs/teams-payment.jpg) | ![New Team](../../../static/images/docs/teams-entry.jpg) |
 
-You can either directly assign a seat by entering your team member's GitHub username, or use the `Invite Members` link from the more actions button and get a shareable link. Send the link to your team, and they can claim a seat.
+You can either directly assign a seat by entering your team member's GitHub username, or use the `Invite Members` link from the more actions button to get a shareable link. Send the link to your team so they can claim a seat.
 
 | Manage a Team                                             | Invite Members                                            |
 | --------------------------------------------------------- | --------------------------------------------------------- |
