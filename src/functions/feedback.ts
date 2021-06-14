@@ -59,7 +59,7 @@ async function submitFeedback(
   feedback: Feedback
 ): Promise<{ statusCode: number }> {
   const isSavedInSheet = await saveFeedbackInSheet(feedback);
-  const isSentToSlack = true; // await sendFeedbackToSlack(feedback);
+  const isSentToSlack = await sendFeedbackToSlack(feedback);
 
   return {
     statusCode: isSavedInSheet && isSentToSlack ? 201 : 500,
