@@ -14,9 +14,8 @@
     closeEl && closeEl.focus();
   }
 
-  const closeModal = async () => {
+  const closeModal = () => {
     dispatch("close");
-    await tick();
     focusedEl && focusedEl.focus();
     focusedEl = null;
   };
