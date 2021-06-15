@@ -3,7 +3,7 @@ type Listing = {
   items: string[];
 };
 
-export type Job = {
+export type Career = {
   title: string;
   intro: string;
   paragraphs: string;
