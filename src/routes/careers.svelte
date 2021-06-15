@@ -14,12 +14,12 @@
 
   $: if (selectedCareer) {
     window.location.hash = `#${hyphenate(selectedCareer.title)}`;
+    selectedCareer.focusEl && selectedCareer.focusEl.focus();
   }
 
   onMount(() => {
     const hash = window.location.hash.substring(1);
-    const career = careers.find((career) => hyphenate(career.title) === hash);
-    selectedCareer = career;
+    selectedCareer = careers.find((career) => hyphenate(career.title) === hash);
   });
 </script>
 
@@ -170,6 +170,7 @@
       {#each careers as career}
         <li id={hyphenate(career.title)}>
           <button
+            bind:this={career.focusEl}
             on:click={() => {
               selectedCareer = career;
             }}
