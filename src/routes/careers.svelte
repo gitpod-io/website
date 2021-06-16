@@ -23,15 +23,24 @@
   });
 </script>
 
-<style>
+<style lang="scss">
   .heroImage {
     margin: 0 auto 2rem auto;
     border-radius: 1rem;
   }
+  p {
+    @apply text-p-large;
+    @media (min-width: 900px) {
+      @apply text-2xl;
+    }
+  }
   section {
-    width: 50rem;
     max-width: 96vw;
     margin: auto;
+
+    @media (min-width: 900px) {
+      width: 50rem;
+    }
   }
   section h2 {
     margin-top: 3rem;
@@ -41,7 +50,10 @@
   }
   section p,
   section h2 {
-    padding-left: 2rem;
+    @apply pl-x-small;
+
+    @media (max-width: 768px) {
+    }
   }
   .perks {
     color: #12100c;
@@ -91,18 +103,18 @@
     <h2 class="h4">
       Make software engineering collaborative and joyful again.
     </h2>
-    <p class="text-2xl">
+    <p>
       Developers write software within languages/frameworks, build tools, glue
       them together to (tool) chains, develop against APIs and communicate and
       collaborate with our colleagues. All of that should be efficient, joyful
       and secure.
     </p>
-    <p class="text-2xl">
+    <p>
       Yet it is not. Devs constantly struggle with larger codebases, cluttered
       dependencies, security policies and unnecessary friction in their
       workflows.
     </p>
-    <p class="text-2xl">
+    <p>
       We want to make developers feel again that everything is at their
       fingertips.
     </p>
@@ -110,34 +122,34 @@
       Gitpod was founded because we were frustrated by manually setting up and
       maintaining dev environments.
     </h2>
-    <p class="text-2xl">
+    <p>
       We are building Gitpod in the open to easily spin-up fresh dev
       environments for any task. Those ephemeral environments are fast &
       powerful, fully automated & initialized. They empower developers to
       immediately start coding, debugging, and testing their code.
     </p>
-    <p class="text-2xl">Only then developers are always ready-to-code.</p>
+    <p>Only then developers are always ready-to-code.</p>
     <h2 class="h4 mt-5rem">
       The company was established in 2020 and today over 350,000 devs
       gitpodified their workflows.
     </h2>
-    <p class="text-2xl">
+    <p>
       We are greateful to be backed by some of the best venture firms and
       advisors of the world. We recently announced a 13m funding round.
     </p>
-    <p class="text-2xl">
+    <p>
       Come join a quickly growing venture-backed team and work together with
       incredible humans from four continents 🌍
     </p>
-    <p class="text-2xl">
+    <p>
       We are open minded, transparent and curious. We remain students of the
       game, not masters of the game.
     </p>
-    <p class="text-2xl">
+    <p>
       We aim for a frictionless experience when interacting with our product,
       our company and our brand: no hurdles, no BS, no unnecessary extra steps.
     </p>
-    <p class="text-2xl">
+    <p>
       We are fully-distributed. You can work from anywhere and schedule your
       working hours the way it fits best for you. We make sure you are all set
       and will treat you well.
@@ -145,7 +157,7 @@
     <p class="text-2xl font-bold">
       We are not as diverse as we would like to be.
     </p>
-    <p class="text-2xl">
+    <p>
       Help us to change that and shape Gitpod’s future from anywhere in the
       world! 🌈 🌍
     </p>
@@ -159,7 +171,7 @@
   </ul>
 
   <h2 id="jobs" class="h4 mt-5rem">Open positions</h2>
-  <p class="text-2xl">
+  <p>
     If there isn't an open position for you but you'd still want to work at
     Gitpod let us know via <a href="mailto:career@gitpod.io">career@gitpod.io</a
     >
