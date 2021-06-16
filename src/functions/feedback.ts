@@ -27,10 +27,12 @@ async function saveFeedbackInSheet(feedback: Feedback): Promise<boolean> {
     });
     await doc.loadInfo();
     const sheet = doc.sheetsByTitle["Raw Feedback"];
-    await sheet.addRow(
-      [new Date(), feedback.emotion, feedback.url, feedback.note],
-      { insert: true }
-    );
+    await sheet.addRow([
+      new Date(),
+      feedback.emotion,
+      feedback.url,
+      feedback.note,
+    ]);
     return true;
   } catch (error) {
     console.error(error);
