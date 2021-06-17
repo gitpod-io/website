@@ -33,11 +33,11 @@ npm install && npm run dev
 
 ```
 
-VS Code will detect the service on port 5000 and offer 3 options. Click on the 'Open Browser' or navigate to directly to [localhost](http://localhost:5000/) to see 'Hello world!'. Edit app.svelte and the page will live reload with your changes!
+VS Code will detect the service on port 5000 and offer 3 options. Click on the 'Open Browser' icon or navigate to directly to [localhost](http://localhost:5000/) to see 'Hello world!'. Edit app.svelte and the page will live reload with your changes!
 
-We love feedback here at Gitpod so please give it a try and let us know what you think!
+We love feedback here at Gitpod, so please give it a try and let us know what you think!
 
-<div style="position: relative; padding-bottom: 61.53846153846154%; height: 0;"><iframe src="https://www.loom.com/embed/72fccf99cf384e6aaca5ca2f65f40c47" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 77.92207792207792%; height: 0;"><iframe src="https://www.loom.com/embed/5f229a408b6744dcbc6d592a9d82ff28" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ## Installation
 
