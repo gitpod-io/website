@@ -10,7 +10,7 @@
 
     &:hover,
     &:focus {
-      border: 1px solid #fff;
+      border: 1px solid var(--white);
     }
 
     &:not(:last-child) {
