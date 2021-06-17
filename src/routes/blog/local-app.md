@@ -94,7 +94,7 @@ and _Tunnel on all interfaces_ to make that port available on 0.0.0.0. and, depe
 
 ![tunnel on all](../../../static/images/blog/local-app/tunnel-on-all.png)
 
-By default it will attempt to tunnel on the same port, but it will pick a random port if it cannot. This is reflected in the Remote Explorer Ports view below where local port 3000 is tunneled via port 49605:
+By default it will attempt to tunnel on the same port, but it will pick a random port if the local port is unavailable. This is reflected in the Remote Explorer Ports view below where local port 3000 is tunneled via port 49605:
 
 ![tunnel on random](../../../static/images/blog/local-app/tunnel-on-random.png)
 
