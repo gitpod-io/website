@@ -245,7 +245,7 @@
 
 <div class="redirector header">
   <h2>Gitpod in the news</h2>
-  <ul class="cardlike">
+  <ul class="cardlike flex flex-row flex-wrap justify-center mt-x-small">
     <li>
       <a
         href="https://www.theregister.com/2020/08/25/gitpod_open_sources_cloud_development_platform/"
