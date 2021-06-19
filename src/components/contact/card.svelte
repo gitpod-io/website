@@ -4,7 +4,12 @@
   export let contactCard: ContactCard;
 </script>
 
-<style>
+<style lang="scss">
+  .card {
+    @media (max-width: 375px) {
+      @apply px-micro;
+    }
+  }
   p {
     color: var(--dark-grey);
   }

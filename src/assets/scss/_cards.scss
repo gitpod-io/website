@@ -4,7 +4,7 @@
   border-radius: 1.25rem;
 
   @media (max-width: 768px) {
-    padding: var(--small);
+    padding: var(--small) var(--x-small);
   }
 
   @media (max-width: 375px) {
