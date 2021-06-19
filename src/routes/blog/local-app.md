@@ -45,19 +45,21 @@ To get started, download the preview release of the _Gitpod Local Companion_ app
 
 - [Mac](https://gitpod.io/static/bin/gitpod-local-companion-darwin) - you will need to grant permission as it is not yet notarised. See ["open an app that hasn’t been notarised or is from an unidentified developer"](https://support.apple.com/en-au/HT202491) or click on the app in Finder while holding the Control key down and select 'Open' from the menu and then 'Open' in the prompt.
 - [Linux](https://gitpod.io/static/bin/gitpod-local-companion-linux)
-- [Windows](https://gitpod.io/static/bin/gitpod-local-companion-windows)
+- [Windows](https://gitpod.io/static/bin/gitpod-local-companion-windows.exe)
 
 Alternatively, in a terminal run the following:
 
 ```shell
   # mac
   curl -OL https://gitpod.io/static/bin/gitpod-local-companion-darwin
+  chmod +x ./gitpod-local-companion-*
+
   # linux
   curl -OL https://gitpod.io/static/bin/gitpod-local-companion-linux
-  # windows
-  curl -OL https://gitpod.io/static/bin/gitpod-local-companion-windows
-
   chmod +x ./gitpod-local-companion-*
+
+  # windows
+  curl -OL https://gitpod.io/static/bin/gitpod-local-companion-windows.exe
 ```
 
 ## Running
