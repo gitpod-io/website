@@ -133,6 +133,33 @@ tasks:
     command: npm run dev
 ```
 
+### Wait for commands to complete
+
+When working with multiple terminals, you may have a situation where terminal 1 runs build scripts and terminal 2 and 3 require that these scripts complete first. This can be achieved with [`gp sync-await`](/docs/command-line-interface#sync-await) and [`gp sync-done`](/docs/command-line-interface#sync-done).
+
+```
+tasks:
+  - name: Rails
+    init: >
+      bundle install &&
+      yarn install --check-files &&
+      rails db:setup &&
+      gp sync-done bundle # 'bundle' is an arbitrary name I picked
+    command: rails server
+
+  - name: Webpack
+    init: gp sync-await bundle # wait for the above 'init' to finish
+    command: bin/webpack-dev-server
+
+  - name: Redis
+    init: gp sync-await bundle
+    command: redis-server
+
+  - name: Sidekiq
+    init: gp sync-await bundle
+    command: sidekiq
+```
+
 ### Missing examples?
 
 We'd love to hear from you if you have specific questions or ideas for additional examples. Please click the following link to open a pre-configured GitHub issue: [Ask for a new Start Task example](https://github.com/gitpod-io/website/issues/new?title=[Start+Task+Example]&labels=documentation).
