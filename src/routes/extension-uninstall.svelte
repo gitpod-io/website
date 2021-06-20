@@ -162,7 +162,7 @@
         <li>
           <button
             class="btn-conversion"
-            disabled={isFormDirty && !isFormValid}
+            disabled={(isFormDirty && !isFormValid) || isFeedbackSent}
             type="submit">Send</button
           >
         </li>
