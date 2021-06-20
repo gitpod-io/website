@@ -1,11 +1,13 @@
 import type { Handler } from "@netlify/functions";
 import type { Response } from "@netlify/functions/src/function/response";
 import { submitFeedback as submitDocsFeedback } from "./_docs";
+import { submitFeedback as submitExtensionFeedback } from "./_browser-extension";
 
 const feedbackTypeToFunctionMap: {
   [type: string]: (body: string) => Promise<Response>;
 } = {
   docs: submitDocsFeedback,
+  "browser-extension": submitExtensionFeedback,
   undefined: () => {
     throw new Error("Pleae provide a feedback type.");
   },
