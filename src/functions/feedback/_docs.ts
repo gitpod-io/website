@@ -18,7 +18,7 @@ const emotionSlackEmojiMap = {
 export const submitFeedback = async (body: string): Promise<Response> => {
   const feedback: Feedback = JSON.parse(body) as Feedback;
   const isSavedInSheet = await saveFeedbackInSheet({
-    sheetTitle: "Raw Feedback",
+    sheetTitle: "Docs - Raw Feedback",
     data: [new Date(), feedback.emotion, feedback.url, feedback.note],
   });
   const isSentToSlack = await sendFeedbackToSlack(`Docs feedback: ${
