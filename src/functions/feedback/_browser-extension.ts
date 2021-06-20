@@ -14,7 +14,8 @@ export const submitFeedback = async (body: string): Promise<Response> => {
     sheetTitle: "Extension - Raw Feedback",
     data: [new Date(), feedback.browser, feedback.feedback, feedback.note],
   });
-  const isSentToSlack = await sendFeedbackToSlack(`Browser: ${feedback.browser}
+  const isSentToSlack = await sendFeedbackToSlack(`Browser extension uninstalled.
+Browser: ${feedback.browser}
 Feedback: ${feedback.feedback}
 Note: ${feedback.note ? feedback.note : "N/A"}`);
 

@@ -21,7 +21,7 @@ export const submitFeedback = async (body: string): Promise<Response> => {
     sheetTitle: "Raw Feedback",
     data: [new Date(), feedback.emotion, feedback.url, feedback.note],
   });
-  const isSentToSlack = await sendFeedbackToSlack(`${
+  const isSentToSlack = await sendFeedbackToSlack(`Docs feedback: ${
     emotionSlackEmojiMap[feedback.emotion]
   }
 Link: ${feedback.url}
