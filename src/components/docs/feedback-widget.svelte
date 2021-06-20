@@ -10,6 +10,7 @@
     const response = await fetch("/.netlify/functions/feedback", {
       method: "post",
       body: JSON.stringify({
+        type: "docs",
         emotion: selectedEmotion,
         note,
         url: `https://${$page.host + $page.path}`,
