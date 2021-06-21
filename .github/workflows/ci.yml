@@ -9,7 +9,13 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
+      - name: Wait for Pages changed to be neutral
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-Netlify
+        ref: ${{ github.event.pull_request.head.sha || github.sha }}
+        checkName: 'Pages changed'
       - name: Audit Netlify preview URL using Lighthouse
+        if: steps.wait-for-Netlify.outputs.conclusion == 'neutral'
         uses: jakepartusch/wait-for-netlify-action@v1.2
         id: waitFor200
         with:
