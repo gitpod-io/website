@@ -1,30 +1,28 @@
-<script>
+<script lang="ts">
   import { page } from "$app/stores";
 
-  export let href;
+  export let navItem;
+  const { href, isHighlighted, label } = navItem;
 
   $: isActivePage =
     $page.path === "/" ? /\/$/.test(href) : href.indexOf($page.path) >= 0;
 </script>
 
-<style lang="scss">
-  a {
-    color: var(--dark-grey);
-
-    @media (max-width: 768px) {
-      color: var(--black);
-    }
-  }
-
-  a:hover,
-  a:focus,
+<style>
   .active {
     color: var(--black);
   }
-
-  :global(a) :global(sup) {
-    @apply text-orange-800;
-  }
 </style>
 
-<a class:active={isActivePage} {href} on:click sveltekit:prefetch><slot /></a>
+<a
+  class:active={isActivePage}
+  {href}
+  on:click
+  sveltekit:prefetch
+  class="text-black text-lg sm:text-dark-grey sm:hover:text-black sm:focus:text-black"
+>
+  {label}
+  {#if isHighlighted}
+    <sup class="text-orange-800">*</sup>
+  {/if}
+</a>
