@@ -43,7 +43,7 @@
     <a href="/" aria-label="Gitpod" on:click={() => ($menuState = !menuState)}>
       <Logo />
     </a>
-    <div class="hidden space-x-6 sm:flex md:space-x-12">
+    <div class="hidden px-2 space-x-6 items-center sm:flex md:space-x-12">
       {#each navItems as navItem}
         <NavItem {navItem} on:click={() => ($menuState = !$menuState)} />
       {/each}
