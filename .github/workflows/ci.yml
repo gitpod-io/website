@@ -13,6 +13,7 @@ jobs:
         uses: fountainhead/action-wait-for-check@v1.0.0
         id: wait-for-Netlify
         ref: ${{ github.event.pull_request.head.sha || github.sha }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         checkName: 'Pages changed'
       - name: Audit Netlify preview URL using Lighthouse
         if: steps.wait-for-Netlify.outputs.conclusion == 'neutral'
