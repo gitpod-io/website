@@ -24,6 +24,16 @@ jobs:
           site_name: "gitpod-kumquat"
           budgetPath: ./budget.json
       - name: Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.7.x
-          lhci autorun --upload.target=temporary-public-storage --collect.url=${{ steps.waitFor200.outputs.url }} || echo "LHCI failed!"
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            ${{ steps.waitFor200.outputs.url }}
+            ${{ steps.waitFor200.outputs.url }}/blog
+            ${{ steps.waitFor200.outputs.url }}/blog/devxconf-wrap
+            ${{ steps.waitFor200.outputs.url }}/features
+            ${{ steps.waitFor200.outputs.url }}/pricing
+            ${{ steps.waitFor200.outputs.url }}/docs
+            ${{ steps.waitFor200.outputs.url }}/docs/quickstart
+          budgetPath: ./budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
