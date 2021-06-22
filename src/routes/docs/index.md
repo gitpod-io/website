@@ -9,9 +9,9 @@ title: Introduction
 
 # Introduction to Gitpod
 
-[Gitpod](https://www.gitpod.io) is a container-based development platform that puts developer experience first. Gitpod provisions **ready-to-code development environments** in the cloud accessible through your browser and your local IDE (stay tuned for a blog post with more details on that).
+[Gitpod](https://www.gitpod.io) is an open-source Kubernetes application for **automated and ready-to-code development environments** that blends in your existing workflow. It enables you to describe your dev environment as code and start instant and fresh development environments for each new task directly from your browser.
 
-Gitpod enables development teams to describe their dev environment as code and **start configurable and fresh development environments for each new task** entirely in the cloud. Think CI/CD for dev environments.
+Natively integrated with GitLab, GitHub, and Bitbucket, Gitpod automatically and continuously prebuilds dev environments for all your branches. As a result team members can **instantly start coding with fresh, ephemeral and fully-compiled dev environments** - no matter if you are building a new feature, want to fix a bug or do a code review.
 
 ## Always ready-to-code
 
