@@ -30,7 +30,7 @@
   };
 </script>
 
-<style>
+<style type="text/postcss">
   .selected {
     @apply grayscale-0 scale-150;
   }

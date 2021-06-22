@@ -13,8 +13,8 @@
     : /\/docs\/$/.test(menuItem.path);
 </script>
 
-<style lang="scss">
-  // override _forms.scss
+<style type="text/postcss">
+  /* override _forms.scss */
   .menu-item {
     margin-bottom: 0;
   }

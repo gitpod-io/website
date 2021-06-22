@@ -6,7 +6,7 @@
   import { MENU } from "./menu";
 </script>
 
-<style>
+<style type="text/postcss">
   .docs-layout {
     @apply pb-10;
 

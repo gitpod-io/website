@@ -13,7 +13,7 @@
   export let changelogEntries: Changelog[];
 </script>
 
-<style>
+<style type="text/postcss">
   .content-docs :global(a) {
     @apply font-normal;
   }
