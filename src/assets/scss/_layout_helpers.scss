@@ -88,6 +88,10 @@ header.tight.tight {
 
   & > * {
     margin: 0 1rem 2rem;
+
+    @media (max-width: 768px) {
+      margin: 0 0 2rem;
+    }
   }
 }
 .cards img {

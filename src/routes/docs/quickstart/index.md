@@ -9,13 +9,20 @@ title: Quickstart
 
 # Quickstart
 
-Learn how to start using Gitpod on an example project that is hosted on GitHub in less than 5 minutes. For simplicity we use GitHub as the git hoster but the steps outlined work equally well for GitLab and Bitbucket. This section helps you understand the features and advantages of Gitpod in a learning environment based on the [Gitpod example](/docs/examples) projects. The example projects are pre-configured to use Gitpod:
+Learn how to start using Gitpod on an example project that is hosted on GitHub in less than 5 minutes. For simplicity we use GitHub as the git hoster but the steps outlined work equally well for GitLab and Bitbucket. This section helps you understand the features and advantages of Gitpod in a learning environment. All templates are pre-configured to use Gitpod and ready-to-code:
 
-- [Node or TypeScript example](/docs/quickstart/typescript)
-- [Go example](/docs/quickstart/go)
-- [Rust example](/docs/quickstart/rust)
-- [Java example](/docs/quickstart/java)
-- [Svelte example](/docs/quickstart/svelte)
+- [Deno](/docs/quickstart/deno)
+- [Go](/docs/quickstart/go)
+- [Java Spring](/docs/quickstart/java)
+- [Node/TypeScript/Express](/docs/quickstart/typescript)
+- [PHP Drupal](/docs/quickstart/drupal)
+- [PHP Laravel](/docs/quickstart/laravel)
+- [Python Django](/docs/quickstart/python)
+- [Python Flask](/docs/quickstart/flask)
+- [React](/docs/quickstart/react)
+- [Ruby on Rails](/docs/quickstart/ruby-on-rails)
+- [Rust](/docs/quickstart/rust)
+- [Svelte](/docs/quickstart/svelte)
 
 ## Installing the Gitpod browser extension
 
@@ -29,4 +36,4 @@ The Gitpod extension adds a Gitpod button on every project and branch across Git
 
 With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
 
-🛠 [Getting started with Gitpod](/docs/configure)
+- [Getting started with your own project](/docs/getting-started)

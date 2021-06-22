@@ -95,6 +95,8 @@ gp await-port 3000 && gp preview $(gp url 3000)/my/path/index.html
 
 In situations where you work with multiple terminals and one depends on a task in another terminal to complete, `gp sync-await <name>` waits until you call `gp sync-done <name>` in another terminal.
 
+See [Start Tasks](/docs/config-start-tasks#wait-for-commands-to-complete) for a real-world example.
+
 ## sync-done
 
 To notify a `gp sync-await <name>` call (see previous chapter), you can call `gp sync-done <name>`.
@@ -104,3 +106,5 @@ A common use case is the followig where we have three terminals:
 - Terminal 1: A build process takes several minutes to complete. At the end, you call `gp sync-done build`.
 - Terminal 2: You use `gp sync-await build && npm run start-database` to wait for the build to complete before you start a database
 - Terminal 3: You use `gp sync-await build && npm run dev` to wait for the build to complete before you start the dev server.
+
+See [Start Tasks](/docs/config-start-tasks#wait-for-commands-to-complete) for a real-world example.

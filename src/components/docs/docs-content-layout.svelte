@@ -4,6 +4,7 @@
   import FeedbackWidget from "./feedback-widget.svelte";
   import EditInGitpod from "../../components/docs/edit-in-gitpod.svelte";
   import docsCurrentSectionStore from "../../stores/docs-current-section";
+  import PrevNext from "./prev-next.svelte";
 
   export let section;
   export let title;
@@ -23,4 +24,5 @@
   <EditInGitpod />
   <slot />
   <FeedbackWidget />
+  <PrevNext />
 </div>

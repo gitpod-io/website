@@ -92,6 +92,7 @@ module.exports = {
   },
   variants: {
     extend: {
+      dropShadow: ["hover", "focus"],
       grayscale: ["hover"],
     },
   },

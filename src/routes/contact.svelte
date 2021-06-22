@@ -46,6 +46,7 @@
   ];
 
   let isStudentEmailNoteShown: boolean = false;
+  let sectionStart;
 
   $: if (formData.selectedSubject.value === studentUnlimitedSubject) {
     isStudentEmailNoteShown = true;
@@ -111,6 +112,9 @@
       });
       if (response.ok) {
         isEmailSent = true;
+        setTimeout(() => {
+          sectionStart.scrollIntoView();
+        });
       } else {
         console.error(response.statusText);
       }
@@ -148,13 +152,13 @@
   <p>Please reach out if you have any questions regarding Gitpod.</p>
 </header>
 
-<div class="cards double mx-8">
+<div class="cards double sm:mx-8">
   {#each contactCards as contactCard}
     <Card {contactCard} />
   {/each}
 </div>
 
-<section class="card shadow-xl mb-32 mx-8">
+<section class="card shadow-xl mb-32 sm:mx-8" bind:this={sectionStart}>
   {#if isEmailSent}
     <SubmissionSuccess
       title="Thank you for your message"

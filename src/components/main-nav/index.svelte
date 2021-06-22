@@ -24,6 +24,10 @@
       label: "Docs",
     },
     {
+      href: "/changelog",
+      label: "Changelog",
+    },
+    {
       href: "/careers",
       label: "We're hiring <sup>*</sup>",
     },

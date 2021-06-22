@@ -1,5 +1,4 @@
-/** @type {import('@sveltejs/kit').GetSession} */
-export const getSession: import("@sveltejs/kit").GetSession = async () => {
+export const getContext: import("@sveltejs/kit").GetContext = async () => {
   const posts = await Promise.all(
     Object.entries(import.meta.glob("/src/routes/blog/*.md")).map(
       async ([path, page]) => {
@@ -11,12 +10,34 @@ export const getSession: import("@sveltejs/kit").GetSession = async () => {
   );
   posts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
+  const changelogEntries = await Promise.all(
+    Object.entries(import.meta.glob("/src/contents/changelog/*.md")).map(
+      async ([, mod]) => {
+        const { default: content, metadata } = await mod();
+        return {
+          ...metadata,
+          content: content.render().html,
+        };
+      }
+    )
+  );
+  changelogEntries.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+
   return {
+    changelogEntries,
     posts,
   };
 };
 
-/** @type {import('@sveltejs/kit').Handle} */
+export const getSession: import("@sveltejs/kit").GetSession = async ({
+  context,
+}) => {
+  return {
+    changelogEntries: context.changelogEntries,
+    posts: context.posts,
+  };
+};
+
 export const handle: import("@sveltejs/kit").Handle = async ({
   request,
   render,

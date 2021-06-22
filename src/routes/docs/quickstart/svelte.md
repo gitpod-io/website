@@ -1,6 +1,6 @@
 ---
 section: quickstart
-title: Svelte example
+title: Svelte template
 ---
 
 <script context="module">
@@ -9,7 +9,7 @@ title: Svelte example
 
 # Svelte Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [SvelteJS](https://github.com/gitpod-io/sveltejs-template) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [SvelteJS](https://github.com/gitpod-io/template-sveltejs) template.
 
 The following guide will:
 
@@ -17,11 +17,12 @@ The following guide will:
 - Introduce you to prebuilds
 - Demonstrate the benefits of ephemeral development environments
 
-For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab and Bitbucket.
+For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [SvelteJS template](https://github.com/gitpod-io/sveltejs-template/generate).
+- Create a new repository based on the [SvelteJS template](https://github.com/gitpod-io/template-sveltejs/generate).
+- Name it e.g. `my-svelte-template`.
 
 ### Step 2: Install Gitpod app
 
@@ -33,9 +34,9 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/sveltejs-template/`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/my-svelte-template`
 
-Gitpod displays the prebuild progress status by running the `init`commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
+Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
 ### Step 4: Enjoy being ready-to-code 🤙
 
@@ -72,4 +73,4 @@ Try it out and open 3 workspaces on the same context (e.g. on main or on an issu
 You've successfully ran your first workspace and experienced first hand what we mean with ephemeral dev environments. This is just the first step on your journey towards being always ready to code. Helpful resources from here are:
 
 - [Getting started with your own project](https://www.gitpod.io/docs/configure)
-- Configure your project
+- [Git Integrations](/docs/integrations)

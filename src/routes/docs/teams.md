@@ -1,5 +1,5 @@
 ---
-section: subscriptions
+section: develop
 title: Create a Team
 ---
 
@@ -9,18 +9,25 @@ title: Create a Team
 
 # Create a Team
 
-From [gitpod.io/teams/](https://gitpod.io/teams/), you can purchase and manage Gitpod subscriptions for your entire team with one centralized billing.
+From [gitpod.io/teams/](https://gitpod.io/teams/), you can create a team and manage subscriptions for your team members with centralized billing.
 
-If you don’t have a Gitpod account yet, you’ll be asked to create one first. You can then choose between the Team Professional or Team Unlimited plan and add members to it.
+![Teams List](../../../static/images/docs/teams-list.jpg)
 
-![Team Subscription Add Member](../../../static/images/docs/team-subscription-add-member.png)
+If you don’t have a Gitpod account yet, you’ll be asked to create one first. You can choose between the Team Professional or Team Unleashed plan and how many seats you want for each team.
 
-Afterwards you can choose how many seats you wish to purchase, and in which currency you would like to be billed.
-Then you have two options for adding your team members.
+![New Team](../../../static/images/docs/teams-new.jpg)
 
-You can either directly assign a seat by entering your team member's GitHub username, or use the `Invite Team` button and get a shareable link. Send the link to your team, and they can claim a seat.
+Once the payment process is complete, you can manage team members, add more team seats, and also invite team members using a unique public URL.
 
-![Team Subscription](../../../static/images/docs/team-subscription.png)
+| Payment in Progress                                        | Team Entry                                               |
+| ---------------------------------------------------------- | -------------------------------------------------------- |
+| ![New Team](../../../static/images/docs/teams-payment.jpg) | ![New Team](../../../static/images/docs/teams-entry.jpg) |
+
+You can either directly assign a seat by entering your team member's GitHub username, or use the `Invite Members` link from the more actions button to get a shareable link. Send the link to your team so they can claim a seat.
+
+| Manage a Team                                             | Invite Members                                            |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| ![New Team](../../../static/images/docs/teams-manage.jpg) | ![New Team](../../../static/images/docs/teams-invite.jpg) |
 
 ## Good to know
 

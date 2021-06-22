@@ -29,7 +29,7 @@ export const careers: Career[] = [
     title: "Product Manager",
     intro: `You are a creative, empathic and visionary product person who loves Gitpod’s direction and wants to be part of the journey. We are looking for someone experienced with product discovery who is a developer at heart.`,
     paragraphs: `
-    
+
     As a product manager at Gitpod you will work on product discovery and product design (not visually) making sure we are always focussed on the most important features at a time. You will be describing new features in design docs which are based on input from users and team members as well as data and “good taste”™. You’ll be supporting the engineering team in understanding the purpose and answering unanswered questions of new product features. You will be always on the lookout for new possibilities and sweet spots that will make our beloved product more useful for our target audience. You are conscious about the limited engineering time and therefore know what to do and what not to do. You are a nice person who wants to work with an open and collaborative remote team of highly motivated engineers.
   `,
     lists: [
@@ -95,6 +95,50 @@ export const careers: Career[] = [
           "You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.",
           'You enjoy working across the front- and backend. We hardly ever have a task that is clear cut along fontend/backend lines. If React is your thing, you should feel comfortable enough to have a look at the server. If Kubernetes is your thing, you should still feel comfortable enough to make that change on the dashboard. You do not think "not my department", but welcome the opportunity to venture out of your comfort zone.',
           'You have experience shipping code in production. Your code is mostly ready for prime time, and you know how to test it. You understand the difference between "making something work" and "making something work reliably". You have read other people`s code, know how to make yourself at home and understand that code is read way more often than it`s written. You understand that every new dependency comes at a cost, as do lines of code.',
+          "You are product minded. You enjoy using what you`ve helped build, and still pay attention to things that feel off. You can empathize with other users and understand how they might see things differently, or that messaging that`s completely clear to you might be unintelligible to others. You are eager to understand why things are not working for others and quickly act when unexpected things happen.",
+          "You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.",
+        ],
+      },
+      {
+        title: "Our stack:",
+        items: [
+          "Gitpod is a distributed application running on Kubernetes. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.",
+          "Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.",
+        ],
+      },
+      {
+        title: "We're about balance",
+        items: perks.map((perk) => perk.title),
+      },
+    ],
+    textAfterTheLists: "",
+    rendered: false,
+    date: "2021-01-26T14:00:00.000Z",
+  },
+  {
+    title: "Senior Software Engineer (Frontend)",
+    intro: `When it comes to code, we’re looking to work with experienced people who can pick a problem and solve it. For us, it’s both how it works and how it looks.`,
+    paragraphs: `We are a highly motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
+  We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
+    lists: [
+      {
+        title: "As part of the team you will ...",
+        items: [
+          "Directly impact users. Gitpod has little fat to trim and changes directly affect users. We always have our users in mind and focus on making Gitpod work for them, not some abstract potential future requirement.",
+          "Be a 'jack of all trades, master of some'. We don't expect you to have a background in everything we use. However, there is loads of room to grow and see everything that makes the platform tick.",
+          "Solve hard technical problems. On the frontend, we deeply care about performance and quality across browsers and platforms. Gitpod is not your typical Kubernetes web app and provides very unique problems you`d be unlikely to come across elsewhere.",
+          "Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks in iterations with a lot of freedom.",
+          "Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.",
+        ],
+      },
+      {
+        title: "What we need",
+        items: [
+          "You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don`t dictate.",
+          "You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.",
+          "You have strong JavaScript fundamentals. Besides knowing Array methods and how to format numbers and dates with localization in mind, you also write semantic HTML5. You have in-depth knowledge of a modern web framework (React and/or Svelte preferred, but Vue, Angular, etc. are ok too). You care about or are interested in a11y and performance. You know what happens from the time you hit Enter in a browser's URL bar until you see the website rendered on the screen.",
+          "You care about design. You have experience building and advocating for reusable and accessible components as well as passion for beautiful user interfaces and great user experiences. We use Tailwind CSS and if you are already familiar with it, do let us know.",
+          'You have experience shipping code to production. Your code is ready for prime time, and you don`t expect others to test it thoroughly for you. You understand the difference between "making something work" and "making something work reliably". You have read other people`s code, know how to make yourself at home and understand that code is read way more often than it`s written. You understand that every new dependency comes at a cost, as do lines of code.',
           "You are product minded. You enjoy using what you`ve helped build, and still pay attention to things that feel off. You can empathize with other users and understand how they might see things differently, or that messaging that`s completely clear to you might be unintelligible to others. You are eager to understand why things are not working for others and quickly act when unexpected things happen.",
           "You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.",
         ],
@@ -291,10 +335,10 @@ export const careers: Career[] = [
     rendered: false,
     date: "2021-01-26T14:00:00.000Z",
   },
-  {
+  /*{
     title: "Working Student / Intern - Finance",
     intro: `You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week? You are a "jack of all trades, master of some" student with a background in business, finance or a related field and want to gain valuable experience by working between 10h and 20h per week?`,
-    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously. 
+    paragraphs: `We - the Finance & Ops team - are laying the foundation for creating globally scalable back-office operations including instantiating and streamlining financial processes. Hence, we're hiring a working student to support us in executing on strategic projects such as creating financial budgets, building KPI dashboards or obtaining compliance certification. We're looking for someone who learns quickly, is eager to apply their theoretical knowledge to real-world problems and acts autonomously.
         We are a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.`,
     lists: [
       {
@@ -339,5 +383,5 @@ export const careers: Career[] = [
     textAfterTheLists: "",
     rendered: false,
     date: "2021-04-21T14:00:00.000Z",
-  },
+  }, */
 ];

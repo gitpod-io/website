@@ -1,13 +1,14 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import topicsState from "./states/topics-state";
 
   const docSearchJSVersion = "2.6.3";
   const docSearchInputSelector = "search-doc-input";
 
-  let docSearchInput;
-  let docSearchScript;
+  let docSearchInput: HTMLInputElement;
+  let docSearchScript: HTMLScriptElement;
   let docSearchScriptLoaded = false;
+  let placeholder = "Quick search";
 
   $: if (docSearchInput && (docSearchScript || docSearchScriptLoaded)) {
     window.docsearch &&
@@ -23,6 +24,21 @@
   const processDocSearchScriptLoadEvent = () => {
     docSearchScriptLoaded = true;
   };
+
+  const handleBodyKeyDown = (event: KeyboardEvent) => {
+    if ((event.ctrlKey || event.metaKey) && event.key === "k") {
+      docSearchInput.focus();
+    }
+  };
+
+  onMount(() => {
+    if (!navigator.userAgent.toLowerCase().match(/mobile/i)) {
+      const platformKey = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)
+        ? "⌘"
+        : "Ctrl";
+      placeholder += ` ${platformKey}+K`;
+    }
+  });
 </script>
 
 <style lang="scss">
@@ -80,6 +96,8 @@
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
 
+<svelte:body on:keydown={handleBodyKeyDown} />
+
 <div
   class={`input-container relative bg-white rounded-xl w-full mb-12 ${
     $topicsState ? "topics-active" : ""
@@ -95,7 +113,7 @@
   <input
     bind:this={docSearchInput}
     type="search"
-    placeholder="Search"
+    {placeholder}
     id={docSearchInputSelector}
     class="box-border block w-full pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900"
   />

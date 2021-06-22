@@ -6,6 +6,7 @@ const sveltePreprocess = require("svelte-preprocess");
 const pkg = require("./package.json");
 const remarkSetImagePath = require("./src/utils/remark-set-image-path.cjs");
 const remarkEmbedVideo = require("./src/utils/remark-embed-video.cjs");
+const remarkLinkWithImageAsOnlyChild = require("./src/utils/remark-link-with-image-as-only-child.cjs");
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -32,11 +33,6 @@ module.exports = {
     router: true,
     ssr: true,
     target: "#svelte",
-    vite: () => ({
-      ssr: {
-        noExternal: Object.keys(pkg.dependencies || {}),
-      },
-    }),
   },
 
   // options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
@@ -50,8 +46,15 @@ module.exports = {
       },
       remarkPlugins: [
         slug,
-        headings,
+        [
+          headings,
+          {
+            behavior: "append",
+            linkProperties: {},
+          },
+        ],
         remarkSetImagePath,
+        remarkLinkWithImageAsOnlyChild,
         [
           remarkEmbedVideo,
           {
