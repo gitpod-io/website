@@ -1,5 +1,7 @@
 <script>
-  import LogoTextless from "./svgs/logo-textless.svelte";
+  import { onMount } from "svelte";
+  let isHidden = false;
+
   const socialLinks = [
     {
       href: "https://twitter.com/gitpod",
@@ -17,9 +19,15 @@
       icon: "/svg/brands/discourse.svg",
     },
   ];
+
+  onMount(() => {
+    if (window.location.pathname.startsWith("/docs")) {
+      isHidden = true;
+    }
+  });
 </script>
 
-<div class="footer__container pb-8">
+<div class="footer__container pb-8" class:hidden={isHidden}>
   <footer class="footer">
     <div class="footer__entries">
       <ul>

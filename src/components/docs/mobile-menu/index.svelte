@@ -24,8 +24,8 @@
   .mobile-menu {
     margin-bottom: 2.5rem;
 
-    @media (min-width: 769px) {
-      display: none;
+    @media (min-width: 1041px) {
+      @apply hidden;
     }
   }
 </style>
