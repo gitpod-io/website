@@ -17,3 +17,4 @@ The following links describe how to develop on Gitpod and elaborate on topics br
 - [Collaboration & Sharing](/docs/sharing-and-collaboration)
 - [Create a team](/docs/teams)
 - [Command Line Interface](/docs/command-line-interface)
+- [Local Companion](/docs/develop/local-companion)

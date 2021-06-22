@@ -47,6 +47,7 @@ export const MENU: MenuEntry[] = [
     M("Collaboration & Sharing", "sharing-and-collaboration"),
     M("Create a team", "teams"),
     M("Command Line Interface", "command-line-interface"),
+    M("Local Companion", "develop/local-companion"),
   ]),
   M("Integrations", "integrations", [
     M("GitLab", "gitlab-integration"),
