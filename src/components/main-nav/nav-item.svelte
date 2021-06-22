@@ -19,7 +19,7 @@
   {href}
   on:click
   sveltekit:prefetch
-  class="text-black text-lg sm:text-dark-grey sm:hover:text-black sm:focus:text-black"
+  class="text-black text-base sm:text-dark-grey sm:hover:text-black sm:focus:text-black"
 >
   {label}
   {#if isHighlighted}
