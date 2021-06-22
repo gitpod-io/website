@@ -6,7 +6,8 @@
   import topicsState from "../states/topics-state";
   import subMenuState from "../states/sub-menu-state";
 
-  export let currentSection: any = {};
+  import type { MenuEntry } from "../../../types/menu-entry.type";
+  export let currentSection: MenuEntry = null;
 </script>
 
 <style lang="scss">
@@ -75,7 +76,7 @@
   All topics
 </button>
 
-{#if currentSection.subMenu}
+{#if currentSection?.subMenu}
   <div class="sub-menu-container bg-white">
     <button
       class="toggle-button w-full"
@@ -84,7 +85,7 @@
       aria-expanded={$subMenuState}
       on:click={() => ($subMenuState = !$subMenuState)}
     >
-      <div class="toggle-button__label">{currentSection.title}</div>
+      <div class="toggle-button__label">{currentSection?.title}</div>
       <div class="toggle-button__icon">
         <img
           class={`toggle-button__icon-arrow ${$subMenuState ? "open" : ""}`}
@@ -97,13 +98,13 @@
     </button>
 
     <div
-      aria-label={currentSection.title}
+      aria-label={currentSection?.title}
       role="navigation"
       class={`px-4 ${$subMenuState ? "block" : "hidden"}`}
       id="sub-menu"
     >
       <ul>
-        {#each currentSection.subMenu as sub}
+        {#each currentSection?.subMenu as sub}
           <MenuItem href={sub.path} onClick={() => ($subMenuState = false)}>
             {sub.title}
           </MenuItem>

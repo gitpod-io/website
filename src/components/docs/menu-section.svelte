@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
   import docsCurrentSectionStore from "../../stores/docs-current-section";
   import MenuLink from "./menu-link.svelte";
 
-  export let menuItem;
+  import type { MenuEntry } from "../../types/menu-entry.type";
+  export let menuItem: MenuEntry;
 
   $: isActiveSection = $docsCurrentSectionStore
     ? menuItem.path.indexOf(
@@ -13,8 +14,8 @@
     : /\/docs\/$/.test(menuItem.path);
 </script>
 
-<style lang="scss">
-  // override _forms.scss
+<style type="text/postcss">
+  /* override _forms.scss */
   .menu-item {
     margin-bottom: 0;
   }

@@ -1,9 +1,4 @@
-// This file is used to define entries in the side menu
-interface MenuEntry {
-  title: string;
-  path: string;
-  subMenu?: MenuEntry[];
-}
+import type { MenuEntry } from "../../types/menu-entry.type";
 
 function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
   return {
