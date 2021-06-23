@@ -57,7 +57,7 @@ Visit the [Open VSX Wiki](https://github.com/eclipse/openvsx/wiki/Publishing-Ext
 Until extension developers start publishing to open-vsx.org themselves, we will publish open-source extensions through a script that is maintained in a [GitHub repository](https://github.com/open-vsx/publish-extensions). A continuous integration build regularly runs through the list of changes and automatically deploys all the listed projects. If you are missing a certain extension, you can do the following:
 
 1. Ask the original maintainer to publish to open-vsx.org, pointing them to this post for context.
-2. If the maintainer does not respond, create a PR to https://github.com/open-vsx/publish-extensions
+2. If the maintainer does not respond, create a PR to <a class="no-nowrap" href="https://github.com/open-vsx/publish-extensions">https://github.com/open-vsx/publish-extensions</a>
 
 ## Final Words
 

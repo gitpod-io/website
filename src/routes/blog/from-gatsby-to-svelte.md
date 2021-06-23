@@ -13,7 +13,7 @@ title: From Gatsby to Svelte in 3 weeks
 
 - [Gitpod](https://www.gitpod.io) recently announced new funding and a completely new brand ([read more](https://www.gitpod.io/blog/next-chapter-for-gitpod)) 🍊.
 - As part of that, we rebuilt the website from scratch, replacing React & Gatsby with [Svelte](https://svelte.dev) & [SvelteKit](https://kit.svelte.dev).
-- Look at the [source code on GitHub](https://github.com/gitpod-io/website) or start the website in a Gitpod development environment by visiting https://gitpod.io#https://github.com/gitpod-io/website.
+- Look at the [source code on GitHub](https://github.com/gitpod-io/website) or start the website in a Gitpod development environment by visiting <a class="no-nowrap" href="https://gitpod.io#https://github.com/gitpod-io/website" rel="nofollow">https://gitpod.io#https://github.com/gitpod-io/website</a>.
 - Listen to the Svelte Radio episode "[Migrating from Sapper to SvelteKit](https://share.transistor.fm/s/507ad528)" where I shared more details.
 
 ## What we had previously...

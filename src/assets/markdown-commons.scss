@@ -126,6 +126,10 @@
     }
   }
 
+  iframe {
+    max-width: 100%;
+  }
+
   p > .video-container {
     margin-top: var(--medium);
   }
@@ -258,6 +262,12 @@
     }
   }
 
+  [class*="btn"] {
+    &::after {
+      display: none !important;
+    }
+  }
+
   // Hide the external link icon for certain scenarios
   .avatars a,
   .link-with-image-as-only-child {
@@ -268,6 +278,7 @@
 
   a[href*="https://gitpod.io/#"]
   {
+    white-space: initial !important;
     &::after {
       display: none !important;
     }

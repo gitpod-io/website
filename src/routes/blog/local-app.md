@@ -43,7 +43,7 @@ We love feedback here at Gitpod, so please give it a try and let us know what yo
 
 To get started, download the preview release of the _Gitpod Local Companion_ app for your platform (right click, 'Save (Link) As')
 
-- [Mac](https://gitpod.io/static/bin/gitpod-local-companion-darwin) - you will need to grant permission as it is not yet notarised. See ["open an app that hasn’t been notarised or is from an unidentified developer"](https://support.apple.com/en-au/HT202491) or click on the app in Finder while holding the Control key down and select 'Open' from the menu and then 'Open' in the prompt.
+- [Mac](https://gitpod.io/static/bin/gitpod-local-companion-darwin) - you will need to grant permission as it is not yet notarised. See <a class="no-nowrap" href="https://support.apple.com/en-au/HT202491">“open an app that hasn’t been notarised or is from an unidentified developer”</a> or click on the app in Finder while holding the Control key down and select 'Open' from the menu and then 'Open' in the prompt.
 - [Linux](https://gitpod.io/static/bin/gitpod-local-companion-linux)
 - [Windows](https://gitpod.io/static/bin/gitpod-local-companion-windows.exe)
 
