@@ -1,3 +1,17 @@
+<script lang="ts" context="module">
+  declare global {
+    type docsearchParamType = {
+      apiKey: string;
+      indexName: string;
+      inputSelector: string;
+      debug: boolean;
+    };
+    interface Window {
+      docsearch: (param: docsearchParamType) => void;
+    }
+  }
+</script>
+
 <script lang="ts">
   import { onMount } from "svelte";
   import topicsState from "./states/topics-state";
