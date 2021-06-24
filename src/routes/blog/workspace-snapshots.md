@@ -61,8 +61,8 @@ tasks:
         -Dexec.classpathScope=”test”
 ```
 
-<blockquote><p>Btw. to figure out how to start that damn thing using Maven, I had to ask the community on StackOverflow. Of course, by providing a Gitpod Snapshot :-)
-<a class="no-nowrap" href="https://stackoverflow.com/questions/53536751/run-main-from-test-scope-in-maven-the-parameters-mainclass-for-goal-org-code"><strong>Run main from test scope in Maven: “The parameters ‘mainClass’ for goal…</strong> &gt; <em>Thanks for contributing an answer to Stack Overflow! Some of your past answers have not been well-received, and you’re…</em>stackoverflow.com</a></p></blockquote>
+> Btw. to figure out how to start that damn thing using Maven, I had to ask the community on StackOverflow. Of course, by providing a Gitpod Snapshot :-)
+> <a class="no-nowrap" href="https://stackoverflow.com/questions/53536751/run-main-from-test-scope-in-maven-the-parameters-mainclass-for-goal-org-code"><strong>Run main from test scope in Maven: “The parameters ‘mainClass’ for goal…</strong> &gt; <em>Thanks for contributing an answer to Stack Overflow! Some of your past answers have not been well-received, and you’re…</em>stackoverflow.com</a>
 
 With the **.gitpod.yml **configured and the editors and views laid out as needed, we are ready to take a snapshot. Simply click on the avatar on the top right:
 
