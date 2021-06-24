@@ -46,7 +46,7 @@ Gitpod treats any GitHub repository as a project which can be opened. Let’s st
 
 - enter a repository name and click Create repository.
 
-Now, we can open the created project in Gitpod. You can do it by simply prefixing the repository URL with gitpod.io/#. For example, I’ve called my repository node-hello-world and it can be opened in Gitpod with **gitpod.io/#**https://github.com/akosyakov/node-hello-world.
+Now, we can open the created project in Gitpod. You can do it by simply prefixing the repository URL with gitpod.io/#. For example, I’ve called my repository node-hello-world and it can be opened in Gitpod with **gitpod.io/#**<a class="no-nowrap" href="https://github.com/akosyakov/node-hello-world">https://github.com/akosyakov/node-hello-world</a>.
 
 The first time, you will need to sign in Gitpod with your GitHub account. GitHub will ask you to authorize read access to your email address. Write access to repositories can be granted later on [your access control page](https://gitpod.io/access-control/).
 

@@ -96,7 +96,7 @@ It integrates with code hosting platforms such as GitHub. It eliminates all the 
 
 ## **Summary**
 
-Applying the lessons learned from DevOps to our development setup can save us so much precious time and energy. [ActiveState’s Developer Survey 2018 ](https://www.activestate.com/developer-survey-2018-open-source-runtime-pains/)underlines this with some numbers:
+Applying the lessons learned from DevOps to our development setup can save us so much precious time and energy. <a class="no-nowrap" href="https://www.activestate.com/developer-survey-2018-open-source-runtime-pains/">ActiveState’s Developer Survey 2018 </a> underlines this with some numbers:
 
 ![ActiveState’s Developer Survey 2018: How much time do you spent on managing dependencies and development tools](https://cdn-images-1.medium.com/max/3200/1*Vvl3N-1hDANiy15Pc9xeiQ.png)
 
