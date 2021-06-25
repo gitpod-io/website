@@ -10,6 +10,7 @@
   import Feature from "../components/education/feature.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import Explore from "../components/explore.svelte";
+  import Section from "../components/section.svelte";
 
   const features: EducationFeature[] = [
     {
@@ -149,16 +150,330 @@
     <Feature {feature} />
   {/each}
 </section>
-<!--
-<section>
+
+<Section>
   <h2>Education pricing</h2>
-  <p>
+  <p class="text-large text-center">
     You have the choice to either host Gitpod yourself or to use our cloud
     infrastructure.
   </p>
   <div id="edPricingTable">
-    < !-- TODO: Pricing table. What's the best approach to support the hover effect per row and style individual colums as cards? -- >
+    <section class="card toc">
+      <ul class="tableOfContents" role="presentation">
+        <li>Pricing (Hosted)</li>
+        <li>License</li>
+        <li class="hasIcon">
+          <img src="/svg/github.svg" alt="GitHub" width="24" /> GitHub Integration
+        </li>
+
+        <li class="hasIcon">
+          <img src="/svg/gitlab.svg" alt="GitLab" width="24" />GitLab
+          Integration
+        </li>
+
+        <li class="hasIcon">
+          <img src="/svg/bitbucket.svg" alt="Bitbucket" width="24" /> Bitbucket Integration
+        </li>
+
+        <li class="hasIcon">
+          <img
+            src="/svg/brands/gcp.svg"
+            alt="Google Cloud Platform"
+            width="24"
+          />
+          Self-Host on GCP
+        </li>
+
+        <li class="hasIcon">
+          <img
+            src="/svg/brands/aws.svg"
+            alt="Amazon Web Services"
+            width="24"
+          />Self-Host on AWS
+        </li>
+        <li class="hasIcon">
+          <img
+            src="/svg/brands/kubernetes.svg"
+            alt="Kubernetes"
+            width="24"
+          />Self-Host on Kubernetes
+        </li>
+        <li>Prebuilds</li>
+        <li>Snapshots</li>
+        <li>VS Code Extensions</li>
+        <li>iPad Support</li>
+        <li>Virtual Desktop (VNC)</li>
+        <li>Multi-IDE Support</li>
+      </ul>
+    </section>
+    <section class="card alive text-center">
+      <h2 class="card-heading">
+        <img
+          alt="Gitpod"
+          src="/images/gitpod-logo.svg"
+          width="40"
+          height="36"
+        />
+      </h2>
+      <dl id="gitpodPricing" class="tableColumn">
+        <dt>Pricing (Hosted)</dt>
+        <dd>Free for Open-Source</dd>
+        <dt>License</dt>
+        <dd>Open Source</dd>
+        <dt>GitHub Integration</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>GitLab Integration</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Bitbucket Integration</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Self-Host on GCP</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Self-Host on AWS</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Self-Host on Kubernetes</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Prebuilds</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Snapshots</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>VS Code Extensions</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>iPad Support</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Virtual Desktop (VNC)</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Multi-IDE Support</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+      </dl>
+    </section>
+    <section class="card text-center">
+      <h2 class="text-xl card-heading h4">GitHub<br />Codespaces</h2>
+      <dl>
+        <dt>Pricing (Hosted)</dt>
+        <dd>
+          <span aria-label="unknown" class="icon">$$$</span>
+        </dd>
+        <dt>License</dt>
+        <dd>Proprietary</dd>
+        <dt>GitHub Integration</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>GitLab Integration</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+        <dt>Bitbucket Integration</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+        <dt>Self-Host on GCP</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+        <dt>Self-Host on AWS</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+        <dt>Self-Host on Kubernetes</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+        <dt>Prebuilds</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+        <dt>Snapshots</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+        <dt>VS Code Extensions</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>iPad Support</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Virtual Desktop (VNC)</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Multi-IDE Support</dt>
+        <dd>
+          <img
+            alt="No"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/cross.svg"
+          />
+        </dd>
+      </dl>
+    </section>
   </div>
-</section>
--->
+</Section>
+
 <Explore />
