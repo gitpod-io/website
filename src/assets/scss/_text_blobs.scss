@@ -17,6 +17,23 @@
 .text-blob li {
   margin-bottom: 1rem;
 }
+
+.text-blob ol {
+  @apply list-inside;
+}
+
+.text-blob .toc > li {
+  @apply my-small;
+
+  & h2 {
+    @apply inline;
+  }
+
+  & p:first-of-type {
+    @apply mt-x-small;
+  }
+}
+
 .text-blob > :is(ol.toc, ul) > li::marker {
   font-size: var(--h3);
   font-weight: bold;
@@ -24,12 +41,15 @@
 .text-blob ol.toc > li::marker {
   color: inherit;
 }
-.text-blob :is(ul, ol) :is(ul, ol) {
-  margin-left: 2rem;
-}
+
 .text-blob ::marker {
   color: var(--brand-ripe);
 }
+
+.text-blob ul {
+  @apply pl-xx-small md:pl-x-small;
+}
+
 .text-blob ul li {
   position: relative;
   margin-bottom: 0;
@@ -37,8 +57,12 @@
   &::before {
     content: "—";
     position: absolute;
-    left: calc(var(--x-small) * -1);
+    left: calc(var(--xx-small) * -1);
     color: var(--brand-ripe);
+
+    @media (min-width: 768px) {
+      left: calc(var(--x-small) * -1);
+    }
   }
 }
 .text-blob h2,
