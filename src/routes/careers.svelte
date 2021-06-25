@@ -129,7 +129,7 @@
       </p>
       <p>Only then developers are always ready-to-code.</p>
       <h2 class="h4 mt-5rem">
-        The company was established in 2020 and today over 350,000 devs
+        The company was established in 2020 and today over 400,000 devs
         gitpodified their workflows.
       </h2>
       <p>
