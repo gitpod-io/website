@@ -34,6 +34,9 @@
             >Gitpod vs GitHub <br />Codespaces
           </a>
         </li>
+        <li>
+          <a href="https://www.gitpodstatus.com/" target="_blank">Status</a>
+        </li>
       </ul>
       <ul>
         <li>Developer</li>
@@ -54,9 +57,6 @@
           </a>
         </li>
       </ul>
-      <!-- <div style="flex: 0 0 100%">
-        &nbsp;
-      </div> -->
       <ul>
         <li>Company</li>
         <li><a href="/about">About</a></li>
