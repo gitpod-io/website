@@ -89,7 +89,7 @@
               width="24"
             />
           </div></a
-        ><span>Copyright &copy; Gitpod</span>
+        ><span>Copyright &copy; {new Date().getFullYear()} Gitpod</span>
       </div>
       <div class="footer__social">
         {#each socialLinks as link}
