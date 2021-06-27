@@ -62,6 +62,10 @@
   ];
 </script>
 
+<svelte:head>
+  <link rel="stylesheet" href="/prism-solarized-light.css" />
+</svelte:head>
+
 <OpenGraph
   data={{
     description: excerpt,

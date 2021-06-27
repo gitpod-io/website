@@ -27,7 +27,7 @@ This chart installs a MySQL database that gets Gitpod up and running but is not 
     rm -Rf gpinstall
     ```
 1.  Initialize your MySQL database using the SQL files in `config/db/init/`. E.g. in a mysql session connected to your database server run:
-    ```
+    ```sql
     SET @gitpodDbPassword = IFNULL(@gitpodDbPassword, 'your-password-goes-here');
     source db-init/00-testdb-user.sql;
     source db-init/01-create-user.sql;
