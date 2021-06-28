@@ -145,7 +145,9 @@
               width="24"
             />
           </div></a
-        ><span>Copyright &copy; {new Date().getFullYear()} Gitpod</span>
+        ><span class="ml-macro"
+          >Copyright &copy; {new Date().getFullYear()} Gitpod</span
+        >
       </div>
       <div class="flex">
         {#each socialLinks as link}
