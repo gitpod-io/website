@@ -18,7 +18,7 @@ Learn how to streamline your code review experience.
 
 Code reviews are one of the best things you can do to keep your codebase clean. They improve code quality, reduce code ownership and let you learn a lot from your teammates.
 
-Much has been said about the [advantages](https://blog.codinghorror.com/code-reviews-just-do-it/) [of code reviews](https://www.quora.com/Why-is-code-review-so-important-in-the-software-industry) for individuals, teams and codebases. Research has found that projects that do proper code reviews identify [“… more than half of the defects in code reviews”](https://web.archive.org/web/20151009203148/http://ieeexplore.ieee.org/xpl/login.jsp?reload=true&tp=&arnumber=4815279).
+Much has been said about the [advantages](https://blog.codinghorror.com/code-reviews-just-do-it/) [of code reviews](https://www.quora.com/Why-is-code-review-so-important-in-the-software-industry) for individuals, teams and codebases. Research has found that projects that do proper code reviews identify <a class="no-nowrap" href="https://web.archive.org/web/20151009203148/http://ieeexplore.ieee.org/xpl/login.jsp?reload=true&amp;tp=&amp;arnumber=4815279">“… more than half of the defects in code reviews”</a>.
 
 Assuming you understood the importance of it, I want to discuss the tools, the process and how you can improve your code review experience using [Gitpod](https://www.gitpod.io) and new app for GitHub that lets you do deep code reviews.
 

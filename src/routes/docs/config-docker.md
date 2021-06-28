@@ -40,7 +40,7 @@ A good starting point for creating a custom `.gitpod.Dockerfile` is the
 <a href="https://hub.docker.com/r/gitpod/workspace-full/" target="_blank">gitpod/workspace-full</a> image. It already contains all the tools necessary to work with all languages Gitpod supports.
 You can find the source code in <a href="https://github.com/gitpod-io/workspace-images/" target="_blank">this GitHub repository</a>.
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 # Install custom tools, runtime, etc.
@@ -51,7 +51,7 @@ When you launch a Gitpod workspace, the local console will use the `gitpod` user
 
 You can however use `sudo` in your Dockerfile. The following example shows a typical `.gitpod.Dockerfile` inheriting from `gitpod/workspace-full`:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 # Install custom tools, runtime, etc.

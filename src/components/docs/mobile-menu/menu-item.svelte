@@ -4,7 +4,7 @@
 
   export let href: string;
   export let onClick;
-  export let showIcon: boolean;
+  export let showIcon: boolean = false;
 </script>
 
 <style lang="scss">

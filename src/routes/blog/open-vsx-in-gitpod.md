@@ -45,6 +45,6 @@ While more and more extensions land in Open VSX on a daily basis, there still mi
 
 - Ideally, you go to the extension's repository itself and kindly ask the developer to publish it to Open VSX. Publishing is a one-liner (`npx ovsx publish`), so it's really low effort.
 - Download the extension's `.vsix` file (e.g. from the extension's GitHub Releases) and drag and drop it into the IDE's Extensions view. That will install and activate it automatically.
-- Create a PR over at https://github.com/open-vsx/publish-extensions — that's where we seed the Open VSX registry by automatically publishing popular open-source extensions.
+- Create a PR over at <a class="no-nowrap" href="https://github.com/open-vsx/publish-extensions">https://github.com/open-vsx/publish-extensions</a> — that's where we seed the Open VSX registry by automatically publishing popular open-source extensions.
 
 You can find more information in our [docs](/docs/vscode-extensions).

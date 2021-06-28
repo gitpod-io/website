@@ -24,8 +24,8 @@ First of all, we were amazed by the attention that was drawn by this topic. It w
 Here are just a few highlights of the event:
 
 - An interview with Erich Gamma, the lead developer of VS Code, about the [Evolution of DevX Conf](https://www.youtube.com/watch?v=JiBUDS9odA8&list=PL3TSF5whlprUTnpP9drAl-knNUnPqKrui&index=2&t=1277s)
-- A talk by Ellen Chisa, the co-founder of Dark Lang, who discussed the hypothesis that [DevX isn't good, because developers don't want it to be](https://www.youtube.com/watch?v=nPO4QL0Q85s&list=PL3TSF5whlprUTnpP9drAl-knNUnPqKrui&index=4&t=17s)
-- A talk about [being trapped in the open source supply chain](https://www.youtube.com/watch?v=0wRUU0ln9-0&list=PL3TSF5whlprUTnpP9drAl-knNUnPqKrui&index=4&t=17s) by Henry Zhu, the Steward of BabelJS
+- A talk by Ellen Chisa, the co-founder of Dark Lang, who discussed the hypothesis that <a class="no-nowrap" href="https://www.youtube.com/watch?v=nPO4QL0Q85s&amp;list=PL3TSF5whlprUTnpP9drAl-knNUnPqKrui&amp;index=4&amp;t=17s">DevX isn’t good, because developers don’t want it to be</a>
+- A talk about <a class="no-nowrap" href="https://www.youtube.com/watch?v=0wRUU0ln9-0&amp;list=PL3TSF5whlprUTnpP9drAl-knNUnPqKrui&amp;index=4&amp;t=17s">being trapped in the open source supply chain</a> by Henry Zhu, the Steward of BabelJS
 
 All talks are now available for watching via this [playlist on YouTube](https://www.youtube.com/playlist?list=PL3TSF5whlprUTnpP9drAl-knNUnPqKrui).
 
@@ -52,7 +52,7 @@ The myriad of tools that are relied upon by developers everyday are built and ma
 ![Credit: Sajjad Ahmadi](https://images.unsplash.com/photo-1555058948-15e4e2a1ba93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80)
 _Credit: [Sajjad Ahmadi](https://unsplash.com/photos/96m9K49qaPw)_
 
-As part of Gitpod's [Open-Source Sustainability Fund initiative](/blog/gitpod-open-source-sustainability-fund/) attendees of the DevX Conf [were able to decide where $10,000 USD of funds](https://devxconf.org/opensource) (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. We thought long and hard about _what_ projects to include in the competition and pondered about:
+As part of Gitpod's [Open-Source Sustainability Fund initiative](/blog/gitpod-open-source-sustainability-fund/) attendees of the DevX Conf <a class="no-nowrap" href="https://devxconf.org/opensource">were able to decide where $10,000 USD of funds</a> (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. We thought long and hard about _what_ projects to include in the competition and pondered about:
 
 - **what exactly is digital infrastructure?**
 - **what tools are relied upon by developers every day that are built and maintained almost exclusively by unpaid volunteers?**.

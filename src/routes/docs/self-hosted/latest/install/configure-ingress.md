@@ -32,7 +32,7 @@ Installing Gitpod on a subdomain works as well. For example:
 
 1.  Setup `A` records for all three (sub)domains. To learn your installation's IP run:
 
-    ```
+    ```bash
     kubectl describe svc proxy | grep -i ingress
     ```
 
@@ -54,7 +54,7 @@ Gitpod requires HTTPS certificates to function properly. We recommend using [Let
 To configure the HTTPS certificates for your domain
 
 1.  [Generate certificates](#using-lets-encrypt-to-generate-https-certificates) and put your certificate files under `secrets/https-certificates/`:
-    ```
+    ```text
     secrets/https-certificates:
       |- cert.pem
       |- chain.pem

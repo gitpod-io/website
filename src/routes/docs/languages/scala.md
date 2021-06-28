@@ -15,7 +15,7 @@ Welcome, Scala programmer. Today we will show you how to configure Gitpod for yo
 
 First, you'll probably want to install Scala. To do this, add a new file to your repository called [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker), and add the following content to it:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN brew install scala
@@ -46,7 +46,7 @@ Finally, please note that these changes will only take effect in new workspaces.
 
 To install the [Ammonite REPL](https://ammonite.io/) in Gitpod, you must add the following to our previously-created [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker):
 
-```Dockerfile
+```dockerfile
 RUN sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.0.4/2.13-2.0.4) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm'
 ```
 
@@ -56,7 +56,7 @@ Then commit the changes and push to your repository. Finally, when you open a ne
 
 To use [sbt](https://www.scala-sbt.org/) (simple build tool) in Gitpod, you can add the following to that [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) we created:
 
-```Dockerfile
+```dockerfile
 RUN brew install sbt
 ```
 
@@ -66,13 +66,13 @@ As usual, commit and push the changes, and `sbt` will be installed in all future
 
 Say your project needs a specific Scala version. You can use [scalaenv](https://github.com/scalaenv/scalaenv), a version manager for Scala, to switch between different Scala versions. But first, we must install `scalaenv`. As usual, we need to change our [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker), by adding this to it:
 
-```Dockerfile
+```dockerfile
 RUN brew install scalaenv
 ```
 
 Then, say you need Scala version `2.12.11`, you would add the following line as well:
 
-```Dockerfile
+```dockerfile
 RUN scalaenv install scala-2.12.11 && scalaenv global scala-2.12.11
 ```
 
@@ -80,7 +80,7 @@ RUN scalaenv install scala-2.12.11 && scalaenv global scala-2.12.11
 
 [coursier](https://get-coursier.io/) is useful for building certain Scala projects and installing different tools.
 
-```Dockerfile
+```dockerfile
 RUN brew install coursier/formulas/coursier
 ```
 
@@ -90,7 +90,7 @@ RUN brew install coursier/formulas/coursier
 
 To install [scalafmt](https://scalameta.org/scalafmt/) for your repository, add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker):
 
-```Dockerfile
+```dockerfile
 RUN sudo env "PATH=$PATH" coursier bootstrap org.scalameta:scalafmt-cli_2.12:2.4.2 \
   -r sonatype:snapshots \
   -o /usr/local/bin/scalafmt --standalone --main org.scalafmt.cli.Cli
@@ -102,7 +102,7 @@ Then to format your code simply run `scalafmt`!
 
 A full example of a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) configured for Scala could look something like:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.0.4/2.13-2.0.4) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm'

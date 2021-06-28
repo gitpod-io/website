@@ -49,7 +49,7 @@ There is an additional bit of friction that every developer has to go through re
 
 Running the build and downloading dependencies.
 
-Starting today, [the new Gitpod app is available on the GitHub marketplace](https://github.com/apps/gitpod-io). It is the first of its kind and the only one in the new IDE category.
+Starting today, <a class="no-nowrap" href="https://github.com/apps/gitpod-io">the new Gitpod app is available on the GitHub marketplace</a>. It is the first of its kind and the only one in the new IDE category.
 
 Once you've installed the app for your GitHub repository, it will pre-build dev environments on every commit. So when anybody opens a Gitpod environment on your project, the dev environment is opened as described above. But now also the build ran through and all dependencies are already there.
 

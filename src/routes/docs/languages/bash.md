@@ -31,7 +31,7 @@ ShellCheck provides linting for common mistakes in your shell script.
 
 To use ShellCheck in Gitpod, first, we must install the `shellcheck` tool. Here is a simple Dockerfile to get you started:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 USER gitpod
