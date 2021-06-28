@@ -17,7 +17,7 @@
   });
 </script>
 
-<style>
+<style type="text/postcss">
   .top {
     @apply top-0;
   }

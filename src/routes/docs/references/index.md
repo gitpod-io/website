@@ -12,5 +12,6 @@ title: References
 Below are links to Gitpod reference material you may find helpful:
 
 - [`.gitpod.yml`](/docs/references/gitpod-yml)
+- [Command Line Interface](/docs/command-line-interface)
 - [Changelog](/docs/references/changelog)
 - [Roadmap](/docs/references/roadmap)

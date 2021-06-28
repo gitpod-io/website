@@ -1,4 +1,16 @@
-<script>
+<script lang="ts" context="module">
+  declare global {
+    interface Window {
+      dataLayer: any[];
+      gtag: (...n: any) => void;
+    }
+    interface Navigator {
+      msDoNotTrack: string;
+    }
+  }
+</script>
+
+<script lang="ts">
   // This component is taken from https://angelblanco.dev/articles/add-gtag-analytics-to-sapper/ and adjusted to meet Gitpod requirements.
   import { page } from "$app/stores";
   import { onMount } from "svelte";
@@ -64,8 +76,8 @@
     window.gtag = function () {
       window.dataLayer.push(arguments);
     };
-    gtag("js", new Date());
-    gtag("config", trackingId, gtagOptions);
+    window.gtag("js", new Date());
+    window.gtag("config", trackingId, gtagOptions);
 
     try {
       await addGoogleAnalyticsScript();
@@ -87,7 +99,7 @@
     const page_path = $page.path;
 
     if (isProd() && !isDoNotTrack() && mounted && window.gtag) {
-      gtag("config", trackingId, { ...gtagOptions, page_path });
+      window.gtag("config", trackingId, { ...gtagOptions, page_path });
     }
   }
 </script>

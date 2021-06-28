@@ -21,7 +21,7 @@ A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod)
 
 ## Hello World
 
-Let’s use Gitpod to write [a simple desktop-native application in Go](https://github.com/csweichel/gitpod-hello-ui-demo) using [libui](https://github.com/andlabs/libui). First, we create a GitHub repo and a [little bit of configuration](https://github.com/csweichel/gitpod-hello-ui-demo/commit/fea580735c09fa704531a810e8ec7ca6a5c03a88): we need a Dockerfile to install libui’s dependencies (see below), and we need to tell Gitpod to use that Dockerfile.
+Let’s use Gitpod to write <a class="no-nowrap" href="https://github.com/csweichel/gitpod-hello-ui-demo">a simple desktop-native application in Go</a> using [libui](https://github.com/andlabs/libui). First, we create a GitHub repo and a [little bit of configuration](https://github.com/csweichel/gitpod-hello-ui-demo/commit/fea580735c09fa704531a810e8ec7ca6a5c03a88): we need a Dockerfile to install libui’s dependencies (see below), and we need to tell Gitpod to use that Dockerfile.
 
     FROM gitpod/workspace-full-vnc
     RUN sudo apt-get update && \

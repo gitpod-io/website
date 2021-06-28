@@ -26,8 +26,12 @@ Let’s go through an example.
 ### Spring Boot Example
 
 I went over to **spring-boot** and picked the first issue in the list:
-[**Bean overriding in spring boot 2.1 · Issue #15326 · spring-projects/spring-boot**
-*I have an issue with bean overriding with spring boot 2.1.0 I have a main application class that we use in…*github.com](https://github.com/spring-projects/spring-boot/issues/15326)
+<a class="no-nowrap" href="https://github.com/spring-projects/spring-boot/issues/15326">
+<strong>
+Bean overriding in spring boot 2.1 · Issue #15326 · spring-projects/spring-boot
+</strong>
+<em>I have an issue with bean overriding with spring boot 2.1.0 I have a main application class that we use in…</em>github.com
+</a>
 
 The issue has a detailed description on how to reproduce the problem. It even has a link to a GitHub repository containing the code! So the author did a lot to make it easy for the maintainers to reproduce the issue and figure out what’s wrong.
 
@@ -58,7 +62,7 @@ tasks:
 ```
 
 > Btw. to figure out how to start that damn thing using Maven, I had to ask the community on StackOverflow. Of course, by providing a Gitpod Snapshot :-)
-> [**Run main from test scope in Maven: "The parameters 'mainClass' for goal…** > *Thanks for contributing an answer to Stack Overflow! Some of your past answers have not been well-received, and you're…*stackoverflow.com](https://stackoverflow.com/questions/53536751/run-main-from-test-scope-in-maven-the-parameters-mainclass-for-goal-org-code)
+> <a class="no-nowrap" href="https://stackoverflow.com/questions/53536751/run-main-from-test-scope-in-maven-the-parameters-mainclass-for-goal-org-code"><strong>Run main from test scope in Maven: “The parameters ‘mainClass’ for goal…</strong> &gt; <em>Thanks for contributing an answer to Stack Overflow! Some of your past answers have not been well-received, and you’re…</em>stackoverflow.com</a>
 
 With the **.gitpod.yml **configured and the editors and views laid out as needed, we are ready to take a snapshot. Simply click on the avatar on the top right:
 

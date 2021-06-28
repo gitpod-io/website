@@ -51,7 +51,7 @@ Now, Gitpod knows about the Dockerfile and builds that image for you. Whenever y
 
 <h2>An example, please!</h2>
 
-Let’s get concrete. As an exercise we’ll use [a minimal REST service](https://github.com/lankydan/rust-web-with-rocket) written in[ Rust](https://www.rust-lang.org/) using Rocket and Diesel that talks to a PostgreSQL DB. It also has a nice[ blog post](https://lankydanblog.com/2018/05/20/creating-a-rusty-rocket-fuelled-with-diesel/) to get started.
+Let’s get concrete. As an exercise we’ll use [a minimal REST service](https://github.com/lankydan/rust-web-with-rocket) written in [Rust](https://www.rust-lang.org/) using Rocket and Diesel that talks to a PostgreSQL DB. It also has a nice [ blog post](https://lankydanblog.com/2018/05/20/creating-a-rusty-rocket-fuelled-with-diesel/) to get started.
 
 The example relies on a very specific nightly build of the Rust compiler from May 2018. Thus, a simple git clone … && cargo build && cargo run won’t get you up-and-running. Of course, you could switch Rust toolchains but then other projects on your machine might stop working. Furthermore, there is more setup and tools to install: A database, a CLI tool…
 Gitpod to the rescue!
@@ -125,7 +125,7 @@ USER root
 
 Remember, this is done once per project. Most projects already have those setup descriptions, they are just buried inside their README.
 
-Now whenever anyone accesses the repository through Gitpod, be it a branch, a particular commit, an issue or a[ PR,](/blog/when-code-reviews-lgtm) they will get a custom workspace with all the tools set up and running, out of the box. [Give it a spin](http://gitpod.io/#https://github.com/lankydan/rust-web-with-rocket)!
+Now whenever anyone accesses the repository through Gitpod, be it a branch, a particular commit, an issue or a [ PR,](/blog/when-code-reviews-lgtm) they will get a custom workspace with all the tools set up and running, out of the box. [Give it a spin](http://gitpod.io/#https://github.com/lankydan/rust-web-with-rocket)!
 
 Once the service has build and is running, we just follow the tutorial:
 

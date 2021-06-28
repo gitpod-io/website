@@ -72,12 +72,15 @@
   }
 
   ol {
-    margin-left: var(--x-small);
-    list-style-type: decimal;
+    @apply list-inside list-decimal;
+
+    li > p {
+      @apply inline;
+    }
   }
 
   ul:not(.share > ul) {
-    padding-left: var(--x-small);
+    @apply pl-xx-small md:pl-x-small;
 
     > li {
       position: relative;
@@ -86,8 +89,12 @@
       &::before {
         content: "—";
         position: absolute;
-        left: calc(var(--x-small) * -1);
+        left: calc(var(--xx-small) * -1);
         color: var(--brand-ripe);
+
+        @media (min-width: 768px) {
+          left: calc(var(--x-small) * -1);
+        }
       }
     }
   }
@@ -110,7 +117,7 @@
     padding: 0.3rem 0.5rem;
     border-radius: 0.75rem;
     background: var(--brand-light);
-    white-space: pre;
+    white-space: break-spaces;
   }
 
   pre {
@@ -124,6 +131,10 @@
     &:not(.language-null) {
       background: var(--off-white);
     }
+  }
+
+  iframe {
+    max-width: 100%;
   }
 
   p > .video-container {
@@ -258,6 +269,12 @@
     }
   }
 
+  [class*="btn"] {
+    &::after {
+      display: none !important;
+    }
+  }
+
   // Hide the external link icon for certain scenarios
   .avatars a,
   .link-with-image-as-only-child {
@@ -268,6 +285,7 @@
 
   a[href*="https://gitpod.io/#"]
   {
+    white-space: initial !important;
     &::after {
       display: none !important;
     }

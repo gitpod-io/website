@@ -1,9 +1,4 @@
-// This file is used to define entries in the side menu
-interface MenuEntry {
-  title: string;
-  path: string;
-  subMenu?: MenuEntry[];
-}
+import type { MenuEntry } from "../../types/menu-entry.type";
 
 function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
   return {
@@ -46,7 +41,7 @@ export const MENU: MenuEntry[] = [
     M("Contexts", "context-urls"),
     M("Collaboration & Sharing", "sharing-and-collaboration"),
     M("Create a team", "teams"),
-    M("Command Line Interface", "command-line-interface"),
+    M("Local Companion", "develop/local-companion"),
   ]),
   M("Integrations", "integrations", [
     M("GitLab", "gitlab-integration"),
@@ -79,6 +74,7 @@ export const MENU: MenuEntry[] = [
   ]),
   M("References", "references", [
     M(".gitpod.yml", "references/gitpod-yml"),
+    M("Command Line Interface", "command-line-interface"),
     // M("Custom Docker image", "references/gitpod-dockerfile"),
     // M("Architecture", "references/architecture"),
     // M("Troubleshooting", "references/troubleshooting"),
