@@ -42,10 +42,7 @@
 </style>
 
 <li class="menu-item">
-  <div
-    class:isActiveSection={isActiveSection && menuItem.subMenu}
-    class="menu-container"
-  >
+  <div class:isActiveSection class="menu-container">
     <MenuLink href={menuItem.path} class="text-large">{menuItem.title}</MenuLink
     >
     {#if menuItem.subMenu && isActiveSection}
