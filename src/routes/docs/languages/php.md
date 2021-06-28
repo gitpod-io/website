@@ -34,7 +34,7 @@ To get this extension for your project, you must do two things:
 
 First, you must create a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) for your repository:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN sudo apt-get update -q \
@@ -94,7 +94,7 @@ Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitp
 
 Gitpod's default workspace image also comes with the [PECL](https://pecl.php.net/) package manager pre-installed. To install packages with it, you must use `sudo pecl install <EXTENSION>` in your repository's [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker), e.g. like so:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN sudo pecl channel-update pecl.php.net && \

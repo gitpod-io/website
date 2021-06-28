@@ -35,7 +35,7 @@ npm i -g vue-cli
 
 To install globally across all workspaces add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker)
 
-```Dockerfile
+```dockerfile
 RUN npm i -g vue-cli
 ```
 

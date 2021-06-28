@@ -15,7 +15,7 @@ This tutorial will demonstrate how to configure Gitpod to work with [LaTeX](http
 
 First, you will probably want to install LaTeX in Gitpod. To do this, add a new file to your repository called [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker), and add the following content to it:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 # Install LaTeX
@@ -39,7 +39,7 @@ This will be your base configuration for LaTeX in Gitpod — from now on, every 
 
 One way to achieve this is to install `inotify-tools` by modifying your earlier `.gitpod.Dockerfile` like so:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 # Install LaTeX

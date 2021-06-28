@@ -53,7 +53,7 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
 
 1. Run the following commands in your local terminal:
 
-   ```console
+   ```bash
    helm repo add gitpod.io https://charts.gitpod.io
 
    helm install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0
@@ -71,7 +71,7 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
 
 1.  Run the update
 
-    ```console
+    ```bash
     helm install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0
     ```
 
@@ -99,6 +99,6 @@ To try the latest version of Gitpod, freshly build form the `master` branch of o
 1. Obtain the version name from [werft.gitpod-dev.com](https://werft.gitpod-dev.com/). The version has the format `<branchname>.<buildnumber>` (e.g `master.354`).
 
 2. The Helm chart ships as part of our `installer` docker image. You can extract it by running:
-   ```console
+   ```bash
    docker run --entrypoint cp -v $PWD:/workspace gcr.io/gitpod-io/self-hosted/installer:<version> -R /dist/helm/ /workspace
    ```

@@ -19,7 +19,7 @@ Gitpod uses a MySQL database to store user data. By default Gitpod ships with a 
 This chart installs a MySQL database that gets Gitpod up and running but is not suitable for production (the data is lost on each restart of the DB pod). To connect to a proper MySQL installation:
 
 1.  Copy the DB init scripts into your local folder:
-    ```
+    ```bash
     mkdir -p gpinstall
     echo exit | docker run -v $PWD/gpinstall:/workspace -u $(id -u) -i gcr.io/gitpod-io/self-hosted/installer:latest bash
     mkdir -p ./db-init

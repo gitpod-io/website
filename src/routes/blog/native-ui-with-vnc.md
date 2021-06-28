@@ -23,10 +23,12 @@ A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod)
 
 Let’s use Gitpod to write <a class="no-nowrap" href="https://github.com/csweichel/gitpod-hello-ui-demo">a simple desktop-native application in Go</a> using [libui](https://github.com/andlabs/libui). First, we create a GitHub repo and a [little bit of configuration](https://github.com/csweichel/gitpod-hello-ui-demo/commit/fea580735c09fa704531a810e8ec7ca6a5c03a88): we need a Dockerfile to install libui’s dependencies (see below), and we need to tell Gitpod to use that Dockerfile.
 
-    FROM gitpod/workspace-full-vnc
-    RUN sudo apt-get update && \
-        sudo apt-get install -y libgtk-3-dev && \
-        sudo rm -rf /var/lib/apt/lists/*
+```dockerfile
+FROM gitpod/workspace-full-vnc
+RUN sudo apt-get update && \\
+    sudo apt-get install -y libgtk-3-dev && \\
+    sudo rm -rf /var/lib/apt/lists/*
+```
 
 This Dockerfile uses the gitpod/workspace-full-vnc image which supports the setup necessary to run X11 and VNC in Gitpod. It runs a [web-based VNC viewer](https://novnc.com) on port 6080 — during startup, Gitpod will ask you if you want to open this page.
 
@@ -42,11 +44,13 @@ To make this setup work in Gitpod, we first create a Docker image that has the r
 
 Using this setup, we can build and [run Visual Studio Code in Gitpod](https://gitpod.io/#github.com/microsoft/vscode). VS Code needs a few more libraries than the bare-bones X11 setup we’ve built so far. But again those libraries are easy enough to install in a Dockerfile:
 
-    FROM gitpod/workspace-full-vnc
+```dockerfile
+FROM gitpod/workspace-full-vnc
 
-    RUN sudo apt-get update && \
-        sudo apt-get install -y libx11-dev libxkbfile-dev libsecret-1-dev libgconf2–4 libnss3 && \
-        sudo rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update && \\
+    sudo apt-get install -y libx11-dev libxkbfile-dev libsecret-1-dev libgconf2–4 libnss3 && \\
+    sudo rm -rf /var/lib/apt/lists/*
+```
 
 I added this setup to [definitely-gp](https://github.com/gitpod-io/definitely-gp/tree/master/vscode), so that when you open the VS code repository in Gitpod, it will build the application, and start it. To see and interact with the application, open the noVNC session that’s served on port 6080:
 

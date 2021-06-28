@@ -52,7 +52,7 @@ Taking care of the first two items is easy. For the third, you need to add a **_
 
 In the case of this project I added a task to start the failing Java process:
 
-```
+```yaml
 tasks:
     - command: >
     mvn -q exec:exec \

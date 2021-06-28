@@ -158,7 +158,7 @@ image:
 
 Then add a new file called `.gitpod.dockerfile` at the root of your repository, containing:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN sudo apt-get update \
@@ -181,7 +181,7 @@ To get PostgreSQL for your project, you can use our dedicated [PostgreSQL image]
 
 Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-postgres
 ```
 
@@ -207,7 +207,7 @@ postgres=#
 
 If your project needs MySQL to work, we also have a dedicated [MySQL image](https://github.com/gitpod-io/workspace-images/blob/master/mysql/Dockerfile). Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-mysql
 ```
 
@@ -223,7 +223,7 @@ mysql -e "show databases;"
 
 To install Redis for your project, simply add these instructions to your `.gitpod.dockerfile`:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 # Install Redis.
@@ -247,7 +247,7 @@ To get MongoDB for your project, you can use our dedicated [MongoDB image](https
 
 Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-mongodb
 ```
 
@@ -273,7 +273,7 @@ That's because by default, Gitpod workspaces don't have a graphical environment 
 
 Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full-vnc
 ```
 
@@ -285,7 +285,7 @@ This will give you a virtual X server and a Remote Desktop client running on por
 
 This can be useful for example to run Electron apps graphically. For that, you'll just need a few extra dependencies in your `.gitpod.dockerfile`:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full-vnc
 
 # Install Electron dependencies.
@@ -417,7 +417,7 @@ These mean that your web app refuses to be opened inside an `<iframe>`, for secu
 
 If your web app starts to show up in a preview, but it doesn't work well, the Browser Console might reveal failing requests to `localhost` URLs like:
 
-```
+```bash
 http://localhost:9000/api/v1/
 ```
 

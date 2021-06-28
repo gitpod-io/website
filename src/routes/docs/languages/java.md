@@ -31,7 +31,7 @@ Check out the [documentation of SDKMAN!](https://sdkman.io/usage) to see how to 
 Although you can use sdk in your terminal, you should put the tools and versions into your Dockerfile, so you and your team get the very same configuration every time.
 To do that you need to alter the generated `.gitpod.Dockerfile`. Here's an example that will install Java 12 with the J9 VM from "Adopt a JDK".
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
@@ -42,7 +42,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
 
 You can add additional tools and versions like this:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \

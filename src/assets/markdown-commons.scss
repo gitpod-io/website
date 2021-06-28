@@ -128,6 +128,7 @@
 
   iframe {
     max-width: 100%;
+    @apply mt-micro;
   }
 
   p > .video-container {

@@ -42,7 +42,7 @@ That was way too tedious for everyone to start playing around.
 
 To improve this experience we introduced[ Dockerfile support (#62)](https://github.com/gitpod-io/gitpod/issues/62), which lets you reference your Dockerfile directly from inside your .gitpod.yml file:
 
-```
+```yaml
 image:
   file: docker/Dockerfile
 ```
@@ -133,7 +133,7 @@ Once the service has build and is running, we just follow the tutorial:
 
 - Hit F1 -> "Open new Terminal" and paste:
 
-```
+```bash
 curl -XPOST [http://localhost:8000/people](http://localhost:8000/people) -H "Content-Type: application/json" --data '{"id": 123, "first_name": "Jon", "last_name": "Doe", "age": 64, "profession": "Engineer", "salary": 1024}'
 ```
 
