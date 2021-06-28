@@ -257,9 +257,9 @@ Define whether to expose the port publicly or keep it private.
 
 A public port allows you to share a URL for a given port with team members, for example if you want to get their feedback on a new feature you develop.
 
-| Type     | Default  | Values                     |
-| -------- | -------- | -------------------------- |
-| `string` | `public` | `private`,<br><br>`public` |
+| Type     | Default   | Values                     |
+| -------- | --------- | -------------------------- |
+| `string` | `private` | `private`,<br><br>`public` |
 
 ## `tasks`
 
