@@ -118,9 +118,58 @@
   ];
 </script>
 
-<style type="scss">
+<style>
   h2 {
     text-align: center;
+  }
+
+  .featureTable {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .featureTable .card {
+    padding: var(--micro);
+  }
+
+  .col-header {
+    @apply pt-micro flex-col justify-start h-48 !important;
+  }
+
+  .col-header a {
+    @apply my-macro;
+  }
+
+  .featureTable + p {
+    margin: auto;
+    max-width: 60%;
+  }
+  .featureTable > * > * {
+    grid-auto-rows: 3rem;
+  }
+  .featureTable .toc li {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-left: 2.175rem;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .featureTable .card {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .featureTable .card-heading {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .featureTable .toc img {
+    width: 24px;
+  }
+  .featureTable [aria-label] {
+    min-height: 1.5rem;
+    min-width: 1.5rem;
   }
 </style>
 
@@ -157,7 +206,7 @@
     You have the choice to either host Gitpod yourself or to use our cloud
     infrastructure.
   </p>
-  <div id="edPricingTable">
+  <div id="edPricingTable" class="featureTable">
     <section class="card toc">
       <ul class="tableOfContents" role="presentation">
         <li>Pricing</li>
@@ -191,11 +240,11 @@
       </ul>
     </section>
 
-    <section class="card alive text-center">
-      <div class="card-heading">
+    <section class="card text-center">
+      <div class="card-heading col-header">
         <h3>Gitpod.io</h3>
         <a class="btn-conversion" href="/#get-started">Try Now</a>
-        <p>Free 14 days trial included</p>
+        <p class="text-small">Free 14 days trial included</p>
       </div>
       <dl id="gitpodPricing" class="tableColumn">
         <dt>Pricing</dt>
@@ -218,7 +267,7 @@
             src="/tick.svg"
           />
         </dd>
-        <dt>Self-Host on AWS</dt>
+        <dt>github.com</dt>
         <dd>
           <img
             alt="Yes"
@@ -228,7 +277,9 @@
             src="/tick.svg"
           />
         </dd>
-        <dt>Self-Host on Kubernetes</dt>
+        <dt>GitHub Enterprise</dt>
+        <dd>Public only</dd>
+        <dt>gitlab.com</dt>
         <dd>
           <img
             alt="Yes"
@@ -238,7 +289,9 @@
             src="/tick.svg"
           />
         </dd>
-        <dt>Prebuilds</dt>
+        <dt>GitLab Self-Managed</dt>
+        <dd>Public only</dd>
+        <dt>Bitbucket</dt>
         <dd>
           <img
             alt="Yes"
@@ -248,338 +301,30 @@
             src="/tick.svg"
           />
         </dd>
-        <dt>Snapshots</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>VS Code Extensions</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>iPad Support</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Virtual Desktop (VNC)</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Multi-IDE Support</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
+        <dt>Custom Authentication</dt>
+        <dd>—</dd>
+        <dt>Custom Branding</dt>
+        <dd>—</dd>
       </dl>
     </section>
 
-    <section class="card toc">
-      <ul class="tableOfContents" role="presentation">
-        <div>
-          <h3>Gitpod.io</h3>
-          <a class="btn-conversion" href="/#get-started">Try Now</a>
-          <p>Free 14 days trial included</p>
-        </div>
-        <li>€8 / user / month</li>
-        <li>gitpod.io</li>
-        <li>Gitpod</li>
-        <li>Globally distributed</li>
-        <li>Optional</li>
-
-        <li class="hasIcon">
-          <img src="/svg/gitlab.svg" alt="GitLab" width="24" />GitLab
-          Integration
-        </li>
-
-        <li class="hasIcon">
-          <img src="/svg/bitbucket.svg" alt="Bitbucket" width="24" /> Bitbucket Integration
-        </li>
-
-        <li class="hasIcon">
-          <img
-            src="/svg/brands/gcp.svg"
-            alt="Google Cloud Platform"
-            width="24"
-          />
-          Self-Host on GCP
-        </li>
-
-        <li class="hasIcon">
-          <img
-            src="/svg/brands/aws.svg"
-            alt="Amazon Web Services"
-            width="24"
-          />Self-Host on AWS
-        </li>
-        <li class="hasIcon">
-          <img
-            src="/svg/brands/kubernetes.svg"
-            alt="Kubernetes"
-            width="24"
-          />Self-Host on Kubernetes
-        </li>
-        <li>Prebuilds</li>
-        <li>Snapshots</li>
-        <li>VS Code Extensions</li>
-        <li>iPad Support</li>
-        <li>Virtual Desktop (VNC)</li>
-        <li>Multi-IDE Support</li>
-      </ul>
-    </section>
-    <section class="card alive text-center">
-      <h2 class="card-heading">
-        <img
-          alt="Gitpod"
-          src="/images/gitpod-logo.svg"
-          width="40"
-          height="36"
-        />
-      </h2>
-      <dl id="gitpodPricing" class="tableColumn">
-        <dt>Pricing (Hosted)</dt>
-        <dd>Free for Open-Source</dd>
-        <dt>License</dt>
-        <dd>Open Source</dd>
-        <dt>GitHub Integration</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>GitLab Integration</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Bitbucket Integration</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Self-Host on GCP</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Self-Host on AWS</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Self-Host on Kubernetes</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Prebuilds</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Snapshots</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>VS Code Extensions</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>iPad Support</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Virtual Desktop (VNC)</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>Multi-IDE Support</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-      </dl>
-    </section>
     <section class="card text-center">
-      <h2 class="text-xl card-heading h4">GitHub<br />Codespaces</h2>
-      <dl>
-        <dt>Pricing (Hosted)</dt>
-        <dd>
-          <span aria-label="unknown" class="icon">$$$</span>
-        </dd>
-        <dt>License</dt>
-        <dd>Proprietary</dd>
-        <dt>GitHub Integration</dt>
-        <dd>
-          <img
-            alt="Yes"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/tick.svg"
-          />
-        </dd>
-        <dt>GitLab Integration</dt>
-        <dd>
-          <img
-            alt="No"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/cross.svg"
-          />
-        </dd>
-        <dt>Bitbucket Integration</dt>
-        <dd>
-          <img
-            alt="No"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/cross.svg"
-          />
-        </dd>
-        <dt>Self-Host on GCP</dt>
-        <dd>
-          <img
-            alt="No"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/cross.svg"
-          />
-        </dd>
-        <dt>Self-Host on AWS</dt>
-        <dd>
-          <img
-            alt="No"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/cross.svg"
-          />
-        </dd>
-        <dt>Self-Host on Kubernetes</dt>
-        <dd>
-          <img
-            alt="No"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/cross.svg"
-          />
-        </dd>
-        <dt>Prebuilds</dt>
-        <dd>
-          <img
-            alt="No"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/cross.svg"
-          />
-        </dd>
-        <dt>Snapshots</dt>
-        <dd>
-          <img
-            alt="No"
-            class="mx-auto"
-            height="24"
-            width="24"
-            src="/cross.svg"
-          />
-        </dd>
-        <dt>VS Code Extensions</dt>
+      <div class="card-heading col-header">
+        <h3>Managed</h3>
+        <a class="btn-conversion" href="/contact">Contact sales</a>
+      </div>
+      <dl id="gitpodPricing" class="tableColumn">
+        <dt>Pricing</dt>
+        <dd>Please enquire</dd>
+        <dt>Domain</dt>
+        <dd>Custom</dd>
+        <dt>Managed by</dt>
+        <dd>Gitpod</dd>
+        <dt>Infrastructure</dt>
+        <dd>> 1 geographical regions</dd>
+        <dt>SLA</dt>
+        <dd>Optional</dd>
+        <dt>Support</dt>
         <dd>
           <img
             alt="Yes"
@@ -589,7 +334,7 @@
             src="/tick.svg"
           />
         </dd>
-        <dt>iPad Support</dt>
+        <dt>github.com</dt>
         <dd>
           <img
             alt="Yes"
@@ -599,7 +344,7 @@
             src="/tick.svg"
           />
         </dd>
-        <dt>Virtual Desktop (VNC)</dt>
+        <dt>GitHub Enterprise</dt>
         <dd>
           <img
             alt="Yes"
@@ -609,14 +354,121 @@
             src="/tick.svg"
           />
         </dd>
-        <dt>Multi-IDE Support</dt>
+        <dt>gitlab.com</dt>
         <dd>
           <img
-            alt="No"
+            alt="Yes"
             class="mx-auto"
             height="24"
             width="24"
-            src="/cross.svg"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>GitLab Self-Managed</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Bitbucket</dt>
+        <dd>Soon</dd>
+        <dt>Custom Authentication</dt>
+        <dd>OAuth2</dd>
+        <dt>Custom Branding</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+      </dl>
+    </section>
+
+    <section class="card text-center">
+      <div class="card-heading col-header">
+        <h3>Self-Hosted</h3>
+        <a class="btn-conversion" href="/self-hosted">Host yourself</a>
+      </div>
+      <dl id="gitpodPricing" class="tableColumn">
+        <dt>Pricing</dt>
+        <dd>€0,9 / user / month</dd>
+        <dt>Domain</dt>
+        <dd>Custom</dd>
+        <dt>Managed by</dt>
+        <dd>You</dd>
+        <dt>Infrastructure</dt>
+        <dd>On-prem or private cloud</dd>
+        <dt>SLA</dt>
+        <dd>—</dd>
+        <dt>Support</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>github.com</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>GitHub Enterprise</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>gitlab.com</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>GitLab Self-Managed</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Bitbucket</dt>
+        <dd>Soon</dd>
+        <dt>Custom Authentication</dt>
+        <dd>OAuth2</dd>
+        <dt>Custom Branding</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
           />
         </dd>
       </dl>
