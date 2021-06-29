@@ -4,16 +4,6 @@
   };
 </script>
 
-<style type="text/postcss">
-  input {
-    @apply mb-0;
-  }
-
-  button {
-    @apply mr-0 w-32;
-  }
-</style>
-
 <div class="mt-large my-xx-large">
   <form
     class="bg-white shadow-normal rounded-2xl max-w-2xl py-small px-xx-small sm:px-small md:px-x-large m-auto"
@@ -26,9 +16,9 @@
         type="email"
         placeholder="Enter your email"
         autocomplete="email"
-        class="mr-macro sm:mr-xx-small"
+        class="mb-0 mr-macro sm:mr-xx-small"
       />
-      <button class="btn-primary" type="submit">Sign up</button>
+      <button class="btn-primary mr-0 w-32" type="submit">Sign up</button>
     </div>
   </form>
 </div>
