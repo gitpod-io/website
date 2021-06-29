@@ -7,38 +7,6 @@
 </script>
 
 <style>
-  .featureTable + p {
-    margin: auto;
-    max-width: 60%;
-  }
-  .featureTable > * > * {
-    grid-auto-rows: 3rem;
-  }
-  .featureTable .toc li {
-    font-weight: 700;
-    margin-bottom: 1rem;
-    padding-left: 2.175rem;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-  }
-  .featureTable .card {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-  .featureTable .card-heading {
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .featureTable .toc img {
-    width: 24px;
-  }
-  .featureTable [aria-label] {
-    min-height: 1.5rem;
-    min-width: 1.5rem;
-  }
   .ticklist > li {
     display: flex;
     align-items: flex-start;
