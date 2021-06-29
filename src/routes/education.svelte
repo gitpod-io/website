@@ -123,7 +123,7 @@
     @apply text-center;
   }
 
-  .col-header {
+  .card-heading {
     @apply flex-col justify-start h-36 mt-x-small;
   }
 
@@ -156,12 +156,12 @@
       @apply p-micro;
     }
 
-    .col-header {
+    .card-heading {
       @apply h-44 !important;
     }
   }
 
-  .col-header a {
+  .card-heading a {
     @apply my-macro;
   }
 </style>

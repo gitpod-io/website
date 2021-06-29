@@ -86,30 +86,20 @@
 }
 
 .featureTable + p {
-  margin: auto;
+  @apply m-auto;
   max-width: 60%;
 }
 .featureTable > * > * {
   grid-auto-rows: 3rem;
 }
 .featureTable .toc li {
-  position: relative;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  padding-left: 2.175rem;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
+  @apply flex items-center relative font-bold mb-micro text-fine-print pl-x-small;
 }
 .featureTable .card {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  @apply pt-micro pb-x-small;
 }
 .featureTable .card-heading {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply flex items-center justify-center h-20;
 }
 .featureTable .toc img {
   width: 24px;
