@@ -118,42 +118,37 @@
   ];
 </script>
 
-<style>
+<style type="text/postcss">
   h2 {
-    text-align: center;
+    @apply text-center;
   }
 
   @media (max-width: 960px) {
     .featureTable {
-      display: initial;
+      @apply block;
     }
-
     .featureTable .toc {
-      display: none;
+      @apply hidden;
     }
     .featureTable .card {
-      max-width: 400px;
-      margin: auto;
-      margin-bottom: 2rem;
-      margin-top: 2rem;
+      @apply m-auto my-x-small max-w-sm;
     }
     .featureTable dt {
       font-size: smaller;
-      font-weight: bold;
+      @apply font-bold;
     }
     .featureTable dd {
-      margin-bottom: 2rem;
-      color: var(--light-grey);
+      @apply mb-x-small text-light-grey;
       font-size: larger;
     }
 
     @media (min-width: 961px) {
       .featureTable {
-        grid-template-columns: repeat(4, 1fr);
+        @apply grid-cols-4;
       }
 
       .featureTable .card {
-        padding: var(--micro);
+        @apply p-micro;
       }
     }
   }
