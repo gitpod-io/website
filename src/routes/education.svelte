@@ -123,6 +123,10 @@
     @apply text-center;
   }
 
+  .col-header {
+    @apply flex-col justify-start h-36 mt-x-small;
+  }
+
   @media (max-width: 960px) {
     .featureTable {
       @apply block;
@@ -141,20 +145,20 @@
       @apply mb-x-small text-light-grey;
       font-size: larger;
     }
-
-    @media (min-width: 961px) {
-      .featureTable {
-        @apply grid-cols-4;
-      }
-
-      .featureTable .card {
-        @apply p-micro;
-      }
-    }
   }
 
-  .col-header {
-    @apply pt-micro flex-col justify-start h-48 !important;
+  @media (min-width: 961px) {
+    .featureTable {
+      @apply grid-cols-4;
+    }
+
+    .featureTable .card {
+      @apply p-micro;
+    }
+
+    .col-header {
+      @apply h-44 !important;
+    }
   }
 
   .col-header a {
