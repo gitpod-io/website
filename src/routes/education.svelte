@@ -160,11 +160,159 @@
   <div id="edPricingTable">
     <section class="card toc">
       <ul class="tableOfContents" role="presentation">
-        <li>Pricing (Hosted)</li>
-        <li>License</li>
+        <li>Pricing</li>
+        <li>Domain</li>
+        <li>Managed by</li>
+        <li>Infrastructure</li>
+        <li>SLA</li>
+        <li>Support</li>
         <li class="hasIcon">
-          <img src="/svg/github.svg" alt="GitHub" width="24" /> GitHub Integration
+          <img src="/svg/github.svg" alt="GitHub" width="24" /> github.com
         </li>
+
+        <li class="hasIcon">
+          <img src="/svg/github.svg" alt="GitHub" width="24" /> GitHub Enterprise
+        </li>
+
+        <li class="hasIcon">
+          <img src="/svg/gitlab.svg" alt="GitLab" width="24" /> gitlab.com
+        </li>
+
+        <li class="hasIcon">
+          <img src="/svg/gitlab.svg" alt="GitLab" width="24" /> GitLab Self-Managed
+        </li>
+
+        <li class="hasIcon">
+          <img src="/svg/bitbucket.svg" alt="Bitbucket" width="24" /> Bitbucket
+        </li>
+
+        <li>Custom Authentication</li>
+        <li>Custom Branding</li>
+      </ul>
+    </section>
+
+    <section class="card alive text-center">
+      <div class="card-heading">
+        <h3>Gitpod.io</h3>
+        <a class="btn-conversion" href="/#get-started">Try Now</a>
+        <p>Free 14 days trial included</p>
+      </div>
+      <dl id="gitpodPricing" class="tableColumn">
+        <dt>Pricing</dt>
+        <dd>€8 / user / month</dd>
+        <dt>Domain</dt>
+        <dd>gitpod.io</dd>
+        <dt>Managed by</dt>
+        <dd>Gitpod</dd>
+        <dt>Infrastructure</dt>
+        <dd>Globally distributed</dd>
+        <dt>SLA</dt>
+        <dd>Optional</dd>
+        <dt>Support</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Self-Host on AWS</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Self-Host on Kubernetes</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Prebuilds</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Snapshots</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>VS Code Extensions</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>iPad Support</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Virtual Desktop (VNC)</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+        <dt>Multi-IDE Support</dt>
+        <dd>
+          <img
+            alt="Yes"
+            class="mx-auto"
+            height="24"
+            width="24"
+            src="/tick.svg"
+          />
+        </dd>
+      </dl>
+    </section>
+
+    <section class="card toc">
+      <ul class="tableOfContents" role="presentation">
+        <div>
+          <h3>Gitpod.io</h3>
+          <a class="btn-conversion" href="/#get-started">Try Now</a>
+          <p>Free 14 days trial included</p>
+        </div>
+        <li>€8 / user / month</li>
+        <li>gitpod.io</li>
+        <li>Gitpod</li>
+        <li>Globally distributed</li>
+        <li>Optional</li>
 
         <li class="hasIcon">
           <img src="/svg/gitlab.svg" alt="GitLab" width="24" />GitLab
