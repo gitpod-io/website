@@ -20,6 +20,19 @@ title: I said goodbye to local development and so can you
 - Onboarding instructions are often outdated, as are automated onboarding scripts because only new hires run them.
 - www.gitpod.io provides automated, one-off development environments you spin up in the cloud for each task. In seconds, repeatedly, and securely.
 
+## Table of contents
+
+- [What it’s like today](#what-its-like-today)
+  - [Open source project onboarding](#open-source-project-onboarding)
+- [Meet Alice and Bob](#meet-alice-and-bob)
+  - [Set up a new project](#set-up-a-new-project)
+  - [Develop a new feature](#develop-a-new-feature)
+  - [Switch context](#switch-context)
+  - [Set up a new computer](#set-up-a-new-computer)
+  - [Contribute to open source projects](#contribute-to-open-source-projects)
+- [What’s the catch?](#whats-the-catch)
+- [Conclusion](#conclusion)
+
 ## What it’s like today
 
 Whether you recently joined a new team or contributed to an open source project for the first time, I’m quite sure you spent anywhere from an hour to a few days onboarding. If you were lucky, other contributors provided detailed, up-to-date instructions you could follow. Possibly even commands you could copy & paste and watch your development environment set itself up one step at a time. If this is your experience, congratulations on finding such a great and diligent team - tell them what an awesome job they did 🤩!
