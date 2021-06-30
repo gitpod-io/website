@@ -1,6 +1,11 @@
 <script>
   const submitEmail = async () => {
-    // todo submit email
+    // todo submit
+    // analytics.track({
+    //   event:"newsletter signup",
+    //   email:"",
+    //   signup_date:new Date()
+    // })
   };
 </script>
 
