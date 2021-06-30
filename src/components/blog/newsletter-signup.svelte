@@ -1,11 +1,28 @@
-<script>
+<script lang="ts">
+  import type { Form } from "src/types/form.type";
+
+  const data: Form = {
+    email: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+  };
+
+  let isEmailDirty = false;
+  $: isEmailValid = data.email.valid;
+
   const submitEmail = async () => {
-    // todo submit
-    // analytics.track({
-    //   event:"newsletter signup",
-    //   email:"",
-    //   signup_date:new Date()
-    // })
+    isEmailDirty = true;
+    if (!isEmailValid) {
+      return;
+    }
+    // @ts-ignore
+    const signup_at = new Date().toISOString();
+    analytics.track("newsletter signup", {
+      email: data.email.valid,
+      signup_at,
+    });
   };
 </script>
 
@@ -28,11 +45,22 @@
     <div class="flex mt-x-small">
       <input
         type="email"
-        placeholder="Enter your email"
+        bind:this={data.email.el}
+        bind:value={data.email.value}
+        class:error={isEmailDirty && !data.email.valid}
+        on:change={() => {
+          data.email.valid = data.email.value && data.email.el.checkValidity();
+        }}
         autocomplete="email"
+        required
+        placeholder="Enter your email"
         class="mb-0 mr-macro sm:mr-xx-small"
       />
-      <button class="btn-primary mr-0 w-32" type="submit">Sign up</button>
+      <button
+        class="btn-primary mr-0 w-32"
+        type="submit"
+        disabled={isEmailDirty && !isEmailValid}>Sign up</button
+      >
     </div>
   </form>
 </div>
