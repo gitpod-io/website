@@ -11,6 +11,7 @@
 
   let isEmailDirty = false;
   $: isEmailValid = data.email.valid;
+  let resultMessage = "";
 
   const submitEmail = async () => {
     isEmailDirty = true;
@@ -20,13 +21,13 @@
 
     try {
       const response = await fetch("/.netlify/functions/newsletter", {
-        method: "POST",
+        method: "post",
         body: JSON.stringify(data.email.value),
       });
       if (response.ok) {
-        // todo update the ui to indicate success.
+        resultMessage = "Thanks you are now signed up for our newsletter.";
       } else {
-        console.error(response.statusText);
+        resultMessage = "Oh no, something went wrong :(.";
       }
     } catch (error) {
       console.error(error);
@@ -49,26 +50,30 @@
     on:submit|preventDefault={submitEmail}
   >
     <h2 class="h3">Stay updated</h2>
-    <p class="text-medium">Sign up now for our newsletter.</p>
-    <div class="flex mt-x-small">
-      <input
-        type="email"
-        bind:this={data.email.el}
-        bind:value={data.email.value}
-        class:error={isEmailDirty && !data.email.valid}
-        on:change={() => {
-          data.email.valid = data.email.value && data.email.el.checkValidity();
-        }}
-        autocomplete="email"
-        required
-        placeholder="Enter your email"
-        class="mb-0 mr-macro sm:mr-xx-small"
-      />
-      <button
-        class="btn-primary mr-0 w-32"
-        type="submit"
-        disabled={isEmailDirty && !isEmailValid}>Sign up</button
-      >
-    </div>
+    {#if resultMessage}
+      <p class="my-medium">{resultMessage}</p>
+    {:else}
+      <p class="text-medium">Sign up now for our newsletter.</p>
+      <div class="flex mt-x-small">
+        <input
+          type="email"
+          bind:this={data.email.el}
+          bind:value={data.email.value}
+          class:error={isEmailDirty && !data.email.valid}
+          on:change={() => {
+            data.email.valid =
+              data.email.value && data.email.el.checkValidity();
+          }}
+          autocomplete="email"
+          placeholder="Enter your email"
+          class="mb-0 mr-macro sm:mr-xx-small"
+        />
+        <button
+          class="btn-primary mr-0 w-32"
+          type="submit"
+          disabled={isEmailDirty && !isEmailValid}>Sign up</button
+        >
+      </div>
+    {/if}
   </form>
 </div>
