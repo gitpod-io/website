@@ -11,6 +11,6 @@ export const signup = async (body: string): Promise<Response> => {
   const statusCode = isSavedInSheet ? 201 : 500;
   return {
     statusCode,
-    body: statusCode === 201 ? "Signed up" : "Oh no, something failed.",
+    body: statusCode === 201 ? "Signed up" : "Oh no, something failed." + email,
   };
 };
