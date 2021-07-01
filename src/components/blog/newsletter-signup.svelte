@@ -19,7 +19,7 @@
     }
 
     try {
-      const response = await fetch("/.netlify/functions/submit-form", {
+      const response = await fetch("/.netlify/functions/newsletter", {
         method: "POST",
         body: JSON.stringify(data.email.value),
       });
