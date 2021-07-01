@@ -15,7 +15,7 @@
   } = pricing;
 </script>
 
-<style lang="scss">
+<style type="text/postcss">
   .box {
     width: 295px;
 
@@ -26,9 +26,8 @@
     &__list-item {
       &::before {
         content: url("/tick.svg");
-        position: absolute;
+        @apply absolute inline-block
         left: -2.188rem;
-        display: inline-block;
         height: 1.375rem;
         width: 1.375rem;
       }
@@ -36,7 +35,7 @@
   }
 
   .btn-cta {
-    align-self: center;
+    @apply self-center;
   }
 
   .learn-more {
@@ -44,14 +43,12 @@
   }
 
   :global(.crossed-out) {
-    text-decoration: line-through;
+    @apply line-through;
   }
 
   :global(.price-small),
   :global(.crossed-out) {
-    color: var(--light-grey);
-    font-size: var(--h4);
-    margin-right: var(--macro);
+    @apply text-gray-700 text-h4 mr-macro;
   }
 </style>
 
