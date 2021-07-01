@@ -75,9 +75,11 @@
       {/if}
     </div>
     {#if features}
-      <ul class="box__list px-large lgx:px-medium my-small mx-0 text-left">
+      <ul
+        class="box__list px-large lgx:px-medium my-small mx-0 space-y-micro text-left"
+      >
         {#each features as feature}
-          <li class="box__list-item relative text-black space-y-micro">
+          <li class="box__list-item relative text-black">
             {feature}
           </li>
         {/each}

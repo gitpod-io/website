@@ -17,15 +17,10 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      lgx: "1140px",
-      xl: "1280px",
-      "2xl": "1536px",
-    },
     extend: {
+      screens: {
+        lgx: "1140px",
+      },
       backgroundImage: {
         "gitpod-kumquat-gradient":
           "linear-gradient(137.41deg, #FFAD33 14.37%, #FF8A00 91.32%)",
