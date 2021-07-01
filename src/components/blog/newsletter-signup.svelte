@@ -43,7 +43,7 @@
   }
 </style>
 
-<div class="mt-large my-xx-large">
+<div class="mt-large my-xx-large" id="newsletter">
   <form
     class="bg-white shadow-normal rounded-2xl max-w-lg py-small px-xx-small sm:px-small m-auto"
     on:submit|preventDefault={submitEmail}

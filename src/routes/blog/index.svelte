@@ -60,5 +60,5 @@
       </div>
     {/each}
   </div>
-  <NewsletterSignup />
 </div>
+<NewsletterSignup />
