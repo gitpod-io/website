@@ -17,12 +17,20 @@
     if (!isEmailValid) {
       return;
     }
-    // @ts-ignore
-    const signup_at = new Date().toISOString();
-    analytics.track("newsletter signup", {
-      email: data.email.valid,
-      signup_at,
-    });
+
+    try {
+      const response = await fetch("/.netlify/functions/submit-form", {
+        method: "POST",
+        body: JSON.stringify(data.email.value),
+      });
+      if (response.ok) {
+        // todo update the ui to indicate success.
+      } else {
+        console.error(response.statusText);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 </script>
 
