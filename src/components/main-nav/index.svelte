@@ -35,11 +35,15 @@
   ];
 </script>
 
+<style>
+  nav {
+    max-width: 1500px;
+  }
+</style>
+
 <nav
   id="choose-project-observer-target-top"
-  class={`${
-    $menuState ? "bg-off-white " : ""
-  }mx-auto w-full max-w-7xl sm:bg-sand-light`}
+  class={`${$menuState ? "bg-off-white " : ""}mx-auto w-full sm:bg-sand-light`}
 >
   <div class="flex items-center justify-between h-20 px-4 sm:px-8">
     <a href="/" aria-label="Gitpod" on:click={() => ($menuState = !menuState)}>
