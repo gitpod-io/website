@@ -35,26 +35,37 @@
   ];
 </script>
 
-<style>
+<style type="text/postcss">
   nav {
     max-width: 1500px;
+  }
+
+  @media (min-width: 931px) {
+    nav {
+      @apply bg-sand-light;
+    }
+
+    .nav-items,
+    .login-wrapper {
+      @apply flex;
+    }
   }
 </style>
 
 <nav
   id="choose-project-observer-target-top"
-  class={`${$menuState ? "bg-off-white " : ""}mx-auto w-full sm:bg-sand-light`}
+  class={`${$menuState ? "bg-off-white " : ""}mx-auto w-full`}
 >
   <div class="flex items-center justify-between h-20 px-4 sm:px-8">
     <a href="/" aria-label="Gitpod" on:click={() => ($menuState = !menuState)}>
       <Logo />
     </a>
-    <div class="hidden px-2 space-x-6 items-center sm:flex md:space-x-12">
+    <div class="nav-items hidden px-2 space-x-6 items-center md:space-x-12">
       {#each navItems as navItem}
         <NavItem {navItem} on:click={() => ($menuState = !$menuState)} />
       {/each}
     </div>
-    <div class="hidden sm:flex">
+    <div class="login-wrapper hidden">
       <LoginButton />
     </div>
     <MobileMenuToggle />

@@ -2,10 +2,18 @@
   import menuState from "./state";
 </script>
 
+<style type="text/postcss">
+  button {
+    @media (min-width: 931px) {
+      @apply hidden;
+    }
+  }
+</style>
+
 <button
   on:click={() => ($menuState = !$menuState)}
   aria-label="Show / hiide nav items"
-  class="flex justify-center items-center h-6 w-12 rounded-xl bg-black sm:hidden"
+  class="flex justify-center items-center h-6 w-12 rounded-xl bg-black"
 >
   {#if $menuState}
     <svg

@@ -8,7 +8,13 @@
     $page.path === "/" ? /\/$/.test(href) : href.indexOf($page.path) >= 0;
 </script>
 
-<style>
+<style type="text/postcss">
+  a {
+    @media (min-width: 931px) {
+      @apply text-base;
+    }
+  }
+
   .active {
     color: var(--black);
   }
@@ -19,7 +25,7 @@
   {href}
   on:click
   sveltekit:prefetch
-  class="text-black text-base sm:text-dark-grey sm:hover:text-black sm:focus:text-black"
+  class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black"
 >
   {label}
   {#if isHighlighted}
