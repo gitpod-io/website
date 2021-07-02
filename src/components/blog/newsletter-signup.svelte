@@ -22,7 +22,7 @@
     try {
       const response = await fetch("/.netlify/functions/newsletter", {
         method: "post",
-        body: JSON.stringify(data.email.value),
+        body: data.email.value,
       });
       if (response.ok) {
         resultMessage = "Thanks you are now signed up for our newsletter.";
@@ -66,10 +66,10 @@
           }}
           autocomplete="email"
           placeholder="Enter your email"
-          class="mb-0 mr-macro sm:mr-xx-small"
+          class="mr-macro sm:mr-xx-small"
         />
         <button
-          class="btn-primary mr-0 w-32"
+          class="btn-primary"
           type="submit"
           disabled={isEmailDirty && !isEmailValid}>Sign up</button
         >
