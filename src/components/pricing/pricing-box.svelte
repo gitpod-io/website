@@ -18,20 +18,18 @@
 <style type="text/postcss">
   .box {
     width: 295px;
+  }
 
-    .h1 {
-      margin-bottom: 0.25rem;
-    }
+  .h1 {
+    margin-bottom: 0.25rem;
+  }
 
-    &__list-item {
-      &::before {
-        content: url("/tick.svg");
-        @apply absolute inline-block
-        left: -2.188rem;
-        height: 1.375rem;
-        width: 1.375rem;
-      }
-    }
+  li::before {
+    content: url("/tick.svg");
+    @apply absolute inline-block;
+    left: -2.188rem;
+    height: 1.375rem;
+    width: 1.375rem;
   }
 
   .btn-cta {
@@ -63,7 +61,7 @@
       {@html price}
     </div>
     <div
-      class="box__duration px-large lgx:px-medium mb-xx-small text-light-grey font-semibold"
+      class="px-large lgx:px-medium mb-xx-small text-light-grey font-semibold"
     >
       {#if duration}
         {duration}
@@ -72,11 +70,9 @@
       {/if}
     </div>
     {#if features}
-      <ul
-        class="box__list px-large lgx:px-medium my-small mx-0 space-y-micro text-left"
-      >
+      <ul class="px-large lgx:px-medium my-small mx-0 space-y-micro text-left">
         {#each features as feature}
-          <li class="box__list-item relative text-black">
+          <li class="relative text-black">
             {feature}
           </li>
         {/each}
