@@ -1,28 +1,12 @@
 <script lang="ts">
-  import type { Form } from "src/types/form.type";
-
-  const data: Form = {
-    email: {
-      el: null,
-      valid: false,
-      value: "",
-    },
-  };
-
-  let isEmailDirty = false;
-  $: isEmailValid = data.email.valid;
+  let email;
   let resultMessage = "";
 
   const submitEmail = async () => {
-    isEmailDirty = true;
-    if (!isEmailValid) {
-      return;
-    }
-
     try {
       const response = await fetch("/.netlify/functions/newsletter", {
         method: "post",
-        body: data.email.value,
+        body: email,
       });
       if (response.ok) {
         resultMessage = "Thanks you are now signed up for our newsletter.";
@@ -57,22 +41,12 @@
       <div class="flex mt-x-small">
         <input
           type="email"
-          bind:this={data.email.el}
-          bind:value={data.email.value}
-          class:error={isEmailDirty && !data.email.valid}
-          on:change={() => {
-            data.email.valid =
-              data.email.value && data.email.el.checkValidity();
-          }}
+          bind:value={email}
           autocomplete="email"
           placeholder="Enter your email"
           class="mr-macro sm:mr-xx-small"
         />
-        <button
-          class="btn-primary"
-          type="submit"
-          disabled={isEmailDirty && !isEmailValid}>Sign up</button
-        >
+        <button class="btn-primary" type="submit">Sign up</button>
       </div>
     {/if}
   </form>
