@@ -99,7 +99,8 @@ select {
 [type="radio"]:focus + label {
   border-color: var(--dark-grey);
 }
-.btn-conversion:disabled {
+.btn-conversion:disabled,
+.btn-primary:disabled {
   background-color: var(--sand-dark);
   color: var(--dark-gray);
   cursor: default;

@@ -5,8 +5,10 @@
   let selectedEmotion;
   let note = "";
   let resultMessage;
+  let isSubmittedOnce = false;
 
   const submitFeedback = async () => {
+    isSubmittedOnce = true;
     const response = await fetch("/.netlify/functions/feedback", {
       method: "post",
       body: JSON.stringify({
@@ -83,6 +85,7 @@
                 ><button
                   role="button"
                   type="submit"
+                  disabled={isSubmittedOnce}
                   class="btn-primary mt-micro"><span>Send</span></button
                 ></span
               >

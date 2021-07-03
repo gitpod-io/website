@@ -1,8 +1,10 @@
 <script lang="ts">
   let email;
   let resultMessage = "";
+  let isSubmittedOnce = false;
 
   const submitEmail = async () => {
+    isSubmittedOnce = true;
     try {
       const response = await fetch("/.netlify/functions/newsletter", {
         method: "post",
@@ -46,7 +48,9 @@
           placeholder="Enter your email"
           class="mr-macro sm:mr-xx-small"
         />
-        <button class="btn-primary" type="submit">Sign up</button>
+        <button class="btn-primary" type="submit" disabled={isSubmittedOnce}
+          >Sign up</button
+        >
       </div>
     {/if}
   </form>
