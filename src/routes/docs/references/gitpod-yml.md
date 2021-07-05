@@ -372,13 +372,15 @@ Please note, Gitpod uses the [Open VSX registry](https://open-vsx.org/) to find 
 | -------- | --------- |
 | `object` | `<empty>` |
 
+By default, extensions will use the latest available version unless you use a specific version number. The version number must use semantic versioning rules.
+
 **Example**
 
 ```yaml
 vscode:
   extensions:
     - svelte.svelte-vscode
-    - bradlc.vscode-tailwindcss
+    - bradlc.vscode-tailwindcss@0.6.11
 ```
 
 ## `workspaceLocation`
