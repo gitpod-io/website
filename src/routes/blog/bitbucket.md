@@ -33,19 +33,19 @@ Gitpod also supports other types of Bitbucket URLs, like:
 
 - Opening file URLs
 
-  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
+  <p>Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
 
 - Opening branches
 
-  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/</a></p>
+  <p>Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/</a></p>
 
 - Opening issues
 
-  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional</a></p>
+  <p>Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional</a></p>
 
 - Opening pull requests
 
-  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff</a></p>
+  <p>Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff</a></p>
 
 Depending on the context, your dev environment will be initialized differently.
 
