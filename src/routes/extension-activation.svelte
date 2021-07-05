@@ -33,6 +33,14 @@
   ];
 </script>
 
+<style type="text/postcss">
+  article h2 {
+    @media (min-width: 930px) {
+      @apply pb-medium;
+    }
+  }
+</style>
+
 <header>
   <h1>Gitpod for {currentBrowser} is Now Active</h1>
   <p>The browser extension has been installed</p>
@@ -49,8 +57,8 @@
       />
     </div>
     <div>
-      <h2 class="h3">Spin up dev environments with a single click.</h2>
-      <p class="text-large">
+      <h2 class="h3 max-w-lg">Spin up dev environments with a single click.</h2>
+      <p class="text-large max-w-lg">
         The extension adds a Gitpod button on every project and branch across
         GitLab, GitHub, and Bitbucket so you can easily open a new workspace for
         any project.
@@ -72,9 +80,4 @@
       </div>
     </div>
   {/each}
-</section>
-
-<section class="brief">
-  <h2>Learn More About Gitpod</h2>
-  <a href="/docs" class="btn-conversion">See Docs</a>
 </section>

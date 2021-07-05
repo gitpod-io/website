@@ -2,9 +2,6 @@
   import Section from "../section.svelte";
 </script>
 
-<style>
-</style>
-
 <Section>
   <div
     class="card rounded-4xl shadow-brand max-w-4xl mx-auto text-center mb-xx-large"
@@ -22,6 +19,6 @@
       </li>
     </ol>
     <a href="/docs/configure" class="btn-conversion">Configure your project</a>
-    <p class="mt-micro text-gray-700">In less than 5 min</p>
+    <p class="mt-micro">In less than 5 min</p>
   </div>
 </Section>
