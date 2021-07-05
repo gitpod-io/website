@@ -1,10 +1,12 @@
 <script>
   import { faqsKey } from "./faqs.svelte";
-  import { getContext } from "svelte";
+  import { getContext, onMount } from "svelte";
+  import { hyphenate } from "../../utils/helper";
 
   export let title;
 
   const activeFaq = getContext(faqsKey);
+  const fragment = hyphenate(title);
 
   const setActive = ({ target }) => {
     const open = target.open;
@@ -12,6 +14,13 @@
     // closing the faq that was active, no faq will remain open
     if (isActive && !open) $activeFaq = null;
   };
+
+  onMount(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash === fragment) {
+      isActive = true;
+    }
+  });
 
   $: isActive = $activeFaq === title;
 </script>
@@ -100,7 +109,7 @@
   }
 </style>
 
-<details class="faq" open={isActive} on:toggle={setActive}>
+<details class="faq" open={isActive} on:toggle={setActive} id={fragment}>
   <summary class="faq__top">
     <h3 class="h4 faq__title inline">{title}</h3>
     <img
