@@ -69,7 +69,7 @@
 
 <Config />
 
-<section class="cards triple">
+<section class="cards triple sm:pb-huge">
   {#each features as feature}
     <div class="py-small px-xx-small bg-gray-100 rounded-4xl">
       <div>
