@@ -29,6 +29,7 @@ module.exports = {
         black: "var(--black)",
         "dark-grey": "var(--dark-grey)",
         "light-grey": "var(--light-grey)",
+        "link-grey": "var(--link-grey)",
         divider: "var(--divider)",
         "sand-dark": "var(--sand-dark)",
         "sand-light": "var(--sand-light)",

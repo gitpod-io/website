@@ -19,6 +19,6 @@
       </li>
     </ol>
     <a href="/docs/configure" class="btn-conversion">Configure your project</a>
-    <p class="mt-micro">In less than 5 min</p>
+    <p class="mt-micro text-link-grey">In less than 5 min</p>
   </div>
 </Section>
