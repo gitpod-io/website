@@ -8,7 +8,7 @@
   >
     <h2>To become always ready to code</h2>
     <ol
-      class="max-w-lg list-decimal text-left mx-auto mt-medium mb-large space-y-macro text-p-large"
+      class="max-w-xl list-decimal pl-small md:px-small text-left mx-auto mt-medium mb-large space-y-macro text-p-large"
     >
       <li>
         Help Gitpod understand your repository by creating a gitpod.yml file
