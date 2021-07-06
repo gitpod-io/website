@@ -23,11 +23,15 @@ What if there was a better way to do this? Maybe one day we can all just forget 
 
 <br>
 
+<div class="table-container">
+
 | <div style="width:120px">&nbsp;</div>     | The idea in brief                                                                                                                                                                                                                                        |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | &nbsp;&nbsp;<strong>The problem</strong>  | Figuring out which dependencies, tools, and language versions to install to properly configure a dev environment takes a lot of time and energy, and has to be repeated from scratch every time you use a different computer, and for every new project. |
 | &nbsp;&nbsp;<strong>The cause</strong>    | Most setup instructions are written in a format that is not executable or reproducible, like plain text in markdown files.                                                                                                                               |
 | &nbsp;&nbsp;<strong>The solution</strong> | To solve this problem for every developer of your project, setup instructions should be written in a format that is executable, like scripts and Dockerfiles, and ideally versioned and shipped with your code. Gitpod was invented to make this easy.   |
+
+</div>
 
 ## Introducing Gitpod
 
