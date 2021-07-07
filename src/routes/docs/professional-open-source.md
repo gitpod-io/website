@@ -27,4 +27,4 @@ You should meet **at least one** of the following requirements:
 
 Does one of the above apply to your work? If so, please [get in touch](/contact) and provide links to your projects. We'd love to see what you're working on.
 
-Feel free to reach out if you have questions.
+Feel free to let us know if you have questions.
