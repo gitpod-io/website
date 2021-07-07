@@ -9,7 +9,8 @@ function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
 }
 
 export const MENU: MenuEntry[] = [
-  M("Introduction", ""),
+  M("Documentation", ""),
+  M("Introduction", "introduction"),
   M("Quickstart", "quickstart", [
     M("Deno", "quickstart/deno"),
     M("Go", "quickstart/go"),
