@@ -1,5 +1,5 @@
 ---
-section: languages-and-frameworks
+section: references
 title: Svelte in Gitpod
 ---
 
