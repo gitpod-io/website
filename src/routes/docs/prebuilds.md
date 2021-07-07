@@ -19,6 +19,8 @@ When anyone starts a new workspace, all Gitpod needs to do is load the prebuilt 
 
 ## Enable Prebuilt Workspaces
 
+<br/>
+
 ### On GitHub
 
 To enable prebuilt workspaces for a GitHub repository, follow these steps:
