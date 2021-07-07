@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import MobileMenu from "./mobile-menu/index.svelte";
-  import MobileMenuButton from "./mobile-menu/button.svelte";
+  import MobileMenuToggle from "./mobile-menu/toggle.svelte";
   import NavItem from "./nav-item.svelte";
   import menuState from "./mobile-menu/state";
   import LoginButton from "./login-button.svelte";
@@ -29,28 +29,46 @@
     },
     {
       href: "/careers",
-      label: "We're hiring <sup>*</sup>",
+      label: "We're hiring",
+      isHighlighted: true,
     },
   ];
 </script>
 
+<style type="text/postcss">
+  nav {
+    max-width: 1500px;
+  }
+
+  @media (min-width: 931px) {
+    nav {
+      @apply bg-sand-light;
+    }
+
+    .nav-items,
+    .login-wrapper {
+      @apply flex;
+    }
+  }
+</style>
+
 <nav
   id="choose-project-observer-target-top"
-  class={`nav text-small ${$menuState ? "bg-off-white" : ""}`}
+  class={`${$menuState ? "bg-off-white " : ""}mx-auto w-full`}
 >
-  <div class="wrapper">
+  <div class="flex items-center justify-between h-20 px-4 sm:px-8">
     <a href="/" aria-label="Gitpod" on:click={() => ($menuState = !menuState)}>
       <Logo />
     </a>
-    <div class="items w">
-      {#each navItems as { href, label }}
-        <NavItem {href}>{@html label}</NavItem>
+    <div class="nav-items hidden px-2 space-x-6 items-center md:space-x-12">
+      {#each navItems as navItem}
+        <NavItem {navItem} on:click={() => ($menuState = !$menuState)} />
       {/each}
     </div>
-    <div class="login">
+    <div class="login-wrapper hidden">
       <LoginButton />
     </div>
-    <MobileMenuButton />
+    <MobileMenuToggle />
   </div>
   <MobileMenu {navItems} />
 </nav>

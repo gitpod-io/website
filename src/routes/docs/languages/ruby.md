@@ -17,7 +17,7 @@ As of this writing, Gitpod comes with Ruby 2.6.6 pre-installed.
 
 To use a different Ruby version (for example, 2.5.1) you can create a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker) for your project, and then add something like the second paragraph to it:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 USER gitpod
 

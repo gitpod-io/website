@@ -4,6 +4,7 @@
   import OpenGraph from "../../components/open-graph.svelte";
   import { authors } from "../../contents/blog";
   import "../../assets/markdown-commons.scss";
+  import NewsletterSignup from "./newsletter-signup.svelte";
 
   export let date;
   export let author;
@@ -62,6 +63,10 @@
   ];
 </script>
 
+<svelte:head>
+  <link rel="stylesheet" href="/prism-solarized-light.min.css" />
+</svelte:head>
+
 <OpenGraph
   data={{
     description: excerpt,
@@ -107,4 +112,5 @@
   </section>
 </div>
 
+<NewsletterSignup />
 <RecentArticlesPreview />

@@ -1,6 +1,7 @@
 <script lang="ts">
   import MenuSection from "./menu-section.svelte";
-  export let MENU;
+  import type { MenuEntry } from "../../types/menu-entry.type";
+  export let MENU: MenuEntry[];
 </script>
 
 <ul class="space-y-8">

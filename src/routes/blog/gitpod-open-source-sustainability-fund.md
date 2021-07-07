@@ -63,7 +63,7 @@ Over the coming months, Gitpod will share our experiences with funding open-sour
 
 <h3 class="h4">Democratize contributions</h3>
 
-We recognise that money <a href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with standardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
+We recognise that money <a class="no-nowrap" href="https://www.youtube.com/watch?v=Mm_RuObpeGo">isn't the only way to resolve open-source sustainability</a>. Often the problem is access and the initial project setup friction. To address this Gitpod has made <a href="/docs/professional-open-source">Gitpod free for open-source communities</a> so that open-source maintainers can onboard new contributors to their project with standardized development environments. With Gitpod people from all over the world can contribute from any device without the typical $3,000 Macbook Pro barrier to entry.
 
 ## It's time to start giving back
 
@@ -83,7 +83,7 @@ Go sign up to <a href="https://github.com/sponsors">GitHub Sponsors</a> or <a hr
 
 ## Think ahead, secure your supply chain.
 
-Nadia Eghbal, in 2016 with the support of the Ford Foundation, authored an <a href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">extensive report</a> into the unseen labour behind our digital infrastructure. She recently published the successor of the report: <a href="https://www.amazon.com.au/Working-Public-Making-Maintenance-Software/dp/0578675862">Working in Public: The Making and Maintenance of Open Source Software</a>. If you haven't read her work before, then start there.
+Nadia Eghbal, in 2016 with the support of the Ford Foundation, authored an <a href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">extensive report</a> into the unseen labour behind our digital infrastructure. She recently published the successor of the report: <a class="no-nowrap" href="https://www.amazon.com.au/Working-Public-Making-Maintenance-Software/dp/0578675862">Working in Public: The Making and Maintenance of Open Source Software</a>. If you haven't read her work before, then start there.
 
 ![Credit: XKCD](../../../static/images/blog/gitpod-open-source-sustainability-fund/xkcd.png)
 _Credit: [XKCD](https://xkcd.com/2347/)_

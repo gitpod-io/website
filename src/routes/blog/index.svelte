@@ -11,6 +11,7 @@
   import type { BlogPost } from "../../types/blog-post.type";
   import OpenGraph from "../../components/open-graph.svelte";
   import PostPreview from "../../components/blog/post-preview.svelte";
+  import NewsletterSignup from "../../components/blog/newsletter-signup.svelte";
 
   export let posts: BlogPost[];
 </script>
@@ -60,3 +61,4 @@
     {/each}
   </div>
 </div>
+<NewsletterSignup />

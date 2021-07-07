@@ -69,7 +69,7 @@ If you want to access services running in your workspace, e.g. a development HTT
 1. On-the-fly: when you start a process which listens on a port in your workspace, Gitpod will ask you if you want to expose that port to the internet.
 2. In your configuration: if you already know that you want a particular port exposed, you can configure it in the .gitpod.yml file and skip the extra click later on. For example:
 
-```
+```yaml
 ports:
   - port: 3000
 ```
@@ -80,19 +80,19 @@ Gitpod allows you to configure start tasks in the .gitpod.yml file.
 
 For instance, the start script for this repository is defined as:
 
-```
+```yaml
 tasks:
-- init: npm install
-  command: npm start
+  - init: npm install
+    command: npm start
 ```
 
 You can have multiple tasks, which are opened on separated terminals.
 
-```
+```yaml
 tasks:
-- init: npm install
-  command: npm start
-- command: echo -e "\n\nwebhook url - $(gp url 3000)/webhook \n\nCopy and paste this url in the Dialogflow console"
+  - init: npm install
+    command: npm start
+  - command: echo -e "\n\nwebhook url - $(gp url 3000)/webhook \n\nCopy and paste this url in the Dialogflow console"
 ```
 
 #### `init` command
@@ -101,14 +101,14 @@ The init property can be used to specify shell commands that should only be exec
 
 In our case the `init` command is
 
-```
+```yaml
 tasks:
-- init: npm install
+  - init: npm install
 ```
 
 ### Get the Gitpod setup running
 
-- Fork my [repo (dialogflow-webhook-boilerplate-nodejs)](https://github.com/anudeepreddy/dialogflow-webhook-boilerplate-nodejs) **or** just click on the run in gitpod button in my repo. (If you do this you have to fork it from the workspace so that you can commit your own changes to your repo).
+- Fork my <a class="no-nowrap" href="https://github.com/anudeepreddy/dialogflow-webhook-boilerplate-nodejs">repo (dialogflow-webhook-boilerplate-nodejs)</a> **or** just click on the run in gitpod button in my repo. (If you do this you have to fork it from the workspace so that you can commit your own changes to your repo).
 - Now you can just prefix your repo url with "https://gitpod.io/#". This should take you to Gitpod and start your workspace. The workspace take a little while to start.
 - Once the workspace is running you should see something like this.
 
@@ -147,9 +147,9 @@ Refer to the links below to add your own functionalities.
 
 ## Links to Refer
 
-- If you would like to learn more about the actions-on-google library, you can find it here - https://www.npmjs.com/package/actions-on-google
-- Go through these examples - https://developers.google.com/assistant/conversational/df-asdk/samples/github
-- Rich responses example - https://github.com/actions-on-google/dialogflow-conversation-components-nodejs
+- If you would like to learn more about the actions-on-google library, you can find it here - <a class="no-nowrap" href="https://www.npmjs.com/package/actions-on-google">https://www.npmjs.com/package/actions-on-google</a>
+- Go through these examples - <a class="no-nowrap" href="https://developers.google.com/assistant/conversational/df-asdk/samples/github">https://developers.google.com/assistant/conversational/df-asdk/samples/github</a>
+- Rich responses example - <a class="no-nowrap" href="https://github.com/actions-on-google/dialogflow-conversation-components-nodejs">https://github.com/actions-on-google/dialogflow-conversation-components-nodejs</a>
 
 ## Conclusion
 

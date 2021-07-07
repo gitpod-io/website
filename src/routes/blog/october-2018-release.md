@@ -45,19 +45,19 @@ Please read [Gero’s post](/blog/docker-in-gitpod) explaining this feature in m
 
 We have introduced a CLI which allows controlling the IDE from the command line, for instance you can open files. Try:
 
-```
+```bash
 gpopen path/to/file
 ```
 
 or just
 
-```
+```bash
 open path/to/file
 ```
 
 or in case your muscle memory is taking over :)
 
-```
+```bash
 code path/to/file
 ```
 

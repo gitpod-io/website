@@ -15,7 +15,7 @@ It's easy to set up Deno in Gitpod.
 
 Add a Dockerfile to your project as [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker):
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh

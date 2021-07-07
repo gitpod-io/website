@@ -35,12 +35,23 @@
   border-radius: 0.75rem;
   padding: 10px;
   break-inside: avoid;
-  margin: 0 1rem 1rem;
+  margin: 0 0 1rem;
+
+  @media (min-width: 769px) {
+    @apply m-micro mt-0;
+  }
 }
+
+.perks li::first-letter {
+  @apply mr-macro;
+}
+
 .jobs {
   margin-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+
+  @media (min-width: 769px) {
+    @apply px-x-small;
+  }
 }
 .jobs li {
   margin: 1rem 0;
@@ -57,6 +68,16 @@
   color: var(--black);
   font-weight: bold;
   font-size: 1.25rem;
+  border: 1px solid transparent;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--white);
+  }
+
+  @media (max-width: 768px) {
+    padding: var(--xx-small);
+  }
 }
 .jobs button::after {
   content: "";

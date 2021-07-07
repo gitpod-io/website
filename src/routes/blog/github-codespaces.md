@@ -84,8 +84,6 @@ CI/CD has taught us how versioned, reproducible infrastructure as code is key to
 
 Experience the future of software development now!
 
-<div style="text-align: center; margin: 2rem;">
-    <a href="https://www.gitpod.io/">
-        <button style="cursor: pointer; border: none; padding: 1.5rem 3rem; border-radius: 100px; background-color: #0087BE; color: white; font-weight: 600">Try Gitpod.io</button>
-    </a>
-</div>
+<a class="btn-conversion mt-xx-small" href="/">
+  Try Gitpod.io
+</a>

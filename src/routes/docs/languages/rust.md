@@ -30,7 +30,7 @@ Note: If you try to use `rustup` in your repository's [.gitpod.Dockerfile](/docs
 
 To fix this, simply wrap the `rustup` command in a login Bash shell, like so:
 
-```Dockerfile
+```dockerfile
 RUN bash -cl "rustup toolchain install nightly"
 ```
 
@@ -109,7 +109,7 @@ The next prerequisite is a Docker configuration.
 
 If you already have a [.gitpod.Dockerfile](/docs/config-docker) just add the following:
 
-```Dockerfile
+```dockerfile
 RUN sudo apt-get -q update \
     && sudo apt-get install -yq \
         libpython3.6 \
@@ -121,7 +121,7 @@ ENV RUST_LLDB=/usr/bin/lldb-8
 
 If not there are two steps. First, create a file called `.gitpod.Dockerfile` with the following content:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 USER gitpod

@@ -5,7 +5,8 @@
   // States
   import topicsState from "../states/topics-state";
 
-  export let MENU;
+  import type { MenuEntry } from "../../../types/menu-entry.type";
+  export let MENU: MenuEntry[];
 </script>
 
 <div role="navigation" aria-label="All topics">

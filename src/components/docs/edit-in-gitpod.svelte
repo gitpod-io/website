@@ -9,7 +9,7 @@
   const href = `${BASE_PATH}${currentPage}.md`;
 </script>
 
-<style>
+<style type="text/postcss">
   a::after {
     display: none !important;
   }

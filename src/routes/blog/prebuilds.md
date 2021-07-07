@@ -45,7 +45,7 @@ To build a continuous development system we need three things:
 
 Let’s sketch out a possible implementation of a such a system. Our dev-environment-as-code is basically a Docker image that contains the tools we need + [Eclipse Theia](https://www.theia-ide.org/) as IDE). Suppose we’d have this dev-env built as ourprj/dev-env:latest .
 
-```
+```dockerfile
 FROM theiaide/theia:next
 
 USER root
@@ -56,7 +56,7 @@ USER theia
 
 Using for example Jenkins or GitHub Actions we can then build a ready-to-code environment using a Dockerfile such as:
 
-```
+```dockerfile
 FROM ourprj/dev-env:latest
 
 WORKDIR /home/project

@@ -4,14 +4,15 @@
   export let feature: EducationFeature;
 </script>
 
-<style>
+<style type="text/postcss">
   .card {
-    display: grid;
-    grid-template-columns: 1fr minmax(280px, 80%);
-    gap: 20px;
+    @apply gap-5 my-micro items-start;
     min-height: 192px;
-    margin: 1rem;
-    align-items: self-start;
+
+    @media (min-width: 768px) {
+      @apply grid;
+      grid-template-columns: 1fr m-micro minmax(280px, 80%);
+    }
   }
 </style>
 

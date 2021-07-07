@@ -26,7 +26,7 @@ To connect to an existing Docker registry, perform the following steps:
 
 1.  Merge the following into your `values.custom.yaml`:
 
-    ```
+    ```yaml
     components:
       imageBuilder:
         registryCerts: []
@@ -50,7 +50,7 @@ To connect to an existing Docker registry, perform the following steps:
 
 2.  Login to the registry and safe the authentication
 
-    ```
+    ```bash
     mkdir -p secrets
     docker login your.registry.com/gitpod && cp ~/.docker/config.json secrets/registry-auth.json
     ```
@@ -75,7 +75,7 @@ How to use Google Cloud Registry as Docker registry for Gitpod:
 
 1.  Execute the following commands:
 
-    ```
+    ```bash
     export PROJECT_ID="<your-project-id>"
 
     gcloud iam service-accounts create gitpod-registry-full --project=$PROJECT_ID

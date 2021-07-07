@@ -1,5 +1,5 @@
 ---
-section: develop
+section: references
 title: Command Line Interface
 ---
 

@@ -13,7 +13,7 @@ title: A day with Gitpod
   export const prerender = true;
 </script>
 
-On the [27th of April there will be a one-day virtual conference](https://gitpodcommunityday.org) where members from the Gitpod team will be spending dedicated time with you, our community.
+On the <a class="no-nowrap" href="https://gitpodcommunityday.org">27th of April there will be a one-day virtual conference</a> where members from the Gitpod team will be spending dedicated time with you, our community.
 
 At the Gitpod Community day you'll learn about the north stars that are guiding product development from our CEO - Sven Efftinge and the inner technical architecture of Gitpod from our Chief Architect - Christian Weichel. Michael Friedrich from GitLab will be making an appearance to provide insights into how Gitpod makes it easier for open-source maintainers to attract contributors and, finally, Gitpod will also be revealing some exciting initiatives but Shhh...Spoilers!
 

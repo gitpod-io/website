@@ -40,7 +40,7 @@ Now a workspace with an online IDE is started for you. It will open up the readm
 
 Using the terminal you can use create-nuxt-app to create an initial project:
 
-```
+```bash
 **yarn create nuxt-app**
 ```
 
@@ -52,7 +52,7 @@ By default the dev server doesn’t allow external IPs. To change that so we can
 
 To do so open the package.json file and add the parameter
 
-```
+```bash
 **—-hostname 0.0.0.0**
 ```
 
@@ -66,7 +66,7 @@ Now we can start the dev server and see the application in action.
 
 In the terminal type
 
-```
+```bash
 **yarn dev**
 ```
 
@@ -80,7 +80,7 @@ Now you can start changing the application and of course committing to your repo
 
 Here’s the contents:
 
-```
+```yaml
 ports:
     - port: 3000
     protocol: "http"

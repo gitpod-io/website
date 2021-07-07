@@ -85,6 +85,8 @@ tasks:
 
 You can configure how the terminal should be opened relative to the previous task.
 
+<div class="table-container">
+
 | openMode                 | Description                                                |
 | ------------------------ | ---------------------------------------------------------- |
 | `openMode: tab-after`    | Opens in the same tab group right after the previous tab   |
@@ -93,6 +95,8 @@ You can configure how the terminal should be opened relative to the previous tas
 | `openMode: split-left`   | Splits and adds the terminal to the left                   |
 | `openMode: split-top`    | **Deprecated**. Splits and adds the terminal to the top    |
 | `openMode: split-bottom` | **Deprecated**. Splits and adds the terminal to the bottom |
+
+</div>
 
 ## Example Tasks
 

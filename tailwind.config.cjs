@@ -35,6 +35,7 @@ module.exports = {
         "off-white": "var(--off-white)",
         white: "var(--white)",
         "brand-hover": "var(--brand-hover)",
+        "black-hover": "var(--black-hover)",
 
         gray: {
           900: "var(--black)",
