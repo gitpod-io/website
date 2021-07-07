@@ -71,6 +71,8 @@ Attendees of the DevX Conference were able to vote once for each of the projects
 
 In total there were 17 projects that were available for voting:
 
+<div class="table-container">
+
 | Name                                                                                                                                                                                                                                                                                  | URL                                                 | Split of funding from $10k USD |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------ |
 | 01. **ccls** is a C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting.                                                                                                                                                          | https://github.com/MaskRay/ccls                     | $281.69                        |
@@ -90,6 +92,8 @@ In total there were 17 projects that were available for voting:
 | 15. pre-commit is a framework for managing and maintaining multi-language pre-commit git hooks.                                                                                                                                                                                       | https://github.com/pre-commit/pre-commit            | $1197.18                       |
 | 16. **vim-lsp** is an async Language Server Protocol plugin for vim8 and neovim.                                                                                                                                                                                                      | https://github.com/prabirshrestha/vim-lsp           | $492.96                        |
 | 17. **yamllint** is a linter for YAML.                                                                                                                                                                                                                                                | https://github.com/adrienverge/yamllint             | $1056.34                       |
+
+</div>
 
 <br/>
 

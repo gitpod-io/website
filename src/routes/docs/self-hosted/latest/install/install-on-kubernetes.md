@@ -63,7 +63,7 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
 
 1. Run `kubectl get pods` and verify that all pods are in state `RUNNING`. If some are not, please see the [Troubleshooting Guide](./troubleshooting).
 
-1. Go to [https://\<your-domain.com\>](https://<your-domain.com>) and follow the steps to complete the installation.
+1. Go to `https://<your-domain.com>` and follow the steps to complete the installation.
 
 ## Upgrade
 
