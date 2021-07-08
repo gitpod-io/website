@@ -44,6 +44,7 @@
         <input
           type="email"
           bind:value={email}
+          required
           autocomplete="email"
           placeholder="Enter your email"
           class="mr-macro sm:mr-xx-small"
