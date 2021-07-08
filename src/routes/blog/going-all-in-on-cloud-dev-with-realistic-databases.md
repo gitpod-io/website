@@ -63,7 +63,7 @@ So how do you get useful data-rich instances into cloud development environments
 
 ## Going all-in with production-like databases
 
-[Spawn](https://spawn.cc) is the perfect companion for tools like Gitpod. It lets you provision copies of databases in the cloud instantly regardless of size. Those instances are reachable from _anywhere with an internet connection_. You don’t have to worry about any of the details of running those instances.
+[Spawn](https://spawn.cc/?utm_source=gitpod&utm_medium=blog&utm_campaign=all_in_cloud_dev_with_dbs) is the perfect companion for tools like Gitpod. It lets you provision copies of databases in the cloud instantly regardless of size. Those instances are reachable from _anywhere with an internet connection_. You don’t have to worry about any of the details of running those instances.
 
 ![Spawn](../../../static/images/blog/going-all-in-on-cloud-dev-with-realistic-databases/spawn.jpeg)
 
@@ -71,7 +71,7 @@ That means you can provision a Gitpod environment with all of your code and deve
 
 Even better is that if you restart your Gitpod environment, your database will be left unaffected. Since the databases are running outside of the Gitpod environment, you can throw away your dev environment, start up a new one and continue exactly with the same data you had before.
 
-We’ve got an example of this in action in the [spawn-demo repository on GitHub](https://github.com/red-gate/spawn-demo). Give it a try for yourself by clicking the [Gitpod badge in the readme](https://github.com/red-gate/spawn-demo#running-in-gitpod)! You’ll first need to sign up to Spawn, so [visit the Spawn Homepage to get started](https://spawn.cc).
+We’ve got an example of this in action in the [spawn-demo repository on GitHub](https://github.com/red-gate/spawn-demo). Give it a try for yourself by clicking the [Gitpod badge in the readme](https://github.com/red-gate/spawn-demo#running-in-gitpod)! You’ll first need to sign up to Spawn, so [visit the Spawn Homepage to get started](https://spawn.cc/?utm_source=gitpod&utm_medium=blog&utm_campaign=all_in_cloud_dev_with_dbs).
 
 We’re really excited about the potential of **entirely remote** development environments coupled with the superpowers offered by Spawn. Spin up 200GB+ databases **instantly**. Make arbitrary save points as you go, and quickly reset to known-good states after mistakes. Get instant copies for each feature branch you’re working on. Don’t worry about installing and running database servers on your machine. Oh, and **all of this is free to try out right now**.
 
