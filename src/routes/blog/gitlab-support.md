@@ -68,7 +68,7 @@ Enabling prebuilds on your GitLab project is done by configuring a Webhook. But 
 
 ## We Need Your Feedback
 
-All important features in Gitpod go through a beta phase, so you get the chance to try it early and participate in further development of the feature. So, please [reach out](https://github.com/gitpod-io/gitpod/issues) with anything that bugs you or any ideas you have that could make your daily life with GitLab and Gitpod more seamless. <span aria-hidden="true">❤️</span>
+All important features in Gitpod go through a beta phase, so you get the chance to try it early and participate in further development of the feature. So, please [let us know](https://github.com/gitpod-io/gitpod/issues) with anything that bugs you or any ideas you have that could make your daily life with GitLab and Gitpod more seamless. <span aria-hidden="true">❤️</span>
 
 ## I run GitLab Self-Managed!
 

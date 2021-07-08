@@ -63,13 +63,23 @@ Do you wish Gitpod would do more for your project? Then please read on. 👇
 
 ## Table of contents
 
+- [Introducing Gitpod](#introducing-gitpod)
+- [Table of contents](#table-of-contents)
 - [Running init scripts](#running-init-scripts)
 - [Accelerating startup with prebuilt workspaces](#accelerating-startup-with-prebuilt-workspaces)
 - [Installing missing packages](#installing-missing-packages)
 - [Installing databases](#installing-databases)
+  - [PostgreSQL](#postgresql)
+  - [MySQL](#mysql)
+  - [Redis](#redis)
+  - [MongoDB](#mongodb)
 - [Getting a Virtual Desktop](#getting-a-virtual-desktop)
 - [Opening previews](#opening-previews)
 - [Solving common preview problems](#solving-common-preview-problems)
+  - [Invalid Host Header](#invalid-host-header)
+  - [CSP errors](#csp-errors)
+  - [Unreachable localhost URLs](#unreachable-localhost-urls)
+  - [No usable sandbox](#no-usable-sandbox)
 - [Setting env variables](#setting-env-variables)
 
 ## Running init scripts
@@ -177,7 +187,7 @@ From now on, every new Gitpod workspace that will be opened for your repository 
 
 ## Installing databases
 
-Many projects need a database to work properly. Here is how to install the most common databases in Gitpod — take your pick! (If yours is missing please [reach out](https://twitter.com/gitpod), we'd love to help you.)
+Many projects need a database to work properly. Here is how to install the most common databases in Gitpod — take your pick! (If yours is missing please [let us know](https://twitter.com/gitpod), we'd love to help you.)
 
 ### PostgreSQL
 
@@ -517,4 +527,4 @@ For a complete example of a project that requires env variables (saved in `.yml`
 
 <br>
 
-Phew... that's about it! I hope you enjoyed reading through this guide and that it helped you in some way. If you still have questions or suggestions, please [reach out](https://twitter.com/jankeromnes). I'd love to help you and make this guide more useful.
+Phew... that's about it! I hope you enjoyed reading through this guide and that it helped you in some way. If you still have questions or suggestions, please [let us know](https://twitter.com/jankeromnes). I'd love to help you and make this guide more useful.

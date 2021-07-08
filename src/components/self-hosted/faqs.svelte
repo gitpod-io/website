@@ -61,7 +61,7 @@
         Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on
         request. Please request a license key
         <a href="/enterprise-license">here</a>
-        and we'll reach out to you. If you have any questions, please
+        and we'll contact you. If you have any questions, please
         <a href="/contact">Get in touch</a>. All our plans can be paid via
         invoice.
       </p>

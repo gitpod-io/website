@@ -78,6 +78,7 @@ export const MENU: MenuEntry[] = [
     // M("Custom Docker image", "references/gitpod-dockerfile"),
     // M("Architecture", "references/architecture"),
     // M("Troubleshooting", "references/troubleshooting"),
+    M("Languages & Framework", "languages-and-frameworks"),
     M("Changelog", "references/changelog"),
     M("Roadmap", "references/roadmap"),
   ]),

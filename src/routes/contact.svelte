@@ -143,13 +143,13 @@
 
 <OpenGraph
   data={{
-    description: "Reach out if you have any questions regarding Gitpod.",
+    description: "Contact us if you have any questions regarding Gitpod.",
     title: "Contact us",
   }}
 />
 <header class="tight">
   <h1>Contact us</h1>
-  <p>Please reach out if you have any questions regarding Gitpod.</p>
+  <p>Please let us know if you have any questions regarding Gitpod.</p>
 </header>
 
 <div class="cards double sm:mx-8">
