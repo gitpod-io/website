@@ -221,14 +221,9 @@
   h4,
   h5,
   h6 {
-    display: inline-block;
-    position: relative;
+    @apply flex items-center;
 
     .icon-link {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -2rem;
       display: flex;
       align-items: center;
       margin-left: 0.5rem;
