@@ -16,10 +16,7 @@
   };
 
   onMount(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash === fragment) {
-      isActive = true;
-    }
+    isActive = fragment === window.location.hash.substring(1);
   });
 
   $: isActive = $activeFaq === title;

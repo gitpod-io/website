@@ -447,6 +447,11 @@
   status = 301
 
 [[redirects]]
+  from = "/education"
+  to = "/pricing#do-you-offer-discounts-for-students-and-educational-institutions?"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/.netlify/functions/render"
   status = 200
