@@ -1,0 +1,39 @@
+name: CI
+on: [pull_request]
+jobs:
+  test_lighthouse:
+    name: Lighthouse Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Wait for Pages changed to be neutral
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-Netlify
+        with:
+            ref: ${{ github.event.pull_request.head.sha || github.sha }}
+            token: ${{ secrets.GITHUB_TOKEN }}
+            checkName: 'Pages changed'
+      - name: Audit Netlify preview URL using Lighthouse
+        if: steps.wait-for-Netlify.outputs.conclusion == 'neutral'
+        uses: jakepartusch/wait-for-netlify-action@v1.2
+        id: waitFor200
+        with:
+          site_name: "gitpod-kumquat"
+          budgetPath: ./budget.json
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            ${{ steps.waitFor200.outputs.url }}
+            ${{ steps.waitFor200.outputs.url }}/blog
+            ${{ steps.waitFor200.outputs.url }}/blog/devxconf-wrap
+            ${{ steps.waitFor200.outputs.url }}/features
+            ${{ steps.waitFor200.outputs.url }}/pricing
+            ${{ steps.waitFor200.outputs.url }}/docs
+            ${{ steps.waitFor200.outputs.url }}/docs/quickstart
+          budgetPath: ./budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true

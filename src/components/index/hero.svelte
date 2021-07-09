@@ -146,7 +146,15 @@
     <div class="hero__action">
       <div class="hero__try-now text-small">
         <div>
-          <a href="#get-started" class="btn-conversion">Try Now</a>
+          <a
+            href="#get-started"
+            on:click={() =>
+              window.analytics.track("product_cta_clicked", {
+                context: "hero",
+                destination: "#get-started",
+              })}
+            class="btn-conversion">Try Now</a
+          >
         </div>
         <p>
           Open a workspace.

@@ -11,6 +11,8 @@ export const features: Feature[] = [
       href: "/docs/prebuilds",
     },
     documentationLink: "/docs",
-    terminalSource: terminalSource,
+    terminal: {
+      source: terminalSource,
+    },
   },
 ];

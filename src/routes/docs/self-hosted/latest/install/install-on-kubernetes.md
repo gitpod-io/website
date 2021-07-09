@@ -9,7 +9,7 @@ title: Install Gitpod Self-Hosted on Kubernetes
 
 # Install Gitpod Self-Hosted on Kubernetes
 
-This section describes how to install Gitpod on any Kubernetes cluster using [Helm](https://helm.sh). This is the most flexible and generic way of installing Gitpod. The chart for stable releases resides in Helm repository [charts.gitpod.io](https://charts.gitpod.io), charts for branch-builds can be found [here](#install-branch-build), and the source of the charts is in our [public git repository](https://github.com/gitpod-io/gitpod/blob/master/chart/).
+This section describes how to install Gitpod on any Kubernetes cluster using [Helm](https://helm.sh). This is the most flexible and generic way of installing Gitpod. The chart for stable releases resides in Helm repository [charts.gitpod.io](https://charts.gitpod.io), charts for branch-builds can be found [here](#install-branch-build), and the source of the charts is in our [public git repository](https://github.com/gitpod-io/gitpod/blob/main/chart/).
 
 For some platforms we offer [Terraform](https://www.terraform.io/) scripts that ease the infrastructure setup. Once the script has created the necessary infrastructure it will output a `values.terraform.yaml` that contains infrastructure-specific configuration for the `helm` deployment.
 
@@ -63,7 +63,7 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
 
 1. Run `kubectl get pods` and verify that all pods are in state `RUNNING`. If some are not, please see the [Troubleshooting Guide](./troubleshooting).
 
-1. Go to [https://\<your-domain.com\>](https://<your-domain.com>) and follow the steps to complete the installation.
+1. Go to `https://<your-domain.com>` and follow the steps to complete the installation.
 
 ## Upgrade
 
@@ -94,9 +94,9 @@ Further customizations:
 
 ## Install Branch Build
 
-To try the latest version of Gitpod, freshly build form the `master` branch of our git repository or any other branch, follow these steps:
+To try the latest version of Gitpod, freshly build form the `main` branch of our git repository or any other branch, follow these steps:
 
-1. Obtain the version name from [werft.gitpod-dev.com](https://werft.gitpod-dev.com/). The version has the format `<branchname>.<buildnumber>` (e.g `master.354`).
+1. Obtain the version name from [werft.gitpod-dev.com](https://werft.gitpod-dev.com/). The version has the format `<branchname>.<buildnumber>` (e.g `main.354`).
 
 2. The Helm chart ships as part of our `installer` docker image. You can extract it by running:
    ```bash

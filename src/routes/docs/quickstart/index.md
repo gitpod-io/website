@@ -23,6 +23,9 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 - [Ruby on Rails](/docs/quickstart/ruby-on-rails)
 - [Rust](/docs/quickstart/rust)
 - [Svelte](/docs/quickstart/svelte)
+- [Datasette](/docs/quickstart/datasette)
+- [Nix](/docs/quickstart/nix)
+- [Haskell](/docs/quickstart/haskell)
 
 ## Installing the Gitpod browser extension
 

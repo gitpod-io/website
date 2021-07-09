@@ -9,91 +9,59 @@
     moreButton,
     paragraph,
     title,
-    terminalSource,
+    terminal,
     image,
+    previewComponent,
   } = feature;
 </script>
 
 <style lang="scss">
-  .feature {
-    display: flex;
-    justify-content: space-between;
-    min-height: 340px;
-
-    @media (max-width: 800px) {
-      flex-direction: column;
-    }
-
-    &__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex: 0 0 50%;
-
-      @media (min-width: 801px) {
-        margin: var(--medium) 0;
-      }
-    }
-
-    .buttons-wrapper {
-      @apply justify-start;
-    }
-
-    &__preview {
-      flex: 0 0 45%;
-
-      @media (max-width: 800px) {
-        margin-top: var(--small);
-
-        img {
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-
-      img {
-        display: block;
-        max-height: 500px;
-        border-radius: 1.25rem;
-        box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
-      }
-    }
-
-    &__buttons {
-      @media (max-width: 850px) {
-        margin-top: var(--xx-small);
-      }
+  :global(.feature-container-section:nth-of-type(even)) {
+    .preview {
+      @apply col-start-1;
+      @apply row-start-1;
     }
   }
 </style>
 
-<Section>
-  <div class="feature">
-    <div class="feature__text">
+<Section className="feature-container-section">
+  <div
+    class="feature grid justify-center items-center md:grid-cols-2 lg:gap-32 gap-small"
+  >
+    <div class="my-xx-small md:my-0">
       <div class="text-large">
         <h2 class="h3">{title}</h2>
         <p>{paragraph}</p>
       </div>
-      <div
-        class={`feature__buttons ${
-          moreButton && documentationLink ? "buttons-wrapper" : ""
-        }`}
-      >
-        <a href={moreButton.href} class="btn-primary">
-          {moreButton.text}
-        </a>
-        {#if documentationLink}
-          <a href={documentationLink} class="btn-secondary">Documentation </a>
-        {/if}
-      </div>
+      {#if moreButton || documentationLink}
+        <div class="mt-xx-small md:mt-x-large">
+          <a
+            href={moreButton.href}
+            class={`btn-${moreButton.type || "primary"}`}
+          >
+            {moreButton.text}
+          </a>
+          {#if documentationLink}
+            <a href={documentationLink} class="btn-secondary">Documentation </a>
+          {/if}
+        </div>
+      {/if}
     </div>
-    <div class="feature__preview">
-      {#if terminalSource}
-        <Console source={terminalSource} />
+    <div
+      class="preview w-full col-start-1 row-start-1 md:col-start-auto md:row-start-auto"
+    >
+      {#if terminal}
+        <Console source={terminal.source} skipToEnd={terminal.skipToEnd} />
       {/if}
       {#if image}
-        <img src={image.src} alt={image.alt} />
-        <!--height="{image.height}" width="{image.width}" />-->
+        <img
+          src={image.src}
+          alt={image.alt}
+          class="block rounded-2xl shadow-medium"
+        />
+      {/if}
+      {#if previewComponent}
+        <svelte:component this={previewComponent} />
       {/if}
     </div>
   </div>

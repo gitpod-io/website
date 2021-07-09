@@ -74,4 +74,4 @@ Enabling prebuilds on your Bitbucket project is done by configuring a Webhook. T
 
 ## We Need Your Feedback
 
-If you have ideas how Gitpod can be improved for you, or if you notice a bug, please always feel free to [reach out](https://github.com/gitpod-io/gitpod/issues). We would also be glad to welcome you in our [community](https://community.gitpod.io). ❤️
+If you have ideas how Gitpod can be improved for you, or if you notice a bug, please always feel free to [let us know](https://github.com/gitpod-io/gitpod/issues). We would also be glad to welcome you in our [community](https://community.gitpod.io). ❤️

@@ -8,8 +8,10 @@
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
-  import Workspaces from "../components/workspaces.svelte";
-  import { linuxSource, terminalSource } from "../contents/terminal";
+  import { linuxSource } from "../contents/terminal";
+  import { features } from "../contents/features";
+  import Features from "../components/features.svelte";
+  import Section from "../components/section.svelte";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
@@ -110,88 +112,54 @@
 
 <Header />
 
-<section class="">
-  <div class="flex md:flex-row flex-col-reverse md:space-x-32 mx-8">
-    <div class="lg:w-1/2 lg:pt-8 xl:pt-16">
-      <h2 class="h4">Save time with Prebuilds</h2>
-      <p class="text-large mt-8 mb-16">
-        Gitpod continuously builds your Git branches like a CI server. This
-        means no more waiting for dependencies to be downloaded and builds to
-        finish.
+<Features {features} />
+
+<Section>
+  <div class="cards double">
+    <div class="card">
+      <div class="h-72 pb-4">
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <img
+          src="/images/features/features-3.svg"
+          role="presentation"
+          height="223"
+          width="382"
+        />
+      </div>
+      <h2 class="h4">Collaboration with workspace sharing</h2>
+      <p class="text-large">
+        Collaborate with your friends, co-workers, and clients. Whenever you
+        want to share a reproducible example of code or hunt down a bug
+        together, simply take Snapshot.
       </p>
-      <p>
-        <a href="/docs/prebuilds" class="btn-primary">More about Prebuilds</a>
-      </p>
+
+      <a href="/docs/sharing-and-collaboration"> More about collaboration. </a>
     </div>
-    <div class="lg:w-1/2 w-full mb-16">
-      <Console source={terminalSource} skipToEnd={true} />
+    <div class="card">
+      <div class="h-72 pb-6">
+        <Console
+          source={linuxSource}
+          dark={true}
+          shadow={false}
+          narrow={true}
+          skipToEnd={true}
+        />
+      </div>
+      <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
+      <p class="text-large">
+        Instantly start a container in the cloud based on your Docker image.
+        Leverage the power of the cloud and free yourself from the limitations
+        of local silicon.
+      </p>
+
+      <a
+        href="https://www.youtube.com/watch?v=iYLCHQgj0fE"
+        rel="noopener"
+        target="_blank">Learn more about sudo/Docker in Gitpod.</a
+      >
     </div>
   </div>
-
-  <div class="flex md:flex-row flex-col md:space-x-32 my-32 mx-8">
-    <div class="lg:w-1/2 w-full h-full">
-      <Workspaces />
-    </div>
-    <div class="lg:w-1/2">
-      <h2 class="h4">Start fresh with ephemeral dev environments</h2>
-      <p class="text-large mt-8 mb-16">
-        Dev-environments-as-code assure you are always starting from a clean
-        state and never get dragged into long-living stateful environments. The
-        end of all works-on-my-machine situations.
-      </p>
-      <p>
-        <a href="/blog/dev-env-as-code" class="btn-secondary">
-          More about Dev-Environments-as-Code</a
-        >
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="cards double">
-  <div class="card">
-    <div class="h-72 pb-4">
-      <!-- svelte-ignore a11y-missing-attribute -->
-      <img
-        src="/images/features/features-3.svg"
-        role="presentation"
-        height="223"
-        width="382"
-      />
-    </div>
-    <h2 class="h4">Collaboration with workspace sharing</h2>
-    <p class="text-large">
-      Collaborate with your friends, co-workers, and clients. Whenever you want
-      to share a reproducible example of code or hunt down a bug together,
-      simply take Snapshot.
-    </p>
-
-    <a href="/docs/sharing-and-collaboration"> More about collaboration. </a>
-  </div>
-  <div class="card">
-    <div class="h-72 pb-6">
-      <Console
-        source={linuxSource}
-        dark={true}
-        shadow={false}
-        narrow={true}
-        skipToEnd={true}
-      />
-    </div>
-    <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
-    <p class="text-large">
-      Instantly start a container in the cloud based on your Docker image.
-      Leverage the power of the cloud and free yourself from the limitations of
-      local silicon.
-    </p>
-
-    <a
-      href="https://www.youtube.com/watch?v=iYLCHQgj0fE"
-      rel="noopener"
-      target="_blank">Learn more about sudo/Docker in Gitpod.</a
-    >
-  </div>
-</section>
+</Section>
 
 <section class="cards triple">
   <div class="card">

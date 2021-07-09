@@ -21,7 +21,7 @@
       >in short</a
     >
     and
-    <a href="#detailed">in a more detailed form</a>
+    <a href="#detailed">in a more detailed form</a>.
   </p>
 
   <p>
@@ -39,7 +39,7 @@
   <p>
     For any questions about data protection you may contact us via <a
       href="mailto:data@gitpod.io">data@gitpod.io</a
-    >
+    >.
   </p>
   <h2 id="short">In Short</h2>
 
@@ -47,11 +47,12 @@
     <li>
       <h3>Controller</h3>
       <p>
-        Gitpod GmbH<br /> Am Germaniahafen 1, 24143 Kiel/Germany<br />
-        registered with the commercial register of the local court
+        Gitpod GmbH, am Germaniahafen 1, 24143 Kiel/Germany, registered with the
+        commercial register of the local court
         <em>(Amtsgericht)</em>
-        Kiel under HRB 22228<br /> represented by the managing directors Sven
-        Efftinge, Moritz Eysholdt, Dr. Jan K&ouml;hnlein <br /> Email: contact@gitpod.io
+        Kiel under HRB 22228, represented by the managing directors Sven Efftinge,
+        Moritz Eysholdt, Dr. Jan K&ouml;hnlein, Email:
+        <a href="mailto:contact@gitpod.io">contact@gitpod.io</a>.
       </p>
       <p>
         We have appointed a data protection officer who may be contacted via <a
@@ -72,11 +73,11 @@
           to implement this privacy policy and carrying out the contractual
           relationship and our Service,
         </li>
-        <li>
-          to analyze your use of our Service and improve our Service with our
-          legitimate interests of marketing and fraud prevention,
-        </li>
+        <li>to analyze how our Service is used and improve it,</li>
+        <li>to detect and prevent fraudulent or abusive use,</li>
         <li>to provide and analyze our pages on Social Media,</li>
+        <li>to send you important updates about our service,</li>
+        <li>to send you marketing content, including newsletters,</li>
         <li>to act according to our legal obligations, or</li>
         <li>
           as otherwise explained in this privacy policy or by any communication
@@ -140,8 +141,10 @@
         You have also the right to lodge a complaint with a supervisory
         authority at your choice. An overview of the European National Data
         Protection Authorities may be found here:
-        http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080<br
-        />
+        <a
+          href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+          >http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+        ><br />
       </p>
     </li>
     <li>
@@ -243,13 +246,18 @@
       </p>
 
       <p>
+        The data points in the preceding two paragraphs are also forwarded to a
+        user data platform.
+      </p>
+
+      <p>
         We use these data only for statistical analysis for the purpose of
-        operation, security and optimization of our Website. This data
-        processing is based on Art. 6 (1) c. for providing a secure and stable
-        Website and Service. The data processing may also be based on Art. 6 (1)
-        f. GDPR or TMG and we wish to achieve the legitimate interests of
-        stabilizing and improving our Website, quality insurance and fraud
-        prevention.
+        operation, security and optimization of the performance and content on
+        our Website. This data processing is based on Art. 6 (1) c. for
+        providing a secure and stable Website and Service. The data processing
+        may also be based on Art. 6 (1) f. GDPR or TMG and we wish to achieve
+        the legitimate interests of stabilizing and improving our Website,
+        quality insurance and fraud prevention.
       </p>
 
       <h3>Contacting us</h3>
@@ -269,15 +277,10 @@
       <p>
         When registering for the newsletter via the Website, you have to provide
         an email address. This email address will be transmitted to and stored
-        by us (or a provider as specified below). After registration, you will
-        receive an email to confirm the registration ("double opt-in"). Via
-        clicking the registration link you have given your consent to the
-        processing of your personal data for receiving our newsletter and
-        analyzing such newsletters according to Art. 6 (1) a. GDPR and we may
-        process such data accordingly. In case of registration for the
-        newsletter we (or our provider as specified below) also store the IP
-        address, the device name, the mail provider as well as the user's first
-        and last name and the date of registration.
+        by us (or a provider as specified below). By submitting your address you
+        have given your consent to the processing of your personal data for
+        receiving our newsletter and analyzing such newsletters according to
+        Art. 6 (1) a. GDPR and we may process such data accordingly.
       </p>
 
       <p>
@@ -289,27 +292,16 @@
         (Art. 6 (1) b. GDPR).
       </p>
 
-      <p id="mailchimp">
-        <strong> Use of Mailchimp: </strong>
-        The mail provider <strong>"Mailchimp"</strong> by Rocket Science Group LLC,
-        675 Ponce De Leon Ave NE, Suite 5000, Atlanta, GA 30308, USA receives and
-        processes on our behalf the data necessary for the emails and newsletters,
-        in particular email address, IP address, device name. These data are processed
-        on servers in the USA. Mailchimp is certified according to "privacy shield".
-        The "privacy shield" is an agreement between the European Union (EU) and
-        the USA to ensure compliance with European data protection standards in the
-        USA. Mailchimp is a service with which the dispatch of newsletters can be
-        organized and analyzed. With the help of Mailchimp we can analyze our newsletter
-        campaigns. When you open an e-mail sent with Mailchimp, a file contained
-        in the e-mail (so-called web beacon) connects to the Mailchimp servers in
-        the USA. This allows you to determine whether a newsletter message has been
-        opened and which links have been clicked on. In addition, technical information
-        is recorded (e.g. time of registration, IP address, browser type and operating
-        system). This information cannot be assigned to the respective newsletter
-        recipient. They are used exclusively for statistical analysis of newsletter
-        campaigns. The results of these analyses can be used to better adapt future
-        newsletters to the interests of the recipients. Details on Mailchimp and
-        its privacy policy can be found here: https://mailchimp.com/legal/privacy/
+      <p id="customer-io">
+        <strong> Use of Customer.io: </strong> The mail provider
+        <strong>"Customer.io"</strong> by Peaberry Software Inc., 921 SW
+        Washington Street Suite 820 Portland, OR 97205, USA receives and
+        processes on our behalf the data necessary for the emails and
+        newsletters, in particular the email address. Customer.io provides Data
+        Residency in the EU. For more information, refer to
+        <a href="https://customer.io/legal/privacy-policy/">
+          https://customer.io/legal/privacy-policy/</a
+        >.
       </p>
 
       <p>
@@ -327,8 +319,7 @@
           (email address) and their respective use for sending the newsletter
           and analyzing your data at any time.</strong
         > This can be done free of charge (except for the transmission costs) and
-        via a link in the newsletter itself or notification to us or, if applicable,
-        to Mailchimp.
+        via a link in the newsletter itself or notification to us.
       </p>
     </li>
     <li>
@@ -356,13 +347,26 @@
       </p>
 
       <p>
-        <strong>OPT-OUT:</strong> You can deactivate the use of Cookies in the settings
-        of your browser at any time. To find out how to change the settings, please
-        consult the help function of your browser. Users may also manage a lot of
-        online Cookies by different businesses on the US-website http://www.aboutads.info/choices/
-        or the EU-website http://www.youronlinechoices.com/uk/your-ad-choices/. However,
-        we want to point out that without Cookies the use and comfort of use of our
-        services may be restricted.
+        <strong>OPT-OUT:</strong> You can deactivate the use of Cookies in the
+        settings of your browser at any time. To find out how to change the
+        settings, please consult the help function of your browser. Users may
+        also manage a lot of online Cookies by different businesses on the
+        US-website
+        <a href="http://www.aboutads.info/choices/"
+          >http://www.aboutads.info/choices/</a
+        >
+        or the EU-website
+        <a href="http://www.youronlinechoices.com/uk/your-ad-choices/"
+          >http://www.youronlinechoices.com/uk/your-ad-choices/</a
+        >. However, we want to point out that without Cookies the use and
+        comfort of use of our services may be restricted.
+      </p>
+
+      <h3>Customer.io</h3>
+      <p>
+        We use the services by Customer.io for sending newsletters and emails.
+        For details on Customer.io please refer to the
+        <a href="#customer-io">respective section above</a>.
       </p>
 
       <h3>Google Analytics</h3>
@@ -396,9 +400,9 @@
         to prevent the acquisition and processing of data generated by the
         "cookies" in relation to the use of this website, by downloading and
         installing the browser plugin available at the following link: <a
-          href="https://tools.google.com/dlpage/gaoptout?hl=de"
-          >https://tools.google.com/dlpage/gaoptout?hl=de</a
-        >
+          href="https://tools.google.com/dlpage/gaoptout/"
+          >https://tools.google.com/dlpage/gaoptout/</a
+        >.
       </p>
 
       <p>
@@ -418,7 +422,7 @@
         You can also find more information in Google's privacy policy <a
           href="https://policies.google.com/privacy"
           >https://policies.google.com/privacy</a
-        >
+        >.
       </p>
 
       <h3>Google Fonts</h3>
@@ -447,14 +451,23 @@
         You can also find more information in Google's privacy policy: <a
           href="https://policies.google.com/privacy"
           >https://policies.google.com/privacy</a
-        >
+        >.
       </p>
 
-      <h3>Mailchimp</h3>
+      <h3>Segment</h3>
       <p>
-        We use the services by Mailchimp for sending newsletters and emails. For
-        details on Mailchimp please refer to the
-        <a href="#mailchimp">respective section above</a>
+        We use Segment on our Website and Product to capture marketing- and
+        product-related user information in order to offer the best experience
+        to our users. Segment operates in
+        <a href="https://segment.com/docs/privacy/complying-with-the-gdpr/">
+          compliance with the GDPR</a
+        >.
+      </p>
+      <p>
+        You can also find more infomration in Segment's privacy policy:
+        <a href="https://segment.com/legal/privacy/"
+          >https://segment.com/legal/privacy/</a
+        >.
       </p>
 
       <h3 id="youtube">Youtube</h3>
@@ -508,10 +521,20 @@
       </p>
       <p>
         Further information about data processing and privacy practices of
-        YouTube and Google can be found at
-        www.google.de/intl/de/policies/privacy/ and
-        https://support.google.com/youtube/answer/171780?hl=e
+        YouTube and Google can be found here:
       </p>
+      <ul>
+        <li>
+          <a href="https://policies.google.com/privacy"
+            >https://policies.google.com/privacy</a
+          >
+        </li>
+        <li>
+          <a href="https://support.google.com/youtube/answer/171780?hl=e"
+            >https://support.google.com/youtube/answer/171780?hl=e</a
+          >
+        </li>
+      </ul>
     </li>
     <li>
       <h2 id="details-IV">
@@ -524,10 +547,11 @@
         In order to fully use our full online Service, you will need to
         register. You may only register if you have an existing user account at
         the third party services set forth on the Website, for example the
-        service offered on the website https://github.com operated by GitHub
-        Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA, (<strong
-          >"Existing Account"</strong
-        >).
+        service offered on the website <a href="https://github.com"
+          >https://github.com</a
+        >
+        operated by GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA
+        94107, USA, (<strong>"Existing Account"</strong>).
       </p>
 
       <p>
@@ -569,16 +593,16 @@
         For the further use of the Gitpod Service on the Website you submit more
         data depending on the way of use of our services according to our <a
           href="/terms">terms of service</a
-        >
+        >.
       </p>
 
       <p>
         We use the information and data collected in the Service, including your
         personal data, in order to fulfill our contractual obligations for
         you/our customers based on the legal basis of Art. 6 (1) b. GDPR or TMG
-        and as further set forth in this privacy policy or our <a href="/terms"
-          >terms of service</a
-        >This also includes sending you emails and notifications necessary for
+        and as further set forth in this privacy policy or our <a href="/terms">
+          terms of service</a
+        >. This also includes sending you emails and notifications necessary for
         the Service.
       </p>
 
@@ -614,12 +638,9 @@
       <h3>Integration of Third Party Services</h3>
       <p>
         When using the Gitpod Service your data may also be processed by third
-        party providers as set forth in this privacy policy, for example <a
-          href="#freshchat">FreshChat</a
-        >For details please refer to <a href="#details-III">III</a> above as
-        well as
-        <a href="#details-VI">VI</a>
-        and <a href="#details-VII">VIII</a> below.
+        party providers as set forth in this privacy policy. For details please
+        refer to <a href="#details-III">III</a> above as well as
+        <a href="#details-VI">VI</a> and <a href="#details-VII">VIII</a> below.
       </p>
 
       <p>
@@ -627,18 +648,26 @@
         payment providers. Currently we use the payment services by Stripe (for
         EU/EEA: Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Grand
         Canal Dock, Dublin, Irland; more information:
-        https://stripe.com/de/privacy ; contact: https://stripe.com/contact) and
+        <a href="https://stripe.com/de/privacy">https://stripe.com/de/privacy</a
+        >
+        ; contact:
+        <a href="https://stripe.com/contact">https://stripe.com/contact</a>) and
         Chargebee (by Chargebee Inc. 340 S Lemon Avenue, 1537 Walnut, CA 91789,
-        USA; more information: https://www.chargebee.com/privacy/ ). When using
-        such services your data may be processed outside the EU. The US
-        companies of Stripe and Chargebee are each certified according to
+        USA; more information:
+        <a href="https://www.chargebee.com/privacy/">
+          https://www.chargebee.com/privacy/</a
+        >). When using such services your data may be processed outside the EU.
+        The US companies of Stripe and Chargebee are each certified according to
         ‘Privacy Shield’ to comply with data protection standards applicable in
         the EU (for more information please refer to:
-        https://www.privacyshield.gov/ ).
+        <a href="https://www.privacyshield.gov/">
+          https://www.privacyshield.gov/</a
+        >).
       </p>
       <p>
-        Our service may also include links to pages on Twitter, Medium, Spectrum
-        Chat/Github). For details please refer to V. below [add link to V.].
+        Our service may also include links to pages on Twitter, Medium, and
+        Spectrum Chat. For details please refer to the
+        <a href="#details-V">respective section below</a>.
       </p>
     </li>
     <li>
@@ -650,19 +679,52 @@
         <li>
           Twitter (twitter.com or applications) by Twitter Inc., 1355 Market
           Street, Suite 900, San Francisco, CA 94103, USA, please also refer to:
-          https://twitter.com/de/privacy / https://twitter.com/personalization;
+          <ul>
+            <li>
+              <a href="https://twitter.com/de/privacy"
+                >https://twitter.com/de/privacy</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/personalization"
+                >https://twitter.com/personalization</a
+              >
+            </li>
+          </ul>
         </li>
         <li>
           Medium (medium.com or applications) by A Medium Corporation, 799
           Market Street, 5th Floor, San Francisco, CA 94103, USA, please also
-          refer to: https://medium.com/policy/medium-privacy-policy-f03bf92035c
-          / https://medium.com/me/settings /
-          https://medium.com/me/following/suggestions
+          refer to:
+          <ul>
+            <li>
+              <a
+                href="https://policy.medium.com/medium-privacy-policy-f03bf92035c9"
+                >https://policy.medium.com/medium-privacy-policy-f03bf92035c9</a
+              >
+            </li>
+            <li>
+              <a href="https://medium.com/me/settings"
+                >https://medium.com/me/settings</a
+              >
+            </li>
+            <li>
+              <a href="https://medium.com/me/following/suggestions"
+                >https://medium.com/me/following/suggestions</a
+              >
+            </li>
+          </ul>
         </li>
         <li>
           Spectrum Chat (spectrum.chat or applications) by GitHub Inc., 88 Colin
           P Kelly Jr St, San Francisco, CA 94107, USA, please also refer to:
-          https://spectrum.chat/privacy.html
+          <ul>
+            <li>
+              <a href="https://spectrum.chat/privacy.html"
+                >https://spectrum.chat/privacy.html</a
+              >
+            </li>
+          </ul>
         </li>
       </ul>
       <p>
@@ -685,12 +747,16 @@
         certified in accordance with the EU-US Privacy Shield agreement, which
         guarantees compliance with data protection regulations in the EU. For
         more information please refer to their respective privacy policies or
-        https://www.privacyshield.gov . By using Medium Services, you authorize
-        Medium to transfer, store, and use your information in the United States
-        and any other country where Medium operates. Where your data is
-        disclosed to Medium’s processors, it is subject by contract to at least
-        the same level of data protection as that set forth under
-        https://medium.com/policy/medium-privacy-policy-f03bf92035c9.
+        <a href="https://www.privacyshield.gov">https://www.privacyshield.gov</a
+        >
+        . By using Medium Services, you authorize Medium to transfer, store, and
+        use your information in the United States and any other country where
+        Medium operates. Where your data is disclosed to Medium’s processors, it
+        is subject by contract to at least the same level of data protection as
+        that set forth under
+        <a href="https://medium.com/policy/medium-privacy-policy-f03bf92035c9"
+          >https://medium.com/policy/medium-privacy-policy-f03bf92035c9</a
+        >.
       </p>
       <p>
         With our Social Media pages, we can communicate with you and provide you
@@ -713,26 +779,45 @@
         As Twitter user, you can at any time influence how your user behavior is
         recorded when you visit Twitter pages. To do this, you can manage the
         settings for advertising preferences in your Twitter account or under
-        https://twitter.com/personalization or
-        https://twitter.com/de/privacy#overlay-chapter2.10.1 or without an
-        account under https://pscp.tv/account/settings. Twitter also provides
-        opportunities to contact or exercise rights at
-        https://help.twitter.com/forms/privacy.
+        <a href="https://twitter.com/personalization"
+          >https://twitter.com/personalization</a
+        >
+        or
+        <a href="https://twitter.com/de/privacy#overlay-chapter2.10.1"
+          >https://twitter.com/de/privacy#overlay-chapter2.10.1</a
+        >
+        or without an account under
+        <a href="https://pscp.tv/account/settings"
+          >https://pscp.tv/account/settings</a
+        >. Twitter also provides opportunities to contact or exercise rights at
+        <a href="https://help.twitter.com/forms/privacy"
+          >https://help.twitter.com/forms/privacy</a
+        >.
       </p>
       <p>
         As Medium user, you can at any time influence how your user behavior is
         recorded when you visit Medium pages. To do this, you can manage the
         settings for advertising preferences in your Medium account or under
-        https://medium.com/me/settings or
-        https://medium.com/me/following/suggestions. Medium also provides
-        opportunities to contact or exercise rights in their privacy policy
-        under https://medium.com/policy/medium-privacy- policy-f03bf92035c9.
+        <a href="https://medium.com/me/settings"
+          >https://medium.com/me/settings</a
+        >
+        or
+        <a href="https://medium.com/me/following/suggestions"
+          >https://medium.com/me/following/suggestions</a
+        >. Medium also provides opportunities to contact or exercise rights in
+        their privacy policy under
+        <a href="https://medium.com/policy/medium-privacy- policy-f03bf92035c9"
+          >https://medium.com/policy/medium-privacy- policy-f03bf92035c9</a
+        >.
       </p>
       <p>
         As a user of Spectrum Chat / Github you can find more information on how
         to influence the processing of your data in their privacy policy
-        https://spectrum.chat/privacy.html or contact them via
-        help@spectrum.chat.
+        <a href="https://spectrum.chat/privacy.html"
+          >https://spectrum.chat/privacy.html</a
+        >
+        or contact them via
+        <a href="mailto:help@spectrum.chat">help@spectrum.chat</a>.
       </p>
     </li>
     <li>
@@ -784,11 +869,8 @@
       <h2 id="details-VII">Are my Data transferred outside the EU?</h2>
       <p>
         When visiting the Website and using our Service data may be transferred
-        to countries outside the EU whereas the services by <a href="#google"
-          >Google/Youtube</a
-        >, <a href="#mailchimp">Mailchimp</a>, <a href="#github">GitHub</a>,
-        <a href="#chargebee">Chargebee</a>
-        and , <a href="#stripe">Stripe</a> are affected.
+        to countries outside the EU by the third party services referred to in
+        <a href="#details-III">Section III</a>.
       </p>
 
       <p>
@@ -797,11 +879,13 @@
       </p>
 
       <p>
-        The US companies providing the services of Google, Mailchimp, GitHub,
-        Stripe and Chargebee are each certified under EU-US-Privacy-Shield and
-        comply with data protection standards applicable in the EU. For more
-        information on EU-US-Privacy-Shield and details about the certificates
-        please refer to: https://www.privacyshield.gov
+        The US companies providing the services of Google, Customer.io, GitHub,
+        Stripe and Chargebee are each certified under EU-US-Privacy-Shield
+        and/or comply with data protection standards applicable in the EU. For
+        more information on EU-US-Privacy-Shield and details about the
+        certificates please refer to: <a href="https://www.privacyshield.gov"
+          >https://www.privacyshield.gov</a
+        >.
       </p>
       <p>
         Your data may also be processed outside the EU when visiting our Social
@@ -877,9 +961,15 @@
           >You have the right to lodge a complaint vis-&agrave;-vis a
           supervisory authority of your choice.
         </strong>
-        For example for Berlin/Germany: https://www.datenschutz-berlin.de/kontakt.html.
-        An overview of the European National Data Protection Authorities may be found
-        here: http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080
+        For example for Berlin/Germany:
+        <a href="https://www.datenschutz-berlin.de/kontakt.html"
+          >https://www.datenschutz-berlin.de/kontakt.html</a
+        >. An overview of the European National Data Protection Authorities may
+        be found here:
+        <a
+          href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
+          >http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
+        >
       </p>
     </li>
     <li>
@@ -947,8 +1037,10 @@
       <h3>Contact Details</h3>
       <p>
         For any inquiries and additional questions about processing personal
-        data please contact <a href="mailto:data@gitpod.io">data@gitpod.io</a
-        >Further details may be found here:
+        data please contact <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
+      </p>
+      <p>
+        Further details may be found here:
         <a href="/imprint">https://gitpod.io/imprint</a>.
       </p>
     </li>

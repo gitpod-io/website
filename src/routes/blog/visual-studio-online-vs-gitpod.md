@@ -71,4 +71,4 @@ on the IDE feature level there are not many differences, **but**
 - Self-hosting is not really supported by VSO and
 - Microsoft is growing a little too dominant in the developer world these days.
 
-Please reach out if you have further questions.
+Please let us know if you have further questions.
