@@ -7,9 +7,17 @@ title: Documentation
   export const prerender = true;
 </script>
 
-## Getting started with Gitpod
+<script lang="ts">
+import GetStarted from "../../components/docs/get-started/get-started.svelte";
+</script>
 
-Get started!
+# Getting started with Gitpod
+
+<main class="w-full">
+<section class="getting-started">
+  <GetStarted />
+</section>
+</main>
 
 ## Next Steps
 
