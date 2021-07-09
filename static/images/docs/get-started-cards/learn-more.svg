@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="173.17" height="113" viewBox="0 0 173.17 113">
+  <g id="learn-more" transform="translate(-986.958 -797.5)">
+    <g id="Group_53" data-name="Group 53" transform="translate(766.797 178.5)">
+      <g id="features-5" transform="translate(220.161 619)">
+        <g id="Group_23" data-name="Group 23" transform="translate(0 0)">
+          <path id="Path_14" data-name="Path 14" d="M20.5,22.793c0-4.3,3.877-7.793,8.658-7.793h77.926V128H29.158c-4.782,0-8.658-3.489-8.658-7.793Z" transform="translate(-20.5 -15)" fill="#eee"/>
+          <path id="Path_15" data-name="Path 15" d="M149.687,22.793c0-4.3-3.993-7.793-8.919-7.793H60.5V128h80.269c4.926,0,8.919-3.489,8.919-7.793Z" transform="translate(23.482 -15)" fill="#eee"/>
+          <path id="Path_16" data-name="Path 16" d="M20.5,20.71c0-3.154,3.877-5.71,8.658-5.71h77.926V29.276H20.5Z" transform="translate(-20.5 -15)" fill="#dadada"/>
+          <path id="Path_17" data-name="Path 17" d="M147.085,20.71c0-3.154-3.877-5.71-8.658-5.71H60.5V29.276h86.585Z" transform="translate(26.085 -15)" fill="#dadada"/>
+          <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="4.317" cy="2.847" rx="4.317" ry="2.847" transform="translate(11.512 4.745)" fill="#999795"/>
+        </g>
+      </g>
+    </g>
+    <path id="logo-mark" d="M23.467,2.186A4.366,4.366,0,0,1,21.874,8.1L9.109,15.49a1.1,1.1,0,0,0-.546.953v11.6a1.1,1.1,0,0,0,.546.952l10.1,5.849a1.07,1.07,0,0,0,1.073,0l10.1-5.848a1.1,1.1,0,0,0,.546-.953V20.828l-9.083,5.191a4.253,4.253,0,0,1-5.833-1.646,4.366,4.366,0,0,1,1.625-5.907l13-7.427A5.94,5.94,0,0,1,39.5,16.277V28.921a8.272,8.272,0,0,1-4.106,7.166L23.793,42.8a8.059,8.059,0,0,1-8.086,0l-11.6-6.714A8.272,8.272,0,0,1,0,28.921V15.563A8.272,8.272,0,0,1,4.106,8.4L17.626.572A4.253,4.253,0,0,1,23.467,2.186Z" transform="translate(1053.792 836)" fill="#ffb45b" fill-rule="evenodd" opacity="0.6"/>
+  </g>
+</svg>

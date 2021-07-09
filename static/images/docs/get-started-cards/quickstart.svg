@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="173.17" height="113" viewBox="0 0 173.17 113">
+  <g id="quickstart" transform="translate(-401.142 -399.5)">
+    <g id="Group_36" data-name="Group 36" transform="translate(401.142 399.5)">
+      <g id="Group_34" data-name="Group 34" transform="translate(0 0)">
+        <g id="features-5">
+          <g id="Group_23" data-name="Group 23" transform="translate(0 0)">
+            <path id="Path_14" data-name="Path 14" d="M20.5,20.925C20.5,17.653,23.926,15,28.152,15H97.021v85.919H28.152c-4.226,0-7.652-2.653-7.652-5.925Z" transform="translate(-20.5 -15)"/>
+            <path id="Path_15" data-name="Path 15" d="M139.322,20.925c0-3.273-3.529-5.925-7.882-5.925H60.5v85.919h70.939c4.353,0,7.882-2.653,7.882-5.925Z" transform="translate(13.721 -15)"/>
+            <path id="Path_16" data-name="Path 16" d="M20.5,19.464C20.5,17,24.035,15,28.4,15H99.461V26.161H20.5Z" transform="translate(-20.5 -15)" fill="#dadada"/>
+            <path id="Path_17" data-name="Path 17" d="M137.021,19.464C137.021,17,133.6,15,129.369,15H60.5V26.161h76.521Z" transform="translate(16.021 -15)" fill="#dadada"/>
+            <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="3.815" cy="2.226" rx="3.815" ry="2.226" transform="translate(10.174 3.71)" fill="#999795"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_35" data-name="Group 35" transform="translate(20.127 27.081)">
+        <g id="features-5-2" data-name="features-5" transform="translate(0 0)">
+          <g id="Group_23-2" data-name="Group 23">
+            <path id="Path_14-2" data-name="Path 14" d="M20.5,20.925C20.5,17.653,23.926,15,28.152,15H97.021v85.919H28.152c-4.226,0-7.652-2.653-7.652-5.925Z" transform="translate(-20.5 -15)" fill="#eee"/>
+            <path id="Path_15-2" data-name="Path 15" d="M139.322,20.925c0-3.273-3.529-5.925-7.882-5.925H60.5v85.919h70.939c4.353,0,7.882-2.653,7.882-5.925Z" transform="translate(13.721 -15)" fill="#eee"/>
+            <path id="Path_16-2" data-name="Path 16" d="M20.5,19.464C20.5,17,23.926,15,28.152,15H97.021V26.161H20.5Z" transform="translate(-20.5 -15)" fill="#dadada"/>
+            <path id="Path_17-2" data-name="Path 17" d="M137.021,19.464C137.021,17,133.6,15,129.369,15H60.5V26.161h76.521Z" transform="translate(16.021 -15)" fill="#dadada"/>
+            <ellipse id="Ellipse_1-2" data-name="Ellipse 1" cx="3.815" cy="2.226" rx="3.815" ry="2.226" transform="translate(10.174 3.71)" fill="#999795"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_37" data-name="Group 37" transform="translate(484.19 449.517)" opacity="0.6">
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="2.261" height="36" transform="translate(2.261 2)" fill="#f9f9f9"/>
+      <path id="Rectangle_10_-_Outline" data-name="Rectangle 10 - Outline" d="M1,1V35h.261V1H1M0,0H2.261V36H0Z" transform="translate(2.261 2)"/>
+      <path id="Path_19" data-name="Path 19" d="M3.338,0C5.182,0,6.676,1,6.676,2.226S5.182,4.452,3.338,4.452,0,3.455,0,2.226,1.495,0,3.338,0Z" transform="translate(0 0)" fill="#f9f9f9"/>
+      <path id="Path_19_-_Outline" data-name="Path 19 - Outline" d="M3.338,1C2.021,1,1,1.659,1,2.226S2.021,3.452,3.338,3.452s2.338-.659,2.338-1.226S4.655,1,3.338,1m0-1C5.182,0,6.676,1,6.676,2.226S5.182,4.452,3.338,4.452,0,3.455,0,2.226,1.495,0,3.338,0Z" transform="translate(0 0)"/>
+      <path id="Path_20" data-name="Path 20" d="M0,0,11.849,1.506,25.142,0V15.17l-13.293,1.56L0,15.17Z" transform="translate(4.522 4.452)" fill="#ffb45b" opacity="0.6"/>
+    </g>
+  </g>
+</svg>
