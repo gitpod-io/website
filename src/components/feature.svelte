@@ -9,25 +9,45 @@
     moreButton,
     paragraph,
     title,
-    terminalSource,
+    terminal,
     image,
+    previewComponent,
   } = feature;
 </script>
 
 <style lang="scss">
+  :global(.feature-container-section) {
+    &:nth-of-type(even) {
+      .feature {
+        @media (min-width: 801px) {
+          @apply flex-row-reverse;
+        }
+
+        &__text {
+          flex: 0 0 45%;
+        }
+
+        &__preview {
+          flex: 0 0 45%;
+        }
+      }
+    }
+  }
+
   .feature {
     display: flex;
     justify-content: space-between;
     min-height: 340px;
 
     @media (max-width: 800px) {
-      flex-direction: column;
+      @apply flex-col-reverse;
+      @apply pb-medium;
     }
 
     &__text {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      @apply justify-around;
       flex: 0 0 50%;
 
       @media (min-width: 801px) {
@@ -43,7 +63,7 @@
       flex: 0 0 45%;
 
       @media (max-width: 800px) {
-        margin-top: var(--small);
+        @apply pb-small;
 
         img {
           margin-left: auto;
@@ -67,33 +87,41 @@
   }
 </style>
 
-<Section>
+<Section className="feature-container-section">
   <div class="feature">
     <div class="feature__text">
       <div class="text-large">
         <h2 class="h3">{title}</h2>
         <p>{paragraph}</p>
       </div>
-      <div
-        class={`feature__buttons ${
-          moreButton && documentationLink ? "buttons-wrapper" : ""
-        }`}
-      >
-        <a href={moreButton.href} class="btn-primary">
-          {moreButton.text}
-        </a>
-        {#if documentationLink}
-          <a href={documentationLink} class="btn-secondary">Documentation </a>
-        {/if}
-      </div>
+      {#if moreButton || documentationLink}
+        <div
+          class={`feature__buttons ${
+            moreButton && documentationLink ? "buttons-wrapper" : ""
+          }`}
+        >
+          <a
+            href={moreButton.href}
+            class={`btn-${moreButton.type || "primary"}`}
+          >
+            {moreButton.text}
+          </a>
+          {#if documentationLink}
+            <a href={documentationLink} class="btn-secondary">Documentation </a>
+          {/if}
+        </div>
+      {/if}
     </div>
     <div class="feature__preview">
-      {#if terminalSource}
-        <Console source={terminalSource} />
+      {#if terminal}
+        <Console source={terminal.source} skipToEnd={terminal.skipToEnd} />
       {/if}
       {#if image}
         <img src={image.src} alt={image.alt} />
         <!--height="{image.height}" width="{image.width}" />-->
+      {/if}
+      {#if previewComponent}
+        <svelte:component this={previewComponent} />
       {/if}
     </div>
   </div>

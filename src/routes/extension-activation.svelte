@@ -3,6 +3,8 @@
 </script>
 
 <script lang="ts">
+  import Feature from "../components/feature.svelte";
+  import { feature } from "../contents/extension-activation";
   import Config from "../components/extension-activation/config.svelte";
 
   const currentBrowser = ["Opera", "Chrome", "Firefox", "IE"].find(
@@ -46,26 +48,7 @@
   <p>The browser extension has been installed</p>
 </header>
 
-<section class="halfimages">
-  <article>
-    <div>
-      <img
-        src="/images/extension-activation/extension-screenshot.png"
-        alt="A GitHub project page with the Gitpod button highlighted"
-        height="688"
-        width="688"
-      />
-    </div>
-    <div>
-      <h2 class="h3 max-w-lg">Spin up dev environments with a single click.</h2>
-      <p class="text-large max-w-lg">
-        The extension adds a Gitpod button on every project and branch across
-        GitLab, GitHub, and Bitbucket so you can easily open a new workspace for
-        any project.
-      </p>
-    </div>
-  </article>
-</section>
+<Feature {feature} />
 
 <Config />
 

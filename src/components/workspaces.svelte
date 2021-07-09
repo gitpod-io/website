@@ -12,7 +12,7 @@
 
   let wrapper;
   let wrapper_width = 632;
-  let wrapper_height = 564;
+  let wrapper_height = 500;
 
   let available = [
     { id: "1", left: 34, top: 92, width: 337, Component: Workspace_1 },
