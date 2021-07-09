@@ -1,0 +1,24 @@
+name: Docs Feedback
+description: Provide docs feedback
+title: "[Docs Feedback]: "
+labels: [documentation, user-feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please copy the user feedback from the spreadsheet and provide additional details as needed.
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL
+      description: The "URL" field from the spreadsheet
+      placeholder: ex. https://www.gitpod.io/docs/getting-started
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: User feedback
+      description: Copy the feedback provided by the user.
+    validations:
+      required: true
