@@ -485,7 +485,7 @@ vscode:
   extensions:
     - svelte.svelte-vscode
     - bradlc.vscode-tailwindcss@0.6.11
-    - https://example.com/abc/releases/extension-0.26.0.vsix 
+    - https://example.com/abc/releases/extension-0.26.0.vsix
 ```
 
 ## `workspaceLocation`
