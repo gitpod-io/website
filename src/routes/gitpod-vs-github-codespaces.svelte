@@ -148,7 +148,12 @@
       <p class="card-image-legend">
         Compared start-up time until ready-to-code for<br /><a
           href="https://github.com/gitpod-io/vscode"
-          ><strong>https://github.com/gitpod-io/vscode</strong></a
+          on:click={() =>
+            window.analytics.track("external_resource_clicked", {
+              name: "vscode-repo",
+              url: "https://github.com/gitpod-io/vscode",
+              context: "body",
+            })}><strong>https://github.com/gitpod-io/vscode</strong></a
         >. Last verified 25 Sep 2020.
       </p>
     </div>
@@ -179,7 +184,13 @@
         Sep 2020.<br />Sources: <a href="/pricing"><strong>Gitpod</strong></a>,
         <a
           href="https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces"
-          ><strong>GitHub Codespaces</strong></a
+          on:click={() =>
+            window.analytics.track("external_resource_clicked", {
+              name: "codespaces-resources",
+              url:
+                "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces",
+              context: "body",
+            })}><strong>GitHub Codespaces</strong></a
         >.
       </p>
     </div>
@@ -435,6 +446,12 @@
     <p>
       <a
         href="https://cloud.google.com/sustainability"
+        on:click={() =>
+          window.analytics.track("external_resource_clicked", {
+            name: "gcp-sustainability",
+            url: "https://cloud.google.com/sustainability",
+            context: "body",
+          })}
         class="btn-green"
         target="_blank"
         rel="noopener">More on GCP carbon neutral</a

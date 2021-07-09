@@ -95,24 +95,28 @@ export const projects: Project[] = [
     title: "Node or TypeScript",
     githubUrl: "https://github.com/gitpod-io/example-typescript-node",
     alt: "Node or TypeScript",
+    trackingName: "node-typescript",
   },
   {
     logo: "svg/projects/python.svg",
     title: "Python",
     githubUrl: "https://github.com/gitpod-io/example-python-django",
     alt: "Python",
+    trackingName: "python",
   },
   {
     logo: "svg/projects/go.svg",
     title: "Go",
     githubUrl: "https://github.com/gitpod-io/example-golang-cli",
     alt: "Go Language",
+    trackingName: "go",
   },
   {
     logo: "svg/projects/rust.svg",
     title: "Rust",
     githubUrl: "https://github.com/gitpod-io/example-rust-cli",
     alt: "Rust",
+    trackingName: "rust",
   },
   {
     logo: "svg/projects/java.svg",
@@ -121,12 +125,14 @@ export const projects: Project[] = [
     gitlabUrl: "https://gitlab.com/gitpod/spring-petclinic",
     bitbucketUrl: "https://bitbucket.org/gitpod/spring-petclinic",
     alt: "Java",
+    trackingName: "java",
   },
   {
     logo: "svg/projects/svelte.svg",
     title: "Svelte",
     githubUrl: "https://github.com/gitpod-io/sveltejs-template",
     alt: "Svelte",
+    trackingName: "svelte",
   },
   // {
   //   logo: "svg/projects/php.svg",

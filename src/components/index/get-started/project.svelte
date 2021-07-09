@@ -1,6 +1,6 @@
 <script>
   export let project;
-  const { logo, alt, title, githubUrl } = project;
+  const { logo, alt, title, githubUrl, trackingName } = project;
 </script>
 
 <style lang="scss">
@@ -70,6 +70,11 @@
 <a
   href={`https://gitpod.io#${githubUrl}`}
   target="_blank"
+  on:click={() =>
+    window.analytics.track("example_workspace_clicked", {
+      name: trackingName,
+      repo_url: githubUrl,
+    })}
   class="project group"
 >
   <div class="project__left">

@@ -4,16 +4,19 @@
       href: "https://twitter.com/gitpod",
       alt: "Twitter",
       icon: "/svg/brands/twitter.svg",
+      trackingName: "twitter",
     },
     {
       href: "https://github.com/gitpod-io",
       alt: "GitHub",
       icon: "/svg/brands/github.svg",
+      trackingName: "github",
     },
     {
       href: "https://community.gitpod.io/",
       alt: "Discourse",
       icon: "/svg/brands/discourse.svg",
+      trackingName: "discourse",
     },
   ];
 </script>
@@ -89,7 +92,16 @@
           </a>
         </li>
         <li>
-          <a href="https://www.gitpodstatus.com/" target="_blank">Status</a>
+          <a
+            href="https://www.gitpodstatus.com/"
+            target="_blank"
+            on:click={() =>
+              window.analytics.track("external_resource_clicked", {
+                context: "footer",
+                name: "status",
+                url: "https://www.gitpodstatus.com/",
+              })}>Status</a
+          >
         </li>
       </ul>
       <ul>
@@ -102,13 +114,27 @@
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
             target="_blank"
-            rel="noopener">Report a bug</a
+            rel="noopener"
+            on:click={() =>
+              window.analytics.track("external_resource_clicked", {
+                context: "footer",
+                name: "bug-report",
+                url:
+                  "https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md",
+              })}>Report a bug</a
           >
         </li>
         <li>
-          <a href="https://community.gitpod.io" target="_blank" rel="noopener"
-            >Community
-          </a>
+          <a
+            href="https://community.gitpod.io"
+            target="_blank"
+            rel="noopener"
+            on:click={() =>
+              window.analytics.track("social_opened", {
+                context: "footer",
+                platform: "discourse",
+              })}>Community</a
+          >
         </li>
       </ul>
       <ul>
@@ -151,7 +177,15 @@
       </div>
       <div class="flex">
         {#each socialLinks as link}
-          <a href={link.href} class="footer__social-link">
+          <a
+            href={link.href}
+            on:click={() =>
+              window.analytics.track("social_opened", {
+                context: "footer-logo",
+                platform: link.trackingName,
+              })}
+            class="footer__social-link"
+          >
             <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>
         {/each}

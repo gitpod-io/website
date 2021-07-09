@@ -37,7 +37,11 @@
     <a
       class="btn-conversion"
       href="mailto:career@gitpod.io?subject=Application as {career.title}"
-      >Apply now</a
+      on:click={() =>
+        window.analytics.track("hiring_interaction", {
+          subtype: "apply_clicked",
+          name: career.title,
+        })}>Apply now</a
     >
   </p>
 </Modal>

@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
   import { pricingPlans } from "../../contents/pricing";
   import Section from "../section.svelte";
   import PricingBoxes from "./pricing-boxes.svelte";
+
+  export let trackingContext: String;
 </script>
 
 <style>
@@ -12,5 +14,5 @@
 
 <Section>
   <h1>Plans and pricing</h1>
-  <PricingBoxes {pricingPlans} />
+  <PricingBoxes {trackingContext} {pricingPlans} />
 </Section>

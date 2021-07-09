@@ -40,8 +40,8 @@
   <div class="row">
     <h2 class="h1">Used by 400,000+ developers.</h2>
     <Carousel>
-      {#each testimonials as testimonial}
-        <Testimonial {testimonial} />
+      {#each testimonials as testimonial, position}
+        <Testimonial {testimonial} {position} />
       {/each}
     </Carousel>
     <Brands />

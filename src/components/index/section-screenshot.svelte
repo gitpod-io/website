@@ -3,12 +3,14 @@
 
   const buttons = [
     {
+      name: "chrome-extension",
       icon: "svg/browsers/chrome.svg",
       text: "Chrome Extension",
       href:
         "https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki",
     },
     {
+      name: "firefox-extension",
       icon: "svg/browsers/firefox.svg",
       text: "Firefox Extension",
       href: "https://addons.mozilla.org/firefox/addon/gitpod/",
@@ -67,10 +69,15 @@
         networks.
       </p>
       <div class="buttons-wrapper">
-        {#each buttons as { href, icon, text }}
+        {#each buttons as { name, href, icon, text }}
           <a
             {href}
             target="_blank"
+            on:click={() =>
+              window.analytics.track("feature_clicked", {
+                type: name,
+                url: href,
+              })}
             rel="noopener"
             class="btn-otherbrand text-medium"
           >

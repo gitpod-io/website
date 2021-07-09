@@ -178,6 +178,11 @@
             bind:this={githubStarsEl}
             class="github-button"
             href="https://github.com/gitpod-io/gitpod"
+            on:click={() =>
+              window.analytics.track("social_opened", {
+                platform: "github",
+                context: "hero",
+              })}
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"

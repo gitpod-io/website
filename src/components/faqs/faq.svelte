@@ -4,13 +4,20 @@
   import { hyphenate } from "../../utils/helper";
 
   export let title;
+  export let trackingContext;
 
   const activeFaq = getContext(faqsKey);
   const fragment = hyphenate(title);
 
   const setActive = ({ target }) => {
     const open = target.open;
-    if (open) $activeFaq = title;
+    if (open) {
+      $activeFaq = title;
+      window.analytics.track("pricing_faq_opened", {
+        context: trackingContext,
+        name: title,
+      });
+    }
     // closing the faq that was active, no faq will remain open
     if (isActive && !open) $activeFaq = null;
   };

@@ -8,4 +8,5 @@ export type Pricing = {
   spiced?: boolean;
   learnMoreHref?: string;
   footnote?: string;
+  trackingName: string;
 };

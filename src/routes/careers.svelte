@@ -83,7 +83,14 @@
   <h1>To remove all friction from the developer experience.</h1>
   <p>Bring back joy and speed to dev workflows.</p>
   <p>
-    <a href="#jobs" class="btn-conversion">View {careers.length} openings</a>
+    <a
+      href="#jobs"
+      on:click={() =>
+        window.analytics.track("hiring_interaction", {
+          subtype: "cta_clicked",
+        })}
+      class="btn-conversion">View {careers.length} openings</a
+    >
   </p>
 </header>
 
@@ -173,18 +180,27 @@
     <h2 id="jobs" class="h4 mt-5rem">Open positions</h2>
     <p>
       If there isn't an open position for you but you'd still want to work at
-      Gitpod let us know via <a href="mailto:career@gitpod.io"
-        >career@gitpod.io</a
+      Gitpod let us know via <a
+        href="mailto:career@gitpod.io"
+        on:click={() =>
+          window.analytics.track("hiring_interaction", {
+            subtype: "email_clicked",
+          })}>career@gitpod.io</a
       >
     </p>
 
     <ul class="jobs">
-      {#each careers as career}
+      {#each careers as career, i}
         <li id={hyphenate(career.title)}>
           <button
             bind:this={career.focusEl}
             on:click={() => {
               selectedCareer = career;
+              window.analytics.track("hiring_interaction", {
+                subtype: "position_opened",
+                name: career.title,
+                position: i,
+              });
             }}
           >
             <div class="group flex justify-center items-center text-gray-900">

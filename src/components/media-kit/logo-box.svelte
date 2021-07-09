@@ -33,7 +33,23 @@
   <img src={svgSrc} {alt} class="mx-auto" />
   <p class="mt-medium mb-micro">Download {text}</p>
   <div class="buttons-wrapper">
-    <a href={svgSrc} download class="btn-cta svg-button">SVG</a>
-    <a href={`/images/media-kit/${srcPNG}`} download class="btn-cta">PNG</a>
+    <a
+      href={svgSrc}
+      on:click={() =>
+        window.analytics.track("media_downloaded", {
+          name: svgSrc,
+        })}
+      download
+      class="btn-cta svg-button">SVG</a
+    >
+    <a
+      href={`/images/media-kit/${srcPNG}`}
+      on:click={() =>
+        window.analytics.track("media_downloaded", {
+          name: srcPNG,
+        })}
+      download
+      class="btn-cta">PNG</a
+    >
   </div>
 </div>

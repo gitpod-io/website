@@ -1,5 +1,6 @@
 <script context="module">
   export const prerender = true;
+  const trackingContext = "general";
 </script>
 
 <script>
@@ -18,7 +19,7 @@
     title: "Pricing",
   }}
 />
-<PlansAndPricing />
-<OtherPlans {otherPlans} />
-<Faqs />
+<PlansAndPricing {trackingContext} />
+<OtherPlans {trackingContext} {otherPlans} />
+<Faqs {trackingContext} />
 <Explore />

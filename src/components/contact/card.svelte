@@ -25,7 +25,11 @@
   />
   <h2 class="h3">{contactCard.title}</h2>
   <p>{contactCard.description}</p>
-  <a href={contactCard.btnHref} class="btn btn-conversion m-8"
-    >{contactCard.btnText}</a
+  <a
+    href={contactCard.btnHref}
+    on:click={() => {
+      if (contactCard.tracking) contactCard.tracking();
+    }}
+    class="btn btn-conversion m-8">{contactCard.btnText}</a
   >
 </div>
