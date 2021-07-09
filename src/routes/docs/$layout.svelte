@@ -17,7 +17,7 @@
   }
 
   .menu {
-    @apply w-2/5 pt-24 pr-8;
+    @apply w-2/6 pt-24 pr-8;
 
     @media (max-width: 768px) {
       display: none;
@@ -26,7 +26,7 @@
 
   .doc-contents {
     @media (min-width: 769px) {
-      @apply w-3/5;
+      @apply w-4/6;
     }
   }
 </style>
