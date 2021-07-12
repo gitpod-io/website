@@ -13,7 +13,7 @@ import GetStarted from "../../components/docs/get-started/get-started.svelte";
 
 # Getting started with Gitpod
 
-<main class="w-full">
+<main class="w-full p-0">
 <section class="getting-started">
   <GetStarted />
 </section>
