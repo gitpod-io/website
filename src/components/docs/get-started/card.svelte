@@ -8,11 +8,12 @@
 <div
   class="text-center w-72 bg-off-white rounded-2xl py-xx-small px-x-small shadow-normal mr-micro mb-x-small flex flex-col"
 >
-  <div class="h-44 w-full">
-    <img class="h-full" src={imgSrc} alt={imgAlt} />
+  <img src={imgSrc} alt={imgAlt} />
+  <div class="flex items-start justify-center h-14 mt-10 mb-2">
+    <h5>{title}</h5>
   </div>
-
-  <h5 class="h-12 my-6">{title}</h5>
-  <p class="h-28">{description}</p>
+  <div class="flex items-start justify-center h-24 mb-5 overflow-hidden">
+    <p>{description}</p>
+  </div>
   <a href={btnHref} class="btn-conversion">{btnText}</a>
 </div>
