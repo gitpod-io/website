@@ -1,0 +1,24 @@
+name: Docs Feedback
+description: Provide docs feedback
+title: "[Docs Feedback]: "
+labels: [documentation, user-feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for providing feedback 🙏. We really appreciate it and always work towards better, more helpful docs.
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL
+      description: The URL of the page you provide feedback for.
+      placeholder: ex. https://www.gitpod.io/docs/getting-started
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: User feedback
+      description: What is your feedback?
+    validations:
+      required: true

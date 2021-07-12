@@ -18,6 +18,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        lgx: "1140px",
+      },
       backgroundImage: {
         "gitpod-kumquat-gradient":
           "linear-gradient(137.41deg, #FFAD33 14.37%, #FF8A00 91.32%)",
