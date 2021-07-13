@@ -1,6 +1,7 @@
 type Field = {
   el: HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
   valid: boolean;
+  dirty?: boolean;
   value?: string;
   checked?: boolean;
   selected?: string[];

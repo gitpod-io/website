@@ -59,35 +59,38 @@
       el: null,
       valid: false,
       checked: false,
+      dirty: false,
     },
     email: {
       el: null,
       valid: false,
       value: "",
+      dirty: false,
     },
     message: {
       el: null,
       valid: false,
       value: "",
+      dirty: false,
     },
     name: {
       el: null,
       valid: false,
       value: "",
+      dirty: false,
     },
     selectedSubject: {
       el: null,
       valid: false,
       value: "",
+      dirty: false,
     },
   };
-  let isFormDirty = false;
   let isEmailSent = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
   const handleSubmit = async () => {
-    isFormDirty = true;
     if (!isFormValid) {
       return;
     }
@@ -139,6 +142,14 @@
   fieldset li {
     margin: 0 1rem 0 0;
   }
+  .btn {
+    background-color: var(--brand-almost-ripe);
+  }
+  .btn:disabled {
+    background-color: var(--sand-dark);
+    color: var(--dark-gray);
+    cursor: default;
+  }
 </style>
 
 <OpenGraph
@@ -169,21 +180,23 @@
     <form on:submit|preventDefault={handleSubmit} novalidate>
       <h2 class="h3 text-center mb-8">Send us a message</h2>
       <ul>
-        <li class:error={isFormDirty && !formData.name.valid}>
+        <li class:error={formData.name.dirty && !formData.name.valid}>
           <label for="name">Name*</label>
           <input
             id="name"
             bind:value={formData.name.value}
             bind:this={formData.name.el}
-            on:change={() => {
+            on:keyup={() => {
               formData.name.valid =
                 formData.name.value && formData.name.el.checkValidity();
+              formData.name.dirty = true;
             }}
+            on:blur={() => (formData.name.dirty = true)}
             type="text"
             autocomplete="name"
           />
         </li>
-        <li class:error={isFormDirty && !formData.email.valid}>
+        <li class:error={formData.email.dirty && !formData.email.valid}>
           <label for="email"
             >E-Mail*
             {#if isStudentEmailNoteShown}
@@ -194,15 +207,19 @@
             id="email"
             bind:value={formData.email.value}
             bind:this={formData.email.el}
-            on:change={() => {
+            on:keyup={() => {
               formData.email.valid =
                 formData.email.value && formData.email.el.checkValidity();
             }}
+            on:blur={() => (formData.email.dirty = true)}
             type="email"
             autocomplete="email"
           />
         </li>
-        <li class:error={isFormDirty && !formData.selectedSubject.valid}>
+        <li
+          class:error={formData.selectedSubject.dirty &&
+            !formData.selectedSubject.valid}
+        >
           <fieldset>
             <legend>Please choose a subject</legend>
             <ul>
@@ -218,6 +235,7 @@
                         formData.selectedSubject.value &&
                         formData.selectedSubject.el.validity.valid;
                     }}
+                    on:blur={() => (formData.selectedSubject.dirty = true)}
                     value={subject}
                     name="subject"
                   />
@@ -229,21 +247,23 @@
             </ul>
           </fieldset>
         </li>
-        <li class:error={isFormDirty && !formData.message.valid}>
+        <li class:error={formData.message.dirty && !formData.message.valid}>
           <label for="message">Your message*</label>
           <textarea
             id="message"
             bind:value={formData.message.value}
             bind:this={formData.message.el}
-            on:change={() => {
+            on:keyup={() => {
               formData.message.valid =
                 formData.message.value && formData.message.el.validity.valid;
+              formData.message.dirty = true;
             }}
+            on:blur={() => (formData.message.dirty = true)}
             cols="30"
             rows="10"
           />
         </li>
-        <li class:error={isFormDirty && !formData.consent.valid}>
+        <li class:error={formData.consent.dirty && !formData.consent.valid}>
           <input
             id="consent"
             bind:checked={formData.consent.checked}
@@ -251,7 +271,9 @@
             on:change={() => {
               formData.consent.valid =
                 formData.consent.checked && formData.consent.el.validity.valid;
+              formData.consent.dirty = true;
             }}
+            on:blur={() => (formData.consent.dirty = true)}
             type="checkbox"
           />
           <label for="consent"
@@ -260,10 +282,8 @@
           >
         </li>
         <li>
-          <button
-            type="submit"
-            class="btn"
-            disabled={isFormDirty && !isFormValid}>Send message</button
+          <button type="submit" class="btn" disabled={!isFormValid}
+            >Send message</button
           >
         </li>
       </ul>
