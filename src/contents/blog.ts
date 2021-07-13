@@ -176,4 +176,14 @@ export const authors: { [idx: string]: Author } = {
     description:
       "Robert loves to code and lives off-grid... although the other way around is probably more accurate. Engineering systems of all shapes and sizes with many different teams highlighted the need for Gitpod's blazingly fast, ephemeral and secure development environments time and time again - he is helping make that happen.",
   },
+  cjheppell: {
+    name: "Chris Heppell",
+    socialProfiles: {
+      github: "cjheppell",
+      twitter: "cjheppell",
+      linkedin: "christopherheppell",
+    },
+    description:
+      "Chris is a Lead Software Engineer at Redgate working in Research and Development. Most recently, Chris has been building Spawn - a cloud hosted database provisioning service for dev and test.",
+  },
 };
