@@ -550,8 +550,8 @@
         service offered on the website <a href="https://github.com"
           >https://github.com</a
         >
-        operated by GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA
-        94107, USA, (<strong>"Existing Account"</strong>).
+        operated by GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107,
+        USA, (<strong>"Existing Account"</strong>).
       </p>
 
       <p>
@@ -750,10 +750,10 @@
         <a href="https://www.privacyshield.gov">https://www.privacyshield.gov</a
         >
         . By using Medium Services, you authorize Medium to transfer, store, and
-        use your information in the United States and any other country where
-        Medium operates. Where your data is disclosed to Medium’s processors, it
-        is subject by contract to at least the same level of data protection as
-        that set forth under
+        use your information in the United States and any other country where Medium
+        operates. Where your data is disclosed to Medium’s processors, it is subject
+        by contract to at least the same level of data protection as that set forth
+        under
         <a href="https://medium.com/policy/medium-privacy-policy-f03bf92035c9"
           >https://medium.com/policy/medium-privacy-policy-f03bf92035c9</a
         >.

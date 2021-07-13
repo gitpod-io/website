@@ -1,4 +1,6 @@
 <script lang="ts">
+  let clazz = "";
+  export { clazz as class };
   let email;
   let resultMessage = "";
   let isSubmittedOnce = false;
@@ -30,29 +32,29 @@
   }
 </style>
 
-<div class="mt-large my-xx-large" id="newsletter">
-  <form
-    class="bg-white shadow-normal rounded-2xl max-w-lg py-small px-xx-small sm:px-small m-auto"
-    on:submit|preventDefault={submitEmail}
-  >
-    <h2 class="h3">Stay updated</h2>
-    {#if resultMessage}
-      <p class="my-medium">{resultMessage}</p>
-    {:else}
-      <p class="text-medium">Sign up now for our newsletter.</p>
-      <div class="flex mt-x-small">
-        <input
-          type="email"
-          bind:value={email}
-          required
-          autocomplete="email"
-          placeholder="Enter your email"
-          class="mr-macro sm:mr-xx-small"
-        />
-        <button class="btn-primary" type="submit" disabled={isSubmittedOnce}
-          >Sign up</button
-        >
-      </div>
-    {/if}
-  </form>
-</div>
+<form
+  class="bg-white shadow-normal rounded-2xl max-w-lg py-small px-xx-small sm:px-small {clazz} relative"
+  on:submit|preventDefault={submitEmail}
+  id="newsletter"
+  on:click|stopPropagation
+>
+  <h2 class="h3">Stay updated</h2>
+  {#if resultMessage}
+    <p class="my-medium">{resultMessage}</p>
+  {:else}
+    <p class="text-medium">Sign up now for our newsletter.</p>
+    <div class="flex mt-x-small">
+      <input
+        type="email"
+        bind:value={email}
+        required
+        autocomplete="email"
+        placeholder="Enter your email"
+        class="mr-macro sm:mr-xx-small"
+      />
+      <button class="btn-primary" type="submit" disabled={isSubmittedOnce}
+        >Sign up</button
+      >
+    </div>
+  {/if}
+</form>

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 }
 .modal .content {
@@ -13,26 +13,16 @@
   width: 71rem;
   max-height: 80vh;
   max-width: 98vw;
-  margin: 10vh auto;
   padding: 7rem;
-  overflow: scroll;
+  overflow: auto;
 }
-.content button:first-child {
-  float: right;
-  height: 0.75rem;
-  width: 0.75rem;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 0.75rem;
-  margin-top: -3rem;
-  margin-right: -3rem;
+
+.modal .content.text-blob {
+  @apply m-0;
 }
+
 @media (max-width: 768px) {
   .modal .content {
     padding: 2rem;
-  }
-  .content button:first-child {
-    margin-top: 0;
-    margin-right: 0;
   }
 }

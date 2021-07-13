@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { createEventDispatcher, tick } from "svelte";
+  import { createEventDispatcher } from "svelte";
+  export let closeButtonPosition = "right-6 top-6";
 
   export let isOpen = false;
 
@@ -30,14 +31,16 @@
 <svelte:window on:keydown={handleKeydown} />
 
 {#if isOpen}
-  <div class="modal" on:click={closeModal}>
-    <div class="content text-blob" on:click={(e) => e.stopPropagation()}>
+  <div class="modal flex justify-center items-center" on:click={closeModal}>
+    <div class="flex justify-center items-center relative">
       <button
+        class="absolute {closeButtonPosition} h-3 w-3 z-10"
         bind:this={closeEl}
         aria-label="close this popup"
         on:click={closeModal}
-        ><img alt="Close" role="presentation" src="/x.svg" /></button
       >
+        <img alt="Close" role="presentation" src="/x.svg" />
+      </button>
       <slot />
     </div>
   </div>

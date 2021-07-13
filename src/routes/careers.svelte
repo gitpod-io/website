@@ -211,7 +211,9 @@
 
     <CareerModal
       career={selectedCareer}
-      on:close={() => (selectedCareer = null)}
+      on:close={() => {
+        selectedCareer = null;
+      }}
     />
   </div>
 </Section>

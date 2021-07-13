@@ -61,4 +61,4 @@
     {/each}
   </div>
 </div>
-<NewsletterSignup />
+<NewsletterSignup class="mx-auto mt-large mb-huge" />
