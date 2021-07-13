@@ -9,6 +9,12 @@
 
   const submitFeedback = async () => {
     isSubmittedOnce = true;
+
+    window.analytics.track("feedback_submitted", {
+      score: selectedEmotion,
+      feedback: note,
+    });
+
     const response = await fetch("/.netlify/functions/feedback", {
       method: "post",
       body: JSON.stringify({

@@ -1,5 +1,6 @@
 <script context="module">
   export const prerender = true;
+  const trackingContext = "self-hosted";
 </script>
 
 <script>
@@ -15,6 +16,6 @@
     title: "Self-Hosted",
   }}
 />
-<PlansAndPricing />
-<Faqs />
+<PlansAndPricing {trackingContext} />
+<Faqs {trackingContext} />
 <Explore />

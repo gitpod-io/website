@@ -70,7 +70,14 @@
   Select a Git provider to start with an existing project from any Git context.
 </p>
 <div class="buttons">
-  <a href="https://gitpod.io/login" class="btn btn--gitlab">
+  <a
+    href="https://gitpod.io/login"
+    on:click={() =>
+      window.analytics.track("dashboard_clicked", {
+        context: "continue_gitlab",
+      })}
+    class="btn btn--gitlab"
+  >
     <svg viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <title>Bitbucket</title>
       <path
@@ -102,7 +109,14 @@
     >
     Continue with GitLab
   </a>
-  <a href="https://gitpod.io/login" class="btn btn--github">
+  <a
+    href="https://gitpod.io/login"
+    on:click={() =>
+      window.analytics.track("dashboard_clicked", {
+        context: "continue_github",
+      })}
+    class="btn btn--github"
+  >
     <svg viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
       <title>GitHub Octocat</title>
       <path
@@ -114,7 +128,14 @@
     </svg>
     Continue with GitHub
   </a>
-  <a href="https://gitpod.io/login" class="btn btn--bitbucket">
+  <a
+    href="https://gitpod.io/login"
+    on:click={() =>
+      window.analytics.track("dashboard_clicked", {
+        context: "continue_bitbucket",
+      })}
+    class="btn btn--bitbucket"
+  >
     <svg viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <title>Bitbucket</title>
       <path

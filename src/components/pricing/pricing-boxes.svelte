@@ -3,10 +3,11 @@
   import PricingBox from "./pricing-box.svelte";
 
   export let pricingPlans: Pricing[];
+  export let trackingContext: String;
 </script>
 
 <div class="pricingContainer">
   {#each pricingPlans as pricing}
-    <PricingBox {pricing} />
+    <PricingBox {trackingContext} {pricing} />
   {/each}
 </div>

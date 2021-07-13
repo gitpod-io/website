@@ -12,7 +12,10 @@
     spiced,
     learnMoreHref,
     footnote,
+    trackingName,
   } = pricing;
+
+  export let trackingContext: String;
 </script>
 
 <style type="text/postcss">
@@ -85,7 +88,16 @@
     {/if}
   </div>
   {#if btnHref && btnText}
-    <a href={btnHref} class="btn-cta">{btnText}</a>
+    <a
+      href={btnHref}
+      on:click={() =>
+        window.analytics.track("pricing_plan_clicked", {
+          context: trackingContext,
+          plan: trackingName,
+          name: "cta",
+        })}
+      class="btn-cta">{btnText}</a
+    >
   {/if}
   {#if footnote}
     <div class="text-p-xsmall px-small text-gray-700">{footnote}</div>

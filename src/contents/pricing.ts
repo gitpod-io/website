@@ -8,6 +8,7 @@ export const pricingPlans: Pricing[] = [
     features: ["50 hours/month", "Public Repos", "Private Repos 30d Trial"],
     btnText: "Try Now",
     btnHref: "/#get-started",
+    trackingName: "free",
   },
   {
     title: "Personal",
@@ -21,6 +22,7 @@ export const pricingPlans: Pricing[] = [
     ],
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/plans",
+    trackingName: "personal",
   },
   {
     title: "Professional",
@@ -35,6 +37,7 @@ export const pricingPlans: Pricing[] = [
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/plans",
     spiced: true,
+    trackingName: "professional",
   },
   {
     title: "Unleashed",
@@ -48,6 +51,7 @@ export const pricingPlans: Pricing[] = [
     ],
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/plans",
+    trackingName: "unleashed",
   },
 ];
 
@@ -60,6 +64,7 @@ export const otherPlans = [
     ],
     btnText: "Apply now",
     btnHref: "/contact",
+    trackingName: "pro-open-source",
   },
   {
     title: "Self Hosted",
@@ -69,6 +74,7 @@ export const otherPlans = [
     ],
     btnText: "Learn more",
     btnHref: "/self-hosted",
+    trackingName: "self-hosted",
   },
   {
     title: "Student",
@@ -87,5 +93,6 @@ export const otherPlans = [
     ],
     btnText: "Check now",
     btnHref: "https://gitpod.io/plans",
+    trackingName: "student",
   },
 ];

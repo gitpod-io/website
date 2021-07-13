@@ -56,7 +56,17 @@
   }
 </style>
 
-<a {href} target="_blank" rel="noopener" class="brand">
+<a
+  {href}
+  target="_blank"
+  on:click={() =>
+    window.analytics.track("socialproof_clicked", {
+      type: "logo",
+      url: href,
+    })}
+  rel="noopener"
+  class="brand"
+>
   <img
     src={`/${logo}`}
     {alt}

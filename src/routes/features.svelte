@@ -155,7 +155,13 @@
       <a
         href="https://www.youtube.com/watch?v=iYLCHQgj0fE"
         rel="noopener"
-        target="_blank">Learn more about sudo/Docker in Gitpod.</a
+        target="_blank"
+        on:click={() =>
+          window.analytics.track("external_resource_clicked", {
+            context: "body",
+            name: "sudo-docker-feature",
+            url: "https://www.youtube.com/watch?v=iYLCHQgj0fE",
+          })}>Learn more about sudo/Docker in Gitpod.</a
       >
     </div>
   </div>

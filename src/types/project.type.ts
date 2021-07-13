@@ -5,4 +5,5 @@ export type Project = {
   gitlabUrl?: string;
   bitbucketUrl?: string;
   alt: string;
+  trackingName: string;
 };

@@ -52,6 +52,11 @@
       <a
         href="https://www.twitter.com/gitpod"
         rel="noopener"
+        on:click={() =>
+          window.analytics.track("social_opened", {
+            context: "changelog",
+            platform: "twitter",
+          })}
         class="btn-primary">Follow us on Twitter</a
       >
     </p>

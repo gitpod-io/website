@@ -8,6 +8,7 @@ export const pricingPlans: Pricing[] = [
     features: ["Unlimited Users", "Public Repos", "Private Repos"],
     btnText: "Install now",
     btnHref: "/docs/self-hosted/latest/self-hosted",
+    trackingName: "free",
   },
   {
     title: "Professional",
@@ -23,5 +24,6 @@ export const pricingPlans: Pricing[] = [
     btnText: "Get License",
     btnHref: "/enterprise-license",
     spiced: true,
+    trackingName: "professional",
   },
 ];

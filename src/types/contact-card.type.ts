@@ -6,4 +6,5 @@ export type ContactCard = {
   image: string;
   imgHeight: string;
   imgWidth: string;
+  tracking?: () => void;
 };

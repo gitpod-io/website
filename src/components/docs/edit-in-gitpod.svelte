@@ -25,7 +25,13 @@
 </style>
 
 <div class="flex justify-end mb-micro">
-  <a {href} class="btn-otherbrand" target="_blank">
+  <a
+    {href}
+    target="_blank"
+    on:click={() =>
+      window.analytics.track("gitpod_editor_clicked", { context: "docs" })}
+    class="btn-otherbrand"
+  >
     <span class="logo">
       <LogoTextless />
     </span> <span class="ml-macro">Edit in Gitpod</span>

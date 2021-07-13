@@ -15,11 +15,16 @@
       btnHref: "https://community.gitpod.io",
       btnText: "Open community",
       description:
-        "If you are looking for help for common requests pease visit our community.",
+        "If you are looking for help for common requests please visit our community.",
       title: "Ask the community",
       image: "icon-enter.svg",
       imgHeight: "154",
       imgWidth: "147",
+      tracking: () =>
+        window.analytics.track("social_opened", {
+          context: "body",
+          name: "discourse",
+        }),
     },
     {
       btnHref: "/docs/professional-open-source#who-is-eligible",
@@ -91,6 +96,15 @@
     if (!isFormValid) {
       return;
     }
+
+    window.analytics.identify({
+      name_untrusted: formData.name.value,
+      email_untrusted: formData.email.value,
+    });
+
+    window.analytics.track("message_submitted", {
+      subject: formData.selectedSubject.value,
+    });
 
     const email: Email = {
       from: {
