@@ -34,8 +34,6 @@
       isHighlighted: true,
     },
   ];
-
-  const redirectToMediaKit = () => goto("/media-kit");
 </script>
 
 <style type="text/postcss">
@@ -61,7 +59,7 @@
 >
   <div class="flex items-center justify-between h-20 px-4 sm:px-8">
     <a
-      on:contextmenu|preventDefault={redirectToMediaKit}
+      on:contextmenu|preventDefault={() => goto("/media-kit")}
       href="/"
       aria-label="Gitpod"
       on:click={() => ($menuState = !menuState)}
