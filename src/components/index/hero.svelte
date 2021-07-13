@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import CubeImage from "$static/images/illustration-large.jpg?webp&meta&w=400;700";
 
   let githubStarsEl: HTMLAnchorElement;
 
@@ -188,11 +189,31 @@
     </div>
   </div>
   <div class="hero__illustration">
-    <img
+    <picture>
+      <source
+        srcset="{CubeImage[0].src} {CubeImage[0]
+          .width}w,
+                      {CubeImage[1].src} {CubeImage[1]
+          .width}w"
+        sizes="(max-width: 1980px) 100vw, 1980px"
+      />
+      <img
+        sizes="(max-width: 1980px) 100vw, 1980px"
+        srcset="{CubeImage[0].src} {CubeImage[0]
+          .width}w,
+                     {CubeImage[1].src} {CubeImage[1]
+          .width}w"
+        src={CubeImage[1].src}
+        alt="Gitpod in a Nutshell"
+        loading="lazy"
+      />
+    </picture>
+
+    <!-- <img
       src="/images/illustration-large.jpg"
       alt="Gitpod in a Nutshell"
       width="700"
       height="724"
-    />
+    /> -->
   </div>
 </div>

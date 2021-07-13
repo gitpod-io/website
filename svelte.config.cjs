@@ -6,6 +6,8 @@ const sveltePreprocess = require("svelte-preprocess");
 const pkg = require("./package.json");
 const remarkSetImagePath = require("./src/utils/remark-set-image-path.cjs");
 const remarkEmbedVideo = require("./src/utils/remark-embed-video.cjs");
+const { imagetools } = require("vite-imagetools");
+const path = require("path");
 const remarkLinkWithImageAsOnlyChild = require("./src/utils/remark-link-with-image-as-only-child.cjs");
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -33,6 +35,14 @@ module.exports = {
     router: true,
     ssr: true,
     target: "#svelte",
+    vite: () => ({
+      plugins: [imagetools({ force: true })],
+      resolve: {
+        alias: {
+          $static: path.resolve("static"),
+        },
+      },
+    }),
   },
 
   // options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)

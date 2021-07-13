@@ -74,7 +74,8 @@
     "tslib": "^2.0.1",
     "typescript": "^4.0.3",
     "unist-util-visit": "^2.0.3",
-    "vite": "^2.1.5"
+    "vite": "^2.1.5",
+    "vite-imagetools": "^3.4.0-next.1"
   },
   "husky": {
     "hooks": {
