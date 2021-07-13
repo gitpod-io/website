@@ -47,4 +47,4 @@ This chart installs a MySQL database that gets Gitpod up and running but is not 
       enabled: false
     ```
 
-1.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.10.0` to apply the changes.
+1.  Do a `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes.

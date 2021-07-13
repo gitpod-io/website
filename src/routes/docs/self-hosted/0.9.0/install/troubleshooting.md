@@ -34,19 +34,7 @@ This section should solve all errors that might come up during installation of G
           - <your path here>
     ```
 
-3.  Do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.10.0` to apply the changes.
-
-> Example: For `k3s` a common configuration looks like this:
-
-```yaml
-components:
-  wsDaemon:
-    containerRuntime:
-      containerd:
-        socket: /var/run/k3s/containerd/containerd.sock
-      nodeRoots:
-        - /var/run/k3s/containerd/io.containerd.runtime.v2.task/k8s.io
-```
+3.  Do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes.
 
 ## 2. `helm install` fails with: "minio access key is required, please add a value to your values.yaml"
 
@@ -67,5 +55,3 @@ This is caused by a bug in the minio Helm chart which blocks itself on updates.
 1.  `kubectl scale deployments/minio --replicas=1`
 
 1.  Wait until the pod comes up.
-
-### 4. Installing

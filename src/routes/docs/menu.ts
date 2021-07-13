@@ -71,6 +71,8 @@ export const MENU: MenuEntry[] = [
     M("Configure Storage", "self-hosted/latest/install/storage"),
     M("Configure Nodes", "self-hosted/latest/install/nodes"),
     M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
+    M("Upgrade Notes", "self-hosted/latest/install/upgrade"),
+    M("Troubleshooting", "self-hosted/latest/install/troubleshooting"),
   ]),
   M("References", "references", [
     M(".gitpod.yml", "references/gitpod-yml"),

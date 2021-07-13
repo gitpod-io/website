@@ -9,31 +9,13 @@ title: Gitpod Self-Hosted Upgrade Notes
 
 # Gitpod Self-Hosted Upgrade Notes
 
-## Upgrading Gitpod from v0.10.0 to v0.10.0
+## Upgrading Gitpod from v0.8.0 to v0.9.0
 
-The file names we expect in a secret has changed. Before we'd require the default names Let's Encrypt would use. Since 0.10.0 we require a `tls.key` and a `tls.crt`.
-To adjust this in your existing installation:
-
-1. execute the following inside your config folder:
-
-```
-mv secrets/https-certificates/fullchain.pem secrets/https-certificates/tls.crt
-mv secrets/https-certificates/privkey.pem secrets/https-certificates/tls.key
-```
-
-2. Upgrade your installation again:
-
-```bash
-helm install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.10.0
-```
-
-## Upgrading Gitpod from v0.8.0 to v0.10.0
-
-With version 0.10.0 there is one change that requires user action regarding the rabbitmq messagebus:
+With version 0.9.0 there is one change that requires user action regarding the rabbitmq messagebus:
 
 ### rabbitmq now requires dexplicitly set password and username
 
-Gitpod uses a rabbitmq installation for distributing messages between components. So far that has been using default credentials if not configured otherwise. With v0.10.0 this is now explicitly required.
+Gitpod uses a rabbitmq installation for distributing messages between components. So far that has been using default credentials if not configured otherwise. With v0.9.0 this is now explicitly required.
 To do so add the following to your `values.custom.yaml`:
 
 ```

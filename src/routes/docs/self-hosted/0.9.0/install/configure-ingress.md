@@ -69,7 +69,7 @@ To configure the HTTPS certificates for your domain
     ```bash
     kubectl create secret generic https-certificates --from-file=secrets/https-certificates
     ```
-4.  Afterwards, do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.10.0` to apply the changes.
+4.  Afterwards, do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes.
 
 ### Using Let's Encrypt to generate HTTPS certificates
 
@@ -78,28 +78,27 @@ Let's Encrypt offers a program called [certbot](https://certbot.eff.org/) to mak
 
 Assuming you have [certbot](https://certbot.eff.org/) installed, the following script will generate and configure the required certificates (notice the placeholders):
 
-```
+```bash
 export DOMAIN=your-domain.com
 export EMAIL=your@email.here
 export WORKDIR=$PWD/letsencrypt
 
-certbot certonly \\
-    --config-dir $WORKDIR/config \\
-    --work-dir $WORKDIR/work \\
-    --logs-dir $WORKDIR/logs \\
-    --manual \\
-    --preferred-challenges=dns \\
-    --email $EMAIL \\
-    --server https://acme-v02.api.letsencrypt.org/directory \\
-    --agree-tos \\
-    -d *.ws.$DOMAIN \\
-    -d *.$DOMAIN \\
+certbot certonly \
+    --config-dir $WORKDIR/config \
+    --work-dir $WORKDIR/work \
+    --logs-dir $WORKDIR/logs \
+    --manual \
+    --preferred-challenges=dns \
+    --email $EMAIL \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    --agree-tos \
+    -d *.ws.$DOMAIN \
+    -d *.$DOMAIN \
     -d $DOMAIN
 
 # move them into place
 mkdir -p secrets/https-certificates
-cp $WORKDIR/config/live/fullchain.pem secrets/https-certificates/tls.crt
-cp $WORKDIR/config/live/privkey.pem secrets/https-certificates/tls.key
+find $WORKDIR/config/live -name "*.pem" -exec cp {} secrets/https-certificates \;
 ```
 
 > Note: Do not refrain if `certbot` fails on first execution: Depending on the challenge used you might have to restart it _once_.
